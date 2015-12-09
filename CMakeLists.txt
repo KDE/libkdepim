@@ -20,7 +20,7 @@ include(ECMAddTests)
 
 set(KF5_VERSION "5.16.0")
 set(KDEPIMLIBS_LIB_VERSION "5.1.42")
-set(KDEPIM_LIB_VERSION "5.1.42")
+set(LIBKDEPIM_LIB_VERSION "5.1.42")
 set(QT_REQUIRED_VERSION "5.4.0")
 set(KMIME_LIB_VERSION "4.87.0")
 set(KLDAP_LIB_VERSION "4.80.0")
@@ -45,7 +45,7 @@ find_package(KF5AkonadiSearch "5.0.42" CONFIG REQUIRED)
 set_package_properties(KF5AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "http://www.kde.org" TYPE REQUIRED PURPOSE "Provides search capabilities in KMail and Akonadi")
 
 
-ecm_setup_version(${KDEPIM_LIB_VERSION} VARIABLE_PREFIX LIBKDEPIM
+ecm_setup_version(${LIBKDEPIM_LIB_VERSION} VARIABLE_PREFIX LIBKDEPIM
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfigVersion.cmake"
                         SOVERSION 5
