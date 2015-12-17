@@ -45,6 +45,11 @@ find_package(KF5AkonadiContact ${KDEPIMLIBS_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5AkonadiSearch ${AKONADISEARCH_LIB_VERSION} CONFIG REQUIRED)
 set_package_properties(KF5AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "http://www.kde.org" TYPE REQUIRED PURPOSE "Provides search capabilities in KMail and Akonadi")
 
+find_package(Qt5Designer CONFIG)
+set_package_properties(Qt5Designer PROPERTIES
+   PURPOSE "Required to build the Qt Designer plugins"
+   TYPE OPTIONAL
+)
 
 ecm_setup_version(${LIBKDEPIM_LIB_VERSION} VARIABLE_PREFIX LIBKDEPIM
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h"
