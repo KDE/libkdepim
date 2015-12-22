@@ -90,7 +90,6 @@ install(FILES
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
 )
 
-feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 
 add_subdirectory(src)
@@ -100,3 +99,4 @@ endif()
 
 install( FILES libkdepim.categories DESTINATION ${KDE_INSTALL_CONFDIR} )
 
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
