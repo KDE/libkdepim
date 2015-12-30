@@ -285,7 +285,6 @@ ecm_generate_pri_file(BASE_NAME Libkdepim
     DEPS "AkonadiCore AkonadiContact" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
 )
 
-if(${CMAKE_SOURCE_DIR} STREQUAL ${libkdepim_SOURCE_DIR})
 install(FILES
     ${libkdepim_Camelcaseblacklistbaloocompletion_HEADERS}
     ${libkdepim_Camelcasecompletionconfiguredialog_HEADERS}
@@ -327,8 +326,6 @@ install(FILES
     ${PRI_FILENAME}
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
-
-endif()
 add_subdirectory(designer)
 ########### next target ###############
 
