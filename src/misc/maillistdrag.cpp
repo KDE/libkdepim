@@ -25,13 +25,9 @@
 #include "maillistdrag.h"
 
 #include <QDateTime>
-#include <KLocalizedString>
-#include <QProgressDialog>
-#include <QUrl>
 
 #include <QBuffer>
 #include <QDataStream>
-#include <QEventLoop>
 
 using namespace KPIM;
 

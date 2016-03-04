@@ -24,8 +24,6 @@
 
 #include <KConfigGroup>
 #include <KSharedConfig>
-#include <QCoreApplication>
-#include <QLayout>
 #include <QVBoxLayout>
 #include <QDialogButtonBox>
 #include <QPushButton>

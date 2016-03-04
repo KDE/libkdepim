@@ -34,7 +34,6 @@
 
 #include <QHBoxLayout>
 #include <KLocalizedString>
-#include <KIconLoader>
 
 #include <QCloseEvent>
 #include <QFrame>

@@ -24,9 +24,7 @@
 
 #include "broadcaststatus.h"
 #include "progresswidget/progressmanager.h"
-
 #include <QCoreApplication>
-#include <QTime>
 
 static KPIM::BroadcastStatus *instance_;
 

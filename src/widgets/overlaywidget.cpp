@@ -29,6 +29,7 @@
  */
 
 #include "overlaywidget.h"
+#include <QHBoxLayout>
 #include <QResizeEvent>
 #include <QEvent>
 

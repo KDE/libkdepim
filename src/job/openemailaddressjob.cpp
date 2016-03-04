@@ -27,7 +27,6 @@
 #include <item.h>
 #include <itemcreatejob.h>
 #include <kcontacts/addressee.h>
-#include <KLocalizedString>
 #include <kmessagebox.h>
 
 using namespace KPIM;

@@ -32,7 +32,6 @@
 
 #include "kwidgetlister.h"
 
-#include <QDialog>
 #include <KLocalizedString>
 #include <KGuiItem>
 #include <QHBoxLayout>

@@ -27,7 +27,6 @@
 #include "ldap/ldapclientsearch.h"
 #include <AkonadiCore/Item>
 #include <AkonadiCore/Collection>
-#include <KLDAP/LdapServer>
 #include <kcontacts/contactgroup.h>
 
 class KConfig;

@@ -17,8 +17,8 @@
 
 #include "tagwidgets.h"
 #include <KJob>
-#include <QLayout>
 
+#include <QHBoxLayout>
 #include <AkonadiCore/Tag>
 #include <AkonadiCore/TagFetchJob>
 #include <AkonadiCore/TagFetchScope>

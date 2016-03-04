@@ -24,14 +24,14 @@
 #include "Libkdepim/LdapClient"
 #include "ldap/ldapclientsearch.h"
 #include "ldap/ldapclientsearchconfig.h"
+#include <KContacts/Addressee>
+#include <KContacts/ContactGroup>
 
 #include <AkonadiCore/ChangeRecorder>
 #include <AkonadiCore/CollectionFilterProxyModel>
 #include <AkonadiCore/EntityTreeModel>
 #include <AkonadiCore/Monitor>
 
-#include <KContacts/Addressee>
-#include <KContacts/ContactGroup>
 #include <kldap/ldapserver.h>
 
 #include <KConfigGroup>
@@ -41,7 +41,6 @@
 #include <QHBoxLayout>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QToolButton>
 #include <QDBusConnection>
 
 using namespace KPIM;

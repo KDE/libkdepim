@@ -25,7 +25,6 @@
 #include "multiplyinglineeditor.h"
 #include "multiplyinglineview_p.h"
 
-#include <QDialog>
 
 #include <QHBoxLayout>
 using namespace KPIM;

@@ -35,9 +35,7 @@
 #include <AgentFilterProxyModel>
 #include <AgentInstanceCreateJob>
 
-#include <KContacts/Addressee>
 #include <KContacts/ContactGroup>
-
 #include <KLocalizedString>
 #include <KMessageBox>
 

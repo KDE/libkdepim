@@ -43,7 +43,6 @@ using KPIM::ProgressItem;
 using KPIM::ProgressManager;
 
 #include <KLocalizedString>
-#include <KIconLoader>
 
 #include <QEvent>
 #include <QFrame>

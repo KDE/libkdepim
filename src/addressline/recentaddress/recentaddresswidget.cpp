@@ -22,14 +22,11 @@
 #include "recentaddresses.h"
 
 #include <KConfig>
-#include <KConfigGroup>
 #include <KLineEdit>
 #include <QPushButton>
 #include <KMessageBox>
 #include <KLocalizedString>
 
-#include <QCoreApplication>
-#include <QLayout>
 #include <QVBoxLayout>
 #include <QListWidget>
 #include <QKeyEvent>

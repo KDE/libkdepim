@@ -42,7 +42,6 @@
 
 #include <kio/job.h>
 
-#include <QPointer>
 #include <QTimer>
 #include <QStandardPaths>
 

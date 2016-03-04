@@ -32,7 +32,6 @@
 
 #include "kdepim_export.h"
 
-#include <QHBoxLayout>
 #include <QFrame>
 
 class QResizeEvent;

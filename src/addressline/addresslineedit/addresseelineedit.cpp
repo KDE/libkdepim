@@ -27,6 +27,7 @@
 #include "addresseelineedit.h"
 #include "addresseelineedit_p.h"
 #include "ldap/ldapclientsearch.h"
+#include <KContacts/VCardConverter>
 
 #include <Job>
 #include <QRegularExpression>
@@ -37,15 +38,11 @@
 #include <KColorScheme>
 #include <KJobWidgets>
 #include <kdelibs4configmigrator.h>
-#include <KContacts/Addressee>
-#include <KContacts/ContactGroup>
-#include <KContacts/VCardConverter>
 #include <kcontacts/contactgrouptool.h>
 #include <KIO/StoredTransferJob>
 #include <Akonadi/Contact/ContactGroupExpandJob>
 #include <Akonadi/Contact/ContactGroupSearchJob>
 #include "libkdepim/recentaddresses.h"
-#include <KLDAP/LdapServer>
 
 #include <KCompletionBox>
 #include "libkdepim_debug.h"

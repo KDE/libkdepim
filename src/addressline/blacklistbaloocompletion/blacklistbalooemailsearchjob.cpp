@@ -21,7 +21,6 @@
 #include "blacklistbalooemailsearchjob.h"
 
 #include <AkonadiSearch/PIM/contactcompleter.h>
-#include <QStringList>
 using namespace KPIM;
 
 BlackListBalooEmailSearchJob::BlackListBalooEmailSearchJob(QObject *parent)

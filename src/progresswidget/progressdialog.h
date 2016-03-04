@@ -40,7 +40,6 @@
 
 #include <QScrollArea>
 #include <QMap>
-#include <QVBoxLayout>
 
 class QProgressBar;
 class QFrame;

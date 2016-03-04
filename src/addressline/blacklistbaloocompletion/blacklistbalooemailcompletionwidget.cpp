@@ -27,8 +27,9 @@
 #include <KLocalizedString>
 #include <KLineEdit>
 #include <QPushButton>
-#include <QBoxLayout>
 #include <QLabel>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
 #include <KConfigGroup>
 #include <KSharedConfig>
 #include <KListWidgetSearchLine>

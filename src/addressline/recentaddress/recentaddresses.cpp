@@ -33,7 +33,6 @@
 #include <KConfig>
 #include <KConfigGroup>
 #include "libkdepim_debug.h"
-#include <KLocalizedString>
 #include <KSharedConfig>
 #include <QCoreApplication>
 

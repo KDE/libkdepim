@@ -22,6 +22,7 @@
 #include "misc/broadcaststatus.h"
 #include "akonadi/contact/selectaddressbookdialog.h"
 
+#include <KContacts/ContactGroup>
 #include <CollectionDialog>
 #include <Akonadi/Contact/ContactSearchJob>
 #include <Item>
@@ -35,14 +36,11 @@
 #include <AgentFilterProxyModel>
 #include <AgentInstanceCreateJob>
 
-#include <KContacts/Addressee>
-#include <KContacts/ContactGroup>
 
 #include <KLocalizedString>
 #include <KMessageBox>
 
 #include <QPointer>
-#include <QTextDocument>
 
 using namespace KPIM;
 

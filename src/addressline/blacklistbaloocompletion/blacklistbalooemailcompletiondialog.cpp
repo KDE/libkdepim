@@ -21,9 +21,7 @@
 #include "blacklistbalooemailcompletiondialog.h"
 #include "blacklistbalooemailcompletionwidget.h"
 #include <KLocalizedString>
-#include <QHBoxLayout>
 #include <QVBoxLayout>
-#include <QLabel>
 #include <QPushButton>
 #include <KSharedConfig>
 #include <KConfigGroup>

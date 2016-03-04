@@ -45,7 +45,6 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QtDBus/QDBusConnection>
-#include <QTreeWidget>
 #include <KSharedConfig>
 #include <QDialogButtonBox>
 
