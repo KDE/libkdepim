@@ -36,7 +36,6 @@
 #include <AgentFilterProxyModel>
 #include <AgentInstanceCreateJob>
 
-
 #include <KLocalizedString>
 #include <KMessageBox>
 

@@ -25,7 +25,6 @@
 #include "multiplyinglineeditor.h"
 #include "multiplyinglineview_p.h"
 
-
 #include <QHBoxLayout>
 using namespace KPIM;
 MultiplyingLineEditor::MultiplyingLineEditor(MultiplyingLineFactory *factory, QWidget *parent)
