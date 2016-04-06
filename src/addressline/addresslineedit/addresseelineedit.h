@@ -69,7 +69,7 @@ public:
      * @param parent The parent object.
      * @param enableCompletion Whether autocompletion shall be enabled.
      */
-    explicit AddresseeLineEdit(QWidget *parent, bool enableCompletion = true);
+    explicit AddresseeLineEdit(QWidget *parent = Q_NULLPTR, bool enableCompletion = true);
 
     /**
      * Destroys the addressee line edit.
