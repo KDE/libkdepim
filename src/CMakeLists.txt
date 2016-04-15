@@ -339,7 +339,7 @@ add_library(kcm_ldap MODULE ${kcm_ldap_SRCS})
 
 target_link_libraries(kcm_ldap   KF5::Libkdepim KF5::IconThemes KF5::KCMUtils KF5::I18n KF5::Ldap Qt5::Core)
 
-kcoreaddons_desktop_to_json(kcm_ldap ldap/kcmldap.desktop)
+kcoreaddons_desktop_to_json(kcm_ldap ldap/kcmldap.desktop DEFAULT_SERVICE_TYPE)
 
 install(TARGETS kcm_ldap DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
