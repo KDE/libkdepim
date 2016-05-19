@@ -30,6 +30,7 @@
 #include <kcontacts/contactgroup.h>
 
 class KConfig;
+class QToolButton;
 
 namespace KPIM
 {
@@ -58,6 +59,8 @@ public:
 
     bool showOU() const;
     void setShowOU(bool showOU);
+
+    void setIcon(const QIcon &icon, const QString &tooltip);
 
     bool useCompletion() const;
     void setUseCompletion(bool useCompletion);
@@ -133,6 +136,7 @@ private Q_SLOTS:
 
 private:
     AddresseeLineEdit *q;
+    QToolButton *m_toolButton;
     QTimer m_delayedQueryTimer;
     QColor m_alternateColor;
     QStringList m_balooBlackList;
