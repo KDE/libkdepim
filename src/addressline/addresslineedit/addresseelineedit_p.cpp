@@ -187,6 +187,8 @@ void AddresseeLineEditPrivate::init()
 
         loadBalooBlackList();
     }
+    connect(q, &AddresseeLineEdit::textCompleted, q, &AddresseeLineEdit::slotEditingFinished);
+    connect(q, &AddresseeLineEdit::editingFinished, q, &AddresseeLineEdit::slotEditingFinished);
 }
 
 void AddresseeLineEditPrivate::setIcon(const QIcon &icon, const QString &tooltip)
