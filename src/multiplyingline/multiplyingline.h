@@ -156,21 +156,6 @@ public:
     virtual void setCompletionMode(KCompletion::CompletionMode mode) = 0;
 
     /**
-      If the view is resized while the completion popup is open, things might start
-      to overlap. This method should hide() then show() the completionBox for any
-      currently visible completion boxes.
-      (somewhat hacky) Example:
-      void YourLine::moveCompletionPopup() {
-        if( mLineEdit->completionBox( false ) ) { // check if box is not null without creating it
-          if( mLineEdit->completionBox()->isVisible() ) { // check if it is currently being shown
-            mLineEdit->completionBox()->hide(); // trigger the moving
-            mLineEdit->completionBox()->show();
-          }
-        }
-      */
-    virtual void moveCompletionPopup() = 0;
-
-    /**
      * Re implement this method if you need to do something
      * before a line is deleted.
      *

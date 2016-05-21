@@ -119,7 +119,6 @@ protected Q_SLOTS:
     void slotUpPressed(KPIM::MultiplyingLine *);
     void slotDecideLineDeletion(KPIM::MultiplyingLine *);
     void slotDeleteLine();
-    void moveCompletionPopup();
     void moveScrollBarToEnd();
 
 private:
