@@ -73,6 +73,7 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
     connect(mListView, &QListWidget::itemSelectionChanged, this, &RecentAddressWidget::slotSelectionChanged);
     // maybe supplied lineedit has some text already
     slotTypedSomething(mLineEdit->text());
+    mDirty = false;
 }
 
 RecentAddressWidget::~RecentAddressWidget()

@@ -140,9 +140,12 @@ public:
     KConfig *recentAddressConfig() const;
     void configureCompletion();
 
+    void setIcon(const QIcon &icon, const QString &tooltip = QString());
+
 Q_SIGNALS:
     void textCompleted();
     void addAddress(const QString &address);
+    void iconClicked();
 
 public Q_SLOTS:
     /**

@@ -114,6 +114,11 @@ void AddresseeLineEdit::setFont(const QFont &font)
     }
 }
 
+void AddresseeLineEdit::setIcon(const QIcon &icon, const QString &tooltip)
+{
+    d->setIcon(icon, tooltip);
+}
+
 bool AddresseeLineEdit::expandIntern() const
 {
     return d->expandIntern();

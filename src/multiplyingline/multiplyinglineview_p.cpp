@@ -213,7 +213,6 @@ void MultiplyingLineView::resizeView()
 
     parentWidget()->layout()->activate();
     Q_EMIT sizeHintChanged();
-    QTimer::singleShot(0, this, &MultiplyingLineView::moveCompletionPopup);
 }
 
 void MultiplyingLineView::activateLine(MultiplyingLine *line)
@@ -382,13 +381,6 @@ int MultiplyingLineView::setFirstColumnWidth(int w)
 
     resizeView();
     return mFirstColumnWidth;
-}
-
-void MultiplyingLineView::moveCompletionPopup()
-{
-    foreach (MultiplyingLine *const line, mLines) {
-        line->moveCompletionPopup();
-    }
 }
 
 QList< MultiplyingLine * > MultiplyingLineView::lines() const

@@ -32,6 +32,7 @@
 #include <AkonadiCore/ItemFetchScope>
 #include <AkonadiCore/Job>
 #include <QApplication>
+#include <QToolButton>
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <AkonadiSearch/PIM/contactcompleter.h>
@@ -119,6 +120,17 @@ public:
 
 void AddresseeLineEditPrivate::init()
 {
+    m_toolButton = new QToolButton(q);
+    m_toolButton->setVisible(false);
+    m_toolButton->setCursor(Qt::ArrowCursor);
+    const int size = q->sizeHint().height() - 5;
+    m_toolButton->setFixedSize(size, size);
+    int padding = (q->sizeHint().height() - size) / 2;
+    m_toolButton->move(2, padding);
+    m_toolButton->setStyleSheet(QStringLiteral("QToolButton { border: none; }"));
+    connect(m_toolButton, &QToolButton::clicked, q, &AddresseeLineEdit::iconClicked);
+
+
     if (!s_static.exists()) {
         s_static->completion->setOrder(KCompletion::Weighted);
         s_static->completion->setIgnoreCase(true);
@@ -174,6 +186,22 @@ void AddresseeLineEditPrivate::init()
         mAutoGroupExpand = group.readEntry("AutoGroupExpand", false);
 
         loadBalooBlackList();
+    }
+    connect(q, &AddresseeLineEdit::textCompleted, q, &AddresseeLineEdit::slotEditingFinished);
+    connect(q, &AddresseeLineEdit::editingFinished, q, &AddresseeLineEdit::slotEditingFinished);
+}
+
+void AddresseeLineEditPrivate::setIcon(const QIcon &icon, const QString &tooltip)
+{
+    if (icon.isNull()) {
+        m_toolButton->setVisible(false);
+        q->setStyleSheet(QString());
+    } else {
+        m_toolButton->setIcon(icon);
+        m_toolButton->setToolTip(tooltip);
+        const int padding = m_toolButton->width() - q->style()->pixelMetric(QStyle::PM_DefaultFrameWidth);
+        q->setStyleSheet(QStringLiteral("QLineEdit { padding-left: %1px }").arg(padding));
+        m_toolButton->setVisible(true);
     }
 }
 

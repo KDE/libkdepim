@@ -156,6 +156,8 @@ public:
     void setDynamicSizeHint(bool dynamic);
     bool dynamicSizeHint() const;
 
+    virtual QList<MultiplyingLine *> lines() const;
+
 Q_SIGNALS:
     void focusUp();
     void focusDown();
@@ -170,7 +172,6 @@ public Q_SLOTS:
     void setFocusBottom();
 
 protected:
-    virtual QList<MultiplyingLine *> lines() const;
     virtual MultiplyingLine *activeLine() const;
     bool mModified;
 
