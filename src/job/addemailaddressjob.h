@@ -68,6 +68,7 @@ public:
      */
     Akonadi::Item contact() const;
 
+    void setInteractive(bool b);
 private:
     //@cond PRIVATE
     class Private;

@@ -47,7 +47,10 @@ class Q_DECL_HIDDEN AddEmailAddressJob::Private
 {
 public:
     Private(AddEmailAddressJob *qq, const QString &emailString, QWidget *parentWidget)
-        : q(qq), mCompleteAddress(emailString), mParentWidget(parentWidget)
+        : q(qq),
+          mCompleteAddress(emailString),
+          mParentWidget(parentWidget),
+          mInteractive(true)
     {
         KContacts::Addressee::parseEmailAddress(emailString, mName, mEmail);
     }
@@ -76,16 +79,18 @@ public:
 
         const KContacts::Addressee::List contacts = searchJob->contacts();
         if (!contacts.isEmpty()) {
-            const QString text =
-                xi18nc("@info",
-                       "A contact with the email address <email>%1</email> "
-                       "is already in your address book.", mCompleteAddress);
+            if (mInteractive) {
+                const QString text =
+                        xi18nc("@info",
+                               "A contact with the email address <email>%1</email> "
+                               "is already in your address book.", mCompleteAddress);
 
-            KMessageBox::information(
-                mParentWidget,
-                text,
-                QString(),
-                QStringLiteral("alreadyInAddressBook"));
+                KMessageBox::information(
+                            mParentWidget,
+                            text,
+                            QString(),
+                            QStringLiteral("alreadyInAddressBook"));
+            }
             q->setError(UserDefinedError);
             q->emitResult();
             return;
@@ -215,42 +220,48 @@ public:
         const Akonadi::ItemCreateJob *createJob = qobject_cast<Akonadi::ItemCreateJob *>(job);
         mItem = createJob->item();
 
-        const QString text =
-            xi18nc("@info",
-                   "<para>A contact for <email>%1</email> was successfully added "
-                   "to your address book.</para>"
-                   "<para>Do you want to edit this new contact now?</para>",
-                   mCompleteAddress);
+        if (mInteractive) {
+            const QString text =
+                    xi18nc("@info",
+                           "<para>A contact for <email>%1</email> was successfully added "
+                           "to your address book.</para>"
+                           "<para>Do you want to edit this new contact now?</para>",
+                           mCompleteAddress);
 
-        if (KMessageBox::questionYesNo(
-                    mParentWidget,
-                    text,
-                    QString(),
-                    KStandardGuiItem::yes(),
-                    KStandardGuiItem::no(),
-                    QStringLiteral("addedtokabc")) == KMessageBox::Yes) {
-            QPointer<Akonadi::ContactEditorDialog> dlg =
-                new Akonadi::ContactEditorDialog(Akonadi::ContactEditorDialog::EditMode,
-                                                 mParentWidget);
-            dlg->setContact(mItem);
-            connect(dlg, SIGNAL(contactStored(Akonadi::Item)),
-                    q, SLOT(contactStored(Akonadi::Item)));
-            connect(dlg, SIGNAL(error(QString)),
-                    q, SLOT(slotContactEditorError(QString)));
-            dlg->exec();
-            delete dlg;
+            if (KMessageBox::questionYesNo(
+                        mParentWidget,
+                        text,
+                        QString(),
+                        KStandardGuiItem::yes(),
+                        KStandardGuiItem::no(),
+                        QStringLiteral("addedtokabc")) == KMessageBox::Yes) {
+                QPointer<Akonadi::ContactEditorDialog> dlg =
+                        new Akonadi::ContactEditorDialog(Akonadi::ContactEditorDialog::EditMode,
+                                                         mParentWidget);
+                dlg->setContact(mItem);
+                connect(dlg, SIGNAL(contactStored(Akonadi::Item)),
+                        q, SLOT(contactStored(Akonadi::Item)));
+                connect(dlg, SIGNAL(error(QString)),
+                        q, SLOT(slotContactEditorError(QString)));
+                dlg->exec();
+                delete dlg;
+            }
         }
         q->emitResult();
     }
 
     void slotContactEditorError(const QString &error)
     {
-        KMessageBox::error(mParentWidget, i18n("Contact cannot be stored: %1", error), i18n("Failed to store contact"));
+        if (mInteractive) {
+            KMessageBox::error(mParentWidget, i18n("Contact cannot be stored: %1", error), i18n("Failed to store contact"));
+        }
     }
 
     void contactStored(const Akonadi::Item &)
     {
-        KPIM::BroadcastStatus::instance()->setStatusMsg(i18n("Contact created successfully"));
+        if (mInteractive) {
+            KPIM::BroadcastStatus::instance()->setStatusMsg(i18n("Contact created successfully"));
+        }
     }
 
     AddEmailAddressJob *q;
@@ -259,6 +270,7 @@ public:
     QString mName;
     QWidget *mParentWidget;
     Akonadi::Item mItem;
+    bool mInteractive;
 };
 
 AddEmailAddressJob::AddEmailAddressJob(const QString &email,
@@ -285,6 +297,11 @@ void AddEmailAddressJob::start()
 Akonadi::Item AddEmailAddressJob::contact() const
 {
     return d->mItem;
+}
+
+void AddEmailAddressJob::setInteractive(bool b)
+{
+    d->mInteractive = b;
 }
 
 #include "moc_addemailaddressjob.cpp"
