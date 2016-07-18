@@ -42,7 +42,7 @@ QTextDocument *LogItemDelegate::document(const QStyleOptionViewItem &option, con
     QTextDocument *document = new QTextDocument(Q_NULLPTR);
     document->setDocumentMargin(1);
     const QColor textColor = index.data(Qt::ForegroundRole).value<QColor>();
-    QStyleOptionViewItemV4 option4 = option;
+    QStyleOptionViewItem option4 = option;
     QStyledItemDelegate::initStyleOption(&option4, index);
 
     QString text = option4.text;
@@ -71,7 +71,7 @@ void LogItemDelegate::paint(QPainter *painter, const QStyleOptionViewItem &optio
 
     QPen pen = painter->pen();
 
-    QStyleOptionViewItemV4 opt(option);
+    QStyleOptionViewItem opt(option);
     opt.showDecorationSelected = true;
     QApplication::style()->drawPrimitive(QStyle::PE_PanelItemViewItem, &opt, painter);
     painter->save();
