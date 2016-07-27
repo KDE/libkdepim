@@ -36,7 +36,7 @@ Q_SIGNALS:
     void newSearch();
     void saveChanges();
 
-private Q_SLOTS:
+private:
     void slotSaveBlackList();
     void slotSearch();
 };

@@ -219,10 +219,9 @@ protected:
     void insertEmails(const QStringList &emails);
     void loadContacts();
 
-private Q_SLOTS:
+private:
     void groupExpandResult(KJob *job);
     void slotToggleExpandGroups();
-private:
     bool eventFilter(QObject *, QEvent *) Q_DECL_OVERRIDE;
 
     AddresseeLineEditPrivate *const d;

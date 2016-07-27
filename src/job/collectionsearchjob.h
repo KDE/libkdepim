@@ -42,12 +42,10 @@ public:
 
     Akonadi::Collection::List matchingCollections() const;
 
-private Q_SLOTS:
+private:
     void onCollectionsReceived(const Akonadi::Collection::List &);
     void onCollectionsFetched(KJob *);
     void onAncestorsFetched(KJob *);
-
-private:
     CollectionSearchJobPrivate *const d;
 };
 

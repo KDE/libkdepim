@@ -40,7 +40,7 @@ public:
     void save();
     void load();
     void setEmailBlackList(const QStringList &list);
-private Q_SLOTS:
+private:
     void slotSelectionChanged();
     void slotUnselectEmails();
     void slotSelectEmails();
@@ -51,7 +51,6 @@ private Q_SLOTS:
     void slotCheckIfUpdateBlackListIsNeeded();
     void slotSaveChanges();
     void slotShowAllBlacklistedEmail();
-private:
     void hideMoreResultAndChangeLimit();
     QStringList mOriginalExcludeDomain;
     QLabel *mNumberOfEmailsFound;

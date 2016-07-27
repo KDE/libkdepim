@@ -35,9 +35,8 @@ public:
 
     void setEmailBlackList(const QStringList &list);
 
-private Q_SLOTS:
-    void slotSave();
 private:
+    void slotSave();
     void writeConfig();
     void readConfig();
     BlackListBalooEmailCompletionDialogPrivate *const d;

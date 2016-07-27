@@ -45,10 +45,9 @@ public:
     void setRecentAddresses(const QStringList &lst);
     bool recentAddressWasChanged() const;
     void storeAddresses(KConfig *config);
-private Q_SLOTS:
-    void slotSave();
 
 private:
+    void slotSave();
     void readConfig();
     void writeConfig();
     CompletionConfigureDialogPrivate *const d;

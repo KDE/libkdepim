@@ -81,13 +81,11 @@ public:
 Q_SIGNALS:
     void completionOrderChanged();
 
-private Q_SLOTS:
+private:
     void rowsInserted(const QModelIndex &parent, int start, int end);
     void slotSelectionChanged();
     void slotMoveUp();
     void slotMoveDown();
-
-private:
     void readConfig();
     void writeConfig();
     void addRecentAddressItem();

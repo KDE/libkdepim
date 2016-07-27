@@ -41,17 +41,15 @@ public:
     void storeAddresses(KConfig *config);
     bool wasChanged() const;
 
-private Q_SLOTS:
-    void slotAddItem();
-    void slotRemoveItem();
-    void slotSelectionChanged();
-    void slotTypedSomething(const QString &);
-
 protected:
     void updateButtonState();
     bool eventFilter(QObject *o, QEvent *e) Q_DECL_OVERRIDE;
 
 private:
+    void slotAddItem();
+    void slotRemoveItem();
+    void slotSelectionChanged();
+    void slotTypedSomething(const QString &);
     QPushButton *mNewButton, *mRemoveButton;
     QListWidget *mListView;
     KLineEdit *mLineEdit;
