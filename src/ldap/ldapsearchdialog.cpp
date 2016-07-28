@@ -558,6 +558,7 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     mainLayout->addWidget(buttonBox);
 
     QVBoxLayout *topLayout = new QVBoxLayout(page);
+    topLayout->setMargin(0);
 
     QGroupBox *groupBox = new QGroupBox(i18n("Search for Addresses in Directory"),
                                         page);
