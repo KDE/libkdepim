@@ -31,8 +31,8 @@ AddresseeLineEditStatic::AddresseeLineEditStatic()
       ldapTimer(0),
       ldapSearch(0),
       ldapLineEdit(0),
-      akonadiSession(new Akonadi::Session("contactsCompletionSession")),
-      balooCompletionSource(0)
+      balooCompletionSource(0),
+      m_akonadiSession(Q_NULLPTR)
 {
 }
 
@@ -105,4 +105,12 @@ void AddresseeLineEditStatic::removeCompletionSource(const QString &source)
         completionSourceWeights.remove(source);
         completion->clear();
     }
+}
+
+Akonadi::Session *AddresseeLineEditStatic::akonadiSession()
+{
+    if (!m_akonadiSession) {
+        m_akonadiSession = new Akonadi::Session("contactsCompletionSession");
+    }
+    return m_akonadiSession;
 }

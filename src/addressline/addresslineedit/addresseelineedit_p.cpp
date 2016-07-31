@@ -512,7 +512,7 @@ void AddresseeLineEditPrivate::akonadiPerformSearch()
     s_static->akonadiJobsInFlight.clear();
 
     // now start new jobs
-    Akonadi::ContactSearchJob *contactJob = new Akonadi::ContactSearchJob(s_static->akonadiSession);
+    Akonadi::ContactSearchJob *contactJob = new Akonadi::ContactSearchJob(s_static->akonadiSession());
     contactJob->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
     contactJob->setQuery(Akonadi::ContactSearchJob::NameOrEmail, m_searchString,
                          Akonadi::ContactSearchJob::ContainsWordBoundaryMatch);
@@ -521,7 +521,7 @@ void AddresseeLineEditPrivate::akonadiPerformSearch()
     connect(contactJob, &KJob::result,
             this, &AddresseeLineEditPrivate::slotAkonadiSearchResult);
 
-    Akonadi::ContactGroupSearchJob *groupJob = new Akonadi::ContactGroupSearchJob(s_static->akonadiSession);
+    Akonadi::ContactGroupSearchJob *groupJob = new Akonadi::ContactGroupSearchJob(s_static->akonadiSession());
     groupJob->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
     groupJob->setQuery(Akonadi::ContactGroupSearchJob::Name, m_searchString,
                        Akonadi::ContactGroupSearchJob::ContainsMatch);
@@ -802,7 +802,7 @@ void AddresseeLineEditPrivate::slotAkonadiHandleItems(const Akonadi::Item::List 
             Akonadi::CollectionFetchJob *collectionJob =
                 new Akonadi::CollectionFetchJob(item.parentCollection(),
                                                 Akonadi::CollectionFetchJob::Base,
-                                                s_static->akonadiSession);
+                                                s_static->akonadiSession());
             connect(collectionJob, &Akonadi::CollectionFetchJob::collectionsReceived,
                     this, &AddresseeLineEditPrivate::slotAkonadiCollectionsReceived);
             /* we don't want to start multiple fetch jobs for the same collection,

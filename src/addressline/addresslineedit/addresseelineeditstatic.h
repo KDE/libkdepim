@@ -52,6 +52,8 @@ public:
 
     void removeCompletionSource(const QString &source);
 
+    Akonadi::Session *akonadiSession();
+
     KMailCompletion *completion;
     CompletionItemsMap completionItemMap;
     QStringList completionSources;
@@ -83,9 +85,11 @@ public:
     QMap<Akonadi::Collection::Id, collectionInfo> akonadiCollectionToCompletionSourceMap;
     // a list of akonadi items (contacts) that have not had their collection fetched yet
     Akonadi::Item::List akonadiPendingItems;
-    Akonadi::Session *akonadiSession;
     QVector<QWeakPointer<Akonadi::Job> > akonadiJobsInFlight;
     int balooCompletionSource;
+
+private:
+    Akonadi::Session *m_akonadiSession;
 };
 }
 #endif // ADDRESSEELINEEDITSTATIC_H
