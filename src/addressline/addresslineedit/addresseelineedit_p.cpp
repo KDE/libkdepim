@@ -61,6 +61,7 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
       m_useSemicolonAsSeparator(false),
       m_showOU(false),
       m_enableBalooSearch(true),
+      m_enableAkonadiSearch(true),
       mExpandIntern(true),
       mAutoGroupExpand(false),
       mShowRecentAddresses(true)
@@ -489,7 +490,9 @@ void AddresseeLineEditPrivate::slotTriggerDelayedQueries()
 
     // We send a contactsearch job through akonadi.
     // This not only searches baloo but also servers if remote search is enabled
-    akonadiPerformSearch();
+    if (m_enableAkonadiSearch) {
+        akonadiPerformSearch();
+    }
 }
 
 void AddresseeLineEditPrivate::startSearches()
@@ -981,6 +984,16 @@ bool AddresseeLineEditPrivate::enableBalooSearch() const
 void AddresseeLineEditPrivate::setEnableBalooSearch(bool enableBalooSearch)
 {
     m_enableBalooSearch = enableBalooSearch;
+}
+
+bool AddresseeLineEditPrivate::enableAkonadiSearch() const
+{
+    return m_enableAkonadiSearch;
+}
+
+void AddresseeLineEditPrivate::setEnableAkonadiSearch(bool enableAkonadiSearch)
+{
+    m_enableAkonadiSearch = enableAkonadiSearch;
 }
 
 QString AddresseeLineEditPrivate::searchString() const

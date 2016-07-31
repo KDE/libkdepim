@@ -83,6 +83,9 @@ public:
     bool useSemicolonAsSeparator() const;
     void setUseSemicolonAsSeparator(bool useSemicolonAsSeparator);
 
+    bool enableAkonadiSearch() const;
+    void setEnableAkonadiSearch(bool enableAkonadiSearch);
+
     void removeCompletionSource(const QString &source);
     int addCompletionSource(const QString &source, int weight);
     void restartTime(const QString &searchString);
@@ -155,6 +158,7 @@ private:
     bool m_useSemicolonAsSeparator;
     bool m_showOU;
     bool m_enableBalooSearch;
+    bool m_enableAkonadiSearch;
     bool mExpandIntern;
     bool mAutoGroupExpand;
     bool mShowRecentAddresses;

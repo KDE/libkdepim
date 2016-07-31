@@ -149,6 +149,21 @@ void AddresseeLineEdit::setEnableBalooSearch(bool enable)
     d->setEnableBalooSearch(enable);
 }
 
+bool AddresseeLineEdit::enableBalooSearch() const
+{
+    return d->enableAkonadiSearch();
+}
+
+void AddresseeLineEdit::setEnableAkonadiSearch(bool enable)
+{
+    d->setEnableAkonadiSearch(enable);
+}
+
+bool AddresseeLineEdit::enableAkonadiSearch() const
+{
+    return d->enableAkonadiSearch();
+}
+
 void AddresseeLineEdit::allowSemicolonAsSeparator(bool useSemicolonAsSeparator)
 {
     d->setUseSemicolonAsSeparator(useSemicolonAsSeparator);
@@ -913,7 +928,7 @@ void AddresseeLineEdit::slotEditingFinished()
     d->mightBeGroupJobsClear();
     d->groupsClear();
 
-    if (!text().isEmpty()) {
+    if (!text().isEmpty() && enableAkonadiSearch()) {
         const QStringList addresses = KEmailAddress::splitAddressList(text());
         Q_FOREACH (const QString &address, addresses) {
             Akonadi::ContactGroupSearchJob *job = new Akonadi::ContactGroupSearchJob();

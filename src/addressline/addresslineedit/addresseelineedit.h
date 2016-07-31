@@ -87,6 +87,9 @@ public:
     void setFont(const QFont &font);
 
     void setEnableBalooSearch(bool enable);
+    bool enableBalooSearch() const;
+    void setEnableAkonadiSearch(bool enable);
+    bool enableAkonadiSearch() const;
 
     bool isCompletionEnabled() const;
 
