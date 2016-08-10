@@ -67,29 +67,26 @@ CompletionOrderEditor::CompletionOrderEditor(KLDAP::LdapClientSearch *ldapSearch
     : QDialog(parent), d(new KPIM::CompletionOrderEditorPrivate)
 {
     setWindowTitle(i18n("Edit Completion Order"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
+    d->mCompletionOrderWidget = new CompletionOrderWidget(this);
+    d->mCompletionOrderWidget->setObjectName(QStringLiteral("completionorderwidget"));
+
+    mainLayout->addWidget(d->mCompletionOrderWidget);
+
+    d->mCompletionOrderWidget->setLdapClientSearch(ldapSearch);
+
+    d->mCompletionOrderWidget->loadCompletionItems();
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &CompletionOrderEditor::slotOk);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &CompletionOrderEditor::reject);
     okButton->setDefault(true);
-
-    QWidget *page = new QWidget(this);
-    QHBoxLayout *pageHBoxLayout = new QHBoxLayout(page);
-    pageHBoxLayout->setMargin(0);
-
-    d->mCompletionOrderWidget = new CompletionOrderWidget(this);
-    d->mCompletionOrderWidget->setObjectName(QStringLiteral("completionorderwidget"));
-
-    mainLayout->addWidget(d->mCompletionOrderWidget);
     mainLayout->addWidget(buttonBox);
 
-    d->mCompletionOrderWidget->setLdapClientSearch(ldapSearch);
-
-    d->mCompletionOrderWidget->loadCompletionItems();
     readConfig();
 }
 
