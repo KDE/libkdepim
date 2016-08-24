@@ -64,7 +64,8 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
       m_enableAkonadiSearch(true),
       mExpandIntern(true),
       mAutoGroupExpand(false),
-      mShowRecentAddresses(true)
+      mShowRecentAddresses(true),
+      mCanDeleteLineEdit(true)
 {
     if (!s_networkConfigMgr) {
         s_networkConfigMgr = new QNetworkConfigurationManager(QCoreApplication::instance());
@@ -904,6 +905,16 @@ void AddresseeLineEditPrivate::slotConfigureBalooBlackList()
         updateBalooBlackList();
     }
     delete dlg;
+}
+
+bool AddresseeLineEditPrivate::canDeleteLineEdit() const
+{
+    return mCanDeleteLineEdit;
+}
+
+void AddresseeLineEditPrivate::setCanDeleteLineEdit(bool inprogressToConfigureCompletion)
+{
+    mCanDeleteLineEdit = inprogressToConfigureCompletion;
 }
 
 KConfig *AddresseeLineEditPrivate::recentAddressConfig() const

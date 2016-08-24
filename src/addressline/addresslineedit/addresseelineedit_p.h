@@ -119,6 +119,9 @@ public:
 
     KConfig *recentAddressConfig() const;
 
+    bool canDeleteLineEdit() const;
+    void setCanDeleteLineEdit(bool inprogressToConfigureCompletion);
+
 public Q_SLOTS:
     void slotShowOUChanged(bool);
 
@@ -162,6 +165,7 @@ private:
     bool mExpandIntern;
     bool mAutoGroupExpand;
     bool mShowRecentAddresses;
+    bool mCanDeleteLineEdit;
 };
 }
 

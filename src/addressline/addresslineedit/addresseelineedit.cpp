@@ -632,8 +632,14 @@ QMenu *AddresseeLineEdit::createStandardContextMenu()
 }
 #endif
 
+bool AddresseeLineEdit::canDeleteLineEdit() const
+{
+    return d->canDeleteLineEdit();
+}
+
 void AddresseeLineEdit::configureCompletion()
 {
+    d->setCanDeleteLineEdit(false);
     QScopedPointer<KPIM::CompletionConfigureDialog> dlg(new KPIM::CompletionConfigureDialog(this));
     dlg->setRecentAddresses(KPIM::RecentAddresses::self(recentAddressConfig())->addresses());
     dlg->setLdapClientSearch(ldapSearch());
@@ -648,6 +654,7 @@ void AddresseeLineEdit::configureCompletion()
             updateCompletionOrder();
         }
     }
+    d->setCanDeleteLineEdit(true);
 }
 
 void AddresseeLineEdit::slotToggleExpandGroups()
