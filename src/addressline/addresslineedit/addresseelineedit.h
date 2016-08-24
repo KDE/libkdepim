@@ -142,6 +142,7 @@ public:
 
     void setIcon(const QIcon &icon, const QString &tooltip = QString());
 
+    bool canDeleteLineEdit() const;
 Q_SIGNALS:
     void textCompleted();
     void addAddress(const QString &address);

@@ -112,6 +112,8 @@ public:
     */
     virtual bool isEmpty() const = 0;
 
+    virtual bool canDeleteLineEdit() const = 0;
+
     /**
       Set the width of the left most column to be the argument width.
       This method allows other widgets to align their label/combobox column with ours
