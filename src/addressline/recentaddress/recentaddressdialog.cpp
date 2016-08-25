@@ -34,21 +34,20 @@ RecentAddressDialog::RecentAddressDialog(QWidget *parent)
     : QDialog(parent)
 {
     setWindowTitle(i18n("Edit Recent Addresses"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
     mRecentAddressWidget = new RecentAddressWidget(this);
     mRecentAddressWidget->setObjectName(QStringLiteral("recentaddresswidget"));
 
     mainLayout->addWidget(mRecentAddressWidget);
     mainLayout->addWidget(buttonBox);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
-    okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    okButton->setDefault(true);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &RecentAddressDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &RecentAddressDialog::reject);
-    okButton->setDefault(true);
     setModal(true);
     readConfig();
 }
