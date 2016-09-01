@@ -310,9 +310,8 @@ void KCMLdap::defaults()
 
 void KCMLdap::initGUI()
 {
-    QVBoxLayout *layout = new QVBoxLayout;
+    QVBoxLayout *layout = new QVBoxLayout(this);
     layout->setMargin(0);
-    setLayout(layout);
 
     QGroupBox *groupBox = new QGroupBox(i18n("LDAP Servers"), this);
     QVBoxLayout *mainLayout = new QVBoxLayout(groupBox);

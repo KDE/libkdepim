@@ -40,8 +40,7 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     : QWidget(parent),
       mLimit(500)
 {
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    setLayout(mainLayout);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     QHBoxLayout *searchLayout = new QHBoxLayout;
     mainLayout->addLayout(searchLayout);
