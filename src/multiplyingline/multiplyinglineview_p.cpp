@@ -152,8 +152,6 @@ void MultiplyingLineView::slotDecideLineDeletion(MultiplyingLine *line)
     if (!line->isEmpty()) {
         mModified = true;
     }
-    qDebug()<<" void MultiplyingLineView::slotDecideLineDeletion(MultiplyingLine *line)" << line;
-    qDebug()<<" void MultiplyingLineView::slotDecideLineDeletion(MultiplyingLine *line)" << line->canDeleteLineEdit();
     if (mLines.count() == 1) {
         line->clear();
     } else if (!line->canDeleteLineEdit()) {
