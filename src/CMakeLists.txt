@@ -75,6 +75,7 @@ set(kdepim_addressline_LIB_SRCS
    addressline/recentaddress/recentaddressdialog.cpp
    addressline/recentaddress/recentaddresswidget.cpp
    addressline/recentaddress/recentaddresses.cpp
+   addressline/addresslineedit/addresseelineeditutil.cpp
 )
 
 set(kdepim_addressline_blacklist_baloo_LIB_SRCS

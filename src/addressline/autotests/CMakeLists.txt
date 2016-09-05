@@ -27,3 +27,8 @@ add_libkdepim_addressline_unittest(completionconfiguredialogtest
 add_libkdepim_addressline_unittest(completionorderwidgettest
     completionorderwidgettest.cpp
 )
+
+add_libkdepim_addressline_unittest(addresseelineeditutiltest
+    addresseelineeditutiltest.cpp
+    ../addresslineedit/addresseelineeditutil.cpp
+)

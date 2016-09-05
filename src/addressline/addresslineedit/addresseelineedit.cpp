@@ -26,6 +26,7 @@
 
 #include "addresseelineedit.h"
 #include "addresseelineedit_p.h"
+#include "addresseelineeditutil.h"
 #include "ldap/ldapclientsearch.h"
 #include <KContacts/VCardConverter>
 
@@ -238,25 +239,7 @@ void AddresseeLineEdit::insert(const QString &t)
         return;
     }
 
-    // remove newlines in the to-be-pasted string
-    QStringList lines = newText.split(QRegExp(QLatin1String("\r?\n")), QString::SkipEmptyParts);
-    QStringList::iterator end(lines.end());
-    for (QStringList::iterator it = lines.begin(); it != end; ++it) {
-        // remove trailing commas and whitespace
-        (*it).remove(QRegExp(QLatin1String(",?\\s*$")));
-    }
-    newText = lines.join(QStringLiteral(", "));
-
-    if (newText.startsWith(QStringLiteral("mailto:"))) {
-        const QUrl url(newText);
-        newText = url.path();
-    } else if (newText.indexOf(QStringLiteral(" at ")) != -1) {
-        // Anti-spam stuff
-        newText.replace(QStringLiteral(" at "), QStringLiteral("@"));
-        newText.replace(QStringLiteral(" dot "), QStringLiteral("."));
-    } else if (newText.indexOf(QStringLiteral("(at)")) != -1) {
-        newText.replace(QRegularExpression(QStringLiteral("\\s*\\(at\\)\\s*")), QStringLiteral("@"));
-    }
+    newText = KPIM::AddresseeLineEditUtil::adaptPasteMails(newText);
 
     QString contents = text();
     int start_sel = 0;
