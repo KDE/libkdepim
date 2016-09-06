@@ -41,6 +41,12 @@ void AddresseeLineEditUtilTest::shouldAdaptPasteMails_data()
     QTest::newRow("onemail") << QStringLiteral("foo@kde.org") << QStringLiteral("foo@kde.org");
     QTest::newRow("onemailwithat") << QStringLiteral("foo (at) kde.org") << QStringLiteral("foo@kde.org");
     QTest::newRow("text") << QStringLiteral("fookde.org") << QStringLiteral("fookde.org");
+    QTest::newRow("onemailwithdot") << QStringLiteral("foo at kde dot org") << QStringLiteral("foo@kde.org");
+    QTest::newRow("mailto") << QStringLiteral("mailto:foo@kde.org") << QStringLiteral("foo@kde.org");
+    QTest::newRow("multimail") << QStringLiteral("foo@kde.org,\r\n     bla@kde.org,blo@kde.org") << QStringLiteral("foo@kde.org,      bla@kde.org,blo@kde.org");
+    QTest::newRow("multimail-2") << QStringLiteral("foo@kde.org,\r\n     bla@kde.org,blo@kde.org,   ") << QStringLiteral("foo@kde.org,      bla@kde.org,blo@kde.org");
+    QTest::newRow("multimail-3") << QStringLiteral("foo@kde.org,\r\n     bla@kde.org,blo@kde.org,\n") << QStringLiteral("foo@kde.org,      bla@kde.org,blo@kde.org");
+    QTest::newRow("multimail-4") << QStringLiteral("foo@kde.org,\r\n     bla@kde.org,blo@kde.org,    \n") << QStringLiteral("foo@kde.org,      bla@kde.org,blo@kde.org");
 }
 
 void AddresseeLineEditUtilTest::shouldAdaptPasteMails()
