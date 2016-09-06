@@ -19,7 +19,6 @@
 
 
 #include "addresseelineeditutil.h"
-#include <QRegExp>
 #include <QRegularExpression>
 #include <QUrl>
 
@@ -28,11 +27,11 @@ QString KPIM::AddresseeLineEditUtil::adaptPasteMails(QString str)
 {
     QString newText = str;
     // remove newlines in the to-be-pasted string
-    QStringList lines = newText.split(QRegExp(QLatin1String("\r?\n")), QString::SkipEmptyParts);
+    QStringList lines = newText.split(QRegularExpression(QLatin1String("\r?\n")), QString::SkipEmptyParts);
     QStringList::iterator end(lines.end());
     for (QStringList::iterator it = lines.begin(); it != end; ++it) {
         // remove trailing commas and whitespace
-        (*it).remove(QRegExp(QLatin1String(",?\\s*$")));
+        (*it).remove(QRegularExpression(QLatin1String(",?\\s*$")));
     }
     newText = lines.join(QStringLiteral(", "));
 
