@@ -169,17 +169,16 @@ ecm_generate_headers(libkdepim_Camelcaseldap_HEADERS
 ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
   HEADER_NAMES
   CustomLogWidget
-  ProgressIndicatorWidget
-  TagWidgets
   KCheckComboBox
-  TagSelectionCombo
-  ProgressIndicatorLabel
   KDatePickerPopup
-  KWidgetLister
   KWeekdayCheckCombo
-  PIMMessageBox
-  TagSelectionCombo
+  KWidgetLister
   OverlayWidget
+  PIMMessageBox
+  ProgressIndicatorLabel
+  ProgressIndicatorWidget
+  TagSelectionCombo
+  TagWidgets
   REQUIRED_HEADERS libkdepim_widgets_HEADERS
   PREFIX Libkdepim
   RELATIVE widgets
