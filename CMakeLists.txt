@@ -110,6 +110,6 @@ if (BUILD_TESTING)
    add_subdirectory(tests)
 endif()
 
-install( FILES libkdepim.categories DESTINATION ${KDE_INSTALL_CONFDIR} )
+install( FILES libkdepim.categories libkdepim.renamecategories DESTINATION ${KDE_INSTALL_CONFDIR} )
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)

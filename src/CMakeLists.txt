@@ -54,7 +54,7 @@ set(kdepim_ldap_LIB_SRCS
    ldap/ldapclientsearchconfig.cpp
    ldap/addhostdialog.cpp
 )
-ecm_qt_declare_logging_category(kdepim_ldap_LIB_SRCS HEADER ldapclient_debug.h IDENTIFIER LDAPCLIENT_LOG CATEGORY_NAME log_ldapclient)
+ecm_qt_declare_logging_category(kdepim_ldap_LIB_SRCS HEADER ldapclient_debug.h IDENTIFIER LDAPCLIENT_LOG CATEGORY_NAME org.kde.pim.ldapclient)
 
 set(kdepim_misc_LIB_SRCS
    misc/broadcaststatus.cpp
@@ -104,7 +104,7 @@ set(kdepim_LIB_SRCS
    ${kdepim_multiplyingline_LIB_SRCS}
    prefs/kprefsdialog.cpp
 )
-ecm_qt_declare_logging_category(kdepim_LIB_SRCS HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME log_libkdepim)
+ecm_qt_declare_logging_category(kdepim_LIB_SRCS HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim)
 
 
 add_library(KF5Libkdepim ${kdepim_LIB_SRCS})

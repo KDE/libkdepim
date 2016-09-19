@@ -1,0 +1,3 @@
+log_ldapclient org.kde.pim.ldapclient
+log_libkdepim org.kde.pim.libkdepim
+
