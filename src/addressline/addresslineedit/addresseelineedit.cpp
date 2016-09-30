@@ -312,7 +312,6 @@ void AddresseeLineEdit::mouseReleaseEvent(QMouseEvent *event)
 void AddresseeLineEdit::dropEvent(QDropEvent *event)
 {
     const QMimeData *md = event->mimeData();
-
     // Case one: The user dropped a text/directory (i.e. vcard), so decode its
     //           contents
     if (KContacts::VCardDrag::canDecode(md)) {
@@ -415,12 +414,22 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
                 }
             } else {
                 // Let's see if this drop contains a comma separated list of emails
-                const QMimeData *mimeData = event->mimeData();
-                if (mimeData->hasText()) {
-                    const QString dropData = mimeData->text();
+                if (md->hasText()) {
+                    const QString dropData = md->text();
                     const QStringList addrs = KEmailAddress::splitAddressList(dropData);
                     if (!addrs.isEmpty()) {
-                        setText(KEmailAddress::normalizeAddressesAndDecodeIdn(dropData));
+                        if (addrs.count() == 1) {
+                            QUrl url(dropData);
+                            if (url.scheme() == QLatin1String("mailto")) {
+                                KContacts::Addressee addressee;
+                                addressee.insertEmail(KEmailAddress::decodeMailtoUrl(url), true /* preferred */);
+                                insertEmails(addressee.emails());
+                            } else {
+                                setText(KEmailAddress::normalizeAddressesAndDecodeIdn(dropData));
+                            }
+                        } else {
+                            setText(KEmailAddress::normalizeAddressesAndDecodeIdn(dropData));
+                        }
                         setModified(true);
                         return;
                     }
