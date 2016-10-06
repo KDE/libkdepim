@@ -173,7 +173,7 @@ QString CustomLogWidget::toHtml() const
             logText = QStringLiteral("<font color=%1>%2</font>").arg(QColor(Qt::red).name(), itemText);
             break;
         case Info:
-            logText = QStringLiteral("<font color=%1>%2</font>").arg(QColor(Qt::green).name(), itemText);
+            logText = QStringLiteral("<font color=%1>%2</font>").arg(QColor(Qt::darkGreen).name(), itemText);
             break;
         case EndLine:
             logText = QStringLiteral("<br/>");
