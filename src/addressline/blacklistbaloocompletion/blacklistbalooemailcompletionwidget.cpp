@@ -201,7 +201,7 @@ void BlackListBalooEmailCompletionWidget::slotEmailFound(const QStringList &list
     mEmailList->setEmailFound(list);
     mMoreResult->setVisible(list.count() == mLimit);
     mEmailList->scrollToBottom();
-    if (list.count() == 0) {
+    if (list.isEmpty()) {
         mNumberOfEmailsFound->setText(i18n("No email found."));
     } else {
         mNumberOfEmailsFound->setText(i18np("1 email found", "%1 emails found", list.count()));

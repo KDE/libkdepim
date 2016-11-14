@@ -100,7 +100,7 @@ void ProgressItem::removeChild(ProgressItem *kiddo)
     }
 
     // in case we were waiting for the last kid to go away, now is the time
-    if (mChildren.count() == 0 && mWaitingForKids) {
+    if (mChildren.isEmpty() && mWaitingForKids) {
         Q_EMIT progressItemCompleted(this);
     }
 }
