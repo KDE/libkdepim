@@ -76,7 +76,7 @@ void BlackListBalooEmailList::setEmailFound(const QStringList &list)
     mFirstResult = true;
     clear();
     QStringList emailsAdded;
-    Q_FOREACH (const QString &mail, list) {
+    for (const QString &mail : list) {
         bool excludeDomain = false;
         QString email, name;
         KEmailAddress::extractEmailAddressAndName(mail, email, name);

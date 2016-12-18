@@ -252,7 +252,7 @@ void AddresseeLineEditPrivate::searchInBaloo()
     const QString trimmedString = m_searchString.trimmed();
     Akonadi::Search::PIM::ContactCompleter com(trimmedString, 20);
     const QStringList listEmail = cleanupEmailList(com.complete());
-    Q_FOREACH (const QString &email, listEmail) {
+    for (const QString &email : listEmail) {
         addCompletionItem(email, 1, s_static->balooCompletionSource);
     }
     doCompletion(m_lastSearchMode);

@@ -77,7 +77,7 @@ void TagWidget::setSelection(const QStringList &tagNames)
 {
     d->mTagList.clear();
     d->mCachedTagNames = tagNames;
-    foreach (const QString &name, tagNames) {
+    for (const QString &name : tagNames) {
         //TODO fetch by GID instead, we don't really want to create tags here
         Akonadi::TagCreateJob *tagCreateJob = new Akonadi::TagCreateJob(Akonadi::Tag::genericTag(name), this);
         tagCreateJob->setMergeIfExisting(true);
@@ -126,7 +126,7 @@ TagSelectionDialog::~TagSelectionDialog()
 void TagSelectionDialog::setSelection(const QStringList &tagNames)
 {
     d->mTagList.clear();
-    foreach (const QString &name, tagNames) {
+    for (const QString &name : tagNames) {
         //TODO fetch by GID instead, we don't really want to create tags here
         Akonadi::TagCreateJob *tagCreateJob = new Akonadi::TagCreateJob(Akonadi::Tag::genericTag(name), this);
         tagCreateJob->setMergeIfExisting(true);
@@ -150,7 +150,7 @@ QStringList TagSelectionDialog::selection() const
     QStringList list;
     const Akonadi::Tag::List lst = Akonadi::TagSelectionDialog::selection();
     list.reserve(lst.count());
-    Q_FOREACH (const Akonadi::Tag &tag, lst) {
+    for (const Akonadi::Tag &tag : lst) {
         list << tag.name();
     }
     return list;

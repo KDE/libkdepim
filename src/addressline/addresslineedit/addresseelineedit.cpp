@@ -327,10 +327,10 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
     // Iterate over that list. For mailto: Urls, just add the addressee to the list,
     // and for other Urls, download the Url and assume it points to a vCard
     else if (md->hasUrls()) {
-        QList<QUrl> urls = md->urls();
+        const QList<QUrl> urls = md->urls();
         KContacts::Addressee::List list;
 
-        foreach (const QUrl &url, urls) {
+        for (const QUrl &url : urls) {
 
             // First, let's deal with mailto Urls. The path() part contains the
             // email-address.

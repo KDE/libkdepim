@@ -113,7 +113,7 @@ void PersonSearchJob::start()
 void PersonSearchJob::onLDAPSearchData(const KLDAP::LdapResultObject::List &list)
 {
     QVector<Person> persons;
-    Q_FOREACH (const KLDAP::LdapResultObject &item, list) {
+    for (const KLDAP::LdapResultObject &item : list) {
         Person person;
         person.name = QString::fromUtf8(item.object.value(QStringLiteral("cn")));
         person.mail = QString::fromUtf8(item.object.value(QStringLiteral("mail")));
@@ -166,7 +166,7 @@ void PersonSearchJob::onLDAPSearchDone()
 void PersonSearchJob::onCollectionsReceived(const Akonadi::Collection::List &list)
 {
     QVector<Person> persons;
-    Q_FOREACH (const Akonadi::Collection &col, list) {
+    for (const Akonadi::Collection &col : list) {
         Person person;
         const QString &uid = col.name();
         const Akonadi::CollectionIdentificationAttribute *const attr = col.attribute<Akonadi::CollectionIdentificationAttribute>();

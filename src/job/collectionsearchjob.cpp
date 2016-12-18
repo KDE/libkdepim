@@ -87,7 +87,7 @@ void CollectionSearchJob::start()
 
 void CollectionSearchJob::onCollectionsReceived(const Akonadi::Collection::List &list)
 {
-    Q_FOREACH (const Akonadi::Collection &col, list) {
+    for (const Akonadi::Collection &col : list) {
         d->mMatchingCollections << col;
         Akonadi::Collection ancestor = col.parentCollection();
         while (ancestor.isValid() && (ancestor != Akonadi::Collection::root())) {
