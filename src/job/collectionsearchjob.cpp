@@ -122,7 +122,7 @@ static Akonadi::Collection replaceParent(Akonadi::Collection col, const Akonadi:
         return col;
     }
     const Akonadi::Collection parent = replaceParent(col.parentCollection(), ancestors);
-    Q_FOREACH (const Akonadi::Collection &c, ancestors) {
+    for (const Akonadi::Collection &c : ancestors) {
         if (col == c) {
             col = c;
             break;

@@ -421,7 +421,7 @@ const QStringList KPIM::AddresseeLineEditPrivate::adjustedCompletionItems(bool f
             const QStringList sectionItems = sections[source.index];
             if (!sectionItems.isEmpty()) {
                 sortedItems.append(source.sourceName);
-                foreach (const QString &itemInSection, sectionItems) {
+                for (const QString &itemInSection : sectionItems) {
                     sortedItems.append(itemInSection);
                 }
             }
@@ -730,7 +730,7 @@ void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List 
         return;
     }
 
-    foreach (const KLDAP::LdapResult &result, results) {
+    for (const KLDAP::LdapResult &result : results) {
         KContacts::Addressee contact;
         contact.setNameFromString(result.name);
         contact.setEmails(result.email);
@@ -795,7 +795,7 @@ void AddresseeLineEditPrivate::slotAkonadiHandleItems(const Akonadi::Item::List 
 {
     /* We have to fetch the collections of the items, so that
        the source name can be correctly labeled.*/
-    foreach (const Akonadi::Item &item, items) {
+    for (const Akonadi::Item &item : items) {
 
         // check the local cache of collections
         const AddresseeLineEditStatic::collectionInfo sourceIndex =
@@ -854,7 +854,7 @@ void AddresseeLineEditPrivate::slotAkonadiCollectionsReceived(
     KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kpimcompletionorder"));
     KConfigGroup groupCompletionWeights(config, "CompletionWeights");
     KConfigGroup groupCompletionEnabled(config, "CompletionEnabled");
-    foreach (const Akonadi::Collection &collection, collections) {
+    for (const Akonadi::Collection &collection : collections) {
         if (collection.isValid()) {
             const QString sourceString = collection.displayName();
             const int weight = groupCompletionWeights.readEntry(QString::number(collection.id()), 1);
