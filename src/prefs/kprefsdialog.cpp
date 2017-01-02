@@ -74,7 +74,7 @@ KPrefsWid *create(KConfigSkeletonItem *item, QWidget *parent)
         QList<KConfigSkeleton::ItemEnum::Choice> choices = enumItem->choices();
         if (choices.isEmpty()) {
             qCritical() << "Enum has no choices.";
-            return Q_NULLPTR;
+            return nullptr;
         } else {
             KPrefsWidRadios *radios = new KPrefsWidRadios(enumItem, parent);
             QList<KConfigSkeleton::ItemEnum::Choice>::ConstIterator it;
@@ -92,7 +92,7 @@ KPrefsWid *create(KConfigSkeletonItem *item, QWidget *parent)
         return new KPrefsWidInt(intItem, parent);
     }
 
-    return Q_NULLPTR;
+    return nullptr;
 }
 
 } // namespace KPrefsWidFactory

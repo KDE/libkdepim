@@ -27,7 +27,7 @@ class BalooCompletionEmailTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit BalooCompletionEmailTest(QObject *parent = Q_NULLPTR);
+    explicit BalooCompletionEmailTest(QObject *parent = nullptr);
     ~BalooCompletionEmailTest();
 
 private Q_SLOTS:

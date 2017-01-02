@@ -27,7 +27,7 @@ class BlackListBalooEmailWarningTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailWarningTest(QObject *parent = Q_NULLPTR);
+    explicit BlackListBalooEmailWarningTest(QObject *parent = nullptr);
     ~BlackListBalooEmailWarningTest();
 
 private Q_SLOTS:

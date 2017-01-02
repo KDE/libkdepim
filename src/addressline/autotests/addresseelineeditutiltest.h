@@ -26,7 +26,7 @@ class AddresseeLineEditUtilTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit AddresseeLineEditUtilTest(QObject *parent = Q_NULLPTR);
+    explicit AddresseeLineEditUtilTest(QObject *parent = nullptr);
     ~AddresseeLineEditUtilTest();
 
 private Q_SLOTS:

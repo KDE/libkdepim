@@ -26,7 +26,7 @@ class KPIM::ProgressStatusBarWidgetPrivate
 {
 public:
     ProgressStatusBarWidgetPrivate()
-        : mLittleProgress(Q_NULLPTR)
+        : mLittleProgress(nullptr)
     {
 
     }

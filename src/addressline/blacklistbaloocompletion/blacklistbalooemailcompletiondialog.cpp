@@ -32,7 +32,7 @@ class KPIM::BlackListBalooEmailCompletionDialogPrivate
 {
 public:
     BlackListBalooEmailCompletionDialogPrivate()
-        : mBlackListWidget(Q_NULLPTR)
+        : mBlackListWidget(nullptr)
     {
 
     }

@@ -27,7 +27,7 @@ class BlackListBalooEmailCompletionWidgetTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailCompletionWidgetTest(QObject *parent = Q_NULLPTR);
+    explicit BlackListBalooEmailCompletionWidgetTest(QObject *parent = nullptr);
     ~BlackListBalooEmailCompletionWidgetTest();
 
 private Q_SLOTS:

@@ -470,17 +470,17 @@ public:
         : q(qq),
           mNumHosts(0),
           mIsConfigured(false),
-          mFilterCombo(Q_NULLPTR),
-          mSearchType(Q_NULLPTR),
-          mSearchEdit(Q_NULLPTR),
-          mRecursiveCheckbox(Q_NULLPTR),
-          mResultView(Q_NULLPTR),
-          mSearchButton(Q_NULLPTR),
-          mModel(Q_NULLPTR),
-          progressIndication(Q_NULLPTR),
-          sortproxy(Q_NULLPTR),
-          searchLine(Q_NULLPTR),
-          user1Button(Q_NULLPTR)
+          mFilterCombo(nullptr),
+          mSearchType(nullptr),
+          mSearchEdit(nullptr),
+          mRecursiveCheckbox(nullptr),
+          mResultView(nullptr),
+          mSearchButton(nullptr),
+          mModel(nullptr),
+          progressIndication(nullptr),
+          sortproxy(nullptr),
+          searchLine(nullptr),
+          user1Button(nullptr)
     {
     }
 

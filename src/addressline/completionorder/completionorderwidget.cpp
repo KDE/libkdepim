@@ -224,8 +224,8 @@ private:
 CompletionOrderWidget::CompletionOrderWidget(QWidget *parent)
     : QWidget(parent),
       mConfig(QStringLiteral("kpimcompletionorder")),
-      mCollectionModel(Q_NULLPTR),
-      mLdapSearch(Q_NULLPTR),
+      mCollectionModel(nullptr),
+      mLdapSearch(nullptr),
       mDirty(false)
 {
     new CompletionOrderEditorAdaptor(this);

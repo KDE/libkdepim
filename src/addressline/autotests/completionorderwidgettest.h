@@ -27,7 +27,7 @@ class CompletionOrderWidgetTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit CompletionOrderWidgetTest(QObject *parent = Q_NULLPTR);
+    explicit CompletionOrderWidgetTest(QObject *parent = nullptr);
     ~CompletionOrderWidgetTest();
 
 private Q_SLOTS:

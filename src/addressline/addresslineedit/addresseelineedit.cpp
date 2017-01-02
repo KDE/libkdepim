@@ -595,7 +595,7 @@ QMenu *AddresseeLineEdit::createStandardContextMenu()
 
     QMenu *menu = KLineEdit::createStandardContextMenu();
     if (!menu) {
-        return Q_NULLPTR;
+        return nullptr;
     }
     if (d->useCompletion()) {
         QAction *showOU = new QAction(i18n("Show Organization Unit for LDAP results"), menu);
@@ -819,7 +819,7 @@ bool KPIM::AddresseeLineEdit::eventFilter(QObject *object, QEvent *event)
         } else if (event->type() == QEvent::KeyRelease &&
                    (keyEvent->key() == Qt::Key_Tab || keyEvent->key() == Qt::Key_Backtab)) {
             /// first, find the header of the current section
-            QListWidgetItem *myHeader = Q_NULLPTR;
+            QListWidgetItem *myHeader = nullptr;
             int myHeaderIndex = -1;
             const int iterationStep = keyEvent->key() == Qt::Key_Tab ?  1 : -1;
             int index = qMin(qMax(currentIndex - iterationStep, 0), completionBox()->count() - 1);
@@ -835,7 +835,7 @@ bool KPIM::AddresseeLineEdit::eventFilter(QObject *object, QEvent *event)
             Q_ASSERT(myHeader);   // we should always be able to find a header
 
             // find the next header (searching backwards, for Qt::Key_Backtab)
-            QListWidgetItem *nextHeader = Q_NULLPTR;
+            QListWidgetItem *nextHeader = nullptr;
 
             // when iterating forward, start at the currentindex, when backwards,
             // one up from our header, or at the end

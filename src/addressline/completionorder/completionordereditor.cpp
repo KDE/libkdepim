@@ -54,7 +54,7 @@ class KPIM::CompletionOrderEditorPrivate
 {
 public:
     CompletionOrderEditorPrivate()
-        : mCompletionOrderWidget(Q_NULLPTR)
+        : mCompletionOrderWidget(nullptr)
     {
 
     }

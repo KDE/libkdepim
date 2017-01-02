@@ -38,12 +38,12 @@
 
 using namespace KPIM;
 
-RecentAddresses *s_self = Q_NULLPTR;
+RecentAddresses *s_self = nullptr;
 
 void deleteGlobalRecentAddresses()
 {
     delete s_self;
-    s_self = Q_NULLPTR;
+    s_self = nullptr;
 }
 
 RecentAddresses *RecentAddresses::self(KConfig *config)
@@ -57,7 +57,7 @@ RecentAddresses *RecentAddresses::self(KConfig *config)
 
 bool RecentAddresses::exists()
 {
-    return s_self != Q_NULLPTR;
+    return s_self != nullptr;
 }
 
 RecentAddresses::RecentAddresses(KConfig *config)

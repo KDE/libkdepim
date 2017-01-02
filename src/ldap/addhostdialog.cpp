@@ -37,9 +37,9 @@ class KLDAP::AddHostDialogPrivate
 {
 public:
     AddHostDialogPrivate(AddHostDialog *qq)
-        : mCfg(Q_NULLPTR),
-          mServer(Q_NULLPTR),
-          mOkButton(Q_NULLPTR),
+        : mCfg(nullptr),
+          mServer(nullptr),
+          mOkButton(nullptr),
           q(qq)
     {
     }

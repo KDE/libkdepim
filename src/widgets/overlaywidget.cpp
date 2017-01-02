@@ -39,7 +39,7 @@ class KPIM::OverlayWidgetPrivate
 {
 public:
     OverlayWidgetPrivate()
-        : mAlignWidget(Q_NULLPTR)
+        : mAlignWidget(nullptr)
     {
 
     }

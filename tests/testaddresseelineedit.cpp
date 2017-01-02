@@ -47,9 +47,9 @@ int main(int argc, char *argv[])
     QWidget *w = new QWidget;
     QVBoxLayout *vbox = new QVBoxLayout(w);
 
-    KPIM::AddresseeLineEdit *kale1 = new KPIM::AddresseeLineEdit(Q_NULLPTR);
+    KPIM::AddresseeLineEdit *kale1 = new KPIM::AddresseeLineEdit(nullptr);
     vbox->addWidget(kale1);
-    KPIM::AddresseeLineEdit *kale2 = new KPIM::AddresseeLineEdit(Q_NULLPTR);
+    KPIM::AddresseeLineEdit *kale2 = new KPIM::AddresseeLineEdit(nullptr);
     vbox->addWidget(kale2);
     vbox->addStretch();
 

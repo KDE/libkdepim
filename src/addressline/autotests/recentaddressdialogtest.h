@@ -27,7 +27,7 @@ class RecentAddressDialogTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit RecentAddressDialogTest(QObject *parent = Q_NULLPTR);
+    explicit RecentAddressDialogTest(QObject *parent = nullptr);
     ~RecentAddressDialogTest();
 
 private Q_SLOTS:

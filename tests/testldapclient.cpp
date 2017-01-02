@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 }
 
 TestLDAPClient::TestLDAPClient()
-    : mClient(Q_NULLPTR)
+    : mClient(nullptr)
 {
 }
 
@@ -86,7 +86,7 @@ bool TestLDAPClient::check(const QString &txt, QString a, QString b)
 
 void TestLDAPClient::cleanup()
 {
-    mClient = Q_NULLPTR;
+    mClient = nullptr;
 }
 
 void TestLDAPClient::testIntevation()
@@ -136,7 +136,7 @@ void TestLDAPClient::testIntevation()
     eventLoop.exec(QEventLoop::ExcludeUserInputEvents);
 
     delete mClient;
-    mClient = Q_NULLPTR;
+    mClient = nullptr;
 }
 
 // from kaddressbook... ugly though...

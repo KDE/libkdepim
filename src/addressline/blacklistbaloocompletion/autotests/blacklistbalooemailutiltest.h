@@ -27,7 +27,7 @@ class BlackListBalooEmailUtilTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailUtilTest(QObject *parent = Q_NULLPTR);
+    explicit BlackListBalooEmailUtilTest(QObject *parent = nullptr);
     ~BlackListBalooEmailUtilTest();
 private Q_SLOTS:
     void shouldReturnEmptyResult();

@@ -36,10 +36,10 @@ class KPIM::CompletionConfigureDialogPrivate
 {
 public:
     CompletionConfigureDialogPrivate()
-        : mTabWidget(Q_NULLPTR),
-          mCompletionOrderWidget(Q_NULLPTR),
-          mBlackListBalooWidget(Q_NULLPTR),
-          mRecentaddressWidget(Q_NULLPTR)
+        : mTabWidget(nullptr),
+          mCompletionOrderWidget(nullptr),
+          mBlackListBalooWidget(nullptr),
+          mRecentaddressWidget(nullptr)
     {
 
     }

@@ -40,7 +40,7 @@ class Q_DECL_HIDDEN LdapClient::Private
 public:
     Private(LdapClient *qq)
         : q(qq),
-          mJob(Q_NULLPTR),
+          mJob(nullptr),
           mActive(false),
           mClientNumber(0)
     {
@@ -154,7 +154,7 @@ void LdapClient::cancelQuery()
 {
     if (d->mJob) {
         d->mJob->kill();
-        d->mJob = Q_NULLPTR;
+        d->mJob = nullptr;
     }
 
     d->mActive = false;

@@ -27,7 +27,7 @@ class CompletionConfigureDialogTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit CompletionConfigureDialogTest(QObject *parent = Q_NULLPTR);
+    explicit CompletionConfigureDialogTest(QObject *parent = nullptr);
     ~CompletionConfigureDialogTest();
 private Q_SLOTS:
     void shouldHaveDefaultValue();

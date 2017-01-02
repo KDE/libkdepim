@@ -117,7 +117,7 @@ KCMLdap::~KCMLdap()
 
 void KCMLdap::slotSelectionChanged(QListWidgetItem *item)
 {
-    bool state = (item != Q_NULLPTR);
+    bool state = (item != nullptr);
     mEditButton->setEnabled(state);
     mRemoveButton->setEnabled(state);
     mDownButton->setEnabled(item && (mHostListView->row(item) != (mHostListView->count() - 1)));

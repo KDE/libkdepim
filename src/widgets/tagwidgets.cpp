@@ -34,7 +34,7 @@ class KPIM::TagWidgetPrivate
 {
 public:
     TagWidgetPrivate()
-        : mTagWidget(Q_NULLPTR)
+        : mTagWidget(nullptr)
     {
 
     }

@@ -28,7 +28,7 @@ using namespace KPIM;
 class MatchingCheckableProxyModel : public KCheckableProxyModel
 {
 public:
-    MatchingCheckableProxyModel(QObject *parent = Q_NULLPTR): KCheckableProxyModel(parent) {}
+    MatchingCheckableProxyModel(QObject *parent = nullptr): KCheckableProxyModel(parent) {}
     QModelIndexList match(const QModelIndex &start, int role, const QVariant &value, int hits = 1, Qt::MatchFlags flags = Qt::MatchExactly) const Q_DECL_OVERRIDE
     {
         if (role == Qt::CheckStateRole) {
