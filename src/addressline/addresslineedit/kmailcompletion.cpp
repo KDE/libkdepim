@@ -79,7 +79,7 @@ QString KMailCompletion::makeCompletion(const QString &string)
 void KMailCompletion::addItemWithKeys(const QString &email, int weight,
                                       const QStringList *keyWords)
 {
-    Q_ASSERT(keyWords != 0);
+    Q_ASSERT(keyWords != Q_NULLPTR);
     QStringList::ConstIterator end =  keyWords->constEnd();
     for (QStringList::ConstIterator it(keyWords->constBegin()); it != end; ++it) {
         QStringList &emailList = m_keyMap[(*it) ];  //lookup email-list for given keyword
@@ -92,7 +92,7 @@ void KMailCompletion::addItemWithKeys(const QString &email, int weight,
 
 void KMailCompletion::postProcessMatches(QStringList *pMatches) const
 {
-    Q_ASSERT(pMatches != 0);
+    Q_ASSERT(pMatches != Q_NULLPTR);
     if (pMatches->isEmpty()) {
         return;
     }

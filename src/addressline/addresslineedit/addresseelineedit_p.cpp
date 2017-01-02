@@ -43,7 +43,7 @@
 #include <QNetworkConfigurationManager>
 
 #include <addressline/blacklistbaloocompletion/blacklistbalooemailcompletiondialog.h>
-static QNetworkConfigurationManager *s_networkConfigMgr = 0;
+static QNetworkConfigurationManager *s_networkConfigMgr = Q_NULLPTR;
 
 namespace KPIM
 {
@@ -229,7 +229,7 @@ void AddresseeLineEditPrivate::startLoadingLDAPEntries()
 void AddresseeLineEditPrivate::stopLDAPLookup()
 {
     s_static->ldapSearch->cancelSearch();
-    s_static->ldapLineEdit = 0;
+    s_static->ldapLineEdit = Q_NULLPTR;
 }
 
 QStringList AddresseeLineEdit::cleanupEmailList(const QStringList &inputList)

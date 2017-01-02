@@ -28,9 +28,9 @@ using namespace KPIM;
 
 AddresseeLineEditStatic::AddresseeLineEditStatic()
     : completion(new KMailCompletion),
-      ldapTimer(0),
-      ldapSearch(0),
-      ldapLineEdit(0),
+      ldapTimer(Q_NULLPTR),
+      ldapSearch(Q_NULLPTR),
+      ldapLineEdit(Q_NULLPTR),
       balooCompletionSource(0),
       m_akonadiSession(Q_NULLPTR)
 {
@@ -45,7 +45,7 @@ AddresseeLineEditStatic::~AddresseeLineEditStatic()
 
 void AddresseeLineEditStatic::slotEditCompletionOrder()
 {
-    QPointer<CompletionOrderEditor> dlg = new CompletionOrderEditor(ldapSearch, 0);
+    QPointer<CompletionOrderEditor> dlg = new CompletionOrderEditor(ldapSearch, Q_NULLPTR);
     if (dlg->exec()) {
         updateCompletionOrder();
     }
