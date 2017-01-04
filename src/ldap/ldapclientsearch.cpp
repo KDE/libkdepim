@@ -340,9 +340,9 @@ void LdapClientSearch::Private::makeSearchData(QStringList &ret, LdapResult::Lis
                     mail = tmp;
                 } else {
                     if (wasCN) {
-                        mail.prepend(QStringLiteral("."));
+                        mail.prepend(QLatin1Char('.'));
                     } else {
-                        mail.prepend(QStringLiteral("@"));
+                        mail.prepend(QLatin1Char('@'));
                     }
                     mail.prepend(tmp);
                 }
@@ -352,9 +352,9 @@ void LdapClientSearch::Private::makeSearchData(QStringList &ret, LdapResult::Lis
                     mail = tmp;
                 } else {
                     if (wasDC) {
-                        mail.append(QStringLiteral("."));
+                        mail.append(QLatin1Char('.'));
                     } else {
-                        mail.append(QStringLiteral("@"));
+                        mail.append(QLatin1Char('@'));
                     }
                     mail.append(tmp);
                 }
