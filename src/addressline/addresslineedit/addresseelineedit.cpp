@@ -542,8 +542,8 @@ void AddresseeLineEdit::addContact(const KContacts::Addressee &addr, int weight,
 
         if (!append.isEmpty()) {
             appendix = QStringLiteral(" (%1)");
-            append = append.replace(QStringLiteral("("), QStringLiteral("["));
-            append = append.replace(QStringLiteral(")"), QStringLiteral("]"));
+            append = append.replace(QLatin1Char('('), QStringLiteral("["));
+            append = append.replace(QLatin1Char(')'), QStringLiteral("]"));
             appendix = appendix.arg(append);
         }
 
