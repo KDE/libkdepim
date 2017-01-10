@@ -37,7 +37,7 @@ class KDEPIM_EXPORT PersonSearchJob : public KJob
 {
     Q_OBJECT
 public:
-    explicit PersonSearchJob(const QString &searchString, QObject *parent = Q_NULLPTR);
+    explicit PersonSearchJob(const QString &searchString, QObject *parent = nullptr);
     virtual ~PersonSearchJob();
 
     void start() Q_DECL_OVERRIDE;

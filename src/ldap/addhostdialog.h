@@ -34,7 +34,7 @@ class KDEPIM_EXPORT AddHostDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit AddHostDialog(KLDAP::LdapServer *server, QWidget *parent = Q_NULLPTR);
+    explicit AddHostDialog(KLDAP::LdapServer *server, QWidget *parent = nullptr);
     ~AddHostDialog();
 
 Q_SIGNALS:

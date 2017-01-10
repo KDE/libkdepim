@@ -36,7 +36,7 @@ class KDEPIM_EXPORT CollectionSearchJob : public KJob
 {
     Q_OBJECT
 public:
-    explicit CollectionSearchJob(const QString &searchString, const QStringList &mimetypeFilter, QObject *parent = Q_NULLPTR);
+    explicit CollectionSearchJob(const QString &searchString, const QStringList &mimetypeFilter, QObject *parent = nullptr);
     ~CollectionSearchJob();
     void start() Q_DECL_OVERRIDE;
 

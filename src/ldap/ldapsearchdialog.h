@@ -63,7 +63,7 @@ public:
      *
      * @param parent The parent widget.
      */
-    explicit LdapSearchDialog(QWidget *parent = Q_NULLPTR);
+    explicit LdapSearchDialog(QWidget *parent = nullptr);
 
     /**
      * Destroys the ldap search dialog.

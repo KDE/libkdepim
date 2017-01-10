@@ -35,7 +35,7 @@ class KDEPIM_EXPORT LdapClientSearchConfig : public QObject
 {
     Q_OBJECT
 public:
-    explicit LdapClientSearchConfig(QObject *parent = Q_NULLPTR);
+    explicit LdapClientSearchConfig(QObject *parent = nullptr);
     ~LdapClientSearchConfig();
 
     /**

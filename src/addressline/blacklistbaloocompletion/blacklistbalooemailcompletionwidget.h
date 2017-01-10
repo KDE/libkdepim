@@ -34,7 +34,7 @@ class BlackListBalooEmailCompletionWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailCompletionWidget(QWidget *parent = Q_NULLPTR);
+    explicit BlackListBalooEmailCompletionWidget(QWidget *parent = nullptr);
     ~BlackListBalooEmailCompletionWidget();
 
     void save();

@@ -33,7 +33,7 @@ class KDEPIM_EXPORT RecentAddressDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit RecentAddressDialog(QWidget *parent = Q_NULLPTR);
+    explicit RecentAddressDialog(QWidget *parent = nullptr);
     ~RecentAddressDialog();
 
     void setAddresses(const QStringList &addrs);

@@ -35,7 +35,7 @@ class IndicatorProgress : public QObject
 {
     Q_OBJECT
 public:
-    explicit IndicatorProgress(ProgressIndicatorWidget *widget, QObject *parent = Q_NULLPTR);
+    explicit IndicatorProgress(ProgressIndicatorWidget *widget, QObject *parent = nullptr);
     ~IndicatorProgress();
 
     bool isActive() const;
@@ -56,7 +56,7 @@ class KDEPIM_EXPORT ProgressIndicatorWidget : public QLabel
 {
     Q_OBJECT
 public:
-    explicit ProgressIndicatorWidget(QWidget *parent = Q_NULLPTR);
+    explicit ProgressIndicatorWidget(QWidget *parent = nullptr);
     ~ProgressIndicatorWidget();
 
 public:

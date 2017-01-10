@@ -29,7 +29,7 @@ class BlackListBalooEmailWarning : public KMessageWidget
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailWarning(QWidget *parent = Q_NULLPTR);
+    explicit BlackListBalooEmailWarning(QWidget *parent = nullptr);
     ~BlackListBalooEmailWarning();
 
 Q_SIGNALS:

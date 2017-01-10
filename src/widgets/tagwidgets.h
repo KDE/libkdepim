@@ -36,7 +36,7 @@ class KDEPIM_EXPORT TagWidget: public QWidget
 {
     Q_OBJECT
 public:
-    explicit TagWidget(QWidget *parent = Q_NULLPTR);
+    explicit TagWidget(QWidget *parent = nullptr);
     ~TagWidget();
     void setSelection(const QStringList &);
     QStringList selection() const;
@@ -57,7 +57,7 @@ class KDEPIM_EXPORT TagSelectionDialog : public Akonadi::TagSelectionDialog
 {
     Q_OBJECT
 public:
-    explicit TagSelectionDialog(QWidget *parent = Q_NULLPTR);
+    explicit TagSelectionDialog(QWidget *parent = nullptr);
     ~TagSelectionDialog();
     void setSelection(const QStringList &);
     QStringList selection() const;

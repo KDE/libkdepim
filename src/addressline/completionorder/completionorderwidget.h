@@ -70,7 +70,7 @@ class KDEPIM_EXPORT CompletionOrderWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit CompletionOrderWidget(QWidget *parent = Q_NULLPTR);
+    explicit CompletionOrderWidget(QWidget *parent = nullptr);
     ~CompletionOrderWidget();
     void save();
 

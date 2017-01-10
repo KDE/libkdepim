@@ -51,7 +51,7 @@ public:
     /**
      * @returns the only possible instance of this class.
      */
-    static RecentAddresses *self(KConfig *config = Q_NULLPTR);
+    static RecentAddresses *self(KConfig *config = nullptr);
 
     /*
      * @return true if self() was called, i.e. a RecentAddresses instance exists
@@ -101,7 +101,7 @@ public:
     void clear();
 
 private:
-    explicit RecentAddresses(KConfig *config = Q_NULLPTR);
+    explicit RecentAddresses(KConfig *config = nullptr);
     void adjustSize();
 
     KContacts::Addressee::List m_addresseeList;

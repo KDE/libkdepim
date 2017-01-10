@@ -73,7 +73,7 @@ public:
      *
      * @param parent The parent object.
      */
-    explicit LdapClientSearch(QObject *parent = Q_NULLPTR);
+    explicit LdapClientSearch(QObject *parent = nullptr);
 
     /**
      * Destroys the ldap client search object.
