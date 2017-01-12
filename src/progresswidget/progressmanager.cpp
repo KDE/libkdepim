@@ -392,8 +392,7 @@ void ProgressManager::slotAbortAll()
 {
     QHashIterator<QString, ProgressItem *> it(mTransactions);
     while (it.hasNext()) {
-        it.next();
-        it.value()->cancel();
+        it.next().value()->cancel();
     }
 
 }
