@@ -56,9 +56,7 @@ QStringList BlackListBalooEmailUtil::createNewBlackList()
                 mInitialList.append(newEmail);
             }
         } else {
-            if (mInitialList.contains(newEmail)) {
-                mInitialList.removeAll(newEmail);
-            }
+            mInitialList.removeAll(newEmail);
         }
     }
     return mInitialList;
