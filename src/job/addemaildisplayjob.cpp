@@ -142,8 +142,8 @@ public:
             qobject_cast<Akonadi::CollectionFetchJob *>(job);
 
         Akonadi::Collection::List canCreateItemCollections;
-
-        foreach (const Akonadi::Collection &collection, addressBookJob->collections()) {
+        const Akonadi::Collection::List colsList = addressBookJob->collections();
+        for (const Akonadi::Collection &collection : colsList) {
             if (Akonadi::Collection::CanCreateItem & collection.rights()) {
                 canCreateItemCollections.append(collection);
             }

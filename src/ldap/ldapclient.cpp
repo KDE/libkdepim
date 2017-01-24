@@ -170,9 +170,9 @@ void LdapClient::Private::slotData(const QByteArray &data)
     parseLDIF(data);
 }
 
-void LdapClient::Private::slotInfoMessage(KJob *, const QString &, const QString &)
+void LdapClient::Private::slotInfoMessage(KJob *, const QString &info, const QString &)
 {
-    //qDebug("Job said \"%s\"", info.toLatin1());
+    qCDebug(LDAPCLIENT_LOG) << "Job said :" << info;
 }
 
 void LdapClient::Private::slotDone()
@@ -203,7 +203,7 @@ void LdapClient::Private::finishCurrentObject()
 {
     mCurrentObject.setDn(mLdif.dn());
     KLDAP::LdapAttrValue objectclasses;
-    KLDAP::LdapAttrMap::ConstIterator end = mCurrentObject.attributes().constEnd();
+    const KLDAP::LdapAttrMap::ConstIterator end = mCurrentObject.attributes().constEnd();
     for (KLDAP::LdapAttrMap::ConstIterator it = mCurrentObject.attributes().constBegin();
             it != end; ++it) {
 
@@ -214,7 +214,7 @@ void LdapClient::Private::finishCurrentObject()
     }
 
     bool groupofnames = false;
-    KLDAP::LdapAttrValue::ConstIterator endValue(objectclasses.constEnd());
+    const KLDAP::LdapAttrValue::ConstIterator endValue(objectclasses.constEnd());
     for (KLDAP::LdapAttrValue::ConstIterator it = objectclasses.constBegin();
             it != endValue; ++it) {
 

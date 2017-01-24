@@ -21,6 +21,7 @@
 #include "addresseelineedit.h"
 #include "kmailcompletion.h"
 #include "libkdepim_debug.h"
+#include "helper_p.h"
 #include <QMap>
 #include <QTimer>
 #include <kcolorscheme.h>
@@ -508,7 +509,7 @@ void AddresseeLineEditPrivate::akonadiPerformSearch()
     qCDebug(LIBKDEPIM_LOG) << "searching akonadi with:" << m_searchString;
 
     // first, kill all job still in flight, they are no longer current
-    Q_FOREACH (const QWeakPointer<Akonadi::Job> &job, s_static->akonadiJobsInFlight) {
+    for (const QWeakPointer<Akonadi::Job> &job : qAsConst(s_static->akonadiJobsInFlight)) {
         if (!job.isNull()) {
             job.data()->kill();
         }
@@ -578,9 +579,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
     if (ctrlT) {
         const QStringList completions = adjustedCompletionItems(false);
 
-        if (completions.count() > 1) {
-            ; //m_previousAddresses = prevAddr;
-        } else if (completions.count() == 1) {
+        if (completions.count() == 1) {
             q->setText(m_previousAddresses + completions.first().trimmed());
         }
 

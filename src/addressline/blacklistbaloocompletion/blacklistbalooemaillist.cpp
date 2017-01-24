@@ -20,6 +20,7 @@
 
 #include "blacklistbalooemaillist.h"
 #include "libkdepim_debug.h"
+#include "helper_p.h"
 #include <QPainter>
 #include <QEvent>
 #include <KLocalizedString>
@@ -81,7 +82,7 @@ void BlackListBalooEmailList::setEmailFound(const QStringList &list)
         QString email, name;
         KEmailAddress::extractEmailAddressAndName(mail, email, name);
 
-        Q_FOREACH (const QString &domain, mExcludeDomain) {
+        for (const QString &domain : qAsConst(mExcludeDomain)) {
             if (email.endsWith(domain)) {
                 excludeDomain = true;
                 break;

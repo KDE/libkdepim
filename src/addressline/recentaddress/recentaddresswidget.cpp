@@ -119,12 +119,12 @@ void RecentAddressWidget::slotAddItem()
 
 void RecentAddressWidget::slotRemoveItem()
 {
-    QList<QListWidgetItem *> selectedItems = mListView->selectedItems();
+    const QList<QListWidgetItem *> selectedItems = mListView->selectedItems();
     if (selectedItems.isEmpty()) {
         return;
     }
     if (KMessageBox::Yes == KMessageBox::questionYesNo(this, i18np("Do you want to remove this email address?", "Do you want to remove %1 email addresses?", selectedItems.count()), i18n("Remove"))) {
-        Q_FOREACH (QListWidgetItem *item, selectedItems) {
+        for (QListWidgetItem *item : selectedItems) {
             delete mListView->takeItem(mListView->row(item));
         }
         mDirty = true;

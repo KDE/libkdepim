@@ -28,6 +28,7 @@
 #include "addresseelineedit_p.h"
 #include "addresseelineeditutil.h"
 #include "ldap/ldapclientsearch.h"
+#include "helper_p.h"
 #include <KContacts/VCardConverter>
 
 #include <Job>
@@ -369,7 +370,7 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
         }
 
         // Now, let the user choose which addressee to add.
-        foreach (const KContacts::Addressee &addressee, list) {
+        for (const KContacts::Addressee &addressee : qAsConst(list)) {
             insertEmails(addressee.emails());
         }
     }
@@ -393,7 +394,7 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
                 }
                 bool mailtoURL = false;
                 // append the mailto URLs
-                foreach (const QUrl &url, uriList) {
+                for (const QUrl &url : qAsConst(uriList)) {
                     if (url.scheme() == QLatin1String("mailto")) {
                         mailtoURL = true;
                         QString address;
@@ -454,7 +455,7 @@ void AddresseeLineEdit::groupExpandResult(KJob *job)
     }
 
     const KContacts::Addressee::List contacts = expandJob->contacts();
-    foreach (const KContacts::Addressee &addressee, contacts) {
+    for (const KContacts::Addressee &addressee : contacts) {
         if (d->expandIntern() || text().isEmpty()) {
             insertEmails(QStringList() << addressee.fullEmail());
         } else {
@@ -929,7 +930,7 @@ void AddresseeLineEdit::slotEditingFinished()
 
     if (!text().isEmpty() && enableAkonadiSearch()) {
         const QStringList addresses = KEmailAddress::splitAddressList(text());
-        Q_FOREACH (const QString &address, addresses) {
+        for (const QString &address : addresses) {
             Akonadi::ContactGroupSearchJob *job = new Akonadi::ContactGroupSearchJob();
             connect(job, &Akonadi::ContactGroupSearchJob::result, this, &AddresseeLineEdit::slotGroupSearchResult);
             d->mightBeGroupJobsAdd(job);
@@ -967,7 +968,8 @@ void AddresseeLineEdit::expandGroups()
 {
     QStringList addresses = KEmailAddress::splitAddressList(text());
 
-    foreach (const KContacts::ContactGroup &group, d->groups()) {
+    const KContacts::ContactGroup::List lstGroups = d->groups();
+    for (const KContacts::ContactGroup &group : lstGroups) {
         Akonadi::ContactGroupExpandJob *expandJob = new Akonadi::ContactGroupExpandJob(group);
         connect(expandJob, &Akonadi::ContactGroupExpandJob::result, this, &AddresseeLineEdit::groupExpandResult);
         addresses.removeAll(group.name());

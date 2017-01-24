@@ -22,6 +22,7 @@
 #include <QMap>
 #include <KEmailAddress>
 #include "libkdepim_debug.h"
+#include "helper_p.h"
 using namespace KPIM;
 
 BalooCompletionEmail::BalooCompletionEmail()
@@ -50,7 +51,7 @@ QStringList BalooCompletionEmail::cleanupEmailList()
         return mListEmail;
     }
     QMap<QString, QString> hashEmail;
-    Q_FOREACH (QString email, mListEmail) {
+    for (QString email :  qAsConst(mListEmail)) {
         if (!mBlackList.contains(email)) {
             QString address;
             email = stripEmail(email, address);
@@ -58,7 +59,7 @@ QStringList BalooCompletionEmail::cleanupEmailList()
                 address = email;
             }
             bool excludeMail = false;
-            Q_FOREACH (const QString &excludeDomain, mExcludeDomain) {
+            for (const QString &excludeDomain : qAsConst(mExcludeDomain)) {
                 if (!excludeDomain.isEmpty()) {
                     if (address.endsWith(excludeDomain)) {
                         excludeMail = true;

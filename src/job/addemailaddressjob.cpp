@@ -124,7 +124,8 @@ public:
 
         Akonadi::Collection::List canCreateItemCollections;
 
-        foreach (const Akonadi::Collection &collection, addressBookJob->collections()) {
+        const Akonadi::Collection::List lstColls = addressBookJob->collections();
+        for (const Akonadi::Collection &collection : lstColls) {
             if (Akonadi::Collection::CanCreateItem & collection.rights()) {
                 canCreateItemCollections.append(collection);
             }

@@ -237,9 +237,9 @@ void LdapClientSearch::startSearch(const QString &txt)
 
     const QString filter = d->mFilter.arg(d->mSearchText);
 
-    QList<LdapClient *>::Iterator it;
-    QList<LdapClient *>::Iterator end(d->mClients.end());
-    for (it = d->mClients.begin(); it != end; ++it) {
+    QList<LdapClient *>::Iterator it(d->mClients.begin());
+    const QList<LdapClient *>::Iterator end(d->mClients.end());
+    for (; it != end; ++it) {
         (*it)->startQuery(filter);
         qCDebug(LDAPCLIENT_LOG) << "LdapClientSearch::startSearch()" << filter;
         ++d->mActiveClients;
@@ -248,9 +248,9 @@ void LdapClientSearch::startSearch(const QString &txt)
 
 void LdapClientSearch::cancelSearch()
 {
-    QList<LdapClient *>::Iterator it;
-    QList<LdapClient *>::Iterator end(d->mClients.end());
-    for (it = d->mClients.begin(); it != end; ++it) {
+    QList<LdapClient *>::Iterator it(d->mClients.begin());
+    const QList<LdapClient *>::Iterator end(d->mClients.end());
+    for (; it != end; ++it) {
         (*it)->cancelQuery();
     }
 
@@ -313,9 +313,9 @@ void LdapClientSearch::Private::finish()
 void LdapClientSearch::Private::makeSearchData(QStringList &ret, LdapResult::List &resList)
 {
 
-    LdapResultObject::List::ConstIterator it1;
-    LdapResultObject::List::ConstIterator end1(mResults.constEnd());
-    for (it1 = mResults.constBegin(); it1 != end1; ++it1) {
+    LdapResultObject::List::ConstIterator it1(mResults.constBegin());
+    const LdapResultObject::List::ConstIterator end1(mResults.constEnd());
+    for (; it1 != end1; ++it1) {
         QString name, mail, givenname, sn;
         QStringList mails;
         bool isDistributionList = false;
