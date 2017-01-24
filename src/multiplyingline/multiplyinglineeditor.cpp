@@ -74,7 +74,8 @@ void MultiplyingLineEditor::removeData(const MultiplyingLineData::Ptr &data)
 
 void MultiplyingLineEditor::clear()
 {
-    foreach (MultiplyingLine *line, mView->lines()) {
+    const auto lstLines = mView->lines();
+    for (MultiplyingLine *line : lstLines) {
         line->slotPropagateDeletion();
     }
 }

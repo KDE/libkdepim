@@ -66,7 +66,9 @@ void TagWidget::onSelectionChanged(const Akonadi::Tag::List &tags)
 {
     Q_UNUSED(tags);
     d->mCachedTagNames.clear();
-    Q_FOREACH (const Akonadi::Tag &tag, d->mTagWidget->selection()) {
+    const Akonadi::Tag::List tagsSelection(d->mTagWidget->selection());
+    d->mCachedTagNames.reserve(tagsSelection.count());
+    for (const Akonadi::Tag &tag : tagsSelection) {
         d->mCachedTagNames << tag.name();
     }
     Q_EMIT selectionChanged(d->mCachedTagNames);

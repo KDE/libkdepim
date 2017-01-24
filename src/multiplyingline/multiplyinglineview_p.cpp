@@ -22,6 +22,7 @@
     02110-1301, USA.
 */
 #include "multiplyinglineview_p.h"
+#include "helper_p.h"
 
 #include "libkdepim_debug.h"
 #include <KMessageBox>
@@ -57,7 +58,7 @@ MultiplyingLine *MultiplyingLineView::activeLine() const
 
 MultiplyingLine *MultiplyingLineView::emptyLine() const
 {
-    foreach (MultiplyingLine *line, mLines) {
+    for (MultiplyingLine *line : qAsConst(mLines)) {
         if (line->isEmpty()) {
             return line;
         }
@@ -226,10 +227,11 @@ void MultiplyingLineView::activateLine(MultiplyingLine *line)
 void MultiplyingLineView::resizeEvent(QResizeEvent *ev)
 {
     QScrollArea::resizeEvent(ev);
-    for (int i = 0; i < mLines.count(); ++i) {
+    const int numberLine(mLines.count());
+    for (int i = 0; i < numberLine; ++i) {
         mLines.at(i)->resize(ev->size().width(), mLineHeight);
     }
-    ensureVisible(0, mLines.count() * mLineHeight, 0, 0);
+    ensureVisible(0, numberLine * mLineHeight, 0, 0);
 }
 
 QSize MultiplyingLineView::sizeHint() const
@@ -262,9 +264,8 @@ QList<MultiplyingLineData::Ptr> MultiplyingLineView::allData() const
     QList<MultiplyingLineData::Ptr> data;
 
     QListIterator<MultiplyingLine *> it(mLines);
-    MultiplyingLine *line;
     while (it.hasNext()) {
-        line = it.next();
+        MultiplyingLine *line = it.next();
         if (!line->data()->isEmpty()) {
             data.append(line->data());
         }
@@ -329,9 +330,8 @@ void MultiplyingLineView::clearModified()
     mModified = false;
 
     QListIterator<MultiplyingLine *> it(mLines);
-    MultiplyingLine *line;
     while (it.hasNext()) {
-        line = it.next();
+        MultiplyingLine *line = it.next();
         line->clearModified();
     }
 }
@@ -375,9 +375,8 @@ int MultiplyingLineView::setFirstColumnWidth(int w)
     mFirstColumnWidth = w;
 
     QListIterator<MultiplyingLine *> it(mLines);
-    MultiplyingLine *line;
     while (it.hasNext()) {
-        line = it.next();
+        MultiplyingLine *line = it.next();
         mFirstColumnWidth = line->setColumnWidth(mFirstColumnWidth);
     }
 

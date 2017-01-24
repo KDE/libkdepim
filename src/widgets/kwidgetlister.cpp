@@ -31,6 +31,7 @@
 */
 
 #include "kwidgetlister.h"
+#include "helper_p.h"
 
 #include <KLocalizedString>
 #include <KGuiItem>
@@ -178,7 +179,7 @@ void KWidgetLister::slotClear()
     setNumberOfShownWidgetsTo(d->mMinWidgets);
 
     // clear remaining widgets
-    foreach (QWidget *widget, d->mWidgetList) {
+    for (QWidget *widget : qAsConst(d->mWidgetList)) {
         clearWidget(widget);
     }
 

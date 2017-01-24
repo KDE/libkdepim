@@ -357,8 +357,7 @@ void ProgressDialog::slotTransactionCanceled(ProgressItem *)
 void ProgressDialog::slotTransactionProgress(ProgressItem *item,
         unsigned int progress)
 {
-    if (mTransactionsToListviewItems.contains(item)) {
-        TransactionItem *ti = mTransactionsToListviewItems[ item ];
+    if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         ti->setProgress(progress);
     }
 }
@@ -366,8 +365,7 @@ void ProgressDialog::slotTransactionProgress(ProgressItem *item,
 void ProgressDialog::slotTransactionStatus(ProgressItem *item,
         const QString &status)
 {
-    if (mTransactionsToListviewItems.contains(item)) {
-        TransactionItem *ti = mTransactionsToListviewItems[ item ];
+    if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         ti->setStatus(status);
     }
 }
@@ -375,8 +373,7 @@ void ProgressDialog::slotTransactionStatus(ProgressItem *item,
 void ProgressDialog::slotTransactionLabel(ProgressItem *item,
         const QString &label)
 {
-    if (mTransactionsToListviewItems.contains(item)) {
-        TransactionItem *ti = mTransactionsToListviewItems[ item ];
+    if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         ti->setLabel(label);
     }
 }
@@ -384,16 +381,14 @@ void ProgressDialog::slotTransactionLabel(ProgressItem *item,
 void ProgressDialog::slotTransactionCryptoStatus(ProgressItem *item,
         KPIM::ProgressItem::CryptoStatus value)
 {
-    if (mTransactionsToListviewItems.contains(item)) {
-        TransactionItem *ti = mTransactionsToListviewItems[ item ];
+    if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         ti->setCryptoStatus(value);
     }
 }
 
 void ProgressDialog::slotTransactionUsesBusyIndicator(KPIM::ProgressItem *item, bool value)
 {
-    if (mTransactionsToListviewItems.contains(item)) {
-        TransactionItem *ti = mTransactionsToListviewItems[ item ];
+    if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         if (value) {
             ti->setTotalSteps(0);
         } else {
