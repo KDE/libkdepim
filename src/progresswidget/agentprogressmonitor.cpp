@@ -73,9 +73,8 @@ void AgentProgressMonitor::Private::instanceProgressChanged(const AgentInstance 
         return;
     }
 
-    if (agent == instance) {
-        //Why ? agent = instance if agent == instance.
-        agent = instance;
+    if (agent == instance) { // compares identifiers
+        agent = instance; // keeps copy of current status
         const int progress = agent.progress();
         if (progress >= 0) {
             item.data()->setProgress(progress);
@@ -89,9 +88,8 @@ void AgentProgressMonitor::Private::instanceStatusChanged(const AgentInstance &i
         return;
     }
 
-    if (agent == instance) {
-        //Why ? agent = instance if agent == instance.
-        agent = instance;
+    if (agent == instance) { // compares identifiers
+        agent = instance; // keeps copy of current status
         item.data()->setStatus(agent.statusMessage());
         switch (agent.status()) {
         case AgentInstance::Idle:
