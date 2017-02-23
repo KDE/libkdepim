@@ -920,7 +920,7 @@ QStringList AddresseeLineEdit::balooBlackList() const
 
 void AddresseeLineEdit::slotEditingFinished()
 {
-    foreach (KJob *job, d->mightBeGroupJobs()) {
+    for (KJob *job : d->mightBeGroupJobs()) {
         disconnect(job);
         job->deleteLater();
     }

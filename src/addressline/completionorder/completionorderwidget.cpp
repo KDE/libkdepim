@@ -336,7 +336,7 @@ void CompletionOrderWidget::loadCompletionItems()
 {
     if (mLdapSearch) {
         // The first step is to gather all the data, creating CompletionItem objects
-        foreach (KLDAP::LdapClient *client, mLdapSearch->clients()) {
+        for (KLDAP::LdapClient *client : mLdapSearch->clients()) {
             new CompletionViewItem(mListView, new LDAPCompletionItem(client));
         }
     }

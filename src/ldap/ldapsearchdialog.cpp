@@ -24,6 +24,7 @@
 #include "ldapsearchdialog.h"
 
 #include "ldapclient.h"
+#include "helper_p.h"
 #include "ldapclientsearchconfig.h"
 #include "widgets/progressindicatorlabel.h"
 
@@ -786,7 +787,7 @@ void LdapSearchDialog::Private::saveSettings()
 
 void LdapSearchDialog::Private::cancelQuery()
 {
-    Q_FOREACH (KLDAP::LdapClient *client, mLdapClientList) {
+    for (KLDAP::LdapClient *client : qAsConst(mLdapClientList)) {
         client->cancelQuery();
     }
 }
@@ -799,7 +800,7 @@ void LdapSearchDialog::Private::slotAddResult(const KLDAP::LdapClient &client,
 
 void LdapSearchDialog::Private::slotSetScope(bool rec)
 {
-    Q_FOREACH (KLDAP::LdapClient *client, mLdapClientList) {
+    for (KLDAP::LdapClient *client : qAsConst(mLdapClientList)) {
         if (rec) {
             client->setScope(QStringLiteral("sub"));
         } else {
@@ -834,7 +835,7 @@ void LdapSearchDialog::Private::slotStartSearch()
 
     // loop in the list and run the KLDAP::LdapClients
     mModel->clear();
-    Q_FOREACH (KLDAP::LdapClient *client, mLdapClientList) {
+    for (KLDAP::LdapClient *client : qAsConst(mLdapClientList)) {
         client->startQuery(filter);
     }
 
@@ -850,7 +851,7 @@ void LdapSearchDialog::Private::slotStopSearch()
 void LdapSearchDialog::Private::slotSearchDone()
 {
     // If there are no more active clients, we are done.
-    Q_FOREACH (KLDAP::LdapClient *client, mLdapClientList) {
+    for (KLDAP::LdapClient *client : qAsConst(mLdapClientList)) {
         if (client->isActive()) {
             return;
         }

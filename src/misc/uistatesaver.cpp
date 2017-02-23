@@ -18,6 +18,7 @@
 */
 
 #include "uistatesaver.h"
+#include "helper_p.h"
 
 #include <KConfigGroup>
 
@@ -101,7 +102,7 @@ template <typename Op, typename Config> static void processWidgets(QWidget *widg
 {
     QList<QWidget *> widgets = widget->findChildren<QWidget *>();
     widgets << widget;
-    foreach (QWidget *w, widgets) {
+    for (QWidget *w : qAsConst(widgets)) {
         if (w->objectName().isEmpty()) {
             continue;
         }
