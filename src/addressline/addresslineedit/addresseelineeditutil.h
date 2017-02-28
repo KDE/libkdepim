@@ -17,7 +17,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #ifndef ADDRESSEELINEEDITUTIL_H
 #define ADDRESSEELINEEDITUTIL_H
 
@@ -27,7 +26,7 @@ namespace KPIM
 {
 namespace AddresseeLineEditUtil
 {
-    QString adaptPasteMails(QString str);
+QString adaptPasteMails(QString str);
 }
 }
 

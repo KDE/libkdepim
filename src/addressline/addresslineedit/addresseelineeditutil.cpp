@@ -17,11 +17,9 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #include "addresseelineeditutil.h"
 #include <QRegularExpression>
 #include <QUrl>
-
 
 QString KPIM::AddresseeLineEditUtil::adaptPasteMails(QString str)
 {

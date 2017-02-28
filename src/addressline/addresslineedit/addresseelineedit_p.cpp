@@ -133,7 +133,6 @@ void AddresseeLineEditPrivate::init()
     m_toolButton->setStyleSheet(QStringLiteral("QToolButton { border: none; }"));
     connect(m_toolButton, &QToolButton::clicked, q, &AddresseeLineEdit::iconClicked);
 
-
     if (!s_static.exists()) {
         s_static->completion->setOrder(KCompletion::Weighted);
         s_static->completion->setIgnoreCase(true);

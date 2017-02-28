@@ -81,15 +81,15 @@ public:
         if (!contacts.isEmpty()) {
             if (mInteractive) {
                 const QString text =
-                        xi18nc("@info",
-                               "A contact with the email address <email>%1</email> "
-                               "is already in your address book.", mCompleteAddress);
+                    xi18nc("@info",
+                           "A contact with the email address <email>%1</email> "
+                           "is already in your address book.", mCompleteAddress);
 
                 KMessageBox::information(
-                            mParentWidget,
-                            text,
-                            QString(),
-                            QStringLiteral("alreadyInAddressBook"));
+                    mParentWidget,
+                    text,
+                    QString(),
+                    QStringLiteral("alreadyInAddressBook"));
             }
             q->setError(UserDefinedError);
             q->emitResult();
@@ -223,11 +223,11 @@ public:
 
         if (mInteractive) {
             const QString text =
-                    xi18nc("@info",
-                           "<para>A contact for <email>%1</email> was successfully added "
-                           "to your address book.</para>"
-                           "<para>Do you want to edit this new contact now?</para>",
-                           mCompleteAddress);
+                xi18nc("@info",
+                       "<para>A contact for <email>%1</email> was successfully added "
+                       "to your address book.</para>"
+                       "<para>Do you want to edit this new contact now?</para>",
+                       mCompleteAddress);
 
             if (KMessageBox::questionYesNo(
                         mParentWidget,
@@ -237,8 +237,8 @@ public:
                         KStandardGuiItem::no(),
                         QStringLiteral("addedtokabc")) == KMessageBox::Yes) {
                 QPointer<Akonadi::ContactEditorDialog> dlg =
-                        new Akonadi::ContactEditorDialog(Akonadi::ContactEditorDialog::EditMode,
-                                                         mParentWidget);
+                    new Akonadi::ContactEditorDialog(Akonadi::ContactEditorDialog::EditMode,
+                                                     mParentWidget);
                 dlg->setContact(mItem);
                 connect(dlg, SIGNAL(contactStored(Akonadi::Item)),
                         q, SLOT(contactStored(Akonadi::Item)));
