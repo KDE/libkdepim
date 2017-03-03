@@ -28,7 +28,7 @@
 #include <QCommandLineOption>
 #include <QStandardPaths>
 
-#include "../src/widgets/kcheckcombobox.h"
+#include "../src/libkdepim/widgets/kcheckcombobox.h"
 
 int main(int argc, char *argv[])
 {

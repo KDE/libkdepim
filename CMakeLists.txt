@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-set(PIM_VERSION "5.4.40")
+set(PIM_VERSION "5.4.41")
 
 project(libkdepim VERSION ${PIM_VERSION})
 
@@ -25,7 +25,6 @@ include(ECMCoverageOption)
 set(LIBKDEPIM_LIB_VERSION ${PIM_VERSION})
 set(AKONADICONTACT_LIB_VERSION "5.4.40")
 set(QT_REQUIRED_VERSION "5.6.0")
-set(KMIME_LIB_VERSION "5.4.40")
 set(KLDAP_LIB_VERSION "5.4.40")
 set(KCONTACTS_LIB_VERSION "5.4.40")
 set(AKONADISEARCH_LIB_VERSION "5.4.40")
@@ -51,7 +50,6 @@ find_package(KF5Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 find_package(KF5AkonadiContact ${AKONADICONTACT_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5Contacts ${KCONTACTS_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5Ldap ${KLDAP_LIB_VERSION} CONFIG REQUIRED)
-find_package(KF5Mime ${KMIME_LIB_VERSION} CONFIG REQUIRED)
 
 find_package(KF5AkonadiSearch ${AKONADISEARCH_LIB_VERSION} CONFIG REQUIRED)
 set_package_properties(KF5AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "http://www.kde.org" TYPE REQUIRED PURPOSE "Provides search capabilities in KMail and Akonadi")

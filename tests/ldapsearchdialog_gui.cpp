@@ -27,7 +27,7 @@
 #include <QCommandLineOption>
 #include <QStandardPaths>
 
-#include "../src/ldap/ldapsearchdialog.h"
+#include "../src/libkdepim/ldap/ldapsearchdialog.h"
 
 int main(int argc, char *argv[])
 {
