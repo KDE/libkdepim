@@ -23,7 +23,7 @@
 #ifndef KDEPIM_PERSONSEARCHJOB_H
 #define KDEPIM_PERSONSEARCHJOB_H
 
-#include "kdepim_export.h"
+#include "kdepimakonadi_export.h"
 
 #include <KJob>
 #include <AkonadiCore/Collection>
@@ -33,7 +33,7 @@
 namespace KPIM
 {
 class PersonSearchJobPrivate;
-class KDEPIM_EXPORT PersonSearchJob : public KJob
+class KDEPIMAKONADI_EXPORT PersonSearchJob : public KJob
 {
     Q_OBJECT
 public:

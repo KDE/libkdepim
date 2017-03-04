@@ -20,7 +20,7 @@ with any edition of Qt, and distribute the resulting executable,
 without including the source code for Qt in the source distribution.
 */
 #include "collectionsearchjob.h"
-#include "libkdepim_debug.h"
+#include "libkdepimakonadi_debug.h"
 #include "helper_p.h"
 
 #include <AkonadiCore/CollectionFetchJob>
@@ -70,7 +70,7 @@ void CollectionSearchJob::start()
     while (it.next()) {
         collections << Akonadi::Collection(it.id());
     }
-    qCDebug(LIBKDEPIM_LOG) << "Found collections " << collections.size();
+    qCDebug(LIBKDEPIMAKONADI_LOG) << "Found collections " << collections.size();
 
     if (collections.isEmpty()) {
         //We didn't find anything
@@ -103,7 +103,7 @@ void CollectionSearchJob::onCollectionsReceived(const Akonadi::Collection::List 
 void CollectionSearchJob::onCollectionsFetched(KJob *job)
 {
     if (job->error()) {
-        qCWarning(LIBKDEPIM_LOG) << job->errorString();
+        qCWarning(LIBKDEPIMAKONADI_LOG) << job->errorString();
         emitResult();
         return;
     }
@@ -136,7 +136,7 @@ static Akonadi::Collection replaceParent(Akonadi::Collection col, const Akonadi:
 void CollectionSearchJob::onAncestorsFetched(KJob *job)
 {
     if (job->error()) {
-        qCWarning(LIBKDEPIM_LOG) << job->errorString();
+        qCWarning(LIBKDEPIMAKONADI_LOG) << job->errorString();
         emitResult();
         return;
     }

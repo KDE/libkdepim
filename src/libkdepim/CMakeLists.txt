@@ -21,15 +21,6 @@ set(kdepim_progresswidget_LIB_SRCS
    progresswidget/progressstatusbarwidget.cpp
 )
 
-set(kdepim_job_LIB_SRCS
-   job/addemailaddressjob.cpp
-   job/addcontactjob.cpp
-   job/openemailaddressjob.cpp
-   job/addemaildisplayjob.cpp
-   job/collectionsearchjob.cpp
-   job/personsearchjob.cpp
-)
-
 set(kdepim_widgets_LIB_SRCS
    widgets/customlogwidget.cpp
    widgets/kdatepickerpopup.cpp
@@ -94,7 +85,6 @@ set(kdepim_multiplyingline_LIB_SRCS
 set(kdepim_LIB_SRCS
    ${kdepim_addressline_blacklist_baloo_LIB_SRCS}
    ${kdepim_progresswidget_LIB_SRCS}
-   ${kdepim_job_LIB_SRCS}
    ${kdepim_widgets_LIB_SRCS}
    ${kdepim_ldap_LIB_SRCS}
    ${kdepim_misc_LIB_SRCS}
@@ -205,21 +195,6 @@ ecm_generate_headers(libkdepim_Camelcaseprogresswidget_HEADERS
   RELATIVE progresswidget
 )
 
-ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
-  HEADER_NAMES
-  AddContactJob
-  AddEmailAddressJob
-  AddEmailDisplayJob
-  CollectionSearchJob
-  OpenEmailAddressJob
-  PersonSearchJob
-  Person
- 
-  REQUIRED_HEADERS libkdepim_job_HEADERS
-  PREFIX Libkdepim
-  RELATIVE job
-)
-
 ecm_generate_headers(libkdepim_Camelcasepref_HEADERS
   HEADER_NAMES
   KPrefsDialog 
@@ -292,7 +267,6 @@ install(FILES
     ${libkdepim_Camelcasewidgets_HEADERS}
     ${libkdepim_Camelcaseprogresswidget_HEADERS}
     ${libkdepim_Camelcasemisc_HEADERS}
-    ${libkdepim_Camelcasejob_HEADERS}
     ${libkdepim_Camelcasepref_HEADERS}
     ${libkdepim_Camelcasemultiline_HEADERS}
     ${libkdepim_Camelcaseaddressline_HEADERS}
@@ -311,7 +285,6 @@ install(FILES
     ${libkdepim_progresswidget_HEADERS}
     ${libkdepim_misc_HEADERS}
     ${libkdepim_widgets_HEADERS}
-    ${libkdepim_job_HEADERS}
     ${libkdepim_pref_HEADERS}
     ${libkdepim_multiline_HEADERS}
     ${libkdepim_addressline_HEADERS}

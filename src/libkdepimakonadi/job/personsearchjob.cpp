@@ -20,7 +20,7 @@
   without including the source code for Qt in the source distribution.
 */
 #include "personsearchjob.h"
-#include "libkdepim_debug.h"
+#include "libkdepimakonadi_debug.h"
 
 #include <AkonadiCore/EntityDisplayAttribute>
 #include <AkonadiCore/CollectionModifyJob>
@@ -87,7 +87,7 @@ void PersonSearchJob::start()
     while (it.next()) {
         collections << Akonadi::Collection(it.id());
     }
-    qCDebug(LIBKDEPIM_LOG) << "Found persons " << collections.size();
+    qCDebug(LIBKDEPIMAKONADI_LOG) << "Found persons " << collections.size();
 
     d->mCollectionSearchDone = false;
     d->mLdapSearchDone = false;
@@ -139,7 +139,7 @@ void PersonSearchJob::onLDAPSearchData(const KLDAP::LdapResultObject::List &list
                         updatePersonCollection(person);
                         d->mMatches.insert(uid, person);
                     } else {
-                        qCWarning(LIBKDEPIM_LOG) << "That should not happen: we found two times persons with the same uid (" << uid << "), but differnet name:" << p.name << "vs" << person.name;
+                        qCWarning(LIBKDEPIMAKONADI_LOG) << "That should not happen: we found two times persons with the same uid (" << uid << "), but differnet name:" << p.name << "vs" << person.name;
                     }
                 }
             } else {            //New person found
@@ -147,7 +147,7 @@ void PersonSearchJob::onLDAPSearchData(const KLDAP::LdapResultObject::List &list
                 persons << person;
             }
         } else {
-            qCWarning(LIBKDEPIM_LOG) << item.object.dn().toString() << ": invalid email address" << person.mail;
+            qCWarning(LIBKDEPIMAKONADI_LOG) << item.object.dn().toString() << ": invalid email address" << person.mail;
         }
     }
     if (!persons.isEmpty()) {
@@ -190,7 +190,7 @@ void PersonSearchJob::onCollectionsReceived(const Akonadi::Collection::List &lis
             Person p = d->mMatches.value(uid);
             if (p.rootCollection > -1) {
                 //two collection with the same uid ?!
-                qCWarning(LIBKDEPIM_LOG) << "Two collections match to same person" << p.rootCollection << person.rootCollection;
+                qCWarning(LIBKDEPIMAKONADI_LOG) << "Two collections match to same person" << p.rootCollection << person.rootCollection;
             } else if (p.mail != person.mail) {
                 p.rootCollection = person.rootCollection;
                 p.updateDisplayName = person.updateDisplayName;
@@ -234,7 +234,7 @@ void PersonSearchJob::updatePersonCollection(const Person &person)
 void PersonSearchJob::onCollectionsFetched(KJob *job)
 {
     if (job->error()) {
-        qCWarning(LIBKDEPIM_LOG) << job->errorString();
+        qCWarning(LIBKDEPIMAKONADI_LOG) << job->errorString();
     }
     d->mCollectionSearchDone = true;
     if (d->mLdapSearchDone) {
@@ -250,7 +250,7 @@ QList<Person> PersonSearchJob::matches() const
 void PersonSearchJob::modifyResult(KJob *job)
 {
     if (job->error()) {
-        qCWarning(LIBKDEPIM_LOG) << job->errorString();
+        qCWarning(LIBKDEPIMAKONADI_LOG) << job->errorString();
         return;
     }
 
@@ -271,7 +271,7 @@ void PersonSearchJob::modifyResult(KJob *job)
             person.updateDisplayName = true;
         }
     }
-    qCDebug(LIBKDEPIM_LOG) << "modified person to" << person.uid << person.name << person.rootCollection;
+    qCDebug(LIBKDEPIMAKONADI_LOG) << "modified person to" << person.uid << person.name << person.rootCollection;
 
     d->mMatches.insert(person.uid, person);
     Q_EMIT personUpdate(person);

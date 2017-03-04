@@ -1,5 +1,5 @@
 /*
-  Copyright 2013-2015 Laurent Montel <montel@kde.org>
+  Copyright 2010 Tobias Koenig <tokoe@kde.org>
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Library General Public
@@ -17,33 +17,49 @@
   Boston, MA 02110-1301, USA.
 */
 
-#ifndef ADDEMAILDISPLAYJOB_H
-#define ADDEMAILDISPLAYJOB_H
+#ifndef OPENEMAILADDRESSJOB_H
+#define OPENEMAILADDRESSJOB_H
 
-#include "kdepim_export.h"
+#include "kdepimakonadi_export.h"
 
 #include <kjob.h>
 
 namespace Akonadi
 {
-class Item;
 }
 
 namespace KPIM
 {
 
-class KDEPIM_EXPORT AddEmailDiplayJob : public KJob
+/**
+ * @short A job to open the contact editor for a contact with a given email address.
+ *
+ * The job will check whether a contact with the given email address already
+ * exists in Akonadi. If not, it will add a new contact with the email address
+ * to Akonadi and then opens the contact editor.
+ */
+class KDEPIMAKONADI_EXPORT OpenEmailAddressJob : public KJob
 {
     Q_OBJECT
 
 public:
-    explicit AddEmailDiplayJob(const QString &email, QWidget *parentWidget, QObject *parent = nullptr);
+    /**
+     * Creates a new open email address job.
+     *
+     * @param email The email address to open.
+     * @param parentWidget The widget that will be used as parent for dialog.
+     * @param parent The parent object.
+     */
+    OpenEmailAddressJob(const QString &email, QWidget *parentWidget, QObject *parent = nullptr);
 
-    ~AddEmailDiplayJob();
-    void setShowAsHTML(bool html);
-    void setRemoteContent(bool b);
-    void setContact(const Akonadi::Item &contact);
+    /**
+     * Destroys the open email address job.
+     */
+    ~OpenEmailAddressJob();
 
+    /**
+     * Starts the job.
+     */
     void start() Q_DECL_OVERRIDE;
 
 private:
@@ -52,9 +68,7 @@ private:
     Private *const d;
 
     Q_PRIVATE_SLOT(d, void slotSearchDone(KJob *))
-    Q_PRIVATE_SLOT(d, void slotAddModifyContactDone(KJob *))
-    Q_PRIVATE_SLOT(d, void slotCollectionsFetched(KJob *))
-    Q_PRIVATE_SLOT(d, void slotResourceCreationDone(KJob *))
+    Q_PRIVATE_SLOT(d, void slotAddContactDone(KJob *))
     //@endcond
 };
 

@@ -17,70 +17,58 @@
   Boston, MA 02110-1301, USA.
 */
 
-#ifndef ADDCONTACTJOB_H
-#define ADDCONTACTJOB_H
+#ifndef ADDEMAILADDRESSJOB_H
+#define ADDEMAILADDRESSJOB_H
 
-#include "kdepim_export.h"
+#include "kdepimakonadi_export.h"
 
 #include <kjob.h>
 
 namespace Akonadi
 {
-class Collection;
-}
-
-namespace KContacts
-{
-class Addressee;
+class Item;
 }
 
 namespace KPIM
 {
 
 /**
- * @short A job to add a new contact to Akonadi.
+ * @short A job to add a new contact with a given email address to Akonadi.
  *
  * The job will check whether a contact with the given email address already
- * exists in Akonadi and adds it if it does not exist yet.
+ * exists in Akonadi and inform the user about it, if it does not exist yet,
+ * a new contact is added.
  */
-class KDEPIM_EXPORT AddContactJob : public KJob
+class KDEPIMAKONADI_EXPORT AddEmailAddressJob : public KJob
 {
     Q_OBJECT
 
 public:
     /**
-     * Creates a new add contact job.
+     * Creates a new add email address job.
      *
-     * If the contact is not found, the user will be presented a dialog to
-     * choose the address book where the new contact shall be stored.
-     *
-     * @param contact The contact to add.
+     * @param email The email address.
      * @param parentWidget The widget that will be used as parent for dialog.
      * @param parent The parent object.
      */
-    AddContactJob(const KContacts::Addressee &contact, QWidget *parentWidget, QObject *parent = nullptr);
-
-    /**
-     * Creates a new add contact job.
-     *
-     * @param contact The contact to add.
-     * @param collection The address book collection where the contact shall be stored in.
-     * @param parent The parent object.
-     */
-    AddContactJob(const KContacts::Addressee &contact, const Akonadi::Collection &collection, QObject *parent = nullptr);
+    AddEmailAddressJob(const QString &email, QWidget *parentWidget, QObject *parent = nullptr);
 
     /**
      * Destroys the add email address job.
      */
-    ~AddContactJob();
+    ~AddEmailAddressJob();
 
     /**
      * Starts the job.
      */
     void start() Q_DECL_OVERRIDE;
 
-    void showMessageBox(bool b);
+    /**
+     * Returns the item that represents the new contact.
+     */
+    Akonadi::Item contact() const;
 
+    void setInteractive(bool b);
 private:
     //@cond PRIVATE
     class Private;
@@ -88,6 +76,11 @@ private:
 
     Q_PRIVATE_SLOT(d, void slotSearchDone(KJob *))
     Q_PRIVATE_SLOT(d, void slotAddContactDone(KJob *))
+    Q_PRIVATE_SLOT(d, void slotCollectionsFetched(KJob *))
+    Q_PRIVATE_SLOT(d, void slotResourceCreationDone(KJob *))
+    Q_PRIVATE_SLOT(d, void slotContactEditorError(const QString &))
+    Q_PRIVATE_SLOT(d, void contactStored(const Akonadi::Item &))
+
     //@endcond
 };
 

@@ -19,7 +19,7 @@
 */
 
 #include "addemailaddressjob.h"
-#include "misc/broadcaststatus.h"
+#include <Libkdepim/BroadcastStatus>
 #include "akonadi/contact/selectaddressbookdialog.h"
 
 #include <KContacts/ContactGroup>

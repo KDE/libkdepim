@@ -15,14 +15,14 @@
 #   progresswidget/progressstatusbarwidget.cpp
 #)
 
-#set(kdepim_job_LIB_SRCS
-#   job/addemailaddressjob.cpp
-#   job/addcontactjob.cpp
-#   job/openemailaddressjob.cpp
-#   job/addemaildisplayjob.cpp
-#   job/collectionsearchjob.cpp
-#   job/personsearchjob.cpp
-#)
+set(kdepim_job_LIB_SRCS
+   job/addemailaddressjob.cpp
+   job/addcontactjob.cpp
+   job/openemailaddressjob.cpp
+   job/addemaildisplayjob.cpp
+   job/collectionsearchjob.cpp
+   job/personsearchjob.cpp
+)
 
 #set(kdepim_widgets_LIB_SRCS
 #   widgets/customlogwidget.cpp
@@ -85,66 +85,60 @@
 #   multiplyingline/multiplyinglineview_p.cpp
 #)
 
-#set(kdepim_LIB_SRCS
-#   ${kdepim_addressline_blacklist_baloo_LIB_SRCS}
-#   ${kdepim_progresswidget_LIB_SRCS}
-#   ${kdepim_job_LIB_SRCS}
-#   ${kdepim_widgets_LIB_SRCS}
-#   ${kdepim_ldap_LIB_SRCS}
-#   ${kdepim_misc_LIB_SRCS}
-#   ${kdepim_addressline_LIB_SRCS}
-#   ${kdepim_multiplyingline_LIB_SRCS}
-#   prefs/kprefsdialog.cpp
-#)
-#ecm_qt_declare_logging_category(kdepim_LIB_SRCS HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim)
+set(kdepimakonadi_LIB_SRCS
+   ${kdepim_job_LIB_SRCS}
+)
+
+ecm_qt_declare_logging_category(kdepimakonadi_LIB_SRCS HEADER libkdepimakonadi_debug.h IDENTIFIER LIBKDEPIMAKONADI_LOG CATEGORY_NAME org.kde.pim.libkdepimakonadi)
 
 
-#add_library(KF5Libkdepim ${kdepim_LIB_SRCS})
-#generate_export_header(KF5Libkdepim BASE_NAME kdepim)
-#add_library(KF5::Libkdepim ALIAS KF5Libkdepim)
-#target_include_directories(KF5Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim/;${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim>")
-#target_include_directories(KF5Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
+add_library(KF5LibkdepimAkonadi ${kdepimakonadi_LIB_SRCS})
+generate_export_header(KF5LibkdepimAkonadi BASE_NAME kdepimakonadi)
+add_library(KF5::LibkdepimAkonadi ALIAS KF5LibkdepimAkonadi)
+target_include_directories(KF5LibkdepimAkonadi INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim/;${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim>")
+target_include_directories(KF5LibkdepimAkonadi PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
 
 
 
-#target_link_libraries(KF5Libkdepim
-# PUBLIC
-#  KF5::AkonadiCore
-#  KF5::AkonadiContact
-# PRIVATE
-#  KF5::AkonadiWidgets
-#  KF5::Ldap
-#  KF5::Contacts
-#  KF5::Codecs
-#  KF5::Completion
-#  KF5::I18n
-#  KF5::KCMUtils
-#  KF5::Wallet
-#  KF5::ItemViews
-#  KF5::AkonadiSearchPIM
-#  KF5::IconThemes
-#  KF5::KIOCore
-#  KF5::KIOWidgets
-#  Qt5::DBus
-#  Qt5::Network
-#)
+target_link_libraries(KF5LibkdepimAkonadi
+ PUBLIC
+  KF5::AkonadiCore
+  KF5::AkonadiContact
+  KF5::Libkdepim
+ PRIVATE
+  KF5::AkonadiWidgets
+  KF5::Ldap
+  KF5::Contacts
+  KF5::Codecs
+  KF5::Completion
+  KF5::I18n
+  KF5::KCMUtils
+  KF5::Wallet
+  KF5::ItemViews
+  KF5::AkonadiSearchPIM
+  KF5::IconThemes
+  KF5::KIOCore
+  KF5::KIOWidgets
+  Qt5::DBus
+  Qt5::Network
+)
 
 
-#if(MINGW)
-#   target_link_libraries(KF5Libkdepim oleaut32)
-#endif()
+if(MINGW)
+   target_link_libraries(KF5LibkdepimAkonadi oleaut32)
+endif()
 
 
-#set_target_properties(KF5Libkdepim PROPERTIES
-#    VERSION ${LIBKDEPIM_VERSION_STRING}
-#    SOVERSION ${LIBKDEPIM_SOVERSION}
-#    EXPORT_NAME Libkdepim
-#)
+set_target_properties(KF5LibkdepimAkonadi PROPERTIES
+    VERSION ${LIBKDEPIM_VERSION_STRING}
+    SOVERSION ${LIBKDEPIM_SOVERSION}
+    EXPORT_NAME LibkdepimAkonadi
+)
 
-#install(TARGETS
-#    KF5Libkdepim
-#    EXPORT KF5LibkdepimTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS} ${LIBRARY_NAMELINK}
-#)
+install(TARGETS
+    KF5LibkdepimAkonadi
+    EXPORT KF5LibkdepimTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS} ${LIBRARY_NAMELINK}
+)
 
 #ecm_generate_headers(libkdepim_Camelcaseldap_HEADERS
 #  HEADER_NAMES
@@ -199,20 +193,20 @@
 #  RELATIVE progresswidget
 #)
 
-#ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
-#  HEADER_NAMES
-#  AddContactJob
-#  AddEmailAddressJob
-#  AddEmailDisplayJob
-#  CollectionSearchJob
-#  OpenEmailAddressJob
-#  PersonSearchJob
-#  Person
+ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
+  HEADER_NAMES
+  AddContactJob
+  AddEmailAddressJob
+  AddEmailDisplayJob
+  CollectionSearchJob
+  OpenEmailAddressJob
+  PersonSearchJob
+  Person
 
-#  REQUIRED_HEADERS libkdepim_job_HEADERS
-#  PREFIX Libkdepim
-#  RELATIVE job
-#)
+  REQUIRED_HEADERS libkdepim_job_HEADERS
+  PREFIX Libkdepim
+  RELATIVE job
+)
 
 #ecm_generate_headers(libkdepim_Camelcasepref_HEADERS
 #  HEADER_NAMES
@@ -272,12 +266,12 @@
 #  RELATIVE addressline/blacklistbaloocompletion/
 #)
 
-#ecm_generate_pri_file(BASE_NAME Libkdepim
-#    LIB_NAME KF5Libkdepim
-#    DEPS "AkonadiCore AkonadiContact" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
-#)
+ecm_generate_pri_file(BASE_NAME LibkdepimAkonadi
+    LIB_NAME KF5LibkdepimAkonadi
+    DEPS "AkonadiCore AkonadiContact" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
+)
 
-#install(FILES
+install(FILES
 #    ${libkdepim_Camelcaseblacklistbaloocompletion_HEADERS}
 #    ${libkdepim_Camelcasecompletionconfiguredialog_HEADERS}
 #    ${libkdepim_Camelcasecompletionorder_HEADERS}
@@ -286,16 +280,16 @@
 #    ${libkdepim_Camelcasewidgets_HEADERS}
 #    ${libkdepim_Camelcaseprogresswidget_HEADERS}
 #    ${libkdepim_Camelcasemisc_HEADERS}
-#    ${libkdepim_Camelcasejob_HEADERS}
+    ${libkdepim_Camelcasejob_HEADERS}
 #    ${libkdepim_Camelcasepref_HEADERS}
 #    ${libkdepim_Camelcasemultiline_HEADERS}
 #    ${libkdepim_Camelcaseaddressline_HEADERS}
 #    ${libkdepim_Camelcaserecentaddress_HEADERS}
-#    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
-#    COMPONENT Devel
-#)
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/LibkdepimAkonadi
+    COMPONENT Devel
+)
 
-#install(FILES
+install(FILES
 #    ${libkdepim_blacklistbaloocompletion_HEADERS}
 #    ${libkdepim_completionconfiguredialog_HEADERS}
 #    ${libkdepim_completionorder_HEADERS}
@@ -305,38 +299,16 @@
 #    ${libkdepim_progresswidget_HEADERS}
 #    ${libkdepim_misc_HEADERS}
 #    ${libkdepim_widgets_HEADERS}
-#    ${libkdepim_job_HEADERS}
+    ${libkdepim_job_HEADERS}
 #    ${libkdepim_pref_HEADERS}
 #    ${libkdepim_multiline_HEADERS}
 #    ${libkdepim_addressline_HEADERS}
 #    ${libkdepim_recentaddress_HEADERS}
-#    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim
-#    COMPONENT Devel
-#)
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepimakonadi
+    COMPONENT Devel
+)
 
 #install(FILES
 #    ${PRI_FILENAME}
 #    DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
-#add_subdirectory(designer)
-############ next target ###############
-
-
-#set( kcm_ldap_SRCS
-#     ldap/kcmldap.cpp
-#)
-
-#add_library(kcm_ldap MODULE ${kcm_ldap_SRCS})
-
-
-#target_link_libraries(kcm_ldap   KF5::Libkdepim KF5::IconThemes KF5::KCMUtils KF5::I18n KF5::Ldap Qt5::Core)
-
-#kcoreaddons_desktop_to_json(kcm_ldap ldap/kcmldap.desktop DEFAULT_SERVICE_TYPE)
-
-#install(TARGETS kcm_ldap DESTINATION ${KDE_INSTALL_PLUGINDIR})
-
-#install(FILES ldap/kcmldap.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
-
-############ install files ###############
-
-#install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mailtransport.service.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})

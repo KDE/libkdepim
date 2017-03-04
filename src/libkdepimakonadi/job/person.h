@@ -23,7 +23,7 @@
 #ifndef KDEPIM_PERSON_H
 #define KDEPIM_PERSON_H
 
-#include "kdepim_export.h"
+#include "kdepimakonadi_export.h"
 
 #include <QStringList>
 #include <AkonadiCore/Collection>
@@ -31,7 +31,7 @@
 namespace KPIM
 {
 
-struct KDEPIM_EXPORT Person {
+struct KDEPIMAKONADI_EXPORT Person {
     Person()
         : rootCollection(-1), updateDisplayName(false)
     {
