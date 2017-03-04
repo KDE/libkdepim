@@ -1,6 +1,6 @@
 
-#add_definitions( -DQT_NO_CAST_FROM_ASCII )
-#add_definitions( -DQT_NO_CAST_TO_ASCII )
+add_definitions( -DQT_NO_CAST_FROM_ASCII )
+add_definitions( -DQT_NO_CAST_TO_ASCII )
 
 
 
@@ -87,18 +87,6 @@ install(TARGETS
     EXPORT KF5LibkdepimTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS} ${LIBRARY_NAMELINK}
 )
 
-#ecm_generate_headers(libkdepim_Camelcaseldap_HEADERS
-#  HEADER_NAMES
-#  LdapClientSearchConfig
-#  LdapClientSearch
-#  AddHostDialog
-#  LdapSearchDialog
-#  LdapClient
-#  REQUIRED_HEADERS libkdepim_ldap_HEADERS
-#  PREFIX Libkdepim
-#  RELATIVE ldap
-#)
-
 ecm_generate_headers(libkdepimakonadi_Camelcasewidgets_HEADERS
   HEADER_NAMES
   TagSelectionCombo
@@ -133,14 +121,6 @@ ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
   PREFIX LibkdepimAkonadi
   RELATIVE job
 )
-
-#ecm_generate_headers(libkdepim_Camelcasepref_HEADERS
-#  HEADER_NAMES
-#  KPrefsDialog
-#  REQUIRED_HEADERS libkdepim_pref_HEADERS
-#  PREFIX Libkdepim
-#  RELATIVE prefs
-#)
 
 #ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
 #  HEADER_NAMES
@@ -202,7 +182,6 @@ install(FILES
 #    ${libkdepim_Camelcasecompletionconfiguredialog_HEADERS}
 #    ${libkdepim_Camelcasecompletionorder_HEADERS}
 #    ${libkdepim_CamelcaseCamelCase_HEADERS}
-#    ${libkdepim_Camelcaseldap_HEADERS}
     ${libkdepimakonadi_Camelcasewidgets_HEADERS}
 #    ${libkdepim_Camelcaseprogresswidget_HEADERS}
 #    ${libkdepim_Camelcasemisc_HEADERS}
@@ -221,7 +200,6 @@ install(FILES
 #    ${libkdepim_completionorder_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/kdepimakonadi_export.h
 #    ${libkdepim_CamelCase_HEADERS}
-#    ${libkdepim_ldap_HEADERS}
 #    ${libkdepim_progresswidget_HEADERS}
 #    ${libkdepim_misc_HEADERS}
     ${libkdepimakonadi_widgets_HEADERS}
@@ -234,7 +212,7 @@ install(FILES
     COMPONENT Devel
 )
 
-#install(FILES
-#    ${PRI_FILENAME}
-#    DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
+install(FILES
+    ${PRI_FILENAME}
+    DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
