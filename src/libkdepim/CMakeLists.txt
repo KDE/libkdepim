@@ -10,8 +10,6 @@ endif()
 add_subdirectory(pics)
 
 
-add_definitions(-DTRANSLATION_DOMAIN=\"libkdepim\")
-
 ########### next target ###############
 set(kdepim_progresswidget_LIB_SRCS
    progresswidget/progressmanager.cpp
