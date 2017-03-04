@@ -24,69 +24,16 @@ set(kdepim_job_LIB_SRCS
    job/personsearchjob.cpp
 )
 
-#set(kdepim_widgets_LIB_SRCS
-#   widgets/customlogwidget.cpp
-#   widgets/kdatepickerpopup.cpp
-#   widgets/kcheckcombobox.cpp
-#   widgets/kweekdaycheckcombo.cpp
-#   widgets/kwidgetlister.cpp
-#   widgets/pimmessagebox.cpp
-#   widgets/overlaywidget.cpp
-#   widgets/tagwidgets.cpp
-#   widgets/progressindicatorlabel.cpp
-#   widgets/progressindicatorwidget.cpp
-#   widgets/tagselectioncombo.cpp
-#)
+set(kdepimakonadi_widgets_LIB_SRCS
+   widgets/tagwidgets.cpp
+   widgets/tagselectioncombo.cpp
+)
 
-#set(kdepim_ldap_LIB_SRCS
-#   ldap/addhostdialog.cpp
-#   ldap/ldapclient.cpp
-#   ldap/ldapsearchdialog.cpp
-#   ldap/ldapclientsearch.cpp
-#   ldap/ldapclientsearchconfig.cpp
-#   ldap/addhostdialog.cpp
-#)
-#ecm_qt_declare_logging_category(kdepim_ldap_LIB_SRCS HEADER ldapclient_debug.h IDENTIFIER LDAPCLIENT_LOG CATEGORY_NAME org.kde.pim.ldapclient)
 
-#set(kdepim_misc_LIB_SRCS
-#   misc/broadcaststatus.cpp
-#   misc/emailvalidator.cpp
-#   misc/maillistdrag.cpp
-#   misc/uistatesaver.cpp
-#)
-
-#set(kdepim_addressline_LIB_SRCS
-#   addressline/completionorder/completionordereditor.cpp
-#   addressline/completionorder/completionorderwidget.cpp
-#   addressline/addresslineedit/addresseelineedit.cpp
-#   addressline/addresslineedit/addresseelineedit_p.cpp
-#   addressline/addresslineedit/addresseelineeditstatic.cpp
-#   addressline/addresslineedit/kmailcompletion.cpp
-#   addressline/addresslineedit/baloocompletionemail.cpp
-#   addressline/completionconfiguredialog/completionconfiguredialog.cpp
-#   addressline/recentaddress/recentaddressdialog.cpp
-#   addressline/recentaddress/recentaddresswidget.cpp
-#   addressline/recentaddress/recentaddresses.cpp
-#   addressline/addresslineedit/addresseelineeditutil.cpp
-#)
-
-#set(kdepim_addressline_blacklist_baloo_LIB_SRCS
-#   addressline/blacklistbaloocompletion/blacklistbalooemailcompletiondialog.cpp
-#   addressline/blacklistbaloocompletion/blacklistbalooemaillist.cpp
-#   addressline/blacklistbaloocompletion/blacklistbalooemailsearchjob.cpp
-#   addressline/blacklistbaloocompletion/blacklistbalooemailutil.cpp
-#   addressline/blacklistbaloocompletion/blacklistbalooemailcompletionwidget.cpp
-#   addressline/blacklistbaloocompletion/blacklistbalooemailwarning.cpp
-#)
-
-#set(kdepim_multiplyingline_LIB_SRCS
-#   multiplyingline/multiplyingline.cpp
-#   multiplyingline/multiplyinglineeditor.cpp
-#   multiplyingline/multiplyinglineview_p.cpp
-#)
 
 set(kdepimakonadi_LIB_SRCS
    ${kdepim_job_LIB_SRCS}
+   ${kdepimakonadi_widgets_LIB_SRCS}
 )
 
 ecm_qt_declare_logging_category(kdepimakonadi_LIB_SRCS HEADER libkdepimakonadi_debug.h IDENTIFIER LIBKDEPIMAKONADI_LOG CATEGORY_NAME org.kde.pim.libkdepimakonadi)
@@ -152,35 +99,14 @@ install(TARGETS
 #  RELATIVE ldap
 #)
 
-#ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
-#  HEADER_NAMES
-#  CustomLogWidget
-#  KCheckComboBox
-#  KDatePickerPopup
-#  KWeekdayCheckCombo
-#  KWidgetLister
-#  OverlayWidget
-#  PIMMessageBox
-#  ProgressIndicatorLabel
-#  ProgressIndicatorWidget
-#  TagSelectionCombo
-#  TagWidgets
-#  REQUIRED_HEADERS libkdepim_widgets_HEADERS
-#  PREFIX Libkdepim
-#  RELATIVE widgets
-#)
-
-#ecm_generate_headers(libkdepim_Camelcasemisc_HEADERS
-#  HEADER_NAMES
-#  EmailValidator
-#  BroadcastStatus
-#  MaillistDrag
-#  UiStateSaver
-#  KCursorSaver
-#  REQUIRED_HEADERS libkdepim_misc_HEADERS
-#  PREFIX Libkdepim
-#  RELATIVE misc
-#)
+ecm_generate_headers(libkdepimakonadi_Camelcasewidgets_HEADERS
+  HEADER_NAMES
+  TagSelectionCombo
+  TagWidgets
+  REQUIRED_HEADERS libkdepimakonadi_widgets_HEADERS
+  PREFIX LibkdepimAkonadi
+  RELATIVE widgets
+)
 
 #ecm_generate_headers(libkdepim_Camelcaseprogresswidget_HEADERS
 #  HEADER_NAMES
@@ -204,7 +130,7 @@ ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
   Person
 
   REQUIRED_HEADERS libkdepim_job_HEADERS
-  PREFIX Libkdepim
+  PREFIX LibkdepimAkonadi
   RELATIVE job
 )
 
@@ -277,7 +203,7 @@ install(FILES
 #    ${libkdepim_Camelcasecompletionorder_HEADERS}
 #    ${libkdepim_CamelcaseCamelCase_HEADERS}
 #    ${libkdepim_Camelcaseldap_HEADERS}
-#    ${libkdepim_Camelcasewidgets_HEADERS}
+    ${libkdepimakonadi_Camelcasewidgets_HEADERS}
 #    ${libkdepim_Camelcaseprogresswidget_HEADERS}
 #    ${libkdepim_Camelcasemisc_HEADERS}
     ${libkdepim_Camelcasejob_HEADERS}
@@ -293,12 +219,12 @@ install(FILES
 #    ${libkdepim_blacklistbaloocompletion_HEADERS}
 #    ${libkdepim_completionconfiguredialog_HEADERS}
 #    ${libkdepim_completionorder_HEADERS}
-#    ${CMAKE_CURRENT_BINARY_DIR}/kdepim_export.h
+    ${CMAKE_CURRENT_BINARY_DIR}/kdepimakonadi_export.h
 #    ${libkdepim_CamelCase_HEADERS}
 #    ${libkdepim_ldap_HEADERS}
 #    ${libkdepim_progresswidget_HEADERS}
 #    ${libkdepim_misc_HEADERS}
-#    ${libkdepim_widgets_HEADERS}
+    ${libkdepimakonadi_widgets_HEADERS}
     ${libkdepim_job_HEADERS}
 #    ${libkdepim_pref_HEADERS}
 #    ${libkdepim_multiline_HEADERS}

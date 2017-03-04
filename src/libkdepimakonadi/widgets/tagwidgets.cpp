@@ -26,7 +26,7 @@
 #include <AkonadiWidgets/TagWidget>
 #include <AkonadiCore/TagModel>
 #include <AkonadiCore/Monitor>
-#include "libkdepim_debug.h"
+#include "libkdepimakonadi_debug.h"
 
 using namespace KPIM;
 
@@ -90,7 +90,7 @@ void TagWidget::setSelection(const QStringList &tagNames)
 void TagWidget::onTagCreated(KJob *job)
 {
     if (job->error()) {
-        qCWarning(LIBKDEPIM_LOG) << "Failed to create tag " << job->errorString();
+        qCWarning(LIBKDEPIMAKONADI_LOG) << "Failed to create tag " << job->errorString();
         return;
     }
     Akonadi::TagCreateJob *createJob = static_cast<Akonadi::TagCreateJob *>(job);
@@ -139,7 +139,7 @@ void TagSelectionDialog::setSelection(const QStringList &tagNames)
 void TagSelectionDialog::onTagCreated(KJob *job)
 {
     if (job->error()) {
-        qCWarning(LIBKDEPIM_LOG) << "Failed to create tag " << job->errorString();
+        qCWarning(LIBKDEPIMAKONADI_LOG) << "Failed to create tag " << job->errorString();
         return;
     }
     Akonadi::TagCreateJob *createJob = static_cast<Akonadi::TagCreateJob *>(job);

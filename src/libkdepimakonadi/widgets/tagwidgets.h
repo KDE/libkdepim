@@ -18,7 +18,7 @@
 #ifndef KDEPIM_TAGWIDGETS_H
 #define KDEPIM_TAGWIDGETS_H
 
-#include "kdepim_export.h"
+#include "kdepimakonadi_export.h"
 #include <Tag>
 #include <TagSelectionDialog>
 #include <QWidget>
@@ -32,7 +32,7 @@ class TagWidget;
 namespace KPIM
 {
 class TagWidgetPrivate;
-class KDEPIM_EXPORT TagWidget: public QWidget
+class KDEPIMAKONADI_EXPORT TagWidget: public QWidget
 {
     Q_OBJECT
 public:
@@ -53,7 +53,7 @@ private:
 };
 
 class TagSelectionDialogPrivate;
-class KDEPIM_EXPORT TagSelectionDialog : public Akonadi::TagSelectionDialog
+class KDEPIMAKONADI_EXPORT TagSelectionDialog : public Akonadi::TagSelectionDialog
 {
     Q_OBJECT
 public:

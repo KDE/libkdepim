@@ -18,21 +18,21 @@
 #ifndef TAGSELECTIONCOMBO_H
 #define TAGSELECTIONCOMBO_H
 
-#include "kdepim_export.h"
+#include "kdepimakonadi_export.h"
 #include <KComboBox>
-#include "kcheckcombobox.h"
+#include <libkdepim/kcheckcombobox.h>
 
 namespace KPIM
 {
 
-class KDEPIM_EXPORT TagSelectionCombo : public KPIM::KCheckComboBox
+class KDEPIMAKONADI_EXPORT TagSelectionCombo : public KPIM::KCheckComboBox
 {
     Q_OBJECT
 public:
     explicit TagSelectionCombo(QWidget *parent = nullptr);
 };
 
-class KDEPIM_EXPORT TagCombo : public KComboBox
+class KDEPIMAKONADI_EXPORT TagCombo : public KComboBox
 {
     Q_OBJECT
 public:

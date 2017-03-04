@@ -29,10 +29,8 @@ set(kdepim_widgets_LIB_SRCS
    widgets/kwidgetlister.cpp
    widgets/pimmessagebox.cpp
    widgets/overlaywidget.cpp
-   widgets/tagwidgets.cpp
    widgets/progressindicatorlabel.cpp
    widgets/progressindicatorwidget.cpp
-   widgets/tagselectioncombo.cpp
 )
 
 set(kdepim_ldap_LIB_SRCS
@@ -165,8 +163,6 @@ ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
   PIMMessageBox
   ProgressIndicatorLabel
   ProgressIndicatorWidget
-  TagSelectionCombo
-  TagWidgets
   REQUIRED_HEADERS libkdepim_widgets_HEADERS
   PREFIX Libkdepim
   RELATIVE widgets
