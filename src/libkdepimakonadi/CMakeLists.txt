@@ -128,7 +128,7 @@ ecm_generate_headers(libkdepimakonadi_Camelcasewidgets_HEADERS
   TagSelectionCombo
   TagWidgets
   REQUIRED_HEADERS libkdepimakonadi_widgets_HEADERS
-  PREFIX LibkdepimAkonadiAkonadi
+  PREFIX LibkdepimAkonadi
   RELATIVE widgets
 )
 
@@ -154,7 +154,7 @@ ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
   Person
 
   REQUIRED_HEADERS libkdepim_job_HEADERS
-  PREFIX LibkdepimAkonadiAkonadi
+  PREFIX LibkdepimAkonadi
   RELATIVE job
 )
 
