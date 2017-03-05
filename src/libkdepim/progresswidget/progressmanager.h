@@ -440,14 +440,14 @@ private:
     // prevent unsolicited copies
     ProgressManager(const ProgressManager &);
 
-    virtual ProgressItem *createProgressItemImpl(ProgressItem *parent,
+    ProgressItem *createProgressItemImpl(ProgressItem *parent,
             const QString &id,
             const QString &label,
             const QString &status,
             bool cancellable,
             ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
 
-    virtual ProgressItem *createProgressItemImpl(const QString &parent,
+    ProgressItem *createProgressItemImpl(const QString &parent,
             const QString &id,
             const QString &label,
             const QString &status,
