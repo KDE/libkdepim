@@ -4,6 +4,6 @@ PluginName=KDEPimAkonadiWidgets
 [KPIM::AddresseeLineEdit]
 ToolTip=Addressee Line Edit (KDE-PIM)
 WhatsThis=A line edit which lets you select addressees from the addressbook
-IncludeFile=Libkdepim/AddresseeLineEdit
+IncludeFile=LibkdepimAkonadi/AddresseeLineEdit
 Group=Input (KDE-PIM)
 
