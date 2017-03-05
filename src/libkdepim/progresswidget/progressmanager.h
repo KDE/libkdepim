@@ -455,13 +455,7 @@ private:
             const QString &status,
             bool cancellable,
             ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
-    ProgressItem *createProgressItemForAgent(ProgressItem *parent,
-            const Akonadi::AgentInstance &instance,
-            const QString &id,
-            const QString &label,
-            const QString &status,
-            bool cancellable,
-            ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
+
     void emitShowProgressDialogImpl();
 
     QHash< QString, ProgressItem * > mTransactions;
