@@ -4,6 +4,40 @@ add_definitions( -DQT_NO_CAST_TO_ASCII )
 
 
 
+if(BUILD_TESTING)
+    add_subdirectory(tests)
+    add_subdirectory(addressline/blacklistbaloocompletion/autotests)
+    add_subdirectory(addressline/autotests/)
+endif()
+
+
+add_subdirectory(designer)
+
+set(kdepim_addressline_LIB_SRCS
+   addressline/completionorder/completionordereditor.cpp
+   addressline/completionorder/completionorderwidget.cpp
+   addressline/addresslineedit/addresseelineedit.cpp
+   addressline/addresslineedit/addresseelineedit_p.cpp
+   addressline/addresslineedit/addresseelineeditstatic.cpp
+   addressline/addresslineedit/kmailcompletion.cpp
+   addressline/addresslineedit/baloocompletionemail.cpp
+   addressline/completionconfiguredialog/completionconfiguredialog.cpp
+   addressline/recentaddress/recentaddressdialog.cpp
+   addressline/recentaddress/recentaddresswidget.cpp
+   addressline/recentaddress/recentaddresses.cpp
+   addressline/addresslineedit/addresseelineeditutil.cpp
+)
+
+set(kdepim_addressline_blacklist_baloo_LIB_SRCS
+   addressline/blacklistbaloocompletion/blacklistbalooemailcompletiondialog.cpp
+   addressline/blacklistbaloocompletion/blacklistbalooemaillist.cpp
+   addressline/blacklistbaloocompletion/blacklistbalooemailsearchjob.cpp
+   addressline/blacklistbaloocompletion/blacklistbalooemailutil.cpp
+   addressline/blacklistbaloocompletion/blacklistbalooemailcompletionwidget.cpp
+   addressline/blacklistbaloocompletion/blacklistbalooemailwarning.cpp
+)
+
+
 ############ next target ###############
 #set(kdepim_progresswidget_LIB_SRCS
 #   progresswidget/progressmanager.cpp
@@ -34,6 +68,8 @@ set(kdepimakonadi_widgets_LIB_SRCS
 set(kdepimakonadi_LIB_SRCS
    ${kdepim_job_LIB_SRCS}
    ${kdepimakonadi_widgets_LIB_SRCS}
+   ${kdepim_addressline_LIB_SRCS}
+   ${kdepim_addressline_blacklist_baloo_LIB_SRCS}
 )
 
 ecm_qt_declare_logging_category(kdepimakonadi_LIB_SRCS HEADER libkdepimakonadi_debug.h IDENTIFIER LIBKDEPIMAKONADI_LOG CATEGORY_NAME org.kde.pim.libkdepimakonadi)
@@ -132,45 +168,45 @@ ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
 #)
 
 
-#ecm_generate_headers(libkdepim_Camelcaseaddressline_HEADERS
-#  HEADER_NAMES
-#  AddresseeLineEdit
-#  REQUIRED_HEADERS libkdepim_addressline_HEADERS
-#  PREFIX Libkdepim
-#  RELATIVE  addressline/addresslineedit/
-#)
+ecm_generate_headers(libkdepim_Camelcaseaddressline_HEADERS
+  HEADER_NAMES
+  AddresseeLineEdit
+  REQUIRED_HEADERS libkdepim_addressline_HEADERS
+  PREFIX Libkdepim
+  RELATIVE  addressline/addresslineedit/
+)
 
-#ecm_generate_headers(libkdepim_Camelcaserecentaddress_HEADERS
-#  HEADER_NAMES
-#  RecentAddresses
-#  REQUIRED_HEADERS libkdepim_recentaddress_HEADERS
-#  PREFIX Libkdepim
-#  RELATIVE addressline/recentaddress/
-#)
+ecm_generate_headers(libkdepim_Camelcaserecentaddress_HEADERS
+  HEADER_NAMES
+  RecentAddresses
+  REQUIRED_HEADERS libkdepim_recentaddress_HEADERS
+  PREFIX Libkdepim
+  RELATIVE addressline/recentaddress/
+)
 
-#ecm_generate_headers(libkdepim_Camelcasecompletionorder_HEADERS
-#  HEADER_NAMES
-#  CompletionOrderEditor
-#  REQUIRED_HEADERS libkdepim_completionorder_HEADERS
-#  PREFIX Libkdepim
-#  RELATIVE addressline/completionorder
-#)
+ecm_generate_headers(libkdepim_Camelcasecompletionorder_HEADERS
+  HEADER_NAMES
+  CompletionOrderEditor
+  REQUIRED_HEADERS libkdepim_completionorder_HEADERS
+  PREFIX Libkdepim
+  RELATIVE addressline/completionorder
+)
 
-#ecm_generate_headers(libkdepim_Camelcasecompletionconfiguredialog_HEADERS
-#  HEADER_NAMES
-#  CompletionConfigureDialog
-#  REQUIRED_HEADERS libkdepim_completionconfiguredialog_HEADERS
-#  PREFIX Libkdepim
-#  RELATIVE addressline/completionconfiguredialog/
-#)
+ecm_generate_headers(libkdepim_Camelcasecompletionconfiguredialog_HEADERS
+  HEADER_NAMES
+  CompletionConfigureDialog
+  REQUIRED_HEADERS libkdepim_completionconfiguredialog_HEADERS
+  PREFIX Libkdepim
+  RELATIVE addressline/completionconfiguredialog/
+)
 
-#ecm_generate_headers(libkdepim_Camelcaseblacklistbaloocompletion_HEADERS
-#  HEADER_NAMES
-#  BlackListBalooEmailCompletionDialog
-#  REQUIRED_HEADERS libkdepim_blacklistbaloocompletion_HEADERS
-#  PREFIX Libkdepim
-#  RELATIVE addressline/blacklistbaloocompletion/
-#)
+ecm_generate_headers(libkdepim_Camelcaseblacklistbaloocompletion_HEADERS
+  HEADER_NAMES
+  BlackListBalooEmailCompletionDialog
+  REQUIRED_HEADERS libkdepim_blacklistbaloocompletion_HEADERS
+  PREFIX Libkdepim
+  RELATIVE addressline/blacklistbaloocompletion/
+)
 
 ecm_generate_pri_file(BASE_NAME LibkdepimAkonadi
     LIB_NAME KF5LibkdepimAkonadi
@@ -178,9 +214,9 @@ ecm_generate_pri_file(BASE_NAME LibkdepimAkonadi
 )
 
 install(FILES
-#    ${libkdepim_Camelcaseblacklistbaloocompletion_HEADERS}
-#    ${libkdepim_Camelcasecompletionconfiguredialog_HEADERS}
-#    ${libkdepim_Camelcasecompletionorder_HEADERS}
+    ${libkdepim_Camelcaseblacklistbaloocompletion_HEADERS}
+    ${libkdepim_Camelcasecompletionconfiguredialog_HEADERS}
+    ${libkdepim_Camelcasecompletionorder_HEADERS}
 #    ${libkdepim_CamelcaseCamelCase_HEADERS}
     ${libkdepimakonadi_Camelcasewidgets_HEADERS}
 #    ${libkdepim_Camelcaseprogresswidget_HEADERS}
@@ -188,16 +224,16 @@ install(FILES
     ${libkdepim_Camelcasejob_HEADERS}
 #    ${libkdepim_Camelcasepref_HEADERS}
 #    ${libkdepim_Camelcasemultiline_HEADERS}
-#    ${libkdepim_Camelcaseaddressline_HEADERS}
-#    ${libkdepim_Camelcaserecentaddress_HEADERS}
+    ${libkdepim_Camelcaseaddressline_HEADERS}
+    ${libkdepim_Camelcaserecentaddress_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/LibkdepimAkonadi
     COMPONENT Devel
 )
 
 install(FILES
-#    ${libkdepim_blacklistbaloocompletion_HEADERS}
-#    ${libkdepim_completionconfiguredialog_HEADERS}
-#    ${libkdepim_completionorder_HEADERS}
+    ${libkdepim_blacklistbaloocompletion_HEADERS}
+    ${libkdepim_completionconfiguredialog_HEADERS}
+    ${libkdepim_completionorder_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/kdepimakonadi_export.h
 #    ${libkdepim_CamelCase_HEADERS}
 #    ${libkdepim_progresswidget_HEADERS}
@@ -206,8 +242,8 @@ install(FILES
     ${libkdepim_job_HEADERS}
 #    ${libkdepim_pref_HEADERS}
 #    ${libkdepim_multiline_HEADERS}
-#    ${libkdepim_addressline_HEADERS}
-#    ${libkdepim_recentaddress_HEADERS}
+    ${libkdepim_addressline_HEADERS}
+    ${libkdepim_recentaddress_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepimakonadi
     COMPONENT Devel
 )
