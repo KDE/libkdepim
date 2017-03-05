@@ -33,32 +33,17 @@ using namespace Akonadi;
 
 using namespace KPIM;
 
-ProgressItem *ProgressManager::createProgressItemForAgent(ProgressItem *parent,
-        const Akonadi::AgentInstance &instance,
-        const QString &id,
-        const QString &label,
-        const QString &status,
-        bool cancellable,
-        ProgressItem::CryptoStatus cryptoStatus,
-        unsigned int progressType)
-{
-    const bool itemAlreadyExists = (mTransactions.value(id) != nullptr);
-    ProgressItem *t = createProgressItemImpl(parent, id, label, status, cancellable, cryptoStatus);
-    t->setTypeProgressItem(progressType);
-    // TODO ^ emits progressItemAdded() before I'm done connecting the signals.
-    // Should I block that and Q_EMIT it when I'm done?
-
-    if (!itemAlreadyExists) {
-        //    qCDebug(LIBKDEPIM_LOG) << "Created ProgressItem for agent" << instance.name();
-        new AgentProgressMonitor(instance, t);
-    }
-    return t;
-}
-
 ProgressItem *ProgressManager::createProgressItem(ProgressItem *parent, const Akonadi::AgentInstance &agent, const QString &id,
                                                   const QString &label, const QString &status, bool canBeCanceled,
                                                   ProgressItem::CryptoStatus cryptoStatus)
 {
-    return instance()->createProgressItemForAgent(parent, agent, id, label,
+    const bool itemAlreadyExists = (instance()->progressItem(id) != nullptr);
+    ProgressItem *t = instance()->createProgressItem(parent, id, label,
             status, canBeCanceled, cryptoStatus);
+    t->setTypeProgressItem(0);
+    if (!itemAlreadyExists) {
+        //    qCDebug(LIBKDEPIM_LOG) << "Created ProgressItem for agent" << instance.name();
+        new AgentProgressMonitor(agent, t);
+    }
+    return t;
 }
