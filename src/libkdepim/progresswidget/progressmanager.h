@@ -394,6 +394,8 @@ public:
      */
     static void emitShowProgressDialog();
 
+    ProgressItem *progressItem(const QString &id) const;
+
 Q_SIGNALS:
     /** @see ProgressItem::progressItemAdded() */
     void progressItemAdded(KPIM::ProgressItem *);

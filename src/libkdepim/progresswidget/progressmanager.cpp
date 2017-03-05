@@ -388,6 +388,11 @@ void ProgressManager::emitShowProgressDialog()
     instance()->emitShowProgressDialogImpl();
 }
 
+ProgressItem *ProgressManager::progressItem(const QString &id) const
+{
+    return mTransactions.value(id);
+}
+
 void ProgressManager::slotAbortAll()
 {
     QHashIterator<QString, ProgressItem *> it(mTransactions);
