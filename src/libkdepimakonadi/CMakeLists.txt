@@ -128,7 +128,7 @@ ecm_generate_headers(libkdepimakonadi_Camelcasewidgets_HEADERS
   TagSelectionCombo
   TagWidgets
   REQUIRED_HEADERS libkdepimakonadi_widgets_HEADERS
-  PREFIX LibkdepimAkonadi
+  PREFIX LibkdepimAkonadiAkonadi
   RELATIVE widgets
 )
 
@@ -139,7 +139,7 @@ ecm_generate_headers(libkdepimakonadi_Camelcasewidgets_HEADERS
 #  ProgressDialog
 #  ProgressManager
 #  REQUIRED_HEADERS libkdepim_progresswidget_HEADERS
-#  PREFIX Libkdepim
+#  PREFIX LibkdepimAkonadi
 #  RELATIVE progresswidget
 #)
 
@@ -154,7 +154,7 @@ ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
   Person
 
   REQUIRED_HEADERS libkdepim_job_HEADERS
-  PREFIX LibkdepimAkonadi
+  PREFIX LibkdepimAkonadiAkonadi
   RELATIVE job
 )
 
@@ -163,7 +163,7 @@ ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
 #  MultiplyingLine
 #  MultiplyingLineEditor
 #  REQUIRED_HEADERS libkdepim_multiline_HEADERS
-#  PREFIX Libkdepim
+#  PREFIX LibkdepimAkonadi
 #  RELATIVE  multiplyingline
 #)
 
@@ -172,7 +172,7 @@ ecm_generate_headers(libkdepim_Camelcaseaddressline_HEADERS
   HEADER_NAMES
   AddresseeLineEdit
   REQUIRED_HEADERS libkdepim_addressline_HEADERS
-  PREFIX Libkdepim
+  PREFIX LibkdepimAkonadi
   RELATIVE  addressline/addresslineedit/
 )
 
@@ -180,7 +180,7 @@ ecm_generate_headers(libkdepim_Camelcaserecentaddress_HEADERS
   HEADER_NAMES
   RecentAddresses
   REQUIRED_HEADERS libkdepim_recentaddress_HEADERS
-  PREFIX Libkdepim
+  PREFIX LibkdepimAkonadi
   RELATIVE addressline/recentaddress/
 )
 
@@ -188,7 +188,7 @@ ecm_generate_headers(libkdepim_Camelcasecompletionorder_HEADERS
   HEADER_NAMES
   CompletionOrderEditor
   REQUIRED_HEADERS libkdepim_completionorder_HEADERS
-  PREFIX Libkdepim
+  PREFIX LibkdepimAkonadi
   RELATIVE addressline/completionorder
 )
 
@@ -196,7 +196,7 @@ ecm_generate_headers(libkdepim_Camelcasecompletionconfiguredialog_HEADERS
   HEADER_NAMES
   CompletionConfigureDialog
   REQUIRED_HEADERS libkdepim_completionconfiguredialog_HEADERS
-  PREFIX Libkdepim
+  PREFIX LibkdepimAkonadi
   RELATIVE addressline/completionconfiguredialog/
 )
 
@@ -204,7 +204,7 @@ ecm_generate_headers(libkdepim_Camelcaseblacklistbaloocompletion_HEADERS
   HEADER_NAMES
   BlackListBalooEmailCompletionDialog
   REQUIRED_HEADERS libkdepim_blacklistbaloocompletion_HEADERS
-  PREFIX Libkdepim
+  PREFIX LibkdepimAkonadi
   RELATIVE addressline/blacklistbaloocompletion/
 )
 
