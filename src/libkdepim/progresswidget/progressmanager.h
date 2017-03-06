@@ -31,10 +31,6 @@
 #include <QMap>
 #include <QHash>
 #include <QWeakPointer>
-namespace Akonadi
-{
-class AgentInstance;
-}
 
 namespace KPIM
 {
@@ -356,19 +352,6 @@ public:
      * Version without a parent.
      */
     static ProgressItem *createProgressItem(const QString &id,
-                                            const QString &label,
-                                            const QString &status = QString(),
-                                            bool canBeCanceled = true,
-                                            KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
-
-    /**
-     * Version for Akonadi agents.
-     * This connects all the proper signals so that you do not have to
-     * worry about updating the progress or reacting to progressItemCanceled().
-     */
-    static ProgressItem *createProgressItem(ProgressItem *parent,
-                                            const Akonadi::AgentInstance &agent,
-                                            const QString &id,
                                             const QString &label,
                                             const QString &status = QString(),
                                             bool canBeCanceled = true,

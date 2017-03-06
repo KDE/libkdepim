@@ -11,8 +11,6 @@ endif()
 ########### next target ###############
 set(kdepim_progresswidget_LIB_SRCS
    progresswidget/progressmanager.cpp
-   progresswidget/progressmanager_akonadiagent.cpp
-   progresswidget/agentprogressmonitor.cpp
    progresswidget/progressdialog.cpp
    progresswidget/statusbarprogresswidget.cpp
    progresswidget/ssllabel.cpp
@@ -74,11 +72,7 @@ target_include_directories(KF5Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SO
 
 
 target_link_libraries(KF5Libkdepim
- PUBLIC
-  KF5::AkonadiCore
-  KF5::AkonadiContact
  PRIVATE
-  KF5::AkonadiWidgets
   KF5::Ldap
   KF5::Contacts
   KF5::Codecs
@@ -87,7 +81,6 @@ target_link_libraries(KF5Libkdepim
   KF5::KCMUtils
   KF5::Wallet
   KF5::ItemViews
-  KF5::AkonadiSearchPIM
   KF5::IconThemes
   KF5::KIOCore
   KF5::KIOWidgets

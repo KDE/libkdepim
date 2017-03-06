@@ -20,7 +20,7 @@
 #ifndef KDEPIM_AGENTPROGRESSMONITOR_H
 #define KDEPIM_AGENTPROGRESSMONITOR_H
 
-#include "progressmanager.h" // ProgressItem
+#include <Libkdepim/ProgressManager> // ProgressItem
 
 #include <AgentInstance>
 
@@ -37,9 +37,7 @@ namespace KPIM
 class AgentProgressMonitor : public QObject
 {
     Q_OBJECT
-    friend class ProgressManager;
-
-protected:
+public:
     // used by our friend ProgressManager
     AgentProgressMonitor(const Akonadi::AgentInstance &agent, ProgressItem *item);
     ~AgentProgressMonitor();

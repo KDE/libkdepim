@@ -39,15 +39,10 @@ set(kdepim_addressline_blacklist_baloo_LIB_SRCS
 
 
 ############ next target ###############
-#set(kdepim_progresswidget_LIB_SRCS
-#   progresswidget/progressmanager.cpp
-#   progresswidget/progressmanager_akonadiagent.cpp
-#   progresswidget/agentprogressmonitor.cpp
-#   progresswidget/progressdialog.cpp
-#   progresswidget/statusbarprogresswidget.cpp
-#   progresswidget/ssllabel.cpp
-#   progresswidget/progressstatusbarwidget.cpp
-#)
+set(kdepimakonadi_progresswidget_LIB_SRCS
+   progresswidget/progressmanagerakonadi.cpp
+   progresswidget/agentprogressmonitor.cpp
+)
 
 set(kdepim_job_LIB_SRCS
    job/addemailaddressjob.cpp
@@ -70,6 +65,7 @@ set(kdepimakonadi_LIB_SRCS
    ${kdepimakonadi_widgets_LIB_SRCS}
    ${kdepim_addressline_LIB_SRCS}
    ${kdepim_addressline_blacklist_baloo_LIB_SRCS}
+   ${kdepimakonadi_progresswidget_LIB_SRCS}
 )
 
 ecm_qt_declare_logging_category(kdepimakonadi_LIB_SRCS HEADER libkdepimakonadi_debug.h IDENTIFIER LIBKDEPIMAKONADI_LOG CATEGORY_NAME org.kde.pim.libkdepimakonadi)
@@ -132,16 +128,13 @@ ecm_generate_headers(libkdepimakonadi_Camelcasewidgets_HEADERS
   RELATIVE widgets
 )
 
-#ecm_generate_headers(libkdepim_Camelcaseprogresswidget_HEADERS
-#  HEADER_NAMES
-#  ProgressStatusBarWidget
-#  StatusbarProgressWidget
-#  ProgressDialog
-#  ProgressManager
-#  REQUIRED_HEADERS libkdepim_progresswidget_HEADERS
-#  PREFIX LibkdepimAkonadi
-#  RELATIVE progresswidget
-#)
+ecm_generate_headers(libkdepimakonadi_Camelcaseprogresswidget_HEADERS
+  HEADER_NAMES
+  ProgressManagerAkonadi
+  REQUIRED_HEADERS libkdepimakonadi_progresswidget_HEADERS
+  PREFIX LibkdepimAkonadi
+  RELATIVE progresswidget
+)
 
 ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
   HEADER_NAMES
@@ -157,16 +150,6 @@ ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
   PREFIX LibkdepimAkonadi
   RELATIVE job
 )
-
-#ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
-#  HEADER_NAMES
-#  MultiplyingLine
-#  MultiplyingLineEditor
-#  REQUIRED_HEADERS libkdepim_multiline_HEADERS
-#  PREFIX LibkdepimAkonadi
-#  RELATIVE  multiplyingline
-#)
-
 
 ecm_generate_headers(libkdepim_Camelcaseaddressline_HEADERS
   HEADER_NAMES
@@ -217,13 +200,9 @@ install(FILES
     ${libkdepim_Camelcaseblacklistbaloocompletion_HEADERS}
     ${libkdepim_Camelcasecompletionconfiguredialog_HEADERS}
     ${libkdepim_Camelcasecompletionorder_HEADERS}
-#    ${libkdepim_CamelcaseCamelCase_HEADERS}
+    ${libkdepimakonadi_Camelcaseprogresswidget_HEADERS}
     ${libkdepimakonadi_Camelcasewidgets_HEADERS}
-#    ${libkdepim_Camelcaseprogresswidget_HEADERS}
-#    ${libkdepim_Camelcasemisc_HEADERS}
     ${libkdepim_Camelcasejob_HEADERS}
-#    ${libkdepim_Camelcasepref_HEADERS}
-#    ${libkdepim_Camelcasemultiline_HEADERS}
     ${libkdepim_Camelcaseaddressline_HEADERS}
     ${libkdepim_Camelcaserecentaddress_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/LibkdepimAkonadi
@@ -235,13 +214,9 @@ install(FILES
     ${libkdepim_completionconfiguredialog_HEADERS}
     ${libkdepim_completionorder_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/kdepimakonadi_export.h
-#    ${libkdepim_CamelCase_HEADERS}
-#    ${libkdepim_progresswidget_HEADERS}
-#    ${libkdepim_misc_HEADERS}
+    ${libkdepimakonadi_progresswidget_HEADERS}
     ${libkdepimakonadi_widgets_HEADERS}
     ${libkdepim_job_HEADERS}
-#    ${libkdepim_pref_HEADERS}
-#    ${libkdepim_multiline_HEADERS}
     ${libkdepim_addressline_HEADERS}
     ${libkdepim_recentaddress_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepimakonadi

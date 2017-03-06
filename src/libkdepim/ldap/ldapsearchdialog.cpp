@@ -45,8 +45,8 @@
 #include <QClipboard>
 
 #include <KLineEdit>
-#include <collection.h>
-#include <itemcreatejob.h>
+//#include <collection.h>
+//#include <itemcreatejob.h>
 #include <kcombobox.h>
 #include <kconfig.h>
 #include <kconfiggroup.h>
