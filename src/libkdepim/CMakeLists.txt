@@ -1,7 +1,4 @@
 
-add_definitions( -DQT_NO_CAST_FROM_ASCII )
-add_definitions( -DQT_NO_CAST_TO_ASCII )
-
 add_subdirectory(pics)
 if (BUILD_TESTING)
    add_subdirectory(tests)
@@ -84,8 +81,6 @@ target_link_libraries(KF5Libkdepim
   KF5::IconThemes
   KF5::KIOCore
   KF5::KIOWidgets
-  Qt5::DBus
-  Qt5::Network
 )
 
 
