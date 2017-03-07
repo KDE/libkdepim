@@ -86,15 +86,13 @@ target_link_libraries(KF5LibkdepimAkonadi
     KF5::Codecs
     KF5::Completion
     KF5::I18n
-    KF5::KCMUtils
-    KF5::Wallet
     KF5::ItemViews
     KF5::AkonadiSearchPIM
-    KF5::IconThemes
     KF5::KIOCore
     KF5::KIOWidgets
     Qt5::DBus
     Qt5::Network
+    KF5::ConfigWidgets
     )
 
 
