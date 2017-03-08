@@ -84,7 +84,6 @@ target_link_libraries(KF5Libkdepim
   KF5::I18n
   KF5::KCMUtils
   KF5::Wallet
-  KF5::ItemViews
   KF5::IconThemes
   KF5::KIOCore
   KF5::KIOWidgets
