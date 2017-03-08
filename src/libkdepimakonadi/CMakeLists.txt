@@ -1,3 +1,8 @@
+ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
+                        VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepimakonadi_version.h"
+                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfigVersion.cmake"
+                        SOVERSION 5
+)
 
 if(BUILD_TESTING)
     add_subdirectory(tests)
@@ -63,6 +68,8 @@ set(kdepimakonadi_LIB_SRCS
     ${kdepimakonadi_progresswidget_LIB_SRCS}
     )
 
+install(EXPORT KF5LibkdepimAkonadiTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5LibkdepimAkonadiTargets.cmake NAMESPACE KF5::)
+
 ecm_qt_declare_logging_category(kdepimakonadi_LIB_SRCS HEADER libkdepimakonadi_debug.h IDENTIFIER LIBKDEPIMAKONADI_LOG CATEGORY_NAME org.kde.pim.libkdepimakonadi)
 
 
@@ -109,7 +116,7 @@ set_target_properties(KF5LibkdepimAkonadi PROPERTIES
 
 install(TARGETS
     KF5LibkdepimAkonadi
-    EXPORT KF5LibkdepimTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS} ${LIBRARY_NAMELINK}
+    EXPORT KF5LibkdepimAkonadiTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS} ${LIBRARY_NAMELINK}
     )
 
 ecm_generate_headers(libkdepimakonadi_Camelcasewidgets_HEADERS
@@ -220,3 +227,24 @@ install(FILES
     ${PRI_FILENAME}
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
+
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5LibkdepimAkonadi")
+
+configure_package_config_file(
+  "${CMAKE_CURRENT_SOURCE_DIR}/KF5LibkdepimAkonadiConfig.cmake.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfig.cmake"
+  INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
+)
+
+install(FILES
+  "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfig.cmake"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfigVersion.cmake"
+  DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+  COMPONENT Devel
+)
+
+
+install(FILES
+   ${CMAKE_CURRENT_BINARY_DIR}/libkdepimakonadi_version.h
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
+)

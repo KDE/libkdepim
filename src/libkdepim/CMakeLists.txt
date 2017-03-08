@@ -1,4 +1,11 @@
 
+ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
+                        VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h"
+                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfigVersion.cmake"
+                        SOVERSION 5
+)
+
+
 add_subdirectory(pics)
 if (BUILD_TESTING)
    add_subdirectory(tests)
@@ -231,3 +238,25 @@ install(FILES ldap/kcmldap.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
 ########### install files ###############
 
 install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mailtransport.service.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
+
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Libkdepim")
+
+configure_package_config_file(
+  "${CMAKE_CURRENT_SOURCE_DIR}/KF5LibkdepimConfig.cmake.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfig.cmake"
+  INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
+)
+
+install(FILES
+  "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfig.cmake"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfigVersion.cmake"
+  DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+  COMPONENT Devel
+)
+
+install(EXPORT KF5LibkdepimTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5LibkdepimTargets.cmake NAMESPACE KF5::)
+
+install(FILES
+   ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
+)
