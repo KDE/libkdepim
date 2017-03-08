@@ -68,7 +68,6 @@ set(kdepimakonadi_LIB_SRCS
     ${kdepimakonadi_progresswidget_LIB_SRCS}
     )
 
-install(EXPORT KF5LibkdepimAkonadiTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5LibkdepimAkonadiTargets.cmake NAMESPACE KF5::)
 
 ecm_qt_declare_logging_category(kdepimakonadi_LIB_SRCS HEADER libkdepimakonadi_debug.h IDENTIFIER LIBKDEPIMAKONADI_LOG CATEGORY_NAME org.kde.pim.libkdepimakonadi)
 
@@ -229,6 +228,8 @@ install(FILES
 
 
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5LibkdepimAkonadi")
+
+install(EXPORT KF5LibkdepimAkonadiTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5LibkdepimAkonadiTargets.cmake NAMESPACE KF5::)
 
 configure_package_config_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/KF5LibkdepimAkonadiConfig.cmake.in"
