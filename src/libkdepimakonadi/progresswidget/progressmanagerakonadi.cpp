@@ -21,17 +21,16 @@
   Boston, MA 02110-1301, USA.
 */
 
-
 #include "progressmanagerakonadi.h"
 #include "agentprogressmonitor.h"
 
 KPIM::ProgressItem *KPIM::ProgressManagerAkonadi::createProgressItem(ProgressItem *parent, const Akonadi::AgentInstance &agent, const QString &id,
-                                                  const QString &label, const QString &status, bool canBeCanceled,
-                                                  ProgressItem::CryptoStatus cryptoStatus)
+        const QString &label, const QString &status, bool canBeCanceled,
+        ProgressItem::CryptoStatus cryptoStatus)
 {
     const bool itemAlreadyExists = (KPIM::ProgressManager::instance()->progressItem(id) != nullptr);
     KPIM::ProgressItem *t = KPIM::ProgressManager::instance()->createProgressItem(parent, id, label,
-            status, canBeCanceled, cryptoStatus);
+                            status, canBeCanceled, cryptoStatus);
     t->setTypeProgressItem(0);
     if (!itemAlreadyExists) {
         //    qCDebug(LIBKDEPIM_LOG) << "Created ProgressItem for agent" << instance.name();

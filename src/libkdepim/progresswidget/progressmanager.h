@@ -426,18 +426,18 @@ private:
     ProgressManager(const ProgressManager &);
 
     ProgressItem *createProgressItemImpl(ProgressItem *parent,
-            const QString &id,
-            const QString &label,
-            const QString &status,
-            bool cancellable,
-            ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
+                                         const QString &id,
+                                         const QString &label,
+                                         const QString &status,
+                                         bool cancellable,
+                                         ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
 
     ProgressItem *createProgressItemImpl(const QString &parent,
-            const QString &id,
-            const QString &label,
-            const QString &status,
-            bool cancellable,
-            ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
+                                         const QString &id,
+                                         const QString &label,
+                                         const QString &status,
+                                         bool cancellable,
+                                         ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
     void emitShowProgressDialogImpl();
 
     QHash< QString, ProgressItem * > mTransactions;
