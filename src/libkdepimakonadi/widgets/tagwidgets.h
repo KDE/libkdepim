@@ -20,7 +20,7 @@
 
 #include "kdepimakonadi_export.h"
 #include <Tag>
-#include <TagSelectionDialog>
+#include <AkonadiWidgets/TagSelectionDialog>
 #include <QWidget>
 
 class KJob;
