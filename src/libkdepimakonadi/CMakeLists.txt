@@ -1,8 +1,8 @@
 ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
-                        VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepimakonadi_version.h"
-                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfigVersion.cmake"
-                        SOVERSION 5
-)
+    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepimakonadi_version.h"
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfigVersion.cmake"
+    SOVERSION 5
+    )
 
 if(BUILD_TESTING)
     add_subdirectory(tests)
@@ -101,11 +101,9 @@ target_link_libraries(KF5LibkdepimAkonadi
     KF5::ConfigWidgets
     )
 
-
 if(MINGW)
     target_link_libraries(KF5LibkdepimAkonadi oleaut32)
 endif()
-
 
 set_target_properties(KF5LibkdepimAkonadi PROPERTIES
     VERSION ${LIBKDEPIM_VERSION_STRING}
@@ -192,7 +190,7 @@ ecm_generate_headers(libkdepim_Camelcaseblacklistbaloocompletion_HEADERS
 
 ecm_generate_pri_file(BASE_NAME LibkdepimAkonadi
     LIB_NAME KF5LibkdepimAkonadi
-    DEPS "AkonadiCore AkonadiContact" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
+    DEPS "AkonadiCore AkonadiContact Libkdepim" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/LibkdepimAkonadi
     )
 
 install(FILES
@@ -232,20 +230,20 @@ set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5LibkdepimAkonadi"
 install(EXPORT KF5LibkdepimAkonadiTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5LibkdepimAkonadiTargets.cmake NAMESPACE KF5::)
 
 configure_package_config_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/KF5LibkdepimAkonadiConfig.cmake.in"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfig.cmake"
-  INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
-)
+    "${CMAKE_CURRENT_SOURCE_DIR}/KF5LibkdepimAkonadiConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfig.cmake"
+    INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
+    )
 
 install(FILES
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfig.cmake"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfigVersion.cmake"
-  DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-  COMPONENT Devel
-)
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimAkonadiConfigVersion.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+    COMPONENT Devel
+    )
 
 
 install(FILES
-   ${CMAKE_CURRENT_BINARY_DIR}/libkdepimakonadi_version.h
-  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
-)
+    ${CMAKE_CURRENT_BINARY_DIR}/libkdepimakonadi_version.h
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
+    )
