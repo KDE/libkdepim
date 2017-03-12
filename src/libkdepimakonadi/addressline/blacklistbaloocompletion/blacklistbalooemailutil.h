@@ -21,12 +21,12 @@
 #ifndef BLACKLISTBALOOEMAILUTIL_H
 #define BLACKLISTBALOOEMAILUTIL_H
 
-#include "kdepimakonadi_export.h"
+#include "libkdepimakonadi_private_export.h"
 #include <QStringList>
 #include <QHash>
 namespace KPIM
 {
-class KDEPIMAKONADI_EXPORT BlackListBalooEmailUtil
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailUtil
 {
 public:
     BlackListBalooEmailUtil();
