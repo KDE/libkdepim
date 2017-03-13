@@ -22,7 +22,7 @@
 #define COMPLETIONORDERWIDGET_H
 
 #include <QWidget>
-#include "kdepimakonadi_export.h"
+#include "libkdepimakonadi_private_export.h"
 #include <QDBusAbstractAdaptor>
 #include <KConfig>
 
@@ -66,7 +66,7 @@ public:
     virtual void setIsEnabled(bool b) = 0;
 };
 
-class KDEPIMAKONADI_EXPORT CompletionOrderWidget : public QWidget
+class LIBKDEPIMAKONADI_TESTS_EXPORT CompletionOrderWidget : public QWidget
 {
     Q_OBJECT
 public:
