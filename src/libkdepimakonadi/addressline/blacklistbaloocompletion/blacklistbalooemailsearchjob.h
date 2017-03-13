@@ -23,10 +23,10 @@
 
 #include <QObject>
 
-#include "kdepimakonadi_export.h"
+#include "libkdepimakonadi_private_export.h"
 namespace KPIM
 {
-class KDEPIMAKONADI_EXPORT BlackListBalooEmailSearchJob : public QObject
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailSearchJob : public QObject
 {
     Q_OBJECT
 public:

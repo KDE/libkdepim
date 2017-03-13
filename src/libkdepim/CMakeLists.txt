@@ -33,7 +33,6 @@ set(kdepim_widgets_LIB_SRCS
     )
 
 set(kdepim_ldap_LIB_SRCS
-    ldap/addhostdialog.cpp
     ldap/ldapclient.cpp
     ldap/ldapsearchdialog.cpp
     ldap/ldapclientsearch.cpp

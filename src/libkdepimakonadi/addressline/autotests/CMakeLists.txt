@@ -12,14 +12,9 @@ add_libkdepim_addressline_unittest(baloocompletionmailtest
 )
 add_libkdepim_addressline_unittest(recentaddresswidgettest
     recentaddresswidgettest.cpp
-    ../recentaddress/recentaddresswidget.cpp
-    ../recentaddress/recentaddresses.cpp
 )
 add_libkdepim_addressline_unittest(recentaddressdialogtest
     recentaddressdialogtest.cpp
-    ../recentaddress/recentaddressdialog.cpp
-    ../recentaddress/recentaddresswidget.cpp
-    ../recentaddress/recentaddresses.cpp
 )
 add_libkdepim_addressline_unittest(completionconfiguredialogtest
     completionconfiguredialogtest.cpp
