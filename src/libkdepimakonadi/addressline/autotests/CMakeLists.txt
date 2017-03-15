@@ -8,7 +8,6 @@ endmacro()
 
 add_libkdepim_addressline_unittest(baloocompletionmailtest
     baloocompletionemailtest.cpp
-    ../addresslineedit/baloocompletionemail.cpp
 )
 add_libkdepim_addressline_unittest(recentaddresswidgettest
     recentaddresswidgettest.cpp
@@ -25,5 +24,4 @@ add_libkdepim_addressline_unittest(completionorderwidgettest
 
 add_libkdepim_addressline_unittest(addresseelineeditutiltest
     addresseelineeditutiltest.cpp
-    ../addresslineedit/addresseelineeditutil.cpp
 )

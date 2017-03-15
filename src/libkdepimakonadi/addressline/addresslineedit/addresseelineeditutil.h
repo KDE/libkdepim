@@ -21,12 +21,13 @@
 #define ADDRESSEELINEEDITUTIL_H
 
 #include <QString>
+#include "libkdepimakonadi_private_export.h"
 
 namespace KPIM
 {
 namespace AddresseeLineEditUtil
 {
-QString adaptPasteMails(QString str);
+LIBKDEPIMAKONADI_TESTS_EXPORT QString adaptPasteMails(QString str);
 }
 }
 
