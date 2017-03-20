@@ -1,0 +1,26 @@
+name: libkdepim
+description: KDEpim Library 
+public_lib: true
+group: kdepim
+platforms:
+    - name: All
+irc: akonadi
+
+libraries:
+ - qmake: Libkdepim
+   cmake: "KF5::Libkdepim"
+   cmakename: KF5Libkdepim
+ - qmake: LibkdepimAkonadi
+   cmake: "KF5::LibkdepimAkonadi"
+   cmakename: KF5LibkdepimAkonadi   
+
+
+group_info:
+    fancyname: KDE PIM
+    maintainer:
+        - mlaurent
+    irc: kontact
+    mailinglist: kde-pim
+    platforms:
+        - All
+    logo: docs/kontact.svg
