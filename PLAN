@@ -25,7 +25,6 @@ uistatesaver
 kprefsdialog
 
 # Get rid of
-kresourceprefs       # drop together with kresources, in the meanwhile move to kresources/ subdir as static library
 recentaddresses      # replace with live searches?
 
 # Still needed? or replaced by a new parameterized AkonadiDrag object?

@@ -177,9 +177,6 @@ ecm_generate_pri_file(BASE_NAME Libkdepim
     )
 
 install(FILES
-    ${libkdepim_Camelcaseblacklistbaloocompletion_HEADERS}
-    ${libkdepim_Camelcasecompletionconfiguredialog_HEADERS}
-    ${libkdepim_Camelcasecompletionorder_HEADERS}
     ${libkdepim_CamelcaseCamelCase_HEADERS}
     ${libkdepim_Camelcaseldap_HEADERS}
     ${libkdepim_Camelcasewidgets_HEADERS}
@@ -192,9 +189,6 @@ install(FILES
     )
 
 install(FILES
-    ${libkdepim_blacklistbaloocompletion_HEADERS}
-    ${libkdepim_completionconfiguredialog_HEADERS}
-    ${libkdepim_completionorder_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/kdepim_export.h
     ${libkdepim_CamelCase_HEADERS}
     ${libkdepim_ldap_HEADERS}
