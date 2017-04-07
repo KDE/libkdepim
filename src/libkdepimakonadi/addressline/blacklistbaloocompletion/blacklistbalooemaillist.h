@@ -24,12 +24,12 @@
 #include <QListWidget>
 #include <QListWidgetItem>
 #include <QHash>
-#include "kdepimakonadi_export.h"
+#include "libkdepimakonadi_private_export.h"
 
 namespace KPIM
 {
 
-class KDEPIMAKONADI_EXPORT BlackListBalooEmailListItem : public QListWidgetItem
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailListItem : public QListWidgetItem
 {
 public:
     explicit BlackListBalooEmailListItem(QListWidget *parent = nullptr);
@@ -42,7 +42,7 @@ private:
     bool mInitializeStatus;
 };
 
-class KDEPIMAKONADI_EXPORT BlackListBalooEmailList : public QListWidget
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailList : public QListWidget
 {
     Q_OBJECT
 public:

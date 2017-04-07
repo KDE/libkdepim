@@ -20,12 +20,12 @@
 #ifndef LIBKDEPIMAKONADIPRIVATE_EXPORT_H
 #define LIBKDEPIMAKONADIPRIVATE_EXPORT_H
 
-#include "kdepim_export.h"
+#include "kdepimakonadi_export.h"
 
 /* Classes which are exported only for unit tests */
 #ifdef BUILD_TESTING
 # ifndef LIBKDEPIMAKONADI_TESTS_EXPORT
-#  define LIBKDEPIMAKONADI_TESTS_EXPORT KDEPIM_EXPORT
+#  define LIBKDEPIMAKONADI_TESTS_EXPORT KDEPIMAKONADI_EXPORT
 # endif
 #else /* not compiling tests */
 # define LIBKDEPIMAKONADI_TESTS_EXPORT
