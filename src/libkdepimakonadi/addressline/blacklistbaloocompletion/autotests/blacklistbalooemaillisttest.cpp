@@ -116,10 +116,10 @@ void BlackListBalooEmailListTest::shouldExcludeDomain()
 void BlackListBalooEmailListTest::shouldAvoidSameEmailWithDifferentCase()
 {
     KPIM::BlackListBalooEmailList blackList;
-    QStringList emails = QStringList() << QStringLiteral("foo@kde.org") << QStringLiteral("bli@fr.fr") << QStringLiteral("bli@toto.fr");
+    QStringList emails = QStringList() << QStringLiteral("foo@kde.org") << QStringLiteral("Foo@kde.org") << QStringLiteral("foo@kde.ORG");
     blackList.setEmailFound(emails);
 
-    QCOMPARE(blackList.count(), 3);
+    QCOMPARE(blackList.count(), 1);
 }
 
 QTEST_MAIN(BlackListBalooEmailListTest)
