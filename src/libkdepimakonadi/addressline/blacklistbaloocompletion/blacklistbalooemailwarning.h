@@ -22,10 +22,11 @@
 #define BLACKLISTBALOOEMAILWARNING_H
 
 #include <KMessageWidget>
+#include "libkdepimakonadi_private_export.h"
 
 namespace KPIM
 {
-class BlackListBalooEmailWarning : public KMessageWidget
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailWarning : public KMessageWidget
 {
     Q_OBJECT
 public:
