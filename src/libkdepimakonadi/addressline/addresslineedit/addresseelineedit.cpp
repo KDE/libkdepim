@@ -92,9 +92,6 @@ AddresseeLineEdit::AddresseeLineEdit(QWidget *parent, bool enableCompletion)
     : KLineEdit(parent), d(new AddresseeLineEditPrivate(this, enableCompletion))
 {
     setUrlDropsEnabled(false);
-    Kdelibs4ConfigMigrator migrate(QStringLiteral("addressline"));
-    migrate.setConfigFiles(QStringList() << QStringLiteral("kpimbalooblacklist") << QStringLiteral("kpimcompletionorder"));
-    migrate.migrate();
 
     setObjectName(newLineEditObjectName());
     setPlaceholderText(QString());
