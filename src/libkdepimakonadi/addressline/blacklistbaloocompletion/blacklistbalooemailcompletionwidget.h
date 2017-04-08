@@ -22,6 +22,7 @@
 #define BLACKLISTBALOOEMAILCOMPLETIONWIDGET_H
 
 #include <QWidget>
+#include "libkdepimakonadi_private_export.h"
 class QPushButton;
 class KLineEdit;
 class QLabel;
@@ -30,7 +31,7 @@ namespace KPIM
 {
 class BlackListBalooEmailList;
 class BlackListBalooEmailWarning;
-class BlackListBalooEmailCompletionWidget : public QWidget
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailCompletionWidget : public QWidget
 {
     Q_OBJECT
 public:

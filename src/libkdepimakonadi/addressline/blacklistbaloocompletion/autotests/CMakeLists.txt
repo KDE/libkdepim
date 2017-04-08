@@ -8,13 +8,9 @@ endmacro()
 
 add_libkdepim_blacklistbaloocompletion_unittest(emailcompletiondialogtest
     blacklistbalooemailcompletiondialogtest.cpp
-    ../blacklistbalooemailcompletionwidget.cpp
-    ../blacklistbalooemailwarning.cpp
 )
 add_libkdepim_blacklistbaloocompletion_unittest(emailcompletionwidgettest
     blacklistbalooemailcompletionwidgettest.cpp
-    ../blacklistbalooemailcompletionwidget.cpp
-    ../blacklistbalooemailwarning.cpp
 )
 add_libkdepim_blacklistbaloocompletion_unittest(emaillisttest
     blacklistbalooemaillisttest.cpp
@@ -27,5 +23,4 @@ add_libkdepim_blacklistbaloocompletion_unittest(emailutiltest
 )
 add_libkdepim_blacklistbaloocompletion_unittest(emailwarningtest
     blacklistbalooemailwarningtest.cpp
-    ../blacklistbalooemailwarning.cpp
 )
