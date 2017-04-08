@@ -15,7 +15,7 @@ macro(add_libkdepim_addressline_unittest _name)
     )
 endmacro()
 
-add_libkdepim_addressline_unittest(baloocompletionmailtest
+add_libkdepim_addressline_unittest(baloocompletionemailtest
     baloocompletionemailtest.cpp
 )
 add_libkdepim_addressline_unittest(recentaddresswidgettest

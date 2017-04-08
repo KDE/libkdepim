@@ -42,6 +42,7 @@ private Q_SLOTS:
     void shouldExcludeDuplicateEntryWithDisplayName();
     void shouldExcludeDuplicateEntryWithDisplayNameAddAddressWithDifferentCase();
     void shouldExcludeDuplicateEntryWithDifferentDisplayNameAddAddressWithDifferentCase();
+    void shouldExcludeEmptyNameWithDisplayNameForSameAddress();
 };
 
 #endif // BALOOCOMPLETIONEMAILTEST_H

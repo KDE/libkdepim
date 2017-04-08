@@ -202,4 +202,16 @@ void BalooCompletionEmailTest::shouldExcludeDuplicateEntryWithDifferentDisplayNa
     QCOMPARE(completion.cleanupEmailList().count(), 1);
 }
 
+void BalooCompletionEmailTest::shouldExcludeEmptyNameWithDisplayNameForSameAddress()
+{
+    KPIM::BalooCompletionEmail completion;
+    QStringList emailList;
+    emailList << QStringLiteral("doe@example.com");
+    emailList << QStringLiteral("Doe John <Doe@example.com>");
+    emailList << QStringLiteral("John <DOE@example.com>");
+    emailList << QStringLiteral("Doe <dOE@example.com>");
+    completion.setEmailList(emailList);
+    QCOMPARE(completion.cleanupEmailList().count(), 1);
+}
+
 QTEST_MAIN(BalooCompletionEmailTest)
