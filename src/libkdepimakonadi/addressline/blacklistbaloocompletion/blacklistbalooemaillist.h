@@ -54,7 +54,7 @@ public:
     QHash<QString, bool> blackListItemChanged() const;
 
     void setExcludeDomain(const QStringList &domain);
-    void setEmailFound(const QStringList &);
+    int setEmailFound(const QStringList &);
 protected:
     void paintEvent(QPaintEvent *event) Q_DECL_OVERRIDE;
 

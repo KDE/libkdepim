@@ -72,7 +72,7 @@ void BlackListBalooEmailList::setExcludeDomain(const QStringList &domain)
     mExcludeDomain = domain;
 }
 
-void BlackListBalooEmailList::setEmailFound(const QStringList &list)
+int BlackListBalooEmailList::setEmailFound(const QStringList &list)
 {
     mFirstResult = true;
     clear();
@@ -109,6 +109,7 @@ void BlackListBalooEmailList::setEmailFound(const QStringList &list)
             onlyEmails << emailToLower;
         }
     }
+    return count();
 }
 
 void BlackListBalooEmailList::generalPaletteChanged()

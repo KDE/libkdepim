@@ -200,13 +200,13 @@ void BlackListBalooEmailCompletionWidget::slotSearch()
 
 void BlackListBalooEmailCompletionWidget::slotEmailFound(const QStringList &list)
 {
-    mEmailList->setEmailFound(list);
-    mMoreResult->setVisible(list.count() == mLimit);
+    const int numberOfEmails = mEmailList->setEmailFound(list);
+    mMoreResult->setVisible(numberOfEmails == mLimit);
     mEmailList->scrollToBottom();
-    if (list.isEmpty()) {
+    if (numberOfEmails == 0) {
         mNumberOfEmailsFound->setText(i18n("No email found."));
     } else {
-        mNumberOfEmailsFound->setText(i18np("1 email found", "%1 emails found", list.count()));
+        mNumberOfEmailsFound->setText(i18np("1 email found", "%1 emails found", numberOfEmails));
     }
 }
 
