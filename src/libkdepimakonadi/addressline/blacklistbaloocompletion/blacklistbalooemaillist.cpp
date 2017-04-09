@@ -78,12 +78,14 @@ void BlackListBalooEmailList::setEmailFound(const QStringList &list)
     clear();
     QStringList emailsAdded;
     QStringList emailsLower;
+    QStringList onlyEmails;
     for (const QString &mail : list) {
         bool excludeDomain = false;
         QString email, name;
         KEmailAddress::extractEmailAddressAndName(mail, email, name);
 
         const QString mailToLower = mail.toLower();
+        const QString emailToLower = email.toLower();
         for (const QString &domain : qAsConst(mExcludeDomain)) {
             if (email.endsWith(domain)) {
                 excludeDomain = true;
@@ -93,7 +95,7 @@ void BlackListBalooEmailList::setEmailFound(const QStringList &list)
         if (excludeDomain) {
             continue;
         }
-        if (!emailsAdded.contains(mail) && !emailsLower.contains(mailToLower)) {
+        if (!emailsAdded.contains(mail) && !emailsLower.contains(mailToLower) && !onlyEmails.contains(emailToLower)) {
             BlackListBalooEmailListItem *item = new BlackListBalooEmailListItem(this);
             if (mEmailBlackList.contains(mail)) {
                 item->setCheckState(Qt::Checked);
@@ -104,6 +106,7 @@ void BlackListBalooEmailList::setEmailFound(const QStringList &list)
             item->setText(mail);
             emailsAdded << mail;
             emailsLower << mailToLower;
+            onlyEmails << emailToLower;
         }
     }
 }

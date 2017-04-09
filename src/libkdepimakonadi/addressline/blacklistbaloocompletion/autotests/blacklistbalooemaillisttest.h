@@ -37,6 +37,7 @@ private Q_SLOTS:
     void shouldNotAddDuplicateEmails();
     void shouldExcludeDomain();
     void shouldAvoidSameEmailWithDifferentCase();
+    void shouldAvoidSameEmailWithDisplayNameOrNot();
 };
 
 #endif // BLACKLISTBALOOEMAILLISTTEST_H
