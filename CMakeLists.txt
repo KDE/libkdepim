@@ -63,7 +63,7 @@ set_package_properties(Qt5Designer PROPERTIES
 if (Qt5Designer_FOUND)
   find_package(KF5DesignerPlugin ${KF5_VERSION} CONFIG REQUIRED)
 endif()
-
+add_definitions( -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT )
 remove_definitions( -DQT_NO_CAST_FROM_BYTEARRAY )
 
 ########### CMake Config Files ###########
