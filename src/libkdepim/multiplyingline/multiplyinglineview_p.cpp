@@ -22,7 +22,7 @@
     02110-1301, USA.
 */
 #include "multiplyinglineview_p.h"
-#include "helper_p.h"
+
 
 #include "libkdepim_debug.h"
 #include <KMessageBox>

@@ -21,7 +21,7 @@ without including the source code for Qt in the source distribution.
 */
 #include "collectionsearchjob.h"
 #include "libkdepimakonadi_debug.h"
-#include "helper_p.h"
+
 
 #include <AkonadiCore/CollectionFetchJob>
 #include <AkonadiCore/CollectionFetchScope>

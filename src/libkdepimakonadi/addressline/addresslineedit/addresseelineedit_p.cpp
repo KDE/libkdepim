@@ -21,7 +21,7 @@
 #include "addresseelineedit.h"
 #include "kmailcompletion.h"
 #include "libkdepimakonadi_debug.h"
-#include "helper_p.h"
+
 #include <QMap>
 #include <QTimer>
 #include <kcolorscheme.h>

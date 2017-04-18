@@ -24,7 +24,7 @@
 #include "ldapsearchdialog.h"
 
 #include "ldapclient.h"
-#include "helper_p.h"
+
 #include "ldapclientsearchconfig.h"
 #include "widgets/progressindicatorlabel.h"
 

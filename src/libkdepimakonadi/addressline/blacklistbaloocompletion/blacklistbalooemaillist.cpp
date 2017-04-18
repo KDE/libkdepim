@@ -20,7 +20,7 @@
 
 #include "blacklistbalooemaillist.h"
 #include "libkdepimakonadi_debug.h"
-#include "helper_p.h"
+
 #include <QPainter>
 #include <QEvent>
 #include <KLocalizedString>

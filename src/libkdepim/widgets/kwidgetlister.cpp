@@ -31,7 +31,7 @@
 */
 
 #include "kwidgetlister.h"
-#include "helper_p.h"
+
 
 #include <KLocalizedString>
 #include <KGuiItem>

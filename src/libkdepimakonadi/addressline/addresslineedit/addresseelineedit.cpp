@@ -28,7 +28,7 @@
 #include "addresseelineedit_p.h"
 #include "addresseelineeditutil.h"
 #include "ldap/ldapclientsearch.h"
-#include "helper_p.h"
+
 #include <KContacts/VCardConverter>
 
 #include <Job>

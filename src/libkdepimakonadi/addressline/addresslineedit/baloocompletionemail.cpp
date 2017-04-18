@@ -22,7 +22,7 @@
 #include <QMap>
 #include <KEmailAddress>
 #include "libkdepimakonadi_debug.h"
-#include "helper_p.h"
+
 using namespace KPIM;
 
 BalooCompletionEmail::BalooCompletionEmail()
