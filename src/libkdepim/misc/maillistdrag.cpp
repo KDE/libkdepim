@@ -148,7 +148,7 @@ void MailList::populateMimeData(QMimeData *md)
      Add them in this order */
 
     /* Popuplate the MimeData with the custom streaming x-kmail-drag/message-list mime type */
-    if (count()) {
+    if (!isEmpty()) {
         QByteArray array;
         QBuffer buffer(&array, nullptr);
         buffer.open(QIODevice::WriteOnly);
