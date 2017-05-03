@@ -65,6 +65,7 @@ if (Qt5Designer_FOUND)
 endif()
 add_definitions( -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT )
 remove_definitions( -DQT_NO_CAST_FROM_BYTEARRAY )
+#add_definitions( -DQT_DISABLE_DEPRECATED_BEFORE=0x060000 )
 
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Libkdepim")

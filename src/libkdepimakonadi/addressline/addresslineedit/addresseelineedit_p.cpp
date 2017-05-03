@@ -413,7 +413,7 @@ const QStringList KPIM::AddresseeLineEditPrivate::adjustedCompletionItems(bool f
             sourcesAndWeights.append(sww);
         }
 
-        qSort(sourcesAndWeights.begin(), sourcesAndWeights.end());
+        std::sort(sourcesAndWeights.begin(), sourcesAndWeights.end());
         // Add the sections and their items to the final sortedItems result list
         const int numberOfSources(sourcesAndWeights.size());
         for (int i = 0; i < numberOfSources; ++i) {
