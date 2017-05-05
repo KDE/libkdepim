@@ -332,7 +332,7 @@ void LdapClientSearch::Private::makeSearchData(QStringList &ret, LdapResult::Lis
             if (len > 0 && '\0' == val[len - 1]) {
                 --len;
             }
-            const QString tmp = QString::fromUtf8(val, len);
+            const QString tmp = QString::fromUtf8(val.constData(), len);
             //qCDebug(LDAPCLIENT_LOG) <<"      key: \"" << it2.key() <<"\" value: \"" << tmp <<"\"";
             if (it2.key() == QLatin1String("cn")) {
                 name = tmp;
