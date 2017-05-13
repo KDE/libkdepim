@@ -139,7 +139,11 @@ QString MailList::mimeDataType()
 
 bool MailList::canDecode(const QMimeData *md)
 {
-    return md->hasFormat(mimeDataType());
+    if (md) {
+        return md->hasFormat(mimeDataType());
+    } else {
+        return false;
+    }
 }
 
 void MailList::populateMimeData(QMimeData *md)
@@ -148,7 +152,7 @@ void MailList::populateMimeData(QMimeData *md)
      Add them in this order */
 
     /* Popuplate the MimeData with the custom streaming x-kmail-drag/message-list mime type */
-    if (!isEmpty()) {
+    if (md && !isEmpty()) {
         QByteArray array;
         QBuffer buffer(&array, nullptr);
         buffer.open(QIODevice::WriteOnly);
