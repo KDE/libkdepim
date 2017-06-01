@@ -589,6 +589,9 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
             break;
         }
     //else: fall-through to the CompletionPopup case
+#if QT_VERSION >= QT_VERSION_CHECK(5,8,0)
+        Q_FALLTHROUGH();
+#endif
 
     case KCompletion::CompletionPopup:
     {
