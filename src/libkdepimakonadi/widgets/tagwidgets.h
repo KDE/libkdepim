@@ -24,15 +24,13 @@
 #include <QWidget>
 
 class KJob;
-namespace Akonadi
-{
+namespace Akonadi {
 class TagWidget;
 }
 
-namespace KPIM
-{
+namespace KPIM {
 class TagWidgetPrivate;
-class KDEPIMAKONADI_EXPORT TagWidget: public QWidget
+class KDEPIMAKONADI_EXPORT TagWidget : public QWidget
 {
     Q_OBJECT
 public:
@@ -69,7 +67,6 @@ private Q_SLOTS:
 private:
     TagSelectionDialogPrivate *const d;
 };
-
 }
 
 #endif

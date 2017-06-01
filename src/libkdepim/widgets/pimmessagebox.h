@@ -30,18 +30,13 @@
 #include <QMessageBox>
 #include <QString>
 #include <QDialogButtonBox>
-namespace KPIM
-{
+namespace KPIM {
 class KDEPIM_EXPORT PIMMessageBox
 {
 public:
-    static QDialogButtonBox::StandardButton fourBtnMsgBox(QWidget *parent, QMessageBox::Icon type,
-            const QString &text,
-            const QString &caption = QString(),
-            const QString &button1Text = QString(),
-            const QString &button2Text = QString(),
-            const QString &button3Text = QString(),
-            KMessageBox::Options options = KMessageBox::Notify);
+    static QDialogButtonBox::StandardButton fourBtnMsgBox(QWidget *parent, QMessageBox::Icon type, const QString &text, const QString &caption = QString(),
+                                                          const QString &button1Text = QString(), const QString &button2Text = QString(),
+                                                          const QString &button3Text = QString(), KMessageBox::Options options = KMessageBox::Notify);
 };
 }
 #endif

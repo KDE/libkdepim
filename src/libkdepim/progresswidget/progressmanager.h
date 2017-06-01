@@ -32,9 +32,7 @@
 #include <QHash>
 #include <QWeakPointer>
 
-namespace KPIM
-{
-
+namespace KPIM {
 class ProgressItem;
 class ProgressManager;
 typedef QMap<ProgressItem *, bool> ProgressItemMap;
@@ -235,15 +233,14 @@ Q_SIGNALS:
 
 protected:
     /* Only to be used by our good friend the ProgressManager */
-    ProgressItem(ProgressItem *parent, const QString &id, const QString &label,
-                 const QString &status, bool isCancellable, CryptoStatus cryptoStatus);
+    ProgressItem(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool isCancellable, CryptoStatus cryptoStatus);
     virtual ~ProgressItem();
 
 private:
     QString mId;
     QString mLabel;
     QString mStatus;
-    QWeakPointer<ProgressItem>mParent;
+    QWeakPointer<ProgressItem> mParent;
     bool mCanBeCanceled;
     unsigned int mProgress;
     ProgressItemMap mChildren;
@@ -281,7 +278,6 @@ struct ProgressManagerPrivate;
  */
 class KDEPIM_EXPORT ProgressManager : public QObject
 {
-
     Q_OBJECT
 
     friend struct ProgressManagerPrivate;
@@ -330,32 +326,21 @@ public:
      * canceled) and ongoing children prevent parents from finishing.
      * @return The ProgressItem representing the operation.
      */
-    static ProgressItem *createProgressItem(ProgressItem *parent,
-                                            const QString &id,
-                                            const QString &label,
-                                            const QString &status = QString(),
-                                            bool canBeCanceled = true,
-                                            KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
+    static ProgressItem *createProgressItem(ProgressItem *parent, const QString &id, const QString &label,
+                                            const QString &status = QString(), bool canBeCanceled = true, KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
 
     /**
      * Use this version if you have the id string of the parent and want to
      * add a subjob to it.
      */
-    static ProgressItem *createProgressItem(const QString &parent,
-                                            const QString &id,
-                                            const QString &label,
-                                            const QString &status = QString(),
-                                            bool canBeCanceled = true,
-                                            KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
+    static ProgressItem *createProgressItem(const QString &parent, const QString &id, const QString &label,
+                                            const QString &status = QString(), bool canBeCanceled = true, KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
 
     /**
      * Version without a parent.
      */
-    static ProgressItem *createProgressItem(const QString &id,
-                                            const QString &label,
-                                            const QString &status = QString(),
-                                            bool canBeCanceled = true,
-                                            KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
+    static ProgressItem *createProgressItem(const QString &id, const QString &label,
+                                            const QString &status = QString(), bool canBeCanceled = true, KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
 
     /**
      * @return true when there are no more progress items.
@@ -425,25 +410,16 @@ private:
     // prevent unsolicited copies
     ProgressManager(const ProgressManager &);
 
-    ProgressItem *createProgressItemImpl(ProgressItem *parent,
-                                         const QString &id,
-                                         const QString &label,
-                                         const QString &status,
-                                         bool cancellable,
-                                         ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
+    ProgressItem *createProgressItemImpl(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool cancellable, ProgressItem::CryptoStatus cryptoStatus,
+                                         unsigned int progressType = 0);
 
-    ProgressItem *createProgressItemImpl(const QString &parent,
-                                         const QString &id,
-                                         const QString &label,
-                                         const QString &status,
-                                         bool cancellable,
-                                         ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
+    ProgressItem *createProgressItemImpl(const QString &parent, const QString &id, const QString &label, const QString &status, bool cancellable, ProgressItem::CryptoStatus cryptoStatus,
+                                         unsigned int progressType = 0);
     void emitShowProgressDialogImpl();
 
     QHash< QString, ProgressItem * > mTransactions;
     static unsigned int uID;
 };
-
 }
 
 #endif // __KPIM_PROGRESSMANAGER_H__

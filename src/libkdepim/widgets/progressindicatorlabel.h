@@ -23,8 +23,7 @@
 #include "kdepim_export.h"
 
 #include <QWidget>
-namespace KPIM
-{
+namespace KPIM {
 class ProgressIndicatorLabelPrivate;
 class KDEPIM_EXPORT ProgressIndicatorLabel : public QWidget
 {

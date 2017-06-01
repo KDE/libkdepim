@@ -31,9 +31,7 @@
 #include <KComboBox>
 #include <QModelIndex>
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
  * A combobox that shows its items in such a way that they can be checked in the
  * drop menu. It provides methods to set the default text when no items are selected
@@ -187,11 +185,10 @@ private:
 
     Q_PRIVATE_SLOT(d, void makeInsertedItemsCheckable(const QModelIndex &, int start, int end))
     Q_PRIVATE_SLOT(d, void updateCheckedItems(const QModelIndex &topLeft,
-                   const QModelIndex &bottomRight))
+                                              const QModelIndex &bottomRight))
     Q_PRIVATE_SLOT(d, void toggleCheckState())
     //@endcond
 };
-
 }
 
 #endif // KCHECKCOMBOBOX_H

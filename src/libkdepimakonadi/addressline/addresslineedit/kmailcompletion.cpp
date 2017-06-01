@@ -54,7 +54,7 @@ QString KMailCompletion::makeCompletion(const QString &string)
             const QStringList &mailAddr = m_keyMap[ match ]; //get all mailAddr for this keyword
             bool isEmail = false;
             for (QStringList::ConstIterator sit(mailAddr.begin()), sEnd(mailAddr.end());
-                    sit != sEnd; ++sit) {
+                 sit != sEnd; ++sit) {
                 if ((*sit).indexOf(QLatin1Char('<') + match + QLatin1Char('>')) != -1 || (*sit) == match) {
                     isEmail = true;
                     break;
@@ -76,11 +76,10 @@ QString KMailCompletion::makeCompletion(const QString &string)
     return match;
 }
 
-void KMailCompletion::addItemWithKeys(const QString &email, int weight,
-                                      const QStringList *keyWords)
+void KMailCompletion::addItemWithKeys(const QString &email, int weight, const QStringList *keyWords)
 {
     Q_ASSERT(keyWords != nullptr);
-    QStringList::ConstIterator end =  keyWords->constEnd();
+    QStringList::ConstIterator end = keyWords->constEnd();
     for (QStringList::ConstIterator it(keyWords->constBegin()); it != end; ++it) {
         QStringList &emailList = m_keyMap[(*it) ];  //lookup email-list for given keyword
         if (emailList.indexOf(email) == -1) {       //add email if not there
@@ -100,10 +99,10 @@ void KMailCompletion::postProcessMatches(QStringList *pMatches) const
     //KCompletion has found the keywords for us, we can now map them to mail-addr
     QSet< QString > mailAddrDistinct;
     for (QStringList::ConstIterator sit(pMatches->begin()), sEnd(pMatches->end());
-            sit != sEnd; ++sit) {
+         sit != sEnd; ++sit) {
         const QStringList &mailAddr = m_keyMap[(*sit) ];  //get all mailAddr for this keyword
         for (QStringList::ConstIterator sit(mailAddr.begin()), sEnd(mailAddr.end());
-                sit != sEnd; ++sit) {
+             sit != sEnd; ++sit) {
             mailAddrDistinct.insert(*sit);    //store mailAddr, QSet will make them unique
         }
     }

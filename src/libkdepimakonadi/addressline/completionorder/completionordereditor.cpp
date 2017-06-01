@@ -56,15 +56,14 @@ public:
     CompletionOrderEditorPrivate()
         : mCompletionOrderWidget(nullptr)
     {
-
     }
 
     CompletionOrderWidget *mCompletionOrderWidget;
 };
 
-CompletionOrderEditor::CompletionOrderEditor(KLDAP::LdapClientSearch *ldapSearch,
-        QWidget *parent)
-    : QDialog(parent), d(new KPIM::CompletionOrderEditorPrivate)
+CompletionOrderEditor::CompletionOrderEditor(KLDAP::LdapClientSearch *ldapSearch, QWidget *parent)
+    : QDialog(parent)
+    , d(new KPIM::CompletionOrderEditorPrivate)
 {
     setWindowTitle(i18n("Edit Completion Order"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -116,4 +115,3 @@ void CompletionOrderEditor::slotOk()
     d->mCompletionOrderWidget->save();
     accept();
 }
-

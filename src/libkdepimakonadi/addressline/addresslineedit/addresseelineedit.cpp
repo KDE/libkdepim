@@ -89,7 +89,8 @@ static QString newLineEditObjectName()
 }
 
 AddresseeLineEdit::AddresseeLineEdit(QWidget *parent, bool enableCompletion)
-    : KLineEdit(parent), d(new AddresseeLineEditPrivate(this, enableCompletion))
+    : KLineEdit(parent)
+    , d(new AddresseeLineEditPrivate(this, enableCompletion))
 {
     setUrlDropsEnabled(false);
 
@@ -292,10 +293,10 @@ void AddresseeLineEdit::mouseReleaseEvent(QMouseEvent *event)
 {
     // reimplemented from QLineEdit::mouseReleaseEvent()
 #ifndef QT_NO_CLIPBOARD
-    if (d->useCompletion() &&
-            QApplication::clipboard()->supportsSelection() &&
-            !isReadOnly() &&
-            event->button() == Qt::MidButton) {
+    if (d->useCompletion()
+        && QApplication::clipboard()->supportsSelection()
+        && !isReadOnly()
+        && event->button() == Qt::MidButton) {
         d->setSmartPaste(true);
     }
 #endif
@@ -320,7 +321,6 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
             insertEmails((*ait).emails());
         }
     }
-
     // Case two: The user dropped a list or Urls.
     // Iterate over that list. For mailto: Urls, just add the addressee to the list,
     // and for other Urls, download the Url and assume it points to a vCard
@@ -329,7 +329,6 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
         KContacts::Addressee::List list;
 
         for (const QUrl &url : urls) {
-
             // First, let's deal with mailto Urls. The path() part contains the
             // email-address.
             if (url.scheme() == QLatin1String("mailto")) {
@@ -337,7 +336,6 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
                 addressee.insertEmail(KEmailAddress::decodeMailtoUrl(url), true /* preferred */);
                 list += addressee;
             }
-
             // Otherwise, download the vCard to which the Url points
             else {
                 KContacts::VCardConverter converter;
@@ -371,7 +369,6 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
             insertEmails(addressee.emails());
         }
     }
-
     // Case three: Let AddresseeLineEdit deal with the rest
     else {
         if (!isReadOnly()) {
@@ -441,6 +438,7 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
         d->setSmartPaste(false);
     }
 }
+
 #endif // QT_NO_DRAGANDDROP
 
 void AddresseeLineEdit::groupExpandResult(KJob *job)
@@ -533,8 +531,8 @@ void AddresseeLineEdit::addContact(const KContacts::Addressee &addr, int weight,
         const QString email((*it));
         const QString givenName = addr.givenName();
         const QString familyName = addr.familyName();
-        const QString nickName  = addr.nickName();
-        QString fullEmail       = addr.fullEmail(email);
+        const QString nickName = addr.nickName();
+        QString fullEmail = addr.fullEmail(email);
 
         QString appendix;
 
@@ -620,6 +618,7 @@ QMenu *AddresseeLineEdit::createStandardContextMenu()
     }
     return menu;
 }
+
 #endif
 
 bool AddresseeLineEdit::canDeleteLineEdit() const
@@ -658,8 +657,8 @@ void AddresseeLineEdit::loadContacts()
 {
     const QString recentAddressGroupName = i18n("Recent Addresses");
     if (showRecentAddresses()) {
-        const QStringList recent =
-            cleanupEmailList(KPIM::RecentAddresses::self(recentAddressConfig())->addresses());
+        const QStringList recent
+            = cleanupEmailList(KPIM::RecentAddresses::self(recentAddressConfig())->addresses());
         QStringList::ConstIterator it = recent.constBegin();
         QString name, email;
 
@@ -699,14 +698,13 @@ int KPIM::AddresseeLineEdit::addCompletionSource(const QString &source, int weig
 
 bool KPIM::AddresseeLineEdit::eventFilter(QObject *object, QEvent *event)
 {
-    if (d->completionInitialized() &&
-            (object == completionBox() ||
-             completionBox()->findChild<QWidget *>(object->objectName()) == object)) {
-        if (event->type() == QEvent::MouseButtonPress ||
-                event->type() == QEvent::MouseMove ||
-                event->type() == QEvent::MouseButtonRelease ||
-                event->type() == QEvent::MouseButtonDblClick) {
-
+    if (d->completionInitialized()
+        && (object == completionBox()
+            || completionBox()->findChild<QWidget *>(object->objectName()) == object)) {
+        if (event->type() == QEvent::MouseButtonPress
+            || event->type() == QEvent::MouseMove
+            || event->type() == QEvent::MouseButtonRelease
+            || event->type() == QEvent::MouseButtonDblClick) {
             const QMouseEvent *mouseEvent = static_cast<QMouseEvent *>(event);
             // find list box item at the event position
             QListWidgetItem *item = completionBox()->itemAt(mouseEvent->pos());
@@ -719,10 +717,10 @@ bool KPIM::AddresseeLineEdit::eventFilter(QObject *object, QEvent *event)
             // avoid selection of headers on button press, or move or release while
             // a button is pressed
             const Qt::MouseButtons buttons = mouseEvent->buttons();
-            if (event->type() == QEvent::MouseButtonPress ||
-                    event->type() == QEvent::MouseButtonDblClick ||
-                    buttons & Qt::LeftButton || buttons & Qt::MidButton ||
-                    buttons & Qt::RightButton) {
+            if (event->type() == QEvent::MouseButtonPress
+                || event->type() == QEvent::MouseButtonDblClick
+                || buttons & Qt::LeftButton || buttons & Qt::MidButton
+                || buttons & Qt::RightButton) {
                 if (itemIsHeader(item)) {
                     return true; // eat the event, we don't want anything to happen
                 } else {
@@ -739,19 +737,19 @@ bool KPIM::AddresseeLineEdit::eventFilter(QObject *object, QEvent *event)
         }
     }
 
-    if ((object == this) &&
-            (event->type() == QEvent::ShortcutOverride)) {
+    if ((object == this)
+        && (event->type() == QEvent::ShortcutOverride)) {
         QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
-        if (keyEvent->key() == Qt::Key_Up || keyEvent->key() == Qt::Key_Down ||
-                keyEvent->key() == Qt::Key_Tab) {
+        if (keyEvent->key() == Qt::Key_Up || keyEvent->key() == Qt::Key_Down
+            || keyEvent->key() == Qt::Key_Tab) {
             keyEvent->accept();
             return true;
         }
     }
 
-    if ((object == this) &&
-            (event->type() == QEvent::KeyPress || event->type() == QEvent::KeyRelease) &&
-            completionBox()->isVisible()) {
+    if ((object == this)
+        && (event->type() == QEvent::KeyPress || event->type() == QEvent::KeyRelease)
+        && completionBox()->isVisible()) {
         const QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
         int currentIndex = completionBox()->currentRow();
         if (currentIndex < 0) {
@@ -814,12 +812,12 @@ bool KPIM::AddresseeLineEdit::eventFilter(QObject *object, QEvent *event)
                 completionBox()->setCurrentItem(item);
                 item->setSelected(true);
             }
-        } else if (event->type() == QEvent::KeyRelease &&
-                   (keyEvent->key() == Qt::Key_Tab || keyEvent->key() == Qt::Key_Backtab)) {
+        } else if (event->type() == QEvent::KeyRelease
+                   && (keyEvent->key() == Qt::Key_Tab || keyEvent->key() == Qt::Key_Backtab)) {
             /// first, find the header of the current section
             QListWidgetItem *myHeader = nullptr;
             int myHeaderIndex = -1;
-            const int iterationStep = keyEvent->key() == Qt::Key_Tab ?  1 : -1;
+            const int iterationStep = keyEvent->key() == Qt::Key_Tab ? 1 : -1;
             int index = qMin(qMax(currentIndex - iterationStep, 0), completionBox()->count() - 1);
             while (index >= 0) {
                 if (itemIsHeader(completionBox()->item(index))) {

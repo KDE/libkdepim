@@ -47,11 +47,11 @@ class Q_DECL_HIDDEN AddEmailDiplayJob::Private
 {
 public:
     Private(AddEmailDiplayJob *qq, const QString &emailString, QWidget *parentWidget)
-        : q(qq),
-          mShowAsHTML(false),
-          mRemoteContent(false),
-          mCompleteAddress(emailString),
-          mParentWidget(parentWidget)
+        : q(qq)
+        , mShowAsHTML(false)
+        , mRemoteContent(false)
+        , mCompleteAddress(emailString)
+        , mParentWidget(parentWidget)
     {
         KContacts::Addressee::parseEmailAddress(emailString, mName, mEmail);
     }
@@ -74,7 +74,7 @@ public:
         searchJob->setLimit(1);
         searchJob->setQuery(Akonadi::ContactSearchJob::Email, mEmail.toLower(),
                             Akonadi::ContactSearchJob::ExactMatch);
-        q->connect(searchJob, SIGNAL(result(KJob*)), q, SLOT(slotSearchDone(KJob*)));
+        q->connect(searchJob, SIGNAL(result(KJob *)), q, SLOT(slotSearchDone(KJob *)));
     }
 
     void modifyContact()
@@ -86,7 +86,7 @@ public:
             address.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("MailAllowToRemoteContent"), mRemoteContent ? QStringLiteral("TRUE") : QStringLiteral("FALSE"));
             item.setPayload<KContacts::Addressee>(address);
             Akonadi::ItemModifyJob *job = new Akonadi::ItemModifyJob(item);
-            q->connect(job, SIGNAL(result(KJob*)), SLOT(slotAddModifyContactDone(KJob*)));
+            q->connect(job, SIGNAL(result(KJob *)), SLOT(slotAddModifyContactDone(KJob *)));
         } else {
             searchContact();
         }
@@ -113,7 +113,7 @@ public:
             contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("MailAllowToRemoteContent"), mRemoteContent ? QStringLiteral("TRUE") : QStringLiteral("FALSE"));
             item.setPayload<KContacts::Addressee>(contact);
             Akonadi::ItemModifyJob *job = new Akonadi::ItemModifyJob(item);
-            q->connect(job, SIGNAL(result(KJob*)), SLOT(slotAddModifyContactDone(KJob*)));
+            q->connect(job, SIGNAL(result(KJob *)), SLOT(slotAddModifyContactDone(KJob *)));
         }
     }
 
@@ -121,12 +121,12 @@ public:
     {
         const QStringList mimeTypes(KContacts::Addressee::mimeType());
 
-        Akonadi::CollectionFetchJob *const addressBookJob =
-            new Akonadi::CollectionFetchJob(Akonadi::Collection::root(),
-                                            Akonadi::CollectionFetchJob::Recursive);
+        Akonadi::CollectionFetchJob *const addressBookJob
+            = new Akonadi::CollectionFetchJob(Akonadi::Collection::root(),
+                                              Akonadi::CollectionFetchJob::Recursive);
 
         addressBookJob->fetchScope().setContentMimeTypes(mimeTypes);
-        q->connect(addressBookJob, SIGNAL(result(KJob*)), SLOT(slotCollectionsFetched(KJob*)));
+        q->connect(addressBookJob, SIGNAL(result(KJob *)), SLOT(slotCollectionsFetched(KJob *)));
     }
 
     void slotCollectionsFetched(KJob *job)
@@ -138,13 +138,13 @@ public:
             return;
         }
 
-        const Akonadi::CollectionFetchJob *addressBookJob =
-            qobject_cast<Akonadi::CollectionFetchJob *>(job);
+        const Akonadi::CollectionFetchJob *addressBookJob
+            = qobject_cast<Akonadi::CollectionFetchJob *>(job);
 
         Akonadi::Collection::List canCreateItemCollections;
         const Akonadi::Collection::List colsList = addressBookJob->collections();
         for (const Akonadi::Collection &collection : colsList) {
-            if (Akonadi::Collection::CanCreateItem & collection.rights()) {
+            if (Akonadi::Collection::CanCreateItem &collection.rights()) {
                 canCreateItemCollections.append(collection);
             }
         }
@@ -154,10 +154,10 @@ public:
         const int nbItemCollection(canCreateItemCollections.size());
         if (nbItemCollection == 0) {
             if (KMessageBox::questionYesNo(
-                        mParentWidget,
-                        i18nc("@info",
-                              "You must create an address book before adding a contact. Do you want to create an address book?"),
-                        i18nc("@title:window", "No Address Book Available")) == KMessageBox::Yes) {
+                    mParentWidget,
+                    i18nc("@info",
+                          "You must create an address book before adding a contact. Do you want to create an address book?"),
+                    i18nc("@title:window", "No Address Book Available")) == KMessageBox::Yes) {
                 Akonadi::AgentTypeDialog dlg(mParentWidget);
                 dlg.setWindowTitle(i18n("Add Address Book"));
                 dlg.agentFilterProxyModel()->addMimeTypeFilter(KContacts::Addressee::mimeType());
@@ -169,7 +169,7 @@ public:
 
                     if (agentType.isValid()) {
                         Akonadi::AgentInstanceCreateJob *job = new Akonadi::AgentInstanceCreateJob(agentType, q);
-                        q->connect(job, SIGNAL(result(KJob*)), SLOT(slotResourceCreationDone(KJob*)));
+                        q->connect(job, SIGNAL(result(KJob *)), SLOT(slotResourceCreationDone(KJob *)));
                         job->configure(mParentWidget);
                         job->start();
                         return;
@@ -226,7 +226,7 @@ public:
 
         // save the new item in akonadi storage
         Akonadi::ItemCreateJob *createJob = new Akonadi::ItemCreateJob(item, addressBook, q);
-        q->connect(createJob, SIGNAL(result(KJob*)), SLOT(slotAddModifyContactDone(KJob*)));
+        q->connect(createJob, SIGNAL(result(KJob *)), SLOT(slotAddModifyContactDone(KJob *)));
     }
 
     void slotAddModifyContactDone(KJob *job)
@@ -249,7 +249,8 @@ public:
 };
 
 AddEmailDiplayJob::AddEmailDiplayJob(const QString &email, QWidget *parentWidget, QObject *parent)
-    : KJob(parent), d(new Private(this, email, parentWidget))
+    : KJob(parent)
+    , d(new Private(this, email, parentWidget))
 {
 }
 

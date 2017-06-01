@@ -46,9 +46,7 @@
 #include <QLayout>
 #include <QVBoxLayout>
 
-namespace KPIM
-{
-
+namespace KPIM {
 static const int MAX_LABEL_WIDTH = 650;
 
 class TransactionItem;
@@ -135,10 +133,10 @@ void TransactionItemView::slotLayoutFirstItem()
 
 // ----------------------------------------------------------------------------
 
-TransactionItem::TransactionItem(QWidget *parent,
-                                 ProgressItem *item, bool first)
-    : QWidget(parent), mCancelButton(nullptr), mItem(item)
-
+TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first)
+    : QWidget(parent)
+    , mCancelButton(nullptr)
+    , mItem(item)
 {
     QVBoxLayout *vboxLayout = new QVBoxLayout;
     vboxLayout->setSpacing(2);
@@ -158,8 +156,8 @@ TransactionItem::TransactionItem(QWidget *parent,
     hHBoxLayout->setSpacing(5);
     layout()->addWidget(h);
 
-    mItemLabel =
-        new QLabel(fontMetrics().elidedText(item->label(), Qt::ElideRight, MAX_LABEL_WIDTH), h);
+    mItemLabel
+        = new QLabel(fontMetrics().elidedText(item->label(), Qt::ElideRight, MAX_LABEL_WIDTH), h);
     h->layout()->addWidget(mItemLabel);
     h->setSizePolicy(QSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed));
 
@@ -260,9 +258,9 @@ void TransactionItem::addSubTransaction(ProgressItem *item)
 // ---------------------------------------------------------------------------
 
 ProgressDialog::ProgressDialog(QWidget *alignWidget, QWidget *parent)
-    : OverlayWidget(alignWidget, parent),
-      mShowTypeProgressItem(0),
-      mWasLastShown(false)
+    : OverlayWidget(alignWidget, parent)
+    , mShowTypeProgressItem(0)
+    , mWasLastShown(false)
 {
     setFrameStyle(QFrame::Panel | QFrame::Sunken);   // QFrame
 
@@ -354,32 +352,28 @@ void ProgressDialog::slotTransactionCanceled(ProgressItem *)
 {
 }
 
-void ProgressDialog::slotTransactionProgress(ProgressItem *item,
-        unsigned int progress)
+void ProgressDialog::slotTransactionProgress(ProgressItem *item, unsigned int progress)
 {
     if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         ti->setProgress(progress);
     }
 }
 
-void ProgressDialog::slotTransactionStatus(ProgressItem *item,
-        const QString &status)
+void ProgressDialog::slotTransactionStatus(ProgressItem *item, const QString &status)
 {
     if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         ti->setStatus(status);
     }
 }
 
-void ProgressDialog::slotTransactionLabel(ProgressItem *item,
-        const QString &label)
+void ProgressDialog::slotTransactionLabel(ProgressItem *item, const QString &label)
 {
     if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         ti->setLabel(label);
     }
 }
 
-void ProgressDialog::slotTransactionCryptoStatus(ProgressItem *item,
-        KPIM::ProgressItem::CryptoStatus value)
+void ProgressDialog::slotTransactionCryptoStatus(ProgressItem *item, KPIM::ProgressItem::CryptoStatus value)
 {
     if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         ti->setCryptoStatus(value);
@@ -434,6 +428,4 @@ void ProgressDialog::slotToggleVisibility()
         setVisible(isHidden());
     }
 }
-
 }
-

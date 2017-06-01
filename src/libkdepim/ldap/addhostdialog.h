@@ -25,8 +25,7 @@
 #include "kdepim_export.h"
 #include <qdialog.h>
 
-namespace KLDAP
-{
+namespace KLDAP {
 class LdapServer;
 class AddHostDialogPrivate;
 class KDEPIM_EXPORT AddHostDialog : public QDialog
@@ -47,7 +46,6 @@ private Q_SLOTS:
 private:
     AddHostDialogPrivate *const d;
 };
-
 }
 
 #endif // ADDHOSTDIALOG_H

@@ -28,8 +28,7 @@
 #include <ldap/ldapclientsearch.h>
 #include <qstringlist.h>
 class QTimer;
-namespace KPIM
-{
+namespace KPIM {
 class KMailCompletion;
 class AddresseeLineEdit;
 class AddresseeLineEditStatic
@@ -73,11 +72,11 @@ public:
     // holds the cached mapping from akonadi collection id to the completion source index
     struct collectionInfo {
         collectionInfo()
-            : index(-1),
-              enabled(true)
+            : index(-1)
+            , enabled(true)
         {
-
         }
+
         int index;
         bool enabled;
     };

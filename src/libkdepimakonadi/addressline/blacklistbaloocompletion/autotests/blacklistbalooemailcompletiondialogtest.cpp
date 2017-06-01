@@ -30,12 +30,10 @@
 BlackListBalooEmailCompletionDialogTest::BlackListBalooEmailCompletionDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 BlackListBalooEmailCompletionDialogTest::~BlackListBalooEmailCompletionDialogTest()
 {
-
 }
 
 void BlackListBalooEmailCompletionDialogTest::shouldHaveDefaultValue()
@@ -62,7 +60,6 @@ void BlackListBalooEmailCompletionDialogTest::shouldHaveDefaultValue()
     QVERIFY(selectButton);
     QPushButton *unselectButton = dlg.findChild<QPushButton *>(QStringLiteral("unselect_email"));
     QVERIFY(unselectButton);
-
 }
 
 void BlackListBalooEmailCompletionDialogTest::shouldEnablePushButtonWhenTestSizeSupperiorToTwo()

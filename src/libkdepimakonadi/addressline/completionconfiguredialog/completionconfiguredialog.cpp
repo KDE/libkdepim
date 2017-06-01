@@ -36,12 +36,11 @@ class KPIM::CompletionConfigureDialogPrivate
 {
 public:
     CompletionConfigureDialogPrivate()
-        : mTabWidget(nullptr),
-          mCompletionOrderWidget(nullptr),
-          mBlackListBalooWidget(nullptr),
-          mRecentaddressWidget(nullptr)
+        : mTabWidget(nullptr)
+        , mCompletionOrderWidget(nullptr)
+        , mBlackListBalooWidget(nullptr)
+        , mRecentaddressWidget(nullptr)
     {
-
     }
 
     QTabWidget *mTabWidget;
@@ -51,8 +50,8 @@ public:
 };
 
 CompletionConfigureDialog::CompletionConfigureDialog(QWidget *parent)
-    : QDialog(parent),
-      d(new KPIM::CompletionConfigureDialogPrivate)
+    : QDialog(parent)
+    , d(new KPIM::CompletionConfigureDialogPrivate)
 {
     setWindowTitle(i18n("Configure completion"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);

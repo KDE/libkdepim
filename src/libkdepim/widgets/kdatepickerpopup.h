@@ -28,9 +28,7 @@
 
 class KDatePicker;
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
  * @short This menu helps the user to select a date quickly.
  *
@@ -46,7 +44,7 @@ namespace KPIM
  *
  * @author Bram Schoenmakers <bram_s@softhome.net>
  */
-class KDEPIM_EXPORT KDatePickerPopup: public QMenu
+class KDEPIM_EXPORT KDatePickerPopup : public QMenu
 {
     Q_OBJECT
 
@@ -72,9 +70,7 @@ public:
      * @param date The initial date of date picker widget.
      * @param parent The parent object.
      */
-    explicit KDatePickerPopup(Modes modes = DatePicker,
-                              const QDate &date = QDate::currentDate(),
-                              QWidget *parent = nullptr);
+    explicit KDatePickerPopup(Modes modes = DatePicker, const QDate &date = QDate::currentDate(), QWidget *parent = nullptr);
 
     /**
      * Destroys the date picker popup.
@@ -115,7 +111,6 @@ private:
 };
 
 Q_DECLARE_OPERATORS_FOR_FLAGS(KDatePickerPopup::Modes)
-
 }
 
 #endif

@@ -25,12 +25,10 @@
 
 #include <QDialog>
 class KConfig;
-namespace KLDAP
-{
+namespace KLDAP {
 class LdapClientSearch;
 }
-namespace KPIM
-{
+namespace KPIM {
 class CompletionConfigureDialogPrivate;
 class KDEPIMAKONADI_EXPORT CompletionConfigureDialog : public QDialog
 {

@@ -35,7 +35,9 @@ class Q_DECL_HIDDEN OpenEmailAddressJob::Private
 {
 public:
     Private(OpenEmailAddressJob *qq, const QString &emailString, QWidget *parentWidget)
-        : q(qq), mCompleteAddress(emailString), mParentWidget(parentWidget)
+        : q(qq)
+        , mCompleteAddress(emailString)
+        , mParentWidget(parentWidget)
     {
         KContacts::Addressee::parseEmailAddress(emailString, mName, mEmail);
     }
@@ -63,7 +65,7 @@ public:
         }
 
         AddEmailAddressJob *createJob = new AddEmailAddressJob(mCompleteAddress, mParentWidget, q);
-        q->connect(createJob, SIGNAL(result(KJob*)), SLOT(slotAddContactDone(KJob*)));
+        q->connect(createJob, SIGNAL(result(KJob *)), SLOT(slotAddContactDone(KJob *)));
         createJob->start();
     }
 
@@ -94,7 +96,8 @@ public:
 };
 
 OpenEmailAddressJob::OpenEmailAddressJob(const QString &email, QWidget *parentWidget, QObject *parent)
-    : KJob(parent), d(new Private(this, email, parentWidget))
+    : KJob(parent)
+    , d(new Private(this, email, parentWidget))
 {
 }
 
@@ -110,7 +113,7 @@ void OpenEmailAddressJob::start()
     searchJob->setLimit(1);
     searchJob->setQuery(Akonadi::ContactSearchJob::Email, d->mEmail.toLower(),
                         Akonadi::ContactSearchJob::ExactMatch);
-    connect(searchJob, SIGNAL(result(KJob*)), SLOT(slotSearchDone(KJob*)));
+    connect(searchJob, SIGNAL(result(KJob *)), SLOT(slotSearchDone(KJob *)));
 }
 
 #include "moc_openemailaddressjob.cpp"

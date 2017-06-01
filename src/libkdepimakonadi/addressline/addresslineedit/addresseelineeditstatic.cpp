@@ -27,12 +27,12 @@
 using namespace KPIM;
 
 AddresseeLineEditStatic::AddresseeLineEditStatic()
-    : completion(new KMailCompletion),
-      ldapTimer(nullptr),
-      ldapSearch(nullptr),
-      ldapLineEdit(nullptr),
-      balooCompletionSource(0),
-      m_akonadiSession(nullptr)
+    : completion(new KMailCompletion)
+    , ldapTimer(nullptr)
+    , ldapSearch(nullptr)
+    , ldapLineEdit(nullptr)
+    , balooCompletionSource(0)
+    , m_akonadiSession(nullptr)
 {
 }
 
@@ -70,9 +70,9 @@ void AddresseeLineEditStatic::updateLDAPWeights()
     ldapSearch->updateCompletionWeights();
     int clientIndex = 0;
     for (const KLDAP::LdapClient *client : ldapSearch->clients()) {
-        const int sourceIndex =
-            addCompletionSource(i18n("LDAP server: %1", client->server().host()),
-                                client->completionWeight());
+        const int sourceIndex
+            = addCompletionSource(i18n("LDAP server: %1", client->server().host()),
+                                  client->completionWeight());
 
         ldapClientToCompletionSourceMap.insert(clientIndex, sourceIndex);
 

@@ -29,9 +29,7 @@
 #include <QBitArray>
 #include <QDate>
 
-namespace KPIM
-{
-
+namespace KPIM {
 //FIXME: This class assumes all weeks have 7 days. We should use KCalenderSystem instead.
 /**
  * A combobox that is populated with the days of the week from the current
@@ -41,7 +39,6 @@ namespace KPIM
  */
 class KDEPIM_EXPORT KWeekdayCheckCombo : public KCheckComboBox
 {
-
     Q_OBJECT
 public:
     /**
@@ -70,6 +67,5 @@ public:
      */
     int weekdayIndex(const QDate &date) const;
 };
-
 }
 #endif // KWEEKDAYCHECKCOMBO_H

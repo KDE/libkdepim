@@ -26,28 +26,24 @@
 #include "libkdepim_debug.h"
 #include <KLocalizedString>
 
-namespace KPIM
-{
-
+namespace KPIM {
 unsigned int KPIM::ProgressManager::uID = 42;
 
-ProgressItem::ProgressItem(ProgressItem *parent, const QString &id,
-                           const QString &label, const QString &status,
-                           bool canBeCanceled, CryptoStatus cryptoStatus)
-    : mId(id),
-      mLabel(label),
-      mStatus(status),
-      mParent(parent),
-      mCanBeCanceled(canBeCanceled),
-      mProgress(0),
-      mTotal(0),
-      mCompleted(0),
-      mCryptoStatus(cryptoStatus),
-      mType(0),
-      mWaitingForKids(false),
-      mCanceled(false),
-      mUsesBusyIndicator(false),
-      mCompletedCalled(false)
+ProgressItem::ProgressItem(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool canBeCanceled, CryptoStatus cryptoStatus)
+    : mId(id)
+    , mLabel(label)
+    , mStatus(status)
+    , mParent(parent)
+    , mCanBeCanceled(canBeCanceled)
+    , mProgress(0)
+    , mTotal(0)
+    , mCompleted(0)
+    , mCryptoStatus(cryptoStatus)
+    , mType(0)
+    , mWaitingForKids(false)
+    , mCanceled(false)
+    , mUsesBusyIndicator(false)
+    , mCompletedCalled(false)
 {
 }
 
@@ -231,12 +227,10 @@ Q_GLOBAL_STATIC(ProgressManagerPrivate, progressManagerPrivate)
 ProgressManager::ProgressManager()
     : QObject()
 {
-
 }
 
 ProgressManager::~ProgressManager()
 {
-
 }
 
 ProgressManager *ProgressManager::instance()
@@ -257,40 +251,35 @@ bool ProgressManager::isEmpty() const
 ProgressItem *ProgressManager::createProgressItem(const QString &id, const QString &label, const QString &status, bool canBeCanceled, ProgressItem::CryptoStatus cryptoStatus)
 {
     return instance()->createProgressItemImpl(nullptr, id, label, status,
-            canBeCanceled, cryptoStatus);
+                                              canBeCanceled, cryptoStatus);
 }
 
 ProgressItem *ProgressManager::createProgressItem(const QString &parent, const QString &id, const QString &label, const QString &status, bool canBeCanceled, ProgressItem::CryptoStatus cryptoStatus)
 {
     return instance()->createProgressItemImpl(parent, id, label,
-            status, canBeCanceled, cryptoStatus);
+                                              status, canBeCanceled, cryptoStatus);
 }
 
 ProgressItem *ProgressManager::createProgressItem(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool canBeCanceled, ProgressItem::CryptoStatus cryptoStatus)
 {
     return instance()->createProgressItemImpl(parent, id, label, status,
-            canBeCanceled, cryptoStatus);
+                                              canBeCanceled, cryptoStatus);
 }
 
 ProgressItem *ProgressManager::createProgressItem(const QString &label)
 {
     return instance()->createProgressItemImpl(nullptr, getUniqueID(), label,
-            QString(), true, KPIM::ProgressItem::Unencrypted);
+                                              QString(), true, KPIM::ProgressItem::Unencrypted);
 }
 
 ProgressItem *ProgressManager::createProgressItem(unsigned int progressType, const QString &label)
 {
     return instance()->createProgressItemImpl(nullptr, getUniqueID(), label,
-            QString(), true, KPIM::ProgressItem::Unencrypted, progressType);
+                                              QString(), true, KPIM::ProgressItem::Unencrypted, progressType);
 }
 
-ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent,
-        const QString &id,
-        const QString &label,
-        const QString &status,
-        bool cancellable,
-        ProgressItem::CryptoStatus cryptoStatus,
-        unsigned int progressType)
+ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool cancellable, ProgressItem::CryptoStatus cryptoStatus,
+                                                      unsigned int progressType)
 {
     ProgressItem *t = nullptr;
     if (!mTransactions.value(id)) {
@@ -329,13 +318,8 @@ ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent,
     return t;
 }
 
-ProgressItem *ProgressManager::createProgressItemImpl(const QString &parent,
-        const QString &id,
-        const QString &label,
-        const QString &status,
-        bool canBeCanceled,
-        ProgressItem::CryptoStatus cryptoStatus,
-        unsigned int progressType)
+ProgressItem *ProgressManager::createProgressItemImpl(const QString &parent, const QString &id, const QString &label, const QString &status, bool canBeCanceled,
+                                                      ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType)
 {
     ProgressItem *p = mTransactions.value(parent);
     return createProgressItemImpl(p, id, label, status, canBeCanceled, cryptoStatus, progressType);
@@ -365,7 +349,6 @@ ProgressItem *ProgressManager::singleItem() const
     QHash< QString, ProgressItem * >::const_iterator it = mTransactions.constBegin();
     QHash< QString, ProgressItem * >::const_iterator end = mTransactions.constEnd();
     while (it != end) {
-
         // No single item for progress possible, as one of them is a busy indicator one.
         if ((*it)->usesBusyIndicator()) {
             return nullptr;
@@ -399,7 +382,6 @@ void ProgressManager::slotAbortAll()
     while (it.hasNext()) {
         it.next().value()->cancel();
     }
-
 }
 
 void KPIM::ProgressItem::setTotalItems(unsigned int v)
@@ -426,6 +408,4 @@ unsigned int ProgressItem::completedItems() const
 {
     return mCompleted;
 }
-
 } // namespace
-

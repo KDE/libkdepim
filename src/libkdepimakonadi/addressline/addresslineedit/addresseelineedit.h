@@ -39,24 +39,19 @@ class QMouseEvent;
 class QObject;
 class KJob;
 class KConfig;
-namespace Akonadi
-{
+namespace Akonadi {
 class Item;
 }
 
-namespace KContacts
-{
+namespace KContacts {
 class Addressee;
 class ContactGroup;
 }
-namespace KLDAP
-{
+namespace KLDAP {
 class LdapClientSearch;
 }
 
-namespace KPIM
-{
-
+namespace KPIM {
 class AddresseeLineEditPrivate;
 class KDEPIMAKONADI_EXPORT AddresseeLineEdit : public KLineEdit
 {
@@ -230,7 +225,6 @@ private:
 
     AddresseeLineEditPrivate *const d;
 };
-
 }
 
 #endif

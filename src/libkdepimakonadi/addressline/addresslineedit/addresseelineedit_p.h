@@ -32,8 +32,7 @@
 class KConfig;
 class QToolButton;
 
-namespace KPIM
-{
+namespace KPIM {
 class AddresseeLineEdit;
 class AddresseeLineEditPrivate : public QObject
 {
@@ -48,8 +47,7 @@ public:
     void startLoadingLDAPEntries();
     void stopLDAPLookup();
     void setCompletedItems(const QStringList &items, bool autoSuggest);
-    void addCompletionItem(const QString &string, int weight, int source,
-                           const QStringList *keyWords = nullptr);
+    void addCompletionItem(const QString &string, int weight, int source, const QStringList *keyWords = nullptr);
     const QStringList adjustedCompletionItems(bool fullSearch);
     void updateSearchString();
     void startSearches();
@@ -170,4 +168,3 @@ private:
 }
 
 #endif // ADDRESSEELINEEDIT_P_H
-

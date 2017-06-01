@@ -26,9 +26,7 @@
 #include <QHash>
 #include "libkdepimakonadi_private_export.h"
 
-namespace KPIM
-{
-
+namespace KPIM {
 class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailListItem : public QListWidgetItem
 {
 public:

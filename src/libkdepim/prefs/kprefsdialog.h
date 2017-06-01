@@ -46,9 +46,7 @@ class QTimeEdit;
 class QButtonGroup;
 class QGroupBox;
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
   @short Base class for GUI control elements used by @ref KPrefsDialog.
   @author Cornelius Schumacher
@@ -341,8 +339,7 @@ public:
       @param parent  Parent widget.
       @param sampleText Sample text for previewing the selected font.
     */
-    explicit KPrefsWidFont(KConfigSkeleton::ItemFont *item,
-                           QWidget *parent = nullptr, const QString &sampleText = QString());
+    explicit KPrefsWidFont(KConfigSkeleton::ItemFont *item, QWidget *parent = nullptr, const QString &sampleText = QString());
     /**
       Destruct font setting widget.
     */
@@ -410,10 +407,7 @@ public:
       @param toolTip ToolTip help for the button.
       @param whatsThis What's This help for the button.
     */
-    void addRadio(int value,
-                  const QString &text,
-                  const QString &toolTip = QString(),
-                  const QString &whatsThis = QString());
+    void addRadio(int value, const QString &text, const QString &toolTip = QString(), const QString &whatsThis = QString());
 
     /**
       Return the box widget used by this widget.
@@ -492,9 +486,7 @@ public:
       @param parent  Parent widget.
       @param echomode  Describes how a line edit should display its contents.
     */
-    explicit KPrefsWidString(KConfigSkeleton::ItemString *item,
-                             QWidget *parent = nullptr,
-                             KLineEdit::EchoMode echomode = KLineEdit::Normal);
+    explicit KPrefsWidString(KConfigSkeleton::ItemString *item, QWidget *parent = nullptr, KLineEdit::EchoMode echomode = KLineEdit::Normal);
     /**
       Destructor.
     */
@@ -541,10 +533,7 @@ public:
       @param filter URLRequester filter
       @param mode  Describes how a line edit should display its contents.
     */
-    explicit KPrefsWidPath(KConfigSkeleton::ItemPath *item,
-                           QWidget *parent = nullptr,
-                           const QString &filter = QString(),
-                           KFile::Modes = KFile::File);
+    explicit KPrefsWidPath(KConfigSkeleton::ItemPath *item, QWidget *parent = nullptr, const QString &filter = QString(), KFile::Modes = KFile::File);
 
     /**
       Destructor.
@@ -612,8 +601,7 @@ public:
       @param item    The KConfigSkeletonItem representing the preferences entry.
       @param parent  Parent widget.
     */
-    KPrefsWidBool *addWidBool(KConfigSkeleton::ItemBool *item,
-                              QWidget *parent = nullptr);
+    KPrefsWidBool *addWidBool(KConfigSkeleton::ItemBool *item, QWidget *parent = nullptr);
 
     /**
       Register a @ref KPrefsWidInt object.
@@ -621,8 +609,7 @@ public:
       @param item    The KConfigSkeletonItem representing the preferences entry.
       @param parent  Parent widget.
     */
-    KPrefsWidInt *addWidInt(KConfigSkeleton::ItemInt *item,
-                            QWidget *parent = nullptr);
+    KPrefsWidInt *addWidInt(KConfigSkeleton::ItemInt *item, QWidget *parent = nullptr);
 
     /**
       Register a @ref KPrefsWidDate object.
@@ -630,8 +617,7 @@ public:
       @param item    The KConfigSkeletonItem representing the preferences entry.
       @param parent  Parent widget.
     */
-    KPrefsWidDate *addWidDate(KConfigSkeleton::ItemDateTime *item,
-                              QWidget *parent = nullptr);
+    KPrefsWidDate *addWidDate(KConfigSkeleton::ItemDateTime *item, QWidget *parent = nullptr);
 
     /**
       Register a @ref KPrefsWidTime object.
@@ -639,8 +625,7 @@ public:
       @param item    The KConfigSkeletonItem representing the preferences entry.
       @param parent  Parent widget.
     */
-    KPrefsWidTime *addWidTime(KConfigSkeleton::ItemDateTime *item,
-                              QWidget *parent = nullptr);
+    KPrefsWidTime *addWidTime(KConfigSkeleton::ItemDateTime *item, QWidget *parent = nullptr);
 
     /**
       Register a @ref KPrefsWidDuration object.
@@ -649,9 +634,7 @@ public:
       @param format  display format. default is "hh:mm:ss"
       @param parent  Parent widget.
     */
-    KPrefsWidDuration *addWidDuration(KConfigSkeleton::ItemDateTime *item,
-                                      const QString &format,
-                                      QWidget *parent = nullptr);
+    KPrefsWidDuration *addWidDuration(KConfigSkeleton::ItemDateTime *item, const QString &format, QWidget *parent = nullptr);
 
     /**
       Register a @ref KPrefsWidColor object.
@@ -659,8 +642,7 @@ public:
       @param item    The KConfigSkeletonItem representing the preferences entry.
       @param parent  Parent widget.
     */
-    KPrefsWidColor *addWidColor(KConfigSkeleton::ItemColor *item,
-                                QWidget *parent = nullptr);
+    KPrefsWidColor *addWidColor(KConfigSkeleton::ItemColor *item, QWidget *parent = nullptr);
 
     /**
       Register a @ref KPrefsWidRadios object. The choices represented by the
@@ -669,8 +651,7 @@ public:
       @param item    The KConfigSkeletonItem representing the preferences entry.
       @param parent  Parent widget.
     */
-    KPrefsWidRadios *addWidRadios(KConfigSkeleton::ItemEnum *item,
-                                  QWidget *parent = nullptr);
+    KPrefsWidRadios *addWidRadios(KConfigSkeleton::ItemEnum *item, QWidget *parent = nullptr);
 
     /**
       Register a @ref KPrefsWidCombo object. The choices represented by the
@@ -679,8 +660,7 @@ public:
       @param item    The KConfigSkeletonItem representing the preferences entry.
       @param parent  Parent widget.
     */
-    KPrefsWidCombo *addWidCombo(KConfigSkeleton::ItemEnum *item,
-                                QWidget *parent = nullptr);
+    KPrefsWidCombo *addWidCombo(KConfigSkeleton::ItemEnum *item, QWidget *parent = nullptr);
 
     /**
       Register a @ref KPrefsWidString object.
@@ -688,8 +668,7 @@ public:
       @param item    The KConfigSkeletonItem representing the preferences entry.
       @param parent  Parent widget.
     */
-    KPrefsWidString *addWidString(KConfigSkeleton::ItemString *item,
-                                  QWidget *parent = nullptr);
+    KPrefsWidString *addWidString(KConfigSkeleton::ItemString *item, QWidget *parent = nullptr);
 
     /**
       Register a path @ref KPrefsWidPath object.
@@ -699,10 +678,7 @@ public:
       @param filter URLRequester filter
       @param mode URLRequester mode
     */
-    KPrefsWidPath *addWidPath(KConfigSkeleton::ItemPath *item,
-                              QWidget *parent = nullptr,
-                              const QString &filter = QString(),
-                              KFile::Modes mode = KFile::File);
+    KPrefsWidPath *addWidPath(KConfigSkeleton::ItemPath *item, QWidget *parent = nullptr, const QString &filter = QString(), KFile::Modes mode = KFile::File);
 
     /**
       Register a password @ref KPrefsWidString object, with echomode set to KLineEdit::Password.
@@ -710,8 +686,7 @@ public:
       @param item    The KConfigSkeletonItem representing the preferences entry.
       @param parent  Parent widget.
     */
-    KPrefsWidString *addWidPassword(KConfigSkeleton::ItemString *item,
-                                    QWidget *parent = nullptr);
+    KPrefsWidString *addWidPassword(KConfigSkeleton::ItemString *item, QWidget *parent = nullptr);
 
     /**
       Register a @ref KPrefsWidFont object.
@@ -721,9 +696,7 @@ public:
       @param parent     Parent widget.
       @param sampleText Sample text for previewing the selected font.
     */
-    KPrefsWidFont *addWidFont(KConfigSkeleton::ItemFont *item,
-                              QWidget *parent = nullptr,
-                              const QString &sampleText = QString());
+    KPrefsWidFont *addWidFont(KConfigSkeleton::ItemFont *item, QWidget *parent = nullptr, const QString &sampleText = QString());
 
     /** Set all widgets to default values. */
     void setWidDefaults();
@@ -764,8 +737,7 @@ public:
       @param name   Widget name.
       @param modal  true, if dialog has to be modal, false for non-modal.
     */
-    explicit KPrefsDialog(KConfigSkeleton *prefs, QWidget *parent = nullptr,
-                          bool modal = false);
+    explicit KPrefsDialog(KConfigSkeleton *prefs, QWidget *parent = nullptr, bool modal = false);
 
     /**
       Destructor.
@@ -800,17 +772,21 @@ protected Q_SLOTS:
 
 protected:
     /** Implement this to read custom configuration widgets. */
-    virtual void usrReadConfig() {}
+    virtual void usrReadConfig()
+    {
+    }
+
     /** Implement this to write custom configuration widgets. */
-    virtual void usrWriteConfig() {}
+    virtual void usrWriteConfig()
+    {
+    }
 };
 
 class KDEPIM_EXPORT KPrefsModule : public KCModule, public KPrefsWidManager
 {
     Q_OBJECT
 public:
-    KPrefsModule(KConfigSkeleton *,
-                 QWidget *parent = nullptr, const QVariantList &args = QVariantList());
+    KPrefsModule(KConfigSkeleton *, QWidget *parent = nullptr, const QVariantList &args = QVariantList());
 
     void addWid(KPrefsWid *) Q_DECL_OVERRIDE;
 
@@ -823,11 +799,15 @@ public Q_SLOTS:
 
 protected:
     /** Implement this to read custom configuration widgets. */
-    virtual void usrReadConfig() {}
-    /** Implement this to write custom configuration widgets. */
-    virtual void usrWriteConfig() {}
-};
+    virtual void usrReadConfig()
+    {
+    }
 
+    /** Implement this to write custom configuration widgets. */
+    virtual void usrWriteConfig()
+    {
+    }
+};
 }
 
 #endif

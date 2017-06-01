@@ -46,8 +46,7 @@ class QFrame;
 class QLabel;
 class QPushButton;
 
-namespace KPIM
-{
+namespace KPIM {
 class TransactionItem;
 class SSLLabel;
 
@@ -57,7 +56,10 @@ class TransactionItemView : public QScrollArea
 public:
     explicit TransactionItemView(QWidget *parent = nullptr, const char *name = nullptr);
 
-    virtual ~TransactionItemView() {}
+    virtual ~TransactionItemView()
+    {
+    }
+
     TransactionItem *addTransactionItem(ProgressItem *item, bool first);
 
     QSize sizeHint() const Q_DECL_OVERRIDE;
@@ -112,11 +114,11 @@ public Q_SLOTS:
 
 protected:
     QProgressBar *mProgress;
-    QPushButton  *mCancelButton;
-    QLabel       *mItemLabel;
-    QLabel       *mItemStatus;
-    QFrame       *mFrame;
-    SSLLabel     *mSSLLabel;
+    QPushButton *mCancelButton;
+    QLabel *mItemLabel;
+    QLabel *mItemStatus;
+    QFrame *mFrame;
+    SSLLabel *mSSLLabel;
     ProgressItem *mItem;
 };
 
@@ -158,7 +160,6 @@ protected:
     unsigned int mShowTypeProgressItem;
     bool mWasLastShown;
 };
-
 } // namespace KPIM
 
 #endif // __KPIM_PROGRESSDIALOG_H__

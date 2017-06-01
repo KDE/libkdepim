@@ -48,15 +48,13 @@ class QStackedWidget;
 class QLabel;
 class QTimer;
 
-namespace KPIM
-{
+namespace KPIM {
 class SSLLabel;
 class ProgressItem;
 class ProgressDialog;
 
 class KDEPIM_EXPORT StatusbarProgressWidget : public QFrame
 {
-
     Q_OBJECT
 
 public:
@@ -93,7 +91,9 @@ private:
     SSLLabel *m_sslLabel;
     QPushButton *m_pButton;
 
-    enum Mode { None, Progress };
+    enum Mode {
+        None, Progress
+    };
 
     uint mode;
     bool m_bShowButton;
@@ -106,7 +106,6 @@ private:
     QTimer *mBusyTimer;
     QTimer *mCleanTimer;
 };
-
 } // namespace
 
 #endif

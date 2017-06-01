@@ -33,20 +33,22 @@ class KDatePickerAction : public QWidgetAction
 {
 public:
     KDatePickerAction(KDatePicker *widget, QObject *parent)
-        : QWidgetAction(parent),
-          mDatePicker(widget), mOriginalParent(widget->parentWidget())
+        : QWidgetAction(parent)
+        , mDatePicker(widget)
+        , mOriginalParent(widget->parentWidget())
     {
     }
 
 protected:
-    QWidget *createWidget(QWidget *parent) Q_DECL_OVERRIDE {
+    QWidget *createWidget(QWidget *parent) Q_DECL_OVERRIDE
+    {
         mDatePicker->setParent(parent);
         return mDatePicker;
     }
 
-    void deleteWidget(QWidget *widget) Q_DECL_OVERRIDE {
-        if (widget != mDatePicker)
-        {
+    void deleteWidget(QWidget *widget) Q_DECL_OVERRIDE
+    {
+        if (widget != mDatePicker) {
             return;
         }
 
@@ -62,7 +64,8 @@ class Q_DECL_HIDDEN KDatePickerPopup::Private
 {
 public:
     Private(KDatePickerPopup *qq)
-        : q(qq), mDatePicker(nullptr)
+        : q(qq)
+        , mDatePicker(nullptr)
     {
     }
 
@@ -144,7 +147,8 @@ void KDatePickerPopup::Private::slotNextMonth()
 }
 
 KDatePickerPopup::KDatePickerPopup(Modes modes, const QDate &date, QWidget *parent)
-    : QMenu(parent), d(new Private(this))
+    : QMenu(parent)
+    , d(new Private(this))
 {
     d->mModes = modes;
 

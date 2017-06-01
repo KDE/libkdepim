@@ -32,12 +32,12 @@ class Q_DECL_HIDDEN LdapClientSearchConfig::Private
 {
 public:
     Private()
-        : useWallet(false),
-          askWallet(true),
-          wallet(nullptr)
+        : useWallet(false)
+        , askWallet(true)
+        , wallet(nullptr)
     {
-
     }
+
     ~Private()
     {
         if (useWallet) {
@@ -45,6 +45,7 @@ public:
             wallet = nullptr;
         }
     }
+
     bool useWallet;
     bool askWallet;
     KWallet::Wallet *wallet;
@@ -58,7 +59,8 @@ KConfig *LdapClientSearchConfig::config()
 }
 
 LdapClientSearchConfig::LdapClientSearchConfig(QObject *parent)
-    : QObject(parent), d(new LdapClientSearchConfig::Private())
+    : QObject(parent)
+    , d(new LdapClientSearchConfig::Private())
 {
 }
 
@@ -74,8 +76,8 @@ void LdapClientSearchConfig::readConfig(KLDAP::LdapServer &server, KConfigGroup 
         prefix = QStringLiteral("Selected");
     }
 
-    const QString host =  config.readEntry(prefix + QStringLiteral("Host%1").arg(j),
-                                           QString()).trimmed();
+    const QString host = config.readEntry(prefix + QStringLiteral("Host%1").arg(j),
+                                          QString()).trimmed();
     if (!host.isEmpty()) {
         server.setHost(host);
     }
@@ -104,10 +106,10 @@ void LdapClientSearchConfig::readConfig(KLDAP::LdapServer &server, KConfigGroup 
     QString pwdBindDN = config.readEntry(pwdBindBNEntry, QString());
     if (!pwdBindDN.isEmpty()) {
         if (d->askWallet && KMessageBox::Yes == KMessageBox::questionYesNo(nullptr, i18n("LDAP password is stored as clear text, do you want to store it in kwallet?"),
-                i18n("Store clear text password in KWallet"),
-                KStandardGuiItem::yes(),
-                KStandardGuiItem::no(),
-                QStringLiteral("DoAskToStoreToKwallet"))) {
+                                                                           i18n("Store clear text password in KWallet"),
+                                                                           KStandardGuiItem::yes(),
+                                                                           KStandardGuiItem::no(),
+                                                                           QStringLiteral("DoAskToStoreToKwallet"))) {
             d->wallet = KWallet::Wallet::openWallet(KWallet::Wallet::LocalWallet(), 0);
             if (d->wallet) {
                 connect(d->wallet, &KWallet::Wallet::walletClosed, this, &LdapClientSearchConfig::slotWalletClosed);

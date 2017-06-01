@@ -31,9 +31,7 @@
 
 class QCloseEvent;
 
-namespace KLDAP
-{
-
+namespace KLDAP {
 class LdapClient;
 class LdapObject;
 
@@ -113,7 +111,6 @@ private:
     Q_PRIVATE_SLOT(d, void slotSelectionChanged())
     //@endcond
 };
-
 }
 Q_DECLARE_METATYPE(KLDAP::LdapSearchDialog::FilterType)
 #endif

@@ -78,7 +78,6 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
 
 RecentAddressWidget::~RecentAddressWidget()
 {
-
 }
 
 void RecentAddressWidget::slotTypedSomething(const QString &text)
@@ -165,8 +164,8 @@ bool RecentAddressWidget::eventFilter(QObject *o, QEvent *e)
 {
     if (o == mLineEdit && e->type() == QEvent::KeyPress) {
         QKeyEvent *keyEvent = (QKeyEvent *)e;
-        if (keyEvent->key() == Qt::Key_Down ||
-                keyEvent->key() == Qt::Key_Up) {
+        if (keyEvent->key() == Qt::Key_Down
+            || keyEvent->key() == Qt::Key_Up) {
             return ((QObject *)mListView)->event(e);
         }
     }

@@ -36,9 +36,7 @@
 #include "kdepim_export.h"
 #include <QWidget>
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
   @short Widget that manages a list of other widgets (incl. 'more', 'fewer' and 'clear' buttons).
 
@@ -212,7 +210,6 @@ private:
     Private *const d;
     //@endcond
 };
-
 }
 
 #endif /* _KWIDGETLISTER_H_ */

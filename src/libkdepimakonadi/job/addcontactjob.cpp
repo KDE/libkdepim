@@ -36,12 +36,19 @@ class Q_DECL_HIDDEN AddContactJob::Private
 {
 public:
     Private(AddContactJob *qq, const KContacts::Addressee &contact, QWidget *parentWidget)
-        : q(qq), mContact(contact), mParentWidget(parentWidget), mShowMessageBox(true)
+        : q(qq)
+        , mContact(contact)
+        , mParentWidget(parentWidget)
+        , mShowMessageBox(true)
     {
     }
 
     Private(AddContactJob *qq, const KContacts::Addressee &contact, const Akonadi::Collection &collection)
-        : q(qq), mContact(contact), mParentWidget(nullptr), mCollection(collection), mShowMessageBox(true)
+        : q(qq)
+        , mContact(contact)
+        , mParentWidget(nullptr)
+        , mCollection(collection)
+        , mShowMessageBox(true)
     {
     }
 
@@ -60,11 +67,11 @@ public:
 
         if (!contacts.isEmpty()) {   // contact is already part of the address book...
             if (mShowMessageBox) {
-                const QString text =
-                    i18nc("@info",
-                          "The vCard's primary email address is already in "
-                          "your address book; however, you may save the vCard into "
-                          "a file and import it into the address book manually.");
+                const QString text
+                    = i18nc("@info",
+                            "The vCard's primary email address is already in "
+                            "your address book; however, you may save the vCard into "
+                            "a file and import it into the address book manually.");
                 KMessageBox::information(mParentWidget, text);
             }
             q->setError(UserDefinedError);
@@ -98,7 +105,7 @@ public:
 
             // save the new item in akonadi storage
             Akonadi::ItemCreateJob *job = new Akonadi::ItemCreateJob(item, mCollection);
-            q->connect(job, SIGNAL(result(KJob*)), SLOT(slotAddContactDone(KJob*)));
+            q->connect(job, SIGNAL(result(KJob *)), SLOT(slotAddContactDone(KJob *)));
         } else {
             q->setError(UserDefinedError);
             q->emitResult();
@@ -115,11 +122,11 @@ public:
         }
 
         if (mShowMessageBox) {
-            const QString text =
-                i18nc("@info",
-                      "The vCard was added to your address book; "
-                      "you can add more information to this "
-                      "entry by opening the address book.");
+            const QString text
+                = i18nc("@info",
+                        "The vCard was added to your address book; "
+                        "you can add more information to this "
+                        "entry by opening the address book.");
             KMessageBox::information(
                 mParentWidget,
                 text,
@@ -137,12 +144,14 @@ public:
 };
 
 AddContactJob::AddContactJob(const KContacts::Addressee &contact, QWidget *parentWidget, QObject *parent)
-    : KJob(parent), d(new Private(this, contact, parentWidget))
+    : KJob(parent)
+    , d(new Private(this, contact, parentWidget))
 {
 }
 
 AddContactJob::AddContactJob(const KContacts::Addressee &contact, const Akonadi::Collection &collection, QObject *parent)
-    : KJob(parent), d(new Private(this, contact, collection))
+    : KJob(parent)
+    , d(new Private(this, contact, collection))
 {
 }
 
@@ -164,7 +173,7 @@ void AddContactJob::start()
     searchJob->setQuery(Akonadi::ContactSearchJob::Email, d->mContact.preferredEmail().toLower(),
                         Akonadi::ContactSearchJob::ExactMatch);
 
-    connect(searchJob, SIGNAL(result(KJob*)), SLOT(slotSearchDone(KJob*)));
+    connect(searchJob, SIGNAL(result(KJob *)), SLOT(slotSearchDone(KJob *)));
 }
 
 #include "moc_addcontactjob.cpp"

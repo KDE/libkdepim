@@ -27,12 +27,10 @@
 RecentAddressDialogTest::RecentAddressDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 RecentAddressDialogTest::~RecentAddressDialogTest()
 {
-
 }
 
 void RecentAddressDialogTest::initTestCase()

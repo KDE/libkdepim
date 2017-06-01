@@ -37,9 +37,7 @@ using namespace KPIM;
 
 /// Class KCheckComboBox::Private
 
-namespace KPIM
-{
-
+namespace KPIM {
 class Q_DECL_HIDDEN KCheckComboBox::Private
 {
     KCheckComboBox *q;
@@ -51,13 +49,12 @@ public:
         , mSqueezeText(false)
         , mIgnoreHide(false)
         , mAlwaysShowDefaultText(false)
-    { }
+    {
+    }
 
     void makeInsertedItemsCheckable(const QModelIndex &, int start, int end);
     QString squeeze(const QString &text);
-    void updateCheckedItems(const QModelIndex &topLeft = QModelIndex(),
-                            const QModelIndex &bottomRight = QModelIndex(),
-                            int role = Qt::DisplayRole);
+    void updateCheckedItems(const QModelIndex &topLeft = QModelIndex(), const QModelIndex &bottomRight = QModelIndex(), int role = Qt::DisplayRole);
     void toggleCheckState();
 
 public:
@@ -67,7 +64,6 @@ public:
     bool mIgnoreHide;
     bool mAlwaysShowDefaultText;
 };
-
 }
 
 void KCheckComboBox::Private::makeInsertedItemsCheckable(const QModelIndex &parent, int start, int end)
@@ -101,9 +97,7 @@ QString KCheckComboBox::Private::squeeze(const QString &text)
     return text;
 }
 
-void KCheckComboBox::Private::updateCheckedItems(const QModelIndex &topLeft,
-        const QModelIndex &bottomRight,
-        int role)
+void KCheckComboBox::Private::updateCheckedItems(const QModelIndex &topLeft, const QModelIndex &bottomRight, int role)
 {
     Q_UNUSED(topLeft);
     Q_UNUSED(bottomRight);
@@ -195,7 +189,7 @@ QStringList KCheckComboBox::checkedItems(int role) const
     if (model()) {
         const QModelIndex index = model()->index(0, modelColumn(), rootModelIndex());
         const QModelIndexList indexes = model()->match(index, Qt::CheckStateRole,
-                                        Qt::Checked, -1, Qt::MatchExactly);
+                                                       Qt::Checked, -1, Qt::MatchExactly);
         for (const QModelIndex &index : indexes) {
             items += index.data(role).toString();
         }
@@ -302,6 +296,7 @@ void KCheckComboBox::wheelEvent(QWheelEvent *event)
     // discard mouse wheel events on the combo box
     event->accept();
 }
+
 #endif
 
 void KCheckComboBox::resizeEvent(QResizeEvent *event)
@@ -317,7 +312,7 @@ bool KCheckComboBox::eventFilter(QObject *receiver, QEvent *event)
     switch (event->type()) {
     case QEvent::KeyPress:
     case QEvent::KeyRelease:
-    case QEvent::ShortcutOverride: {
+    case QEvent::ShortcutOverride:
         switch (static_cast<QKeyEvent *>(event)->key()) {
         case Qt::Key_Space:
             if (event->type() == QEvent::KeyPress && view()->isVisible()) {
@@ -334,8 +329,7 @@ bool KCheckComboBox::eventFilter(QObject *receiver, QEvent *event)
             hidePopup();
             return true;
         }
-    }
-    break;
+        break;
     case QEvent::MouseButtonDblClick:
     case QEvent::MouseButtonPress:
     case QEvent::MouseButtonRelease:
@@ -356,7 +350,7 @@ bool KCheckComboBox::alwaysShowDefaultText() const
     return d->mAlwaysShowDefaultText;
 }
 
-void  KCheckComboBox::setAlwaysShowDefaultText(bool always)
+void KCheckComboBox::setAlwaysShowDefaultText(bool always)
 {
     if (always != d->mAlwaysShowDefaultText) {
         d->mAlwaysShowDefaultText = always;

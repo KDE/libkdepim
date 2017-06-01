@@ -30,8 +30,7 @@
 #include <libkdepim/ldapclientsearch.h>
 #include "person.h"
 
-namespace KPIM
-{
+namespace KPIM {
 class PersonSearchJobPrivate;
 class KDEPIMAKONADI_EXPORT PersonSearchJob : public KJob
 {
@@ -62,7 +61,6 @@ private Q_SLOTS:
 private:
     PersonSearchJobPrivate *const d;
 };
-
 }
 
 #endif

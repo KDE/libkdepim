@@ -27,8 +27,7 @@ class QPushButton;
 class KLineEdit;
 class QLabel;
 class KListWidgetSearchLine;
-namespace KPIM
-{
+namespace KPIM {
 class BlackListBalooEmailList;
 class BlackListBalooEmailWarning;
 class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailCompletionWidget : public QWidget

@@ -28,9 +28,7 @@
 
 #undef None
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
    Provides a singleton which broadcasts status messages by emitting
    signals. Interested mainwindows can connect to the statusMsg()
@@ -39,7 +37,6 @@ namespace KPIM
 class BroadcastStatusPrivate;
 class KDEPIM_EXPORT BroadcastStatus : public QObject
 {
-
     Q_OBJECT
 
 public:
@@ -78,7 +75,6 @@ protected:
     BroadcastStatus();
     BroadcastStatusPrivate *const d;
 };
-
 }
 
 #endif

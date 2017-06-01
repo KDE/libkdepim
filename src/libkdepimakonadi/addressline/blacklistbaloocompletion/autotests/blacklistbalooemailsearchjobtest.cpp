@@ -24,12 +24,10 @@
 BlackListBalooEmailSearchJobTest::BlackListBalooEmailSearchJobTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 BlackListBalooEmailSearchJobTest::~BlackListBalooEmailSearchJobTest()
 {
-
 }
 
 void BlackListBalooEmailSearchJobTest::shouldNotSearchWhenTextIsEmpty()

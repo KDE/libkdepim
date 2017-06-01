@@ -35,12 +35,10 @@ class KPIM::PersonSearchJobPrivate
 {
 public:
     PersonSearchJobPrivate(const QString &searchString)
-        : mSearchString(searchString),
-          mCollectionSearchDone(false),
-          mLdapSearchDone(false)
-
+        : mSearchString(searchString)
+        , mCollectionSearchDone(false)
+        , mLdapSearchDone(false)
     {
-
     }
 
     ~PersonSearchJobPrivate()
@@ -56,8 +54,8 @@ public:
 };
 
 PersonSearchJob::PersonSearchJob(const QString &searchString, QObject *parent)
-    : KJob(parent),
-      d(new KPIM::PersonSearchJobPrivate(searchString))
+    : KJob(parent)
+    , d(new KPIM::PersonSearchJobPrivate(searchString))
 {
     connect(&d->mLdapSearch, static_cast<void (KLDAP::LdapClientSearch::*)(const KLDAP::LdapResultObject::List &)>(&KLDAP::LdapClientSearch::searchData),
             this, &PersonSearchJob::onLDAPSearchData);
@@ -216,7 +214,7 @@ void PersonSearchJob::updatePersonCollection(const Person &person)
     Akonadi::CollectionIdentificationAttribute *identification = c.attribute<Akonadi::CollectionIdentificationAttribute>(Akonadi::Collection::AddIfMissing);
 
     if (person.updateDisplayName) {
-        Akonadi::EntityDisplayAttribute *displayname  = c.attribute<Akonadi::EntityDisplayAttribute >(Akonadi::Collection::AddIfMissing);
+        Akonadi::EntityDisplayAttribute *displayname = c.attribute<Akonadi::EntityDisplayAttribute >(Akonadi::Collection::AddIfMissing);
         displayname->setDisplayName(person.name);
     }
 

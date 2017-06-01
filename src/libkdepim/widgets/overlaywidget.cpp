@@ -41,14 +41,14 @@ public:
     OverlayWidgetPrivate()
         : mAlignWidget(nullptr)
     {
-
     }
 
     QWidget *mAlignWidget;
 };
 
 OverlayWidget::OverlayWidget(QWidget *alignWidget, QWidget *parent)
-    : QFrame(parent), d(new KPIM::OverlayWidgetPrivate)
+    : QFrame(parent)
+    , d(new KPIM::OverlayWidgetPrivate)
 {
     setAlignWidget(alignWidget);
     setLayout(new QHBoxLayout(this));
@@ -103,8 +103,8 @@ void OverlayWidget::setAlignWidget(QWidget *w)
 
 bool OverlayWidget::eventFilter(QObject *o, QEvent *e)
 {
-    if (o == d->mAlignWidget &&
-            (e->type() == QEvent::Move || e->type() == QEvent::Resize)) {
+    if (o == d->mAlignWidget
+        && (e->type() == QEvent::Move || e->type() == QEvent::Resize)) {
         reposition();
     }
     return QFrame::eventFilter(o, e);
@@ -115,4 +115,3 @@ void OverlayWidget::resizeEvent(QResizeEvent *ev)
     reposition();
     QFrame::resizeEvent(ev);
 }
-

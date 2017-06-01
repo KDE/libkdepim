@@ -37,8 +37,8 @@
 
 using namespace KPIM;
 BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget *parent)
-    : QWidget(parent),
-      mLimit(500)
+    : QWidget(parent)
+    , mLimit(500)
 {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
@@ -137,7 +137,6 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
 
 BlackListBalooEmailCompletionWidget::~BlackListBalooEmailCompletionWidget()
 {
-
 }
 
 void BlackListBalooEmailCompletionWidget::slotSelectionChanged()

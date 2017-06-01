@@ -24,14 +24,11 @@
 
 #include <kjob.h>
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Item;
 }
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
  * @short A job to add a new contact with a given email address to Akonadi.
  *
@@ -83,7 +80,6 @@ private:
 
     //@endcond
 };
-
 }
 
 #endif

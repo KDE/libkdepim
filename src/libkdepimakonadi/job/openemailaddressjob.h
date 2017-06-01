@@ -24,13 +24,10 @@
 
 #include <kjob.h>
 
-namespace Akonadi
-{
+namespace Akonadi {
 }
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
  * @short A job to open the contact editor for a contact with a given email address.
  *
@@ -71,7 +68,6 @@ private:
     Q_PRIVATE_SLOT(d, void slotAddContactDone(KJob *))
     //@endcond
 };
-
 }
 
 #endif

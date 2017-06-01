@@ -27,7 +27,7 @@
 
 using namespace KPIM;
 
-KWeekdayCheckCombo::KWeekdayCheckCombo(QWidget *parent, bool first5Checked): KCheckComboBox(parent)
+KWeekdayCheckCombo::KWeekdayCheckCombo(QWidget *parent, bool first5Checked) : KCheckComboBox(parent)
 {
     const int weekStart = QLocale().firstDayOfWeek();
     QStringList checkedItems;
@@ -79,7 +79,7 @@ int KWeekdayCheckCombo::weekdayIndex(const QDate &date) const
     return (1 + dayOfWeek + (7 - weekStart)) % 7;
 }
 
-void KWeekdayCheckCombo::setDays(const QBitArray &days,  const QBitArray &disableDays)
+void KWeekdayCheckCombo::setDays(const QBitArray &days, const QBitArray &disableDays)
 {
     Q_ASSERT(count() == 7);   // The combobox must be filled.
 
@@ -101,4 +101,3 @@ void KWeekdayCheckCombo::setDays(const QBitArray &days,  const QBitArray &disabl
     }
     setCheckedItems(checkedDays);
 }
-

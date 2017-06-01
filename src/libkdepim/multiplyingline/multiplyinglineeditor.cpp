@@ -28,7 +28,9 @@
 #include <QHBoxLayout>
 using namespace KPIM;
 MultiplyingLineEditor::MultiplyingLineEditor(MultiplyingLineFactory *factory, QWidget *parent)
-    : QWidget(parent), mModified(false), mMultiplyingLineFactory(factory)
+    : QWidget(parent)
+    , mModified(false)
+    , mMultiplyingLineFactory(factory)
 {
     QBoxLayout *topLayout = new QHBoxLayout();
     topLayout->setMargin(0);
@@ -165,4 +167,3 @@ bool MultiplyingLineEditor::dynamicSizeHint() const
 {
     return mView->dynamicSizeHint();
 }
-

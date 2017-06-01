@@ -22,8 +22,7 @@
 #include <QObject>
 #include "kdepim_export.h"
 
-namespace KPIM
-{
+namespace KPIM {
 class StatusbarProgressWidget;
 class ProgressStatusBarWidgetPrivate;
 class KDEPIM_EXPORT ProgressStatusBarWidget : public QObject

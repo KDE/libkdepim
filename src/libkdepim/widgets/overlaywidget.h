@@ -37,9 +37,7 @@
 class QResizeEvent;
 class QEvent;
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
  * This is a widget that can align itself with another one, without using a layout,
  * so that it can actually be on top of other widgets.
@@ -68,8 +66,6 @@ private:
 private:
     OverlayWidgetPrivate *const d;
 };
-
 } // namespace
 
 #endif /* OVERLAYWIDGET_H */
-

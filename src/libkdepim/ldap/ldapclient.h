@@ -29,9 +29,7 @@
 
 class KJob;
 
-namespace KLDAP
-{
-
+namespace KLDAP {
 class LdapObject;
 class LdapServer;
 
@@ -159,7 +157,6 @@ private:
     Q_PRIVATE_SLOT(d, void slotDone())
     //@endcond
 };
-
 }
 
 #endif

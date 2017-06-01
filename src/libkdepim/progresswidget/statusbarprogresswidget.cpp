@@ -58,14 +58,14 @@ using namespace KPIM;
 
 //-----------------------------------------------------------------------------
 StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog, QWidget *parent, bool button)
-    : QFrame(parent),
-      mShowTypeProgressItem(0),
-      m_bShowDetailedProgress(false),
-      mCurrentItem(nullptr),
-      mProgressDialog(progressDialog),
-      mDelayTimer(nullptr),
-      mBusyTimer(nullptr),
-      mCleanTimer(nullptr)
+    : QFrame(parent)
+    , mShowTypeProgressItem(0)
+    , m_bShowDetailedProgress(false)
+    , mCurrentItem(nullptr)
+    , mProgressDialog(progressDialog)
+    , mDelayTimer(nullptr)
+    , mBusyTimer(nullptr)
+    , mCleanTimer(nullptr)
 {
     m_bShowButton = button;
     int w = fontMetrics().width(QStringLiteral(" 999.9 kB/s 00:00:01 ")) + 8;
@@ -311,4 +311,3 @@ void StatusbarProgressWidget::slotProgressDialogVisible(bool b)
         setMode();
     }
 }
-

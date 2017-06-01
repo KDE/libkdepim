@@ -46,14 +46,15 @@
 
 #include "addhostdialog.h"
 
-K_PLUGIN_FACTORY_WITH_JSON(KCMLdapFactory, "kcmldap.json", registerPlugin<KCMLdap>();)
+K_PLUGIN_FACTORY_WITH_JSON(KCMLdapFactory, "kcmldap.json", registerPlugin<KCMLdap>();
+                           )
 
 class LDAPItem : public QListWidgetItem
 {
 public:
     LDAPItem(QListWidget *parent, const KLDAP::LdapServer &server, bool isActive = false)
-        : QListWidgetItem(parent, QListWidgetItem::UserType),
-          mIsActive(isActive)
+        : QListWidgetItem(parent, QListWidgetItem::UserType)
+        , mIsActive(isActive)
     {
         setFlags(Qt::ItemIsEnabled | Qt::ItemIsSelectable | Qt::ItemIsUserCheckable);
         setCheckState(isActive ? Qt::Checked : Qt::Unchecked);
@@ -76,6 +77,7 @@ public:
     {
         mIsActive = isActive;
     }
+
     bool isActive() const
     {
         return mIsActive;

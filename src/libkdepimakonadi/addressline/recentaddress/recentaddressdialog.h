@@ -26,8 +26,7 @@
 #include <QStringList>
 class KConfig;
 
-namespace KPIM
-{
+namespace KPIM {
 class RecentAddressWidget;
 class KDEPIMAKONADI_EXPORT RecentAddressDialog : public QDialog
 {

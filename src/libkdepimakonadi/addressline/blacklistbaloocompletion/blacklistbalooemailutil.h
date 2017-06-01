@@ -24,8 +24,7 @@
 #include "libkdepimakonadi_private_export.h"
 #include <QStringList>
 #include <QHash>
-namespace KPIM
-{
+namespace KPIM {
 class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailUtil
 {
 public:

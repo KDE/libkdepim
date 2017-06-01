@@ -22,7 +22,6 @@ without including the source code for Qt in the source distribution.
 #include "collectionsearchjob.h"
 #include "libkdepimakonadi_debug.h"
 
-
 #include <AkonadiCore/CollectionFetchJob>
 #include <AkonadiCore/CollectionFetchScope>
 #include <AkonadiSearch/PIM/collectionquery.h>
@@ -32,10 +31,11 @@ class KPIM::CollectionSearchJobPrivate
 {
 public:
     CollectionSearchJobPrivate(const QString &searchString, const QStringList &mimetypeFilter)
-        : mSearchString(searchString),
-          mMimeTypeFilter(mimetypeFilter)
+        : mSearchString(searchString)
+        , mMimeTypeFilter(mimetypeFilter)
     {
     }
+
     QString mSearchString;
     QStringList mMimeTypeFilter;
     Akonadi::Collection::List mMatchingCollections;
@@ -43,8 +43,8 @@ public:
 };
 
 CollectionSearchJob::CollectionSearchJob(const QString &searchString, const QStringList &mimetypeFilter, QObject *parent)
-    : KJob(parent),
-      d(new KPIM::CollectionSearchJobPrivate(searchString, mimetypeFilter))
+    : KJob(parent)
+    , d(new KPIM::CollectionSearchJobPrivate(searchString, mimetypeFilter))
 {
 }
 
@@ -155,4 +155,3 @@ Akonadi::Collection::List CollectionSearchJob::matchingCollections() const
 {
     return d->mMatchingCollections;
 }
-

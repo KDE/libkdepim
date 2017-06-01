@@ -30,8 +30,7 @@ class QListWidgetItem;
 class QPushButton;
 class QToolButton;
 
-namespace KLDAP
-{
+namespace KLDAP {
 class LdapClientSearchConfig;
 }
 

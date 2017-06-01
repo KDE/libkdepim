@@ -19,7 +19,6 @@
 
 #include "uistatesaver.h"
 
-
 #include <KConfigGroup>
 
 #include <QComboBox>
@@ -89,16 +88,16 @@ struct Restorer {
     }
 };
 
-#define PROCESS_TYPE( T ) \
+#define PROCESS_TYPE(T) \
     { \
-        T *obj = qobject_cast<T*>( w ); \
-        if ( obj ) { \
-            Op::process( obj, config ); \
+        T *obj = qobject_cast<T *>(w); \
+        if (obj) { \
+            Op::process(obj, config); \
             continue; \
         } \
     }
 
-template <typename Op, typename Config> static void processWidgets(QWidget *widget, Config config)
+template<typename Op, typename Config> static void processWidgets(QWidget *widget, Config config)
 {
     QList<QWidget *> widgets = widget->findChildren<QWidget *>();
     widgets << widget;

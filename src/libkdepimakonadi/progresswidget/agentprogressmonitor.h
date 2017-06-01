@@ -24,9 +24,7 @@
 
 #include <AgentInstance>
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
  * @internal
  *
@@ -51,9 +49,7 @@ private:
     Q_PRIVATE_SLOT(d, void instanceStatusChanged(const Akonadi::AgentInstance &))
     Q_PRIVATE_SLOT(d, void instanceRemoved(const Akonadi::AgentInstance &))
     Q_PRIVATE_SLOT(d, void instanceNameChanged(const Akonadi::AgentInstance &))
-
 };
-
 }
 
 #endif

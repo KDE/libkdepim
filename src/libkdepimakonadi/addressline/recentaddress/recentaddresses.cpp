@@ -123,7 +123,7 @@ void RecentAddresses::add(const QString &entry)
 
             KContacts::Addressee::List::Iterator end(m_addresseeList.end());
             for (KContacts::Addressee::List::Iterator it = m_addresseeList.begin();
-                    it != end; ++it) {
+                 it != end; ++it) {
                 if (email == (*it).preferredEmail()) {
                     //already inside, remove it here and add it later at pos==1
                     m_addresseeList.erase(it);
@@ -170,7 +170,7 @@ QStringList RecentAddresses::addresses() const
     addresses.reserve(m_addresseeList.count());
     KContacts::Addressee::List::ConstIterator end = m_addresseeList.constEnd();
     for (KContacts::Addressee::List::ConstIterator it = m_addresseeList.constBegin();
-            it != end; ++it) {
+         it != end; ++it) {
         addresses.append((*it).fullEmail());
     }
     return addresses;

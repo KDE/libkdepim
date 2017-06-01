@@ -25,9 +25,7 @@
 class QWidget;
 class KConfigGroup;
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
  * @short Methods to save and restore the UI state of an application.
  *
@@ -46,9 +44,7 @@ namespace KPIM
  * @author Volker Krause <vkrause@kde.org>
  * @since 4.5
  */
-namespace UiStateSaver
-{
-
+namespace UiStateSaver {
 /**
    * Saves the state of @p widget and all its sub-widgets to @p config.
    * @param widget The top-level widget which state should be saved.
@@ -63,7 +59,6 @@ KDEPIM_EXPORT void saveState(QWidget *widget, KConfigGroup &config);
    */
 KDEPIM_EXPORT void restoreState(QWidget *widget, const KConfigGroup &config);
 }
-
 }
 
 #endif

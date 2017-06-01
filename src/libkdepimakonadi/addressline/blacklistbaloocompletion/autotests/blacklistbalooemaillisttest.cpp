@@ -25,12 +25,10 @@
 BlackListBalooEmailListTest::BlackListBalooEmailListTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 BlackListBalooEmailListTest::~BlackListBalooEmailListTest()
 {
-
 }
 
 void BlackListBalooEmailListTest::shouldHaveDefaultValue()
@@ -110,7 +108,6 @@ void BlackListBalooEmailListTest::shouldExcludeDomain()
     blackList.setEmailBlackList(emails);
     blackList.setEmailFound(emails);
     QCOMPARE(blackList.count(), 1);
-
 }
 
 void BlackListBalooEmailListTest::shouldAvoidSameEmailWithDifferentCase()

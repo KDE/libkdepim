@@ -22,14 +22,13 @@
 
 #include <QHBoxLayout>
 
-namespace KPIM
-{
+namespace KPIM {
 class ProgressIndicatorLabelPrivate
 {
 public:
     ProgressIndicatorLabelPrivate(const QString &_label, ProgressIndicatorLabel *qq)
-        : labelStr(_label),
-          q(qq)
+        : labelStr(_label)
+        , q(qq)
     {
         QHBoxLayout *lay = new QHBoxLayout;
         lay->setMargin(0);
@@ -70,14 +69,14 @@ public:
 };
 
 ProgressIndicatorLabel::ProgressIndicatorLabel(const QString &label, QWidget *parent)
-    : QWidget(parent),
-      d(new ProgressIndicatorLabelPrivate(label, this))
+    : QWidget(parent)
+    , d(new ProgressIndicatorLabelPrivate(label, this))
 {
 }
 
 ProgressIndicatorLabel::ProgressIndicatorLabel(QWidget *parent)
-    : QWidget(parent),
-      d(new ProgressIndicatorLabelPrivate(QString(), this))
+    : QWidget(parent)
+    , d(new ProgressIndicatorLabelPrivate(QString(), this))
 {
 }
 
@@ -100,6 +99,4 @@ void ProgressIndicatorLabel::setActiveLabel(const QString &label)
 {
     d->setActiveLabel(label);
 }
-
 }
-

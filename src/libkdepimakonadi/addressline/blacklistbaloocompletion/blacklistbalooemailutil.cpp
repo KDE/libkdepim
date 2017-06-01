@@ -23,12 +23,10 @@
 using namespace KPIM;
 BlackListBalooEmailUtil::BlackListBalooEmailUtil()
 {
-
 }
 
 BlackListBalooEmailUtil::~BlackListBalooEmailUtil()
 {
-
 }
 
 void BlackListBalooEmailUtil::initialBlackList(const QStringList &blackList)

@@ -25,12 +25,10 @@
 BalooCompletionEmailTest::BalooCompletionEmailTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 BalooCompletionEmailTest::~BalooCompletionEmailTest()
 {
-
 }
 
 void BalooCompletionEmailTest::returnEmptyListWhenEmailListIsEmpty()
@@ -184,7 +182,6 @@ void BalooCompletionEmailTest::shouldExcludeDuplicateEntryWithDisplayNameAddAddr
     emailList << QStringLiteral("John Doe <dOE@example.com>");
     completion.setEmailList(emailList);
     QCOMPARE(completion.cleanupEmailList().count(), 1);
-
 }
 
 void BalooCompletionEmailTest::shouldExcludeDuplicateEntryWithDifferentDisplayNameAddAddressWithDifferentCase()

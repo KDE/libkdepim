@@ -24,15 +24,13 @@
 using namespace KPIM;
 
 BlackListBalooEmailSearchJob::BlackListBalooEmailSearchJob(QObject *parent)
-    : QObject(parent),
-      mLimit(500)
+    : QObject(parent)
+    , mLimit(500)
 {
-
 }
 
 BlackListBalooEmailSearchJob::~BlackListBalooEmailSearchJob()
 {
-
 }
 
 bool BlackListBalooEmailSearchJob::start()
@@ -58,4 +56,3 @@ void BlackListBalooEmailSearchJob::setLimit(int limit)
 {
     mLimit = qMax(10, limit);
 }
-

@@ -34,9 +34,7 @@ static void deleteGlobalStaticBroadcastStatus()
     instance_ = nullptr;
 }
 
-namespace KPIM
-{
-
+namespace KPIM {
 BroadcastStatus *BroadcastStatus::instance()
 {
     if (!instance_) {
@@ -52,7 +50,6 @@ public:
     BroadcastStatusPrivate()
         : mTransientActive(false)
     {
-
     }
 
     QString mStatusMsg;
@@ -95,6 +92,4 @@ void BroadcastStatus::reset()
     // restore
     Q_EMIT statusMsg(d->mStatusMsg);
 }
-
 }
-

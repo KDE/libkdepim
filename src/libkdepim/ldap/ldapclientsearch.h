@@ -27,8 +27,7 @@
 #include <QObject>
 #include <QStringList>
 
-namespace KLDAP
-{
+namespace KLDAP {
 class LdapClient;
 
 /**
@@ -180,7 +179,6 @@ private:
     Q_PRIVATE_SLOT(d, void slotFileChanged(const QString &))
     //@endcond
 };
-
 }
 Q_DECLARE_TYPEINFO(KLDAP::LdapResult, Q_MOVABLE_TYPE);
 Q_DECLARE_TYPEINFO(KLDAP::LdapResultObject, Q_MOVABLE_TYPE);

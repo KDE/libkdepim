@@ -75,11 +75,12 @@ public:
         return mWeight;
     }
 
-    void save(CompletionOrderWidget *) Q_DECL_OVERRIDE {
+    void save(CompletionOrderWidget *) Q_DECL_OVERRIDE
+    {
         KConfig *config = KLDAP::LdapClientSearchConfig::config();
         KConfigGroup group(config, "LDAP");
         group.writeEntry(QStringLiteral("SelectedCompletionWeight%1").arg(mLdapClient->clientNumber()),
-        mWeight);
+                         mWeight);
         group.sync();
     }
 
@@ -93,12 +94,14 @@ public:
         return true;
     }
 
-    void setIsEnabled(bool b) Q_DECL_OVERRIDE {
+    void setIsEnabled(bool b) Q_DECL_OVERRIDE
+    {
         Q_UNUSED(b);
     }
 
 protected:
-    void setCompletionWeight(int weight) Q_DECL_OVERRIDE {
+    void setCompletionWeight(int weight) Q_DECL_OVERRIDE
+    {
         mWeight = weight;
     }
 
@@ -111,7 +114,10 @@ class SimpleCompletionItem : public CompletionItem
 {
 public:
     SimpleCompletionItem(CompletionOrderWidget *editor, const QString &label, const QString &identifier, int weight, bool enableSupport = false)
-        : mLabel(label), mIdentifier(identifier), mHasEnableSupport(enableSupport), mEnabled(true)
+        : mLabel(label)
+        , mIdentifier(identifier)
+        , mHasEnableSupport(enableSupport)
+        , mEnabled(true)
     {
         KConfigGroup groupCompletionWeights(editor->configFile(), "CompletionWeights");
         mWeight = groupCompletionWeights.readEntry(mIdentifier, weight);
@@ -121,7 +127,7 @@ public:
         }
     }
 
-    bool isEnabled() const  Q_DECL_OVERRIDE
+    bool isEnabled() const Q_DECL_OVERRIDE
     {
         return mEnabled;
     }
@@ -151,22 +157,24 @@ public:
         return mWeight;
     }
 
-    void setIsEnabled(bool b) Q_DECL_OVERRIDE {
+    void setIsEnabled(bool b) Q_DECL_OVERRIDE
+    {
         mEnabled = b;
     }
 
-    void save(CompletionOrderWidget *editor) Q_DECL_OVERRIDE {
+    void save(CompletionOrderWidget *editor) Q_DECL_OVERRIDE
+    {
         KConfigGroup group(editor->configFile(), "CompletionWeights");
         group.writeEntry(mIdentifier, mWeight);
-        if (mHasEnableSupport)
-        {
+        if (mHasEnableSupport) {
             KConfigGroup groupEnabled(editor->configFile(), "CompletionEnabled");
             //groupEnabled.writeEntry(mIdentifier, );
         }
     }
 
 protected:
-    void setCompletionWeight(int weight) Q_DECL_OVERRIDE {
+    void setCompletionWeight(int weight) Q_DECL_OVERRIDE
+    {
         mWeight = weight;
     }
 
@@ -199,9 +207,8 @@ public:
             setFlags(flags() | Qt::ItemIsUserCheckable);
             setCheckState(0, mItem->isEnabled() ? Qt::Checked : Qt::Unchecked);
         } else {
-            setFlags(flags() & ~ Qt::ItemIsUserCheckable);
+            setFlags(flags() & ~Qt::ItemIsUserCheckable);
         }
-
     }
 
     CompletionItem *item() const
@@ -214,7 +221,7 @@ public:
         const QTreeWidgetItem *otherItem = &other;
         const CompletionViewItem *completionItem = static_cast<const CompletionViewItem *>(otherItem);
         // item with weight 100 should be on the top -> reverse sorting
-        return (mItem->completionWeight() > completionItem->item()->completionWeight());
+        return mItem->completionWeight() > completionItem->item()->completionWeight();
     }
 
 private:
@@ -222,11 +229,11 @@ private:
 };
 
 CompletionOrderWidget::CompletionOrderWidget(QWidget *parent)
-    : QWidget(parent),
-      mConfig(QStringLiteral("kpimcompletionorder")),
-      mCollectionModel(nullptr),
-      mLdapSearch(nullptr),
-      mDirty(false)
+    : QWidget(parent)
+    , mConfig(QStringLiteral("kpimcompletionorder"))
+    , mCollectionModel(nullptr)
+    , mLdapSearch(nullptr)
+    , mDirty(false)
 {
     new CompletionOrderEditorAdaptor(this);
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this, QDBusConnection::ExportAdaptors);
@@ -279,7 +286,6 @@ CompletionOrderWidget::CompletionOrderWidget(QWidget *parent)
             this, &CompletionOrderWidget::slotSelectionChanged);
     connect(mUpButton, &QAbstractButton::clicked, this, &CompletionOrderWidget::slotMoveUp);
     connect(mDownButton, &QAbstractButton::clicked, this, &CompletionOrderWidget::slotMoveDown);
-
 }
 
 CompletionOrderWidget::~CompletionOrderWidget()
@@ -295,8 +301,8 @@ void CompletionOrderWidget::save()
         group.deleteGroup();
 
         for (int itemIndex = 0; itemIndex < mListView->topLevelItemCount(); ++itemIndex) {
-            CompletionViewItem *item =
-                static_cast<CompletionViewItem *>(mListView->topLevelItem(itemIndex));
+            CompletionViewItem *item
+                = static_cast<CompletionViewItem *>(mListView->topLevelItem(itemIndex));
             item->item()->setCompletionWeight(w);
             item->item()->setIsEnabled(item->checkState(0) == Qt::Checked);
             item->item()->save(this);
@@ -356,7 +362,7 @@ void CompletionOrderWidget::loadCompletionItems()
 
     Akonadi::CollectionFilterProxyModel *mimeTypeProxy = new Akonadi::CollectionFilterProxyModel(this);
     mimeTypeProxy->addMimeTypeFilters(QStringList() << KContacts::Addressee::mimeType()
-                                      << KContacts::ContactGroup::mimeType());
+                                                    << KContacts::ContactGroup::mimeType());
     mimeTypeProxy->setSourceModel(descendantsProxy);
     mimeTypeProxy->setExcludeVirtualCollections(true);
 

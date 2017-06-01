@@ -27,8 +27,7 @@
 class KConfigGroup;
 class KConfig;
 
-namespace KLDAP
-{
+namespace KLDAP {
 class LdapServer;
 class LdapClient;
 class KDEPIM_EXPORT LdapClientSearchConfig : public QObject
@@ -49,8 +48,7 @@ public:
      *
      * @param active Defines whether the active settings shall be read.
      */
-    void readConfig(KLDAP::LdapServer &server, KConfigGroup &group,
-                    int clientNumber, bool active);
+    void readConfig(KLDAP::LdapServer &server, KConfigGroup &group, int clientNumber, bool active);
 
     /**
      * Writes the LDAP @p server settings to the given config @p group for the
@@ -58,8 +56,7 @@ public:
      *
      * @param active Defines whether the active settings shall be written.
      */
-    void writeConfig(const KLDAP::LdapServer &server, KConfigGroup &group,
-                     int clientNumber, bool active);
+    void writeConfig(const KLDAP::LdapServer &server, KConfigGroup &group, int clientNumber, bool active);
 
     /**
      * Should LdapClientSearchConfig ask, if it should use the KWallet to store passwords
@@ -74,7 +71,6 @@ private:
     class Private;
     Private *const d;
 };
-
 }
 
 #endif // LDAPCLIENTSEARCHCONFIG_H

@@ -46,6 +46,4 @@ int main(int argc, char *argv[])
     KLDAP::LdapSearchDialog dlg;
     dlg.exec();
     return app.exec();
-
 }
-

@@ -24,19 +24,15 @@
 
 #include <kjob.h>
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Collection;
 }
 
-namespace KContacts
-{
+namespace KContacts {
 class Addressee;
 }
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
  * @short A job to add a new contact to Akonadi.
  *
@@ -90,7 +86,6 @@ private:
     Q_PRIVATE_SLOT(d, void slotAddContactDone(KJob *))
     //@endcond
 };
-
 }
 
 #endif

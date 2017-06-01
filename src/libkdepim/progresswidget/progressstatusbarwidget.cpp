@@ -28,14 +28,14 @@ public:
     ProgressStatusBarWidgetPrivate()
         : mLittleProgress(nullptr)
     {
-
     }
+
     KPIM::StatusbarProgressWidget *mLittleProgress;
 };
 
 ProgressStatusBarWidget::ProgressStatusBarWidget(QWidget *alignWidget, QWidget *parent, unsigned int showTypeProgressItem)
-    : QObject(parent),
-      d(new KPIM::ProgressStatusBarWidgetPrivate)
+    : QObject(parent)
+    , d(new KPIM::ProgressStatusBarWidgetPrivate)
 {
     KPIM::ProgressDialog *progressDialog = new KPIM::ProgressDialog(alignWidget, parent);
     progressDialog->setShowTypeProgressItem(showTypeProgressItem);

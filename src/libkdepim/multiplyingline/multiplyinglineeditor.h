@@ -33,9 +33,7 @@
 #include <QWidget>
 #include <QObject>
 
-namespace KPIM
-{
-
+namespace KPIM {
 class MultiplyingLineView;
 
 /**
@@ -47,8 +45,14 @@ class KDEPIM_EXPORT MultiplyingLineFactory : public QObject
 {
     Q_OBJECT
 public:
-    explicit MultiplyingLineFactory(QObject *parent) : QObject(parent) {}
-    virtual ~MultiplyingLineFactory() {}
+    explicit MultiplyingLineFactory(QObject *parent) : QObject(parent)
+    {
+    }
+
+    virtual ~MultiplyingLineFactory()
+    {
+    }
+
     virtual MultiplyingLine *newLine(QWidget *parent) = 0;
     virtual int maximumRecipients()
     {

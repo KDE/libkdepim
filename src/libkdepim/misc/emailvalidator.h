@@ -25,9 +25,7 @@
 
 #include <QValidator>
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
   A validator that enforces correct email addresses.
   @see KEmailAddress::isValidSimpleAddress
@@ -42,7 +40,6 @@ public:
 
     void fixup(QString &str) const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

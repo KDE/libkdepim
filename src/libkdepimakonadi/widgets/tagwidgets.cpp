@@ -36,7 +36,6 @@ public:
     TagWidgetPrivate()
         : mTagWidget(nullptr)
     {
-
     }
 
     Akonadi::TagWidget *mTagWidget;
@@ -45,8 +44,8 @@ public:
 };
 
 TagWidget::TagWidget(QWidget *parent)
-    : QWidget(parent),
-      d(new KPIM::TagWidgetPrivate)
+    : QWidget(parent)
+    , d(new KPIM::TagWidgetPrivate)
 {
     d->mTagWidget = new Akonadi::TagWidget(this);
     connect(d->mTagWidget, &Akonadi::TagWidget::selectionChanged, this, &TagWidget::onSelectionChanged);
@@ -108,16 +107,14 @@ class KPIM::TagSelectionDialogPrivate
 public:
     TagSelectionDialogPrivate()
     {
-
     }
 
     Akonadi::Tag::List mTagList;
 };
 TagSelectionDialog::TagSelectionDialog(QWidget *parent)
-    : Akonadi::TagSelectionDialog(parent),
-      d(new KPIM::TagSelectionDialogPrivate)
+    : Akonadi::TagSelectionDialog(parent)
+    , d(new KPIM::TagSelectionDialogPrivate)
 {
-
 }
 
 TagSelectionDialog::~TagSelectionDialog()
@@ -162,4 +159,3 @@ Akonadi::Tag::List TagSelectionDialog::tagSelection() const
 {
     return Akonadi::TagSelectionDialog::selection();
 }
-

@@ -31,15 +31,15 @@
 #include <QPointer>
 #include <QScrollArea>
 
-namespace KPIM
-{
-
+namespace KPIM {
 class MultiplyingLineView : public QScrollArea
 {
     Q_OBJECT
 public:
     MultiplyingLineView(MultiplyingLineFactory *factory, MultiplyingLineEditor *parent);
-    ~MultiplyingLineView() {}
+    ~MultiplyingLineView()
+    {
+    }
 
     QSize minimumSizeHint() const Q_DECL_OVERRIDE;
     QSize sizeHint() const Q_DECL_OVERRIDE;

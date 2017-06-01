@@ -48,8 +48,8 @@ QTextDocument *LogItemDelegate::document(const QStyleOptionViewItem &option, con
     QString text = option4.text;
 
     const QString content = QStringLiteral(
-                                "<html style=\"color:%1\">"
-                                "<body> %2").arg(textColor.name().toUpper(), text)
+        "<html style=\"color:%1\">"
+        "<body> %2").arg(textColor.name().toUpper(), text)
                             + QLatin1String("</table></body></html>");
 
     document->setHtml(content);
@@ -102,7 +102,7 @@ QSize LogItemDelegate::sizeHint(const QStyleOptionViewItem &option, const QModel
     return size;
 }
 
-QWidget  *LogItemDelegate::createEditor(QWidget *, const QStyleOptionViewItem &, const QModelIndex &) const
+QWidget *LogItemDelegate::createEditor(QWidget *, const QStyleOptionViewItem &, const QModelIndex &) const
 {
     return nullptr;
 }
@@ -160,7 +160,7 @@ QString CustomLogWidget::toHtml() const
 {
     QString result = QStringLiteral("<html>\n<body>\n");
     result += QLatin1String("<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n");
-    for (int i = 0; i < count(); ++i)  {
+    for (int i = 0; i < count(); ++i) {
         QListWidgetItem *itemWidget = item(i);
         const QString itemText(itemWidget->text());
         QString logText;
@@ -192,7 +192,7 @@ QString CustomLogWidget::toHtml() const
 QString CustomLogWidget::toPlainText() const
 {
     QString result;
-    for (int i = 0; i < count(); ++i)  {
+    for (int i = 0; i < count(); ++i) {
         result += item(i)->text() + QLatin1Char('\n');
     }
     return result;
@@ -200,5 +200,5 @@ QString CustomLogWidget::toPlainText() const
 
 bool CustomLogWidget::isEmpty() const
 {
-    return (count() == 0);
+    return count() == 0;
 }

@@ -29,8 +29,7 @@
 #include <AkonadiCore/Collection>
 #include <QStringList>
 
-namespace KPIM
-{
+namespace KPIM {
 class CollectionSearchJobPrivate;
 class KDEPIMAKONADI_EXPORT CollectionSearchJob : public KJob
 {
@@ -48,7 +47,6 @@ private:
     void onAncestorsFetched(KJob *);
     CollectionSearchJobPrivate *const d;
 };
-
 }
 
 #endif

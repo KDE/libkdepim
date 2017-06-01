@@ -29,8 +29,7 @@ class QPushButton;
 class QListWidget;
 class KLineEdit;
 
-namespace KPIM
-{
+namespace KPIM {
 class LIBKDEPIMAKONADI_TESTS_EXPORT RecentAddressWidget : public QWidget
 {
     Q_OBJECT

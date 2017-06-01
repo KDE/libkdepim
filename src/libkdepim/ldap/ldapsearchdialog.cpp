@@ -304,8 +304,7 @@ public:
         }
     }
 
-    virtual QVariant headerData(int section, Qt::Orientation orientation,
-                                int role = Qt::DisplayRole) const Q_DECL_OVERRIDE
+    virtual QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE
     {
         if (orientation == Qt::Vertical || role != Qt::DisplayRole || section < 0 || section > 17) {
             return QVariant();
@@ -370,7 +369,7 @@ public:
         default:
             return QVariant();
             break;
-        };
+        }
 
         return QVariant();
     }
@@ -381,8 +380,8 @@ public:
             return QVariant();
         }
 
-        if (index.row() < 0 || index.row() >= mContactList.count() ||
-                index.column() < 0 || index.column() > 17) {
+        if (index.row() < 0 || index.row() >= mContactList.count()
+            || index.column() < 0 || index.column() > 17) {
             return QVariant();
         }
 
@@ -468,20 +467,20 @@ class Q_DECL_HIDDEN LdapSearchDialog::Private
 {
 public:
     Private(LdapSearchDialog *qq)
-        : q(qq),
-          mNumHosts(0),
-          mIsConfigured(false),
-          mFilterCombo(nullptr),
-          mSearchType(nullptr),
-          mSearchEdit(nullptr),
-          mRecursiveCheckbox(nullptr),
-          mResultView(nullptr),
-          mSearchButton(nullptr),
-          mModel(nullptr),
-          progressIndication(nullptr),
-          sortproxy(nullptr),
-          searchLine(nullptr),
-          user1Button(nullptr)
+        : q(qq)
+        , mNumHosts(0)
+        , mIsConfigured(false)
+        , mFilterCombo(nullptr)
+        , mSearchType(nullptr)
+        , mSearchEdit(nullptr)
+        , mRecursiveCheckbox(nullptr)
+        , mResultView(nullptr)
+        , mSearchButton(nullptr)
+        , mModel(nullptr)
+        , progressIndication(nullptr)
+        , sortproxy(nullptr)
+        , searchLine(nullptr)
+        , user1Button(nullptr)
     {
     }
 
@@ -536,7 +535,8 @@ public:
 };
 
 LdapSearchDialog::LdapSearchDialog(QWidget *parent)
-    : QDialog(parent), d(new Private(this))
+    : QDialog(parent)
+    , d(new Private(this))
 {
     setWindowTitle(i18n("Import Contacts from LDAP"));
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel);
@@ -650,7 +650,7 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
 
     QDialogButtonBox *buttons = new QDialogButtonBox(page);
     QPushButton *button = buttons->addButton(i18n("Select All"),
-                          QDialogButtonBox::ActionRole);
+                                             QDialogButtonBox::ActionRole);
     connect(button, SIGNAL(clicked()), this, SLOT(slotSelectAll()));
     button = buttons->addButton(i18n("Unselect All"),
                                 QDialogButtonBox::ActionRole);
@@ -740,7 +740,7 @@ void LdapSearchDialog::Private::restoreSettings()
 
             QMap<QString, QString>::ConstIterator end(adrbookattr2ldap().constEnd());
             for (QMap<QString, QString>::ConstIterator it = adrbookattr2ldap().constBegin();
-                    it != end; ++it) {
+                 it != end; ++it) {
                 attrs << *it;
             }
 
@@ -792,8 +792,7 @@ void LdapSearchDialog::Private::cancelQuery()
     }
 }
 
-void LdapSearchDialog::Private::slotAddResult(const KLDAP::LdapClient &client,
-        const KLDAP::LdapObject &obj)
+void LdapSearchDialog::Private::slotAddResult(const KLDAP::LdapClient &client, const KLDAP::LdapObject &obj)
 {
     mModel->addContact(obj.attributes(), client.server().host());
 }

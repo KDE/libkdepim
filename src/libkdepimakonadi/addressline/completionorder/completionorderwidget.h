@@ -31,14 +31,11 @@ class QAbstractItemModel;
 class QModelIndex;
 class QTreeWidget;
 
-namespace KLDAP
-{
+namespace KLDAP {
 class LdapClientSearch;
 }
 
-namespace KPIM
-{
-
+namespace KPIM {
 class CompletionOrderEditorAdaptor : public QDBusAbstractAdaptor
 {
     Q_OBJECT
@@ -55,7 +52,10 @@ class CompletionOrderWidget;
 class CompletionItem
 {
 public:
-    virtual ~CompletionItem() {}
+    virtual ~CompletionItem()
+    {
+    }
+
     virtual QString label() const = 0;
     virtual QIcon icon() const = 0;
     virtual int completionWeight() const = 0;
@@ -99,7 +99,6 @@ private:
     KLDAP::LdapClientSearch *mLdapSearch;
 
     bool mDirty;
-
 };
 }
 

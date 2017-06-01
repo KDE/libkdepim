@@ -23,8 +23,7 @@
 
 #include "../src/libkdepim/ldap/ldapclient.h"
 
-namespace KLDAP
-{
+namespace KLDAP {
 class LdapClient;
 class LdapObject;
 }

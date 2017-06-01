@@ -24,12 +24,10 @@
 BlackListBalooEmailUtilTest::BlackListBalooEmailUtilTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 BlackListBalooEmailUtilTest::~BlackListBalooEmailUtilTest()
 {
-
 }
 
 void BlackListBalooEmailUtilTest::shouldReturnEmptyResult()
@@ -76,4 +74,3 @@ void BlackListBalooEmailUtilTest::shouldAddNewElements()
 }
 
 QTEST_MAIN(BlackListBalooEmailUtilTest)
-

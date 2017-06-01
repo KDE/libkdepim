@@ -28,8 +28,8 @@
 using namespace KPIM;
 
 BlackListBalooEmailList::BlackListBalooEmailList(QWidget *parent)
-    : QListWidget(parent),
-      mFirstResult(false)
+    : QListWidget(parent)
+    , mFirstResult(false)
 {
     setSelectionMode(QAbstractItemView::ExtendedSelection);
     setSortingEnabled(true);
@@ -37,7 +37,6 @@ BlackListBalooEmailList::BlackListBalooEmailList(QWidget *parent)
 
 BlackListBalooEmailList::~BlackListBalooEmailList()
 {
-
 }
 
 void BlackListBalooEmailList::changeEvent(QEvent *event)
@@ -141,15 +140,14 @@ void BlackListBalooEmailList::paintEvent(QPaintEvent *event)
 }
 
 BlackListBalooEmailListItem::BlackListBalooEmailListItem(QListWidget *parent)
-    : QListWidgetItem(parent),
-      mInitializeStatus(false)
+    : QListWidgetItem(parent)
+    , mInitializeStatus(false)
 {
     setFlags(Qt::ItemIsEnabled | Qt::ItemIsUserCheckable | Qt::ItemIsSelectable);
 }
 
 BlackListBalooEmailListItem::~BlackListBalooEmailListItem()
 {
-
 }
 
 bool BlackListBalooEmailListItem::initializeStatus() const
@@ -161,4 +159,3 @@ void BlackListBalooEmailListItem::setInitializeStatus(bool initializeStatus)
 {
     mInitializeStatus = initializeStatus;
 }
-

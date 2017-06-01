@@ -28,13 +28,10 @@
 
 #include <AkonadiCore/AgentInstance>
 
-namespace KPIM
-{
-namespace ProgressManagerAkonadi
-{
-KDEPIMAKONADI_EXPORT ProgressItem *createProgressItem(ProgressItem *parent, const Akonadi::AgentInstance &agent, const QString &id,
-        const QString &label, const QString &status, bool canBeCanceled,
-        ProgressItem::CryptoStatus cryptoStatus);
+namespace KPIM {
+namespace ProgressManagerAkonadi {
+KDEPIMAKONADI_EXPORT ProgressItem *createProgressItem(ProgressItem *parent, const Akonadi::AgentInstance &agent, const QString &id, const QString &label, const QString &status, bool canBeCanceled,
+                                                      ProgressItem::CryptoStatus cryptoStatus);
 }
 }
 #endif // PROGRESSMANAGERAKONADI_H

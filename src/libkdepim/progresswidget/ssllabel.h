@@ -34,9 +34,7 @@
 
 #include <QLabel>
 
-namespace KPIM
-{
-
+namespace KPIM {
 class SSLLabel : public QLabel
 {
 public:
@@ -56,7 +54,6 @@ public:
 private:
     State m_lastEncryptionState;
 };
-
 }
 
 #endif

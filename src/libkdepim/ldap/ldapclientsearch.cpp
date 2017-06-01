@@ -51,9 +51,9 @@ class Q_DECL_HIDDEN LdapClientSearch::Private
 {
 public:
     Private(LdapClientSearch *qq)
-        : q(qq),
-          mActiveClients(0),
-          mNoLDAPLookup(false)
+        : q(qq)
+        , mActiveClients(0)
+        , mNoLDAPLookup(false)
     {
         mClientSearchConfig = new LdapClientSearchConfig;
     }
@@ -88,7 +88,8 @@ public:
 };
 
 LdapClientSearch::LdapClientSearch(QObject *parent)
-    : QObject(parent), d(new Private(this))
+    : QObject(parent)
+    , d(new Private(this))
 {
     Kdelibs4ConfigMigrator migrate(QStringLiteral("ldapsettings"));
     migrate.setConfigFiles(QStringList() << QStringLiteral("kabldaprc"));
@@ -111,7 +112,6 @@ LdapClientSearch::LdapClientSearch(QObject *parent)
     d->readConfig();
     connect(KDirWatch::self(), SIGNAL(dirty(QString)), this,
             SLOT(slotFileChanged(QString)));
-
 }
 
 LdapClientSearch::~LdapClientSearch()
@@ -119,8 +119,7 @@ LdapClientSearch::~LdapClientSearch()
     delete d;
 }
 
-void LdapClientSearch::Private::readWeighForClient(LdapClient *client, const KConfigGroup &config,
-        int clientNumber)
+void LdapClientSearch::Private::readWeighForClient(LdapClient *client, const KConfigGroup &config, int clientNumber)
 {
     const int completionWeight = config.readEntry(QStringLiteral("SelectedCompletionWeight%1").arg(clientNumber), -1);
     if (completionWeight != -1) {
@@ -158,7 +157,6 @@ QStringList LdapClientSearch::attributes() const
 
 void LdapClientSearch::setAttributes(const QStringList &attrs)
 {
-
     if (attrs != d->mAttributes) {
         d->mAttributes = attrs;
         d->readConfig();
@@ -258,8 +256,7 @@ void LdapClientSearch::cancelSearch()
     d->mResults.clear();
 }
 
-void LdapClientSearch::Private::slotLDAPResult(const LdapClient &client,
-        const KLDAP::LdapObject &obj)
+void LdapClientSearch::Private::slotLDAPResult(const LdapClient &client, const KLDAP::LdapObject &obj)
 {
     LdapResultObject result;
     result.client = &client;
@@ -312,7 +309,6 @@ void LdapClientSearch::Private::finish()
 
 void LdapClientSearch::Private::makeSearchData(QStringList &ret, LdapResult::List &resList)
 {
-
     LdapResultObject::List::ConstIterator it1(mResults.constBegin());
     const LdapResultObject::List::ConstIterator end1(mResults.constEnd());
     for (; it1 != end1; ++it1) {
@@ -326,7 +322,7 @@ void LdapClientSearch::Private::makeSearchData(QStringList &ret, LdapResult::Lis
 
         KLDAP::LdapAttrMap::ConstIterator it2;
         for (it2 = (*it1).object.attributes().constBegin();
-                it2 != (*it1).object.attributes().constEnd(); ++it2) {
+             it2 != (*it1).object.attributes().constEnd(); ++it2) {
             QByteArray val = (*it2).first();
             int len = val.size();
             if (len > 0 && '\0' == val[len - 1]) {
@@ -369,8 +365,8 @@ void LdapClientSearch::Private::makeSearchData(QStringList &ret, LdapResult::Lis
                 givenname = tmp;
             } else if (it2.key() == QLatin1String("sn")) {
                 sn = tmp;
-            } else if (it2.key() == QLatin1String("objectClass") &&
-                       (tmp == QLatin1String("groupOfNames") || tmp == QLatin1String("kolabGroupOfNames"))) {
+            } else if (it2.key() == QLatin1String("objectClass")
+                       && (tmp == QLatin1String("groupOfNames") || tmp == QLatin1String("kolabGroupOfNames"))) {
                 isDistributionList = true;
             }
         }

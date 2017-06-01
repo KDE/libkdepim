@@ -24,14 +24,11 @@
 
 #include <kjob.h>
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Item;
 }
 
-namespace KPIM
-{
-
+namespace KPIM {
 class KDEPIMAKONADI_EXPORT AddEmailDiplayJob : public KJob
 {
     Q_OBJECT
@@ -57,7 +54,6 @@ private:
     Q_PRIVATE_SLOT(d, void slotResourceCreationDone(KJob *))
     //@endcond
 };
-
 }
 
 #endif

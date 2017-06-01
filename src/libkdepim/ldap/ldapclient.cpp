@@ -39,10 +39,10 @@ class Q_DECL_HIDDEN LdapClient::Private
 {
 public:
     Private(LdapClient *qq)
-        : q(qq),
-          mJob(nullptr),
-          mActive(false),
-          mClientNumber(0)
+        : q(qq)
+        , mJob(nullptr)
+        , mActive(false)
+        , mClientNumber(0)
     {
     }
 
@@ -74,11 +74,11 @@ public:
     KLDAP::Ldif mLdif;
     int mClientNumber;
     int mCompletionWeight;
-
 };
 
 LdapClient::LdapClient(int clientNumber, QObject *parent)
-    : QObject(parent), d(new Private(this))
+    : QObject(parent)
+    , d(new Private(this))
 {
     d->mClientNumber = clientNumber;
     d->mCompletionWeight = 50 - d->mClientNumber;
@@ -142,11 +142,11 @@ void LdapClient::startQuery(const QString &filter)
     d->startParseLDIF();
     d->mActive = true;
     d->mJob = KIO::get(url, KIO::NoReload, KIO::HideProgressInfo);
-    connect(d->mJob, SIGNAL(data(KIO::Job*,QByteArray)),
-            this, SLOT(slotData(KIO::Job*,QByteArray)));
-    connect(d->mJob, SIGNAL(infoMessage(KJob*,QString,QString)),
-            this, SLOT(slotInfoMessage(KJob*,QString,QString)));
-    connect(d->mJob, SIGNAL(result(KJob*)),
+    connect(d->mJob, SIGNAL(data(KIO::Job *,QByteArray)),
+            this, SLOT(slotData(KIO::Job *,QByteArray)));
+    connect(d->mJob, SIGNAL(infoMessage(KJob *,QString,QString)),
+            this, SLOT(slotInfoMessage(KJob *,QString,QString)));
+    connect(d->mJob, SIGNAL(result(KJob *)),
             this, SLOT(slotDone()));
 }
 
@@ -205,8 +205,7 @@ void LdapClient::Private::finishCurrentObject()
     KLDAP::LdapAttrValue objectclasses;
     const KLDAP::LdapAttrMap::ConstIterator end = mCurrentObject.attributes().constEnd();
     for (KLDAP::LdapAttrMap::ConstIterator it = mCurrentObject.attributes().constBegin();
-            it != end; ++it) {
-
+         it != end; ++it) {
         if (it.key().toLower() == QLatin1String("objectclass")) {
             objectclasses = it.value();
             break;
@@ -216,8 +215,7 @@ void LdapClient::Private::finishCurrentObject()
     bool groupofnames = false;
     const KLDAP::LdapAttrValue::ConstIterator endValue(objectclasses.constEnd());
     for (KLDAP::LdapAttrValue::ConstIterator it = objectclasses.constBegin();
-            it != endValue; ++it) {
-
+         it != endValue; ++it) {
         const QByteArray sClass = (*it).toLower();
         if (sClass == "groupofnames" || sClass == "kolabgroupofnames") {
             groupofnames = true;
@@ -266,12 +264,13 @@ void LdapClient::Private::parseLDIF(const QByteArray &data)
     do {
         ret = mLdif.nextItem();
         switch (ret) {
-        case KLDAP::Ldif::Item: {
+        case KLDAP::Ldif::Item:
+        {
             name = mLdif.attr();
             const QByteArray value = mLdif.value();
             mCurrentObject.addValue(name, value);
+            break;
         }
-        break;
         case KLDAP::Ldif::EndEntry:
             finishCurrentObject();
             break;

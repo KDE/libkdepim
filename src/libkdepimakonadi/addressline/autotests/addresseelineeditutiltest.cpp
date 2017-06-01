@@ -24,12 +24,10 @@
 AddresseeLineEditUtilTest::AddresseeLineEditUtilTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 AddresseeLineEditUtilTest::~AddresseeLineEditUtilTest()
 {
-
 }
 
 void AddresseeLineEditUtilTest::shouldAdaptPasteMails_data()

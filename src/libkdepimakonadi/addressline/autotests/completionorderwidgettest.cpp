@@ -27,12 +27,10 @@
 CompletionOrderWidgetTest::CompletionOrderWidgetTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 CompletionOrderWidgetTest::~CompletionOrderWidgetTest()
 {
-
 }
 
 void CompletionOrderWidgetTest::shouldHaveDefaultValue()

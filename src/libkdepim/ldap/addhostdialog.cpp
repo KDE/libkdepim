@@ -37,12 +37,13 @@ class KLDAP::AddHostDialogPrivate
 {
 public:
     AddHostDialogPrivate(AddHostDialog *qq)
-        : mCfg(nullptr),
-          mServer(nullptr),
-          mOkButton(nullptr),
-          q(qq)
+        : mCfg(nullptr)
+        , mServer(nullptr)
+        , mOkButton(nullptr)
+        , q(qq)
     {
     }
+
     ~AddHostDialogPrivate()
     {
         writeConfig();
@@ -73,8 +74,8 @@ void AddHostDialogPrivate::writeConfig()
 }
 
 AddHostDialog::AddHostDialog(KLDAP::LdapServer *server, QWidget *parent)
-    : QDialog(parent),
-      d(new KLDAP::AddHostDialogPrivate(this))
+    : QDialog(parent)
+    , d(new KLDAP::AddHostDialogPrivate(this))
 {
     setWindowTitle(i18n("Add Host"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -95,20 +96,20 @@ AddHostDialog::AddHostDialog(KLDAP::LdapServer *server, QWidget *parent)
     layout->setMargin(0);
 
     d->mCfg = new KLDAP::LdapConfigWidget(
-        KLDAP::LdapConfigWidget::W_USER |
-        KLDAP::LdapConfigWidget::W_PASS |
-        KLDAP::LdapConfigWidget::W_BINDDN |
-        KLDAP::LdapConfigWidget::W_REALM |
-        KLDAP::LdapConfigWidget::W_HOST |
-        KLDAP::LdapConfigWidget::W_PORT |
-        KLDAP::LdapConfigWidget::W_VER |
-        KLDAP::LdapConfigWidget::W_TIMELIMIT |
-        KLDAP::LdapConfigWidget::W_SIZELIMIT |
-        KLDAP::LdapConfigWidget::W_PAGESIZE |
-        KLDAP::LdapConfigWidget::W_DN |
-        KLDAP::LdapConfigWidget::W_FILTER |
-        KLDAP::LdapConfigWidget::W_SECBOX |
-        KLDAP::LdapConfigWidget::W_AUTHBOX,
+        KLDAP::LdapConfigWidget::W_USER
+        |KLDAP::LdapConfigWidget::W_PASS
+        |KLDAP::LdapConfigWidget::W_BINDDN
+        |KLDAP::LdapConfigWidget::W_REALM
+        |KLDAP::LdapConfigWidget::W_HOST
+        |KLDAP::LdapConfigWidget::W_PORT
+        |KLDAP::LdapConfigWidget::W_VER
+        |KLDAP::LdapConfigWidget::W_TIMELIMIT
+        |KLDAP::LdapConfigWidget::W_SIZELIMIT
+        |KLDAP::LdapConfigWidget::W_PAGESIZE
+        |KLDAP::LdapConfigWidget::W_DN
+        |KLDAP::LdapConfigWidget::W_FILTER
+        |KLDAP::LdapConfigWidget::W_SECBOX
+        |KLDAP::LdapConfigWidget::W_AUTHBOX,
         page);
 
     layout->addWidget(d->mCfg);

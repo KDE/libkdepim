@@ -43,6 +43,4 @@ int main(int argc, char *argv[])
     dlg.show();
 
     return app.exec();
-
 }
-

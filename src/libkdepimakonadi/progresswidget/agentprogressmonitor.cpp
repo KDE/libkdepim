@@ -120,8 +120,7 @@ void AgentProgressMonitor::Private::instanceNameChanged(const Akonadi::AgentInst
     item.data()->setLabel(instance.name());
 }
 
-AgentProgressMonitor::AgentProgressMonitor(const AgentInstance &agent,
-        ProgressItem *item)
+AgentProgressMonitor::AgentProgressMonitor(const AgentInstance &agent, ProgressItem *item)
     : QObject(item)
     , d(new Private(this, agent, item))
 {
@@ -136,7 +135,7 @@ AgentProgressMonitor::AgentProgressMonitor(const AgentInstance &agent,
     // TODO connect to instanceError, instanceWarning, instanceOnline ?
     // and do what?
 
-    connect(item, SIGNAL(progressItemCanceled(KPIM::ProgressItem*)),
+    connect(item, SIGNAL(progressItemCanceled(KPIM::ProgressItem *)),
             this, SLOT(abort()));
 
     // TODO handle offline case

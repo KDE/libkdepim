@@ -23,8 +23,7 @@
 
 #include <QDialog>
 #include "kdepimakonadi_export.h"
-namespace KPIM
-{
+namespace KPIM {
 class BlackListBalooEmailCompletionDialogPrivate;
 class KDEPIMAKONADI_EXPORT BlackListBalooEmailCompletionDialog : public QDialog
 {

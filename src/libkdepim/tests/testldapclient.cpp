@@ -193,4 +193,3 @@ void TestLDAPClient::slotLDAPDone()
     qDebug();
     Q_EMIT leaveModality();
 }
-

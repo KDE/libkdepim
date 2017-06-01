@@ -31,12 +31,10 @@
 BlackListBalooEmailCompletionWidgetTest::BlackListBalooEmailCompletionWidgetTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 BlackListBalooEmailCompletionWidgetTest::~BlackListBalooEmailCompletionWidgetTest()
 {
-
 }
 
 void BlackListBalooEmailCompletionWidgetTest::shouldHaveDefaultValue()
@@ -135,7 +133,6 @@ void BlackListBalooEmailCompletionWidgetTest::shouldChangeEnableSelectUnSelectBu
     emailList->clearSelection();
     QVERIFY(!unselectButton->isEnabled());
     QVERIFY(!selectButton->isEnabled());
-
 }
 
 QTEST_MAIN(BlackListBalooEmailCompletionWidgetTest)

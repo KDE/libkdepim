@@ -51,6 +51,4 @@ int main(int argc, char *argv[])
     combo->show();
 
     return app.exec();
-
 }
-

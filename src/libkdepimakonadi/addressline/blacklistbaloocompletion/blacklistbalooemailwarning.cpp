@@ -46,7 +46,6 @@ BlackListBalooEmailWarning::BlackListBalooEmailWarning(QWidget *parent)
 
 BlackListBalooEmailWarning::~BlackListBalooEmailWarning()
 {
-
 }
 
 void BlackListBalooEmailWarning::slotSaveBlackList()

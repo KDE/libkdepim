@@ -24,8 +24,7 @@
 #include <KMessageWidget>
 #include "libkdepimakonadi_private_export.h"
 
-namespace KPIM
-{
+namespace KPIM {
 class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailWarning : public KMessageWidget
 {
     Q_OBJECT

@@ -34,13 +34,11 @@
 #include "kdepimakonadi_export.h"
 #include <QDialog>
 
-namespace KLDAP
-{
+namespace KLDAP {
 class LdapClientSearch;
 }
 
-namespace KPIM
-{
+namespace KPIM {
 class CompletionOrderEditorPrivate;
 class KDEPIMAKONADI_EXPORT CompletionOrderEditor : public QDialog
 {
@@ -58,8 +56,6 @@ private:
     void writeConfig();
     CompletionOrderEditorPrivate *const d;
 };
-
 } // namespace
 
 #endif /* COMPLETIONORDEREDITOR_H */
-

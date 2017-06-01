@@ -29,12 +29,10 @@
 RecentAddressWidgetTest::RecentAddressWidgetTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 RecentAddressWidgetTest::~RecentAddressWidgetTest()
 {
-
 }
 
 void RecentAddressWidgetTest::shouldHaveDefaultValue()

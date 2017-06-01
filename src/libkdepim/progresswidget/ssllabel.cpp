@@ -83,4 +83,3 @@ void SSLLabel::setState(State state)
     }
     m_lastEncryptionState = state;
 }
-

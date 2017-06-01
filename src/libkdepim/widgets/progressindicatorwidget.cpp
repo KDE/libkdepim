@@ -22,16 +22,14 @@
 #include <QTimer>
 #include <KIconLoader>
 
-namespace KPIM
-{
-
+namespace KPIM {
 IndicatorProgress::IndicatorProgress(ProgressIndicatorWidget *widget, QObject *parent)
-    : QObject(parent),
-      mProgressCount(0),
-      mIndicator(widget),
-      mIsActive(false)
+    : QObject(parent)
+    , mProgressCount(0)
+    , mIndicator(widget)
+    , mIsActive(false)
 {
-    mProgressPix =  KIconLoader::global()->loadPixmapSequence(QStringLiteral("process-working"), KIconLoader::SizeSmallMedium);
+    mProgressPix = KIconLoader::global()->loadPixmapSequence(QStringLiteral("process-working"), KIconLoader::SizeSmallMedium);
     mProgressTimer = new QTimer(this);
     connect(mProgressTimer, &QTimer::timeout, this, &IndicatorProgress::slotTimerDone);
 }
@@ -91,8 +89,8 @@ public:
 };
 
 ProgressIndicatorWidget::ProgressIndicatorWidget(QWidget *parent)
-    : QLabel(parent),
-      d(new ProgressIndicatorWidgetPrivate(this))
+    : QLabel(parent)
+    , d(new ProgressIndicatorWidgetPrivate(this))
 {
     setSizePolicy(QSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed));
 }
@@ -116,6 +114,4 @@ bool ProgressIndicatorWidget::isActive() const
 {
     return d->indicator->isActive();
 }
-
 }
-

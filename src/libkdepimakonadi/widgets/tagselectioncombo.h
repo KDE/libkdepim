@@ -22,9 +22,7 @@
 #include <KComboBox>
 #include <libkdepim/kcheckcombobox.h>
 
-namespace KPIM
-{
-
+namespace KPIM {
 class KDEPIMAKONADI_EXPORT TagSelectionCombo : public KPIM::KCheckComboBox
 {
     Q_OBJECT
@@ -38,7 +36,6 @@ class KDEPIMAKONADI_EXPORT TagCombo : public KComboBox
 public:
     explicit TagCombo(QWidget *parent = nullptr);
 };
-
 }
 
 #endif // TAGSELECTIONCOMBO_H

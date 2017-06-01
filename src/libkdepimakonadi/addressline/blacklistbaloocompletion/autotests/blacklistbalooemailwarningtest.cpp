@@ -27,12 +27,10 @@
 BlackListBalooEmailWarningTest::BlackListBalooEmailWarningTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 BlackListBalooEmailWarningTest::~BlackListBalooEmailWarningTest()
 {
-
 }
 
 void BlackListBalooEmailWarningTest::shouldHaveDefaultValue()
@@ -68,4 +66,5 @@ void BlackListBalooEmailWarningTest::shouldEmitNewSearch()
     search->trigger();
     QCOMPARE(spy1.count(), 1);
 }
+
 QTEST_MAIN(BlackListBalooEmailWarningTest)

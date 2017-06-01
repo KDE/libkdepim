@@ -32,7 +32,7 @@
 using namespace KPIM;
 
 // Have to define before use
-QDataStream &operator<< (QDataStream &s, const MailSummary &d)
+QDataStream &operator<<(QDataStream &s, const MailSummary &d)
 {
     s << d.serialNumber();
     s << d.messageId();
@@ -45,7 +45,7 @@ QDataStream &operator<< (QDataStream &s, const MailSummary &d)
     return s;
 }
 
-QDataStream &operator>> (QDataStream &s, MailSummary &d)
+QDataStream &operator>>(QDataStream &s, MailSummary &d)
 {
     quint32 serialNumber;
     QString messageId, subject, from, to;
@@ -62,7 +62,7 @@ QDataStream &operator>> (QDataStream &s, MailSummary &d)
     return s;
 }
 
-QDataStream &operator<< (QDataStream &s, const MailList &mailList)
+QDataStream &operator<<(QDataStream &s, const MailList &mailList)
 {
     MailList::const_iterator it;
     MailList::const_iterator end(mailList.constEnd());
@@ -73,7 +73,7 @@ QDataStream &operator<< (QDataStream &s, const MailList &mailList)
     return s;
 }
 
-QDataStream &operator>> (QDataStream &s, MailList &mailList)
+QDataStream &operator>>(QDataStream &s, MailList &mailList)
 {
     mailList.clear();
     MailSummary mailDrag;
@@ -84,12 +84,15 @@ QDataStream &operator>> (QDataStream &s, MailList &mailList)
     return s;
 }
 
-MailSummary::MailSummary(quint32 serialNumber, const QString &messageId,
-                         const QString &subject, const QString &from, const QString &to,
-                         time_t date)
-    : mSerialNumber(serialNumber), mMessageId(messageId),
-      mSubject(subject), mFrom(from), mTo(to), mDate(date)
-{}
+MailSummary::MailSummary(quint32 serialNumber, const QString &messageId, const QString &subject, const QString &from, const QString &to, time_t date)
+    : mSerialNumber(serialNumber)
+    , mMessageId(messageId)
+    , mSubject(subject)
+    , mFrom(from)
+    , mTo(to)
+    , mDate(date)
+{
+}
 
 quint32 MailSummary::serialNumber() const
 {
@@ -121,8 +124,7 @@ time_t MailSummary::date() const
     return mDate;
 }
 
-void MailSummary::set(quint32 serialNumber, const QString &messageId,
-                      const QString &subject, const QString &from, const QString &to, time_t date)
+void MailSummary::set(quint32 serialNumber, const QString &messageId, const QString &subject, const QString &from, const QString &to, time_t date)
 {
     mSerialNumber = serialNumber;
     mMessageId = messageId;

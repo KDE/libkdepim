@@ -22,8 +22,7 @@
 #define BALOOCOMPLETIONEMAIL_H
 #include <QStringList>
 #include "libkdepimakonadi_private_export.h"
-namespace KPIM
-{
+namespace KPIM {
 class LIBKDEPIMAKONADI_TESTS_EXPORT BalooCompletionEmail
 {
 public:

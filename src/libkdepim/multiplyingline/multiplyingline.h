@@ -31,9 +31,7 @@
 #include <QWidget>
 #include <QSharedPointer>
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
   @short ABC representing line data
   @author Casey Link
@@ -42,7 +40,9 @@ class KDEPIM_EXPORT MultiplyingLineData
 {
 public:
     typedef QSharedPointer<MultiplyingLineData> Ptr;
-    virtual ~MultiplyingLineData() {}
+    virtual ~MultiplyingLineData()
+    {
+    }
 
     /**
       Clear data, reset to defaults
@@ -63,11 +63,12 @@ public:
 */
 class KDEPIM_EXPORT MultiplyingLine : public QWidget
 {
-
     Q_OBJECT
 public:
     explicit MultiplyingLine(QWidget *parent);
-    virtual ~MultiplyingLine() {}
+    virtual ~MultiplyingLine()
+    {
+    }
 
     /**
       This line is being activated. Focus should be set
@@ -205,7 +206,6 @@ protected:
     */
     void keyPressEvent(QKeyEvent *) Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif // MULTIPLYINGLINE_H

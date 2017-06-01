@@ -24,8 +24,7 @@
 #include <QObject>
 
 #include "libkdepimakonadi_private_export.h"
-namespace KPIM
-{
+namespace KPIM {
 class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailSearchJob : public QObject
 {
     Q_OBJECT

@@ -32,9 +32,7 @@
 
 #include <time.h>
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
  * @defgroup maildnd Mail drag and drop
  *
@@ -58,10 +56,14 @@ namespace KPIM
 class KDEPIM_EXPORT MailSummary
 {
 public:
-    MailSummary(quint32 serialNumber, const QString &messageId, const QString &subject,
-                const QString &from, const QString &to, time_t date);
-    MailSummary() {}
-    ~MailSummary() {}
+    MailSummary(quint32 serialNumber, const QString &messageId, const QString &subject, const QString &from, const QString &to, time_t date);
+    MailSummary()
+    {
+    }
+
+    ~MailSummary()
+    {
+    }
 
     /** Set fields for this mail summary  */
     void set(quint32, const QString &, const QString &, const QString &, const QString &, time_t);
@@ -103,7 +105,6 @@ public:
     static MailList decode(const QByteArray &payload);
     void populateMimeData(QMimeData *md);
 };
-
 } // namespace KPIM
 
 #endif /*maillistdrag_h*/

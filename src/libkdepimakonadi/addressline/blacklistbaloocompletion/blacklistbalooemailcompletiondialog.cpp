@@ -34,14 +34,14 @@ public:
     BlackListBalooEmailCompletionDialogPrivate()
         : mBlackListWidget(nullptr)
     {
-
     }
+
     BlackListBalooEmailCompletionWidget *mBlackListWidget;
 };
 
 BlackListBalooEmailCompletionDialog::BlackListBalooEmailCompletionDialog(QWidget *parent)
-    : QDialog(parent),
-      d(new KPIM::BlackListBalooEmailCompletionDialogPrivate)
+    : QDialog(parent)
+    , d(new KPIM::BlackListBalooEmailCompletionDialogPrivate)
 {
     setWindowTitle(i18n("Blacklist Email Completion"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -94,4 +94,3 @@ void BlackListBalooEmailCompletionDialog::slotSave()
     d->mBlackListWidget->save();
     accept();
 }
-

@@ -23,10 +23,8 @@
 #include <QString>
 #include "libkdepimakonadi_private_export.h"
 
-namespace KPIM
-{
-namespace AddresseeLineEditUtil
-{
+namespace KPIM {
+namespace AddresseeLineEditUtil {
 LIBKDEPIMAKONADI_TESTS_EXPORT QString adaptPasteMails(QString str);
 }
 }

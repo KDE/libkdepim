@@ -27,8 +27,7 @@
 #include <QLabel>
 
 class QTimer;
-namespace KPIM
-{
+namespace KPIM {
 class ProgressIndicatorWidgetPrivate;
 class ProgressIndicatorWidget;
 class IndicatorProgress : public QObject
@@ -73,7 +72,6 @@ private:
     friend class ProgressIndicatorWidgetPrivate;
     ProgressIndicatorWidgetPrivate *const d;
 };
-
 }
 
 #endif // PROGRESSINDICATORWIDGET_H

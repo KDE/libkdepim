@@ -4,9 +4,7 @@
 #include <QCursor>
 #include <QApplication>
 
-namespace KPIM
-{
-
+namespace KPIM {
 /**
  * @short sets a cursor and makes sure it's restored on destruction
  * Create a KCursorSaver object when you want to set the cursor.
@@ -58,18 +56,17 @@ private:
 /**
  * convenience functions
  */
-namespace KBusyPtr
-{
+namespace KBusyPtr {
 inline KCursorSaver idle()
 {
     return KCursorSaver(Qt::ArrowCursor);
 }
+
 inline KCursorSaver busy()
 {
     return KCursorSaver(Qt::WaitCursor);
 }
 }
-
 }
 
 #endif /*kbusyptr_h_*/

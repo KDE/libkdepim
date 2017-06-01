@@ -27,7 +27,6 @@ using namespace KPIM;
 
 BalooCompletionEmail::BalooCompletionEmail()
 {
-
 }
 
 void BalooCompletionEmail::setEmailList(const QStringList &lst)
@@ -90,9 +89,9 @@ QString BalooCompletionEmail::stripEmail(const QString &email, QString &address)
     QString displayName, addrSpec, comment;
     if (KEmailAddress::AddressOk == KEmailAddress::splitAddress(email, displayName, addrSpec, comment)) {
         address = addrSpec;
-        while ((displayName.startsWith(QLatin1Char('\'')) && displayName.endsWith(QLatin1Char('\''))) ||
-                (displayName.startsWith(QLatin1Char('"')) && displayName.endsWith(QLatin1Char('"'))) ||
-                (displayName.startsWith(QStringLiteral("\\\"")) && displayName.endsWith(QStringLiteral("\\\"")))) {
+        while ((displayName.startsWith(QLatin1Char('\'')) && displayName.endsWith(QLatin1Char('\'')))
+               || (displayName.startsWith(QLatin1Char('"')) && displayName.endsWith(QLatin1Char('"')))
+               || (displayName.startsWith(QStringLiteral("\\\"")) && displayName.endsWith(QStringLiteral("\\\"")))) {
             if (displayName.startsWith(QStringLiteral("\\\""))) {
                 displayName = displayName.mid(2, displayName.length() - 4).trimmed();
             } else {
@@ -104,4 +103,3 @@ QString BalooCompletionEmail::stripEmail(const QString &email, QString &address)
         return email;
     }
 }
-
