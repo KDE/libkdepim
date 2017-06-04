@@ -73,7 +73,7 @@ public:
     /**
      * Starts the job.
      */
-    void start() Q_DECL_OVERRIDE;
+    void start() override;
 
     void showMessageBox(bool b);
 

@@ -60,22 +60,22 @@ public:
         mWeight = mLdapClient->completionWeight();
     }
 
-    QString label() const Q_DECL_OVERRIDE
+    QString label() const override
     {
         return i18n("LDAP server %1", mLdapClient->server().host());
     }
 
-    QIcon icon() const Q_DECL_OVERRIDE
+    QIcon icon() const override
     {
         return QIcon::fromTheme(QStringLiteral("view-ldap-resource"));
     }
 
-    int completionWeight() const Q_DECL_OVERRIDE
+    int completionWeight() const override
     {
         return mWeight;
     }
 
-    void save(CompletionOrderWidget *) Q_DECL_OVERRIDE
+    void save(CompletionOrderWidget *) override
     {
         KConfig *config = KLDAP::LdapClientSearchConfig::config();
         KConfigGroup group(config, "LDAP");
@@ -84,23 +84,23 @@ public:
         group.sync();
     }
 
-    bool hasEnableSupport() const Q_DECL_OVERRIDE
+    bool hasEnableSupport() const override
     {
         return false;
     }
 
-    bool isEnabled() const Q_DECL_OVERRIDE
+    bool isEnabled() const override
     {
         return true;
     }
 
-    void setIsEnabled(bool b) Q_DECL_OVERRIDE
+    void setIsEnabled(bool b) override
     {
         Q_UNUSED(b);
     }
 
 protected:
-    void setCompletionWeight(int weight) Q_DECL_OVERRIDE
+    void setCompletionWeight(int weight) override
     {
         mWeight = weight;
     }
@@ -127,12 +127,12 @@ public:
         }
     }
 
-    bool isEnabled() const Q_DECL_OVERRIDE
+    bool isEnabled() const override
     {
         return mEnabled;
     }
 
-    bool hasEnableSupport() const Q_DECL_OVERRIDE
+    bool hasEnableSupport() const override
     {
         return mHasEnableSupport;
     }
@@ -142,27 +142,27 @@ public:
         mIcon = icon;
     }
 
-    QString label() const Q_DECL_OVERRIDE
+    QString label() const override
     {
         return mLabel;
     }
 
-    QIcon icon() const Q_DECL_OVERRIDE
+    QIcon icon() const override
     {
         return mIcon;
     }
 
-    int completionWeight() const Q_DECL_OVERRIDE
+    int completionWeight() const override
     {
         return mWeight;
     }
 
-    void setIsEnabled(bool b) Q_DECL_OVERRIDE
+    void setIsEnabled(bool b) override
     {
         mEnabled = b;
     }
 
-    void save(CompletionOrderWidget *editor) Q_DECL_OVERRIDE
+    void save(CompletionOrderWidget *editor) override
     {
         KConfigGroup group(editor->configFile(), "CompletionWeights");
         group.writeEntry(mIdentifier, mWeight);
@@ -173,7 +173,7 @@ public:
     }
 
 protected:
-    void setCompletionWeight(int weight) Q_DECL_OVERRIDE
+    void setCompletionWeight(int weight) override
     {
         mWeight = weight;
     }
@@ -216,7 +216,7 @@ public:
         return mItem;
     }
 
-    bool operator<(const QTreeWidgetItem &other) const Q_DECL_OVERRIDE
+    bool operator<(const QTreeWidgetItem &other) const override
     {
         const QTreeWidgetItem *otherItem = &other;
         const CompletionViewItem *completionItem = static_cast<const CompletionViewItem *>(otherItem);

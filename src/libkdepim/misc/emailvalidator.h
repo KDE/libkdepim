@@ -36,9 +36,9 @@ class KDEPIM_EXPORT EmailValidator : public QValidator //krazy:exclude=dpointer
 public:
     explicit EmailValidator(QObject *parent);
 
-    State validate(QString &str, int &pos) const Q_DECL_OVERRIDE;
+    State validate(QString &str, int &pos) const override;
 
-    void fixup(QString &str) const Q_DECL_OVERRIDE;
+    void fixup(QString &str) const override;
 };
 }
 

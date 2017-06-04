@@ -39,7 +39,7 @@ public:
     explicit PersonSearchJob(const QString &searchString, QObject *parent = nullptr);
     virtual ~PersonSearchJob();
 
-    void start() Q_DECL_OVERRIDE;
+    void start() override;
 
     QList<Person> matches() const;
 

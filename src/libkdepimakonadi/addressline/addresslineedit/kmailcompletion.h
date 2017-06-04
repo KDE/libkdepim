@@ -45,7 +45,7 @@ public:
     /**
      * clears internal keyword map and calls KCompletion::clear.
      */
-    void clear() Q_DECL_OVERRIDE;
+    void clear() override;
 
     /**
      * uses KCompletion::makeCompletion to find email addresses which starts
@@ -53,7 +53,7 @@ public:
      *
      * @returns email address
      */
-    QString makeCompletion(const QString &string) Q_DECL_OVERRIDE;
+    QString makeCompletion(const QString &string) override;
 
     /**
      * specify keywords for email.
@@ -70,10 +70,10 @@ public:
      * use internal map to replace all keywords in pMatches with corresponding
      * email addresses.
      */
-    void postProcessMatches(QStringList *pMatches) const Q_DECL_OVERRIDE;
+    void postProcessMatches(QStringList *pMatches) const override;
 
     // We are not using allWeightedMatches() anywhere, therefore we don't need
-    // to Q_DECL_OVERRIDE the other postProcessMatches() function
+    // to override the other postProcessMatches() function
     using KCompletion::postProcessMatches;
 
 private:

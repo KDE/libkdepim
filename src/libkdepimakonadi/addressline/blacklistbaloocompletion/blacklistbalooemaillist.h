@@ -54,9 +54,9 @@ public:
     void setExcludeDomain(const QStringList &domain);
     int setEmailFound(const QStringList &);
 protected:
-    void paintEvent(QPaintEvent *event) Q_DECL_OVERRIDE;
+    void paintEvent(QPaintEvent *event) override;
 
-    void changeEvent(QEvent *event) Q_DECL_OVERRIDE;
+    void changeEvent(QEvent *event) override;
 
 private:
     void generalPaletteChanged();

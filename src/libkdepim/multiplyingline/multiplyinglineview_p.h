@@ -41,8 +41,8 @@ public:
     {
     }
 
-    QSize minimumSizeHint() const Q_DECL_OVERRIDE;
-    QSize sizeHint() const Q_DECL_OVERRIDE;
+    QSize minimumSizeHint() const override;
+    QSize sizeHint() const override;
 
     MultiplyingLine *activeLine() const;
 
@@ -110,7 +110,7 @@ Q_SIGNALS:
     void lineAdded(KPIM::MultiplyingLine *);
 
 protected:
-    void resizeEvent(QResizeEvent *) Q_DECL_OVERRIDE;
+    void resizeEvent(QResizeEvent *) override;
     void resizeView();
 
 protected Q_SLOTS:

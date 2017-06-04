@@ -33,9 +33,9 @@ public:
     explicit LogItemDelegate(QObject *parent);
     ~LogItemDelegate();
 
-    QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const Q_DECL_OVERRIDE;
-    void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const Q_DECL_OVERRIDE;
-    QWidget *createEditor(QWidget *, const QStyleOptionViewItem &, const QModelIndex &) const Q_DECL_OVERRIDE;
+    QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override;
+    void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override;
+    QWidget *createEditor(QWidget *, const QStyleOptionViewItem &, const QModelIndex &) const override;
 
 private:
     QTextDocument *document(const QStyleOptionViewItem &option, const QModelIndex &index) const;

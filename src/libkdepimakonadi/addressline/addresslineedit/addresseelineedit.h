@@ -161,7 +161,7 @@ public Q_SLOTS:
      * Reimplemented for stripping whitespace after completion
      * Danger: This is _not_ virtual in the base class!
      */
-    void setText(const QString &text) Q_DECL_OVERRIDE;
+    void setText(const QString &text) override;
 
     void expandGroups();
     void slotEditingFinished();
@@ -186,19 +186,19 @@ protected:
     /**
      * Reimplemented for smart insertion with middle mouse button.
      */
-    void mouseReleaseEvent(QMouseEvent *) Q_DECL_OVERRIDE;
+    void mouseReleaseEvent(QMouseEvent *) override;
 
 #ifndef QT_NO_DRAGANDDROP
     /**
      * Reimplemented for smart insertion of dragged email addresses.
      */
-    void dropEvent(QDropEvent *) Q_DECL_OVERRIDE;
+    void dropEvent(QDropEvent *) override;
 #endif
 
     /**
      * Reimplemented for internal reasons.
      */
-    void keyPressEvent(QKeyEvent *) Q_DECL_OVERRIDE;
+    void keyPressEvent(QKeyEvent *) override;
 
 #ifndef QT_NO_CONTEXTMENU
     /**
@@ -211,7 +211,7 @@ protected:
      *
      * See QLineEdit::contextMenuEvent().
      */
-    void contextMenuEvent(QContextMenuEvent *) Q_DECL_OVERRIDE;
+    void contextMenuEvent(QContextMenuEvent *) override;
 #endif
 
     QStringList cleanupEmailList(const QStringList &inputList);
@@ -221,7 +221,7 @@ protected:
 private:
     void groupExpandResult(KJob *job);
     void slotToggleExpandGroups();
-    bool eventFilter(QObject *, QEvent *) Q_DECL_OVERRIDE;
+    bool eventFilter(QObject *, QEvent *) override;
 
     AddresseeLineEditPrivate *const d;
 };

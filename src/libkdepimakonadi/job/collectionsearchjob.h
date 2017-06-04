@@ -37,7 +37,7 @@ class KDEPIMAKONADI_EXPORT CollectionSearchJob : public KJob
 public:
     explicit CollectionSearchJob(const QString &searchString, const QStringList &mimetypeFilter, QObject *parent = nullptr);
     ~CollectionSearchJob();
-    void start() Q_DECL_OVERRIDE;
+    void start() override;
 
     Akonadi::Collection::List matchingCollections() const;
 

@@ -106,10 +106,10 @@ public:
     */
     QCheckBox *checkBox();
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
-    QList<QWidget *> widgets() const Q_DECL_OVERRIDE;
+    QList<QWidget *> widgets() const override;
 
 private:
     KConfigSkeleton::ItemBool *mItem;
@@ -147,10 +147,10 @@ public:
     */
     QSpinBox *spinBox();
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
-    QList<QWidget *> widgets() const Q_DECL_OVERRIDE;
+    QList<QWidget *> widgets() const override;
 
 private:
     KConfigSkeleton::ItemInt *mItem;
@@ -188,8 +188,8 @@ public:
     */
     KTimeComboBox *timeEdit();
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
 private:
     KConfigSkeleton::ItemDateTime *mItem;
@@ -228,8 +228,8 @@ public:
     */
     QTimeEdit *timeEdit();
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
 private:
     KConfigSkeleton::ItemDateTime *mItem;
@@ -267,8 +267,8 @@ public:
     */
     KDateComboBox *dateEdit();
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
 private:
     KConfigSkeleton::ItemDateTime *mItem;
@@ -311,8 +311,8 @@ public:
     */
     KColorButton *button();
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
 private:
     KConfigSkeleton::ItemColor *mItem;
@@ -360,8 +360,8 @@ public:
     */
     QPushButton *button();
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
 protected Q_SLOTS:
     void selectFont();
@@ -414,10 +414,10 @@ public:
     */
     QGroupBox *groupBox() const;
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
-    QList<QWidget *> widgets() const Q_DECL_OVERRIDE;
+    QList<QWidget *> widgets() const override;
 
 private:
     KConfigSkeleton::ItemEnum *mItem;
@@ -450,12 +450,12 @@ public:
     explicit KPrefsWidCombo(KConfigSkeleton::ItemEnum *item, QWidget *parent);
     virtual ~KPrefsWidCombo();
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
     KComboBox *comboBox();
 
-    QList<QWidget *> widgets() const Q_DECL_OVERRIDE;
+    QList<QWidget *> widgets() const override;
     /**
       Return QLabel used by this control element.
     */
@@ -501,10 +501,10 @@ public:
     */
     KLineEdit *lineEdit();
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
-    QList<QWidget *> widgets() const Q_DECL_OVERRIDE;
+    QList<QWidget *> widgets() const override;
 
 private:
     KConfigSkeleton::ItemString *mItem;
@@ -550,10 +550,10 @@ public:
     */
     KUrlRequester *urlRequester();
 
-    void readConfig() Q_DECL_OVERRIDE;
-    void writeConfig() Q_DECL_OVERRIDE;
+    void readConfig() override;
+    void writeConfig() override;
 
-    QList<QWidget *> widgets() const Q_DECL_OVERRIDE;
+    QList<QWidget *> widgets() const override;
 
 private:
     KConfigSkeleton::ItemPath *mItem;
@@ -788,11 +788,11 @@ class KDEPIM_EXPORT KPrefsModule : public KCModule, public KPrefsWidManager
 public:
     KPrefsModule(KConfigSkeleton *, QWidget *parent = nullptr, const QVariantList &args = QVariantList());
 
-    void addWid(KPrefsWid *) Q_DECL_OVERRIDE;
+    void addWid(KPrefsWid *) override;
 
-    void load() Q_DECL_OVERRIDE;
-    void save() Q_DECL_OVERRIDE;
-    void defaults() Q_DECL_OVERRIDE;
+    void load() override;
+    void save() override;
+    void defaults() override;
 
 public Q_SLOTS:
     void slotWidChanged();

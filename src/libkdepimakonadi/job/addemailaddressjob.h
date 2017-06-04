@@ -58,7 +58,7 @@ public:
     /**
      * Starts the job.
      */
-    void start() Q_DECL_OVERRIDE;
+    void start() override;
 
     /**
      * Returns the item that represents the new contact.

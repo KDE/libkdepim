@@ -57,8 +57,8 @@ public:
     void setAlignWidget(QWidget *alignWidget);
 
 protected:
-    void resizeEvent(QResizeEvent *ev) Q_DECL_OVERRIDE;
-    bool eventFilter(QObject *o, QEvent *e) Q_DECL_OVERRIDE;
+    void resizeEvent(QResizeEvent *ev) override;
+    bool eventFilter(QObject *o, QEvent *e) override;
 
 private:
     void reposition();

@@ -63,7 +63,7 @@ public:
     /**
      * Hides the popup list if it is currently shown.
      */
-    void hidePopup() Q_DECL_OVERRIDE;
+    void hidePopup() override;
 
     /**
      * Returns the default text that is shown when no items are selected.
@@ -171,11 +171,11 @@ Q_SIGNALS:
     void checkedItemsChanged(const QStringList &items);
 
 protected:
-    bool eventFilter(QObject *receiver, QEvent *event) Q_DECL_OVERRIDE;
-    void keyPressEvent(QKeyEvent *event) Q_DECL_OVERRIDE;
-    void resizeEvent(QResizeEvent *event) Q_DECL_OVERRIDE;
+    bool eventFilter(QObject *receiver, QEvent *event) override;
+    void keyPressEvent(QKeyEvent *event) override;
+    void resizeEvent(QResizeEvent *event) override;
 #ifndef QT_NO_WHEELEVENT
-    void wheelEvent(QWheelEvent *event) Q_DECL_OVERRIDE;
+    void wheelEvent(QWheelEvent *event) override;
 #endif
 
 private:

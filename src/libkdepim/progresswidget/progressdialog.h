@@ -62,14 +62,14 @@ public:
 
     TransactionItem *addTransactionItem(ProgressItem *item, bool first);
 
-    QSize sizeHint() const Q_DECL_OVERRIDE;
-    QSize minimumSizeHint() const Q_DECL_OVERRIDE;
+    QSize sizeHint() const override;
+    QSize minimumSizeHint() const override;
 
 public Q_SLOTS:
     void slotLayoutFirstItem();
 
 protected:
-    void resizeEvent(QResizeEvent *event) Q_DECL_OVERRIDE;
+    void resizeEvent(QResizeEvent *event) override;
 
 private:
     QWidget *mBigBox;
@@ -128,7 +128,7 @@ class KDEPIM_EXPORT ProgressDialog : public OverlayWidget
 public:
     ProgressDialog(QWidget *alignWidget, QWidget *parent);
     ~ProgressDialog();
-    void setVisible(bool b) Q_DECL_OVERRIDE;
+    void setVisible(bool b) override;
 
     void setShowTypeProgressItem(unsigned int type);
 
@@ -153,7 +153,7 @@ Q_SIGNALS:
     void visibilityChanged(bool);
 
 protected:
-    void closeEvent(QCloseEvent *) Q_DECL_OVERRIDE;
+    void closeEvent(QCloseEvent *) override;
 
     TransactionItemView *mScrollView;
     QMap<const ProgressItem *, TransactionItem *> mTransactionsToListviewItems;
