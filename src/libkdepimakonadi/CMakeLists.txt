@@ -22,7 +22,6 @@ set(kdepim_addressline_LIB_SRCS
     addressline/addresslineedit/kmailcompletion.cpp
     addressline/addresslineedit/baloocompletionemail.cpp
     addressline/completionconfiguredialog/completionconfiguredialog.cpp
-    addressline/recentaddress/recentaddressdialog.cpp
     addressline/recentaddress/recentaddresswidget.cpp
     addressline/recentaddress/recentaddresses.cpp
     addressline/addresslineedit/addresseelineeditutil.cpp
