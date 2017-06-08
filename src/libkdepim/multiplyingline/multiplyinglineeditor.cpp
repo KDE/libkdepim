@@ -32,9 +32,8 @@ MultiplyingLineEditor::MultiplyingLineEditor(MultiplyingLineFactory *factory, QW
     , mModified(false)
     , mMultiplyingLineFactory(factory)
 {
-    QBoxLayout *topLayout = new QHBoxLayout();
+    QBoxLayout *topLayout = new QHBoxLayout(this);
     topLayout->setMargin(0);
-    setLayout(topLayout);
 
     mView = new MultiplyingLineView(mMultiplyingLineFactory, this);
     topLayout->addWidget(mView);
