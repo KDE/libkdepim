@@ -29,7 +29,6 @@ set(kdepim_addressline_LIB_SRCS
     )
 
 set(kdepim_addressline_blacklist_baloo_LIB_SRCS
-    addressline/blacklistbaloocompletion/blacklistbalooemailcompletiondialog.cpp
     addressline/blacklistbaloocompletion/blacklistbalooemaillist.cpp
     addressline/blacklistbaloocompletion/blacklistbalooemailsearchjob.cpp
     addressline/blacklistbaloocompletion/blacklistbalooemailutil.cpp
@@ -180,21 +179,12 @@ ecm_generate_headers(libkdepim_Camelcasecompletionconfiguredialog_HEADERS
     RELATIVE addressline/completionconfiguredialog/
     )
 
-ecm_generate_headers(libkdepim_Camelcaseblacklistbaloocompletion_HEADERS
-    HEADER_NAMES
-    BlackListBalooEmailCompletionDialog
-    REQUIRED_HEADERS libkdepim_blacklistbaloocompletion_HEADERS
-    PREFIX LibkdepimAkonadi
-    RELATIVE addressline/blacklistbaloocompletion/
-    )
-
 ecm_generate_pri_file(BASE_NAME LibkdepimAkonadi
     LIB_NAME KF5LibkdepimAkonadi
     DEPS "AkonadiCore AkonadiContact Libkdepim" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/LibkdepimAkonadi
     )
 
 install(FILES
-    ${libkdepim_Camelcaseblacklistbaloocompletion_HEADERS}
     ${libkdepim_Camelcasecompletionconfiguredialog_HEADERS}
     ${libkdepim_Camelcasecompletionorder_HEADERS}
     ${libkdepimakonadi_Camelcaseprogresswidget_HEADERS}
@@ -207,7 +197,6 @@ install(FILES
     )
 
 install(FILES
-    ${libkdepim_blacklistbaloocompletion_HEADERS}
     ${libkdepim_completionconfiguredialog_HEADERS}
     ${libkdepim_completionorder_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/kdepimakonadi_export.h

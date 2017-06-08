@@ -42,8 +42,6 @@
 #include <addressline/addresslineedit/baloocompletionemail.h>
 #include <akonadi/contact/contactsearchjob.h>
 #include <QNetworkConfigurationManager>
-
-#include <addressline/blacklistbaloocompletion/blacklistbalooemailcompletiondialog.h>
 static QNetworkConfigurationManager *s_networkConfigMgr = nullptr;
 
 namespace KPIM {
@@ -253,8 +251,6 @@ void AddresseeLineEditPrivate::searchInBaloo()
         addCompletionItem(email, 1, s_static->balooCompletionSource);
     }
     doCompletion(m_lastSearchMode);
-    //  if ( q->hasFocus() || q->completionBox()->hasFocus() ) {
-    //}
 }
 
 void AddresseeLineEditPrivate::alternateColor()
@@ -474,7 +470,8 @@ void AddresseeLineEditPrivate::updateSearchString()
 
 void AddresseeLineEditPrivate::slotTriggerDelayedQueries()
 {
-    if (m_searchString.isEmpty() || m_searchString.trimmed().size() <= 2) {
+    const QString strSearch = m_searchString.trimmed();
+    if (strSearch.size() <= 2) {
         return;
     }
 
@@ -886,16 +883,6 @@ void AddresseeLineEditPrivate::updateBalooBlackList()
 void AddresseeLineEditPrivate::updateCompletionOrder()
 {
     s_static->updateCompletionOrder();
-}
-
-void AddresseeLineEditPrivate::slotConfigureBalooBlackList()
-{
-    QPointer<KPIM::BlackListBalooEmailCompletionDialog> dlg = new KPIM::BlackListBalooEmailCompletionDialog(q);
-    dlg->setEmailBlackList(m_balooBlackList);
-    if (dlg->exec()) {
-        updateBalooBlackList();
-    }
-    delete dlg;
 }
 
 bool AddresseeLineEditPrivate::canDeleteLineEdit() const

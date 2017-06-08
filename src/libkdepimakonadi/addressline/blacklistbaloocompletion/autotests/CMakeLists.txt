@@ -6,9 +6,6 @@ macro(add_libkdepim_blacklistbaloocompletion_unittest _name)
     )
 endmacro()
 
-add_libkdepim_blacklistbaloocompletion_unittest(blacklistbalooemailcompletiondialogtest
-    blacklistbalooemailcompletiondialogtest.cpp
-)
 add_libkdepim_blacklistbaloocompletion_unittest(blacklistbalooemailcompletionwidgettest
     blacklistbalooemailcompletionwidgettest.cpp
 )

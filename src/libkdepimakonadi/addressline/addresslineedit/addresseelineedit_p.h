@@ -136,7 +136,6 @@ private Q_SLOTS:
     void slotAkonadiCollectionsReceived(const Akonadi::Collection::List &);
     void searchInBaloo();
     void slotTriggerDelayedQueries();
-    void slotConfigureBalooBlackList();
 
 private:
     AddresseeLineEdit *q;
