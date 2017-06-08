@@ -44,7 +44,6 @@
 #include <KLocalizedString>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QtDBus/QDBusConnection>
 #include <KSharedConfig>
 #include <QDialogButtonBox>
 
