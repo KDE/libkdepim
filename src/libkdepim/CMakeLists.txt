@@ -8,6 +8,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
 add_subdirectory(pics)
 if (BUILD_TESTING)
     add_subdirectory(tests)
+    add_subdirectory(misc/autotests)
 endif()
 
 

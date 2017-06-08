@@ -71,8 +71,6 @@ RecentAddresses::RecentAddresses(KConfig *config)
 
 RecentAddresses::~RecentAddresses()
 {
-    // if you want this destructor to get called, use K_GLOBAL_STATIC
-    // on s_self
 }
 
 void RecentAddresses::load(KConfig *config)

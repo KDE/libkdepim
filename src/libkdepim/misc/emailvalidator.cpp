@@ -21,6 +21,7 @@
 #include "emailvalidator.h"
 
 #include <KEmailAddress>
+#include <QRegularExpression>
 
 using namespace KPIM;
 
@@ -35,12 +36,19 @@ QValidator::State EmailValidator::validate(QString &str, int &pos) const
     if (KEmailAddress::isValidSimpleAddress(str)) {
         return QValidator::Acceptable;
     }
-
+#if 0
     // we'll say any string that doesn't have whitespace
     // is an intermediate email string
     if (QRegExp(QLatin1String("\\s")).indexIn(str) > -1) {
         return QValidator::Invalid;
     }
+#else
+    QRegularExpression re(QStringLiteral("\\s"));
+    QRegularExpressionMatch match = re.match(str);
+    if(match.hasMatch()) {
+        return QValidator::Invalid;
+    }
+#endif
 
     return QValidator::Intermediate;
 }

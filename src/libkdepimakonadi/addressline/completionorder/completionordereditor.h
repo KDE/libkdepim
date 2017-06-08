@@ -45,7 +45,7 @@ class KDEPIMAKONADI_EXPORT CompletionOrderEditor : public QDialog
     Q_OBJECT
 
 public:
-    CompletionOrderEditor(KLDAP::LdapClientSearch *ldapSearch, QWidget *parent);
+    CompletionOrderEditor(KLDAP::LdapClientSearch *ldapSearch, QWidget *parent = nullptr);
     ~CompletionOrderEditor();
 
 private Q_SLOTS:

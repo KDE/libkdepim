@@ -56,7 +56,6 @@
 #include <QApplication>
 #include <QObject>
 #include <QBuffer>
-#include <QRegExp>
 #include <QEvent>
 #include <QClipboard>
 #include <QKeyEvent>
