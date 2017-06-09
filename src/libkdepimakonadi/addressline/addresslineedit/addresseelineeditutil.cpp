@@ -36,11 +36,11 @@ QString KPIM::AddresseeLineEditUtil::adaptPasteMails(QString str)
     if (newText.startsWith(QStringLiteral("mailto:"))) {
         const QUrl url(newText);
         newText = url.path();
-    } else if (newText.indexOf(QStringLiteral(" at ")) != -1) {
+    } else if (newText.contains(QStringLiteral(" at "))) {
         // Anti-spam stuff
         newText.replace(QStringLiteral(" at "), QStringLiteral("@"));
         newText.replace(QStringLiteral(" dot "), QStringLiteral("."));
-    } else if (newText.indexOf(QStringLiteral("(at)")) != -1) {
+    } else if (newText.contains(QStringLiteral("(at)"))) {
         newText.replace(QRegularExpression(QStringLiteral("\\s*\\(at\\)\\s*")), QStringLiteral("@"));
     }
     return newText;
