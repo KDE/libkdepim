@@ -122,6 +122,7 @@ ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
     KDatePickerPopup
     KWeekdayCheckCombo
     KWidgetLister
+    OverlayWidget
     PIMMessageBox
     ProgressIndicatorLabel
     ProgressIndicatorWidget

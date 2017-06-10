@@ -30,6 +30,8 @@
 #ifndef KDEPIM_OVERLAYWIDGET_H
 #define KDEPIM_OVERLAYWIDGET_H
 
+#include "kdepim_export.h"
+
 #include <QFrame>
 
 class QResizeEvent;
@@ -43,7 +45,7 @@ namespace KPIM {
  *
  */
 class OverlayWidgetPrivate;
-class OverlayWidget : public QFrame
+class KDEPIM_EXPORT OverlayWidget : public QFrame
 {
     Q_OBJECT
 
