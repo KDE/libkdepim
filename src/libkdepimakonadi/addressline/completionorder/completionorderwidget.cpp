@@ -238,8 +238,7 @@ CompletionOrderWidget::CompletionOrderWidget(QWidget *parent)
     new CompletionOrderEditorAdaptor(this);
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this, QDBusConnection::ExportAdaptors);
 
-    QHBoxLayout *hbox = new QHBoxLayout;
-    setLayout(hbox);
+    QHBoxLayout *hbox = new QHBoxLayout(this);
 
     QWidget *page = new QWidget(this);
     QHBoxLayout *pageHBoxLayout = new QHBoxLayout(page);

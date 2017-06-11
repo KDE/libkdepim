@@ -83,7 +83,7 @@ RecentAddressWidget::~RecentAddressWidget()
 void RecentAddressWidget::slotTypedSomething(const QString &text)
 {
     if (mListView->currentItem()) {
-        if (mListView->currentItem()->text() != mLineEdit->text() && !mLineEdit->text().isEmpty()) {
+        if (!mLineEdit->text().isEmpty() && mListView->currentItem()->text() != mLineEdit->text()) {
             // IMHO changeItem() shouldn't do anything with the value
             // of currentItem() ... like changing it or emitting signals ...
             // but TT disagree with me on this one (it's been that way since ages ... grrr)
@@ -136,8 +136,9 @@ void RecentAddressWidget::updateButtonState()
     QList<QListWidgetItem *> selectedItems = mListView->selectedItems();
     const int numberOfElementSelected(selectedItems.count());
     mRemoveButton->setEnabled(numberOfElementSelected);
-    mNewButton->setEnabled(numberOfElementSelected <= 1);
-    mLineEdit->setEnabled(numberOfElementSelected <= 1);
+    bool enableElement = (numberOfElementSelected <= 1);
+    mNewButton->setEnabled(enableElement);
+    mLineEdit->setEnabled(enableElement);
 
     if (numberOfElementSelected == 1) {
         const QString text = mListView->currentItem()->text();
