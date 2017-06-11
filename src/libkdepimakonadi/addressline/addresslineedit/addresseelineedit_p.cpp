@@ -626,7 +626,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
 
             if (!match.isEmpty()) {
                 if (match != m_searchString) {
-                    QString adds = m_previousAddresses + match;
+                    const QString adds = m_previousAddresses + match;
                     q->callSetCompletedText(adds);
                 }
             } else {
@@ -692,7 +692,7 @@ void AddresseeLineEditPrivate::slotPopupCompletion(const QString &completion)
 void AddresseeLineEditPrivate::slotReturnPressed(const QString &)
 {
     if (!q->completionBox()->selectedItems().isEmpty()) {
-        slotPopupCompletion(q->completionBox()->selectedItems().first()->text());
+        slotPopupCompletion(q->completionBox()->selectedItems().constFirst()->text());
     }
 }
 
