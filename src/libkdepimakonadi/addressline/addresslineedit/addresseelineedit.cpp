@@ -44,7 +44,7 @@
 #include <KIO/StoredTransferJob>
 #include <Akonadi/Contact/ContactGroupExpandJob>
 #include <Akonadi/Contact/ContactGroupSearchJob>
-#include <libkdepimakonadi/recentaddresses.h>
+#include <libkdepim/recentaddresses.h>
 
 #include <KCompletionBox>
 #include "libkdepimakonadi_debug.h"
