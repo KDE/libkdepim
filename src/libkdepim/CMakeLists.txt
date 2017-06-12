@@ -183,7 +183,7 @@ ecm_generate_headers(libkdepim_Camelcaserecentaddress_HEADERS
     HEADER_NAMES
     RecentAddresses
     REQUIRED_HEADERS libkdepim_recentaddress_HEADERS
-    PREFIX LibkdepimAkonadi
+    PREFIX Libkdepim
     RELATIVE addressline/recentaddress/
     )
 
