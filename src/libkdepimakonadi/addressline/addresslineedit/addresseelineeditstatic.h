@@ -76,6 +76,12 @@ public:
             , enabled(true)
         {
         }
+        collectionInfo(int idx, bool _enabled)
+            : index(idx),
+              enabled(_enabled)
+        {
+
+        }
 
         int index;
         bool enabled;

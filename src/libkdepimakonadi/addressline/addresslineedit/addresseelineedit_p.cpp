@@ -847,9 +847,7 @@ void AddresseeLineEditPrivate::slotAkonadiCollectionsReceived(
             const QString sourceString = collection.displayName();
             const int weight = groupCompletionWeights.readEntry(QString::number(collection.id()), 1);
             const int index = q->addCompletionSource(sourceString, weight);
-            AddresseeLineEditStatic::collectionInfo info;
-            info.index = index;
-            info.enabled = groupCompletionEnabled.readEntry(QString::number(collection.id()), true);
+            AddresseeLineEditStatic::collectionInfo info(index, groupCompletionEnabled.readEntry(QString::number(collection.id()), true));
             qCDebug(LIBKDEPIMAKONADI_LOG) << "\treceived: " << sourceString << "index: " << index;
             s_static->akonadiCollectionToCompletionSourceMap.insert(collection.id(), info);
         }
