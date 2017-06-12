@@ -21,7 +21,7 @@
 #ifndef RECENTADDRESSWIDGET_H
 #define RECENTADDRESSWIDGET_H
 
-#include "libkdepimakonadi_private_export.h"
+#include "libkdepim_private_export.h"
 #include <QWidget>
 #include <QStringList>
 class KConfig;
@@ -30,7 +30,7 @@ class QListWidget;
 class KLineEdit;
 
 namespace KPIM {
-class LIBKDEPIMAKONADI_TESTS_EXPORT RecentAddressWidget : public QWidget
+class LIBKDEPIM_TESTS_EXPORT RecentAddressWidget : public QWidget
 {
     Q_OBJECT
 public:

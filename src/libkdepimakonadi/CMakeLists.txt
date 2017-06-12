@@ -22,8 +22,6 @@ set(kdepim_addressline_LIB_SRCS
     addressline/addresslineedit/kmailcompletion.cpp
     addressline/addresslineedit/baloocompletionemail.cpp
     addressline/completionconfiguredialog/completionconfiguredialog.cpp
-    addressline/recentaddress/recentaddresswidget.cpp
-    addressline/recentaddress/recentaddresses.cpp
     addressline/addresslineedit/addresseelineeditutil.cpp
     )
 
@@ -154,14 +152,6 @@ ecm_generate_headers(libkdepim_Camelcaseaddressline_HEADERS
     RELATIVE  addressline/addresslineedit/
     )
 
-ecm_generate_headers(libkdepim_Camelcaserecentaddress_HEADERS
-    HEADER_NAMES
-    RecentAddresses
-    REQUIRED_HEADERS libkdepim_recentaddress_HEADERS
-    PREFIX LibkdepimAkonadi
-    RELATIVE addressline/recentaddress/
-    )
-
 ecm_generate_headers(libkdepim_Camelcasecompletionorder_HEADERS
     HEADER_NAMES
     CompletionOrderEditor
@@ -190,7 +180,6 @@ install(FILES
     ${libkdepimakonadi_Camelcasewidgets_HEADERS}
     ${libkdepim_Camelcasejob_HEADERS}
     ${libkdepim_Camelcaseaddressline_HEADERS}
-    ${libkdepim_Camelcaserecentaddress_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/LibkdepimAkonadi
     COMPONENT Devel
     )
@@ -203,7 +192,6 @@ install(FILES
     ${libkdepimakonadi_widgets_HEADERS}
     ${libkdepim_job_HEADERS}
     ${libkdepim_addressline_HEADERS}
-    ${libkdepim_recentaddress_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepimakonadi
     COMPONENT Devel
     )

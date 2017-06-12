@@ -30,7 +30,7 @@
 #ifndef KDEPIM_RECENTADDRESSES_H
 #define KDEPIM_RECENTADDRESSES_H
 
-#include "kdepimakonadi_export.h"
+#include "kdepim_export.h"
 #include <KContacts/Addressee>
 #include <QStringList>
 class KConfig;
@@ -43,7 +43,7 @@ namespace KPIM {
  * @author Carsten Pfeiffer <pfeiffer@kde.org>
  */
 
-class KDEPIMAKONADI_EXPORT RecentAddresses
+class KDEPIM_EXPORT RecentAddresses
 {
 public:
     ~RecentAddresses();

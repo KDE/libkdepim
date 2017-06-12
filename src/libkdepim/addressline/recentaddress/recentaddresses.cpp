@@ -32,7 +32,7 @@
 #include <KEmailAddress>
 #include <KConfig>
 #include <KConfigGroup>
-#include "libkdepimakonadi_debug.h"
+#include "libkdepim_debug.h"
 #include <KSharedConfig>
 #include <QCoreApplication>
 

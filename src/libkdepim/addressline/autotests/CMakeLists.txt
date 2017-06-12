@@ -15,16 +15,6 @@ macro(add_libkdepim_addressline_unittest _name)
     )
 endmacro()
 
-add_libkdepim_addressline_unittest(baloocompletionemailtest
-    baloocompletionemailtest.cpp
-)
-add_libkdepim_addressline_unittest(completionconfiguredialogtest
-    completionconfiguredialogtest.cpp
-)
-add_libkdepim_addressline_unittest(completionorderwidgettest
-    completionorderwidgettest.cpp
-)
-
-add_libkdepim_addressline_unittest(addresseelineeditutiltest
-    addresseelineeditutiltest.cpp
+add_libkdepim_addressline_unittest(recentaddresswidgettest
+    recentaddresswidgettest.cpp
 )

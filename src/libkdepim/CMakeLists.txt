@@ -9,6 +9,7 @@ add_subdirectory(pics)
 if (BUILD_TESTING)
     add_subdirectory(tests)
     add_subdirectory(misc/autotests)
+    add_subdirectory(addressline/autotests/)
 endif()
 
 
@@ -55,12 +56,19 @@ set(kdepim_multiplyingline_LIB_SRCS
     multiplyingline/multiplyinglineview_p.cpp
     )
 
+set(kdepim_addressline_LIB_SRCS
+    addressline/recentaddress/recentaddresswidget.cpp
+    addressline/recentaddress/recentaddresses.cpp
+    )
+
+
 set(kdepim_LIB_SRCS
     ${kdepim_progresswidget_LIB_SRCS}
     ${kdepim_widgets_LIB_SRCS}
     ${kdepim_ldap_LIB_SRCS}
     ${kdepim_misc_LIB_SRCS}
     ${kdepim_multiplyingline_LIB_SRCS}
+    ${kdepim_addressline_LIB_SRCS}
     prefs/kprefsdialog.cpp
     )
 ecm_qt_declare_logging_category(kdepim_LIB_SRCS HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim)
@@ -171,6 +179,15 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
     RELATIVE  multiplyingline
     )
 
+ecm_generate_headers(libkdepim_Camelcaserecentaddress_HEADERS
+    HEADER_NAMES
+    RecentAddresses
+    REQUIRED_HEADERS libkdepim_recentaddress_HEADERS
+    PREFIX LibkdepimAkonadi
+    RELATIVE addressline/recentaddress/
+    )
+
+
 
 ecm_generate_pri_file(BASE_NAME Libkdepim
     LIB_NAME KF5Libkdepim
@@ -185,6 +202,7 @@ install(FILES
     ${libkdepim_Camelcasemisc_HEADERS}
     ${libkdepim_Camelcasepref_HEADERS}
     ${libkdepim_Camelcasemultiline_HEADERS}
+    ${libkdepim_Camelcaserecentaddress_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
     COMPONENT Devel
     )
@@ -198,6 +216,7 @@ install(FILES
     ${libkdepim_widgets_HEADERS}
     ${libkdepim_pref_HEADERS}
     ${libkdepim_multiline_HEADERS}
+    ${libkdepim_recentaddress_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim
     COMPONENT Devel
     )
