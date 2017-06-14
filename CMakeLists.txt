@@ -64,6 +64,7 @@ if (Qt5Designer_FOUND)
   find_package(KF5DesignerPlugin ${KF5_VERSION} CONFIG REQUIRED)
 endif()
 add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
+add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 #add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
 
 ########### CMake Config Files ###########
