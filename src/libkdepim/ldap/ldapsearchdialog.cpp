@@ -694,7 +694,7 @@ void LdapSearchDialog::slotCustomContextMenuRequested(const QPoint &pos)
 {
     const QModelIndex index = d->mResultView->indexAt(pos);
     if (index.isValid()) {
-        QMenu menu;
+        QMenu menu(this);
         QAction *act = menu.addAction(i18n("Copy"));
         if (menu.exec(QCursor::pos()) == act) {
             QClipboard *cb = QApplication::clipboard();
