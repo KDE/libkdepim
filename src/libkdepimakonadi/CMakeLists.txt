@@ -149,7 +149,7 @@ ecm_generate_headers(libkdepim_Camelcaseaddressline_HEADERS
     AddresseeLineEdit
     REQUIRED_HEADERS libkdepim_addressline_HEADERS
     PREFIX LibkdepimAkonadi
-    RELATIVE  addressline/addresslineedit/
+    RELATIVE addressline/addresslineedit/
     )
 
 ecm_generate_headers(libkdepim_Camelcasecompletionorder_HEADERS

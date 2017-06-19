@@ -176,7 +176,7 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
     MultiplyingLineEditor
     REQUIRED_HEADERS libkdepim_multiline_HEADERS
     PREFIX Libkdepim
-    RELATIVE  multiplyingline
+    RELATIVE multiplyingline
     )
 
 ecm_generate_headers(libkdepim_Camelcaserecentaddress_HEADERS
