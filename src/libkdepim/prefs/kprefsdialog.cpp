@@ -680,8 +680,9 @@ KPrefsWidRadios *KPrefsWidManager::addWidRadios(KConfigSkeleton::ItemEnum *item,
     QList<KConfigSkeleton::ItemEnum::Choice2> choices;
     choices = item->choices2();
     QList<KConfigSkeleton::ItemEnum::Choice2>::ConstIterator it;
+    QList<KConfigSkeleton::ItemEnum::Choice2>::ConstIterator end(choices.constEnd());
     int value = 0;
-    for (it = choices.constBegin(); it != choices.constEnd(); ++it) {
+    for (it = choices.constBegin(); it != end; ++it) {
         w->addRadio(value++, (*it).label, (*it).toolTip, (*it).whatsThis);
     }
     addWid(w);
@@ -693,8 +694,8 @@ KPrefsWidCombo *KPrefsWidManager::addWidCombo(KConfigSkeleton::ItemEnum *item, Q
     KPrefsWidCombo *w = new KPrefsWidCombo(item, parent);
     QList<KConfigSkeleton::ItemEnum::Choice> choices;
     choices = item->choices();
-    QList<KConfigSkeleton::ItemEnum::Choice>::ConstIterator it;
-    for (it = choices.constBegin(); it != choices.constEnd(); ++it) {
+    QList<KConfigSkeleton::ItemEnum::Choice>::ConstIterator end(choices.constEnd());
+    for (QList<KConfigSkeleton::ItemEnum::Choice>::ConstIterator it = choices.constBegin(); it != end; ++it) {
         w->comboBox()->addItem((*it).label);
     }
     addWid(w);
