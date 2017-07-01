@@ -86,6 +86,7 @@ public:
     /** Date the message was sent */
     time_t date() const;
 
+    bool operator ==(const MailSummary &other) const;
 private:
     quint32 mSerialNumber;
     QString mMessageId, mSubject, mFrom, mTo;
