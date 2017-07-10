@@ -30,6 +30,7 @@
 #include <QVBoxLayout>
 #include <QListWidget>
 #include <QKeyEvent>
+#include <QToolButton>
 
 using namespace KPIM;
 RecentAddressWidget::RecentAddressWidget(QWidget *parent)
@@ -37,42 +38,39 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
 
+
+    QHBoxLayout *lineLayout = new QHBoxLayout;
+    layout->addLayout(lineLayout);
+
     mLineEdit = new KLineEdit(this);
     mLineEdit->setObjectName(QStringLiteral("line_edit"));
-    layout->addWidget(mLineEdit);
-
     mLineEdit->setTrapReturnKey(true);
     mLineEdit->installEventFilter(this);
-
-    connect(mLineEdit, &KLineEdit::textChanged, this, &RecentAddressWidget::slotTypedSomething);
+    //connect(mLineEdit, &KLineEdit::textChanged, this, &RecentAddressWidget::slotTypedSomething);
     connect(mLineEdit, &KLineEdit::returnPressed, this, &RecentAddressWidget::slotAddItem);
 
-    QHBoxLayout *hboxLayout = new QHBoxLayout;
+    lineLayout->addWidget(mLineEdit);
 
-    QVBoxLayout *btnsLayout = new QVBoxLayout;
-    btnsLayout->addStretch();
-
-    mNewButton = new QPushButton(QIcon::fromTheme(QStringLiteral("list-add")), i18n("&Add"), this);
+    mNewButton = new QToolButton(this);
+    mNewButton->setToolTip(i18n("Add"));
     mNewButton->setObjectName(QStringLiteral("new_button"));
+    mNewButton->setIcon(QIcon::fromTheme(QStringLiteral("list-add")));
     connect(mNewButton, &QPushButton::clicked, this, &RecentAddressWidget::slotAddItem);
-    btnsLayout->insertWidget(0, mNewButton);
+    lineLayout->addWidget(mNewButton);
 
-    mRemoveButton = new QPushButton(QIcon::fromTheme(QStringLiteral("list-remove")), i18n("&Remove"), this);
+    mRemoveButton = new QToolButton(this);
+    mRemoveButton->setIcon(QIcon::fromTheme(QStringLiteral("list-remove")));
+    mRemoveButton->setToolTip(i18n("Remove"));
     mRemoveButton->setObjectName(QStringLiteral("remove_button"));
     mRemoveButton->setEnabled(false);
+    lineLayout->addWidget(mRemoveButton);
     connect(mRemoveButton, &QPushButton::clicked, this, &RecentAddressWidget::slotRemoveItem);
-    btnsLayout->insertWidget(1, mRemoveButton);
 
     mListView = new QListWidget(this);
     mListView->setObjectName(QStringLiteral("list_view"));
     mListView->setSelectionMode(QAbstractItemView::ExtendedSelection);
     mListView->setSortingEnabled(true);
-    hboxLayout->addWidget(mListView);
-    hboxLayout->addLayout(btnsLayout);
-    layout->addLayout(hboxLayout);
-    connect(mListView, &QListWidget::itemSelectionChanged, this, &RecentAddressWidget::slotSelectionChanged);
-    // maybe supplied lineedit has some text already
-    slotTypedSomething(mLineEdit->text());
+    layout->addWidget(mListView);
     mDirty = false;
 }
 
@@ -80,41 +78,11 @@ RecentAddressWidget::~RecentAddressWidget()
 {
 }
 
-void RecentAddressWidget::slotTypedSomething(const QString &text)
-{
-    QListWidgetItem *currentItem{mListView->currentItem()};
-    if (currentItem) {
-        if (currentItem->text() != mLineEdit->text()) {
-            // IMHO changeItem() shouldn't do anything with the value
-            // of currentItem() ... like changing it or emitting signals ...
-            // but TT disagree with me on this one (it's been that way since ages ... grrr)
-            bool block = mListView->signalsBlocked();
-            mListView->blockSignals(true);
-            if (currentItem) {
-                currentItem->setText(text);
-                mDirty = true;
-            }
-            mListView->blockSignals(block);
-        }
-    }
-}
-
 void RecentAddressWidget::slotAddItem()
 {
-    if (mListView->count() == 0) {
-        mListView->blockSignals(true);
-        mListView->insertItem(0, mLineEdit->text());
-        mListView->blockSignals(false);
-    } else {
-        const QString text = mListView->item(0)->text();
-        if (text.isEmpty()) {
-            return;
-        }
-        mListView->blockSignals(true);
-        mListView->insertItem(0, QString());
-        mListView->blockSignals(false);
-    }
+    mListView->insertItem(0, mLineEdit->text());
     mListView->setCurrentRow(0, QItemSelectionModel::ClearAndSelect);
+    mLineEdit->clear();
     mLineEdit->setFocus();
     mDirty = true;
     updateButtonState();
@@ -143,15 +111,6 @@ void RecentAddressWidget::updateButtonState()
     bool enableElement = (numberOfElementSelected <= 1);
     mNewButton->setEnabled(enableElement);
     mLineEdit->setEnabled(enableElement);
-
-    if (numberOfElementSelected == 1) {
-        const QString text = mListView->currentItem()->text();
-        if (text != mLineEdit->text()) {
-            mLineEdit->setText(text);
-        }
-    } else {
-        mLineEdit->clear();
-    }
 }
 
 void RecentAddressWidget::slotSelectionChanged()

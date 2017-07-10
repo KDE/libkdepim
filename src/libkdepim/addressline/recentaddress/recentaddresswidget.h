@@ -28,6 +28,7 @@ class KConfig;
 class QPushButton;
 class QListWidget;
 class KLineEdit;
+class QToolButton;
 
 namespace KPIM {
 class KDEPIM_EXPORT RecentAddressWidget : public QWidget
@@ -49,8 +50,8 @@ private:
     void slotAddItem();
     void slotRemoveItem();
     void slotSelectionChanged();
-    void slotTypedSomething(const QString &);
-    QPushButton *mNewButton, *mRemoveButton;
+    QToolButton *mNewButton;
+    QToolButton *mRemoveButton;
     QListWidget *mListView;
     KLineEdit *mLineEdit;
     bool mDirty;
