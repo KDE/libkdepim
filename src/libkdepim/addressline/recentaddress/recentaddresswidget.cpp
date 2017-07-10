@@ -80,6 +80,17 @@ RecentAddressWidget::~RecentAddressWidget()
 
 void RecentAddressWidget::slotAddItem()
 {
+    const QString newEmail = mLineEdit->text();
+    if (newEmail.isEmpty()) {
+        return;
+    }
+    const int numberOfItem(mListView->count());
+    for (int i = 0; i < numberOfItem; ++i) {
+        if (mListView->item(i)->text() == newEmail) {
+            return;
+        }
+    }
+
     mListView->insertItem(0, mLineEdit->text());
     mListView->setCurrentRow(0, QItemSelectionModel::ClearAndSelect);
     mLineEdit->clear();
