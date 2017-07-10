@@ -46,7 +46,6 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
     mLineEdit->setObjectName(QStringLiteral("line_edit"));
     mLineEdit->setTrapReturnKey(true);
     mLineEdit->installEventFilter(this);
-    //connect(mLineEdit, &KLineEdit::textChanged, this, &RecentAddressWidget::slotTypedSomething);
     connect(mLineEdit, &KLineEdit::returnPressed, this, &RecentAddressWidget::slotAddItem);
 
     lineLayout->addWidget(mLineEdit);
@@ -70,6 +69,7 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
     mListView->setObjectName(QStringLiteral("list_view"));
     mListView->setSelectionMode(QAbstractItemView::ExtendedSelection);
     mListView->setSortingEnabled(true);
+    connect(mListView, &QListWidget::itemSelectionChanged, this, &RecentAddressWidget::updateButtonState);
     layout->addWidget(mListView);
     mDirty = false;
 }
@@ -111,11 +111,6 @@ void RecentAddressWidget::updateButtonState()
     bool enableElement = (numberOfElementSelected <= 1);
     mNewButton->setEnabled(enableElement);
     mLineEdit->setEnabled(enableElement);
-}
-
-void RecentAddressWidget::slotSelectionChanged()
-{
-    updateButtonState();
 }
 
 void RecentAddressWidget::setAddresses(const QStringList &addrs)

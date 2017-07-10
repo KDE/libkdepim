@@ -49,7 +49,6 @@ protected:
 private:
     void slotAddItem();
     void slotRemoveItem();
-    void slotSelectionChanged();
     QToolButton *mNewButton;
     QToolButton *mRemoveButton;
     QListWidget *mListView;
