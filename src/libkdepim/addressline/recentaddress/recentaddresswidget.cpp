@@ -82,16 +82,16 @@ RecentAddressWidget::~RecentAddressWidget()
 
 void RecentAddressWidget::slotTypedSomething(const QString &text)
 {
-    if (mListView->currentItem()) {
-        if (!mLineEdit->text().isEmpty() && mListView->currentItem()->text() != mLineEdit->text()) {
+    QListWidgetItem *currentItem{mListView->currentItem()};
+    if (currentItem) {
+        if (currentItem->text() != mLineEdit->text()) {
             // IMHO changeItem() shouldn't do anything with the value
             // of currentItem() ... like changing it or emitting signals ...
             // but TT disagree with me on this one (it's been that way since ages ... grrr)
             bool block = mListView->signalsBlocked();
             mListView->blockSignals(true);
-            QListWidgetItem *currentIndex = mListView->currentItem();
-            if (currentIndex) {
-                currentIndex->setText(text);
+            if (currentItem) {
+                currentItem->setText(text);
                 mDirty = true;
             }
             mListView->blockSignals(block);
