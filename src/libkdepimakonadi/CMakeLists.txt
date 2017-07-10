@@ -22,7 +22,6 @@ set(kdepim_addressline_LIB_SRCS
     addressline/addresslineedit/kmailcompletion.cpp
     addressline/addresslineedit/baloocompletionemail.cpp
     addressline/completionconfiguredialog/completionconfiguredialog.cpp
-    addressline/addresslineedit/addresseelineeditutil.cpp
     )
 
 set(kdepim_addressline_blacklist_baloo_LIB_SRCS

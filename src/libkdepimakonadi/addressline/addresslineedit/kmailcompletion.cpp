@@ -81,7 +81,7 @@ void KMailCompletion::addItemWithKeys(const QString &email, int weight, const QS
     Q_ASSERT(keyWords != nullptr);
     QStringList::ConstIterator end = keyWords->constEnd();
     for (QStringList::ConstIterator it(keyWords->constBegin()); it != end; ++it) {
-        QStringList &emailList = m_keyMap[(*it) ];  //lookup email-list for given keyword
+        QStringList &emailList = m_keyMap[(*it)];  //lookup email-list for given keyword
         if (!emailList.contains(email)) {       //add email if not there
             emailList.append(email);
         }

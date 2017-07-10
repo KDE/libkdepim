@@ -59,6 +59,7 @@ set(kdepim_multiplyingline_LIB_SRCS
 set(kdepim_addressline_LIB_SRCS
     addressline/recentaddress/recentaddresswidget.cpp
     addressline/recentaddress/recentaddresses.cpp
+    addressline/addresslineedit/addresseelineeditutil.cpp
     )
 
 
@@ -187,6 +188,15 @@ ecm_generate_headers(libkdepim_Camelcaserecentaddress_HEADERS
     RELATIVE addressline/recentaddress/
     )
 
+ecm_generate_headers(libkdepim_Camelcaseaddressline_HEADERS
+    HEADER_NAMES
+    AddresseeLineEditUtil
+    REQUIRED_HEADERS libkdepim_addressline_HEADERS
+    PREFIX Libkdepim
+    RELATIVE addressline/addresslineedit/
+    )
+
+
 
 
 ecm_generate_pri_file(BASE_NAME Libkdepim
@@ -203,6 +213,7 @@ install(FILES
     ${libkdepim_Camelcasepref_HEADERS}
     ${libkdepim_Camelcasemultiline_HEADERS}
     ${libkdepim_Camelcaserecentaddress_HEADERS}
+    ${libkdepim_Camelcaseaddressline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
     COMPONENT Devel
     )
@@ -217,6 +228,7 @@ install(FILES
     ${libkdepim_pref_HEADERS}
     ${libkdepim_multiline_HEADERS}
     ${libkdepim_recentaddress_HEADERS}
+    ${libkdepim_addressline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim
     COMPONENT Devel
     )

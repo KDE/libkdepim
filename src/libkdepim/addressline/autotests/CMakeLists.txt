@@ -18,3 +18,6 @@ endmacro()
 add_libkdepim_addressline_unittest(recentaddresswidgettest
     recentaddresswidgettest.cpp
 )
+add_libkdepim_addressline_unittest(addresseelineeditutiltest
+    addresseelineeditutiltest.cpp
+)

@@ -26,7 +26,7 @@
 
 #include "addresseelineedit.h"
 #include "addresseelineedit_p.h"
-#include "addresseelineeditutil.h"
+#include "Libkdepim/AddresseeLineEditUtil"
 #include "ldap/ldapclientsearch.h"
 
 #include <KContacts/VCardConverter>
