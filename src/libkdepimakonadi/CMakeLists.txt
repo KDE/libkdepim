@@ -32,6 +32,10 @@ set(kdepim_addressline_blacklist_baloo_LIB_SRCS
     addressline/blacklistbaloocompletion/blacklistbalooemailwarning.cpp
     )
 
+set(kdepim_addressline_plugin_LIB_SRCS
+    addressline/plugins/addressesslineeditabstractplugin.cpp
+    addressline/plugins/addressesslineeditpluginmanager.cpp
+    )
 
 ############ next target ###############
 set(kdepimakonadi_progresswidget_LIB_SRCS
@@ -61,6 +65,7 @@ set(kdepimakonadi_LIB_SRCS
     ${kdepim_addressline_LIB_SRCS}
     ${kdepim_addressline_blacklist_baloo_LIB_SRCS}
     ${kdepimakonadi_progresswidget_LIB_SRCS}
+    ${kdepim_addressline_plugin_LIB_SRCS}
     )
 
 
