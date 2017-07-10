@@ -101,15 +101,19 @@ void RecentAddressWidget::slotTypedSomething(const QString &text)
 
 void RecentAddressWidget::slotAddItem()
 {
-    if (mListView->count() > 0) {
+    if (mListView->count() == 0) {
+        mListView->blockSignals(true);
+        mListView->insertItem(0, mLineEdit->text());
+        mListView->blockSignals(false);
+    } else {
         const QString text = mListView->item(0)->text();
         if (text.isEmpty()) {
             return;
         }
+        mListView->blockSignals(true);
+        mListView->insertItem(0, QString());
+        mListView->blockSignals(false);
     }
-    mListView->blockSignals(true);
-    mListView->insertItem(0, QString());
-    mListView->blockSignals(false);
     mListView->setCurrentRow(0, QItemSelectionModel::ClearAndSelect);
     mLineEdit->setFocus();
     mDirty = true;
