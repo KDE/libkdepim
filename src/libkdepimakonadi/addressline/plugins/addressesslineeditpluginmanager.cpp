@@ -18,16 +18,161 @@
 */
 
 #include "addressesslineeditpluginmanager.h"
+#include "addressesslineeditabstractplugin.h"
+#include "libkdepimakonadi_debug.h"
+
+#include <kpluginmetadata.h>
+#include <KPluginLoader>
+#include <KPluginFactory>
+
+#include <QFileInfo>
+#include <QSet>
 
 using namespace KPIM;
 
+class AddressessLineEditPluginManagerInstancePrivate
+{
+public:
+    AddressessLineEditPluginManagerInstancePrivate()
+        : addressessLineEditPluginManager(new AddressessLineEditPluginManager)
+    {
+    }
+
+    ~AddressessLineEditPluginManagerInstancePrivate()
+    {
+        delete addressessLineEditPluginManager;
+    }
+
+    AddressessLineEditPluginManager *addressessLineEditPluginManager;
+};
+
+Q_GLOBAL_STATIC(AddressessLineEditPluginManagerInstancePrivate, sInstance)
+
+class AddressessLineEditPluginInfo
+{
+public:
+    AddressessLineEditPluginInfo()
+        : plugin(nullptr)
+    {
+    }
+
+    QString metaDataFileNameBaseName;
+    QString metaDataFileName;
+    KPIM::AddressessLineEditAbstractPlugin *plugin;
+};
+
+namespace {
+QString pluginVersion()
+{
+    return QStringLiteral("1.0");
+}
+}
+
+class KPIM::AddressessLineEditPluginManagerPrivate
+{
+public:
+    AddressessLineEditPluginManagerPrivate(AddressessLineEditPluginManager *qq)
+        : q(qq)
+    {
+        initializePlugins();
+    }
+
+    void loadPlugin(AddressessLineEditPluginInfo *item);
+    QVector<KPIM::AddressessLineEditAbstractPlugin *> pluginsList() const;
+    QVector<AddressessLineEditPluginInfo> mPluginList;
+    bool initializePlugins();
+private:
+    AddressessLineEditPluginManager *q;
+};
+
+bool AddressessLineEditPluginManagerPrivate::initializePlugins()
+{
+    if (!mPluginList.isEmpty()) {
+        return true;
+    }
+    const QVector<KPluginMetaData> plugins = KPluginLoader::findPlugins(QStringLiteral("addressline"), [](const KPluginMetaData &md) {
+        return md.serviceTypes().contains(QStringLiteral("AddressLineEdit/Plugin"));
+    });
+
+    QVectorIterator<KPluginMetaData> i(plugins);
+    i.toBack();
+    QSet<QString> unique;
+    while (i.hasPrevious()) {
+        AddressessLineEditPluginInfo info;
+        const KPluginMetaData data = i.previous();
+
+        info.metaDataFileNameBaseName = QFileInfo(data.fileName()).baseName();
+        info.metaDataFileName = data.fileName();
+        if (pluginVersion() == data.version()) {
+            // only load plugins once, even if found multiple times!
+            if (unique.contains(info.metaDataFileNameBaseName)) {
+                continue;
+            }
+            info.plugin = nullptr;
+            mPluginList.push_back(info);
+            unique.insert(info.metaDataFileNameBaseName);
+        } else {
+            qCWarning(LIBKDEPIMAKONADI_LOG) << "Plugin " << data.name() << " doesn't have correction plugin version. It will not be loaded.";
+        }
+    }
+    const QVector<AddressessLineEditPluginInfo>::iterator end(mPluginList.end());
+    for (QVector<AddressessLineEditPluginInfo>::iterator it = mPluginList.begin(); it != end; ++it) {
+        loadPlugin(&(*it));
+    }
+    return true;
+}
+
+void AddressessLineEditPluginManagerPrivate::loadPlugin(AddressessLineEditPluginInfo *item)
+{
+    KPluginLoader pluginLoader(item->metaDataFileName);
+    if (pluginLoader.factory()) {
+        item->plugin = pluginLoader.factory()->create<KPIM::AddressessLineEditAbstractPlugin>(q, QVariantList() << item->metaDataFileNameBaseName);
+    }
+}
+
+QVector<KPIM::AddressessLineEditAbstractPlugin *> AddressessLineEditPluginManagerPrivate::pluginsList() const
+{
+    QVector<KPIM::AddressessLineEditAbstractPlugin *> lst;
+    const QVector<AddressessLineEditPluginInfo>::ConstIterator end(mPluginList.constEnd());
+    for (QVector<AddressessLineEditPluginInfo>::ConstIterator it = mPluginList.constBegin(); it != end; ++it) {
+        if (auto plugin = (*it).plugin) {
+            lst << plugin;
+        }
+    }
+    return lst;
+}
+
 AddressessLineEditPluginManager::AddressessLineEditPluginManager(QObject *parent)
     : QObject(parent)
+    , d(new AddressessLineEditPluginManagerPrivate(this))
 {
-
 }
 
 AddressessLineEditPluginManager::~AddressessLineEditPluginManager()
 {
+    delete d;
+}
 
+AddressessLineEditPluginManager *AddressessLineEditPluginManager::self()
+{
+    return sInstance->addressessLineEditPluginManager;
+}
+
+QVector<KPIM::AddressessLineEditAbstractPlugin *> AddressessLineEditPluginManager::pluginsList() const
+{
+    return d->pluginsList();
+}
+
+KPIM::AddressessLineEditAbstractPlugin *AddressessLineEditPluginManager::plugin(const QString &identifier)
+{
+#if 0
+    for (KPIM::AddressessLineEditAbstractPlugin *p : pluginsList()) {
+        for (const AddressessLineEditPluginInfo &info : p->names()) {
+            if (info.identifier == identifier) {
+                return p;
+            }
+        }
+    }
+#endif
+    return {};
 }

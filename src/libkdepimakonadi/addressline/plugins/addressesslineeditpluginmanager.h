@@ -24,12 +24,22 @@
 #include "kdepim_export.h"
 
 namespace KPIM {
+class AddressessLineEditAbstractPlugin;
+class AddressessLineEditPluginManagerPrivate;
 class KDEPIM_EXPORT AddressessLineEditPluginManager : public QObject
 {
     Q_OBJECT
 public:
     explicit AddressessLineEditPluginManager(QObject *parent = nullptr);
     ~AddressessLineEditPluginManager();
+
+    static AddressessLineEditPluginManager *self();
+
+    KPIM::AddressessLineEditAbstractPlugin *plugin(const QString &identifier);
+    QVector<KPIM::AddressessLineEditAbstractPlugin *> pluginsList() const;
+
+private:
+    AddressessLineEditPluginManagerPrivate *const d;
 };
 }
 
