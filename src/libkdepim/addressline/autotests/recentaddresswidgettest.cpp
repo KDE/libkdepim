@@ -40,12 +40,16 @@ void RecentAddressWidgetTest::shouldHaveDefaultValue()
     KPIM::RecentAddressWidget w;
     KLineEdit *lineedit = w.findChild<KLineEdit *>(QStringLiteral("line_edit"));
     QVERIFY(lineedit);
+    QVERIFY(lineedit->isClearButtonEnabled());
+    QVERIFY(lineedit->trapReturnKey());
+    QVERIFY(lineedit->text().isEmpty());
 
     QToolButton *newButton = w.findChild<QToolButton *>(QStringLiteral("new_button"));
     QVERIFY(newButton);
 
     QToolButton *removeButton = w.findChild<QToolButton *>(QStringLiteral("remove_button"));
     QVERIFY(removeButton);
+    QVERIFY(!removeButton->isEnabled());
 
     QListWidget *listview = w.findChild<QListWidget *>(QStringLiteral("list_view"));
     QVERIFY(listview);

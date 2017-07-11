@@ -46,6 +46,7 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
     mLineEdit->setObjectName(QStringLiteral("line_edit"));
     mLineEdit->setTrapReturnKey(true);
     mLineEdit->installEventFilter(this);
+    mLineEdit->setClearButtonEnabled(true);
     connect(mLineEdit, &KLineEdit::returnPressed, this, &RecentAddressWidget::slotAddItem);
 
     lineLayout->addWidget(mLineEdit);
