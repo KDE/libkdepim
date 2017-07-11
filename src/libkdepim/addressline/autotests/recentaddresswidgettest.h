@@ -35,6 +35,7 @@ private Q_SLOTS:
     void shouldInformThatItWasChanged();
     void shouldNotAddMultiSameLine();
     void shouldNotAddEmptyLine();
+    void shouldDisableAddButton();
 };
 
 #endif // RECENTADDRESSWIDGETTEST_H

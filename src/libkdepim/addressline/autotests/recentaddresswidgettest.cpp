@@ -80,6 +80,7 @@ void RecentAddressWidgetTest::shouldInformThatItWasChanged()
     lineedit->setText(QStringLiteral("foo"));
     QToolButton *newButton = w.findChild<QToolButton *>(QStringLiteral("new_button"));
     QVERIFY(newButton);
+    QVERIFY(newButton->isEnabled());
     QTest::mouseClick(newButton, Qt::LeftButton);
     QVERIFY(w.wasChanged());
     QListWidget *listview = w.findChild<QListWidget *>(QStringLiteral("list_view"));
@@ -96,6 +97,7 @@ void RecentAddressWidgetTest::shouldNotAddMultiSameLine()
     QCOMPARE(listview->count(), 0);
 
     lineedit->setText(QStringLiteral("foo"));
+    QVERIFY(newButton->isEnabled());
     QTest::mouseClick(newButton, Qt::LeftButton);
     QCOMPARE(listview->count(), 1);
 
@@ -111,6 +113,8 @@ void RecentAddressWidgetTest::shouldNotAddEmptyLine()
     QListWidget *listview = w.findChild<QListWidget *>(QStringLiteral("list_view"));
     QCOMPARE(listview->count(), 0);
     QVERIFY(lineedit->text().isEmpty());
+    QVERIFY(!newButton->isEnabled());
+
 
     QTest::mouseClick(newButton, Qt::LeftButton);
     QCOMPARE(listview->count(), 0);
@@ -121,6 +125,18 @@ void RecentAddressWidgetTest::shouldNotAddEmptyLine()
     lineedit->setText(QStringLiteral("foo"));
     QTest::mouseClick(newButton, Qt::LeftButton);
     QCOMPARE(listview->count(), 1);
+}
+
+void RecentAddressWidgetTest::shouldDisableAddButton()
+{
+    KPIM::RecentAddressWidget w;
+    KLineEdit *lineedit = w.findChild<KLineEdit *>(QStringLiteral("line_edit"));
+    QToolButton *newButton = w.findChild<QToolButton *>(QStringLiteral("new_button"));
+
+    lineedit->setText(QStringLiteral("foo"));
+    QVERIFY(newButton->isEnabled());
+    lineedit->clear();
+    QVERIFY(!newButton->isEnabled());
 }
 
 QTEST_MAIN(RecentAddressWidgetTest)

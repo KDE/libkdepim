@@ -55,7 +55,9 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
     mNewButton->setToolTip(i18n("Add"));
     mNewButton->setObjectName(QStringLiteral("new_button"));
     mNewButton->setIcon(QIcon::fromTheme(QStringLiteral("list-add")));
+    mNewButton->setEnabled(false);
     connect(mNewButton, &QPushButton::clicked, this, &RecentAddressWidget::slotAddItem);
+    connect(mLineEdit, &KLineEdit::textChanged, this, &RecentAddressWidget::slotUpdateAddButton);
     lineLayout->addWidget(mNewButton);
 
     mRemoveButton = new QToolButton(this);
@@ -77,6 +79,11 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
 
 RecentAddressWidget::~RecentAddressWidget()
 {
+}
+
+void RecentAddressWidget::slotUpdateAddButton(const QString &str)
+{
+    mNewButton->setEnabled(!str.trimmed().isEmpty());
 }
 
 void RecentAddressWidget::slotAddItem()
