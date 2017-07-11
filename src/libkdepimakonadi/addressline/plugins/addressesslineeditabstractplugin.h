@@ -30,6 +30,8 @@ class KDEPIM_EXPORT AddressessLineEditAbstractPlugin : public QObject
 public:
     explicit AddressessLineEditAbstractPlugin(QObject *parent = nullptr);
     ~AddressessLineEditAbstractPlugin();
+
+    virtual QString identifier() const = 0;
 };
 }
 

@@ -786,10 +786,11 @@ void AddresseeLineEditPrivate::slotAkonadiHandleItems(const Akonadi::Item::List 
        the source name can be correctly labeled.*/
     for (const Akonadi::Item &item : items) {
         // check the local cache of collections
+        const Akonadi::Collection::Id colId = item.parentCollection().id();
         const AddresseeLineEditStatic::collectionInfo sourceIndex
-            = s_static->akonadiCollectionToCompletionSourceMap.value(item.parentCollection().id(), AddresseeLineEditStatic::collectionInfo());
+            = s_static->akonadiCollectionToCompletionSourceMap.value(colId, AddresseeLineEditStatic::collectionInfo());
         if (sourceIndex.index == -1) {
-            qCDebug(LIBKDEPIMAKONADI_LOG) << "Fetching New collection: " << item.parentCollection().id();
+            qCDebug(LIBKDEPIMAKONADI_LOG) << "Fetching New collection: " << colId;
             // the collection isn't there, start the fetch job.
             Akonadi::CollectionFetchJob *collectionJob
                 = new Akonadi::CollectionFetchJob(item.parentCollection(),
@@ -801,7 +802,7 @@ void AddresseeLineEditPrivate::slotAkonadiHandleItems(const Akonadi::Item::List 
             so insert the collection with an index value of -2 */
             AddresseeLineEditStatic::collectionInfo info;
             info.index = -2;
-            s_static->akonadiCollectionToCompletionSourceMap.insert(item.parentCollection().id(), info);
+            s_static->akonadiCollectionToCompletionSourceMap.insert(colId, info);
             s_static->akonadiPendingItems.append(item);
         } else if (sourceIndex.index == -2) {
             /* fetch job already started, don't need to start another one,
@@ -845,11 +846,12 @@ void AddresseeLineEditPrivate::slotAkonadiCollectionsReceived(
     for (const Akonadi::Collection &collection : collections) {
         if (collection.isValid()) {
             const QString sourceString = collection.displayName();
-            const int weight = groupCompletionWeights.readEntry(QString::number(collection.id()), 1);
+            const Akonadi::Collection::Id colId = collection.id();
+            const int weight = groupCompletionWeights.readEntry(QString::number(colId), 1);
             const int index = q->addCompletionSource(sourceString, weight);
-            AddresseeLineEditStatic::collectionInfo info(index, groupCompletionEnabled.readEntry(QString::number(collection.id()), true));
+            AddresseeLineEditStatic::collectionInfo info(index, groupCompletionEnabled.readEntry(QString::number(colId), true));
             qCDebug(LIBKDEPIMAKONADI_LOG) << "\treceived: " << sourceString << "index: " << index;
-            s_static->akonadiCollectionToCompletionSourceMap.insert(collection.id(), info);
+            s_static->akonadiCollectionToCompletionSourceMap.insert(colId, info);
         }
     }
 
