@@ -75,7 +75,7 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
 
 AddresseeLineEditPrivate::~AddresseeLineEditPrivate()
 {
-    if (s_static->ldapSearch && s_static->ldapLineEdit == q) {
+    if (s_static->ldapSearch && s_static->addressLineEdit == q) {
         stopLDAPLookup();
     }
 }
@@ -83,12 +83,12 @@ AddresseeLineEditPrivate::~AddresseeLineEditPrivate()
 void AddresseeLineEditPrivate::restartTime(const QString &searchString)
 {
     if (useCompletion() && s_static->ldapTimer) {
-        if (s_static->ldapText != searchString || s_static->ldapLineEdit != q) {
+        if (s_static->ldapText != searchString || s_static->addressLineEdit != q) {
             stopLDAPLookup();
         }
 
         s_static->ldapText = searchString;
-        s_static->ldapLineEdit = q;
+        s_static->addressLineEdit = q;
         s_static->ldapTimer->setSingleShot(true);
         s_static->ldapTimer->start(500);
     }
@@ -224,7 +224,7 @@ void AddresseeLineEditPrivate::startLoadingLDAPEntries()
 void AddresseeLineEditPrivate::stopLDAPLookup()
 {
     s_static->ldapSearch->cancelSearch();
-    s_static->ldapLineEdit = nullptr;
+    s_static->addressLineEdit = nullptr;
 }
 
 QStringList AddresseeLineEdit::cleanupEmailList(const QStringList &inputList)
@@ -706,7 +706,7 @@ void AddresseeLineEditPrivate::slotStartLDAPLookup()
         if (!s_static->ldapSearch->isAvailable()) {
             return;
         }
-        if (s_static->ldapLineEdit != q) {
+        if (s_static->addressLineEdit != q) {
             return;
         }
         startLoadingLDAPEntries();
@@ -715,7 +715,7 @@ void AddresseeLineEditPrivate::slotStartLDAPLookup()
 
 void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List &results)
 {
-    if (results.isEmpty() || s_static->ldapLineEdit != q) {
+    if (results.isEmpty() || s_static->addressLineEdit != q) {
         return;
     }
 
@@ -761,7 +761,11 @@ void AddresseeLineEditPrivate::slotEditCompletionOrder()
 {
     init(); // for s_static->ldapSearch
     if (m_useCompletion) {
-        s_static->slotEditCompletionOrder();
+        QPointer<CompletionOrderEditor> dlg = new CompletionOrderEditor(s_static->ldapSearch, nullptr);
+        if (dlg->exec()) {
+            s_static->updateCompletionOrder();
+        }
+        delete dlg;
     }
 }
 
@@ -773,7 +777,7 @@ KLDAP::LdapClientSearch *AddresseeLineEditPrivate::ldapSearch()
 
 void AddresseeLineEditPrivate::slotUserCancelled(const QString &cancelText)
 {
-    if (s_static->ldapSearch && s_static->ldapLineEdit == q) {
+    if (s_static->ldapSearch && s_static->addressLineEdit == q) {
         stopLDAPLookup();
     }
 

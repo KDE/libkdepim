@@ -19,6 +19,8 @@ set(kdepim_addressline_LIB_SRCS
     addressline/addresslineedit/addresseelineedit.cpp
     addressline/addresslineedit/addresseelineedit_p.cpp
     addressline/addresslineedit/addresseelineeditstatic.cpp
+    addressline/addresslineedit/addresseelineeditldap.cpp
+    addressline/addresslineedit/addresseelineeditakonadi.cpp
     addressline/addresslineedit/kmailcompletion.cpp
     addressline/addresslineedit/baloocompletionemail.cpp
     addressline/completionconfiguredialog/completionconfiguredialog.cpp

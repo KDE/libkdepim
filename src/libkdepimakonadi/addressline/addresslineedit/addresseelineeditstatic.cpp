@@ -21,7 +21,6 @@
 #include <Libkdepim/LdapClient>
 #include <KLocalizedString>
 #include <QTimer>
-#include <addressline/completionorder/completionordereditor.h>
 #include <KLDAP/LdapServer>
 #include <AkonadiCore/Session>
 using namespace KPIM;
@@ -30,7 +29,7 @@ AddresseeLineEditStatic::AddresseeLineEditStatic()
     : completion(new KMailCompletion)
     , ldapTimer(nullptr)
     , ldapSearch(nullptr)
-    , ldapLineEdit(nullptr)
+    , addressLineEdit(nullptr)
     , balooCompletionSource(0)
     , m_akonadiSession(nullptr)
 {
@@ -41,15 +40,6 @@ AddresseeLineEditStatic::~AddresseeLineEditStatic()
     delete completion;
     delete ldapTimer;
     delete ldapSearch;
-}
-
-void AddresseeLineEditStatic::slotEditCompletionOrder()
-{
-    QPointer<CompletionOrderEditor> dlg = new CompletionOrderEditor(ldapSearch, nullptr);
-    if (dlg->exec()) {
-        updateCompletionOrder();
-    }
-    delete dlg;
 }
 
 void AddresseeLineEditStatic::updateCompletionOrder()

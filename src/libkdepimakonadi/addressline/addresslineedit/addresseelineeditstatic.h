@@ -40,7 +40,6 @@ public:
 
     ~AddresseeLineEditStatic();
 
-    void slotEditCompletionOrder();
 
     void updateCollectionWeights();
 
@@ -61,7 +60,7 @@ public:
     KLDAP::LdapClientSearch *ldapSearch;
 
     QString ldapText;
-    AddresseeLineEdit *ldapLineEdit;
+    AddresseeLineEdit *addressLineEdit;
     // The weights associated with the completion sources in s_static->completionSources.
     // Both are maintained by addCompletionSource(), don't attempt to modifiy those yourself.
     QMap<QString, int> completionSourceWeights;
