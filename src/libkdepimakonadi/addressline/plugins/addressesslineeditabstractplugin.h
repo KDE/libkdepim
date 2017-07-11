@@ -32,6 +32,9 @@ public:
     ~AddressessLineEditAbstractPlugin();
 
     virtual QString identifier() const = 0;
+
+Q_SIGNALS:
+    void wasUpdated();
 };
 }
 
