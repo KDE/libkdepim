@@ -28,6 +28,7 @@
 #include <ldap/ldapclientsearch.h>
 #include <qstringlist.h>
 class QTimer;
+class QNetworkConfigurationManager;
 namespace KPIM {
 class KMailCompletion;
 class AddresseeLineEdit;
@@ -107,12 +108,14 @@ public:
 
     AddresseeLineEdit *addressLineEdit() const;
     void setAddressLineEdit(AddresseeLineEdit *addressLineEdit);
+    bool isOnline() const;
 
 private:
     KMailCompletion *mCompletion;
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
     AddresseeLineEditLdap *mAddressessLineEditLdap;
     AddresseeLineEditBaloo *mAddressessLineEditBaloo;
+    QNetworkConfigurationManager *mNetworkConfigMgr;
 };
 }
 #endif // ADDRESSEELINEEDITSTATIC_H

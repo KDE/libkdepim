@@ -23,7 +23,9 @@
 
 #include <Libkdepim/LdapClient>
 #include <KLocalizedString>
+#include <QNetworkConfigurationManager>
 #include <QTimer>
+#include <QCoreApplication>
 #include <KLDAP/LdapServer>
 #include <AkonadiCore/Session>
 using namespace KPIM;
@@ -35,6 +37,7 @@ AddresseeLineEditManager::AddresseeLineEditManager()
     , mAddresseeLineEditAkonadi(new AddresseeLineEditAkonadi(this))
     , mAddressessLineEditLdap(new AddresseeLineEditLdap(this))
     , mAddressessLineEditBaloo(new AddresseeLineEditBaloo(this))
+    , mNetworkConfigMgr(new QNetworkConfigurationManager(QCoreApplication::instance()))
 {
 }
 
@@ -113,6 +116,11 @@ AddresseeLineEdit *AddresseeLineEditManager::addressLineEdit() const
 void AddresseeLineEditManager::setAddressLineEdit(AddresseeLineEdit *addressLineEdit)
 {
     mAddressessLineEditLdap->setAddressLineEdit(addressLineEdit);
+}
+
+bool AddresseeLineEditManager::isOnline() const
+{
+    return mNetworkConfigMgr->isOnline();
 }
 
 KLDAP::LdapClientSearch *AddresseeLineEditManager::ldapSearch() const

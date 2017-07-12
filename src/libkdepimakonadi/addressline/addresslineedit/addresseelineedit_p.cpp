@@ -41,8 +41,6 @@
 #include <ldap/ldapclientsearch.h>
 #include <addressline/addresslineedit/baloocompletionemail.h>
 #include <akonadi/contact/contactsearchjob.h>
-#include <QNetworkConfigurationManager>
-static QNetworkConfigurationManager *s_networkConfigMgr = nullptr;
 
 namespace KPIM {
 AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, bool enableCompletion)
@@ -64,10 +62,6 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
     , mShowRecentAddresses(true)
     , mCanDeleteLineEdit(true)
 {
-    if (!s_networkConfigMgr) {
-        s_networkConfigMgr = new QNetworkConfigurationManager(QCoreApplication::instance());
-    }
-
     m_delayedQueryTimer.setSingleShot(true);
     connect(&m_delayedQueryTimer, &QTimer::timeout, this, &AddresseeLineEditPrivate::slotTriggerDelayedQueries);
 }
@@ -677,7 +671,7 @@ void AddresseeLineEditPrivate::slotReturnPressed(const QString &)
 
 void AddresseeLineEditPrivate::slotStartLDAPLookup()
 {
-    if (s_networkConfigMgr->isOnline()) {
+    if (AddresseeLineEditManager::self()->isOnline()) {
         const KCompletion::CompletionMode mode = q->completionMode();
         if (mode == KCompletion::CompletionNone) {
             return;
