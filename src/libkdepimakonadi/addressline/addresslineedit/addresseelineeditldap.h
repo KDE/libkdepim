@@ -38,6 +38,9 @@ public:
 
     void updateLDAPWeights();
 
+    QMap<int, int> ldapClientToCompletionSourceMap() const;
+
+private:
     // maps LDAP client indices to completion source indices
     // the assumption that they are always the first n indices in s_static->completion
     // does not hold when clients are added later on
@@ -46,7 +49,6 @@ public:
 
     QTimer *mLdapTimer;
     KLDAP::LdapClientSearch *mLdapSearch;
-private:
     AddresseeLineEditStatic *mAddressLineStatic;
 };
 }

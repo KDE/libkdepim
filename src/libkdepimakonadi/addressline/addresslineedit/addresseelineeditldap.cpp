@@ -53,3 +53,8 @@ void AddresseeLineEditLdap::updateLDAPWeights()
         ++clientIndex;
     }
 }
+
+QMap<int, int> AddresseeLineEditLdap::ldapClientToCompletionSourceMap() const
+{
+    return mLdapClientToCompletionSourceMap;
+}
