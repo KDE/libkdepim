@@ -31,6 +31,7 @@ class QTimer;
 namespace KPIM {
 class KMailCompletion;
 class AddresseeLineEdit;
+class AddresseeLineEditAkonadi;
 class AddresseeLineEditStatic
 {
 public:
@@ -93,7 +94,7 @@ public:
     int balooCompletionSource;
 
 private:
-    Akonadi::Session *m_akonadiSession;
+    AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
 };
 }
 #endif // ADDRESSEELINEEDITSTATIC_H

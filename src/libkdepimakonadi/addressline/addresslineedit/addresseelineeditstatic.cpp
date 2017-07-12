@@ -16,6 +16,7 @@
 */
 
 #include "addresseelineeditstatic.h"
+#include "addresseelineeditakonadi.h"
 #include "kmailcompletion.h"
 
 #include <Libkdepim/LdapClient>
@@ -31,7 +32,7 @@ AddresseeLineEditStatic::AddresseeLineEditStatic()
     , ldapSearch(nullptr)
     , addressLineEdit(nullptr)
     , balooCompletionSource(0)
-    , m_akonadiSession(nullptr)
+    , mAddresseeLineEditAkonadi(new AddresseeLineEditAkonadi(this))
 {
 }
 
@@ -40,6 +41,8 @@ AddresseeLineEditStatic::~AddresseeLineEditStatic()
     delete completion;
     delete ldapTimer;
     delete ldapSearch;
+
+    delete mAddresseeLineEditAkonadi;
 }
 
 void AddresseeLineEditStatic::updateCompletionOrder()
@@ -99,8 +102,5 @@ void AddresseeLineEditStatic::removeCompletionSource(const QString &source)
 
 Akonadi::Session *AddresseeLineEditStatic::akonadiSession()
 {
-    if (!m_akonadiSession) {
-        m_akonadiSession = new Akonadi::Session("contactsCompletionSession");
-    }
-    return m_akonadiSession;
+    return mAddresseeLineEditAkonadi->akonadiSession();
 }
