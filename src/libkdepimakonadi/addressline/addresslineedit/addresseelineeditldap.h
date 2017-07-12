@@ -40,6 +40,8 @@ public:
 
     QMap<int, int> ldapClientToCompletionSourceMap() const;
 
+    KLDAP::LdapClientSearch *ldapSearch() const;
+
 private:
     // maps LDAP client indices to completion source indices
     // the assumption that they are always the first n indices in s_static->completion
