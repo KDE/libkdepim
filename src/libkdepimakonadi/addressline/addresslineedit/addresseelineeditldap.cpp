@@ -26,8 +26,9 @@
 
 using namespace KPIM;
 
-AddresseeLineEditLdap::AddresseeLineEditLdap(AddresseeLineEditStatic *addressLineStatic)
-    : mLdapTimer(nullptr)
+AddresseeLineEditLdap::AddresseeLineEditLdap(AddresseeLineEditStatic *addressLineStatic, QObject *parent)
+    : QObject(parent)
+    , mLdapTimer(nullptr)
     , mLdapSearch(nullptr)
     , mAddressLineStatic(addressLineStatic)
 {
@@ -62,4 +63,28 @@ QMap<int, int> AddresseeLineEditLdap::ldapClientToCompletionSourceMap() const
 KLDAP::LdapClientSearch *AddresseeLineEditLdap::ldapSearch() const
 {
     return mLdapSearch;
+}
+
+void AddresseeLineEditLdap::init()
+{
+    if (!mLdapTimer) {
+        mLdapTimer = new QTimer(this);
+        mLdapSearch = new KLDAP::LdapClientSearch(this);
+
+        /* The reasoning behind this filter is:
+         * If it's a person, or a distlist, show it, even if it doesn't have an email address.
+         * If it's not a person, or a distlist, only show it if it has an email attribute.
+         * This allows both resource accounts with an email address which are not a person and
+         * person entries without an email address to show up, while still not showing things
+         * like structural entries in the ldap tree.
+         */
+
+#if 0
+        mLdapSearch->setFilter(QStringLiteral("&(|(objectclass=person)(objectclass=groupOfNames)(mail=*))"
+                                                       "(|(cn=%1*)(mail=%1*)(mail=*@%1*)(givenName=%1*)(sn=%1*))"));
+#endif
+        //Fix bug 323272 "Exchange doesn't like any queries beginning with *."
+        mLdapSearch->setFilter(QStringLiteral("&(|(objectclass=person)(objectclass=groupOfNames)(mail=*))"
+                                                       "(|(cn=%1*)(mail=%1*)(givenName=%1*)(sn=%1*))"));
+    }
 }

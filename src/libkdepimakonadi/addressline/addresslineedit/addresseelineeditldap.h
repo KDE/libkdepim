@@ -30,10 +30,10 @@ class LdapClientSearch;
 
 namespace KPIM {
 class AddresseeLineEditStatic;
-class AddresseeLineEditLdap
+class AddresseeLineEditLdap : public QObject
 {
 public:
-    explicit AddresseeLineEditLdap(AddresseeLineEditStatic *addressLineStatic);
+    explicit AddresseeLineEditLdap(AddresseeLineEditStatic *addressLineStatic, QObject *parent = nullptr);
     ~AddresseeLineEditLdap();
 
     void updateLDAPWeights();
@@ -42,6 +42,7 @@ public:
 
     KLDAP::LdapClientSearch *ldapSearch() const;
 
+    void init();
 private:
     // maps LDAP client indices to completion source indices
     // the assumption that they are always the first n indices in s_static->completion
