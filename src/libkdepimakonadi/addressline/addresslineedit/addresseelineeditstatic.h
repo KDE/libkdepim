@@ -49,14 +49,10 @@ public:
     void updateCompletionOrder();
 
     int addCompletionSource(const QString &source, int weight);
-
     void removeCompletionSource(const QString &source);
 
     Akonadi::Session *akonadiSession();
 
-    KLDAP::LdapClientSearch *ldapSearch() const;
-
-    QTimer *ldapTimer() const;
 
 
     KMailCompletion *completion;
@@ -99,6 +95,9 @@ public:
     void initializeLdap();
     QString ldapText() const;
     void setLdapText(const QString &ldapText);
+    KLDAP::LdapClientSearch *ldapSearch() const;
+    QTimer *ldapTimer() const;
+
 
 private:
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
