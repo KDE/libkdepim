@@ -27,8 +27,8 @@
 using namespace KPIM;
 
 AddresseeLineEditLdap::AddresseeLineEditLdap(AddresseeLineEditStatic *addressLineStatic)
-    : ldapTimer(nullptr)
-    , ldapSearch(nullptr)
+    : mLdapTimer(nullptr)
+    , mLdapSearch(nullptr)
     , mAddressLineStatic(addressLineStatic)
 {
 
@@ -43,13 +43,13 @@ void AddresseeLineEditLdap::updateLDAPWeights()
 {
     /* Add completion sources for all ldap server, 0 to n. Added first so
        * that they map to the LdapClient::clientNumber() */
-    ldapSearch->updateCompletionWeights();
+    mLdapSearch->updateCompletionWeights();
     int clientIndex = 0;
-    for (const KLDAP::LdapClient *client : ldapSearch->clients()) {
+    for (const KLDAP::LdapClient *client : mLdapSearch->clients()) {
         const int sourceIndex
             = mAddressLineStatic->addCompletionSource(i18n("LDAP server: %1", client->server().host()),
                                   client->completionWeight());
-        ldapClientToCompletionSourceMap.insert(clientIndex, sourceIndex);
+        mLdapClientToCompletionSourceMap.insert(clientIndex, sourceIndex);
         ++clientIndex;
     }
 }
