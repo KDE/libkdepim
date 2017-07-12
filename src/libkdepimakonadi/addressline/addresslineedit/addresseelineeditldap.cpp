@@ -88,3 +88,8 @@ void AddresseeLineEditLdap::init()
                                                        "(|(cn=%1*)(mail=%1*)(givenName=%1*)(sn=%1*))"));
     }
 }
+
+QTimer *AddresseeLineEditLdap::ldapTimer() const
+{
+    return mLdapTimer;
+}
