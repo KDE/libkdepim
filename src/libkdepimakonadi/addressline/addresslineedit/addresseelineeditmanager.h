@@ -59,7 +59,6 @@ public:
     CompletionItemsMap completionItemMap;
     QStringList completionSources;
 
-    AddresseeLineEdit *addressLineEdit;
     // The weights associated with the completion sources in s_static->completionSources.
     // Both are maintained by addCompletionSource(), don't attempt to modifiy those yourself.
     QMap<QString, int> completionSourceWeights;
@@ -105,7 +104,13 @@ public:
 
     KMailCompletion *completion() const;
 
+
+    AddresseeLineEdit *addressLineEdit() const;
+    void setAddressLineEdit(AddresseeLineEdit *addressLineEdit);
+
 private:
+    AddresseeLineEdit *mAddressLineEdit;
+
     KMailCompletion *mCompletion;
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
     AddresseeLineEditLdap *mAddressessLineEditLdap;

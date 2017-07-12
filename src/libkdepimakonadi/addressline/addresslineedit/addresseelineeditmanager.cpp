@@ -31,7 +31,7 @@ using namespace KPIM;
 Q_GLOBAL_STATIC(AddresseeLineEditManager, sInstance)
 
 AddresseeLineEditManager::AddresseeLineEditManager()
-    : addressLineEdit(nullptr)
+    : mAddressLineEdit(nullptr)
     , mCompletion(new KMailCompletion)
     , mAddresseeLineEditAkonadi(new AddresseeLineEditAkonadi(this))
     , mAddressessLineEditLdap(new AddresseeLineEditLdap(this))
@@ -104,6 +104,16 @@ Akonadi::Session *AddresseeLineEditManager::akonadiSession()
 KMailCompletion *AddresseeLineEditManager::completion() const
 {
     return mCompletion;
+}
+
+AddresseeLineEdit *AddresseeLineEditManager::addressLineEdit() const
+{
+    return mAddressLineEdit;
+}
+
+void AddresseeLineEditManager::setAddressLineEdit(AddresseeLineEdit *addressLineEdit)
+{
+    mAddressLineEdit = addressLineEdit;
 }
 
 KLDAP::LdapClientSearch *AddresseeLineEditManager::ldapSearch() const
