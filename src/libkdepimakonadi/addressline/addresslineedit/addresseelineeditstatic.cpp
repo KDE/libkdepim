@@ -17,6 +17,7 @@
 
 #include "addresseelineeditstatic.h"
 #include "addresseelineeditakonadi.h"
+#include "addresseelineeditbaloo.h"
 #include "addresseelineeditldap.h"
 #include "kmailcompletion.h"
 
@@ -30,9 +31,9 @@ using namespace KPIM;
 AddresseeLineEditStatic::AddresseeLineEditStatic()
     : completion(new KMailCompletion)
     , addressLineEdit(nullptr)
-    , balooCompletionSource(0)
     , mAddresseeLineEditAkonadi(new AddresseeLineEditAkonadi(this))
     , mAddressessLineEditLdap(new AddresseeLineEditLdap(this))
+    , mAddressessLineEditBaloo(new AddresseeLineEditBaloo(this))
 {
 }
 
@@ -42,6 +43,7 @@ AddresseeLineEditStatic::~AddresseeLineEditStatic()
 
     delete mAddresseeLineEditAkonadi;
     delete mAddressessLineEditLdap;
+    delete mAddressessLineEditBaloo;
 }
 
 void AddresseeLineEditStatic::updateCompletionOrder()
@@ -100,6 +102,16 @@ KLDAP::LdapClientSearch *AddresseeLineEditStatic::ldapSearch() const
 QTimer *AddresseeLineEditStatic::ldapTimer() const
 {
     return mAddressessLineEditLdap->ldapTimer();
+}
+
+int AddresseeLineEditStatic::balooCompletionSource() const
+{
+    return mAddressessLineEditBaloo->balooCompletionSource();
+}
+
+void AddresseeLineEditStatic::setBalooCompletionSource(int value)
+{
+    mAddressessLineEditBaloo->setBalooCompletionSource(value);
 }
 
 void AddresseeLineEditStatic::initializeLdap()

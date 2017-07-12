@@ -33,6 +33,7 @@ class KMailCompletion;
 class AddresseeLineEdit;
 class AddresseeLineEditAkonadi;
 class AddresseeLineEditLdap;
+class AddresseeLineEditBaloo;
 class AddresseeLineEditStatic
 {
 public:
@@ -89,7 +90,6 @@ public:
     // a list of akonadi items (contacts) that have not had their collection fetched yet
     Akonadi::Item::List akonadiPendingItems;
     QVector<QWeakPointer<Akonadi::Job> > akonadiJobsInFlight;
-    int balooCompletionSource;
 
     //Ldap
     void initializeLdap();
@@ -98,10 +98,15 @@ public:
     KLDAP::LdapClientSearch *ldapSearch() const;
     QTimer *ldapTimer() const;
 
+    //Baloo
+    int balooCompletionSource() const;
+    void setBalooCompletionSource(int value);
+
 
 private:
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
     AddresseeLineEditLdap *mAddressessLineEditLdap;
+    AddresseeLineEditBaloo *mAddressessLineEditBaloo;
 };
 }
 #endif // ADDRESSEELINEEDITSTATIC_H

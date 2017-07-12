@@ -21,11 +21,19 @@
 #define ADDRESSEELINEEDITBALOO_H
 
 namespace KPIM {
+class AddresseeLineEditStatic;
 class AddresseeLineEditBaloo
 {
 public:
-    AddresseeLineEditBaloo();
+    explicit AddresseeLineEditBaloo(AddresseeLineEditStatic *addressLineStatic);
     ~AddresseeLineEditBaloo();
+
+    int balooCompletionSource() const;
+    void setBalooCompletionSource(int value);
+
+private:
+    int mBalooCompletionSource;
+    AddresseeLineEditStatic *mAddressLineStatic;
 };
 }
 

@@ -136,7 +136,7 @@ void AddresseeLineEditPrivate::init()
 
     if (m_useCompletion) {
         s_static->initializeLdap();
-        s_static->balooCompletionSource = q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1);
+        s_static->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
 
         s_static->updateLDAPWeights();
         if (!m_completionInitialized) {
@@ -228,7 +228,7 @@ void AddresseeLineEditPrivate::searchInBaloo()
     Akonadi::Search::PIM::ContactCompleter com(trimmedString, 20);
     const QStringList listEmail = cleanupEmailList(com.complete());
     for (const QString &email : listEmail) {
-        addCompletionItem(email, 1, s_static->balooCompletionSource);
+        addCompletionItem(email, 1, s_static->balooCompletionSource());
     }
     doCompletion(m_lastSearchMode);
 }
@@ -861,7 +861,7 @@ void AddresseeLineEditPrivate::updateBalooBlackList()
 {
     loadBalooBlackList();
     q->removeCompletionSource(i18nc("@title:group", "Contacts found in your data"));
-    s_static->balooCompletionSource = q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1);
+    s_static->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
 }
 
 void AddresseeLineEditPrivate::updateCompletionOrder()
