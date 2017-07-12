@@ -60,6 +60,16 @@ QMap<int, int> AddresseeLineEditLdap::ldapClientToCompletionSourceMap() const
     return mLdapClientToCompletionSourceMap;
 }
 
+int AddresseeLineEditLdap::ldapClientToCompletionSourceValue(int value) const
+{
+    return mLdapClientToCompletionSourceMap[value];
+}
+
+bool AddresseeLineEditLdap::isLdapClientToCompletionSourceMapContains(int value) const
+{
+    return mLdapClientToCompletionSourceMap.contains(value);
+}
+
 KLDAP::LdapClientSearch *AddresseeLineEditLdap::ldapSearch() const
 {
     return mLdapSearch;

@@ -104,6 +104,16 @@ QTimer *AddresseeLineEditStatic::ldapTimer() const
     return mAddressessLineEditLdap->ldapTimer();
 }
 
+int AddresseeLineEditStatic::ldapClientToCompletionSourceValue(int value) const
+{
+    return mAddressessLineEditLdap->ldapClientToCompletionSourceValue(value);
+}
+
+bool AddresseeLineEditStatic::isLdapClientToCompletionSourceMapContains(int value) const
+{
+    return mAddressessLineEditLdap->isLdapClientToCompletionSourceMapContains(value);
+}
+
 int AddresseeLineEditStatic::balooCompletionSource() const
 {
     return mAddressessLineEditBaloo->balooCompletionSource();

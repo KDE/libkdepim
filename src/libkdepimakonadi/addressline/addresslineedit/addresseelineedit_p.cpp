@@ -716,12 +716,12 @@ void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List 
             }
         }
 
-        if (!s_static->ldapClientToCompletionSourceMap.contains(result.clientNumber)) {
+        if (!s_static->isLdapClientToCompletionSourceMapContains(result.clientNumber)) {
             s_static->updateLDAPWeights(); // we got results from a new source, so update the completion sources
         }
 
         q->addContact(contact, result.completionWeight,
-                      s_static->ldapClientToCompletionSourceMap[ result.clientNumber ], ou);
+                      s_static->ldapClientToCompletionSourceValue(result.clientNumber), ou);
     }
 
     if ((q->hasFocus() || q->completionBox()->hasFocus())

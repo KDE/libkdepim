@@ -52,7 +52,6 @@ public:
     int addCompletionSource(const QString &source, int weight);
     void removeCompletionSource(const QString &source);
 
-    Akonadi::Session *akonadiSession();
 
 
 
@@ -64,10 +63,7 @@ public:
     // The weights associated with the completion sources in s_static->completionSources.
     // Both are maintained by addCompletionSource(), don't attempt to modifiy those yourself.
     QMap<QString, int> completionSourceWeights;
-    // maps LDAP client indices to completion source indices
-    // the assumption that they are always the first n indices in s_static->completion
-    // does not hold when clients are added later on
-    QMap<int, int> ldapClientToCompletionSourceMap;
+
     // holds the cached mapping from akonadi collection id to the completion source index
     struct collectionInfo {
         collectionInfo()
@@ -97,10 +93,15 @@ public:
     void setLdapText(const QString &ldapText);
     KLDAP::LdapClientSearch *ldapSearch() const;
     QTimer *ldapTimer() const;
+    bool isLdapClientToCompletionSourceMapContains(int value) const;
+    int ldapClientToCompletionSourceValue(int value) const;
 
     //Baloo
     int balooCompletionSource() const;
     void setBalooCompletionSource(int value);
+
+    //Akonadi
+    Akonadi::Session *akonadiSession();
 
 
 private:

@@ -41,6 +41,8 @@ public:
     void updateLDAPWeights();
 
     QMap<int, int> ldapClientToCompletionSourceMap() const;
+    bool isLdapClientToCompletionSourceMapContains(int value) const;
+    int ldapClientToCompletionSourceValue(int value) const;
 
     KLDAP::LdapClientSearch *ldapSearch() const;
 
