@@ -18,10 +18,12 @@
 */
 
 #include "addresseelineeditakonadi.h"
+#include <AkonadiCore/Session>
 
 using namespace KPIM;
 
-AddresseeLineEditAkonadi::AddresseeLineEditAkonadi()
+AddresseeLineEditAkonadi::AddresseeLineEditAkonadi(AddresseeLineEditStatic *addressLineStatic)
+    : mAddressLineStatic(addressLineStatic)
 {
 
 }
@@ -29,4 +31,12 @@ AddresseeLineEditAkonadi::AddresseeLineEditAkonadi()
 AddresseeLineEditAkonadi::~AddresseeLineEditAkonadi()
 {
 
+}
+
+Akonadi::Session *AddresseeLineEditAkonadi::akonadiSession()
+{
+    if (!m_akonadiSession) {
+        m_akonadiSession = new Akonadi::Session("contactsCompletionSession");
+    }
+    return m_akonadiSession;
 }

@@ -20,12 +20,23 @@
 #ifndef ADDRESSEELINEEDITAKONADI_H
 #define ADDRESSEELINEEDITAKONADI_H
 
+namespace Akonadi {
+class Session;
+}
+
 namespace KPIM {
+class AddresseeLineEditStatic;
 class AddresseeLineEditAkonadi
 {
 public:
-    AddresseeLineEditAkonadi();
+    explicit AddresseeLineEditAkonadi(AddresseeLineEditStatic *addressLineStatic);
     ~AddresseeLineEditAkonadi();
+
+    Akonadi::Session *akonadiSession();
+
+private:
+    Akonadi::Session *m_akonadiSession;
+    AddresseeLineEditStatic *mAddressLineStatic;
 };
 }
 
