@@ -44,8 +44,6 @@ public:
     void loadBalooBlackList();
     void alternateColor();
     void init();
-    void startLoadingLDAPEntries();
-    void stopLDAPLookup();
     void setCompletedItems(const QStringList &items, bool autoSuggest);
     void addCompletionItem(const QString &string, int weight, int source, const QStringList *keyWords = nullptr);
     const QStringList adjustedCompletionItems(bool fullSearch);

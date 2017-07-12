@@ -95,6 +95,8 @@ public:
     QTimer *ldapTimer() const;
     bool isLdapClientToCompletionSourceMapContains(int value) const;
     int ldapClientToCompletionSourceValue(int value) const;
+    void stopLDAPLookup();
+    void startLoadingLDAPEntries();
 
     //Baloo
     int balooCompletionSource() const;

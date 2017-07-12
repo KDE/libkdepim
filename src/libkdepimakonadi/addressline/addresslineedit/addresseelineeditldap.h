@@ -54,6 +54,7 @@ public:
     AddresseeLineEdit *addressLineEdit() const;
     void setAddressLineEdit(AddresseeLineEdit *addressLineEdit);
 
+    void startLoadingLDAPEntries();
 private:
     // maps LDAP client indices to completion source indices
     // the assumption that they are always the first n indices in s_static->completion

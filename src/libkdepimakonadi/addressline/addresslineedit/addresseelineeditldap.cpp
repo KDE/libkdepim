@@ -124,3 +124,23 @@ void AddresseeLineEditLdap::setAddressLineEdit(AddresseeLineEdit *addressLineEdi
 {
     mAddressLineEdit = addressLineEdit;
 }
+
+void AddresseeLineEditLdap::startLoadingLDAPEntries()
+{
+    QString text(mLdapText);
+
+    // TODO cache last?
+    QString prevAddr;
+    const int index = text.lastIndexOf(QLatin1Char(','));
+    if (index >= 0) {
+        prevAddr = text.left(index + 1) + QLatin1Char(' ');
+        text = text.mid(index + 1, 255).trimmed();
+    }
+
+    if (text.isEmpty()) {
+        return;
+    }
+
+    mLdapSearch->startSearch(text);
+}
+

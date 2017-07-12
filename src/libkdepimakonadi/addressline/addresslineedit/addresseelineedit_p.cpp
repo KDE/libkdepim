@@ -69,7 +69,7 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
 AddresseeLineEditPrivate::~AddresseeLineEditPrivate()
 {
     if (AddresseeLineEditManager::self()->ldapSearch() && AddresseeLineEditManager::self()->addressLineEdit() == q) {
-        stopLDAPLookup();
+        AddresseeLineEditManager::self()->stopLDAPLookup();
     }
 }
 
@@ -77,7 +77,7 @@ void AddresseeLineEditPrivate::restartTime(const QString &searchString)
 {
     if (useCompletion() && AddresseeLineEditManager::self()->ldapTimer()) {
         if (AddresseeLineEditManager::self()->ldapText() != searchString || AddresseeLineEditManager::self()->addressLineEdit() != q) {
-            stopLDAPLookup();
+            AddresseeLineEditManager::self()->stopLDAPLookup();
         }
 
         AddresseeLineEditManager::self()->setLdapText(searchString);
@@ -173,31 +173,6 @@ void AddresseeLineEditPrivate::setIcon(const QIcon &icon, const QString &tooltip
         q->setStyleSheet(QStringLiteral("QLineEdit { padding-left: %1px }").arg(padding));
         m_toolButton->setVisible(true);
     }
-}
-
-void AddresseeLineEditPrivate::startLoadingLDAPEntries()
-{
-    QString text(AddresseeLineEditManager::self()->ldapText());
-
-    // TODO cache last?
-    QString prevAddr;
-    const int index = text.lastIndexOf(QLatin1Char(','));
-    if (index >= 0) {
-        prevAddr = text.left(index + 1) + QLatin1Char(' ');
-        text = text.mid(index + 1, 255).trimmed();
-    }
-
-    if (text.isEmpty()) {
-        return;
-    }
-
-    AddresseeLineEditManager::self()->ldapSearch()->startSearch(text);
-}
-
-void AddresseeLineEditPrivate::stopLDAPLookup()
-{
-    AddresseeLineEditManager::self()->ldapSearch()->cancelSearch();
-    AddresseeLineEditManager::self()->setAddressLineEdit(nullptr);
 }
 
 QStringList AddresseeLineEdit::cleanupEmailList(const QStringList &inputList)
@@ -682,7 +657,7 @@ void AddresseeLineEditPrivate::slotStartLDAPLookup()
         if (AddresseeLineEditManager::self()->addressLineEdit() != q) {
             return;
         }
-        startLoadingLDAPEntries();
+        AddresseeLineEditManager::self()->startLoadingLDAPEntries();
     }
 }
 
@@ -751,7 +726,7 @@ KLDAP::LdapClientSearch *AddresseeLineEditPrivate::ldapSearch()
 void AddresseeLineEditPrivate::slotUserCancelled(const QString &cancelText)
 {
     if (AddresseeLineEditManager::self()->ldapSearch() && AddresseeLineEditManager::self()->addressLineEdit() == q) {
-        stopLDAPLookup();
+        AddresseeLineEditManager::self()->stopLDAPLookup();
     }
 
     q->callUserCancelled(m_previousAddresses + cancelText);   // in KLineEdit

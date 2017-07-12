@@ -168,3 +168,13 @@ void AddresseeLineEditManager::setLdapText(const QString &ldapText)
     mAddressessLineEditLdap->setLdapText(ldapText);
 }
 
+void AddresseeLineEditManager::stopLDAPLookup()
+{
+    mAddressessLineEditLdap->ldapSearch()->cancelSearch();
+    mAddressessLineEditLdap->setAddressLineEdit(nullptr);
+}
+
+void AddresseeLineEditManager::startLoadingLDAPEntries()
+{
+    mAddressessLineEditLdap->startLoadingLDAPEntries();
+}
