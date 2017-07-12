@@ -109,8 +109,6 @@ public:
     void setAddressLineEdit(AddresseeLineEdit *addressLineEdit);
 
 private:
-    AddresseeLineEdit *mAddressLineEdit;
-
     KMailCompletion *mCompletion;
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
     AddresseeLineEditLdap *mAddressessLineEditLdap;

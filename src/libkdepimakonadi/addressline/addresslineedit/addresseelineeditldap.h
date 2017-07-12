@@ -30,6 +30,7 @@ class LdapClientSearch;
 
 namespace KPIM {
 class AddresseeLineEditManager;
+class AddresseeLineEdit;
 class AddresseeLineEditLdap : public QObject
 {
 public:
@@ -50,6 +51,9 @@ public:
     QString ldapText() const;
     void setLdapText(const QString &ldapText);
 
+    AddresseeLineEdit *addressLineEdit() const;
+    void setAddressLineEdit(AddresseeLineEdit *addressLineEdit);
+
 private:
     // maps LDAP client indices to completion source indices
     // the assumption that they are always the first n indices in s_static->completion
@@ -57,6 +61,7 @@ private:
     QMap<int, int> mLdapClientToCompletionSourceMap;
     QString mLdapText;
     QTimer *mLdapTimer;
+    AddresseeLineEdit *mAddressLineEdit;
     KLDAP::LdapClientSearch *mLdapSearch;
 
     AddresseeLineEditManager *mAddressLineStatic;

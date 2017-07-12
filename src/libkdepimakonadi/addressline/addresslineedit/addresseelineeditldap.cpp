@@ -29,6 +29,7 @@ using namespace KPIM;
 AddresseeLineEditLdap::AddresseeLineEditLdap(AddresseeLineEditManager *addressLineStatic, QObject *parent)
     : QObject(parent)
     , mLdapTimer(nullptr)
+    , mAddressLineEdit(nullptr)
     , mLdapSearch(nullptr)
     , mAddressLineStatic(addressLineStatic)
 {
@@ -112,4 +113,14 @@ QString AddresseeLineEditLdap::ldapText() const
 void AddresseeLineEditLdap::setLdapText(const QString &ldapText)
 {
     mLdapText = ldapText;
+}
+
+AddresseeLineEdit *AddresseeLineEditLdap::addressLineEdit() const
+{
+    return mAddressLineEdit;
+}
+
+void AddresseeLineEditLdap::setAddressLineEdit(AddresseeLineEdit *addressLineEdit)
+{
+    mAddressLineEdit = addressLineEdit;
 }
