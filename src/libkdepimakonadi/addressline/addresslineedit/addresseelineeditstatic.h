@@ -32,6 +32,7 @@ namespace KPIM {
 class KMailCompletion;
 class AddresseeLineEdit;
 class AddresseeLineEditAkonadi;
+class AddresseeLineEditLdap;
 class AddresseeLineEditStatic
 {
 public:
@@ -53,12 +54,14 @@ public:
 
     Akonadi::Session *akonadiSession();
 
+    KLDAP::LdapClientSearch *ldapSearch() const;
+
+    QTimer *ldapTimer() const;
+
+
     KMailCompletion *completion;
     CompletionItemsMap completionItemMap;
     QStringList completionSources;
-
-    QTimer *ldapTimer;
-    KLDAP::LdapClientSearch *ldapSearch;
 
     QString ldapText;
     AddresseeLineEdit *addressLineEdit;
@@ -93,8 +96,10 @@ public:
     QVector<QWeakPointer<Akonadi::Job> > akonadiJobsInFlight;
     int balooCompletionSource;
 
+    void initializeLdap();
 private:
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
+    AddresseeLineEditLdap *mAddressessLineEditLdap;
 };
 }
 #endif // ADDRESSEELINEEDITSTATIC_H

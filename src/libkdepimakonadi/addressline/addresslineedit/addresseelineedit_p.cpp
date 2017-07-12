@@ -75,22 +75,22 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
 
 AddresseeLineEditPrivate::~AddresseeLineEditPrivate()
 {
-    if (s_static->ldapSearch && s_static->addressLineEdit == q) {
+    if (s_static->ldapSearch() && s_static->addressLineEdit == q) {
         stopLDAPLookup();
     }
 }
 
 void AddresseeLineEditPrivate::restartTime(const QString &searchString)
 {
-    if (useCompletion() && s_static->ldapTimer) {
+    if (useCompletion() && s_static->ldapTimer()) {
         if (s_static->ldapText != searchString || s_static->addressLineEdit != q) {
             stopLDAPLookup();
         }
 
         s_static->ldapText = searchString;
         s_static->addressLineEdit = q;
-        s_static->ldapTimer->setSingleShot(true);
-        s_static->ldapTimer->start(500);
+        s_static->ldapTimer()->setSingleShot(true);
+        s_static->ldapTimer()->start(500);
     }
 }
 
@@ -135,27 +135,7 @@ void AddresseeLineEditPrivate::init()
     }
 
     if (m_useCompletion) {
-        if (!s_static->ldapTimer) {
-            s_static->ldapTimer = new QTimer;
-            s_static->ldapSearch = new KLDAP::LdapClientSearch;
-
-            /* The reasoning behind this filter is:
-             * If it's a person, or a distlist, show it, even if it doesn't have an email address.
-             * If it's not a person, or a distlist, only show it if it has an email attribute.
-             * This allows both resource accounts with an email address which are not a person and
-             * person entries without an email address to show up, while still not showing things
-             * like structural entries in the ldap tree.
-             */
-
-#if 0
-            s_static->ldapSearch->setFilter(QStringLiteral("&(|(objectclass=person)(objectclass=groupOfNames)(mail=*))"
-                                                           "(|(cn=%1*)(mail=%1*)(mail=*@%1*)(givenName=%1*)(sn=%1*))"));
-#endif
-            //Fix bug 323272 "Exchange doesn't like any queries beginning with *."
-            s_static->ldapSearch->setFilter(QStringLiteral("&(|(objectclass=person)(objectclass=groupOfNames)(mail=*))"
-                                                           "(|(cn=%1*)(mail=%1*)(givenName=%1*)(sn=%1*))"));
-        }
-
+        s_static->initializeLdap();
         s_static->balooCompletionSource = q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1);
 
         s_static->updateLDAPWeights();
@@ -171,8 +151,8 @@ void AddresseeLineEditPrivate::init()
                     this, SLOT(slotPopupCompletion(QString)));
             connect(box, &KCompletionBox::userCancelled,
                     this, &AddresseeLineEditPrivate::slotUserCancelled);
-            connect(s_static->ldapTimer, &QTimer::timeout, this, &AddresseeLineEditPrivate::slotStartLDAPLookup);
-            connect(s_static->ldapSearch, SIGNAL(searchData(KLDAP::LdapResult::List)),
+            connect(s_static->ldapTimer(), &QTimer::timeout, this, &AddresseeLineEditPrivate::slotStartLDAPLookup);
+            connect(s_static->ldapSearch(), SIGNAL(searchData(KLDAP::LdapResult::List)),
                     SLOT(slotLDAPSearchData(KLDAP::LdapResult::List)));
 
             m_completionInitialized = true;
@@ -218,12 +198,12 @@ void AddresseeLineEditPrivate::startLoadingLDAPEntries()
         return;
     }
 
-    s_static->ldapSearch->startSearch(text);
+    s_static->ldapSearch()->startSearch(text);
 }
 
 void AddresseeLineEditPrivate::stopLDAPLookup()
 {
-    s_static->ldapSearch->cancelSearch();
+    s_static->ldapSearch()->cancelSearch();
     s_static->addressLineEdit = nullptr;
 }
 
@@ -703,7 +683,7 @@ void AddresseeLineEditPrivate::slotStartLDAPLookup()
         if (mode == KCompletion::CompletionNone) {
             return;
         }
-        if (!s_static->ldapSearch->isAvailable()) {
+        if (!s_static->ldapSearch()->isAvailable()) {
             return;
         }
         if (s_static->addressLineEdit != q) {
@@ -761,7 +741,7 @@ void AddresseeLineEditPrivate::slotEditCompletionOrder()
 {
     init(); // for s_static->ldapSearch
     if (m_useCompletion) {
-        QPointer<CompletionOrderEditor> dlg = new CompletionOrderEditor(s_static->ldapSearch, nullptr);
+        QPointer<CompletionOrderEditor> dlg = new CompletionOrderEditor(s_static->ldapSearch(), nullptr);
         if (dlg->exec()) {
             s_static->updateCompletionOrder();
         }
@@ -772,12 +752,12 @@ void AddresseeLineEditPrivate::slotEditCompletionOrder()
 KLDAP::LdapClientSearch *AddresseeLineEditPrivate::ldapSearch()
 {
     init(); // for s_static->ldapSearch
-    return s_static->ldapSearch;
+    return s_static->ldapSearch();
 }
 
 void AddresseeLineEditPrivate::slotUserCancelled(const QString &cancelText)
 {
-    if (s_static->ldapSearch && s_static->addressLineEdit == q) {
+    if (s_static->ldapSearch() && s_static->addressLineEdit == q) {
         stopLDAPLookup();
     }
 

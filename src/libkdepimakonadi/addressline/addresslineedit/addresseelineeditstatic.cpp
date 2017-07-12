@@ -17,6 +17,7 @@
 
 #include "addresseelineeditstatic.h"
 #include "addresseelineeditakonadi.h"
+#include "addresseelineeditldap.h"
 #include "kmailcompletion.h"
 
 #include <Libkdepim/LdapClient>
@@ -28,21 +29,19 @@ using namespace KPIM;
 
 AddresseeLineEditStatic::AddresseeLineEditStatic()
     : completion(new KMailCompletion)
-    , ldapTimer(nullptr)
-    , ldapSearch(nullptr)
     , addressLineEdit(nullptr)
     , balooCompletionSource(0)
     , mAddresseeLineEditAkonadi(new AddresseeLineEditAkonadi(this))
+    , mAddressessLineEditLdap(new AddresseeLineEditLdap(this))
 {
 }
 
 AddresseeLineEditStatic::~AddresseeLineEditStatic()
 {
     delete completion;
-    delete ldapTimer;
-    delete ldapSearch;
 
     delete mAddresseeLineEditAkonadi;
+    delete mAddressessLineEditLdap;
 }
 
 void AddresseeLineEditStatic::updateCompletionOrder()
@@ -58,19 +57,7 @@ void AddresseeLineEditStatic::updateCollectionWeights()
 
 void AddresseeLineEditStatic::updateLDAPWeights()
 {
-    /* Add completion sources for all ldap server, 0 to n. Added first so
-       * that they map to the LdapClient::clientNumber() */
-    ldapSearch->updateCompletionWeights();
-    int clientIndex = 0;
-    for (const KLDAP::LdapClient *client : ldapSearch->clients()) {
-        const int sourceIndex
-            = addCompletionSource(i18n("LDAP server: %1", client->server().host()),
-                                  client->completionWeight());
-
-        ldapClientToCompletionSourceMap.insert(clientIndex, sourceIndex);
-
-        ++clientIndex;
-    }
+    mAddressessLineEditLdap->updateLDAPWeights();
 }
 
 int AddresseeLineEditStatic::addCompletionSource(const QString &source, int weight)
@@ -103,4 +90,19 @@ void AddresseeLineEditStatic::removeCompletionSource(const QString &source)
 Akonadi::Session *AddresseeLineEditStatic::akonadiSession()
 {
     return mAddresseeLineEditAkonadi->akonadiSession();
+}
+
+KLDAP::LdapClientSearch *AddresseeLineEditStatic::ldapSearch() const
+{
+    return mAddressessLineEditLdap->ldapSearch();
+}
+
+QTimer *AddresseeLineEditStatic::ldapTimer() const
+{
+    return mAddressessLineEditLdap->ldapTimer();
+}
+
+void AddresseeLineEditStatic::initializeLdap()
+{
+    mAddressessLineEditLdap->init();
 }

@@ -50,10 +50,9 @@ private:
     // the assumption that they are always the first n indices in s_static->completion
     // does not hold when clients are added later on
     QMap<int, int> mLdapClientToCompletionSourceMap;
-
-
     QTimer *mLdapTimer;
     KLDAP::LdapClientSearch *mLdapSearch;
+
     AddresseeLineEditStatic *mAddressLineStatic;
 };
 }
