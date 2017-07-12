@@ -34,15 +34,16 @@ class AddresseeLineEdit;
 class AddresseeLineEditAkonadi;
 class AddresseeLineEditLdap;
 class AddresseeLineEditBaloo;
-class AddresseeLineEditStatic
+class AddresseeLineEditManager
 {
 public:
     typedef QMap< QString, QPair<int, int> > CompletionItemsMap;
 
-    AddresseeLineEditStatic();
+    AddresseeLineEditManager();
 
-    ~AddresseeLineEditStatic();
+    ~AddresseeLineEditManager();
 
+    static AddresseeLineEditManager *self();
 
     void updateCollectionWeights();
 
@@ -55,7 +56,6 @@ public:
 
 
 
-    KMailCompletion *completion;
     CompletionItemsMap completionItemMap;
     QStringList completionSources;
 
@@ -103,8 +103,10 @@ public:
     //Akonadi
     Akonadi::Session *akonadiSession();
 
+    KMailCompletion *completion() const;
 
 private:
+    KMailCompletion *mCompletion;
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
     AddresseeLineEditLdap *mAddressessLineEditLdap;
     AddresseeLineEditBaloo *mAddressessLineEditBaloo;

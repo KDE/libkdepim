@@ -29,11 +29,11 @@ class LdapClientSearch;
 }
 
 namespace KPIM {
-class AddresseeLineEditStatic;
+class AddresseeLineEditManager;
 class AddresseeLineEditLdap : public QObject
 {
 public:
-    explicit AddresseeLineEditLdap(AddresseeLineEditStatic *addressLineStatic, QObject *parent = nullptr);
+    explicit AddresseeLineEditLdap(AddresseeLineEditManager *addressLineStatic, QObject *parent = nullptr);
     ~AddresseeLineEditLdap();
 
     void init();
@@ -59,7 +59,7 @@ private:
     QTimer *mLdapTimer;
     KLDAP::LdapClientSearch *mLdapSearch;
 
-    AddresseeLineEditStatic *mAddressLineStatic;
+    AddresseeLineEditManager *mAddressLineStatic;
 };
 }
 

@@ -18,7 +18,7 @@
 */
 
 #include "addresseelineeditldap.h"
-#include "addresseelineeditstatic.h"
+#include "addresseelineeditmanager.h"
 #include <Libkdepim/LdapClientSearch>
 #include <Libkdepim/LdapClient>
 #include <KLDAP/LdapServer>
@@ -26,7 +26,7 @@
 
 using namespace KPIM;
 
-AddresseeLineEditLdap::AddresseeLineEditLdap(AddresseeLineEditStatic *addressLineStatic, QObject *parent)
+AddresseeLineEditLdap::AddresseeLineEditLdap(AddresseeLineEditManager *addressLineStatic, QObject *parent)
     : QObject(parent)
     , mLdapTimer(nullptr)
     , mLdapSearch(nullptr)

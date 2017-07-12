@@ -39,7 +39,6 @@
 #include <KEmailAddress>
 #include <KColorScheme>
 #include <KJobWidgets>
-#include <kdelibs4configmigrator.h>
 #include <kcontacts/contactgrouptool.h>
 #include <KIO/StoredTransferJob>
 #include <Akonadi/Contact/ContactGroupExpandJob>

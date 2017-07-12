@@ -25,18 +25,18 @@ class Session;
 }
 
 namespace KPIM {
-class AddresseeLineEditStatic;
+class AddresseeLineEditManager;
 class AddresseeLineEditAkonadi
 {
 public:
-    explicit AddresseeLineEditAkonadi(AddresseeLineEditStatic *addressLineStatic);
+    explicit AddresseeLineEditAkonadi(AddresseeLineEditManager *addressLineStatic);
     ~AddresseeLineEditAkonadi();
 
     Akonadi::Session *akonadiSession();
 
 private:
     Akonadi::Session *m_akonadiSession;
-    AddresseeLineEditStatic *mAddressLineStatic;
+    AddresseeLineEditManager *mAddressLineStatic;
 };
 }
 

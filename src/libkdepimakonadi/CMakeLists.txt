@@ -18,7 +18,7 @@ set(kdepim_addressline_LIB_SRCS
     addressline/completionorder/completionorderwidget.cpp
     addressline/addresslineedit/addresseelineedit.cpp
     addressline/addresslineedit/addresseelineedit_p.cpp
-    addressline/addresslineedit/addresseelineeditstatic.cpp
+    addressline/addresslineedit/addresseelineeditmanager.cpp
     addressline/addresslineedit/addresseelineeditldap.cpp
     addressline/addresslineedit/addresseelineeditakonadi.cpp
     addressline/addresslineedit/addresseelineeditbaloo.cpp

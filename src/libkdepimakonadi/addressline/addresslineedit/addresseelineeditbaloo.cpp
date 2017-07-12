@@ -21,7 +21,7 @@
 
 using namespace KPIM;
 
-AddresseeLineEditBaloo::AddresseeLineEditBaloo(AddresseeLineEditStatic *addressLineStatic)
+AddresseeLineEditBaloo::AddresseeLineEditBaloo(AddresseeLineEditManager *addressLineStatic)
     : mBalooCompletionSource(0)
     , mAddressLineStatic(addressLineStatic)
 {

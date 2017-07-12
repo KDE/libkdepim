@@ -15,7 +15,7 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include "addresseelineeditstatic.h"
+#include "addresseelineeditmanager.h"
 #include "addresseelineeditakonadi.h"
 #include "addresseelineeditbaloo.h"
 #include "addresseelineeditldap.h"
@@ -28,41 +28,48 @@
 #include <AkonadiCore/Session>
 using namespace KPIM;
 
-AddresseeLineEditStatic::AddresseeLineEditStatic()
-    : completion(new KMailCompletion)
-    , addressLineEdit(nullptr)
+Q_GLOBAL_STATIC(AddresseeLineEditManager, sInstance)
+
+AddresseeLineEditManager::AddresseeLineEditManager()
+    : addressLineEdit(nullptr)
+    , mCompletion(new KMailCompletion)
     , mAddresseeLineEditAkonadi(new AddresseeLineEditAkonadi(this))
     , mAddressessLineEditLdap(new AddresseeLineEditLdap(this))
     , mAddressessLineEditBaloo(new AddresseeLineEditBaloo(this))
 {
 }
 
-AddresseeLineEditStatic::~AddresseeLineEditStatic()
+AddresseeLineEditManager::~AddresseeLineEditManager()
 {
-    delete completion;
+    delete mCompletion;
 
     delete mAddresseeLineEditAkonadi;
     delete mAddressessLineEditLdap;
     delete mAddressessLineEditBaloo;
 }
 
-void AddresseeLineEditStatic::updateCompletionOrder()
+AddresseeLineEditManager *AddresseeLineEditManager::self()
+{
+    return sInstance;
+}
+
+void AddresseeLineEditManager::updateCompletionOrder()
 {
     updateLDAPWeights();
     updateCollectionWeights();
 }
 
-void AddresseeLineEditStatic::updateCollectionWeights()
+void AddresseeLineEditManager::updateCollectionWeights()
 {
     akonadiCollectionToCompletionSourceMap.clear();
 }
 
-void AddresseeLineEditStatic::updateLDAPWeights()
+void AddresseeLineEditManager::updateLDAPWeights()
 {
     mAddressessLineEditLdap->updateLDAPWeights();
 }
 
-int AddresseeLineEditStatic::addCompletionSource(const QString &source, int weight)
+int AddresseeLineEditManager::addCompletionSource(const QString &source, int weight)
 {
     QMap<QString, int>::iterator it = completionSourceWeights.find(source);
     if (it == completionSourceWeights.end()) {
@@ -80,61 +87,66 @@ int AddresseeLineEditStatic::addCompletionSource(const QString &source, int weig
     }
 }
 
-void AddresseeLineEditStatic::removeCompletionSource(const QString &source)
+void AddresseeLineEditManager::removeCompletionSource(const QString &source)
 {
     QMap<QString, int>::iterator it = completionSourceWeights.find(source);
     if (it != completionSourceWeights.end()) {
         completionSourceWeights.remove(source);
-        completion->clear();
+        mCompletion->clear();
     }
 }
 
-Akonadi::Session *AddresseeLineEditStatic::akonadiSession()
+Akonadi::Session *AddresseeLineEditManager::akonadiSession()
 {
     return mAddresseeLineEditAkonadi->akonadiSession();
 }
 
-KLDAP::LdapClientSearch *AddresseeLineEditStatic::ldapSearch() const
+KMailCompletion *AddresseeLineEditManager::completion() const
+{
+    return mCompletion;
+}
+
+KLDAP::LdapClientSearch *AddresseeLineEditManager::ldapSearch() const
 {
     return mAddressessLineEditLdap->ldapSearch();
 }
 
-QTimer *AddresseeLineEditStatic::ldapTimer() const
+QTimer *AddresseeLineEditManager::ldapTimer() const
 {
     return mAddressessLineEditLdap->ldapTimer();
 }
 
-int AddresseeLineEditStatic::ldapClientToCompletionSourceValue(int value) const
+int AddresseeLineEditManager::ldapClientToCompletionSourceValue(int value) const
 {
     return mAddressessLineEditLdap->ldapClientToCompletionSourceValue(value);
 }
 
-bool AddresseeLineEditStatic::isLdapClientToCompletionSourceMapContains(int value) const
+bool AddresseeLineEditManager::isLdapClientToCompletionSourceMapContains(int value) const
 {
     return mAddressessLineEditLdap->isLdapClientToCompletionSourceMapContains(value);
 }
 
-int AddresseeLineEditStatic::balooCompletionSource() const
+int AddresseeLineEditManager::balooCompletionSource() const
 {
     return mAddressessLineEditBaloo->balooCompletionSource();
 }
 
-void AddresseeLineEditStatic::setBalooCompletionSource(int value)
+void AddresseeLineEditManager::setBalooCompletionSource(int value)
 {
     mAddressessLineEditBaloo->setBalooCompletionSource(value);
 }
 
-void AddresseeLineEditStatic::initializeLdap()
+void AddresseeLineEditManager::initializeLdap()
 {
     mAddressessLineEditLdap->init();
 }
 
-QString AddresseeLineEditStatic::ldapText() const
+QString AddresseeLineEditManager::ldapText() const
 {
     return mAddressessLineEditLdap->ldapText();
 }
 
-void AddresseeLineEditStatic::setLdapText(const QString &ldapText)
+void AddresseeLineEditManager::setLdapText(const QString &ldapText)
 {
     mAddressessLineEditLdap->setLdapText(ldapText);
 }

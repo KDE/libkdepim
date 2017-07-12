@@ -16,7 +16,7 @@
 */
 
 #include "addressline/completionorder/completionordereditor.h"
-#include "addresseelineeditstatic.h"
+#include "addresseelineeditmanager.h"
 #include "addresseelineedit_p.h"
 #include "addresseelineedit.h"
 #include "kmailcompletion.h"
@@ -45,7 +45,6 @@
 static QNetworkConfigurationManager *s_networkConfigMgr = nullptr;
 
 namespace KPIM {
-Q_GLOBAL_STATIC(AddresseeLineEditStatic, s_static)
 AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, bool enableCompletion)
     : QObject(qq)
     , q(qq)
@@ -75,22 +74,22 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
 
 AddresseeLineEditPrivate::~AddresseeLineEditPrivate()
 {
-    if (s_static->ldapSearch() && s_static->addressLineEdit == q) {
+    if (AddresseeLineEditManager::self()->ldapSearch() && AddresseeLineEditManager::self()->addressLineEdit == q) {
         stopLDAPLookup();
     }
 }
 
 void AddresseeLineEditPrivate::restartTime(const QString &searchString)
 {
-    if (useCompletion() && s_static->ldapTimer()) {
-        if (s_static->ldapText() != searchString || s_static->addressLineEdit != q) {
+    if (useCompletion() && AddresseeLineEditManager::self()->ldapTimer()) {
+        if (AddresseeLineEditManager::self()->ldapText() != searchString || AddresseeLineEditManager::self()->addressLineEdit != q) {
             stopLDAPLookup();
         }
 
-        s_static->setLdapText(searchString);
-        s_static->addressLineEdit = q;
-        s_static->ldapTimer()->setSingleShot(true);
-        s_static->ldapTimer()->start(500);
+        AddresseeLineEditManager::self()->setLdapText(searchString);
+        AddresseeLineEditManager::self()->addressLineEdit = q;
+        AddresseeLineEditManager::self()->ldapTimer()->setSingleShot(true);
+        AddresseeLineEditManager::self()->ldapTimer()->start(500);
     }
 }
 
@@ -100,7 +99,7 @@ class SourceWithWeight
 {
 public:
     int weight;           // the weight of the source
-    int index;            // index into s_static->completionSources
+    int index;            // index into AddresseeLineEditStatic::self()->completionSources
     QString sourceName;   // the name of the source, e.g. "LDAP Server"
 
     bool operator<(const SourceWithWeight &other) const
@@ -129,18 +128,18 @@ void AddresseeLineEditPrivate::init()
     m_toolButton->setStyleSheet(QStringLiteral("QToolButton { border: none; }"));
     connect(m_toolButton, &QToolButton::clicked, q, &AddresseeLineEdit::iconClicked);
 
-    if (!s_static.exists()) {
-        s_static->completion->setOrder(KCompletion::Weighted);
-        s_static->completion->setIgnoreCase(true);
+    if (!AddresseeLineEditManager::self()) {
+        AddresseeLineEditManager::self()->completion()->setOrder(KCompletion::Weighted);
+        AddresseeLineEditManager::self()->completion()->setIgnoreCase(true);
     }
 
     if (m_useCompletion) {
-        s_static->initializeLdap();
-        s_static->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
+        AddresseeLineEditManager::self()->initializeLdap();
+        AddresseeLineEditManager::self()->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
 
-        s_static->updateLDAPWeights();
+        AddresseeLineEditManager::self()->updateLDAPWeights();
         if (!m_completionInitialized) {
-            q->setCompletionObject(s_static->completion, false);
+            q->setCompletionObject(AddresseeLineEditManager::self()->completion(), false);
             connect(q, &KLineEdit::completion,
                     this, &AddresseeLineEditPrivate::slotCompletion);
             connect(q, SIGNAL(returnPressed(QString)),
@@ -151,8 +150,8 @@ void AddresseeLineEditPrivate::init()
                     this, SLOT(slotPopupCompletion(QString)));
             connect(box, &KCompletionBox::userCancelled,
                     this, &AddresseeLineEditPrivate::slotUserCancelled);
-            connect(s_static->ldapTimer(), &QTimer::timeout, this, &AddresseeLineEditPrivate::slotStartLDAPLookup);
-            connect(s_static->ldapSearch(), SIGNAL(searchData(KLDAP::LdapResult::List)),
+            connect(AddresseeLineEditManager::self()->ldapTimer(), &QTimer::timeout, this, &AddresseeLineEditPrivate::slotStartLDAPLookup);
+            connect(AddresseeLineEditManager::self()->ldapSearch(), SIGNAL(searchData(KLDAP::LdapResult::List)),
                     SLOT(slotLDAPSearchData(KLDAP::LdapResult::List)));
 
             m_completionInitialized = true;
@@ -184,7 +183,7 @@ void AddresseeLineEditPrivate::setIcon(const QIcon &icon, const QString &tooltip
 
 void AddresseeLineEditPrivate::startLoadingLDAPEntries()
 {
-    QString text(s_static->ldapText());
+    QString text(AddresseeLineEditManager::self()->ldapText());
 
     // TODO cache last?
     QString prevAddr;
@@ -198,13 +197,13 @@ void AddresseeLineEditPrivate::startLoadingLDAPEntries()
         return;
     }
 
-    s_static->ldapSearch()->startSearch(text);
+    AddresseeLineEditManager::self()->ldapSearch()->startSearch(text);
 }
 
 void AddresseeLineEditPrivate::stopLDAPLookup()
 {
-    s_static->ldapSearch()->cancelSearch();
-    s_static->addressLineEdit = nullptr;
+    AddresseeLineEditManager::self()->ldapSearch()->cancelSearch();
+    AddresseeLineEditManager::self()->addressLineEdit = nullptr;
 }
 
 QStringList AddresseeLineEdit::cleanupEmailList(const QStringList &inputList)
@@ -228,7 +227,7 @@ void AddresseeLineEditPrivate::searchInBaloo()
     Akonadi::Search::PIM::ContactCompleter com(trimmedString, 20);
     const QStringList listEmail = cleanupEmailList(com.complete());
     for (const QString &email : listEmail) {
-        addCompletionItem(email, 1, s_static->balooCompletionSource());
+        addCompletionItem(email, 1, AddresseeLineEditManager::self()->balooCompletionSource());
     }
     doCompletion(m_lastSearchMode);
 }
@@ -266,7 +265,7 @@ void AddresseeLineEditPrivate::setCompletedItems(const QStringList &items, bool 
             // we have to install the event filter after popup(), since that
             // calls show(), and that's where KCompletionBox installs its filter.
             // We want to be first, though, so do it now.
-            if (s_static->completion->order() == KCompletion::Weighted) {
+            if (AddresseeLineEditManager::self()->completion()->order() == KCompletion::Weighted) {
                 qApp->installEventFilter(q);
             }
         }
@@ -300,26 +299,26 @@ void AddresseeLineEditPrivate::addCompletionItem(const QString &string, int weig
     // from KCompletion, we have to keep our own QMap.
     // We also update the source since the item should always be shown from the source with the highest weight
 
-    AddresseeLineEditStatic::CompletionItemsMap::iterator it = s_static->completionItemMap.find(string);
-    if (it != s_static->completionItemMap.end()) {
+    AddresseeLineEditManager::CompletionItemsMap::iterator it = AddresseeLineEditManager::self()->completionItemMap.find(string);
+    if (it != AddresseeLineEditManager::self()->completionItemMap.end()) {
         weight = qMax((*it).first, weight);
         (*it).first = weight;
         (*it).second = completionItemSource;
     } else {
-        s_static->completionItemMap.insert(string, qMakePair(weight, completionItemSource));
+        AddresseeLineEditManager::self()->completionItemMap.insert(string, qMakePair(weight, completionItemSource));
     }
 
-    s_static->completion->addItem(string, weight);
+    AddresseeLineEditManager::self()->completion()->addItem(string, weight);
     if (keyWords && !keyWords->isEmpty()) {
-        s_static->completion->addItemWithKeys(string, weight, keyWords);    // see kmailcompletion.cpp
+        AddresseeLineEditManager::self()->completion()->addItemWithKeys(string, weight, keyWords);    // see kmailcompletion.cpp
     }
 }
 
 const QStringList KPIM::AddresseeLineEditPrivate::adjustedCompletionItems(bool fullSearch)
 {
     QStringList items = fullSearch
-                        ? s_static->completion->allMatches(m_searchString)
-                        : s_static->completion->substringCompletion(m_searchString);
+                        ? AddresseeLineEditManager::self()->completion()->allMatches(m_searchString)
+                        : AddresseeLineEditManager::self()->completion()->substringCompletion(m_searchString);
 
     //force items to be sorted by email
     items.sort();
@@ -341,16 +340,16 @@ const QStringList KPIM::AddresseeLineEditPrivate::adjustedCompletionItems(bool f
     QMap<int, QStringList> sections;
     QStringList sortedItems;
     for (QStringList::Iterator it = items.begin(); it != items.end(); ++it, ++i) {
-        AddresseeLineEditStatic::CompletionItemsMap::const_iterator cit = s_static->completionItemMap.constFind(*it);
-        if (cit == s_static->completionItemMap.constEnd()) {
+        AddresseeLineEditManager::CompletionItemsMap::const_iterator cit = AddresseeLineEditManager::self()->completionItemMap.constFind(*it);
+        if (cit == AddresseeLineEditManager::self()->completionItemMap.constEnd()) {
             continue;
         }
 
         const int index = (*cit).second;
 
-        if (s_static->completion->order() == KCompletion::Weighted) {
+        if (AddresseeLineEditManager::self()->completion()->order() == KCompletion::Weighted) {
             if (lastSourceIndex == -1 || lastSourceIndex != index) {
-                const QString sourceLabel(s_static->completionSources.at(index));
+                const QString sourceLabel(AddresseeLineEditManager::self()->completionSources.at(index));
                 if (sections.find(index) == sections.end()) {
                     it = items.insert(it, sourceLabel);
                     ++it; //skip new item
@@ -364,20 +363,20 @@ const QStringList KPIM::AddresseeLineEditPrivate::adjustedCompletionItems(bool f
         }
         sections[ index ].append(*it);
 
-        if (s_static->completion->order() == KCompletion::Sorted) {
+        if (AddresseeLineEditManager::self()->completion()->order() == KCompletion::Sorted) {
             sortedItems.append(*it);
         }
     }
 
-    if (s_static->completion->order() == KCompletion::Weighted) {
+    if (AddresseeLineEditManager::self()->completion()->order() == KCompletion::Weighted) {
         // Sort the sections
         QList<SourceWithWeight> sourcesAndWeights;
-        const int numberOfCompletionSources(s_static->completionSources.size());
+        const int numberOfCompletionSources(AddresseeLineEditManager::self()->completionSources.count());
         sourcesAndWeights.reserve(numberOfCompletionSources);
         for (int i = 0; i < numberOfCompletionSources; ++i) {
             SourceWithWeight sww;
-            sww.sourceName = s_static->completionSources.at(i);
-            sww.weight = s_static->completionSourceWeights[sww.sourceName];
+            sww.sourceName = AddresseeLineEditManager::self()->completionSources.at(i);
+            sww.weight = AddresseeLineEditManager::self()->completionSourceWeights[sww.sourceName];
             sww.index = i;
             sourcesAndWeights.append(sww);
         }
@@ -478,15 +477,15 @@ void AddresseeLineEditPrivate::akonadiPerformSearch()
     qCDebug(LIBKDEPIMAKONADI_LOG) << "searching akonadi with:" << m_searchString;
 
     // first, kill all job still in flight, they are no longer current
-    for (const QWeakPointer<Akonadi::Job> &job : qAsConst(s_static->akonadiJobsInFlight)) {
+    for (const QWeakPointer<Akonadi::Job> &job : qAsConst(AddresseeLineEditManager::self()->akonadiJobsInFlight)) {
         if (!job.isNull()) {
             job.data()->kill();
         }
     }
-    s_static->akonadiJobsInFlight.clear();
+    AddresseeLineEditManager::self()->akonadiJobsInFlight.clear();
 
     // now start new jobs
-    Akonadi::ContactSearchJob *contactJob = new Akonadi::ContactSearchJob(s_static->akonadiSession());
+    Akonadi::ContactSearchJob *contactJob = new Akonadi::ContactSearchJob(AddresseeLineEditManager::self()->akonadiSession());
     contactJob->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
     contactJob->setQuery(Akonadi::ContactSearchJob::NameOrEmail, m_searchString,
                          Akonadi::ContactSearchJob::ContainsWordBoundaryMatch);
@@ -495,7 +494,7 @@ void AddresseeLineEditPrivate::akonadiPerformSearch()
     connect(contactJob, &KJob::result,
             this, &AddresseeLineEditPrivate::slotAkonadiSearchResult);
 
-    Akonadi::ContactGroupSearchJob *groupJob = new Akonadi::ContactGroupSearchJob(s_static->akonadiSession());
+    Akonadi::ContactGroupSearchJob *groupJob = new Akonadi::ContactGroupSearchJob(AddresseeLineEditManager::self()->akonadiSession());
     groupJob->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
     groupJob->setQuery(Akonadi::ContactGroupSearchJob::Name, m_searchString,
                        Akonadi::ContactGroupSearchJob::ContainsMatch);
@@ -504,28 +503,28 @@ void AddresseeLineEditPrivate::akonadiPerformSearch()
     connect(groupJob, &KJob::result,
             this, &AddresseeLineEditPrivate::slotAkonadiSearchResult);
 
-    s_static->akonadiJobsInFlight.append(contactJob);
-    s_static->akonadiJobsInFlight.append(groupJob);
+    AddresseeLineEditManager::self()->akonadiJobsInFlight.append(contactJob);
+    AddresseeLineEditManager::self()->akonadiJobsInFlight.append(groupJob);
     akonadiHandlePending();
 }
 
 void AddresseeLineEditPrivate::akonadiHandlePending()
 {
-    qCDebug(LIBKDEPIMAKONADI_LOG) << "Pending items: " << s_static->akonadiPendingItems.size();
-    Akonadi::Item::List::iterator it = s_static->akonadiPendingItems.begin();
-    while (it != s_static->akonadiPendingItems.end()) {
+    qCDebug(LIBKDEPIMAKONADI_LOG) << "Pending items: " << AddresseeLineEditManager::self()->akonadiPendingItems.size();
+    Akonadi::Item::List::iterator it = AddresseeLineEditManager::self()->akonadiPendingItems.begin();
+    while (it != AddresseeLineEditManager::self()->akonadiPendingItems.end()) {
         const Akonadi::Item item = *it;
 
-        const AddresseeLineEditStatic::collectionInfo sourceIndex
-            = s_static->akonadiCollectionToCompletionSourceMap.value(item.parentCollection().id(), AddresseeLineEditStatic::collectionInfo());
+        const AddresseeLineEditManager::collectionInfo sourceIndex
+            = AddresseeLineEditManager::self()->akonadiCollectionToCompletionSourceMap.value(item.parentCollection().id(), AddresseeLineEditManager::collectionInfo());
         if (sourceIndex.index >= 0) {
-            qCDebug(LIBKDEPIMAKONADI_LOG) << "identified collection: " << s_static->completionSources[sourceIndex.index];
+            qCDebug(LIBKDEPIMAKONADI_LOG) << "identified collection: " << AddresseeLineEditManager::self()->completionSources[sourceIndex.index];
             if (sourceIndex.enabled) {
                 q->addItem(item, 1, sourceIndex.index);
             }
 
             // remove from the pending
-            it = s_static->akonadiPendingItems.erase(it);
+            it = AddresseeLineEditManager::self()->akonadiPendingItems.erase(it);
         } else {
             ++it;
         }
@@ -542,7 +541,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
         return;
     }
 
-    s_static->completion->setOrder(KCompletion::Weighted);
+    AddresseeLineEditManager::self()->completion()->setOrder(KCompletion::Weighted);
 
     // cursor at end of string - or Ctrl+T pressed for substring completion?
     if (ctrlT) {
@@ -579,7 +578,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
 
     case KCompletion::CompletionShell:
     {
-        const QString match = s_static->completion->makeCompletion(m_searchString);
+        const QString match = AddresseeLineEditManager::self()->completion()->makeCompletion(m_searchString);
         if (!match.isNull() && match != m_searchString) {
             q->setText(m_previousAddresses + match);
             q->setModified(true);
@@ -602,7 +601,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
                 break;
             }
 
-            QString match = s_static->completion->makeCompletion(m_searchString);
+            QString match = AddresseeLineEditManager::self()->completion()->makeCompletion(m_searchString);
 
             if (!match.isEmpty()) {
                 if (match != m_searchString) {
@@ -612,7 +611,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
             } else {
                 if (!m_searchString.startsWith(QLatin1Char('\"'))) {
                     //try with quoted text, if user has not type one already
-                    match = s_static->completion->makeCompletion(QLatin1String("\"") + m_searchString);
+                    match = AddresseeLineEditManager::self()->completion()->makeCompletion(QLatin1String("\"") + m_searchString);
                     if (!match.isEmpty() && match != m_searchString) {
                         m_searchString = QLatin1String("\"") + m_searchString;
                         m_searchExtended = true;
@@ -625,7 +624,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
                     m_searchExtended = false;
                     q->setText(m_previousAddresses + m_searchString);
                     //now try again
-                    match = s_static->completion->makeCompletion(m_searchString);
+                    match = AddresseeLineEditManager::self()->completion()->makeCompletion(m_searchString);
                     if (!match.isEmpty() && match != m_searchString) {
                         const QString adds = m_previousAddresses + match;
                         q->setCompletedText(adds);
@@ -683,10 +682,10 @@ void AddresseeLineEditPrivate::slotStartLDAPLookup()
         if (mode == KCompletion::CompletionNone) {
             return;
         }
-        if (!s_static->ldapSearch()->isAvailable()) {
+        if (!AddresseeLineEditManager::self()->ldapSearch()->isAvailable()) {
             return;
         }
-        if (s_static->addressLineEdit != q) {
+        if (AddresseeLineEditManager::self()->addressLineEdit != q) {
             return;
         }
         startLoadingLDAPEntries();
@@ -695,7 +694,7 @@ void AddresseeLineEditPrivate::slotStartLDAPLookup()
 
 void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List &results)
 {
-    if (results.isEmpty() || s_static->addressLineEdit != q) {
+    if (results.isEmpty() || AddresseeLineEditManager::self()->addressLineEdit != q) {
         return;
     }
 
@@ -716,12 +715,12 @@ void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List 
             }
         }
 
-        if (!s_static->isLdapClientToCompletionSourceMapContains(result.clientNumber)) {
-            s_static->updateLDAPWeights(); // we got results from a new source, so update the completion sources
+        if (!AddresseeLineEditManager::self()->isLdapClientToCompletionSourceMapContains(result.clientNumber)) {
+            AddresseeLineEditManager::self()->updateLDAPWeights(); // we got results from a new source, so update the completion sources
         }
 
         q->addContact(contact, result.completionWeight,
-                      s_static->ldapClientToCompletionSourceValue(result.clientNumber), ou);
+                      AddresseeLineEditManager::self()->ldapClientToCompletionSourceValue(result.clientNumber), ou);
     }
 
     if ((q->hasFocus() || q->completionBox()->hasFocus())
@@ -739,11 +738,11 @@ void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List 
 
 void AddresseeLineEditPrivate::slotEditCompletionOrder()
 {
-    init(); // for s_static->ldapSearch
+    init(); // for AddresseeLineEditStatic::self()->ldapSearch
     if (m_useCompletion) {
-        QPointer<CompletionOrderEditor> dlg = new CompletionOrderEditor(s_static->ldapSearch(), nullptr);
+        QPointer<CompletionOrderEditor> dlg = new CompletionOrderEditor(AddresseeLineEditManager::self()->ldapSearch(), nullptr);
         if (dlg->exec()) {
-            s_static->updateCompletionOrder();
+            AddresseeLineEditManager::self()->updateCompletionOrder();
         }
         delete dlg;
     }
@@ -751,13 +750,13 @@ void AddresseeLineEditPrivate::slotEditCompletionOrder()
 
 KLDAP::LdapClientSearch *AddresseeLineEditPrivate::ldapSearch()
 {
-    init(); // for s_static->ldapSearch
-    return s_static->ldapSearch();
+    init(); // for AddresseeLineEditStatic::self()->ldapSearch
+    return AddresseeLineEditManager::self()->ldapSearch();
 }
 
 void AddresseeLineEditPrivate::slotUserCancelled(const QString &cancelText)
 {
-    if (s_static->ldapSearch() && s_static->addressLineEdit == q) {
+    if (AddresseeLineEditManager::self()->ldapSearch() && AddresseeLineEditManager::self()->addressLineEdit == q) {
         stopLDAPLookup();
     }
 
@@ -771,27 +770,27 @@ void AddresseeLineEditPrivate::slotAkonadiHandleItems(const Akonadi::Item::List 
     for (const Akonadi::Item &item : items) {
         // check the local cache of collections
         const Akonadi::Collection::Id colId = item.parentCollection().id();
-        const AddresseeLineEditStatic::collectionInfo sourceIndex
-            = s_static->akonadiCollectionToCompletionSourceMap.value(colId, AddresseeLineEditStatic::collectionInfo());
+        const AddresseeLineEditManager::collectionInfo sourceIndex
+            = AddresseeLineEditManager::self()->akonadiCollectionToCompletionSourceMap.value(colId, AddresseeLineEditManager::collectionInfo());
         if (sourceIndex.index == -1) {
             qCDebug(LIBKDEPIMAKONADI_LOG) << "Fetching New collection: " << colId;
             // the collection isn't there, start the fetch job.
             Akonadi::CollectionFetchJob *collectionJob
                 = new Akonadi::CollectionFetchJob(item.parentCollection(),
                                                   Akonadi::CollectionFetchJob::Base,
-                                                  s_static->akonadiSession());
+                                                  AddresseeLineEditManager::self()->akonadiSession());
             connect(collectionJob, &Akonadi::CollectionFetchJob::collectionsReceived,
                     this, &AddresseeLineEditPrivate::slotAkonadiCollectionsReceived);
             /* we don't want to start multiple fetch jobs for the same collection,
             so insert the collection with an index value of -2 */
-            AddresseeLineEditStatic::collectionInfo info;
+            AddresseeLineEditManager::collectionInfo info;
             info.index = -2;
-            s_static->akonadiCollectionToCompletionSourceMap.insert(colId, info);
-            s_static->akonadiPendingItems.append(item);
+            AddresseeLineEditManager::self()->akonadiCollectionToCompletionSourceMap.insert(colId, info);
+            AddresseeLineEditManager::self()->akonadiPendingItems.append(item);
         } else if (sourceIndex.index == -2) {
             /* fetch job already started, don't need to start another one,
             so just append the item as pending */
-            s_static->akonadiPendingItems.append(item);
+            AddresseeLineEditManager::self()->akonadiPendingItems.append(item);
         } else {
             if (sourceIndex.enabled) {
                 q->addItem(item, 1, sourceIndex.index);
@@ -815,9 +814,9 @@ void AddresseeLineEditPrivate::slotAkonadiSearchResult(KJob *job)
         Akonadi::ItemSearchJob *searchJob = static_cast<Akonadi::ItemSearchJob *>(job);
         qCDebug(LIBKDEPIMAKONADI_LOG) << "Found" << searchJob->items().size() << "items";
     }
-    const int index = s_static->akonadiJobsInFlight.indexOf(qobject_cast<Akonadi::Job *>(job));
+    const int index = AddresseeLineEditManager::self()->akonadiJobsInFlight.indexOf(qobject_cast<Akonadi::Job *>(job));
     if (index != -1) {
-        s_static->akonadiJobsInFlight.remove(index);
+        AddresseeLineEditManager::self()->akonadiJobsInFlight.remove(index);
     }
 }
 
@@ -833,9 +832,9 @@ void AddresseeLineEditPrivate::slotAkonadiCollectionsReceived(
             const Akonadi::Collection::Id colId = collection.id();
             const int weight = groupCompletionWeights.readEntry(QString::number(colId), 1);
             const int index = q->addCompletionSource(sourceString, weight);
-            AddresseeLineEditStatic::collectionInfo info(index, groupCompletionEnabled.readEntry(QString::number(colId), true));
+            AddresseeLineEditManager::collectionInfo info(index, groupCompletionEnabled.readEntry(QString::number(colId), true));
             qCDebug(LIBKDEPIMAKONADI_LOG) << "\treceived: " << sourceString << "index: " << index;
-            s_static->akonadiCollectionToCompletionSourceMap.insert(colId, info);
+            AddresseeLineEditManager::self()->akonadiCollectionToCompletionSourceMap.insert(colId, info);
         }
     }
 
@@ -861,12 +860,12 @@ void AddresseeLineEditPrivate::updateBalooBlackList()
 {
     loadBalooBlackList();
     q->removeCompletionSource(i18nc("@title:group", "Contacts found in your data"));
-    s_static->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
+    AddresseeLineEditManager::self()->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
 }
 
 void AddresseeLineEditPrivate::updateCompletionOrder()
 {
-    s_static->updateCompletionOrder();
+    AddresseeLineEditManager::self()->updateCompletionOrder();
 }
 
 bool AddresseeLineEditPrivate::canDeleteLineEdit() const
@@ -1039,12 +1038,12 @@ void AddresseeLineEditPrivate::loadBalooBlackList()
 
 void AddresseeLineEditPrivate::removeCompletionSource(const QString &source)
 {
-    s_static->removeCompletionSource(source);
+    AddresseeLineEditManager::self()->removeCompletionSource(source);
 }
 
 int AddresseeLineEditPrivate::addCompletionSource(const QString &source, int weight)
 {
-    return s_static->addCompletionSource(source, weight);
+    return AddresseeLineEditManager::self()->addCompletionSource(source, weight);
 }
 
 void AddresseeLineEditPrivate::mightBeGroupJobsClear()
