@@ -83,11 +83,11 @@ AddresseeLineEditPrivate::~AddresseeLineEditPrivate()
 void AddresseeLineEditPrivate::restartTime(const QString &searchString)
 {
     if (useCompletion() && s_static->ldapTimer()) {
-        if (s_static->ldapText != searchString || s_static->addressLineEdit != q) {
+        if (s_static->ldapText() != searchString || s_static->addressLineEdit != q) {
             stopLDAPLookup();
         }
 
-        s_static->ldapText = searchString;
+        s_static->setLdapText(searchString);
         s_static->addressLineEdit = q;
         s_static->ldapTimer()->setSingleShot(true);
         s_static->ldapTimer()->start(500);
@@ -184,7 +184,7 @@ void AddresseeLineEditPrivate::setIcon(const QIcon &icon, const QString &tooltip
 
 void AddresseeLineEditPrivate::startLoadingLDAPEntries()
 {
-    QString text(s_static->ldapText);
+    QString text(s_static->ldapText());
 
     // TODO cache last?
     QString prevAddr;

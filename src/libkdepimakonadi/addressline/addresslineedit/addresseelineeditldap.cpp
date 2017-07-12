@@ -93,3 +93,13 @@ QTimer *AddresseeLineEditLdap::ldapTimer() const
 {
     return mLdapTimer;
 }
+
+QString AddresseeLineEditLdap::ldapText() const
+{
+    return mLdapText;
+}
+
+void AddresseeLineEditLdap::setLdapText(const QString &ldapText)
+{
+    mLdapText = ldapText;
+}

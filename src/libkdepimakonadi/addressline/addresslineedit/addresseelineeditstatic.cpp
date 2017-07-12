@@ -106,3 +106,14 @@ void AddresseeLineEditStatic::initializeLdap()
 {
     mAddressessLineEditLdap->init();
 }
+
+QString AddresseeLineEditStatic::ldapText() const
+{
+    return mAddressessLineEditLdap->ldapText();
+}
+
+void AddresseeLineEditStatic::setLdapText(const QString &ldapText)
+{
+    mAddressessLineEditLdap->setLdapText(ldapText);
+}
+

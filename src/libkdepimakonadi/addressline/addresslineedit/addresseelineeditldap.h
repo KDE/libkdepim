@@ -45,11 +45,15 @@ public:
     KLDAP::LdapClientSearch *ldapSearch() const;
 
     QTimer *ldapTimer() const;
+    QString ldapText() const;
+    void setLdapText(const QString &ldapText);
+
 private:
     // maps LDAP client indices to completion source indices
     // the assumption that they are always the first n indices in s_static->completion
     // does not hold when clients are added later on
     QMap<int, int> mLdapClientToCompletionSourceMap;
+    QString mLdapText;
     QTimer *mLdapTimer;
     KLDAP::LdapClientSearch *mLdapSearch;
 

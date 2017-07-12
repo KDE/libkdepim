@@ -63,7 +63,6 @@ public:
     CompletionItemsMap completionItemMap;
     QStringList completionSources;
 
-    QString ldapText;
     AddresseeLineEdit *addressLineEdit;
     // The weights associated with the completion sources in s_static->completionSources.
     // Both are maintained by addCompletionSource(), don't attempt to modifiy those yourself.
@@ -96,7 +95,11 @@ public:
     QVector<QWeakPointer<Akonadi::Job> > akonadiJobsInFlight;
     int balooCompletionSource;
 
+    //Ldap
     void initializeLdap();
+    QString ldapText() const;
+    void setLdapText(const QString &ldapText);
+
 private:
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
     AddresseeLineEditLdap *mAddressessLineEditLdap;
