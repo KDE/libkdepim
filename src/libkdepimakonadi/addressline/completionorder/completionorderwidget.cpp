@@ -167,9 +167,8 @@ public:
         KConfigGroup group(editor->configFile(), "CompletionWeights");
         group.writeEntry(mIdentifier, mWeight);
         if (mHasEnableSupport) {
-            //TODO add completion support
-            //KConfigGroup groupEnabled(editor->configFile(), "CompletionEnabled");
-            //groupEnabled.writeEntry(mIdentifier, );
+            KConfigGroup groupEnabled(editor->configFile(), "CompletionEnabled");
+            groupEnabled.writeEntry(mIdentifier, isEnabled());
         }
     }
 
@@ -332,7 +331,7 @@ void CompletionOrderWidget::addCompletionItemForCollection(const QModelIndex &in
         return;
     }
 
-    SimpleCompletionItem *item = new SimpleCompletionItem(this, index.data().toString(), QString::number(collection.id()), 60);
+    SimpleCompletionItem *item = new SimpleCompletionItem(this, index.data().toString(), QString::number(collection.id()), 60/*, true*/);
     item->setIcon(index.data(Qt::DecorationRole).value<QIcon>());
 
     new CompletionViewItem(mListView, item);
