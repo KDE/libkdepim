@@ -331,7 +331,7 @@ void CompletionOrderWidget::addCompletionItemForCollection(const QModelIndex &in
         return;
     }
 
-    SimpleCompletionItem *item = new SimpleCompletionItem(this, index.data().toString(), QString::number(collection.id()), 60/*, true*/);
+    SimpleCompletionItem *item = new SimpleCompletionItem(this, index.data().toString(), QString::number(collection.id()), 60, true);
     item->setIcon(index.data(Qt::DecorationRole).value<QIcon>());
 
     new CompletionViewItem(mListView, item);
@@ -402,6 +402,7 @@ void CompletionOrderWidget::slotSelectionChanged()
 
 static void swapItems(CompletionViewItem *one, CompletionViewItem *other)
 {
+    /*
     CompletionItem *oneCompletion = one->item();
     CompletionItem *otherCompletion = other->item();
 
@@ -411,6 +412,17 @@ static void swapItems(CompletionViewItem *one, CompletionViewItem *other)
 
     one->setItem(otherCompletion);
     other->setItem(oneCompletion);
+    */
+    CompletionItem *oneCompletion = one->item();
+    CompletionItem *otherCompletion = other->item();
+
+    int weight = otherCompletion->completionWeight();
+    otherCompletion->setCompletionWeight(oneCompletion->completionWeight());
+    oneCompletion->setCompletionWeight(weight);
+
+    one->setItem(oneCompletion);
+    other->setItem(otherCompletion);
+
 }
 
 void CompletionOrderWidget::slotMoveUp()
@@ -424,8 +436,8 @@ void CompletionOrderWidget::slotMoveUp()
         return;
     }
     swapItems(item, above);
-    mListView->setCurrentItem(above, 0, QItemSelectionModel::Select | QItemSelectionModel::Current);
     mListView->sortItems(0, Qt::AscendingOrder);
+    mListView->setCurrentItem(item, 0, QItemSelectionModel::Select | QItemSelectionModel::Current);
     mDirty = true;
 }
 
@@ -440,8 +452,7 @@ void CompletionOrderWidget::slotMoveDown()
         return;
     }
     swapItems(item, below);
-    mListView->setCurrentItem(below);
-    mListView->setCurrentItem(below, 0, QItemSelectionModel::Select | QItemSelectionModel::Current);
     mListView->sortItems(0, Qt::AscendingOrder);
+    mListView->setCurrentItem(item, 0, QItemSelectionModel::Select | QItemSelectionModel::Current);
     mDirty = true;
 }
