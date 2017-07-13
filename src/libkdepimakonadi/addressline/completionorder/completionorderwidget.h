@@ -90,6 +90,7 @@ private:
     void writeConfig();
     void addRecentAddressItem();
     void addCompletionItemForCollection(const QModelIndex &);
+    void slotItemChanged();
 
     KConfig mConfig;
     QTreeWidget *mListView;

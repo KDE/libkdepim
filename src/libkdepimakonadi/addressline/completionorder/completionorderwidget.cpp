@@ -265,6 +265,7 @@ CompletionOrderWidget::CompletionOrderWidget(QWidget *parent)
     mUpButton->setObjectName(QStringLiteral("mUpButton"));
     mUpButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
     mUpButton->setEnabled(false);   // b/c no item is selected yet
+    mUpButton->setToolTip(i18n("Move Up"));
     mUpButton->setFocusPolicy(Qt::StrongFocus);
 
     mDownButton = new QPushButton(upDownBox);
@@ -273,6 +274,7 @@ CompletionOrderWidget::CompletionOrderWidget(QWidget *parent)
     mDownButton->setObjectName(QStringLiteral("mDownButton"));
     mDownButton->setIcon(QIcon::fromTheme(QStringLiteral("go-down")));
     mDownButton->setEnabled(false);   // b/c no item is selected yet
+    mDownButton->setToolTip(i18n("Move Down"));
     mDownButton->setFocusPolicy(Qt::StrongFocus);
 
     QWidget *spacer = new QWidget(upDownBox);
@@ -283,6 +285,8 @@ CompletionOrderWidget::CompletionOrderWidget(QWidget *parent)
             this, &CompletionOrderWidget::slotSelectionChanged);
     connect(mListView, &QTreeWidget::currentItemChanged,
             this, &CompletionOrderWidget::slotSelectionChanged);
+    connect(mListView, &QTreeWidget::itemChanged,
+            this, &CompletionOrderWidget::slotItemChanged);
     connect(mUpButton, &QAbstractButton::clicked, this, &CompletionOrderWidget::slotMoveUp);
     connect(mDownButton, &QAbstractButton::clicked, this, &CompletionOrderWidget::slotMoveDown);
 }
@@ -377,6 +381,7 @@ void CompletionOrderWidget::loadCompletionItems()
     addRecentAddressItem();
 
     mListView->sortItems(0, Qt::AscendingOrder);
+    mDirty = false;
 }
 
 void CompletionOrderWidget::setLdapClientSearch(KLDAP::LdapClientSearch *ldapSearch)
@@ -391,6 +396,11 @@ void CompletionOrderWidget::rowsInserted(const QModelIndex &parent, int start, i
     }
 
     mListView->sortItems(0, Qt::AscendingOrder);
+}
+
+void CompletionOrderWidget::slotItemChanged()
+{
+    mDirty = true;
 }
 
 void CompletionOrderWidget::slotSelectionChanged()
