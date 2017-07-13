@@ -772,9 +772,6 @@ void AddresseeLineEditPrivate::slotAkonadiSearchResult(KJob *job)
 {
     if (job->error()) {
         qCWarning(LIBKDEPIMAKONADI_LOG) << "Akonadi search job failed: " << job->errorString();
-    } else {
-        Akonadi::ItemSearchJob *searchJob = static_cast<Akonadi::ItemSearchJob *>(job);
-        qCDebug(LIBKDEPIMAKONADI_LOG) << "Found" << searchJob->items().size() << "items";
     }
     const int index = AddresseeLineEditManager::self()->akonadiJobsInFlight.indexOf(qobject_cast<Akonadi::Job *>(job));
     if (index != -1) {
