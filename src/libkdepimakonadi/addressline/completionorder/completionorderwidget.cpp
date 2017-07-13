@@ -402,17 +402,6 @@ void CompletionOrderWidget::slotSelectionChanged()
 
 static void swapItems(CompletionViewItem *one, CompletionViewItem *other)
 {
-    /*
-    CompletionItem *oneCompletion = one->item();
-    CompletionItem *otherCompletion = other->item();
-
-    int weight = otherCompletion->completionWeight();
-    otherCompletion->setCompletionWeight(oneCompletion->completionWeight());
-    oneCompletion->setCompletionWeight(weight);
-
-    one->setItem(otherCompletion);
-    other->setItem(oneCompletion);
-    */
     CompletionItem *oneCompletion = one->item();
     CompletionItem *otherCompletion = other->item();
 
@@ -422,7 +411,6 @@ static void swapItems(CompletionViewItem *one, CompletionViewItem *other)
 
     one->setItem(oneCompletion);
     other->setItem(otherCompletion);
-
 }
 
 void CompletionOrderWidget::slotMoveUp()
@@ -437,7 +425,7 @@ void CompletionOrderWidget::slotMoveUp()
     }
     swapItems(item, above);
     mListView->sortItems(0, Qt::AscendingOrder);
-    mListView->setCurrentItem(item, 0, QItemSelectionModel::Select | QItemSelectionModel::Current);
+    slotSelectionChanged();
     mDirty = true;
 }
 
@@ -453,6 +441,6 @@ void CompletionOrderWidget::slotMoveDown()
     }
     swapItems(item, below);
     mListView->sortItems(0, Qt::AscendingOrder);
-    mListView->setCurrentItem(item, 0, QItemSelectionModel::Select | QItemSelectionModel::Current);
+    slotSelectionChanged();
     mDirty = true;
 }
