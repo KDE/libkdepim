@@ -792,7 +792,7 @@ void AddresseeLineEditPrivate::slotAkonadiCollectionsReceived(
             const int weight = groupCompletionWeights.readEntry(QString::number(colId), 1);
             const int index = q->addCompletionSource(sourceString, weight);
             AddresseeLineEditManager::collectionInfo info(index, groupCompletionEnabled.readEntry(QString::number(colId), true));
-            qCDebug(LIBKDEPIMAKONADI_LOG) << "\treceived: " << sourceString << "index: " << index;
+            qCDebug(LIBKDEPIMAKONADI_LOG) << "\treceived: " << sourceString << "index: " << index << " enabled: " << info.enabled;
             AddresseeLineEditManager::self()->akonadiCollectionToCompletionSourceMap.insert(colId, info);
         }
     }
