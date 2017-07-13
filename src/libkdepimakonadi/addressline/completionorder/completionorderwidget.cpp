@@ -167,7 +167,8 @@ public:
         KConfigGroup group(editor->configFile(), "CompletionWeights");
         group.writeEntry(mIdentifier, mWeight);
         if (mHasEnableSupport) {
-            KConfigGroup groupEnabled(editor->configFile(), "CompletionEnabled");
+            //TODO add completion support
+            //KConfigGroup groupEnabled(editor->configFile(), "CompletionEnabled");
             //groupEnabled.writeEntry(mIdentifier, );
         }
     }
