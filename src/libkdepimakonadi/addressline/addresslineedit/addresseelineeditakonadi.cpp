@@ -23,7 +23,8 @@
 using namespace KPIM;
 
 AddresseeLineEditAkonadi::AddresseeLineEditAkonadi(AddresseeLineEditManager *addressLineStatic)
-    : mAddressLineStatic(addressLineStatic)
+    : m_akonadiSession(nullptr)
+    , mAddressLineStatic(addressLineStatic)
 {
 
 }
