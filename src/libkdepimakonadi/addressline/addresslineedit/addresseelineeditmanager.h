@@ -97,6 +97,7 @@ public:
     int ldapClientToCompletionSourceValue(int value) const;
     void stopLDAPLookup();
     void startLoadingLDAPEntries();
+    void restartLdap(const QString &searchString, AddresseeLineEdit *addressLine);
 
     //Baloo
     int balooCompletionSource() const;

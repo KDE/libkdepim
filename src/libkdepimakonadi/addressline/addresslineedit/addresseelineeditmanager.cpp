@@ -170,11 +170,15 @@ void AddresseeLineEditManager::setLdapText(const QString &ldapText)
 
 void AddresseeLineEditManager::stopLDAPLookup()
 {
-    mAddressessLineEditLdap->ldapSearch()->cancelSearch();
-    mAddressessLineEditLdap->setAddressLineEdit(nullptr);
+    mAddressessLineEditLdap->stopLDAPLookup();
 }
 
 void AddresseeLineEditManager::startLoadingLDAPEntries()
 {
     mAddressessLineEditLdap->startLoadingLDAPEntries();
+}
+
+void AddresseeLineEditManager::restartLdap(const QString &searchString, AddresseeLineEdit *addressLine)
+{
+    mAddressessLineEditLdap->restartLdap(searchString, addressLine);
 }

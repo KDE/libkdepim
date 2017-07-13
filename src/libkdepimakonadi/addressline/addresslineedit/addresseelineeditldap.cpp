@@ -144,3 +144,22 @@ void AddresseeLineEditLdap::startLoadingLDAPEntries()
     mLdapSearch->startSearch(text);
 }
 
+void AddresseeLineEditLdap::restartLdap(const QString &searchString, AddresseeLineEdit *addressLine)
+{
+    if (mLdapTimer) {
+        if (mLdapText!= searchString || mAddressLineEdit != addressLine) {
+            stopLDAPLookup();
+        }
+
+        mLdapText = searchString;
+        mAddressLineEdit = addressLine;
+        mLdapTimer->setSingleShot(true);
+        mLdapTimer->start(500);
+    }
+}
+
+void AddresseeLineEditLdap::stopLDAPLookup()
+{
+    ldapSearch()->cancelSearch();
+    setAddressLineEdit(nullptr);
+}

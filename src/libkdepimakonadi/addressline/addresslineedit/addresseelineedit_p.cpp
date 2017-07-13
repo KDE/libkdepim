@@ -75,15 +75,8 @@ AddresseeLineEditPrivate::~AddresseeLineEditPrivate()
 
 void AddresseeLineEditPrivate::restartTime(const QString &searchString)
 {
-    if (useCompletion() && AddresseeLineEditManager::self()->ldapTimer()) {
-        if (AddresseeLineEditManager::self()->ldapText() != searchString || AddresseeLineEditManager::self()->addressLineEdit() != q) {
-            AddresseeLineEditManager::self()->stopLDAPLookup();
-        }
-
-        AddresseeLineEditManager::self()->setLdapText(searchString);
-        AddresseeLineEditManager::self()->setAddressLineEdit(q);
-        AddresseeLineEditManager::self()->ldapTimer()->setSingleShot(true);
-        AddresseeLineEditManager::self()->ldapTimer()->start(500);
+    if (useCompletion()) {
+        AddresseeLineEditManager::self()->restartLdap(searchString, q);
     }
 }
 
