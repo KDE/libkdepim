@@ -24,6 +24,13 @@
 #include "kdepim_export.h"
 
 namespace KPIM {
+struct KDEPIM_EXPORT AddressessLineEditAbstractPluginInfo
+{
+    QString name;
+    QString identifier;
+    QString description;
+};
+
 class KDEPIM_EXPORT AddressessLineEditAbstractPlugin : public QObject
 {
     Q_OBJECT
@@ -31,7 +38,8 @@ public:
     explicit AddressessLineEditAbstractPlugin(QObject *parent = nullptr);
     ~AddressessLineEditAbstractPlugin();
 
-    virtual QString identifier() const = 0;
+
+    virtual QVector<AddressessLineEditAbstractPluginInfo> names() const = 0;
     virtual void start() = 0;
     virtual void cancel() = 0;
     virtual void stop() = 0;
