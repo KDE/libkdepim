@@ -32,6 +32,9 @@ public:
     ~AddressessLineEditAbstractPlugin();
 
     virtual QString identifier() const = 0;
+    virtual void start() = 0;
+    virtual void cancel() = 0;
+    virtual void stop() = 0;
 
 Q_SIGNALS:
     void wasUpdated();
