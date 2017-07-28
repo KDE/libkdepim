@@ -34,7 +34,7 @@ AddresseeLineEditAkonadi::~AddresseeLineEditAkonadi()
 
 }
 
-Akonadi::Session *AddresseeLineEditAkonadi::akonadiSession()
+Akonadi::Session *AddresseeLineEditAkonadi::akonadiSession() const
 {
     if (!m_akonadiSession) {
         m_akonadiSession = new Akonadi::Session("contactsCompletionSession");

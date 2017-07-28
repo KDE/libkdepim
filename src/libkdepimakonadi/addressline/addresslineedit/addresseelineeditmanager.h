@@ -104,7 +104,7 @@ public:
     void setBalooCompletionSource(int value);
 
     //Akonadi
-    Akonadi::Session *akonadiSession();
+    Akonadi::Session *akonadiSession() const;
 
     KMailCompletion *completion() const;
 

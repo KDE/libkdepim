@@ -32,10 +32,10 @@ public:
     explicit AddresseeLineEditAkonadi(AddresseeLineEditManager *addressLineStatic);
     ~AddresseeLineEditAkonadi();
 
-    Akonadi::Session *akonadiSession();
+    Akonadi::Session *akonadiSession() const;
 
 private:
-    Akonadi::Session *m_akonadiSession;
+    mutable Akonadi::Session *m_akonadiSession;
     AddresseeLineEditManager *mAddressLineStatic;
 };
 }

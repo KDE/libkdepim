@@ -98,7 +98,7 @@ void AddresseeLineEditManager::removeCompletionSource(const QString &source)
     }
 }
 
-Akonadi::Session *AddresseeLineEditManager::akonadiSession()
+Akonadi::Session *AddresseeLineEditManager::akonadiSession() const
 {
     return mAddresseeLineEditAkonadi->akonadiSession();
 }
