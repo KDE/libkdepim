@@ -20,6 +20,7 @@
 #ifndef ADDRESSEELINEEDITAKONADI_H
 #define ADDRESSEELINEEDITAKONADI_H
 
+#include <AkonadiCore/Item>
 namespace Akonadi {
 class Session;
 }
@@ -34,9 +35,15 @@ public:
 
     Akonadi::Session *akonadiSession() const;
 
+    Akonadi::Item::List akonadiPendingItems() const;
+    Akonadi::Item::List::iterator erasePendingItem(const Akonadi::Item::List::iterator &item);
+    void appendPendingItem(const Akonadi::Item &item);
+
 private:
     mutable Akonadi::Session *m_akonadiSession;
     AddresseeLineEditManager *mAddressLineStatic;
+    // a list of akonadi items (contacts) that have not had their collection fetched yet
+    Akonadi::Item::List mAkonadiPendingItems;
 };
 }
 

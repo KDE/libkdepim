@@ -41,3 +41,18 @@ Akonadi::Session *AddresseeLineEditAkonadi::akonadiSession() const
     }
     return m_akonadiSession;
 }
+
+Akonadi::Item::List AddresseeLineEditAkonadi::akonadiPendingItems() const
+{
+    return mAkonadiPendingItems;
+}
+
+Akonadi::Item::List::iterator AddresseeLineEditAkonadi::erasePendingItem(const Akonadi::Item::List::iterator &item)
+{
+    return mAkonadiPendingItems.erase(item);
+}
+
+void AddresseeLineEditAkonadi::appendPendingItem(const Akonadi::Item &item)
+{
+    mAkonadiPendingItems.append(item);
+}

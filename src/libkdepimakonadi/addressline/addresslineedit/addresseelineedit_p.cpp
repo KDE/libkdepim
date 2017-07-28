@@ -472,9 +472,9 @@ void AddresseeLineEditPrivate::akonadiPerformSearch()
 
 void AddresseeLineEditPrivate::akonadiHandlePending()
 {
-    qCDebug(LIBKDEPIMAKONADI_LOG) << "Pending items: " << AddresseeLineEditManager::self()->akonadiPendingItems.size();
-    Akonadi::Item::List::iterator it = AddresseeLineEditManager::self()->akonadiPendingItems.begin();
-    while (it != AddresseeLineEditManager::self()->akonadiPendingItems.end()) {
+    qCDebug(LIBKDEPIMAKONADI_LOG) << "Pending items: " << AddresseeLineEditManager::self()->akonadiPendingItems().size();
+    Akonadi::Item::List::iterator it = AddresseeLineEditManager::self()->akonadiPendingItems().begin();
+    while (it != AddresseeLineEditManager::self()->akonadiPendingItems().end()) {
         const Akonadi::Item item = *it;
 
         const AddresseeLineEditManager::collectionInfo sourceIndex
@@ -486,7 +486,7 @@ void AddresseeLineEditPrivate::akonadiHandlePending()
             }
 
             // remove from the pending
-            it = AddresseeLineEditManager::self()->akonadiPendingItems.erase(it);
+            it = AddresseeLineEditManager::self()->erasePendingItem(it);
         } else {
             ++it;
         }
@@ -748,11 +748,11 @@ void AddresseeLineEditPrivate::slotAkonadiHandleItems(const Akonadi::Item::List 
             AddresseeLineEditManager::collectionInfo info;
             info.index = -2;
             AddresseeLineEditManager::self()->akonadiCollectionToCompletionSourceMap.insert(colId, info);
-            AddresseeLineEditManager::self()->akonadiPendingItems.append(item);
+            AddresseeLineEditManager::self()->appendPendingItem(item);
         } else if (sourceIndex.index == -2) {
             /* fetch job already started, don't need to start another one,
             so just append the item as pending */
-            AddresseeLineEditManager::self()->akonadiPendingItems.append(item);
+            AddresseeLineEditManager::self()->appendPendingItem(item);
         } else {
             if (sourceIndex.enabled) {
                 q->addItem(item, 1, sourceIndex.index);
