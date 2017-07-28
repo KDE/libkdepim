@@ -157,6 +157,8 @@ void AddresseeLineEditLdap::restartLdap(const QString &searchString, AddresseeLi
 
 void AddresseeLineEditLdap::stopLDAPLookup()
 {
-    ldapSearch()->cancelSearch();
-    setAddressLineEdit(nullptr);
+    if (ldapSearch()) {
+        ldapSearch()->cancelSearch();
+        setAddressLineEdit(nullptr);
+    }
 }

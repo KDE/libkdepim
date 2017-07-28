@@ -68,7 +68,7 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
 
 AddresseeLineEditPrivate::~AddresseeLineEditPrivate()
 {
-    if (AddresseeLineEditManager::self()->ldapSearch() && AddresseeLineEditManager::self()->addressLineEdit() == q) {
+    if (AddresseeLineEditManager::self()->addressLineEdit() == q) {
         AddresseeLineEditManager::self()->stopLDAPLookup();
     }
 }
@@ -718,7 +718,7 @@ KLDAP::LdapClientSearch *AddresseeLineEditPrivate::ldapSearch()
 
 void AddresseeLineEditPrivate::slotUserCancelled(const QString &cancelText)
 {
-    if (AddresseeLineEditManager::self()->ldapSearch() && AddresseeLineEditManager::self()->addressLineEdit() == q) {
+    if (AddresseeLineEditManager::self()->addressLineEdit() == q) {
         AddresseeLineEditManager::self()->stopLDAPLookup();
     }
 
