@@ -24,6 +24,7 @@ using namespace KPIM;
 
 AddressessLineEditAbstractPlugin::AddressessLineEditAbstractPlugin(QObject *parent)
     : QObject(parent)
+    , mLinedit(nullptr)
 {
 
 }
@@ -31,4 +32,9 @@ AddressessLineEditAbstractPlugin::AddressessLineEditAbstractPlugin(QObject *pare
 AddressessLineEditAbstractPlugin::~AddressessLineEditAbstractPlugin()
 {
 
+}
+
+void AddressessLineEditAbstractPlugin::setLineEdit(AddresseeLineEdit *linedit)
+{
+    mLinedit = linedit;
 }
