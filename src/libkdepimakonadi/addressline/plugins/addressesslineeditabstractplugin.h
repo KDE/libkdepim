@@ -48,8 +48,10 @@ public:
 
 Q_SIGNALS:
     void wasUpdated();
+
 private:
     KPIM::AddresseeLineEdit *mLinedit;
+    bool mEnabled;
 };
 }
 
