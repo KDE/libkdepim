@@ -21,18 +21,18 @@
 #define ADDRESSESSLINEEDITABSTRACTPLUGIN_H
 
 #include <QObject>
-#include "kdepim_export.h"
+#include "kdepimakonadi_export.h"
 
 namespace KPIM {
 class AddresseeLineEdit;
-struct KDEPIM_EXPORT AddressessLineEditAbstractPluginInfo
+struct KDEPIMAKONADI_EXPORT AddressessLineEditAbstractPluginInfo
 {
     QString name;
     QString identifier;
     QString description;
 };
 
-class KDEPIM_EXPORT AddressessLineEditAbstractPlugin : public QObject
+class KDEPIMAKONADI_EXPORT AddressessLineEditAbstractPlugin : public QObject
 {
     Q_OBJECT
 public:
