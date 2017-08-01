@@ -123,21 +123,6 @@ bool AddresseeLineEditManager::isOnline() const
     return mNetworkConfigMgr->isOnline();
 }
 
-Akonadi::Item::List AddresseeLineEditManager::akonadiPendingItems() const
-{
-    return mAddresseeLineEditAkonadi->akonadiPendingItems();
-}
-
-Akonadi::Item::List::iterator AddresseeLineEditManager::erasePendingItem(const Akonadi::Item::List::iterator &item)
-{
-    return mAddresseeLineEditAkonadi->erasePendingItem(item);
-}
-
-void AddresseeLineEditManager::appendPendingItem(const Akonadi::Item &item)
-{
-    mAddresseeLineEditAkonadi->appendPendingItem(item);
-}
-
 KLDAP::LdapClientSearch *AddresseeLineEditManager::ldapSearch() const
 {
     return mAddressessLineEditLdap->ldapSearch();

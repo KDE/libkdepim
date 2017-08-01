@@ -83,6 +83,8 @@ public:
     };
 
     QMap<Akonadi::Collection::Id, collectionInfo> akonadiCollectionToCompletionSourceMap;
+    // a list of akonadi items (contacts) that have not had their collection fetched yet
+    Akonadi::Item::List akonadiPendingItems;
     QVector<QWeakPointer<Akonadi::Job> > akonadiJobsInFlight;
 
     //Ldap
@@ -103,9 +105,6 @@ public:
 
     //Akonadi
     Akonadi::Session *akonadiSession() const;
-    Akonadi::Item::List akonadiPendingItems() const;
-    Akonadi::Item::List::iterator erasePendingItem(const Akonadi::Item::List::iterator &item);
-    void appendPendingItem(const Akonadi::Item &item);
 
     KMailCompletion *completion() const;
 
@@ -113,8 +112,6 @@ public:
     AddresseeLineEdit *addressLineEdit() const;
     void setAddressLineEdit(AddresseeLineEdit *addressLineEdit);
     bool isOnline() const;
-
-
 
 private:
     KMailCompletion *mCompletion;
