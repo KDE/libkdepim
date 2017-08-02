@@ -782,9 +782,9 @@ void AddresseeLineEditPrivate::slotAkonadiCollectionsReceived(
     }
 }
 
-void AddresseeLineEditPrivate::slotToggleExpandGroups()
+void AddresseeLineEditPrivate::slotToggleExpandGroups(bool checked)
 {
-    setAutoGroupExpand(!autoGroupExpand());
+    AddresseeLineEditManager::self()->setAutoGroupExpand(checked);
 }
 
 void AddresseeLineEditPrivate::slotShowOUChanged(bool checked)

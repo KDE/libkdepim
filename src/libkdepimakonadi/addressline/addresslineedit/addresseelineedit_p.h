@@ -116,7 +116,7 @@ public:
     void setCanDeleteLineEdit(bool inprogressToConfigureCompletion);
 
 public Q_SLOTS:
-    void slotToggleExpandGroups();
+    void slotToggleExpandGroups(bool);
     void slotShowOUChanged(bool);
 
 private Q_SLOTS:
