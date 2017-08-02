@@ -42,7 +42,7 @@
 #include <addressline/addresslineedit/baloocompletionemail.h>
 #include <akonadi/contact/contactsearchjob.h>
 
-namespace KPIM {
+using namespace KPIM;
 AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, bool enableCompletion)
     : QObject(qq)
     , q(qq)
@@ -1038,5 +1038,4 @@ void AddresseeLineEditPrivate::mightBeGroupJobsRemoveOne(Akonadi::ContactGroupSe
 void AddresseeLineEditPrivate::mightBeGroupJobsAdd(Akonadi::ContactGroupSearchJob *job)
 {
     mMightBeGroupJobs.append(job);
-}
 }
