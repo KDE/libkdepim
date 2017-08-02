@@ -182,3 +182,18 @@ void AddresseeLineEditManager::restartLdap(const QString &searchString, Addresse
 {
     mAddressessLineEditLdap->restartLdap(searchString, addressLine);
 }
+
+void AddresseeLineEditManager::loadBalooBlackList()
+{
+    mAddressessLineEditBaloo->loadBalooBlackList();
+}
+
+QStringList AddresseeLineEditManager::cleanupEmailList(const QStringList &inputList)
+{
+    return mAddressessLineEditBaloo->cleanupEmailList(inputList);
+}
+
+QStringList AddresseeLineEditManager::balooBlackList() const
+{
+    return mAddressessLineEditBaloo->balooBlackList();
+}

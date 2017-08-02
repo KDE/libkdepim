@@ -40,7 +40,6 @@ class AddresseeLineEditPrivate : public QObject
 public:
     AddresseeLineEditPrivate(AddresseeLineEdit *qq, bool enableCompletion);
     ~AddresseeLineEditPrivate();
-    QStringList cleanupEmailList(const QStringList &inputList);
     void loadBalooBlackList();
     void alternateColor();
     void init();
@@ -89,7 +88,6 @@ public:
     void updateCompletionOrder();
 
     KLDAP::LdapClientSearch *ldapSearch();
-    QStringList balooBlackList() const;
 
     void setExpandIntern(bool);
     bool expandIntern() const;
@@ -140,8 +138,6 @@ private:
     QToolButton *m_toolButton;
     QTimer m_delayedQueryTimer;
     QColor m_alternateColor;
-    QStringList m_balooBlackList;
-    QStringList m_domainExcludeList;
     QString m_previousAddresses;
     QString m_searchString;
     QList<KJob *> mMightBeGroupJobs;

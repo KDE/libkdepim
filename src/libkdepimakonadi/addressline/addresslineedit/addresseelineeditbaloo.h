@@ -20,6 +20,8 @@
 #ifndef ADDRESSEELINEEDITBALOO_H
 #define ADDRESSEELINEEDITBALOO_H
 
+#include <QStringList>
+
 namespace KPIM {
 class AddresseeLineEditManager;
 class AddresseeLineEditBaloo
@@ -31,7 +33,15 @@ public:
     int balooCompletionSource() const;
     void setBalooCompletionSource(int value);
 
+    QStringList balooBlackList() const;
+    QStringList domainExcludeList() const;
+
+    void loadBalooBlackList();
+    QStringList cleanupEmailList(const QStringList &inputList);
 private:
+    QStringList mBalooBlackList;
+    QStringList mDomainExcludeList;
+
     int mBalooCompletionSource;
     AddresseeLineEditManager *mAddressLineStatic;
 };

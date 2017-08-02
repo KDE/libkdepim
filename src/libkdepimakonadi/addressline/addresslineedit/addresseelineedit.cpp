@@ -27,6 +27,7 @@
 #include "addresseelineedit.h"
 #include "addresseelineedit_p.h"
 #include "Libkdepim/AddresseeLineEditUtil"
+#include "addresseelineeditmanager.h"
 #include "ldap/ldapclientsearch.h"
 
 #include <KContacts/VCardConverter>
@@ -630,7 +631,7 @@ void AddresseeLineEdit::configureCompletion()
     QScopedPointer<KPIM::CompletionConfigureDialog> dlg(new KPIM::CompletionConfigureDialog(this));
     dlg->setRecentAddresses(KPIM::RecentAddresses::self(recentAddressConfig())->addresses());
     dlg->setLdapClientSearch(ldapSearch());
-    dlg->setEmailBlackList(balooBlackList());
+    dlg->setEmailBlackList(KPIM::AddresseeLineEditManager::self()->balooBlackList());
     dlg->load();
     if (dlg->exec() && dlg) {
         if (dlg->recentAddressWasChanged()) {
@@ -649,6 +650,11 @@ void AddresseeLineEdit::slotToggleExpandGroups()
     setAutoGroupExpand(!autoGroupExpand());
     KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
     group.writeEntry("AutoGroupExpand", autoGroupExpand());
+}
+
+QStringList AddresseeLineEdit::cleanupEmailList(const QStringList &inputList)
+{
+    return AddresseeLineEditManager::self()->cleanupEmailList(inputList);
 }
 
 void AddresseeLineEdit::loadContacts()
@@ -904,11 +910,6 @@ void AddresseeLineEdit::updateCompletionOrder()
 KLDAP::LdapClientSearch *AddresseeLineEdit::ldapSearch() const
 {
     return d->ldapSearch();
-}
-
-QStringList AddresseeLineEdit::balooBlackList() const
-{
-    return d->balooBlackList();
 }
 
 void AddresseeLineEdit::slotEditingFinished()

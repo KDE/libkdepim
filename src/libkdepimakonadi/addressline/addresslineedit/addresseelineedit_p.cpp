@@ -168,26 +168,11 @@ void AddresseeLineEditPrivate::setIcon(const QIcon &icon, const QString &tooltip
     }
 }
 
-QStringList AddresseeLineEdit::cleanupEmailList(const QStringList &inputList)
-{
-    return d->cleanupEmailList(inputList);
-}
-
-QStringList AddresseeLineEditPrivate::cleanupEmailList(const QStringList &inputList)
-{
-    KPIM::BalooCompletionEmail completionEmail;
-    completionEmail.setEmailList(inputList);
-    completionEmail.setBlackList(m_balooBlackList);
-    completionEmail.setExcludeDomain(m_domainExcludeList);
-    const QStringList listEmail = completionEmail.cleanupEmailList();
-    return listEmail;
-}
-
 void AddresseeLineEditPrivate::searchInBaloo()
 {
     const QString trimmedString = m_searchString.trimmed();
     Akonadi::Search::PIM::ContactCompleter com(trimmedString, 20);
-    const QStringList listEmail = cleanupEmailList(com.complete());
+    const QStringList listEmail = AddresseeLineEditManager::self()->cleanupEmailList(com.complete());
     for (const QString &email : listEmail) {
         addCompletionItem(email, 1, AddresseeLineEditManager::self()->balooCompletionSource());
     }
@@ -882,11 +867,6 @@ void AddresseeLineEditPrivate::setAutoGroupExpand(bool autoGroupExpand)
     mAutoGroupExpand = autoGroupExpand;
 }
 
-QStringList AddresseeLineEditPrivate::balooBlackList() const
-{
-    return m_balooBlackList;
-}
-
 void AddresseeLineEditPrivate::setExpandIntern(bool b)
 {
     mExpandIntern = b;
@@ -989,10 +969,7 @@ void AddresseeLineEditPrivate::setShowOU(bool showOU)
 
 void AddresseeLineEditPrivate::loadBalooBlackList()
 {
-    KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kpimbalooblacklist"));
-    KConfigGroup group(config, "AddressLineEdit");
-    m_balooBlackList = group.readEntry("BalooBackList", QStringList());
-    m_domainExcludeList = group.readEntry("ExcludeDomain", QStringList());
+    AddresseeLineEditManager::self()->loadBalooBlackList();
 }
 
 void AddresseeLineEditPrivate::removeCompletionSource(const QString &source)

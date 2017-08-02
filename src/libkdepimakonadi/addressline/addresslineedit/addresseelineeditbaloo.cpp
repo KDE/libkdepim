@@ -18,6 +18,9 @@
 */
 
 #include "addresseelineeditbaloo.h"
+#include "baloocompletionemail.h"
+#include <KConfigGroup>
+#include <KSharedConfig>
 
 using namespace KPIM;
 
@@ -25,7 +28,7 @@ AddresseeLineEditBaloo::AddresseeLineEditBaloo(AddresseeLineEditManager *address
     : mBalooCompletionSource(0)
     , mAddressLineStatic(addressLineStatic)
 {
-
+    loadBalooBlackList();
 }
 
 AddresseeLineEditBaloo::~AddresseeLineEditBaloo()
@@ -41,4 +44,32 @@ int AddresseeLineEditBaloo::balooCompletionSource() const
 void AddresseeLineEditBaloo::setBalooCompletionSource(int value)
 {
     mBalooCompletionSource = value;
+}
+
+QStringList AddresseeLineEditBaloo::balooBlackList() const
+{
+    return mBalooBlackList;
+}
+
+QStringList AddresseeLineEditBaloo::domainExcludeList() const
+{
+    return mDomainExcludeList;
+}
+
+void AddresseeLineEditBaloo::loadBalooBlackList()
+{
+    KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kpimbalooblacklist"));
+    KConfigGroup group(config, "AddressLineEdit");
+    mBalooBlackList = group.readEntry("BalooBackList", QStringList());
+    mDomainExcludeList = group.readEntry("ExcludeDomain", QStringList());
+}
+
+QStringList AddresseeLineEditBaloo::cleanupEmailList(const QStringList &inputList)
+{
+    KPIM::BalooCompletionEmail completionEmail;
+    completionEmail.setEmailList(inputList);
+    completionEmail.setBlackList(mBalooBlackList);
+    completionEmail.setExcludeDomain(mDomainExcludeList);
+    const QStringList listEmail = completionEmail.cleanupEmailList();
+    return listEmail;
 }

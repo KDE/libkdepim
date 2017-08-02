@@ -113,6 +113,9 @@ public:
     void setAddressLineEdit(AddresseeLineEdit *addressLineEdit);
     bool isOnline() const;
 
+    void loadBalooBlackList();
+    QStringList cleanupEmailList(const QStringList &inputList);
+    QStringList balooBlackList() const;
 private:
     KMailCompletion *mCompletion;
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;

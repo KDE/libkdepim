@@ -128,7 +128,6 @@ public:
     void updateBalooBlackList();
     void updateCompletionOrder();
     KLDAP::LdapClientSearch *ldapSearch() const;
-    QStringList balooBlackList() const;
 
     void setAutoGroupExpand(bool autoGroupExpand);
     bool autoGroupExpand() const;
