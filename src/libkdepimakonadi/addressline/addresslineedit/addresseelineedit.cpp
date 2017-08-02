@@ -7,6 +7,7 @@
   Copyright (c) 2001 Waldo Bastian <bastian@kde.org>
   Copyright (c) 2004 Daniel Molkentin <danimo@klaralvdalens-datakonsult.se>
   Copyright (c) 2004 Karl-Heinz Zimmer <khz@klaralvdalens-datakonsult.se>
+  Copyright (c) 2017 Laurent Montel <montel@kde.org>
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Library General Public
@@ -314,9 +315,8 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
         KContacts::Addressee::List list;
         KContacts::VCardDrag::fromMimeData(md, list);
 
-        KContacts::Addressee::List::ConstIterator ait;
-        KContacts::Addressee::List::ConstIterator end(list.constEnd());
-        for (ait = list.constBegin(); ait != end; ++ait) {
+        const KContacts::Addressee::List::ConstIterator end(list.constEnd());
+        for (KContacts::Addressee::List::ConstIterator ait = list.constBegin(); ait != end; ++ait) {
             insertEmails((*ait).emails());
         }
     }
@@ -644,17 +644,12 @@ void AddresseeLineEdit::configureCompletion()
     d->setCanDeleteLineEdit(true);
 }
 
-QStringList AddresseeLineEdit::cleanupEmailList(const QStringList &inputList)
-{
-    return AddresseeLineEditManager::self()->cleanupEmailList(inputList);
-}
-
 void AddresseeLineEdit::loadContacts()
 {
     const QString recentAddressGroupName = i18n("Recent Addresses");
     if (showRecentAddresses()) {
         const QStringList recent
-            = cleanupEmailList(KPIM::RecentAddresses::self(recentAddressConfig())->addresses());
+            = AddresseeLineEditManager::self()->cleanupEmailList(KPIM::RecentAddresses::self(recentAddressConfig())->addresses());
         QStringList::ConstIterator it = recent.constBegin();
         QString name, email;
 
