@@ -117,6 +117,7 @@ public:
     void setCanDeleteLineEdit(bool inprogressToConfigureCompletion);
 
 public Q_SLOTS:
+    void slotToggleExpandGroups();
     void slotShowOUChanged(bool);
 
 private Q_SLOTS:
@@ -150,7 +151,7 @@ private:
     bool m_lastSearchMode;
     bool m_searchExtended; //has \" been added?
     bool m_useSemicolonAsSeparator;
-    bool m_showOU;
+    bool mShowOU;
     bool m_enableBalooSearch;
     bool m_enableAkonadiSearch;
     bool mExpandIntern;

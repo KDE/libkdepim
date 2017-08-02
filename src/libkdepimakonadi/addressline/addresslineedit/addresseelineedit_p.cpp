@@ -54,7 +54,7 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
     , m_lastSearchMode(false)
     , m_searchExtended(false)
     , m_useSemicolonAsSeparator(false)
-    , m_showOU(false)
+    , mShowOU(false)
     , m_enableBalooSearch(true)
     , m_enableAkonadiSearch(true)
     , mExpandIntern(true)
@@ -145,7 +145,7 @@ void AddresseeLineEditPrivate::init()
         }
 
         KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
-        m_showOU = group.readEntry("ShowOU", false);
+        mShowOU = group.readEntry("ShowOU", false);
         mAutoGroupExpand = group.readEntry("AutoGroupExpand", false);
     }
     connect(q, &AddresseeLineEdit::textCompleted, q, &AddresseeLineEdit::slotEditingFinished);
@@ -649,7 +649,7 @@ void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List 
         contact.setEmails(result.email);
         QString ou;
 
-        if (m_showOU) {
+        if (mShowOU) {
             const int depth = result.dn.depth();
             for (int i = 0; i < depth; ++i) {
                 const QString rdnStr = result.dn.rdnString(i);
@@ -789,12 +789,19 @@ void AddresseeLineEditPrivate::slotAkonadiCollectionsReceived(
     }
 }
 
+void AddresseeLineEditPrivate::slotToggleExpandGroups()
+{
+    setAutoGroupExpand(!autoGroupExpand());
+    KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
+    group.writeEntry("AutoGroupExpand", autoGroupExpand());
+}
+
 void AddresseeLineEditPrivate::slotShowOUChanged(bool checked)
 {
-    if (checked != m_showOU) {
+    if (checked != mShowOU) {
         KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
         group.writeEntry("ShowOU", checked);
-        m_showOU = checked;
+        mShowOU = checked;
     }
 }
 
@@ -957,12 +964,12 @@ void AddresseeLineEditPrivate::setUseCompletion(bool useCompletion)
 
 bool AddresseeLineEditPrivate::showOU() const
 {
-    return m_showOU;
+    return mShowOU;
 }
 
 void AddresseeLineEditPrivate::setShowOU(bool showOU)
 {
-    m_showOU = showOU;
+    mShowOU = showOU;
 }
 
 void AddresseeLineEditPrivate::loadBalooBlackList()

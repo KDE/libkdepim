@@ -219,7 +219,6 @@ protected:
 
 private:
     void groupExpandResult(KJob *job);
-    void slotToggleExpandGroups();
     bool eventFilter(QObject *, QEvent *) override;
 
     AddresseeLineEditPrivate *const d;

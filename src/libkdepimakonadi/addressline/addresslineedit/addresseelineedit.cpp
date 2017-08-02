@@ -609,7 +609,7 @@ QMenu *AddresseeLineEdit::createStandardContextMenu()
     QAction *act = menu->addAction(i18n("Automatically expand groups"));
     act->setCheckable(true);
     act->setChecked(autoGroupExpand());
-    connect(act, &QAction::triggered, this, &AddresseeLineEdit::slotToggleExpandGroups);
+    connect(act, &QAction::triggered, d, &AddresseeLineEditPrivate::slotToggleExpandGroups);
 
     if (!groupsIsEmpty()) {
         act = menu->addAction(i18n("Expand Groups..."));
@@ -643,13 +643,6 @@ void AddresseeLineEdit::configureCompletion()
         }
     }
     d->setCanDeleteLineEdit(true);
-}
-
-void AddresseeLineEdit::slotToggleExpandGroups()
-{
-    setAutoGroupExpand(!autoGroupExpand());
-    KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
-    group.writeEntry("AutoGroupExpand", autoGroupExpand());
 }
 
 QStringList AddresseeLineEdit::cleanupEmailList(const QStringList &inputList)
