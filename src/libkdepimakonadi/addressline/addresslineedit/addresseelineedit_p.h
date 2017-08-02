@@ -147,7 +147,6 @@ private:
     bool m_useCompletion;
     bool m_completionInitialized;
     bool m_smartPaste;
-    bool m_addressBookConnected;
     bool mLastSearchMode;
     bool mSearchExtended; //has \" been added?
     bool mUseSemicolonAsSeparator;

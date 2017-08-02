@@ -50,7 +50,6 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
     , m_useCompletion(enableCompletion)
     , m_completionInitialized(false)
     , m_smartPaste(false)
-    , m_addressBookConnected(false)
     , mLastSearchMode(false)
     , mSearchExtended(false)
     , mUseSemicolonAsSeparator(false)
