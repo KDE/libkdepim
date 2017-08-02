@@ -147,8 +147,6 @@ void AddresseeLineEditPrivate::init()
         KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
         m_showOU = group.readEntry("ShowOU", false);
         mAutoGroupExpand = group.readEntry("AutoGroupExpand", false);
-
-        loadBalooBlackList();
     }
     connect(q, &AddresseeLineEdit::textCompleted, q, &AddresseeLineEdit::slotEditingFinished);
     connect(q, &AddresseeLineEdit::editingFinished, q, &AddresseeLineEdit::slotEditingFinished);
