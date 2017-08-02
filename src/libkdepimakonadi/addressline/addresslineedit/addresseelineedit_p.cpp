@@ -46,10 +46,10 @@ using namespace KPIM;
 AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, bool enableCompletion)
     : QObject(qq)
     , q(qq)
-    , m_recentAddressConfig(nullptr)
-    , m_useCompletion(enableCompletion)
-    , m_completionInitialized(false)
-    , m_smartPaste(false)
+    , mRecentAddressConfig(nullptr)
+    , mUseCompletion(enableCompletion)
+    , mCompletionInitialized(false)
+    , mSmartPaste(false)
     , mLastSearchMode(false)
     , mSearchExtended(false)
     , mUseSemicolonAsSeparator(false)
@@ -61,8 +61,8 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
     , mShowRecentAddresses(true)
     , mCanDeleteLineEdit(true)
 {
-    m_delayedQueryTimer.setSingleShot(true);
-    connect(&m_delayedQueryTimer, &QTimer::timeout, this, &AddresseeLineEditPrivate::slotTriggerDelayedQueries);
+    mDelayedQueryTimer.setSingleShot(true);
+    connect(&mDelayedQueryTimer, &QTimer::timeout, this, &AddresseeLineEditPrivate::slotTriggerDelayedQueries);
 }
 
 AddresseeLineEditPrivate::~AddresseeLineEditPrivate()
@@ -104,27 +104,27 @@ public:
 
 void AddresseeLineEditPrivate::init()
 {
-    m_toolButton = new QToolButton(q);
-    m_toolButton->setVisible(false);
-    m_toolButton->setCursor(Qt::ArrowCursor);
+    mToolButton = new QToolButton(q);
+    mToolButton->setVisible(false);
+    mToolButton->setCursor(Qt::ArrowCursor);
     const int size = q->sizeHint().height() - 5;
-    m_toolButton->setFixedSize(size, size);
+    mToolButton->setFixedSize(size, size);
     int padding = (q->sizeHint().height() - size) / 2;
-    m_toolButton->move(2, padding);
-    m_toolButton->setStyleSheet(QStringLiteral("QToolButton { border: none; }"));
-    connect(m_toolButton, &QToolButton::clicked, q, &AddresseeLineEdit::iconClicked);
+    mToolButton->move(2, padding);
+    mToolButton->setStyleSheet(QStringLiteral("QToolButton { border: none; }"));
+    connect(mToolButton, &QToolButton::clicked, q, &AddresseeLineEdit::iconClicked);
 
     if (!AddresseeLineEditManager::self()) {
         AddresseeLineEditManager::self()->completion()->setOrder(KCompletion::Weighted);
         AddresseeLineEditManager::self()->completion()->setIgnoreCase(true);
     }
 
-    if (m_useCompletion) {
+    if (mUseCompletion) {
         AddresseeLineEditManager::self()->initializeLdap();
         AddresseeLineEditManager::self()->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
 
         AddresseeLineEditManager::self()->updateLDAPWeights();
-        if (!m_completionInitialized) {
+        if (!mCompletionInitialized) {
             q->setCompletionObject(AddresseeLineEditManager::self()->completion(), false);
             connect(q, &KLineEdit::completion,
                     this, &AddresseeLineEditPrivate::slotCompletion);
@@ -140,7 +140,7 @@ void AddresseeLineEditPrivate::init()
             connect(AddresseeLineEditManager::self()->ldapSearch(), SIGNAL(searchData(KLDAP::LdapResult::List)),
                     SLOT(slotLDAPSearchData(KLDAP::LdapResult::List)));
 
-            m_completionInitialized = true;
+            mCompletionInitialized = true;
         }
 
         KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
@@ -154,20 +154,20 @@ void AddresseeLineEditPrivate::init()
 void AddresseeLineEditPrivate::setIcon(const QIcon &icon, const QString &tooltip)
 {
     if (icon.isNull()) {
-        m_toolButton->setVisible(false);
+        mToolButton->setVisible(false);
         q->setStyleSheet(QString());
     } else {
-        m_toolButton->setIcon(icon);
-        m_toolButton->setToolTip(tooltip);
-        const int padding = m_toolButton->width() - q->style()->pixelMetric(QStyle::PM_DefaultFrameWidth);
+        mToolButton->setIcon(icon);
+        mToolButton->setToolTip(tooltip);
+        const int padding = mToolButton->width() - q->style()->pixelMetric(QStyle::PM_DefaultFrameWidth);
         q->setStyleSheet(QStringLiteral("QLineEdit { padding-left: %1px }").arg(padding));
-        m_toolButton->setVisible(true);
+        mToolButton->setVisible(true);
     }
 }
 
 void AddresseeLineEditPrivate::searchInBaloo()
 {
-    const QString trimmedString = m_searchString.trimmed();
+    const QString trimmedString = mSearchString.trimmed();
     Akonadi::Search::PIM::ContactCompleter com(trimmedString, 20);
     const QStringList listEmail = AddresseeLineEditManager::self()->cleanupEmailList(com.complete());
     for (const QString &email : listEmail) {
@@ -179,7 +179,7 @@ void AddresseeLineEditPrivate::searchInBaloo()
 void AddresseeLineEditPrivate::alternateColor()
 {
     const KColorScheme colorScheme(QPalette::Active, KColorScheme::View);
-    m_alternateColor = colorScheme.background(KColorScheme::AlternateBackground).color();
+    mAlternateColor = colorScheme.background(KColorScheme::AlternateBackground).color();
 }
 
 void AddresseeLineEditPrivate::setCompletedItems(const QStringList &items, bool autoSuggest)
@@ -187,23 +187,23 @@ void AddresseeLineEditPrivate::setCompletedItems(const QStringList &items, bool 
     KCompletionBox *completionBox = q->completionBox();
 
     if (!items.isEmpty()
-        && !(items.count() == 1 && m_searchString == items.first())) {
+        && !(items.count() == 1 && mSearchString == items.first())) {
         completionBox->clear();
         const int numberOfItems(items.count());
         for (int i = 0; i < numberOfItems; ++i) {
             QListWidgetItem *item = new QListWidgetItem(items.at(i), completionBox);
             if (!items.at(i).startsWith(s_completionItemIndentString)) {
-                if (!m_alternateColor.isValid()) {
+                if (!mAlternateColor.isValid()) {
                     alternateColor();
                 }
                 item->setFlags(item->flags() & ~Qt::ItemIsSelectable);
-                item->setBackgroundColor(m_alternateColor);
+                item->setBackgroundColor(mAlternateColor);
             }
             completionBox->addItem(item);
         }
         if (!completionBox->isVisible()) {
-            if (!m_searchString.isEmpty()) {
-                completionBox->setCancelledText(m_searchString);
+            if (!mSearchString.isEmpty()) {
+                completionBox->setCancelledText(mSearchString);
             }
             completionBox->popup();
             // we have to install the event filter after popup(), since that
@@ -223,7 +223,7 @@ void AddresseeLineEditPrivate::setCompletedItems(const QStringList &items, bool 
         }
 
         if (autoSuggest) {
-            const int index = items.first().indexOf(m_searchString);
+            const int index = items.first().indexOf(mSearchString);
             const QString newText = items.first().mid(index);
             q->callSetUserSelection(false);
             q->callSetCompletedText(newText, true);
@@ -261,8 +261,8 @@ void AddresseeLineEditPrivate::addCompletionItem(const QString &string, int weig
 const QStringList KPIM::AddresseeLineEditPrivate::adjustedCompletionItems(bool fullSearch)
 {
     QStringList items = fullSearch
-                        ? AddresseeLineEditManager::self()->completion()->allMatches(m_searchString)
-                        : AddresseeLineEditManager::self()->completion()->substringCompletion(m_searchString);
+                        ? AddresseeLineEditManager::self()->completion()->allMatches(mSearchString)
+                        : AddresseeLineEditManager::self()->completion()->substringCompletion(mSearchString);
 
     //force items to be sorted by email
     items.sort();
@@ -347,19 +347,19 @@ const QStringList KPIM::AddresseeLineEditPrivate::adjustedCompletionItems(bool f
 
 void AddresseeLineEditPrivate::updateSearchString()
 {
-    m_searchString = q->text();
+    mSearchString = q->text();
 
     int n = -1;
     bool inQuote = false;
-    const int searchStringLength = m_searchString.length();
+    const int searchStringLength = mSearchString.length();
     for (int i = 0; i < searchStringLength; ++i) {
-        const QChar searchChar = m_searchString.at(i);
+        const QChar searchChar = mSearchString.at(i);
         if (searchChar == QLatin1Char('"')) {
             inQuote = !inQuote;
         }
 
         if (searchChar == QLatin1Char('\\')
-            && (i + 1) < searchStringLength && m_searchString.at(i + 1) == QLatin1Char('"')) {
+            && (i + 1) < searchStringLength && mSearchString.at(i + 1) == QLatin1Char('"')) {
             ++i;
         }
 
@@ -377,23 +377,23 @@ void AddresseeLineEditPrivate::updateSearchString()
     if (n >= 0) {
         ++n; // Go past the ","
 
-        const int len = m_searchString.length();
+        const int len = mSearchString.length();
 
         // Increment past any whitespace...
-        while (n < len && m_searchString.at(n).isSpace()) {
+        while (n < len && mSearchString.at(n).isSpace()) {
             ++n;
         }
 
-        m_previousAddresses = m_searchString.left(n);
-        m_searchString = m_searchString.mid(n).trimmed();
+        mPreviousAddresses = mSearchString.left(n);
+        mSearchString = mSearchString.mid(n).trimmed();
     } else {
-        m_previousAddresses.clear();
+        mPreviousAddresses.clear();
     }
 }
 
 void AddresseeLineEditPrivate::slotTriggerDelayedQueries()
 {
-    const QString strSearch = m_searchString.trimmed();
+    const QString strSearch = mSearchString.trimmed();
     if (strSearch.size() <= 2) {
         return;
     }
@@ -411,14 +411,14 @@ void AddresseeLineEditPrivate::slotTriggerDelayedQueries()
 
 void AddresseeLineEditPrivate::startSearches()
 {
-    if (!m_delayedQueryTimer.isActive()) {
-        m_delayedQueryTimer.start(50);
+    if (!mDelayedQueryTimer.isActive()) {
+        mDelayedQueryTimer.start(50);
     }
 }
 
 void AddresseeLineEditPrivate::akonadiPerformSearch()
 {
-    qCDebug(LIBKDEPIMAKONADI_LOG) << "searching akonadi with:" << m_searchString;
+    qCDebug(LIBKDEPIMAKONADI_LOG) << "searching akonadi with:" << mSearchString;
 
     // first, kill all job still in flight, they are no longer current
     for (const QWeakPointer<Akonadi::Job> &job : qAsConst(AddresseeLineEditManager::self()->akonadiJobsInFlight)) {
@@ -431,7 +431,7 @@ void AddresseeLineEditPrivate::akonadiPerformSearch()
     // now start new jobs
     Akonadi::ContactSearchJob *contactJob = new Akonadi::ContactSearchJob(AddresseeLineEditManager::self()->akonadiSession());
     contactJob->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
-    contactJob->setQuery(Akonadi::ContactSearchJob::NameOrEmail, m_searchString,
+    contactJob->setQuery(Akonadi::ContactSearchJob::NameOrEmail, mSearchString,
                          Akonadi::ContactSearchJob::ContainsWordBoundaryMatch);
     connect(contactJob, &Akonadi::ItemSearchJob::itemsReceived,
             this, &AddresseeLineEditPrivate::slotAkonadiHandleItems);
@@ -440,7 +440,7 @@ void AddresseeLineEditPrivate::akonadiPerformSearch()
 
     Akonadi::ContactGroupSearchJob *groupJob = new Akonadi::ContactGroupSearchJob(AddresseeLineEditManager::self()->akonadiSession());
     groupJob->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
-    groupJob->setQuery(Akonadi::ContactGroupSearchJob::Name, m_searchString,
+    groupJob->setQuery(Akonadi::ContactGroupSearchJob::Name, mSearchString,
                        Akonadi::ContactGroupSearchJob::ContainsMatch);
     connect(contactJob, &Akonadi::ItemSearchJob::itemsReceived,
             this, &AddresseeLineEditPrivate::slotAkonadiHandleItems);
@@ -492,7 +492,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
         const QStringList completions = adjustedCompletionItems(false);
 
         if (completions.count() == 1) {
-            q->setText(m_previousAddresses + completions.first().trimmed());
+            q->setText(mPreviousAddresses + completions.first().trimmed());
         }
 
         // Make sure the completion popup is closed if no matching items were found
@@ -505,7 +505,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
 
     switch (mode) {
     case KCompletion::CompletionPopupAuto:
-        if (m_searchString.isEmpty()) {
+        if (mSearchString.isEmpty()) {
             break;
         }
     //else: fall-through to the CompletionPopup case
@@ -522,9 +522,9 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
 
     case KCompletion::CompletionShell:
     {
-        const QString match = AddresseeLineEditManager::self()->completion()->makeCompletion(m_searchString);
-        if (!match.isNull() && match != m_searchString) {
-            q->setText(m_previousAddresses + match);
+        const QString match = AddresseeLineEditManager::self()->completion()->makeCompletion(mSearchString);
+        if (!match.isNull() && match != mSearchString) {
+            q->setText(mPreviousAddresses + match);
             q->setModified(true);
             q->cursorAtEnd();
         }
@@ -536,41 +536,41 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
         //force autoSuggest in KLineEdit::keyPressed or setCompletedText will have no effect
         q->setCompletionMode(q->completionMode());
 
-        if (!m_searchString.isEmpty()) {
+        if (!mSearchString.isEmpty()) {
             //if only our \" is left, remove it since user has not typed it either
-            if (mSearchExtended && m_searchString == QLatin1String("\"")) {
+            if (mSearchExtended && mSearchString == QLatin1String("\"")) {
                 mSearchExtended = false;
-                m_searchString.clear();
-                q->setText(m_previousAddresses);
+                mSearchString.clear();
+                q->setText(mPreviousAddresses);
                 break;
             }
 
-            QString match = AddresseeLineEditManager::self()->completion()->makeCompletion(m_searchString);
+            QString match = AddresseeLineEditManager::self()->completion()->makeCompletion(mSearchString);
 
             if (!match.isEmpty()) {
-                if (match != m_searchString) {
-                    const QString adds = m_previousAddresses + match;
+                if (match != mSearchString) {
+                    const QString adds = mPreviousAddresses + match;
                     q->callSetCompletedText(adds);
                 }
             } else {
-                if (!m_searchString.startsWith(QLatin1Char('\"'))) {
+                if (!mSearchString.startsWith(QLatin1Char('\"'))) {
                     //try with quoted text, if user has not type one already
-                    match = AddresseeLineEditManager::self()->completion()->makeCompletion(QLatin1String("\"") + m_searchString);
-                    if (!match.isEmpty() && match != m_searchString) {
-                        m_searchString = QLatin1String("\"") + m_searchString;
+                    match = AddresseeLineEditManager::self()->completion()->makeCompletion(QLatin1String("\"") + mSearchString);
+                    if (!match.isEmpty() && match != mSearchString) {
+                        mSearchString = QLatin1String("\"") + mSearchString;
                         mSearchExtended = true;
-                        q->setText(m_previousAddresses + m_searchString);
-                        q->callSetCompletedText(m_previousAddresses + match);
+                        q->setText(mPreviousAddresses + mSearchString);
+                        q->callSetCompletedText(mPreviousAddresses + match);
                     }
                 } else if (mSearchExtended) {
                     //our added \" does not work anymore, remove it
-                    m_searchString = m_searchString.mid(1);
+                    mSearchString = mSearchString.mid(1);
                     mSearchExtended = false;
-                    q->setText(m_previousAddresses + m_searchString);
+                    q->setText(mPreviousAddresses + mSearchString);
                     //now try again
-                    match = AddresseeLineEditManager::self()->completion()->makeCompletion(m_searchString);
-                    if (!match.isEmpty() && match != m_searchString) {
-                        const QString adds = m_previousAddresses + match;
+                    match = AddresseeLineEditManager::self()->completion()->makeCompletion(mSearchString);
+                    if (!match.isEmpty() && match != mSearchString) {
+                        const QString adds = mPreviousAddresses + match;
                         q->setCompletedText(adds);
                     }
                 }
@@ -593,7 +593,7 @@ void AddresseeLineEditPrivate::slotCompletion()
 
     updateSearchString();
     if (q->completionBox()) {
-        q->completionBox()->setCancelledText(m_searchString);
+        q->completionBox()->setCancelledText(mSearchString);
     }
 
     startSearches();
@@ -606,7 +606,7 @@ void AddresseeLineEditPrivate::slotPopupCompletion(const QString &completion)
     if (c.endsWith(QLatin1Char(')'))) {
         c = completion.mid(0, completion.lastIndexOf(QLatin1String(" ("))).trimmed();
     }
-    q->setText(m_previousAddresses + c);
+    q->setText(mPreviousAddresses + c);
     q->cursorAtEnd();
     updateSearchString();
     q->emitTextCompleted();
@@ -670,11 +670,11 @@ void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List 
     if ((q->hasFocus() || q->completionBox()->hasFocus())
         && q->completionMode() != KCompletion::CompletionNone
         && q->completionMode() != KCompletion::CompletionShell) {
-        q->setText(m_previousAddresses + m_searchString);
+        q->setText(mPreviousAddresses + mSearchString);
         // only complete again if the user didn't change the selection while
         // we were waiting; otherwise the completion box will be closed
         const QListWidgetItem *current = q->completionBox()->currentItem();
-        if (!current || m_searchString.trimmed() != current->text().trimmed()) {
+        if (!current || mSearchString.trimmed() != current->text().trimmed()) {
             doCompletion(mLastSearchMode);
         }
     }
@@ -683,7 +683,7 @@ void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List 
 void AddresseeLineEditPrivate::slotEditCompletionOrder()
 {
     init(); // for AddresseeLineEditStatic::self()->ldapSearch
-    if (m_useCompletion) {
+    if (mUseCompletion) {
         QPointer<CompletionOrderEditor> dlg = new CompletionOrderEditor(AddresseeLineEditManager::self()->ldapSearch(), nullptr);
         if (dlg->exec()) {
             AddresseeLineEditManager::self()->updateCompletionOrder();
@@ -704,7 +704,7 @@ void AddresseeLineEditPrivate::slotUserCancelled(const QString &cancelText)
         AddresseeLineEditManager::self()->stopLDAPLookup();
     }
 
-    q->callUserCancelled(m_previousAddresses + cancelText);   // in KLineEdit
+    q->callUserCancelled(mPreviousAddresses + cancelText);   // in KLineEdit
 }
 
 void AddresseeLineEditPrivate::slotAkonadiHandleItems(const Akonadi::Item::List &items)
@@ -744,7 +744,7 @@ void AddresseeLineEditPrivate::slotAkonadiHandleItems(const Akonadi::Item::List 
 
     if (!items.isEmpty()) {
         const QListWidgetItem *current = q->completionBox()->currentItem();
-        if (!current || m_searchString.trimmed() != current->text().trimmed()) {
+        if (!current || mSearchString.trimmed() != current->text().trimmed()) {
             doCompletion(mLastSearchMode);
         }
     }
@@ -783,7 +783,7 @@ void AddresseeLineEditPrivate::slotAkonadiCollectionsReceived(
     akonadiHandlePending();
     // do completion
     const QListWidgetItem *current = q->completionBox()->currentItem();
-    if (!current || m_searchString.trimmed() != current->text().trimmed()) {
+    if (!current || mSearchString.trimmed() != current->text().trimmed()) {
         doCompletion(mLastSearchMode);
     }
 }
@@ -828,7 +828,7 @@ void AddresseeLineEditPrivate::setCanDeleteLineEdit(bool inprogressToConfigureCo
 
 KConfig *AddresseeLineEditPrivate::recentAddressConfig() const
 {
-    return m_recentAddressConfig;
+    return mRecentAddressConfig;
 }
 
 bool AddresseeLineEditPrivate::showRecentAddresses() const
@@ -838,7 +838,7 @@ bool AddresseeLineEditPrivate::showRecentAddresses() const
 
 void AddresseeLineEditPrivate::setRecentAddressConfig(KConfig *config)
 {
-    m_recentAddressConfig = config;
+    mRecentAddressConfig = config;
 }
 
 KContacts::ContactGroup::List AddresseeLineEditPrivate::groups() const
@@ -913,12 +913,12 @@ void AddresseeLineEditPrivate::setEnableAkonadiSearch(bool enableAkonadiSearch)
 
 QString AddresseeLineEditPrivate::searchString() const
 {
-    return m_searchString;
+    return mSearchString;
 }
 
 void AddresseeLineEditPrivate::setSearchString(const QString &searchString)
 {
-    m_searchString = searchString;
+    mSearchString = searchString;
 }
 
 bool AddresseeLineEditPrivate::searchExtended() const
@@ -933,32 +933,32 @@ void AddresseeLineEditPrivate::setSearchExtended(bool searchExtended)
 
 bool AddresseeLineEditPrivate::smartPaste() const
 {
-    return m_smartPaste;
+    return mSmartPaste;
 }
 
 void AddresseeLineEditPrivate::setSmartPaste(bool smartPaste)
 {
-    m_smartPaste = smartPaste;
+    mSmartPaste = smartPaste;
 }
 
 bool AddresseeLineEditPrivate::completionInitialized() const
 {
-    return m_completionInitialized;
+    return mCompletionInitialized;
 }
 
 void AddresseeLineEditPrivate::setCompletionInitialized(bool completionInitialized)
 {
-    m_completionInitialized = completionInitialized;
+    mCompletionInitialized = completionInitialized;
 }
 
 bool AddresseeLineEditPrivate::useCompletion() const
 {
-    return m_useCompletion;
+    return mUseCompletion;
 }
 
 void AddresseeLineEditPrivate::setUseCompletion(bool useCompletion)
 {
-    m_useCompletion = useCompletion;
+    mUseCompletion = useCompletion;
 }
 
 bool AddresseeLineEditPrivate::showOU() const

@@ -136,17 +136,17 @@ private Q_SLOTS:
 
 private:
     AddresseeLineEdit *q;
-    QToolButton *m_toolButton;
-    QTimer m_delayedQueryTimer;
-    QColor m_alternateColor;
-    QString m_previousAddresses;
-    QString m_searchString;
+    QToolButton *mToolButton;
+    QTimer mDelayedQueryTimer;
+    QColor mAlternateColor;
+    QString mPreviousAddresses;
+    QString mSearchString;
     QList<KJob *> mMightBeGroupJobs;
     KContacts::ContactGroup::List mGroups;
-    KConfig *m_recentAddressConfig;
-    bool m_useCompletion;
-    bool m_completionInitialized;
-    bool m_smartPaste;
+    KConfig *mRecentAddressConfig;
+    bool mUseCompletion;
+    bool mCompletionInitialized;
+    bool mSmartPaste;
     bool mLastSearchMode;
     bool mSearchExtended; //has \" been added?
     bool mUseSemicolonAsSeparator;
