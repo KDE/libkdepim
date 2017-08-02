@@ -53,11 +53,9 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
     , mLastSearchMode(false)
     , mSearchExtended(false)
     , mUseSemicolonAsSeparator(false)
-    , mShowOU(false)
     , mEnableBalooSearch(true)
     , mEnableAkonadiSearch(true)
     , mExpandIntern(true)
-    , mAutoGroupExpand(false)
     , mShowRecentAddresses(true)
     , mCanDeleteLineEdit(true)
 {
@@ -142,10 +140,6 @@ void AddresseeLineEditPrivate::init()
 
             mCompletionInitialized = true;
         }
-
-        KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
-        mShowOU = group.readEntry("ShowOU", false);
-        mAutoGroupExpand = group.readEntry("AutoGroupExpand", false);
     }
     connect(q, &AddresseeLineEdit::textCompleted, q, &AddresseeLineEdit::slotEditingFinished);
     connect(q, &AddresseeLineEdit::editingFinished, q, &AddresseeLineEdit::slotEditingFinished);
@@ -648,7 +642,7 @@ void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List 
         contact.setEmails(result.email);
         QString ou;
 
-        if (mShowOU) {
+        if (AddresseeLineEditManager::self()->showOU()) {
             const int depth = result.dn.depth();
             for (int i = 0; i < depth; ++i) {
                 const QString rdnStr = result.dn.rdnString(i);
@@ -791,17 +785,11 @@ void AddresseeLineEditPrivate::slotAkonadiCollectionsReceived(
 void AddresseeLineEditPrivate::slotToggleExpandGroups()
 {
     setAutoGroupExpand(!autoGroupExpand());
-    KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
-    group.writeEntry("AutoGroupExpand", autoGroupExpand());
 }
 
 void AddresseeLineEditPrivate::slotShowOUChanged(bool checked)
 {
-    if (checked != mShowOU) {
-        KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
-        group.writeEntry("ShowOU", checked);
-        mShowOU = checked;
-    }
+    AddresseeLineEditManager::self()->setShowOU(checked);
 }
 
 void AddresseeLineEditPrivate::updateBalooBlackList()
@@ -863,12 +851,12 @@ void AddresseeLineEditPrivate::setMightBeGroupJobs(const QList<KJob *> &mightBeG
 
 bool AddresseeLineEditPrivate::autoGroupExpand() const
 {
-    return mAutoGroupExpand;
+    return AddresseeLineEditManager::self()->autoGroupExpand();
 }
 
 void AddresseeLineEditPrivate::setAutoGroupExpand(bool autoGroupExpand)
 {
-    mAutoGroupExpand = autoGroupExpand;
+    AddresseeLineEditManager::self()->setAutoGroupExpand(autoGroupExpand);
 }
 
 void AddresseeLineEditPrivate::setExpandIntern(bool b)
@@ -963,13 +951,9 @@ void AddresseeLineEditPrivate::setUseCompletion(bool useCompletion)
 
 bool AddresseeLineEditPrivate::showOU() const
 {
-    return mShowOU;
+    return AddresseeLineEditManager::self()->showOU();
 }
 
-void AddresseeLineEditPrivate::setShowOU(bool showOU)
-{
-    mShowOU = showOU;
-}
 
 void AddresseeLineEditPrivate::loadBalooBlackList()
 {

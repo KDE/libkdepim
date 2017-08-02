@@ -26,6 +26,8 @@
 #include <QNetworkConfigurationManager>
 #include <QTimer>
 #include <QCoreApplication>
+#include <KConfigGroup>
+#include <KSharedConfig>
 #include <KLDAP/LdapServer>
 #include <AkonadiCore/Session>
 using namespace KPIM;
@@ -33,12 +35,17 @@ using namespace KPIM;
 Q_GLOBAL_STATIC(AddresseeLineEditManager, sInstance)
 
 AddresseeLineEditManager::AddresseeLineEditManager()
-    : mCompletion(new KMailCompletion)
+    : mShowOU(false)
+    , mAutoGroupExpand(false)
+    , mCompletion(new KMailCompletion)
     , mAddresseeLineEditAkonadi(new AddresseeLineEditAkonadi(this))
     , mAddressessLineEditLdap(new AddresseeLineEditLdap(this))
     , mAddressessLineEditBaloo(new AddresseeLineEditBaloo(this))
     , mNetworkConfigMgr(new QNetworkConfigurationManager(QCoreApplication::instance()))
 {
+    KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
+    mShowOU = group.readEntry("ShowOU", false);
+    mAutoGroupExpand = group.readEntry("AutoGroupExpand", false);
 }
 
 AddresseeLineEditManager::~AddresseeLineEditManager()
@@ -196,4 +203,30 @@ QStringList AddresseeLineEditManager::cleanupEmailList(const QStringList &inputL
 QStringList AddresseeLineEditManager::balooBlackList() const
 {
     return mAddressessLineEditBaloo->balooBlackList();
+}
+
+bool AddresseeLineEditManager::showOU() const
+{
+    return mShowOU;
+}
+
+void AddresseeLineEditManager::setShowOU(bool checked)
+{
+    if (checked != mShowOU) {
+        KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
+        group.writeEntry("ShowOU", checked);
+        mShowOU = checked;
+    }
+}
+
+bool AddresseeLineEditManager::autoGroupExpand() const
+{
+    return mAutoGroupExpand;
+}
+
+void AddresseeLineEditManager::setAutoGroupExpand(bool autoGroupExpand)
+{
+    mAutoGroupExpand = autoGroupExpand;
+    KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
+    group.writeEntry("AutoGroupExpand", mAutoGroupExpand);
 }

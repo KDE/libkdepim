@@ -53,7 +53,6 @@ public:
     void doCompletion(bool ctrlT);
 
     bool showOU() const;
-    void setShowOU(bool showOU);
 
     void setIcon(const QIcon &icon, const QString &tooltip);
 
@@ -150,11 +149,9 @@ private:
     bool mLastSearchMode;
     bool mSearchExtended; //has \" been added?
     bool mUseSemicolonAsSeparator;
-    bool mShowOU;
     bool mEnableBalooSearch;
     bool mEnableAkonadiSearch;
     bool mExpandIntern;
-    bool mAutoGroupExpand;
     bool mShowRecentAddresses;
     bool mCanDeleteLineEdit;
 };

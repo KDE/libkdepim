@@ -116,7 +116,16 @@ public:
     void loadBalooBlackList();
     QStringList cleanupEmailList(const QStringList &inputList);
     QStringList balooBlackList() const;
+
+    bool showOU() const;
+    void setShowOU(bool showOU);
+
+    bool autoGroupExpand() const;
+    void setAutoGroupExpand(bool autoGroupExpand);
+
 private:
+    bool mShowOU;
+    bool mAutoGroupExpand;
     KMailCompletion *mCompletion;
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
     AddresseeLineEditLdap *mAddressessLineEditLdap;
