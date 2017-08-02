@@ -120,8 +120,8 @@ void AddresseeLineEditPrivate::init()
     if (mUseCompletion) {
         AddresseeLineEditManager::self()->initializeLdap();
         AddresseeLineEditManager::self()->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
-
         AddresseeLineEditManager::self()->updateLDAPWeights();
+
         if (!mCompletionInitialized) {
             q->setCompletionObject(AddresseeLineEditManager::self()->completion(), false);
             connect(q, &KLineEdit::completion,
