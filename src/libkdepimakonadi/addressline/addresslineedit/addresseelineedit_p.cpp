@@ -51,12 +51,12 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
     , m_completionInitialized(false)
     , m_smartPaste(false)
     , m_addressBookConnected(false)
-    , m_lastSearchMode(false)
-    , m_searchExtended(false)
-    , m_useSemicolonAsSeparator(false)
+    , mLastSearchMode(false)
+    , mSearchExtended(false)
+    , mUseSemicolonAsSeparator(false)
     , mShowOU(false)
-    , m_enableBalooSearch(true)
-    , m_enableAkonadiSearch(true)
+    , mEnableBalooSearch(true)
+    , mEnableAkonadiSearch(true)
     , mExpandIntern(true)
     , mAutoGroupExpand(false)
     , mShowRecentAddresses(true)
@@ -174,7 +174,7 @@ void AddresseeLineEditPrivate::searchInBaloo()
     for (const QString &email : listEmail) {
         addCompletionItem(email, 1, AddresseeLineEditManager::self()->balooCompletionSource());
     }
-    doCompletion(m_lastSearchMode);
+    doCompletion(mLastSearchMode);
 }
 
 void AddresseeLineEditPrivate::alternateColor()
@@ -370,7 +370,7 @@ void AddresseeLineEditPrivate::updateSearchString()
 
         if (i < searchStringLength
             && (searchChar == QLatin1Char(',')
-                || (m_useSemicolonAsSeparator && searchChar == QLatin1Char(';')))) {
+                || (mUseSemicolonAsSeparator && searchChar == QLatin1Char(';')))) {
             n = i;
         }
     }
@@ -399,13 +399,13 @@ void AddresseeLineEditPrivate::slotTriggerDelayedQueries()
         return;
     }
 
-    if (m_enableBalooSearch) {
+    if (mEnableBalooSearch) {
         searchInBaloo();
     }
 
     // We send a contactsearch job through akonadi.
     // This not only searches baloo but also servers if remote search is enabled
-    if (m_enableAkonadiSearch) {
+    if (mEnableAkonadiSearch) {
         akonadiPerformSearch();
     }
 }
@@ -478,7 +478,7 @@ void AddresseeLineEditPrivate::akonadiHandlePending()
 
 void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
 {
-    m_lastSearchMode = ctrlT;
+    mLastSearchMode = ctrlT;
 
     const KCompletion::CompletionMode mode = q->completionMode();
 
@@ -539,8 +539,8 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
 
         if (!m_searchString.isEmpty()) {
             //if only our \" is left, remove it since user has not typed it either
-            if (m_searchExtended && m_searchString == QLatin1String("\"")) {
-                m_searchExtended = false;
+            if (mSearchExtended && m_searchString == QLatin1String("\"")) {
+                mSearchExtended = false;
                 m_searchString.clear();
                 q->setText(m_previousAddresses);
                 break;
@@ -559,14 +559,14 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
                     match = AddresseeLineEditManager::self()->completion()->makeCompletion(QLatin1String("\"") + m_searchString);
                     if (!match.isEmpty() && match != m_searchString) {
                         m_searchString = QLatin1String("\"") + m_searchString;
-                        m_searchExtended = true;
+                        mSearchExtended = true;
                         q->setText(m_previousAddresses + m_searchString);
                         q->callSetCompletedText(m_previousAddresses + match);
                     }
-                } else if (m_searchExtended) {
+                } else if (mSearchExtended) {
                     //our added \" does not work anymore, remove it
                     m_searchString = m_searchString.mid(1);
-                    m_searchExtended = false;
+                    mSearchExtended = false;
                     q->setText(m_previousAddresses + m_searchString);
                     //now try again
                     match = AddresseeLineEditManager::self()->completion()->makeCompletion(m_searchString);
@@ -676,7 +676,7 @@ void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List 
         // we were waiting; otherwise the completion box will be closed
         const QListWidgetItem *current = q->completionBox()->currentItem();
         if (!current || m_searchString.trimmed() != current->text().trimmed()) {
-            doCompletion(m_lastSearchMode);
+            doCompletion(mLastSearchMode);
         }
     }
 }
@@ -746,7 +746,7 @@ void AddresseeLineEditPrivate::slotAkonadiHandleItems(const Akonadi::Item::List 
     if (!items.isEmpty()) {
         const QListWidgetItem *current = q->completionBox()->currentItem();
         if (!current || m_searchString.trimmed() != current->text().trimmed()) {
-            doCompletion(m_lastSearchMode);
+            doCompletion(mLastSearchMode);
         }
     }
 }
@@ -785,7 +785,7 @@ void AddresseeLineEditPrivate::slotAkonadiCollectionsReceived(
     // do completion
     const QListWidgetItem *current = q->completionBox()->currentItem();
     if (!current || m_searchString.trimmed() != current->text().trimmed()) {
-        doCompletion(m_lastSearchMode);
+        doCompletion(mLastSearchMode);
     }
 }
 
@@ -884,32 +884,32 @@ bool AddresseeLineEditPrivate::expandIntern() const
 
 bool AddresseeLineEditPrivate::useSemicolonAsSeparator() const
 {
-    return m_useSemicolonAsSeparator;
+    return mUseSemicolonAsSeparator;
 }
 
 void AddresseeLineEditPrivate::setUseSemicolonAsSeparator(bool useSemicolonAsSeparator)
 {
-    m_useSemicolonAsSeparator = useSemicolonAsSeparator;
+    mUseSemicolonAsSeparator = useSemicolonAsSeparator;
 }
 
 bool AddresseeLineEditPrivate::enableBalooSearch() const
 {
-    return m_enableBalooSearch;
+    return mEnableBalooSearch;
 }
 
 void AddresseeLineEditPrivate::setEnableBalooSearch(bool enableBalooSearch)
 {
-    m_enableBalooSearch = enableBalooSearch;
+    mEnableBalooSearch = enableBalooSearch;
 }
 
 bool AddresseeLineEditPrivate::enableAkonadiSearch() const
 {
-    return m_enableAkonadiSearch;
+    return mEnableAkonadiSearch;
 }
 
 void AddresseeLineEditPrivate::setEnableAkonadiSearch(bool enableAkonadiSearch)
 {
-    m_enableAkonadiSearch = enableAkonadiSearch;
+    mEnableAkonadiSearch = enableAkonadiSearch;
 }
 
 QString AddresseeLineEditPrivate::searchString() const
@@ -924,12 +924,12 @@ void AddresseeLineEditPrivate::setSearchString(const QString &searchString)
 
 bool AddresseeLineEditPrivate::searchExtended() const
 {
-    return m_searchExtended;
+    return mSearchExtended;
 }
 
 void AddresseeLineEditPrivate::setSearchExtended(bool searchExtended)
 {
-    m_searchExtended = searchExtended;
+    mSearchExtended = searchExtended;
 }
 
 bool AddresseeLineEditPrivate::smartPaste() const

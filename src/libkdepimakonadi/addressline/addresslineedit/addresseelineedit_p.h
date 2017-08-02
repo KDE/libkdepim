@@ -148,12 +148,12 @@ private:
     bool m_completionInitialized;
     bool m_smartPaste;
     bool m_addressBookConnected;
-    bool m_lastSearchMode;
-    bool m_searchExtended; //has \" been added?
-    bool m_useSemicolonAsSeparator;
+    bool mLastSearchMode;
+    bool mSearchExtended; //has \" been added?
+    bool mUseSemicolonAsSeparator;
     bool mShowOU;
-    bool m_enableBalooSearch;
-    bool m_enableAkonadiSearch;
+    bool mEnableBalooSearch;
+    bool mEnableAkonadiSearch;
     bool mExpandIntern;
     bool mAutoGroupExpand;
     bool mShowRecentAddresses;
