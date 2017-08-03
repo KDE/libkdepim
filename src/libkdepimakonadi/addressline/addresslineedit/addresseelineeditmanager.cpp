@@ -224,9 +224,11 @@ bool AddresseeLineEditManager::autoGroupExpand() const
     return mAutoGroupExpand;
 }
 
-void AddresseeLineEditManager::setAutoGroupExpand(bool autoGroupExpand)
+void AddresseeLineEditManager::setAutoGroupExpand(bool checked)
 {
-    mAutoGroupExpand = autoGroupExpand;
-    KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
-    group.writeEntry("AutoGroupExpand", mAutoGroupExpand);
+    if (mAutoGroupExpand != checked) {
+        mAutoGroupExpand = checked;
+        KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
+        group.writeEntry("AutoGroupExpand", mAutoGroupExpand);
+    }
 }
