@@ -934,11 +934,6 @@ bool AddresseeLineEditPrivate::completionInitialized() const
     return mCompletionInitialized;
 }
 
-void AddresseeLineEditPrivate::setCompletionInitialized(bool completionInitialized)
-{
-    mCompletionInitialized = completionInitialized;
-}
-
 bool AddresseeLineEditPrivate::useCompletion() const
 {
     return mUseCompletion;
@@ -953,7 +948,6 @@ bool AddresseeLineEditPrivate::showOU() const
 {
     return AddresseeLineEditManager::self()->showOU();
 }
-
 
 void AddresseeLineEditPrivate::loadBalooBlackList()
 {

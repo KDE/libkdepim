@@ -60,7 +60,6 @@ public:
     void setUseCompletion(bool useCompletion);
 
     bool completionInitialized() const;
-    void setCompletionInitialized(bool completionInitialized);
 
     bool smartPaste() const;
     void setSmartPaste(bool smartPaste);
