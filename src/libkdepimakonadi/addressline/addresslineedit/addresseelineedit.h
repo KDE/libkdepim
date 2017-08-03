@@ -130,7 +130,6 @@ public:
     void updateCompletionOrder();
     KLDAP::LdapClientSearch *ldapSearch() const;
 
-    void setAutoGroupExpand(bool autoGroupExpand);
     bool autoGroupExpand() const;
     void setShowRecentAddresses(bool b);
     bool showRecentAddresses() const;

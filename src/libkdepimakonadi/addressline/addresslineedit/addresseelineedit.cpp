@@ -139,11 +139,6 @@ bool AddresseeLineEdit::autoGroupExpand() const
     return d->autoGroupExpand();
 }
 
-void AddresseeLineEdit::setAutoGroupExpand(bool autoGroupExpand)
-{
-    d->setAutoGroupExpand(autoGroupExpand);
-}
-
 void AddresseeLineEdit::setEnableBalooSearch(bool enable)
 {
     d->setEnableBalooSearch(enable);
@@ -607,7 +602,7 @@ QMenu *AddresseeLineEdit::createStandardContextMenu()
     menu->addSeparator();
     QAction *act = menu->addAction(i18n("Automatically expand groups"));
     act->setCheckable(true);
-    act->setChecked(autoGroupExpand());
+    act->setChecked(d->autoGroupExpand());
     connect(act, &QAction::triggered, d, &AddresseeLineEditPrivate::slotToggleExpandGroups);
 
     if (!groupsIsEmpty()) {
@@ -940,7 +935,7 @@ void AddresseeLineEdit::slotGroupSearchResult(KJob *job)
     d->addGroups(contactGroups);
     searchJob->deleteLater();
 
-    if (autoGroupExpand()) {
+    if (d->autoGroupExpand()) {
         expandGroups();
     }
 }
