@@ -124,19 +124,9 @@ bool AddresseeLineEdit::expandIntern() const
     return d->expandIntern();
 }
 
-bool AddresseeLineEdit::groupsIsEmpty() const
-{
-    return d->groupsIsEmpty();
-}
-
 void AddresseeLineEdit::setExpandIntern(bool expand)
 {
     d->setExpandIntern(expand);
-}
-
-bool AddresseeLineEdit::autoGroupExpand() const
-{
-    return d->autoGroupExpand();
 }
 
 void AddresseeLineEdit::setEnableBalooSearch(bool enable)
@@ -605,7 +595,7 @@ QMenu *AddresseeLineEdit::createStandardContextMenu()
     act->setChecked(d->autoGroupExpand());
     connect(act, &QAction::triggered, d, &AddresseeLineEditPrivate::slotToggleExpandGroups);
 
-    if (!groupsIsEmpty()) {
+    if (!d->groupsIsEmpty()) {
         act = menu->addAction(i18n("Expand Groups..."));
         connect(act, &QAction::triggered, this, &AddresseeLineEdit::expandGroups);
     }

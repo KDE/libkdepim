@@ -93,7 +93,6 @@ public:
 
     bool expandIntern() const;
 
-    bool groupsIsEmpty() const;
     /**
      * Adds a new @p contact to the completion with a given
      * @p weight
@@ -130,7 +129,6 @@ public:
     void updateCompletionOrder();
     KLDAP::LdapClientSearch *ldapSearch() const;
 
-    bool autoGroupExpand() const;
     void setShowRecentAddresses(bool b);
     bool showRecentAddresses() const;
     void setRecentAddressConfig(KConfig *config);
