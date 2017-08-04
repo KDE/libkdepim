@@ -667,8 +667,8 @@ void AddresseeLineEditPrivate::slotLDAPSearchData(const KLDAP::LdapResult::List 
 
 void AddresseeLineEditPrivate::slotEditCompletionOrder()
 {
-    init(); // for AddresseeLineEditStatic::self()->ldapSearch
     if (mUseCompletion) {
+        init(); // for AddresseeLineEditStatic::self()->ldapSearch
         QPointer<CompletionOrderEditor> dlg = new CompletionOrderEditor(AddresseeLineEditManager::self()->ldapSearch(), nullptr);
         if (dlg->exec()) {
             AddresseeLineEditManager::self()->updateCompletionOrder();
