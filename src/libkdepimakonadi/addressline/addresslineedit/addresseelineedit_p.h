@@ -41,7 +41,6 @@ public:
     AddresseeLineEditPrivate(AddresseeLineEdit *qq, bool enableCompletion);
     ~AddresseeLineEditPrivate();
     void loadBalooBlackList();
-    void alternateColor();
     void init();
     void setCompletedItems(const QStringList &items, bool autoSuggest);
     void addCompletionItem(const QString &string, int weight, int source, const QStringList *keyWords = nullptr);
@@ -136,7 +135,6 @@ private:
     AddresseeLineEdit *q;
     QToolButton *mToolButton;
     QTimer mDelayedQueryTimer;
-    QColor mAlternateColor;
     QString mPreviousAddresses;
     QString mSearchString;
     QList<KJob *> mMightBeGroupJobs;

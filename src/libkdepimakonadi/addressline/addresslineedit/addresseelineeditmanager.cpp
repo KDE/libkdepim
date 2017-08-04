@@ -28,8 +28,10 @@
 #include <QCoreApplication>
 #include <KConfigGroup>
 #include <KSharedConfig>
+#include <KColorScheme>
 #include <KLDAP/LdapServer>
 #include <AkonadiCore/Session>
+
 using namespace KPIM;
 
 Q_GLOBAL_STATIC(AddresseeLineEditManager, sInstance)
@@ -232,3 +234,13 @@ void AddresseeLineEditManager::setAutoGroupExpand(bool checked)
         group.writeEntry("AutoGroupExpand", mAutoGroupExpand);
     }
 }
+
+QColor AddresseeLineEditManager::alternateColor() const
+{
+    if (!mAlternateColor.isValid()) {
+        const KColorScheme colorScheme(QPalette::Active, KColorScheme::View);
+        mAlternateColor = colorScheme.background(KColorScheme::AlternateBackground).color();
+    }
+    return mAlternateColor;
+}
+

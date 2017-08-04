@@ -170,12 +170,6 @@ void AddresseeLineEditPrivate::searchInBaloo()
     doCompletion(mLastSearchMode);
 }
 
-void AddresseeLineEditPrivate::alternateColor()
-{
-    const KColorScheme colorScheme(QPalette::Active, KColorScheme::View);
-    mAlternateColor = colorScheme.background(KColorScheme::AlternateBackground).color();
-}
-
 void AddresseeLineEditPrivate::setCompletedItems(const QStringList &items, bool autoSuggest)
 {
     KCompletionBox *completionBox = q->completionBox();
@@ -187,11 +181,8 @@ void AddresseeLineEditPrivate::setCompletedItems(const QStringList &items, bool 
         for (int i = 0; i < numberOfItems; ++i) {
             QListWidgetItem *item = new QListWidgetItem(items.at(i), completionBox);
             if (!items.at(i).startsWith(s_completionItemIndentString)) {
-                if (!mAlternateColor.isValid()) {
-                    alternateColor();
-                }
                 item->setFlags(item->flags() & ~Qt::ItemIsSelectable);
-                item->setBackgroundColor(mAlternateColor);
+                item->setBackgroundColor(AddresseeLineEditManager::self()->alternateColor());
             }
             completionBox->addItem(item);
         }

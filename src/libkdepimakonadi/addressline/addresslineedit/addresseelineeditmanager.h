@@ -27,6 +27,8 @@
 #include <QWeakPointer>
 #include <ldap/ldapclientsearch.h>
 #include <qstringlist.h>
+#include <QColor>
+
 class QTimer;
 class QNetworkConfigurationManager;
 namespace KPIM {
@@ -121,9 +123,12 @@ public:
     void setShowOU(bool showOU);
 
     bool autoGroupExpand() const;
-    void setAutoGroupExpand(bool autoGroupExpand);
+    void setAutoGroupExpand(bool checked);
+
+    QColor alternateColor() const;
 
 private:
+    mutable QColor mAlternateColor;
     bool mShowOU;
     bool mAutoGroupExpand;
     KMailCompletion *mCompletion;
