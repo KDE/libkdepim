@@ -84,14 +84,15 @@ public:
 
     void setEnableBalooSearch(bool enable);
     bool enableBalooSearch() const;
+
     void setEnableAkonadiSearch(bool enable);
     bool enableAkonadiSearch() const;
 
-    bool isCompletionEnabled() const;
 
     void setExpandIntern(bool);
-
     bool expandIntern() const;
+
+    bool isCompletionEnabled() const;
 
     /**
      * Adds a new @p contact to the completion with a given
@@ -131,8 +132,10 @@ public:
 
     void setShowRecentAddresses(bool b);
     bool showRecentAddresses() const;
+
     void setRecentAddressConfig(KConfig *config);
     KConfig *recentAddressConfig() const;
+
     void configureCompletion();
 
     void setIcon(const QIcon &icon, const QString &tooltip = QString());
