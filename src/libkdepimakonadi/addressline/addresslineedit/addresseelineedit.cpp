@@ -435,7 +435,7 @@ void AddresseeLineEdit::groupExpandResult(KJob *job)
 
     const KContacts::Addressee::List contacts = expandJob->contacts();
     for (const KContacts::Addressee &addressee : contacts) {
-        if (d->expandIntern() || text().isEmpty()) {
+        if (d->expandIntern() || text().trimmed().isEmpty()) {
             insertEmails(QStringList() << addressee.fullEmail());
         } else {
             Q_EMIT addAddress(addressee.fullEmail());
