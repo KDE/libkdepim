@@ -40,7 +40,6 @@ class AddresseeLineEditPrivate : public QObject
 public:
     AddresseeLineEditPrivate(AddresseeLineEdit *qq, bool enableCompletion);
     ~AddresseeLineEditPrivate();
-    void loadBalooBlackList();
     void init();
     void setCompletedItems(const QStringList &items, bool autoSuggest);
     void addCompletionItem(const QString &string, int weight, int source, const QStringList *keyWords = nullptr);

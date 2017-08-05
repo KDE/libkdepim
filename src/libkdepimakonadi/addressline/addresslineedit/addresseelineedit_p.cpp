@@ -785,7 +785,7 @@ void AddresseeLineEditPrivate::slotShowOUChanged(bool checked)
 
 void AddresseeLineEditPrivate::updateBalooBlackList()
 {
-    loadBalooBlackList();
+    AddresseeLineEditManager::self()->loadBalooBlackList();
     q->removeCompletionSource(i18nc("@title:group", "Contacts found in your data"));
     AddresseeLineEditManager::self()->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
 }
@@ -938,11 +938,6 @@ void AddresseeLineEditPrivate::setUseCompletion(bool useCompletion)
 bool AddresseeLineEditPrivate::showOU() const
 {
     return AddresseeLineEditManager::self()->showOU();
-}
-
-void AddresseeLineEditPrivate::loadBalooBlackList()
-{
-    AddresseeLineEditManager::self()->loadBalooBlackList();
 }
 
 void AddresseeLineEditPrivate::removeCompletionSource(const QString &source)
