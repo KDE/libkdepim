@@ -26,7 +26,6 @@
 #include <QVector>
 #include <QWeakPointer>
 #include <ldap/ldapclientsearch.h>
-#include <qstringlist.h>
 #include <QColor>
 
 class QTimer;
