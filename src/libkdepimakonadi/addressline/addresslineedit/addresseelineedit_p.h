@@ -21,9 +21,7 @@
 #include <QObject>
 #include <QTimer>
 #include <QList>
-#include <QColor>
 #include <ContactGroupSearchJob>
-#include "Libkdepim/LdapClient"
 #include "ldap/ldapclientsearch.h"
 #include <AkonadiCore/Item>
 #include <AkonadiCore/Collection>
