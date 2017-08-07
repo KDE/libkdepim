@@ -19,9 +19,7 @@
 #define ADDRESSEELINEEDIT_P_H
 #include <QStringList>
 #include <QObject>
-#include <QTimer>
 #include <QList>
-#include <ContactGroupSearchJob>
 #include "ldap/ldapclientsearch.h"
 #include <AkonadiCore/Item>
 #include <AkonadiCore/Collection>
@@ -29,6 +27,11 @@
 
 class KConfig;
 class QToolButton;
+class QTimer;
+namespace Akonadi
+{
+class ContactGroupSearchJob;
+}
 
 namespace KPIM {
 class AddresseeLineEdit;
@@ -131,7 +134,7 @@ private Q_SLOTS:
 private:
     AddresseeLineEdit *q;
     QToolButton *mToolButton;
-    QTimer mDelayedQueryTimer;
+    QTimer *mDelayedQueryTimer;
     QString mPreviousAddresses;
     QString mSearchString;
     QList<KJob *> mMightBeGroupJobs;

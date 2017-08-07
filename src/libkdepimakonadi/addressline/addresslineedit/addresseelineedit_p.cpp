@@ -59,8 +59,9 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
     , mShowRecentAddresses(true)
     , mCanDeleteLineEdit(true)
 {
-    mDelayedQueryTimer.setSingleShot(true);
-    connect(&mDelayedQueryTimer, &QTimer::timeout, this, &AddresseeLineEditPrivate::slotTriggerDelayedQueries);
+    mDelayedQueryTimer = new QTimer(this);
+    mDelayedQueryTimer->setSingleShot(true);
+    connect(mDelayedQueryTimer, &QTimer::timeout, this, &AddresseeLineEditPrivate::slotTriggerDelayedQueries);
 }
 
 AddresseeLineEditPrivate::~AddresseeLineEditPrivate()
@@ -396,8 +397,8 @@ void AddresseeLineEditPrivate::slotTriggerDelayedQueries()
 
 void AddresseeLineEditPrivate::startSearches()
 {
-    if (!mDelayedQueryTimer.isActive()) {
-        mDelayedQueryTimer.start(50);
+    if (!mDelayedQueryTimer->isActive()) {
+        mDelayedQueryTimer->start(50);
     }
 }
 
