@@ -148,7 +148,7 @@ KPrefsWidInt::KPrefsWidInt(KConfigSkeleton::ItemInt *item, QWidget *parent)
     if (!mItem->maxValue().isNull()) {
         mSpin->setMaximum(mItem->maxValue().toInt());
     }
-    connect(mSpin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &KPrefsWidInt::changed);
+    connect(mSpin, QOverload<int>::of(&QSpinBox::valueChanged), this, &KPrefsWidInt::changed);
     mLabel->setBuddy(mSpin);
     QString toolTip = mItem->toolTip();
     if (!toolTip.isEmpty()) {
@@ -434,7 +434,7 @@ KPrefsWidRadios::KPrefsWidRadios(KConfigSkeleton::ItemEnum *item, QWidget *paren
     mBox = new QGroupBox(mItem->label(), parent);
     new QVBoxLayout(mBox);
     mGroup = new QButtonGroup(parent);
-    connect(mGroup, static_cast<void (QButtonGroup::*)(int)>(&QButtonGroup::buttonClicked), this, &KPrefsWidRadios::changed);
+    connect(mGroup, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &KPrefsWidRadios::changed);
 }
 
 KPrefsWidRadios::~KPrefsWidRadios()
@@ -488,7 +488,7 @@ KPrefsWidCombo::KPrefsWidCombo(KConfigSkeleton::ItemEnum *item, QWidget *parent)
     mLabel = new QLabel(mItem->label(), hbox);
     mCombo = new KComboBox(hbox);
     hboxHBoxLayout->addWidget(mCombo);
-    connect(mCombo, static_cast<void (KComboBox::*)(int)>(&KComboBox::activated), this, &KPrefsWidCombo::changed);
+    connect(mCombo, QOverload<int>::of(&KComboBox::activated), this, &KPrefsWidCombo::changed);
 }
 
 KPrefsWidCombo::~KPrefsWidCombo()

@@ -57,8 +57,7 @@ PersonSearchJob::PersonSearchJob(const QString &searchString, QObject *parent)
     : KJob(parent)
     , d(new KPIM::PersonSearchJobPrivate(searchString))
 {
-    connect(&d->mLdapSearch, static_cast<void (KLDAP::LdapClientSearch::*)(const KLDAP::LdapResultObject::List &)>(&KLDAP::LdapClientSearch::searchData),
-            this, &PersonSearchJob::onLDAPSearchData);
+    connect(&d->mLdapSearch, QOverload<const KLDAP::LdapResultObject::List &>::of(&KLDAP::LdapClientSearch::searchData), this, &PersonSearchJob::onLDAPSearchData);
 
     connect(&d->mLdapSearch, &KLDAP::LdapClientSearch::searchDone, this, &PersonSearchJob::onLDAPSearchDone);
 }
