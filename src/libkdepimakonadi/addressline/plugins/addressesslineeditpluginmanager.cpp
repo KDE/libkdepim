@@ -30,24 +30,6 @@
 
 using namespace KPIM;
 
-class AddressessLineEditPluginManagerInstancePrivate
-{
-public:
-    AddressessLineEditPluginManagerInstancePrivate()
-        : addressessLineEditPluginManager(new AddressessLineEditPluginManager)
-    {
-    }
-
-    ~AddressessLineEditPluginManagerInstancePrivate()
-    {
-        delete addressessLineEditPluginManager;
-    }
-
-    AddressessLineEditPluginManager *addressessLineEditPluginManager;
-};
-
-Q_GLOBAL_STATIC(AddressessLineEditPluginManagerInstancePrivate, sInstance)
-
 class AddressessLineEditPluginInfo
 {
 public:
@@ -155,7 +137,8 @@ AddressessLineEditPluginManager::~AddressessLineEditPluginManager()
 
 AddressessLineEditPluginManager *AddressessLineEditPluginManager::self()
 {
-    return sInstance->addressessLineEditPluginManager;
+    static AddressessLineEditPluginManager s_self;
+    return &s_self;
 }
 
 QVector<KPIM::AddressessLineEditAbstractPlugin *> AddressessLineEditPluginManager::pluginsList() const
