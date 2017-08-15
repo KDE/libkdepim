@@ -304,7 +304,7 @@ public:
         }
     }
 
-    virtual QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override
+    QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override
     {
         if (orientation == Qt::Vertical || role != Qt::DisplayRole || section < 0 || section > 17) {
             return QVariant();
