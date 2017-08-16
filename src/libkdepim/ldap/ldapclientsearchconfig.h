@@ -63,6 +63,7 @@ public:
      */
     void askForWallet(bool askForWallet);
 
+    void clearWalletPassword();
 private Q_SLOTS:
     void slotWalletClosed();
 

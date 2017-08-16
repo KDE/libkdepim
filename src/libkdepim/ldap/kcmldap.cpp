@@ -275,6 +275,7 @@ void KCMLdap::load()
 
 void KCMLdap::save()
 {
+    mClientSearchConfig->clearWalletPassword();
     KConfig *config = KLDAP::LdapClientSearchConfig::config();
     config->deleteGroup("LDAP");
 
