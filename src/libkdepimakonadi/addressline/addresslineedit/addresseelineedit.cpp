@@ -506,7 +506,10 @@ void AddresseeLineEdit::addContactGroup(const KContacts::ContactGroup &group, in
 
 void AddresseeLineEdit::addContact(const KContacts::Addressee &addr, int weight, int source, QString append)
 {
-    const QStringList emails = addr.emails();
+    const QStringList emails = AddresseeLineEditManager::self()->cleanupEmailList(addr.emails());
+    if (emails.isEmpty()) {
+        return;
+    }
     QStringList::ConstIterator it;
     int isPrefEmail = 1; //first in list is preferredEmail
     QStringList::ConstIterator end(emails.constEnd());
@@ -622,9 +625,9 @@ void AddresseeLineEdit::configureCompletion()
             KPIM::RecentAddresses::self(recentAddressConfig())->clear();
             dlg->storeAddresses(recentAddressConfig());
             loadContacts();
-            updateBalooBlackList();
-            updateCompletionOrder();
         }
+        updateBalooBlackList();
+        updateCompletionOrder();
     }
     d->setCanDeleteLineEdit(true);
 }
