@@ -21,6 +21,7 @@
 #include "baloocompletionemail.h"
 #include <KConfigGroup>
 #include <KSharedConfig>
+#include <QDebug>
 
 using namespace KPIM;
 
@@ -59,6 +60,7 @@ QStringList AddresseeLineEditBaloo::domainExcludeList() const
 void AddresseeLineEditBaloo::loadBalooBlackList()
 {
     KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kpimbalooblacklist"));
+    config->reparseConfiguration();
     KConfigGroup group(config, "AddressLineEdit");
     mBalooBlackList = group.readEntry("BalooBackList", QStringList());
     mDomainExcludeList = group.readEntry("ExcludeDomain", QStringList());

@@ -262,6 +262,7 @@ void BlackListBalooEmailCompletionWidget::save()
         group.writeEntry("ExcludeDomain", newExcludeDomain);
         group.sync();
     }
+    config->reparseConfiguration();
 }
 
 void BlackListBalooEmailCompletionWidget::slotLinkClicked(const QString &link)
