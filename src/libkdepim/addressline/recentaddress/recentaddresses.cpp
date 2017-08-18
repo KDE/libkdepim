@@ -81,7 +81,7 @@ void RecentAddresses::load(KConfig *config)
 
     m_addresseeList.clear();
     KConfigGroup cg(config, "General");
-    m_maxCount = cg.readEntry("Maximum Recent Addresses", 40);
+    m_maxCount = cg.readEntry("Maximum Recent Addresses", 200);
     addresses = cg.readEntry("Recent Addresses", QStringList());
     QStringList::ConstIterator end(addresses.constEnd());
     for (QStringList::ConstIterator it = addresses.constBegin(); it != end; ++it) {
