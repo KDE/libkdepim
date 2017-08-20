@@ -1,4 +1,4 @@
-if (Qt5Designer_FOUND)
+if (KF5DesignerPlugin_FOUND)
     kf5designerplugin_add_plugin(kdepimwidgets kdepim.widgets)
 
     target_link_libraries(kdepimwidgets

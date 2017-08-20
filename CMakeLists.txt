@@ -62,15 +62,9 @@ find_package(KF5Ldap ${KLDAP_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5AkonadiSearch ${AKONADISEARCH_LIB_VERSION} CONFIG REQUIRED)
 set_package_properties(KF5AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "http://www.kde.org" TYPE REQUIRED PURPOSE "Provides search capabilities in KMail and Akonadi")
 
-find_package(Qt5Designer CONFIG)
-set_package_properties(Qt5Designer PROPERTIES
-   PURPOSE "Required to build the Qt Designer plugins"
-   TYPE OPTIONAL
-)
 
-if (Qt5Designer_FOUND)
-  find_package(KF5DesignerPlugin ${KF5_VERSION} CONFIG REQUIRED)
-endif()
+find_package(KF5DesignerPlugin ${KF5_VERSION} CONFIG)
+set_package_properties(KF5DesignerPlugin PROPERTIES DESCRIPTION "KF5 designer plugin" TYPE OPTIONAL)
 add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 #add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
