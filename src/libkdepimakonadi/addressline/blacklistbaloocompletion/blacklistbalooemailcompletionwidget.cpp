@@ -75,20 +75,11 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
 
     QHBoxLayout *searchLineLayout = new QHBoxLayout;
     mainLayout->addLayout(searchLineLayout);
-    mSearchInResultLineEdit = new KListWidgetSearchLine(this, mEmailList);
-    mSearchInResultLineEdit->setObjectName(QStringLiteral("searchinresultlineedit"));
-    mSearchInResultLineEdit->setClearButtonEnabled(true);
-    mSearchInResultLineEdit->setPlaceholderText(i18n("Search in result..."));
 
-    searchLineLayout->addStretch(0);
-    mNumberOfEmailsFound = new QLabel(this);
-    mNumberOfEmailsFound->setObjectName(QStringLiteral("numberofemailsfound"));
-
-    searchLineLayout->addWidget(mNumberOfEmailsFound);
-    searchLineLayout->addWidget(mSearchInResultLineEdit);
 
     QHBoxLayout *selectElementLayout = new QHBoxLayout;
-    mainLayout->addLayout(selectElementLayout);
+    searchLineLayout->addLayout(selectElementLayout);
+
     mSelectButton = new QPushButton(i18n("&Select"), this);
     mSelectButton->setObjectName(QStringLiteral("select_email"));
     connect(mSelectButton, &QAbstractButton::clicked, this, &BlackListBalooEmailCompletionWidget::slotSelectEmails);
@@ -109,6 +100,20 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     selectElementLayout->addStretch(1);
 
     connect(mSearchLineEdit, &QLineEdit::textChanged, this, &BlackListBalooEmailCompletionWidget::slotSearchLineEditChanged);
+
+
+    mSearchInResultLineEdit = new KListWidgetSearchLine(this, mEmailList);
+    mSearchInResultLineEdit->setObjectName(QStringLiteral("searchinresultlineedit"));
+    mSearchInResultLineEdit->setClearButtonEnabled(true);
+    mSearchInResultLineEdit->setPlaceholderText(i18n("Search in result..."));
+
+    searchLineLayout->addStretch(0);
+    mNumberOfEmailsFound = new QLabel(this);
+    mNumberOfEmailsFound->setObjectName(QStringLiteral("numberofemailsfound"));
+
+    searchLineLayout->addWidget(mNumberOfEmailsFound);
+    searchLineLayout->addWidget(mSearchInResultLineEdit);
+
 
     QHBoxLayout *excludeDomainLayout = new QHBoxLayout;
     excludeDomainLayout->setMargin(0);
