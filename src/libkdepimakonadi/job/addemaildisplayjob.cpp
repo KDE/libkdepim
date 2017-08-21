@@ -158,29 +158,32 @@ public:
                     i18nc("@info",
                           "You must create an address book before adding a contact. Do you want to create an address book?"),
                     i18nc("@title:window", "No Address Book Available")) == KMessageBox::Yes) {
-                Akonadi::AgentTypeDialog dlg(mParentWidget);
-                dlg.setWindowTitle(i18n("Add Address Book"));
-                dlg.agentFilterProxyModel()->addMimeTypeFilter(KContacts::Addressee::mimeType());
-                dlg.agentFilterProxyModel()->addMimeTypeFilter(KContacts::ContactGroup::mimeType());
-                dlg.agentFilterProxyModel()->addCapabilityFilter(QStringLiteral("Resource"));
+                QPointer<Akonadi::AgentTypeDialog> dlg = new Akonadi::AgentTypeDialog(mParentWidget);
+                dlg->setWindowTitle(i18n("Add Address Book"));
+                dlg->agentFilterProxyModel()->addMimeTypeFilter(KContacts::Addressee::mimeType());
+                dlg->agentFilterProxyModel()->addMimeTypeFilter(KContacts::ContactGroup::mimeType());
+                dlg->agentFilterProxyModel()->addCapabilityFilter(QStringLiteral("Resource"));
 
-                if (dlg.exec()) {
-                    const Akonadi::AgentType agentType = dlg.agentType();
+                if (dlg->exec()) {
+                    const Akonadi::AgentType agentType = dlg->agentType();
 
                     if (agentType.isValid()) {
                         Akonadi::AgentInstanceCreateJob *job = new Akonadi::AgentInstanceCreateJob(agentType, q);
                         q->connect(job, SIGNAL(result(KJob *)), SLOT(slotResourceCreationDone(KJob *)));
                         job->configure(mParentWidget);
                         job->start();
+                        delete dlg;
                         return;
                     } else { //if agent is not valid => return error and finish job
                         q->setError(UserDefinedError);
                         q->emitResult();
+                        delete dlg;
                         return;
                     }
                 } else { //Canceled create agent => return error and finish job
                     q->setError(UserDefinedError);
                     q->emitResult();
+                    delete dlg;
                     return;
                 }
             } else {

@@ -27,6 +27,7 @@
 #include <item.h>
 #include <itemcreatejob.h>
 #include <kcontacts/addressee.h>
+#include <QPointer>
 #include <kmessagebox.h>
 
 using namespace KPIM;
@@ -56,9 +57,10 @@ public:
         const Akonadi::Item::List contacts = searchJob->items();
         if (!contacts.isEmpty()) {
             // open the editor with the matching item
-            Akonadi::ContactEditorDialog dlg(Akonadi::ContactEditorDialog::EditMode, mParentWidget);
-            dlg.setContact(contacts.first());
-            dlg.exec();
+            QPointer<Akonadi::ContactEditorDialog> dlg = new Akonadi::ContactEditorDialog (Akonadi::ContactEditorDialog::EditMode, mParentWidget);
+            dlg->setContact(contacts.first());
+            dlg->exec();
+            delete dlg;
 
             q->emitResult();
             return;
@@ -81,9 +83,10 @@ public:
         const AddEmailAddressJob *createJob = qobject_cast<AddEmailAddressJob *>(job);
 
         // open the editor with the matching item
-        Akonadi::ContactEditorDialog dlg(Akonadi::ContactEditorDialog::EditMode, mParentWidget);
-        dlg.setContact(createJob->contact());
-        dlg.exec();
+        QPointer<Akonadi::ContactEditorDialog> dlg = new Akonadi::ContactEditorDialog(Akonadi::ContactEditorDialog::EditMode, mParentWidget);
+        dlg->setContact(createJob->contact());
+        dlg->exec();
+        delete dlg;
 
         q->emitResult();
     }
