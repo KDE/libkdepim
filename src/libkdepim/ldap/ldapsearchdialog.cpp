@@ -925,13 +925,14 @@ void LdapSearchDialog::slotUser2()
 {
     // Configure LDAP servers
 
-    KCMultiDialog dialog(this);
-    dialog.setWindowTitle(i18n("Configure the Address Book LDAP Settings"));
-    dialog.addModule(QStringLiteral("kcmldap.desktop"));
+    QPointer<KCMultiDialog> dialog = new KCMultiDialog(this);
+    dialog->setWindowTitle(i18n("Configure the Address Book LDAP Settings"));
+    dialog->addModule(QStringLiteral("kcmldap.desktop"));
 
-    if (dialog.exec()) {   //krazy:exclude=crashy
+    if (dialog->exec()) {   //krazy:exclude=crashy
         d->restoreSettings();
     }
+    delete dialog;
 }
 
 void LdapSearchDialog::slotCancelClicked()
