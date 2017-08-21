@@ -31,6 +31,7 @@
 #include <QListWidget>
 #include <QKeyEvent>
 #include <QToolButton>
+#include <QShortcut>
 
 using namespace KPIM;
 RecentAddressWidget::RecentAddressWidget(QWidget *parent)
@@ -67,6 +68,10 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
     mRemoveButton->setEnabled(false);
     lineLayout->addWidget(mRemoveButton);
     connect(mRemoveButton, &QPushButton::clicked, this, &RecentAddressWidget::slotRemoveItem);
+
+    QShortcut *shortcut = new QShortcut(this);
+    shortcut->setKey(QKeySequence(Qt::Key_Delete));
+    connect(shortcut, &QShortcut::activated, this, &RecentAddressWidget::slotRemoveItem);
 
     mListView = new QListWidget(this);
     mListView->setObjectName(QStringLiteral("list_view"));
