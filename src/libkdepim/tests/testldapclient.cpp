@@ -24,7 +24,6 @@
 
 #include <QEventLoop>
 
-#include <assert.h>
 #include <stdlib.h>
 #include <QApplication>
 #include <KAboutData>
@@ -176,10 +175,10 @@ void TestLDAPClient::slotLDAPResult(const KLDAP::LdapClient &, const KLDAP::Ldap
 {
     QString cn = join(obj.attributes()[ QStringLiteral("cn") ], QStringLiteral(", "));
     qDebug() << " cn:" << cn;
-    assert(!obj.attributes()[ QStringLiteral("mail") ].isEmpty());
+    Q_ASSERT(!obj.attributes()[ QStringLiteral("mail") ].isEmpty());
     QString mail = join(obj.attributes()[ QStringLiteral("mail") ], QStringLiteral(", "));
     qDebug() << " mail:" << mail;
-    assert(mail.contains(QLatin1Char('@')));
+    Q_ASSERT(mail.contains(QLatin1Char('@')));
 }
 
 void TestLDAPClient::slotLDAPError(const QString &err)
