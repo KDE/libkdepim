@@ -50,11 +50,11 @@ private:
     void slotAddItem();
     void slotRemoveItem();
     void slotUpdateAddButton(const QString &str);
-    QToolButton *mNewButton;
-    QToolButton *mRemoveButton;
-    QListWidget *mListView;
-    KLineEdit *mLineEdit;
-    bool mDirty;
+    QToolButton *mNewButton = nullptr;
+    QToolButton *mRemoveButton = nullptr;
+    QListWidget *mListView = nullptr;
+    KLineEdit *mLineEdit = nullptr;
+    bool mDirty = false;
 };
 }
 #endif // RECENTADDRESSWIDGET_H
