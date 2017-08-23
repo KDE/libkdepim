@@ -59,15 +59,15 @@ private:
     void initGUI();
     QWidget *dialogParent();
 
-    QListWidget *mHostListView;
+    QListWidget *mHostListView = nullptr;
 
-    QPushButton *mAddButton;
-    QPushButton *mEditButton;
-    QPushButton *mRemoveButton;
+    QPushButton *mAddButton = nullptr;
+    QPushButton *mEditButton = nullptr;
+    QPushButton *mRemoveButton = nullptr;
 
-    QToolButton *mUpButton;
-    QToolButton *mDownButton;
-    KLDAP::LdapClientSearchConfig *mClientSearchConfig;
+    QToolButton *mUpButton = nullptr;
+    QToolButton *mDownButton = nullptr;
+    KLDAP::LdapClientSearchConfig *mClientSearchConfig = nullptr;
 };
 
 #endif
