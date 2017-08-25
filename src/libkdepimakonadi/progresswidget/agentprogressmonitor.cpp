@@ -26,84 +26,89 @@
 using namespace Akonadi;
 using namespace KPIM;
 
-class AgentProgressMonitor::Private
+AgentProgressMonitor::AgentProgressMonitor(const AgentInstance &agent, ProgressItem *item)
+    : QObject(item)
+    , mAgent(agent)
+    , mItem(item)
 {
-public:
-    Private(AgentProgressMonitor *qq, const AgentInstance &agnt, ProgressItem *itm)
-        : q(qq)
-        , agent(agnt)
-        , item(itm)
-    {
-    }
+    connect(AgentManager::self(), &AgentManager::instanceProgressChanged,
+            this, &AgentProgressMonitor::instanceProgressChanged);
+    connect(AgentManager::self(), &AgentManager::instanceStatusChanged,
+            this, &AgentProgressMonitor::instanceStatusChanged);
+    connect(Akonadi::AgentManager::self(), &AgentManager::instanceRemoved,
+            this, &AgentProgressMonitor::instanceRemoved);
+    connect(Akonadi::AgentManager::self(), &AgentManager::instanceNameChanged,
+            this, &AgentProgressMonitor::instanceNameChanged);
+    // TODO connect to instanceError, instanceWarning, instanceOnline ?
+    // and do what?
 
-    // Q_SLOTS:
-    void abort();
-    void instanceProgressChanged(const AgentInstance &instance);
-    void instanceStatusChanged(const AgentInstance &instance);
-    void instanceRemoved(const Akonadi::AgentInstance &instance);
-    void instanceNameChanged(const Akonadi::AgentInstance &instance);
-    AgentProgressMonitor *const q;
-    AgentInstance agent;
-    QWeakPointer<ProgressItem> const item;
-};
+    connect(item, &ProgressItem::progressItemCanceled,
+            this, &AgentProgressMonitor::abort);
 
-void AgentProgressMonitor::Private::abort()
-{
-    agent.abortCurrentTask();
+    // TODO handle offline case
 }
 
-void AgentProgressMonitor::Private::instanceRemoved(const Akonadi::AgentInstance &instance)
+AgentProgressMonitor::~AgentProgressMonitor()
+{
+}
+
+void AgentProgressMonitor::abort()
+{
+    mAgent.abortCurrentTask();
+}
+
+void AgentProgressMonitor::instanceRemoved(const Akonadi::AgentInstance &instance)
 {
     Q_UNUSED(instance);
 
-    if (!item.data()) {
+    if (!mItem.data()) {
         return;
     }
 
-    item.data()->disconnect(q);   // avoid abort call
-    item.data()->cancel();
-    if (item.data()) {
-        item.data()->setComplete();
+    mItem.data()->disconnect(this);   // avoid abort call
+    mItem.data()->cancel();
+    if (mItem.data()) {
+        mItem.data()->setComplete();
     }
 }
 
-void AgentProgressMonitor::Private::instanceProgressChanged(const AgentInstance &instance)
+void AgentProgressMonitor::instanceProgressChanged(const AgentInstance &instance)
 {
-    if (!item.data()) {
+    if (!mItem.data()) {
         return;
     }
 
-    if (agent == instance) { // compares identifiers
-        agent = instance; // keeps copy of current status
-        const int progress = agent.progress();
+    if (mAgent == instance) { // compares identifiers
+        mAgent = instance; // keeps copy of current status
+        const int progress = mAgent.progress();
         if (progress >= 0) {
-            item.data()->setProgress(progress);
+            mItem.data()->setProgress(progress);
         }
     }
 }
 
-void AgentProgressMonitor::Private::instanceStatusChanged(const AgentInstance &instance)
+void AgentProgressMonitor::instanceStatusChanged(const AgentInstance &instance)
 {
-    if (!item.data()) {
+    if (!mItem.data()) {
         return;
     }
 
-    if (agent == instance) { // compares identifiers
-        agent = instance; // keeps copy of current status
-        item.data()->setStatus(agent.statusMessage());
-        switch (agent.status()) {
+    if (mAgent == instance) { // compares identifiers
+        mAgent = instance; // keeps copy of current status
+        mItem.data()->setStatus(mAgent.statusMessage());
+        switch (mAgent.status()) {
         case AgentInstance::Idle:
-            if (item.data()) {
-                item.data()->setComplete();
+            if (mItem.data()) {
+                mItem.data()->setComplete();
             }
             break;
         case AgentInstance::Running:
             break;
         case AgentInstance::Broken:
-            item.data()->disconnect(q);   // avoid abort call
-            item.data()->cancel();
-            if (item.data()) {
-                item.data()->setComplete();
+            mItem.data()->disconnect(this);   // avoid abort call
+            mItem.data()->cancel();
+            if (mItem.data()) {
+                mItem.data()->setComplete();
             }
             break;
         default:
@@ -112,38 +117,10 @@ void AgentProgressMonitor::Private::instanceStatusChanged(const AgentInstance &i
     }
 }
 
-void AgentProgressMonitor::Private::instanceNameChanged(const Akonadi::AgentInstance &instance)
+void AgentProgressMonitor::instanceNameChanged(const Akonadi::AgentInstance &instance)
 {
-    if (!item.data()) {
+    if (!mItem.data()) {
         return;
     }
-    item.data()->setLabel(instance.name());
+    mItem.data()->setLabel(instance.name());
 }
-
-AgentProgressMonitor::AgentProgressMonitor(const AgentInstance &agent, ProgressItem *item)
-    : QObject(item)
-    , d(new Private(this, agent, item))
-{
-    connect(AgentManager::self(), SIGNAL(instanceProgressChanged(Akonadi::AgentInstance)),
-            this, SLOT(instanceProgressChanged(Akonadi::AgentInstance)));
-    connect(AgentManager::self(), SIGNAL(instanceStatusChanged(Akonadi::AgentInstance)),
-            this, SLOT(instanceStatusChanged(Akonadi::AgentInstance)));
-    connect(Akonadi::AgentManager::self(), SIGNAL(instanceRemoved(Akonadi::AgentInstance)),
-            this, SLOT(instanceRemoved(Akonadi::AgentInstance)));
-    connect(Akonadi::AgentManager::self(), SIGNAL(instanceNameChanged(Akonadi::AgentInstance)),
-            this, SLOT(instanceNameChanged(Akonadi::AgentInstance)));
-    // TODO connect to instanceError, instanceWarning, instanceOnline ?
-    // and do what?
-
-    connect(item, SIGNAL(progressItemCanceled(KPIM::ProgressItem *)),
-            this, SLOT(abort()));
-
-    // TODO handle offline case
-}
-
-AgentProgressMonitor::~AgentProgressMonitor()
-{
-    delete d;
-}
-
-#include "moc_agentprogressmonitor.cpp"

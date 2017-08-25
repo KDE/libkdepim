@@ -23,7 +23,6 @@
 #include <Libkdepim/ProgressManager> // ProgressItem
 
 #include <AgentInstance>
-
 namespace KPIM {
 /**
  * @internal
@@ -37,18 +36,18 @@ class AgentProgressMonitor : public QObject
     Q_OBJECT
 public:
     // used by our friend ProgressManager
-    AgentProgressMonitor(const Akonadi::AgentInstance &agent, ProgressItem *item);
+    AgentProgressMonitor(const Akonadi::AgentInstance &mAgent, ProgressItem *mItem);
     ~AgentProgressMonitor();
 
 private:
-    class Private;
-    Private *const d;
+    void abort();
+    void instanceProgressChanged(const Akonadi::AgentInstance &);
+    void instanceStatusChanged(const Akonadi::AgentInstance &);
+    void instanceRemoved(const Akonadi::AgentInstance &);
+    void instanceNameChanged(const Akonadi::AgentInstance &);
 
-    Q_PRIVATE_SLOT(d, void abort())
-    Q_PRIVATE_SLOT(d, void instanceProgressChanged(const Akonadi::AgentInstance &))
-    Q_PRIVATE_SLOT(d, void instanceStatusChanged(const Akonadi::AgentInstance &))
-    Q_PRIVATE_SLOT(d, void instanceRemoved(const Akonadi::AgentInstance &))
-    Q_PRIVATE_SLOT(d, void instanceNameChanged(const Akonadi::AgentInstance &))
+    Akonadi::AgentInstance mAgent;
+    QWeakPointer<ProgressItem> const mItem;
 };
 }
 
