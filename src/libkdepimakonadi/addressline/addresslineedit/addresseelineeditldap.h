@@ -63,11 +63,11 @@ private:
     // does not hold when clients are added later on
     QMap<int, int> mLdapClientToCompletionSourceMap;
     QString mLdapText;
-    QTimer *mLdapTimer;
-    AddresseeLineEdit *mAddressLineEdit;
-    KLDAP::LdapClientSearch *mLdapSearch;
+    QTimer *mLdapTimer = nullptr;
+    AddresseeLineEdit *mAddressLineEdit = nullptr;
+    KLDAP::LdapClientSearch *mLdapSearch = nullptr;
 
-    AddresseeLineEditManager *mAddressLineStatic;
+    AddresseeLineEditManager *mAddressLineStatic = nullptr;
 };
 }
 

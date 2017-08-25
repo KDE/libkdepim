@@ -36,17 +36,13 @@ class KPIM::CompletionConfigureDialogPrivate
 {
 public:
     CompletionConfigureDialogPrivate()
-        : mTabWidget(nullptr)
-        , mCompletionOrderWidget(nullptr)
-        , mBlackListBalooWidget(nullptr)
-        , mRecentaddressWidget(nullptr)
     {
     }
 
-    QTabWidget *mTabWidget;
-    KPIM::CompletionOrderWidget *mCompletionOrderWidget;
-    KPIM::BlackListBalooEmailCompletionWidget *mBlackListBalooWidget;
-    KPIM::RecentAddressWidget *mRecentaddressWidget;
+    QTabWidget *mTabWidget = nullptr;
+    KPIM::CompletionOrderWidget *mCompletionOrderWidget = nullptr;
+    KPIM::BlackListBalooEmailCompletionWidget *mBlackListBalooWidget = nullptr;
+    KPIM::RecentAddressWidget *mRecentaddressWidget = nullptr;
 };
 
 CompletionConfigureDialog::CompletionConfigureDialog(QWidget *parent)

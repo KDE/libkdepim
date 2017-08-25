@@ -39,11 +39,10 @@ class KPIM::OverlayWidgetPrivate
 {
 public:
     OverlayWidgetPrivate()
-        : mAlignWidget(nullptr)
     {
     }
 
-    QWidget *mAlignWidget;
+    QWidget *mAlignWidget = nullptr;
 };
 
 OverlayWidget::OverlayWidget(QWidget *alignWidget, QWidget *parent)

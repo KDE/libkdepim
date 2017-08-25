@@ -26,11 +26,10 @@ class KPIM::ProgressStatusBarWidgetPrivate
 {
 public:
     ProgressStatusBarWidgetPrivate()
-        : mLittleProgress(nullptr)
     {
     }
 
-    KPIM::StatusbarProgressWidget *mLittleProgress;
+    KPIM::StatusbarProgressWidget *mLittleProgress = nullptr;
 };
 
 ProgressStatusBarWidget::ProgressStatusBarWidget(QWidget *alignWidget, QWidget *parent, unsigned int showTypeProgressItem)

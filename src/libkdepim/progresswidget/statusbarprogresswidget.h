@@ -86,10 +86,10 @@ protected:
 
 private:
     unsigned int mShowTypeProgressItem;
-    QProgressBar *m_pProgressBar;
-    QLabel *m_pLabel;
-    SSLLabel *m_sslLabel;
-    QPushButton *m_pButton;
+    QProgressBar *m_pProgressBar = nullptr;
+    QLabel *m_pLabel = nullptr;
+    SSLLabel *m_sslLabel = nullptr;
+    QPushButton *m_pButton = nullptr;
 
     enum Mode {
         None, Progress
@@ -99,12 +99,12 @@ private:
     bool m_bShowButton;
     bool m_bShowDetailedProgress;
 
-    QStackedWidget *stack;
-    ProgressItem *mCurrentItem;
-    ProgressDialog *mProgressDialog;
-    QTimer *mDelayTimer;
-    QTimer *mBusyTimer;
-    QTimer *mCleanTimer;
+    QStackedWidget *stack = nullptr;
+    ProgressItem *mCurrentItem = nullptr;
+    ProgressDialog *mProgressDialog = nullptr;
+    QTimer *mDelayTimer = nullptr;
+    QTimer *mBusyTimer = nullptr;
+    QTimer *mCleanTimer = nullptr;
 };
 } // namespace
 

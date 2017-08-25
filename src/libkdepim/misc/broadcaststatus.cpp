@@ -48,12 +48,11 @@ class BroadcastStatusPrivate
 {
 public:
     BroadcastStatusPrivate()
-        : mTransientActive(false)
     {
     }
 
     QString mStatusMsg;
-    bool mTransientActive;
+    bool mTransientActive = false;
 };
 
 BroadcastStatus::BroadcastStatus()

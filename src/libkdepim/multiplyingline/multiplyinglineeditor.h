@@ -180,8 +180,8 @@ protected:
     bool mModified;
 
 private:
-    MultiplyingLineFactory *mMultiplyingLineFactory;
-    MultiplyingLineView *mView;
+    MultiplyingLineFactory *mMultiplyingLineFactory = nullptr;
+    MultiplyingLineView *mView = nullptr;
 };
 }
 #endif // MULTIPLYINGLINEEDITOR_H

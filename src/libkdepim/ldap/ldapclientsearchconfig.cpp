@@ -32,9 +32,6 @@ class Q_DECL_HIDDEN LdapClientSearchConfig::Private
 {
 public:
     Private()
-        : useWallet(false)
-        , askWallet(true)
-        , wallet(nullptr)
     {
     }
 
@@ -46,9 +43,9 @@ public:
         }
     }
 
-    bool useWallet;
-    bool askWallet;
-    KWallet::Wallet *wallet;
+    bool useWallet = false;
+    bool askWallet = true;
+    KWallet::Wallet *wallet = nullptr;
 };
 
 Q_GLOBAL_STATIC_WITH_ARGS(KConfig, s_config, (QLatin1String("kabldaprc"), KConfig::NoGlobals))

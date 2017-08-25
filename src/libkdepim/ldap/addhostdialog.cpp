@@ -37,10 +37,7 @@ class KLDAP::AddHostDialogPrivate
 {
 public:
     AddHostDialogPrivate(AddHostDialog *qq)
-        : mCfg(nullptr)
-        , mServer(nullptr)
-        , mOkButton(nullptr)
-        , q(qq)
+        : q(qq)
     {
     }
 
@@ -51,10 +48,10 @@ public:
 
     void readConfig();
     void writeConfig();
-    KLDAP::LdapConfigWidget *mCfg;
-    KLDAP::LdapServer *mServer;
-    QPushButton *mOkButton;
-    AddHostDialog *q;
+    KLDAP::LdapConfigWidget *mCfg = nullptr;
+    KLDAP::LdapServer *mServer = nullptr;
+    QPushButton *mOkButton = nullptr;
+    AddHostDialog *q = nullptr;
 };
 
 void AddHostDialogPrivate::readConfig()

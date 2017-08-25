@@ -43,7 +43,7 @@ Q_SIGNALS:
 
 private:
     QString mSearchEmail;
-    int mLimit;
+    int mLimit = 500;
 };
 }
 

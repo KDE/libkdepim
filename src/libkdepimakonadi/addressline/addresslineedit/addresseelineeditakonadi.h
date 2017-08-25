@@ -35,8 +35,8 @@ public:
     Akonadi::Session *akonadiSession() const;
 
 private:
-    mutable Akonadi::Session *m_akonadiSession;
-    AddresseeLineEditManager *mAddressLineStatic;
+    mutable Akonadi::Session *m_akonadiSession = nullptr;
+    AddresseeLineEditManager *mAddressLineStatic = nullptr;
 };
 }
 

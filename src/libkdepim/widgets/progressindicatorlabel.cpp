@@ -63,8 +63,8 @@ public:
     }
 
     QString labelStr;
-    QLabel *label;
-    ProgressIndicatorWidget *indicator;
+    QLabel *label = nullptr;
+    ProgressIndicatorWidget *indicator = nullptr;
     ProgressIndicatorLabel *q;
 };
 

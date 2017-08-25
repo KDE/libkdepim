@@ -124,9 +124,9 @@ protected Q_SLOTS:
 private:
     QList<MultiplyingLine *> mLines;
     QPointer<MultiplyingLine> mCurDelLine;
-    QWidget *mPage;
-    QLayout *mTopLayout;
-    MultiplyingLineFactory *mMultiplyingLineFactory;
+    QWidget *mPage = nullptr;
+    QLayout *mTopLayout = nullptr;
+    MultiplyingLineFactory *mMultiplyingLineFactory = nullptr;
     int mLineHeight;
     int mFirstColumnWidth;
     KCompletion::CompletionMode mCompletionMode;

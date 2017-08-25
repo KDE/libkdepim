@@ -132,9 +132,9 @@ private Q_SLOTS:
     void slotTriggerDelayedQueries();
 
 private:
-    AddresseeLineEdit *q;
-    QToolButton *mToolButton;
-    QTimer *mDelayedQueryTimer;
+    AddresseeLineEdit *q = nullptr;
+    QToolButton *mToolButton = nullptr;
+    QTimer *mDelayedQueryTimer = nullptr;
     QString mPreviousAddresses;
     QString mSearchString;
     QList<KJob *> mMightBeGroupJobs;

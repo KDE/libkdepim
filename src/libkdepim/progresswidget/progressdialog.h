@@ -155,7 +155,7 @@ Q_SIGNALS:
 protected:
     void closeEvent(QCloseEvent *) override;
 
-    TransactionItemView *mScrollView;
+    TransactionItemView *mScrollView = nullptr;
     QMap<const ProgressItem *, TransactionItem *> mTransactionsToListviewItems;
     unsigned int mShowTypeProgressItem;
     bool mWasLastShown;

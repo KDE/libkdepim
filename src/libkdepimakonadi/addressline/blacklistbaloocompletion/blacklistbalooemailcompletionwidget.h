@@ -53,18 +53,18 @@ private:
     void slotShowAllBlacklistedEmail();
     void hideMoreResultAndChangeLimit();
     QStringList mOriginalExcludeDomain;
-    QLabel *mNumberOfEmailsFound;
-    KLineEdit *mSearchLineEdit;
-    KLineEdit *mExcludeDomainLineEdit;
-    BlackListBalooEmailList *mEmailList;
-    QPushButton *mSearchButton;
-    QPushButton *mSelectButton;
-    QPushButton *mUnselectButton;
-    QPushButton *mShowAllBlackListedEmails;
-    QLabel *mMoreResult;
-    KListWidgetSearchLine *mSearchInResultLineEdit;
-    BlackListBalooEmailWarning *mBlackListWarning;
-    int mLimit;
+    QLabel *mNumberOfEmailsFound = nullptr;
+    KLineEdit *mSearchLineEdit = nullptr;
+    KLineEdit *mExcludeDomainLineEdit = nullptr;
+    BlackListBalooEmailList *mEmailList = nullptr;
+    QPushButton *mSearchButton = nullptr;
+    QPushButton *mSelectButton = nullptr;
+    QPushButton *mUnselectButton = nullptr;
+    QPushButton *mShowAllBlackListedEmails = nullptr;
+    QLabel *mMoreResult = nullptr;
+    KListWidgetSearchLine *mSearchInResultLineEdit = nullptr;
+    BlackListBalooEmailWarning *mBlackListWarning = nullptr;
+    int mLimit = 500;
 };
 }
 

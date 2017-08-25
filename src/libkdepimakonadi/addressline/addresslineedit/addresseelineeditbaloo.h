@@ -42,8 +42,8 @@ private:
     QStringList mBalooBlackList;
     QStringList mDomainExcludeList;
 
-    int mBalooCompletionSource;
-    AddresseeLineEditManager *mAddressLineStatic;
+    int mBalooCompletionSource = 0;
+    AddresseeLineEditManager *mAddressLineStatic = nullptr;
 };
 }
 
