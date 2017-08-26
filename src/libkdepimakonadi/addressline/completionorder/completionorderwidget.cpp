@@ -67,7 +67,7 @@ public:
 
     QIcon icon() const override
     {
-        return QIcon::fromTheme(QStringLiteral("view-ldap-resource"));
+        return QIcon::fromTheme(QStringLiteral("kmail"));
     }
 
     int completionWeight() const override
