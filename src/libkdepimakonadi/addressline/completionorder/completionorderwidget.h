@@ -93,11 +93,11 @@ private:
     void slotItemChanged();
 
     KConfig mConfig;
-    QTreeWidget *mListView;
-    QPushButton *mUpButton;
-    QPushButton *mDownButton;
-    QAbstractItemModel *mCollectionModel;
-    KLDAP::LdapClientSearch *mLdapSearch;
+    QTreeWidget *mListView = nullptr;
+    QPushButton *mUpButton = nullptr;
+    QPushButton *mDownButton = nullptr;
+    QAbstractItemModel *mCollectionModel = nullptr;
+    KLDAP::LdapClientSearch *mLdapSearch = nullptr;
 
     bool mDirty;
 };

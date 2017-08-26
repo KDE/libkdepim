@@ -106,7 +106,7 @@ protected:
     }
 
 private:
-    KLDAP::LdapClient *mLdapClient;
+    KLDAP::LdapClient *mLdapClient = nullptr;
     int mWeight;
 };
 
