@@ -897,7 +897,7 @@ void AddresseeLineEdit::slotEditingFinished()
     d->mightBeGroupJobsClear();
     d->groupsClear();
 
-    if (!text().isEmpty() && enableAkonadiSearch()) {
+    if (!text().trimmed().isEmpty() && enableAkonadiSearch()) {
         const QStringList addresses = KEmailAddress::splitAddressList(text());
         for (const QString &address : addresses) {
             Akonadi::ContactGroupSearchJob *job = new Akonadi::ContactGroupSearchJob();
