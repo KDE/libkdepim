@@ -128,13 +128,13 @@ public:
 
 private:
     mutable QColor mAlternateColor;
-    bool mShowOU;
-    bool mAutoGroupExpand;
-    KMailCompletion *mCompletion;
-    AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi;
-    AddresseeLineEditLdap *mAddressessLineEditLdap;
-    AddresseeLineEditBaloo *mAddressessLineEditBaloo;
-    QNetworkConfigurationManager *mNetworkConfigMgr;
+    bool mShowOU = false;
+    bool mAutoGroupExpand = false;
+    KMailCompletion *mCompletion = nullptr;
+    AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi = nullptr;
+    AddresseeLineEditLdap *mAddressessLineEditLdap = nullptr;
+    AddresseeLineEditBaloo *mAddressessLineEditBaloo = nullptr;
+    QNetworkConfigurationManager *mNetworkConfigMgr = nullptr;
 };
 }
 #endif // ADDRESSEELINEEDITSTATIC_H

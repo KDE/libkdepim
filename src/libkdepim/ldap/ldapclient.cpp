@@ -61,19 +61,19 @@ public:
     void slotInfoMessage(KJob *, const QString &info, const QString &);
     void slotDone();
 
-    LdapClient *q;
+    LdapClient *q = nullptr;
 
     KLDAP::LdapServer mServer;
     QString mScope;
     QStringList mAttrs;
 
     QPointer<KJob> mJob;
-    bool mActive;
+    bool mActive = false;
 
     KLDAP::LdapObject mCurrentObject;
     KLDAP::Ldif mLdif;
-    int mClientNumber;
-    int mCompletionWeight;
+    int mClientNumber = 0;
+    int mCompletionWeight = 0;
 };
 
 LdapClient::LdapClient(int clientNumber, QObject *parent)

@@ -95,7 +95,7 @@ public:
     QString mCompleteAddress;
     QString mEmail;
     QString mName;
-    QWidget *mParentWidget;
+    QWidget *mParentWidget = nullptr;
 };
 
 OpenEmailAddressJob::OpenEmailAddressJob(const QString &email, QWidget *parentWidget, QObject *parent)

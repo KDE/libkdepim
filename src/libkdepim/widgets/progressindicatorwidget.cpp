@@ -84,8 +84,8 @@ public:
         delete indicator;
     }
 
-    IndicatorProgress *indicator;
-    ProgressIndicatorWidget *q;
+    IndicatorProgress *indicator = nullptr;
+    ProgressIndicatorWidget *q = nullptr;
 };
 
 ProgressIndicatorWidget::ProgressIndicatorWidget(QWidget *parent)

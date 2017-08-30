@@ -272,9 +272,9 @@ public:
     QString mCompleteAddress;
     QString mEmail;
     QString mName;
-    QWidget *mParentWidget;
+    QWidget *mParentWidget = nullptr;
     Akonadi::Item mItem;
-    bool mInteractive;
+    bool mInteractive = false;
 };
 
 AddEmailAddressJob::AddEmailAddressJob(const QString &email, QWidget *parentWidget, QObject *parent)

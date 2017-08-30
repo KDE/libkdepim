@@ -243,12 +243,12 @@ public:
 
     AddEmailDiplayJob *q;
     Akonadi::Item contact;
-    bool mShowAsHTML;
-    bool mRemoteContent;
+    bool mShowAsHTML = false;
+    bool mRemoteContent = false;
     QString mCompleteAddress;
     QString mEmail;
     QString mName;
-    QWidget *mParentWidget;
+    QWidget *mParentWidget = nullptr;
 };
 
 AddEmailDiplayJob::AddEmailDiplayJob(const QString &email, QWidget *parentWidget, QObject *parent)

@@ -34,11 +34,10 @@ class KPIM::TagWidgetPrivate
 {
 public:
     TagWidgetPrivate()
-        : mTagWidget(nullptr)
     {
     }
 
-    Akonadi::TagWidget *mTagWidget;
+    Akonadi::TagWidget *mTagWidget = nullptr;
     Akonadi::Tag::List mTagList;
     QStringList mCachedTagNames;
 };

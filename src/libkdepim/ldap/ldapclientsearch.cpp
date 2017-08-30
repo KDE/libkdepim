@@ -80,11 +80,11 @@ public:
     QString mSearchText;
     QString mFilter;
     QTimer mDataTimer;
-    int mActiveClients;
-    bool mNoLDAPLookup;
+    int mActiveClients = 0;
+    bool mNoLDAPLookup = false;
     LdapResultObject::List mResults;
     QString mConfigFile;
-    LdapClientSearchConfig *mClientSearchConfig;
+    LdapClientSearchConfig *mClientSearchConfig = nullptr;
 };
 
 LdapClientSearch::LdapClientSearch(QObject *parent)

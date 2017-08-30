@@ -34,13 +34,12 @@ class AddressessLineEditPluginInfo
 {
 public:
     AddressessLineEditPluginInfo()
-        : plugin(nullptr)
     {
     }
 
     QString metaDataFileNameBaseName;
     QString metaDataFileName;
-    KPIM::AddressessLineEditAbstractPlugin *plugin;
+    KPIM::AddressessLineEditAbstractPlugin *plugin = nullptr;
 };
 
 namespace {

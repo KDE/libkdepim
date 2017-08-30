@@ -515,23 +515,23 @@ public:
     LdapSearchDialog *q;
     KGuiItem startSearchGuiItem;
     KGuiItem stopSearchGuiItem;
-    int mNumHosts;
+    int mNumHosts = 0;
     QList<KLDAP::LdapClient *> mLdapClientList;
-    bool mIsConfigured;
+    bool mIsConfigured = false;
     KContacts::Addressee::List mSelectedContacts;
 
-    KComboBox *mFilterCombo;
-    KComboBox *mSearchType;
-    QLineEdit *mSearchEdit;
+    KComboBox *mFilterCombo = nullptr;
+    KComboBox *mSearchType = nullptr;
+    QLineEdit *mSearchEdit = nullptr;
 
-    QCheckBox *mRecursiveCheckbox;
-    QTableView *mResultView;
-    QPushButton *mSearchButton;
-    ContactListModel *mModel;
-    KPIM::ProgressIndicatorLabel *progressIndication;
-    QSortFilterProxyModel *sortproxy;
-    KLineEdit *searchLine;
-    QPushButton *user1Button;
+    QCheckBox *mRecursiveCheckbox = nullptr;
+    QTableView *mResultView = nullptr;
+    QPushButton *mSearchButton = nullptr;
+    ContactListModel *mModel = nullptr;
+    KPIM::ProgressIndicatorLabel *progressIndication = nullptr;
+    QSortFilterProxyModel *sortproxy = nullptr;
+    KLineEdit *searchLine = nullptr;
+    QPushButton *user1Button = nullptr;
 };
 
 LdapSearchDialog::LdapSearchDialog(QWidget *parent)

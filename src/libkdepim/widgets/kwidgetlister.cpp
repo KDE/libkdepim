@@ -67,10 +67,12 @@ public:
 
     void enableControls();
 
-    KWidgetLister *q;
-    QPushButton *mBtnMore, *mBtnFewer, *mBtnClear;
-    QVBoxLayout *mLayout;
-    QWidget *mButtonBox;
+    KWidgetLister *q = nullptr;
+    QPushButton *mBtnMore = nullptr;
+    QPushButton *mBtnFewer = nullptr;
+    QPushButton *mBtnClear = nullptr;
+    QVBoxLayout *mLayout = nullptr;
+    QWidget *mButtonBox = nullptr;
     QList<QWidget *> mWidgetList;
     int mMinWidgets;
     int mMaxWidgets;

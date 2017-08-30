@@ -46,9 +46,9 @@ private:
     void slotTimerDone();
     int mProgressCount;
     KPixmapSequence mProgressPix;
-    QTimer *mProgressTimer;
-    ProgressIndicatorWidget *mIndicator;
-    bool mIsActive;
+    QTimer *mProgressTimer = nullptr;
+    ProgressIndicatorWidget *mIndicator = nullptr;
+    bool mIsActive = false;
 };
 
 class KDEPIM_EXPORT ProgressIndicatorWidget : public QLabel

@@ -53,11 +53,10 @@ class KPIM::CompletionOrderEditorPrivate
 {
 public:
     CompletionOrderEditorPrivate()
-        : mCompletionOrderWidget(nullptr)
     {
     }
 
-    CompletionOrderWidget *mCompletionOrderWidget;
+    CompletionOrderWidget *mCompletionOrderWidget = nullptr;
 };
 
 CompletionOrderEditor::CompletionOrderEditor(KLDAP::LdapClientSearch *ldapSearch, QWidget *parent)
