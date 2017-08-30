@@ -44,7 +44,6 @@ public:
 
     void load() override;
     void save() override;
-    void defaults() override;
 
 private Q_SLOTS:
     void slotAddHost();

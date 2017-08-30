@@ -306,11 +306,6 @@ void KCMLdap::save()
     Q_EMIT changed(false);
 }
 
-void KCMLdap::defaults()
-{
-    // add default configuration here
-}
-
 void KCMLdap::initGUI()
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
