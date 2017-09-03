@@ -99,7 +99,7 @@ private:
     QAbstractItemModel *mCollectionModel = nullptr;
     KLDAP::LdapClientSearch *mLdapSearch = nullptr;
 
-    bool mDirty;
+    bool mDirty = false;
 };
 }
 
