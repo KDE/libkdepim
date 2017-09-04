@@ -45,6 +45,7 @@ TagSelectionCombo::TagSelectionCombo(QWidget *parent)
     :   KPIM::KCheckComboBox(parent)
 {
     Akonadi::Monitor *monitor = new Akonadi::Monitor(this);
+    monitor->setObjectName(QStringLiteral("TagSelectionComboMonitor"));
     monitor->setTypeMonitored(Akonadi::Monitor::Tags);
 
     Akonadi::TagModel *model = new Akonadi::TagModel(monitor, this);
@@ -65,6 +66,7 @@ TagCombo::TagCombo(QWidget *parent)
     :   KComboBox(parent)
 {
     Akonadi::Monitor *monitor = new Akonadi::Monitor(this);
+    monitor->setObjectName(QStringLiteral("TagSelectionComboMonitor"));
     monitor->setTypeMonitored(Akonadi::Monitor::Tags);
     Akonadi::TagModel *model = new Akonadi::TagModel(monitor, this);
     setModel(model);
