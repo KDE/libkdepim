@@ -138,10 +138,9 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     , mCancelButton(nullptr)
     , mItem(item)
 {
-    QVBoxLayout *vboxLayout = new QVBoxLayout;
+    QVBoxLayout *vboxLayout = new QVBoxLayout(this);
     vboxLayout->setSpacing(2);
     vboxLayout->setMargin(2);
-    setLayout(vboxLayout);
     setSizePolicy(QSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed));
 
     mFrame = new QFrame(this);
