@@ -225,7 +225,7 @@ public:
     }
 
 private:
-    CompletionItem *mItem;
+    CompletionItem *mItem = nullptr;
 };
 
 CompletionOrderWidget::CompletionOrderWidget(QWidget *parent)

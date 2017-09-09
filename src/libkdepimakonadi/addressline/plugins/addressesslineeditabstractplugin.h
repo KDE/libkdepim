@@ -50,8 +50,8 @@ Q_SIGNALS:
     void wasUpdated();
 
 private:
-    KPIM::AddresseeLineEdit *mLinedit;
-    bool mEnabled;
+    KPIM::AddresseeLineEdit *mLinedit = nullptr;
+    bool mEnabled = false;
 };
 }
 

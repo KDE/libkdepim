@@ -112,9 +112,9 @@ public:
     QList<QWidget *> widgets() const override;
 
 private:
-    KConfigSkeleton::ItemBool *mItem;
+    KConfigSkeleton::ItemBool *mItem = nullptr;
 
-    QCheckBox *mCheck;
+    QCheckBox *mCheck = nullptr;
 };
 
 /**
@@ -153,10 +153,10 @@ public:
     QList<QWidget *> widgets() const override;
 
 private:
-    KConfigSkeleton::ItemInt *mItem;
+    KConfigSkeleton::ItemInt *mItem = nullptr;
 
-    QLabel *mLabel;
-    QSpinBox *mSpin;
+    QLabel *mLabel = nullptr;
+    QSpinBox *mSpin = nullptr;
 };
 
 /**
@@ -192,10 +192,10 @@ public:
     void writeConfig() override;
 
 private:
-    KConfigSkeleton::ItemDateTime *mItem;
+    KConfigSkeleton::ItemDateTime *mItem = nullptr;
 
-    QLabel *mLabel;
-    KTimeComboBox *mTimeEdit;
+    QLabel *mLabel = nullptr;
+    KTimeComboBox *mTimeEdit = nullptr;
 };
 
 /**
@@ -232,10 +232,10 @@ public:
     void writeConfig() override;
 
 private:
-    KConfigSkeleton::ItemDateTime *mItem;
+    KConfigSkeleton::ItemDateTime *mItem = nullptr;
 
-    QLabel *mLabel;
-    QTimeEdit *mTimeEdit;
+    QLabel *mLabel = nullptr;
+    QTimeEdit *mTimeEdit = nullptr;
 };
 
 /**
@@ -271,10 +271,10 @@ public:
     void writeConfig() override;
 
 private:
-    KConfigSkeleton::ItemDateTime *mItem;
+    KConfigSkeleton::ItemDateTime *mItem = nullptr;
 
-    QLabel *mLabel;
-    KDateComboBox *mDateEdit;
+    QLabel *mLabel = nullptr;
+    KDateComboBox *mDateEdit = nullptr;
 };
 
 /**
@@ -315,10 +315,10 @@ public:
     void writeConfig() override;
 
 private:
-    KConfigSkeleton::ItemColor *mItem;
+    KConfigSkeleton::ItemColor *mItem = nullptr;
 
-    QLabel *mLabel;
-    KColorButton *mButton;
+    QLabel *mLabel = nullptr;
+    KColorButton *mButton = nullptr;
 };
 
 /**
@@ -367,11 +367,11 @@ protected Q_SLOTS:
     void selectFont();
 
 private:
-    KConfigSkeleton::ItemFont *mItem;
+    KConfigSkeleton::ItemFont *mItem = nullptr;
 
-    QLabel *mLabel;
-    QLabel *mPreview;
-    QPushButton *mButton;
+    QLabel *mLabel = nullptr;
+    QLabel *mPreview = nullptr;
+    QPushButton *mButton = nullptr;
 };
 
 /**
@@ -420,10 +420,10 @@ public:
     QList<QWidget *> widgets() const override;
 
 private:
-    KConfigSkeleton::ItemEnum *mItem;
+    KConfigSkeleton::ItemEnum *mItem = nullptr;
 
-    QGroupBox *mBox;
-    QButtonGroup *mGroup;
+    QGroupBox *mBox = nullptr;
+    QButtonGroup *mGroup = nullptr;
 };
 
 /**
@@ -462,9 +462,9 @@ public:
     QLabel *label() const;
 
 private:
-    KConfigSkeleton::ItemEnum *mItem;
-    KComboBox *mCombo;
-    QLabel *mLabel;
+    KConfigSkeleton::ItemEnum *mItem = nullptr;
+    KComboBox *mCombo = nullptr;
+    QLabel *mLabel = nullptr;
 };
 
 /**
@@ -507,10 +507,10 @@ public:
     QList<QWidget *> widgets() const override;
 
 private:
-    KConfigSkeleton::ItemString *mItem;
+    KConfigSkeleton::ItemString *mItem = nullptr;
 
-    QLabel *mLabel;
-    KLineEdit *mEdit;
+    QLabel *mLabel = nullptr;
+    KLineEdit *mEdit = nullptr;
 };
 
 /**
@@ -556,10 +556,10 @@ public:
     QList<QWidget *> widgets() const override;
 
 private:
-    KConfigSkeleton::ItemPath *mItem;
+    KConfigSkeleton::ItemPath *mItem = nullptr;
 
-    QLabel *mLabel;
-    KUrlRequester *mURLRequester;
+    QLabel *mLabel = nullptr;
+    KUrlRequester *mURLRequester = nullptr;
 };
 
 /**
@@ -708,7 +708,7 @@ public:
     void writeWidConfig();
 
 private:
-    KConfigSkeleton *mPrefs;
+    KConfigSkeleton *mPrefs = nullptr;
 
     QList<KPrefsWid *> mPrefsWids;
 };

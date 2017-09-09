@@ -139,7 +139,7 @@ private:
     QString mSearchString;
     QList<KJob *> mMightBeGroupJobs;
     KContacts::ContactGroup::List mGroups;
-    KConfig *mRecentAddressConfig;
+    KConfig *mRecentAddressConfig = nullptr;
     bool mUseCompletion;
     bool mCompletionInitialized;
     bool mSmartPaste;

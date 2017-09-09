@@ -793,8 +793,8 @@ void KPrefsDialog::autoCreate()
     for (it = items.constBegin(); it != items.constEnd(); ++it) {
         QString group = (*it)->group();
 
-        QWidget *page;
-        QGridLayout *layout;
+        QWidget *page = nullptr;
+        QGridLayout *layout = nullptr;
         int currentRow;
         if (!mGroupPages.contains(group)) {
             page = new QWidget(this);

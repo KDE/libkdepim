@@ -52,7 +52,7 @@ private Q_SLOTS:
 private:
     bool check(const QString &, QString, QString);
 
-    KLDAP::LdapClient *mClient;
+    KLDAP::LdapClient *mClient = nullptr;
 };
 
 #endif

@@ -138,9 +138,9 @@ public:
 
     AddContactJob *q;
     KContacts::Addressee mContact;
-    QWidget *mParentWidget;
+    QWidget *mParentWidget = nullptr;
     Akonadi::Collection mCollection;
-    bool mShowMessageBox;
+    bool mShowMessageBox = false;
 };
 
 AddContactJob::AddContactJob(const KContacts::Addressee &contact, QWidget *parentWidget, QObject *parent)

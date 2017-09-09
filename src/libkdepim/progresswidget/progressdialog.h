@@ -72,7 +72,7 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
 
 private:
-    QWidget *mBigBox;
+    QWidget *mBigBox = nullptr;
 };
 
 class TransactionItem : public QWidget
@@ -113,13 +113,13 @@ public Q_SLOTS:
     void slotItemCanceled();
 
 protected:
-    QProgressBar *mProgress;
-    QPushButton *mCancelButton;
-    QLabel *mItemLabel;
-    QLabel *mItemStatus;
-    QFrame *mFrame;
-    SSLLabel *mSSLLabel;
-    ProgressItem *mItem;
+    QProgressBar *mProgress = nullptr;
+    QPushButton *mCancelButton = nullptr;
+    QLabel *mItemLabel = nullptr;
+    QLabel *mItemStatus = nullptr;
+    QFrame *mFrame = nullptr;
+    SSLLabel *mSSLLabel = nullptr;
+    ProgressItem *mItem = nullptr;
 };
 
 class KDEPIM_EXPORT ProgressDialog : public OverlayWidget

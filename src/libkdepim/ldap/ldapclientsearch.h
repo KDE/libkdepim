@@ -37,7 +37,7 @@ class LdapClient;
  */
 struct LdapResultObject {
     typedef QVector<LdapResultObject> List;
-    const LdapClient *client;
+    const LdapClient *client = nullptr;
     KLDAP::LdapObject object;
 };
 

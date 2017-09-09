@@ -321,7 +321,7 @@ bool MultiplyingLineView::isModified() const
     }
 
     QListIterator<MultiplyingLine *> it(mLines);
-    MultiplyingLine *line;
+    MultiplyingLine *line = nullptr;
     while (it.hasNext()) {
         line = it.next();
         if (line->isModified()) {
