@@ -17,7 +17,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #include "addressesslineeditabstractplugin.h"
 
 using namespace KPIM;
@@ -27,12 +26,10 @@ AddressessLineEditAbstractPlugin::AddressessLineEditAbstractPlugin(QObject *pare
     , mLinedit(nullptr)
     , mEnabled(true)
 {
-
 }
 
 AddressessLineEditAbstractPlugin::~AddressessLineEditAbstractPlugin()
 {
-
 }
 
 void AddressessLineEditAbstractPlugin::setLineEdit(AddresseeLineEdit *linedit)

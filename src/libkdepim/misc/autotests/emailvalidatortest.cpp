@@ -17,7 +17,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #include "emailvalidatortest.h"
 #include <Libkdepim/EmailValidator>
 #include <QTest>
@@ -27,7 +26,6 @@ Q_DECLARE_METATYPE(QValidator::State)
 EmailValidatorTest::EmailValidatorTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void EmailValidatorTest::shouldValidateEmail_data()

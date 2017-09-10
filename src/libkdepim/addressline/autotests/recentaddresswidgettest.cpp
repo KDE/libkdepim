@@ -115,7 +115,6 @@ void RecentAddressWidgetTest::shouldNotAddEmptyLine()
     QVERIFY(lineedit->text().isEmpty());
     QVERIFY(!newButton->isEnabled());
 
-
     QTest::mouseClick(newButton, Qt::LeftButton);
     QCOMPARE(listview->count(), 0);
 

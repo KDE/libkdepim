@@ -23,8 +23,7 @@
 #include <QTimer>
 #include <QMap>
 
-namespace KLDAP
-{
+namespace KLDAP {
 class LdapClientSearch;
 }
 

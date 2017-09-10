@@ -39,7 +39,6 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
 
-
     QHBoxLayout *lineLayout = new QHBoxLayout;
     layout->addLayout(lineLayout);
 

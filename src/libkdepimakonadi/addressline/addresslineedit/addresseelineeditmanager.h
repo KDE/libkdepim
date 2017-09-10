@@ -55,9 +55,6 @@ public:
     int addCompletionSource(const QString &source, int weight);
     void removeCompletionSource(const QString &source);
 
-
-
-
     CompletionItemsMap completionItemMap;
     QStringList completionSources;
 
@@ -72,11 +69,11 @@ public:
             , enabled(true)
         {
         }
-        collectionInfo(int idx, bool _enabled)
-            : index(idx),
-              enabled(_enabled)
-        {
 
+        collectionInfo(int idx, bool _enabled)
+            : index(idx)
+            , enabled(_enabled)
+        {
         }
 
         int index;
@@ -108,7 +105,6 @@ public:
     Akonadi::Session *akonadiSession() const;
 
     KMailCompletion *completion() const;
-
 
     AddresseeLineEdit *addressLineEdit() const;
     void setAddressLineEdit(AddresseeLineEdit *addressLineEdit);

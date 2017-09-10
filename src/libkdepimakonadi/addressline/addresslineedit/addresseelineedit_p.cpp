@@ -494,7 +494,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
         if (mSearchString.isEmpty()) {
             break;
         }
-    //else: fall-through to the CompletionPopup case
+        //else: fall-through to the CompletionPopup case
         Q_FALLTHROUGH();
 
     case KCompletion::CompletionPopup:

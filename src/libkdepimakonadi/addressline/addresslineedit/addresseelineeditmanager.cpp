@@ -243,4 +243,3 @@ QColor AddresseeLineEditManager::alternateColor() const
     }
     return mAlternateColor;
 }
-

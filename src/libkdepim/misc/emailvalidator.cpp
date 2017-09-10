@@ -38,7 +38,7 @@ QValidator::State EmailValidator::validate(QString &str, int &pos) const
     }
     QRegularExpression re(QStringLiteral("\\s"));
     QRegularExpressionMatch match = re.match(str);
-    if(match.hasMatch()) {
+    if (match.hasMatch()) {
         return QValidator::Invalid;
     }
     return QValidator::Intermediate;

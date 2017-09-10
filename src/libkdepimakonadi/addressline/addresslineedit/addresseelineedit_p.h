@@ -28,8 +28,7 @@
 class KConfig;
 class QToolButton;
 class QTimer;
-namespace Akonadi
-{
+namespace Akonadi {
 class ContactGroupSearchJob;
 }
 

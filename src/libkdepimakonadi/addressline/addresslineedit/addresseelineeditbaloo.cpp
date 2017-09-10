@@ -34,7 +34,6 @@ AddresseeLineEditBaloo::AddresseeLineEditBaloo(AddresseeLineEditManager *address
 
 AddresseeLineEditBaloo::~AddresseeLineEditBaloo()
 {
-
 }
 
 int AddresseeLineEditBaloo::balooCompletionSource() const

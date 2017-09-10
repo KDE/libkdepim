@@ -57,7 +57,7 @@ public:
         const Akonadi::Item::List contacts = searchJob->items();
         if (!contacts.isEmpty()) {
             // open the editor with the matching item
-            QPointer<Akonadi::ContactEditorDialog> dlg = new Akonadi::ContactEditorDialog (Akonadi::ContactEditorDialog::EditMode, mParentWidget);
+            QPointer<Akonadi::ContactEditorDialog> dlg = new Akonadi::ContactEditorDialog(Akonadi::ContactEditorDialog::EditMode, mParentWidget);
             dlg->setContact(contacts.first());
             dlg->exec();
             delete dlg;

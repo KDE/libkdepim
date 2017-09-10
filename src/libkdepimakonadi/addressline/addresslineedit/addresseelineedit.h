@@ -88,7 +88,6 @@ public:
     void setEnableAkonadiSearch(bool enable);
     bool enableAkonadiSearch() const;
 
-
     void setExpandIntern(bool);
     bool expandIntern() const;
 

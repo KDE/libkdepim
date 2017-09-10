@@ -33,12 +33,10 @@ AddresseeLineEditLdap::AddresseeLineEditLdap(AddresseeLineEditManager *addressLi
     , mLdapSearch(nullptr)
     , mAddressLineStatic(addressLineStatic)
 {
-
 }
 
 AddresseeLineEditLdap::~AddresseeLineEditLdap()
 {
-
 }
 
 void AddresseeLineEditLdap::updateLDAPWeights()
@@ -50,7 +48,7 @@ void AddresseeLineEditLdap::updateLDAPWeights()
     for (const KLDAP::LdapClient *client : mLdapSearch->clients()) {
         const int sourceIndex
             = mAddressLineStatic->addCompletionSource(i18n("LDAP server: %1", client->server().host()),
-                                  client->completionWeight());
+                                                      client->completionWeight());
         mLdapClientToCompletionSourceMap.insert(clientIndex, sourceIndex);
         ++clientIndex;
     }
@@ -92,11 +90,11 @@ void AddresseeLineEditLdap::init()
 
 #if 0
         mLdapSearch->setFilter(QStringLiteral("&(|(objectclass=person)(objectclass=groupOfNames)(mail=*))"
-                                                       "(|(cn=%1*)(mail=%1*)(mail=*@%1*)(givenName=%1*)(sn=%1*))"));
+                                              "(|(cn=%1*)(mail=%1*)(mail=*@%1*)(givenName=%1*)(sn=%1*))"));
 #endif
         //Fix bug 323272 "Exchange doesn't like any queries beginning with *."
         mLdapSearch->setFilter(QStringLiteral("&(|(objectclass=person)(objectclass=groupOfNames)(mail=*))"
-                                                       "(|(cn=%1*)(mail=%1*)(givenName=%1*)(sn=%1*))"));
+                                              "(|(cn=%1*)(mail=%1*)(givenName=%1*)(sn=%1*))"));
     }
 }
 
@@ -144,7 +142,7 @@ void AddresseeLineEditLdap::startLoadingLDAPEntries()
 void AddresseeLineEditLdap::restartLdap(const QString &searchString, AddresseeLineEdit *addressLine)
 {
     if (mLdapTimer) {
-        if (mLdapText!= searchString || mAddressLineEdit != addressLine) {
+        if (mLdapText != searchString || mAddressLineEdit != addressLine) {
             stopLDAPLookup();
         }
 

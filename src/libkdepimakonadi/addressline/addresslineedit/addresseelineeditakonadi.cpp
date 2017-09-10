@@ -26,12 +26,10 @@ AddresseeLineEditAkonadi::AddresseeLineEditAkonadi(AddresseeLineEditManager *add
     : m_akonadiSession(nullptr)
     , mAddressLineStatic(addressLineStatic)
 {
-
 }
 
 AddresseeLineEditAkonadi::~AddresseeLineEditAkonadi()
 {
-
 }
 
 Akonadi::Session *AddresseeLineEditAkonadi::akonadiSession() const

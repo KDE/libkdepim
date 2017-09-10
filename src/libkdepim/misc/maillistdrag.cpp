@@ -127,11 +127,11 @@ time_t MailSummary::date() const
 bool MailSummary::operator ==(const MailSummary &other) const
 {
     return (mSerialNumber == other.mSerialNumber)
-            && (mMessageId == other.mMessageId)
-            && (mSubject == other.mSubject)
-            && (mFrom == other.mFrom)
-            && (mTo == other.mTo)
-            && (mDate == other.mDate);
+           && (mMessageId == other.mMessageId)
+           && (mSubject == other.mSubject)
+           && (mFrom == other.mFrom)
+           && (mTo == other.mTo)
+           && (mDate == other.mDate);
 }
 
 void MailSummary::set(quint32 serialNumber, const QString &messageId, const QString &subject, const QString &from, const QString &to, time_t date)

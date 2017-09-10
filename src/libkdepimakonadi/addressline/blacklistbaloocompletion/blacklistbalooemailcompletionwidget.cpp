@@ -76,7 +76,6 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     QHBoxLayout *searchLineLayout = new QHBoxLayout;
     mainLayout->addLayout(searchLineLayout);
 
-
     QHBoxLayout *selectElementLayout = new QHBoxLayout;
     searchLineLayout->addLayout(selectElementLayout);
 
@@ -101,7 +100,6 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
 
     connect(mSearchLineEdit, &QLineEdit::textChanged, this, &BlackListBalooEmailCompletionWidget::slotSearchLineEditChanged);
 
-
     mSearchInResultLineEdit = new KListWidgetSearchLine(this, mEmailList);
     mSearchInResultLineEdit->setObjectName(QStringLiteral("searchinresultlineedit"));
     mSearchInResultLineEdit->setClearButtonEnabled(true);
@@ -113,7 +111,6 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
 
     searchLineLayout->addWidget(mNumberOfEmailsFound);
     searchLineLayout->addWidget(mSearchInResultLineEdit);
-
 
     QHBoxLayout *excludeDomainLayout = new QHBoxLayout;
     excludeDomainLayout->setMargin(0);
