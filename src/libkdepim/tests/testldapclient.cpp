@@ -26,7 +26,6 @@
 
 #include <stdlib.h>
 #include <QApplication>
-#include <KAboutData>
 #include <QCommandLineParser>
 #include <QCommandLineOption>
 #include <QStandardPaths>

@@ -18,10 +18,8 @@
 
 */
 
-#include <kaboutdata.h>
 #include <QApplication>
 #include <QCommandLineParser>
-#include <KLocalizedString>
 #include <QStandardPaths>
 
 #include <addressline/completionconfiguredialog/completionconfiguredialog.h>
@@ -29,15 +27,11 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    KAboutData aboutData(QStringLiteral("testcompletionconfiguredialog"), i18n("Test CompletionConfigureDialog"), QStringLiteral("0.1"));
     QCommandLineParser parser;
     QStandardPaths::setTestModeEnabled(true);
-    KAboutData::setApplicationData(aboutData);
     parser.addVersionOption();
     parser.addHelpOption();
-    aboutData.setupCommandLine(&parser);
     parser.process(app);
-    aboutData.processCommandLine(&parser);
 
     KPIM::CompletionConfigureDialog dlg;
     dlg.show();

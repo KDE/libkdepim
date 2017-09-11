@@ -19,9 +19,6 @@
     Boston, MA 02110-1301, USA.
 */
 
-#include <KAboutData>
-
-#include <KLocalizedString>
 
 #include <QApplication>
 #include <QCommandLineParser>
@@ -33,15 +30,11 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    KAboutData aboutData(QStringLiteral("testcheckcombo"), i18n("Test KCheckComboBox"), QStringLiteral("0.1"));
     QCommandLineParser parser;
     QStandardPaths::setTestModeEnabled(true);
-    KAboutData::setApplicationData(aboutData);
     parser.addVersionOption();
     parser.addHelpOption();
-    aboutData.setupCommandLine(&parser);
     parser.process(app);
-    aboutData.processCommandLine(&parser);
 
     KPIM::KCheckComboBox *combo = new KPIM::KCheckComboBox(nullptr);
     combo->addItems(QStringList() << QStringLiteral("KDE") << QStringLiteral("Mac OSX") << QStringLiteral("Windows") << QStringLiteral("XFCE") << QStringLiteral("FVWM") << QStringLiteral("TWM"));
