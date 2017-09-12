@@ -159,7 +159,6 @@ void RecentAddresses::adjustSize()
 void RecentAddresses::clear()
 {
     m_addresseeList.clear();
-    adjustSize();
 }
 
 QStringList RecentAddresses::addresses() const

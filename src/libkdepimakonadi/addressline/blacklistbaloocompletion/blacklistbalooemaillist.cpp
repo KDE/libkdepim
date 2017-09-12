@@ -29,7 +29,6 @@ using namespace KPIM;
 
 BlackListBalooEmailList::BlackListBalooEmailList(QWidget *parent)
     : QListWidget(parent)
-    , mFirstResult(false)
 {
     setSelectionMode(QAbstractItemView::ExtendedSelection);
     setSortingEnabled(true);

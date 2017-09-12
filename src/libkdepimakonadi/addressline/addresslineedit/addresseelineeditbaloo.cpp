@@ -71,6 +71,5 @@ QStringList AddresseeLineEditBaloo::cleanupEmailList(const QStringList &inputLis
     completionEmail.setEmailList(inputList);
     completionEmail.setBlackList(mBalooBlackList);
     completionEmail.setExcludeDomain(mDomainExcludeList);
-    const QStringList listEmail = completionEmail.cleanupEmailList();
-    return listEmail;
+    return completionEmail.cleanupEmailList();
 }

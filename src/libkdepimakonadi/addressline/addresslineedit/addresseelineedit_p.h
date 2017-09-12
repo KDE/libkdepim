@@ -139,17 +139,17 @@ private:
     QList<KJob *> mMightBeGroupJobs;
     KContacts::ContactGroup::List mGroups;
     KConfig *mRecentAddressConfig = nullptr;
-    bool mUseCompletion;
-    bool mCompletionInitialized;
-    bool mSmartPaste;
-    bool mLastSearchMode;
-    bool mSearchExtended; //has \" been added?
-    bool mUseSemicolonAsSeparator;
-    bool mEnableBalooSearch;
-    bool mEnableAkonadiSearch;
-    bool mExpandIntern;
-    bool mShowRecentAddresses;
-    bool mCanDeleteLineEdit;
+    bool mUseCompletion = false;
+    bool mCompletionInitialized = false;
+    bool mSmartPaste = false;
+    bool mLastSearchMode = false;
+    bool mSearchExtended = false; //has \" been added?
+    bool mUseSemicolonAsSeparator = false;
+    bool mEnableBalooSearch = true;
+    bool mEnableAkonadiSearch = true;
+    bool mExpandIntern = true;
+    bool mShowRecentAddresses = true;
+    bool mCanDeleteLineEdit = true;
 };
 }
 

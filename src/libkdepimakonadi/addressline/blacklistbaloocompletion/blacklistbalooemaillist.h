@@ -63,7 +63,7 @@ private:
     QStringList mEmailBlackList;
     QStringList mExcludeDomain;
     QColor mTextColor;
-    bool mFirstResult;
+    bool mFirstResult = false;
 };
 }
 

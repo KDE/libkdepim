@@ -28,9 +28,6 @@ using namespace KPIM;
 
 AddresseeLineEditLdap::AddresseeLineEditLdap(AddresseeLineEditManager *addressLineStatic, QObject *parent)
     : QObject(parent)
-    , mLdapTimer(nullptr)
-    , mAddressLineEdit(nullptr)
-    , mLdapSearch(nullptr)
     , mAddressLineStatic(addressLineStatic)
 {
 }
