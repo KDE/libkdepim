@@ -319,9 +319,7 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
                 KContacts::Addressee addressee;
                 addressee.insertEmail(KEmailAddress::decodeMailtoUrl(url), true /* preferred */);
                 list += addressee;
-            }
-            // Otherwise, download the vCard to which the Url points
-            else {
+            } else { // Otherwise, download the vCard to which the Url points
                 KContacts::VCardConverter converter;
                 auto job = KIO::storedGet(url);
                 KJobWidgets::setWindow(job, parentWidget());
@@ -374,7 +372,7 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
                 }
                 bool mailtoURL = false;
                 // append the mailto URLs
-                for (const QUrl &url : qAsConst(uriList)) {
+                for (const QUrl &url : uriList) {
                     if (url.scheme() == QLatin1String("mailto")) {
                         mailtoURL = true;
                         QString address;
