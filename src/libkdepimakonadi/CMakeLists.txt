@@ -88,12 +88,12 @@ target_link_libraries(KF5LibkdepimAkonadi
     KF5::AkonadiCore
     KF5::AkonadiContact
     KF5::Libkdepim
+    KF5::Completion
     PRIVATE
     KF5::AkonadiWidgets
     KF5::Ldap
     KF5::Contacts
     KF5::Codecs
-    KF5::Completion
     KF5::I18n
     KF5::ItemViews
     KF5::AkonadiSearchPIM
