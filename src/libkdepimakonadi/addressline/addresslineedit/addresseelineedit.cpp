@@ -338,6 +338,8 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
                             Akonadi::ContactGroupExpandJob *expandJob = new Akonadi::ContactGroupExpandJob(group);
                             connect(expandJob, &Akonadi::ContactGroupExpandJob::result, this, &AddresseeLineEdit::groupExpandResult);
                             expandJob->start();
+                        } else {
+                            qCWarning(LIBKDEPIMAKONADI_LOG) << "Error during converting contactgroup " << error;
                         }
                     }
                 } else {
