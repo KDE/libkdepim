@@ -30,7 +30,7 @@
 #include <QString>
 #include <QMap>
 #include <QHash>
-#include <QWeakPointer>
+#include <QPointer>
 
 namespace KPIM {
 class ProgressItem;
@@ -240,7 +240,7 @@ private:
     QString mId;
     QString mLabel;
     QString mStatus;
-    QWeakPointer<ProgressItem> mParent;
+    QPointer<ProgressItem> mParent;
     bool mCanBeCanceled;
     unsigned int mProgress;
     ProgressItemMap mChildren;

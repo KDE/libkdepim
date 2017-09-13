@@ -247,9 +247,10 @@ public:
 
     void addContact(const KLDAP::LdapAttrMap &contact, const QString &server)
     {
+        beginResetModel();
         mContactList.append(contact);
         mServerList.append(server);
-        reset();
+        endResetModel();
     }
 
     QPair<KLDAP::LdapAttrMap, QString> contact(const QModelIndex &index) const
@@ -281,9 +282,10 @@ public:
 
     void clear()
     {
+        beginResetModel();
         mContactList.clear();
         mServerList.clear();
-        reset();
+        endResetModel();
     }
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const override

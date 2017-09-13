@@ -24,7 +24,7 @@
 #include <AkonadiCore/Item>
 #include <AkonadiCore/Session>
 #include <QVector>
-#include <QWeakPointer>
+#include <QPointer>
 #include <ldap/ldapclientsearch.h>
 #include <QColor>
 
@@ -83,7 +83,7 @@ public:
     QMap<Akonadi::Collection::Id, collectionInfo> akonadiCollectionToCompletionSourceMap;
     // a list of akonadi items (contacts) that have not had their collection fetched yet
     Akonadi::Item::List akonadiPendingItems;
-    QVector<QWeakPointer<Akonadi::Job> > akonadiJobsInFlight;
+    QVector<QPointer<Akonadi::Job> > akonadiJobsInFlight;
 
     //Ldap
     void initializeLdap();

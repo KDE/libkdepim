@@ -47,7 +47,7 @@ private:
     void instanceNameChanged(const Akonadi::AgentInstance &);
 
     Akonadi::AgentInstance mAgent;
-    QWeakPointer<ProgressItem> const mItem;
+    QPointer<ProgressItem> const mItem;
 };
 }
 

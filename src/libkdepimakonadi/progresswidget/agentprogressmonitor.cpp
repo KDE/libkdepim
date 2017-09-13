@@ -21,7 +21,7 @@
 
 #include <AgentManager>
 
-#include <QWeakPointer>
+#include <QPointer>
 
 using namespace Akonadi;
 using namespace KPIM;
