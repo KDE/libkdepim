@@ -21,7 +21,6 @@
 #include "baloocompletionemail.h"
 #include <KConfigGroup>
 #include <KSharedConfig>
-#include <QDebug>
 
 using namespace KPIM;
 

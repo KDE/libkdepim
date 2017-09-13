@@ -34,7 +34,6 @@
 #include <KContacts/VCardConverter>
 
 #include <Job>
-#include <QRegularExpression>
 #include <QUrl>
 #include <kconfiggroup.h>
 

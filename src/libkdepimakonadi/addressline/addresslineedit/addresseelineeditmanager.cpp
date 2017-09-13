@@ -22,14 +22,12 @@
 #include "kmailcompletion.h"
 
 #include <Libkdepim/LdapClient>
-#include <KLocalizedString>
 #include <QNetworkConfigurationManager>
 #include <QTimer>
 #include <QCoreApplication>
 #include <KConfigGroup>
 #include <KSharedConfig>
 #include <KColorScheme>
-#include <KLDAP/LdapServer>
 #include <AkonadiCore/Session>
 
 using namespace KPIM;

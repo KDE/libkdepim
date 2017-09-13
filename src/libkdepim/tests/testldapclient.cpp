@@ -27,7 +27,6 @@
 #include <stdlib.h>
 #include <QApplication>
 #include <QCommandLineParser>
-#include <QCommandLineOption>
 #include <QStandardPaths>
 
 int main(int argc, char *argv[])
