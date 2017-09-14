@@ -28,6 +28,8 @@ class StatusbarProgressWidgetTest : public QObject
 public:
     explicit StatusbarProgressWidgetTest(QObject *parent = nullptr);
     ~StatusbarProgressWidgetTest() = default;
+private Q_SLOTS:
+    void shouldHaveDefaultValue();
 };
 
 #endif // STATUSBARPROGRESSWIDGETTEST_H

@@ -19,6 +19,7 @@
 
 
 #include "statusbarprogresswidgettest.h"
+#include "../statusbarprogresswidget.h"
 #include <QTest>
 QTEST_MAIN(StatusbarProgressWidgetTest)
 
@@ -26,4 +27,9 @@ StatusbarProgressWidgetTest::StatusbarProgressWidgetTest(QObject *parent)
     : QObject(parent)
 {
 
+}
+
+void StatusbarProgressWidgetTest::shouldHaveDefaultValue()
+{
+    //KPIM::StatusbarProgressWidget w();
 }
