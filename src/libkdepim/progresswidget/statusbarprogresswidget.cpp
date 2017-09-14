@@ -59,49 +59,52 @@ using namespace KPIM;
 //-----------------------------------------------------------------------------
 StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog, QWidget *parent, bool button)
     : QFrame(parent)
-    , m_bShowButton(button)
+    , mShowButton(button)
     , mProgressDialog(progressDialog)
 {
     int w = fontMetrics().width(QStringLiteral(" 999.9 kB/s 00:00:01 ")) + 8;
-    QHBoxLayout *box = new QHBoxLayout(this);
-    box->setMargin(0);
-    box->setSpacing(0);
+    QHBoxLayout *boxLayout = new QHBoxLayout(this);
+    boxLayout->setObjectName(QStringLiteral("boxLayout"));
+    boxLayout->setMargin(0);
+    boxLayout->setSpacing(0);
 
-    m_pButton = new QPushButton(this);
-    m_pButton->setObjectName(QStringLiteral("button"));
-    m_pButton->setSizePolicy(QSizePolicy(QSizePolicy::Minimum,
+    mButton = new QPushButton(this);
+    mButton->setObjectName(QStringLiteral("button"));
+    mButton->setSizePolicy(QSizePolicy(QSizePolicy::Minimum,
                                          QSizePolicy::Minimum));
-    m_pButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
-    box->addWidget(m_pButton);
-    stack = new QStackedWidget(this);
-    int maximumHeight = qMax(m_pButton->iconSize().height(), fontMetrics().height());
-    stack->setMaximumHeight(maximumHeight);
-    box->addWidget(stack);
+    mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
+    boxLayout->addWidget(mButton);
+    mStackedWidget = new QStackedWidget(this);
+    mStackedWidget->setObjectName(QStringLiteral("stackedwidget"));
+    int maximumHeight = qMax(mButton->iconSize().height(), fontMetrics().height());
+    mStackedWidget->setMaximumHeight(maximumHeight);
+    boxLayout->addWidget(mStackedWidget);
 
-    m_sslLabel = new SSLLabel(this);
-    m_sslLabel->setObjectName(QStringLiteral("ssllabel"));
-    box->addWidget(m_sslLabel);
+    mSslLabel = new SSLLabel(this);
+    mSslLabel->setObjectName(QStringLiteral("ssllabel"));
+    boxLayout->addWidget(mSslLabel);
 
-    m_pButton->setToolTip(i18n("Open detailed progress dialog"));
+    mButton->setToolTip(i18n("Open detailed progress dialog"));
 
-    m_pProgressBar = new QProgressBar(this);
-    m_pProgressBar->setObjectName(QStringLiteral("progressbar"));
-    m_pProgressBar->installEventFilter(this);
-    m_pProgressBar->setMinimumWidth(w);
-    stack->insertWidget(1, m_pProgressBar);
+    mProgressBar = new QProgressBar(this);
+    mProgressBar->setObjectName(QStringLiteral("progressbar"));
+    mProgressBar->installEventFilter(this);
+    mProgressBar->setMinimumWidth(w);
+    mStackedWidget->insertWidget(1, mProgressBar);
 
-    m_pLabel = new QLabel(QString(), this);
-    m_pLabel->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
-    m_pLabel->installEventFilter(this);
-    m_pLabel->setMinimumWidth(w);
-    stack->insertWidget(2, m_pLabel);
-    m_pButton->setMaximumHeight(maximumHeight);
+    mLabel = new QLabel(QString(), this);
+    mLabel->setObjectName(QStringLiteral("emptylabel"));
+    mLabel->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
+    mLabel->installEventFilter(this);
+    mLabel->setMinimumWidth(w);
+    mStackedWidget->insertWidget(2, mLabel);
+    mButton->setMaximumHeight(maximumHeight);
     setMinimumWidth(minimumSizeHint().width());
 
     mMode = None;
     setMode();
 
-    connect(m_pButton, &QAbstractButton::clicked,
+    connect(mButton, &QAbstractButton::clicked,
             this, &StatusbarProgressWidget::slotProgressButtonClicked);
 
     connect(ProgressManager::instance(), &ProgressManager::progressItemAdded,
@@ -199,9 +202,9 @@ void StatusbarProgressWidget::connectSingleItem()
 
 void StatusbarProgressWidget::activateSingleItemMode()
 {
-    m_pProgressBar->setMaximum(100);
-    m_pProgressBar->setValue(mCurrentItem->progress());
-    m_pProgressBar->setTextVisible(true);
+    mProgressBar->setMaximum(100);
+    mProgressBar->setValue(mCurrentItem->progress());
+    mProgressBar->setTextVisible(true);
 }
 
 void StatusbarProgressWidget::slotShowItemDelayed()
@@ -210,8 +213,8 @@ void StatusbarProgressWidget::slotShowItemDelayed()
     if (mCurrentItem) {
         activateSingleItemMode();
     } else if (!noItems) {   // N items
-        m_pProgressBar->setMaximum(0);
-        m_pProgressBar->setTextVisible(false);
+        mProgressBar->setMaximum(0);
+        mProgressBar->setTextVisible(false);
         Q_ASSERT(mBusyTimer);
         if (mBusyTimer) {
             mBusyTimer->start(100);
@@ -226,37 +229,37 @@ void StatusbarProgressWidget::slotShowItemDelayed()
 
 void StatusbarProgressWidget::slotBusyIndicator()
 {
-    const int p = m_pProgressBar->value();
-    m_pProgressBar->setValue(p + 10);
+    const int p = mProgressBar->value();
+    mProgressBar->setValue(p + 10);
 }
 
 void StatusbarProgressWidget::slotProgressItemProgress(ProgressItem *item, unsigned int value)
 {
     Q_ASSERT(item == mCurrentItem);  // the only one we should be connected to
     Q_UNUSED(item);
-    m_pProgressBar->setValue(value);
+    mProgressBar->setValue(value);
 }
 
 void StatusbarProgressWidget::setMode()
 {
     switch (mMode) {
     case None:
-        if (m_bShowButton) {
-            m_pButton->hide();
+        if (mShowButton) {
+            mButton->hide();
         }
-        m_sslLabel->setState(SSLLabel::Done);
+        mSslLabel->setState(SSLLabel::Done);
         // show the empty label in order to make the status bar look better
-        stack->show();
-        stack->setCurrentWidget(m_pLabel);
+        mStackedWidget->show();
+        mStackedWidget->setCurrentWidget(mLabel);
         break;
 
     case Progress:
-        stack->show();
-        stack->setCurrentWidget(m_pProgressBar);
-        if (m_bShowButton) {
-            m_pButton->show();
+        mStackedWidget->show();
+        mStackedWidget->setCurrentWidget(mProgressBar);
+        if (mShowButton) {
+            mButton->show();
         }
-        m_sslLabel->setState(m_sslLabel->lastState());
+        mSslLabel->setState(mSslLabel->lastState());
         break;
     }
 }
@@ -265,7 +268,7 @@ void StatusbarProgressWidget::slotClean()
 {
     // check if a new item showed up since we started the timer. If not, clear
     if (ProgressManager::instance()->isEmpty()) {
-        m_pProgressBar->setValue(0);
+        mProgressBar->setValue(0);
         //m_pLabel->clear();
         mMode = None;
         setMode();
@@ -289,14 +292,14 @@ bool StatusbarProgressWidget::eventFilter(QObject *obj, QEvent *ev)
 
 void StatusbarProgressWidget::slotProgressButtonClicked()
 {
-    if (m_bShowDetailedProgress) {
-        m_bShowDetailedProgress = false;
-        m_pButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
-        m_pButton->setToolTip(i18n("Show detailed progress window"));
+    if (mShowDetailedProgress) {
+        mShowDetailedProgress = false;
+        mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
+        mButton->setToolTip(i18n("Show detailed progress window"));
     } else {
-        m_bShowDetailedProgress = true;
-        m_pButton->setIcon(QIcon::fromTheme(QStringLiteral("go-down")));
-        m_pButton->setToolTip(i18n("Hide detailed progress window"));
+        mShowDetailedProgress = true;
+        mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-down")));
+        mButton->setToolTip(i18n("Hide detailed progress window"));
     }
     mProgressDialog->slotToggleVisibility();
 }

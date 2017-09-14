@@ -86,20 +86,20 @@ protected:
 
 private:
     unsigned int mShowTypeProgressItem = 0;
-    QProgressBar *m_pProgressBar = nullptr;
-    QLabel *m_pLabel = nullptr;
-    SSLLabel *m_sslLabel = nullptr;
-    QPushButton *m_pButton = nullptr;
+    QProgressBar *mProgressBar = nullptr;
+    QLabel *mLabel = nullptr;
+    SSLLabel *mSslLabel = nullptr;
+    QPushButton *mButton = nullptr;
 
     enum Mode {
         None, Progress
     };
 
     Mode mMode = None;
-    bool m_bShowButton = false;
-    bool m_bShowDetailedProgress = false;
+    bool mShowButton = false;
+    bool mShowDetailedProgress = false;
 
-    QStackedWidget *stack = nullptr;
+    QStackedWidget *mStackedWidget = nullptr;
     ProgressItem *mCurrentItem = nullptr;
     ProgressDialog *mProgressDialog = nullptr;
     QTimer *mDelayTimer = nullptr;
