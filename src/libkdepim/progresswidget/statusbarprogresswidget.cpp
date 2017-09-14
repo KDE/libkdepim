@@ -59,21 +59,16 @@ using namespace KPIM;
 //-----------------------------------------------------------------------------
 StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog, QWidget *parent, bool button)
     : QFrame(parent)
-    , mShowTypeProgressItem(0)
-    , m_bShowDetailedProgress(false)
-    , mCurrentItem(nullptr)
+    , m_bShowButton(button)
     , mProgressDialog(progressDialog)
-    , mDelayTimer(nullptr)
-    , mBusyTimer(nullptr)
-    , mCleanTimer(nullptr)
 {
-    m_bShowButton = button;
     int w = fontMetrics().width(QStringLiteral(" 999.9 kB/s 00:00:01 ")) + 8;
     QHBoxLayout *box = new QHBoxLayout(this);
     box->setMargin(0);
     box->setSpacing(0);
 
     m_pButton = new QPushButton(this);
+    m_pButton->setObjectName(QStringLiteral("button"));
     m_pButton->setSizePolicy(QSizePolicy(QSizePolicy::Minimum,
                                          QSizePolicy::Minimum));
     m_pButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
@@ -84,11 +79,13 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     box->addWidget(stack);
 
     m_sslLabel = new SSLLabel(this);
+    m_sslLabel->setObjectName(QStringLiteral("ssllabel"));
     box->addWidget(m_sslLabel);
 
     m_pButton->setToolTip(i18n("Open detailed progress dialog"));
 
     m_pProgressBar = new QProgressBar(this);
+    m_pProgressBar->setObjectName(QStringLiteral("progressbar"));
     m_pProgressBar->installEventFilter(this);
     m_pProgressBar->setMinimumWidth(w);
     stack->insertWidget(1, m_pProgressBar);
@@ -101,7 +98,7 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     m_pButton->setMaximumHeight(maximumHeight);
     setMinimumWidth(minimumSizeHint().width());
 
-    mode = None;
+    mMode = None;
     setMode();
 
     connect(m_pButton, &QAbstractButton::clicked,
@@ -221,8 +218,8 @@ void StatusbarProgressWidget::slotShowItemDelayed()
         }
     }
 
-    if (!noItems && mode == None) {
-        mode = Progress;
+    if (!noItems && mMode == None) {
+        mMode = Progress;
         setMode();
     }
 }
@@ -242,7 +239,7 @@ void StatusbarProgressWidget::slotProgressItemProgress(ProgressItem *item, unsig
 
 void StatusbarProgressWidget::setMode()
 {
-    switch (mode) {
+    switch (mMode) {
     case None:
         if (m_bShowButton) {
             m_pButton->hide();
@@ -270,7 +267,7 @@ void StatusbarProgressWidget::slotClean()
     if (ProgressManager::instance()->isEmpty()) {
         m_pProgressBar->setValue(0);
         //m_pLabel->clear();
-        mode = None;
+        mMode = None;
         setMode();
     }
 }
@@ -280,7 +277,7 @@ bool StatusbarProgressWidget::eventFilter(QObject *obj, QEvent *ev)
     if (ev->type() == QEvent::MouseButtonPress) {
         QMouseEvent *e = (QMouseEvent *)ev;
 
-        if (e->button() == Qt::LeftButton && mode != None) {      // toggle view on left mouse button
+        if (e->button() == Qt::LeftButton && mMode != None) {      // toggle view on left mouse button
             // Consensus seems to be that we should show/hide the fancy dialog when the user
             // clicks anywhere in the small one.
             slotProgressButtonClicked();

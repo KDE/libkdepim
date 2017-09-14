@@ -85,7 +85,7 @@ protected:
     bool eventFilter(QObject *, QEvent *) override;
 
 private:
-    unsigned int mShowTypeProgressItem;
+    unsigned int mShowTypeProgressItem = 0;
     QProgressBar *m_pProgressBar = nullptr;
     QLabel *m_pLabel = nullptr;
     SSLLabel *m_sslLabel = nullptr;
@@ -95,9 +95,9 @@ private:
         None, Progress
     };
 
-    uint mode;
-    bool m_bShowButton;
-    bool m_bShowDetailedProgress;
+    Mode mMode = None;
+    bool m_bShowButton = false;
+    bool m_bShowDetailedProgress = false;
 
     QStackedWidget *stack = nullptr;
     ProgressItem *mCurrentItem = nullptr;
