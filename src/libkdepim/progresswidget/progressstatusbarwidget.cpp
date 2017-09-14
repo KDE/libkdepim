@@ -37,10 +37,12 @@ ProgressStatusBarWidget::ProgressStatusBarWidget(QWidget *alignWidget, QWidget *
     , d(new KPIM::ProgressStatusBarWidgetPrivate)
 {
     KPIM::ProgressDialog *progressDialog = new KPIM::ProgressDialog(alignWidget, parent);
+    progressDialog->setObjectName(QStringLiteral("progressDialog"));
     progressDialog->setShowTypeProgressItem(showTypeProgressItem);
     progressDialog->hide();
 
     d->mLittleProgress = new KPIM::StatusbarProgressWidget(progressDialog, alignWidget);
+    d->mLittleProgress->setObjectName(QStringLiteral("littleprogress"));
     d->mLittleProgress->setShowTypeProgressItem(showTypeProgressItem);
     d->mLittleProgress->show();
 }

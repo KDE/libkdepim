@@ -11,6 +11,7 @@ if (BUILD_TESTING)
     add_subdirectory(misc/autotests)
     add_subdirectory(addressline/autotests/)
     add_subdirectory(progresswidget/autotests/)
+    add_subdirectory(progresswidget/tests/)
 endif()
 
 
