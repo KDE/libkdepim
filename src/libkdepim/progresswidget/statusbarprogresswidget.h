@@ -85,6 +85,7 @@ protected:
     bool eventFilter(QObject *, QEvent *) override;
 
 private:
+    void updateProgressButton();
     unsigned int mShowTypeProgressItem = 0;
     QProgressBar *mProgressBar = nullptr;
     QLabel *mLabel = nullptr;

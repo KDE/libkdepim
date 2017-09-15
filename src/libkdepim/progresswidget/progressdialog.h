@@ -132,8 +132,11 @@ public:
 
     void setShowTypeProgressItem(unsigned int type);
 
+    bool wasLastShown() const;
+
 public Q_SLOTS:
     void slotToggleVisibility();
+
 
 protected Q_SLOTS:
     void slotTransactionAdded(KPIM::ProgressItem *item);

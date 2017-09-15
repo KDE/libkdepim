@@ -296,6 +296,11 @@ void ProgressDialog::closeEvent(QCloseEvent *e)
     hide();
 }
 
+bool ProgressDialog::wasLastShown() const
+{
+    return mWasLastShown;
+}
+
 /*
  *  Destructor
  */
