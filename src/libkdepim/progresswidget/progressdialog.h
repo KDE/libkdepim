@@ -160,8 +160,8 @@ protected:
 
     TransactionItemView *mScrollView = nullptr;
     QMap<const ProgressItem *, TransactionItem *> mTransactionsToListviewItems;
-    unsigned int mShowTypeProgressItem;
-    bool mWasLastShown;
+    unsigned int mShowTypeProgressItem = 0;
+    bool mWasLastShown = false;
 };
 } // namespace KPIM
 

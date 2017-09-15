@@ -256,8 +256,6 @@ void TransactionItem::addSubTransaction(ProgressItem *item)
 
 ProgressDialog::ProgressDialog(QWidget *alignWidget, QWidget *parent)
     : OverlayWidget(alignWidget, parent)
-    , mShowTypeProgressItem(0)
-    , mWasLastShown(false)
 {
     setFrameStyle(QFrame::Panel | QFrame::Sunken);   // QFrame
 
