@@ -26,7 +26,7 @@
 #include "libkdepim_debug.h"
 #include <KLocalizedString>
 
-namespace KPIM {
+using namespace KPIM;
 unsigned int KPIM::ProgressManager::uID = 42;
 
 ProgressItem::ProgressItem(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool canBeCanceled, CryptoStatus cryptoStatus)
@@ -218,11 +218,11 @@ unsigned int ProgressItem::progress() const
 
 // ======================================
 
-struct ProgressManagerPrivate {
+struct KPIM::ProgressManagerPrivate {
     ProgressManager instance;
 };
 
-Q_GLOBAL_STATIC(ProgressManagerPrivate, progressManagerPrivate)
+Q_GLOBAL_STATIC(KPIM::ProgressManagerPrivate, progressManagerPrivate)
 
 ProgressManager::ProgressManager()
     : QObject()
@@ -408,4 +408,3 @@ unsigned int ProgressItem::completedItems() const
 {
     return mCompleted;
 }
-} // namespace
