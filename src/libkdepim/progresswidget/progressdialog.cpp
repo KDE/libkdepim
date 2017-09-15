@@ -46,10 +46,8 @@
 #include <QLayout>
 #include <QVBoxLayout>
 
-namespace KPIM {
+using namespace KPIM;
 static const int MAX_LABEL_WIDTH = 650;
-
-class TransactionItem;
 
 TransactionItemView::TransactionItemView(QWidget *parent, const char *name)
     : QScrollArea(parent)
@@ -197,7 +195,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     }
 }
 
-TransactionItem::~TransactionItem()
+KPIM::TransactionItem::~TransactionItem()
 {
 }
 
@@ -431,5 +429,4 @@ void ProgressDialog::slotToggleVisibility()
     if (!isHidden() || !mTransactionsToListviewItems.isEmpty()) {
         setVisible(isHidden());
     }
-}
 }
