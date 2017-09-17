@@ -482,13 +482,20 @@ QList<QWidget *> KPrefsWidRadios::widgets() const
 KPrefsWidCombo::KPrefsWidCombo(KConfigSkeleton::ItemEnum *item, QWidget *parent)
     : mItem(item)
 {
-    QWidget *hbox = new QWidget(parent);
-    QHBoxLayout *hboxHBoxLayout = new QHBoxLayout(hbox);
-    hboxHBoxLayout->setMargin(0);
-    mLabel = new QLabel(mItem->label(), hbox);
-    mCombo = new KComboBox(hbox);
-    hboxHBoxLayout->addWidget(mCombo);
+    mLabel = new QLabel(mItem->label(), parent);
+    mCombo = new KComboBox(parent);
     connect(mCombo, QOverload<int>::of(&KComboBox::activated), this, &KPrefsWidCombo::changed);
+    mLabel->setBuddy(mCombo);
+    QString toolTip = mItem->toolTip();
+    if (!toolTip.isEmpty()) {
+        mLabel->setToolTip(toolTip);
+        mCombo->setToolTip(toolTip);
+    }
+    QString whatsThis = mItem->whatsThis();
+    if (!whatsThis.isEmpty()) {
+        mLabel->setWhatsThis(whatsThis);
+        mCombo->setWhatsThis(whatsThis);
+    }
 }
 
 KPrefsWidCombo::~KPrefsWidCombo()
