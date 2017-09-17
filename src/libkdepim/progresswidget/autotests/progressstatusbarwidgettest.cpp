@@ -35,6 +35,7 @@ void ProgressStatusBarWidgetTest::shouldHaveDefaultValue()
 {
     QWidget *widget = new QWidget;
     KPIM::ProgressStatusBarWidget w(widget, widget);
+    widget->show();
 
     KPIM::ProgressDialog *progressDialog = widget->findChild<KPIM::ProgressDialog *>(QStringLiteral("progressDialog"));
     QVERIFY(progressDialog);
