@@ -49,10 +49,10 @@
 using namespace KPIM;
 static const int MAX_LABEL_WIDTH = 650;
 
-TransactionItemView::TransactionItemView(QWidget *parent, const char *name)
+TransactionItemView::TransactionItemView(QWidget *parent, const QString &name)
     : QScrollArea(parent)
 {
-    setObjectName(QLatin1String(name));
+    setObjectName(name);
     setFrameStyle(NoFrame);
     mBigBox = new QWidget(this);
     QVBoxLayout *mBigBoxVBoxLayout = new QVBoxLayout(mBigBox);
@@ -261,7 +261,7 @@ ProgressDialog::ProgressDialog(QWidget *alignWidget, QWidget *parent)
 
     setAutoFillBackground(true);
 
-    mScrollView = new TransactionItemView(this, "ProgressScrollView");
+    mScrollView = new TransactionItemView(this, QStringLiteral("ProgressScrollView"));
     layout()->addWidget(mScrollView);
     /*
     * Get the singleton ProgressManager item which will inform us of

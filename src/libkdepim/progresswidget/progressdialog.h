@@ -54,7 +54,7 @@ class TransactionItemView : public QScrollArea
 {
     Q_OBJECT
 public:
-    explicit TransactionItemView(QWidget *parent = nullptr, const char *name = nullptr);
+    explicit TransactionItemView(QWidget *parent = nullptr, const QString &name = QString());
 
     virtual ~TransactionItemView()
     {
