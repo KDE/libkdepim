@@ -44,4 +44,6 @@ void ProgressStatusBarWidgetTest::shouldHaveDefaultValue()
     KPIM::StatusbarProgressWidget *mLittleProgress = widget->findChild<KPIM::StatusbarProgressWidget *>(QStringLiteral("littleprogress"));
     QVERIFY(mLittleProgress);
     QVERIFY(mLittleProgress->isVisible());
+
+    QCOMPARE(mLittleProgress, w.littleProgress());
 }
