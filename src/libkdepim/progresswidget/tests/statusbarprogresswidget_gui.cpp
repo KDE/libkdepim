@@ -26,9 +26,7 @@
 StatusbarProgressWidget_Gui::StatusbarProgressWidget_Gui(QWidget *parent)
     : QWidget(parent)
 {
-
 }
-
 
 int main(int argc, char **argv)
 {

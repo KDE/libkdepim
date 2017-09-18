@@ -137,7 +137,6 @@ public:
 public Q_SLOTS:
     void slotToggleVisibility();
 
-
 protected Q_SLOTS:
     void slotTransactionAdded(KPIM::ProgressItem *item);
     void slotTransactionCompleted(KPIM::ProgressItem *item);

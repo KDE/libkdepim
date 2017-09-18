@@ -18,7 +18,6 @@
 
 */
 
-
 #include <QApplication>
 #include <QCommandLineParser>
 #include <QStandardPaths>

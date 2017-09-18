@@ -30,7 +30,6 @@ public:
     ~ProgressStatusBarWidgetTest() = default;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
-
 };
 
 #endif // PROGRESSSTATUSBARWIDGETTEST_H

@@ -21,7 +21,6 @@
 
 #include <AgentManager>
 
-
 using namespace Akonadi;
 using namespace KPIM;
 

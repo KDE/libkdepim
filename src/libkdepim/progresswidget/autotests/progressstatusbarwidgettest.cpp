@@ -17,7 +17,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #include "progressstatusbarwidgettest.h"
 #include "../progressstatusbarwidget.h"
 #include <QTest>
@@ -28,7 +27,6 @@ QTEST_MAIN(ProgressStatusBarWidgetTest)
 ProgressStatusBarWidgetTest::ProgressStatusBarWidgetTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void ProgressStatusBarWidgetTest::shouldHaveDefaultValue()

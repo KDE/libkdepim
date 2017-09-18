@@ -17,7 +17,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #include "statusbarprogresswidgettest.h"
 #include "../statusbarprogresswidget.h"
 #include "../progressdialog.h"

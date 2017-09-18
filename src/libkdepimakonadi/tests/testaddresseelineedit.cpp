@@ -21,7 +21,6 @@
 #include <QWidget>
 #include <QVBoxLayout>
 
-
 #include "../src/libkdepimakonadi/addressline/addresslineedit/addresseelineedit.h"
 
 #include <QApplication>

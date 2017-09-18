@@ -72,7 +72,7 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     mButton = new QPushButton(this);
     mButton->setObjectName(QStringLiteral("button"));
     mButton->setSizePolicy(QSizePolicy(QSizePolicy::Minimum,
-                                         QSizePolicy::Minimum));
+                                       QSizePolicy::Minimum));
     mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
     boxLayout->addWidget(mButton);
     mStackedWidget = new QStackedWidget(this);
@@ -314,7 +314,7 @@ void StatusbarProgressWidget::slotProgressButtonClicked()
     mShowDetailedProgress = !mShowDetailedProgress;
     updateProgressButton();
     mProgressDialog->slotToggleVisibility();
-    setFixedWidth(qMax(600,mProgressDialog->width()));
+    setFixedWidth(qMax(600, mProgressDialog->width()));
 }
 
 void StatusbarProgressWidget::slotProgressDialogVisible(bool b)
