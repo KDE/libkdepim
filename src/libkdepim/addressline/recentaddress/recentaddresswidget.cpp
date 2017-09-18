@@ -33,6 +33,8 @@
 #include <QToolButton>
 #include <QShortcut>
 
+#include <Libkdepim/EmailValidator>
+
 using namespace KPIM;
 RecentAddressWidget::RecentAddressWidget(QWidget *parent)
     : QWidget(parent)
@@ -47,6 +49,8 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
     mLineEdit->setTrapReturnKey(true);
     mLineEdit->installEventFilter(this);
     mLineEdit->setClearButtonEnabled(true);
+    KPIM::EmailValidator *emailValidator = new KPIM::EmailValidator(this);
+    mLineEdit->setValidator(emailValidator);
     connect(mLineEdit, &KLineEdit::returnPressed, this, &RecentAddressWidget::slotAddItem);
 
     lineLayout->addWidget(mLineEdit);
