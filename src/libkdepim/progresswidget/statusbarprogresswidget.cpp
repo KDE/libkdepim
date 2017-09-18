@@ -53,6 +53,7 @@ using KPIM::ProgressManager;
 #include <QPushButton>
 #include <QStackedWidget>
 #include <QTimer>
+#include <QDebug>
 
 using namespace KPIM;
 
@@ -99,9 +100,9 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     mLabel->setMinimumWidth(w);
     mStackedWidget->insertWidget(2, mLabel);
     mButton->setMaximumHeight(maximumHeight);
-    setMinimumWidth(minimumSizeHint().width());
+    setFixedWidth(600);
 
-    mMode = None;
+    mMode = Clean;
     setMode();
 
     connect(mButton, &QAbstractButton::clicked,
@@ -221,7 +222,7 @@ void StatusbarProgressWidget::slotShowItemDelayed()
         }
     }
 
-    if (!noItems && mMode == None) {
+    if (!noItems && mMode != Progress) {
         mMode = Progress;
         setMode();
     }
@@ -243,16 +244,21 @@ void StatusbarProgressWidget::slotProgressItemProgress(ProgressItem *item, unsig
 void StatusbarProgressWidget::setMode()
 {
     switch (mMode) {
+    case Clean:
     case None:
         if (mShowButton) {
-            mButton->hide();
+            if (mMode == Clean) {
+                mButton->hide();
+            } else {
+                mButton->show();
+            }
         }
         mSslLabel->setState(SSLLabel::Done);
         // show the empty label in order to make the status bar look better
         mStackedWidget->show();
         mStackedWidget->setCurrentWidget(mLabel);
+        mMode = None;
         break;
-
     case Progress:
         mStackedWidget->show();
         mStackedWidget->setCurrentWidget(mProgressBar);
@@ -272,7 +278,7 @@ void StatusbarProgressWidget::slotClean()
     if (ProgressManager::instance()->isEmpty()) {
         mProgressBar->setValue(0);
         //m_pLabel->clear();
-        mMode = None;
+        mMode = Clean;
         setMode();
     }
 }
@@ -282,7 +288,7 @@ bool StatusbarProgressWidget::eventFilter(QObject *obj, QEvent *ev)
     if (ev->type() == QEvent::MouseButtonPress) {
         QMouseEvent *e = (QMouseEvent *)ev;
 
-        if (e->button() == Qt::LeftButton && mMode != None) {      // toggle view on left mouse button
+        if (e->button() == Qt::LeftButton && mMode == Progress) {      // toggle view on left mouse button
             // Consensus seems to be that we should show/hide the fancy dialog when the user
             // clicks anywhere in the small one.
             slotProgressButtonClicked();
@@ -308,6 +314,7 @@ void StatusbarProgressWidget::slotProgressButtonClicked()
     mShowDetailedProgress = !mShowDetailedProgress;
     updateProgressButton();
     mProgressDialog->slotToggleVisibility();
+    setFixedWidth(qMax(600,mProgressDialog->width()));
 }
 
 void StatusbarProgressWidget::slotProgressDialogVisible(bool b)

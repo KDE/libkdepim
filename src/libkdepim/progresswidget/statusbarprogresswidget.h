@@ -93,7 +93,9 @@ private:
     QPushButton *mButton = nullptr;
 
     enum Mode {
-        None, Progress
+        None,
+        Progress,
+        Clean
     };
 
     Mode mMode = None;
