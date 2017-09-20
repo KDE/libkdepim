@@ -45,9 +45,6 @@ public:
     /** Return the instance of the singleton object for this class */
     static BroadcastStatus *instance();
 
-    /** Return the last status message from setStatusMsg() */
-    QString statusMsg() const;
-
 public Q_SLOTS:
     /**
       Emit an update status bar signal. It's a slot so it can be hooked up

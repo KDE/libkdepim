@@ -66,11 +66,6 @@ BroadcastStatus::~BroadcastStatus()
     delete d;
 }
 
-QString BroadcastStatus::statusMsg() const
-{
-    return d->mStatusMsg;
-}
-
 void BroadcastStatus::setStatusMsg(const QString &message)
 {
     d->mStatusMsg = message;
