@@ -110,8 +110,7 @@ LdapClientSearch::LdapClientSearch(QObject *parent)
                                 "(|(cn=%1*)(mail=%1*)(givenName=%1*)(sn=%1*))");
 
     d->readConfig();
-    connect(KDirWatch::self(), SIGNAL(dirty(QString)), this,
-            SLOT(slotFileChanged(QString)));
+    connect(KDirWatch::self(), &KDirWatch::dirty, this, [this](const QString &filename) { d->slotFileChanged(filename); });
 }
 
 LdapClientSearch::~LdapClientSearch()

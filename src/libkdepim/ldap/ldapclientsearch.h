@@ -176,7 +176,6 @@ private:
     Q_PRIVATE_SLOT(d, void slotLDAPError(const QString &))
     Q_PRIVATE_SLOT(d, void slotLDAPDone())
     Q_PRIVATE_SLOT(d, void slotDataTimer())
-    Q_PRIVATE_SLOT(d, void slotFileChanged(const QString &))
     //@endcond
 };
 }
