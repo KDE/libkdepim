@@ -144,7 +144,7 @@ void KCMLdap::slotAddHost()
     KLDAP::LdapServer server;
     KLDAP::AddHostDialog dlg(&server, dialogParent());
 
-    if (dlg.exec() && !server.host().isEmpty()) {   //krazy:exclude=crashy
+    if (dlg.exec() && !server.host().trimmed().isEmpty()) {   //krazy:exclude=crashy
         new LDAPItem(mHostListView, server);
 
         Q_EMIT changed(true);

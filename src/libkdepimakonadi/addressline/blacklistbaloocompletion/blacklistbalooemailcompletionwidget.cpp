@@ -143,8 +143,9 @@ BlackListBalooEmailCompletionWidget::~BlackListBalooEmailCompletionWidget()
 
 void BlackListBalooEmailCompletionWidget::slotSelectionChanged()
 {
-    mSelectButton->setEnabled(!mEmailList->selectedItems().isEmpty());
-    mUnselectButton->setEnabled(!mEmailList->selectedItems().isEmpty());
+    bool selectionIsNotEmpty = !mEmailList->selectedItems().isEmpty();
+    mSelectButton->setEnabled(selectionIsNotEmpty);
+    mUnselectButton->setEnabled(selectionIsNotEmpty);
 }
 
 void BlackListBalooEmailCompletionWidget::load()
