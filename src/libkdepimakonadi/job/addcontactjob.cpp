@@ -105,7 +105,7 @@ public:
 
             // save the new item in akonadi storage
             Akonadi::ItemCreateJob *job = new Akonadi::ItemCreateJob(item, mCollection);
-            q->connect(job, SIGNAL(result(KJob *)), SLOT(slotAddContactDone(KJob *)));
+            q->connect(job, SIGNAL(result(KJob*)), SLOT(slotAddContactDone(KJob*)));
         } else {
             q->setError(UserDefinedError);
             q->emitResult();
@@ -173,7 +173,7 @@ void AddContactJob::start()
     searchJob->setQuery(Akonadi::ContactSearchJob::Email, d->mContact.preferredEmail().toLower(),
                         Akonadi::ContactSearchJob::ExactMatch);
 
-    connect(searchJob, SIGNAL(result(KJob *)), SLOT(slotSearchDone(KJob *)));
+    connect(searchJob, SIGNAL(result(KJob*)), SLOT(slotSearchDone(KJob*)));
 }
 
 #include "moc_addcontactjob.cpp"

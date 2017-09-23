@@ -74,7 +74,7 @@ public:
         searchJob->setLimit(1);
         searchJob->setQuery(Akonadi::ContactSearchJob::Email, mEmail.toLower(),
                             Akonadi::ContactSearchJob::ExactMatch);
-        q->connect(searchJob, SIGNAL(result(KJob *)), q, SLOT(slotSearchDone(KJob *)));
+        q->connect(searchJob, SIGNAL(result(KJob*)), q, SLOT(slotSearchDone(KJob*)));
     }
 
     void modifyContact()
@@ -86,7 +86,7 @@ public:
             address.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("MailAllowToRemoteContent"), mRemoteContent ? QStringLiteral("TRUE") : QStringLiteral("FALSE"));
             item.setPayload<KContacts::Addressee>(address);
             Akonadi::ItemModifyJob *job = new Akonadi::ItemModifyJob(item);
-            q->connect(job, SIGNAL(result(KJob *)), SLOT(slotAddModifyContactDone(KJob *)));
+            q->connect(job, SIGNAL(result(KJob*)), SLOT(slotAddModifyContactDone(KJob*)));
         } else {
             searchContact();
         }
@@ -113,7 +113,7 @@ public:
             contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("MailAllowToRemoteContent"), mRemoteContent ? QStringLiteral("TRUE") : QStringLiteral("FALSE"));
             item.setPayload<KContacts::Addressee>(contact);
             Akonadi::ItemModifyJob *job = new Akonadi::ItemModifyJob(item);
-            q->connect(job, SIGNAL(result(KJob *)), SLOT(slotAddModifyContactDone(KJob *)));
+            q->connect(job, SIGNAL(result(KJob*)), SLOT(slotAddModifyContactDone(KJob*)));
         }
     }
 
@@ -126,7 +126,7 @@ public:
                                               Akonadi::CollectionFetchJob::Recursive);
 
         addressBookJob->fetchScope().setContentMimeTypes(mimeTypes);
-        q->connect(addressBookJob, SIGNAL(result(KJob *)), SLOT(slotCollectionsFetched(KJob *)));
+        q->connect(addressBookJob, SIGNAL(result(KJob*)), SLOT(slotCollectionsFetched(KJob*)));
     }
 
     void slotCollectionsFetched(KJob *job)
@@ -169,7 +169,7 @@ public:
 
                     if (agentType.isValid()) {
                         Akonadi::AgentInstanceCreateJob *job = new Akonadi::AgentInstanceCreateJob(agentType, q);
-                        q->connect(job, SIGNAL(result(KJob *)), SLOT(slotResourceCreationDone(KJob *)));
+                        q->connect(job, SIGNAL(result(KJob*)), SLOT(slotResourceCreationDone(KJob*)));
                         job->configure(mParentWidget);
                         job->start();
                         delete dlg;
@@ -229,7 +229,7 @@ public:
 
         // save the new item in akonadi storage
         Akonadi::ItemCreateJob *createJob = new Akonadi::ItemCreateJob(item, addressBook, q);
-        q->connect(createJob, SIGNAL(result(KJob *)), SLOT(slotAddModifyContactDone(KJob *)));
+        q->connect(createJob, SIGNAL(result(KJob*)), SLOT(slotAddModifyContactDone(KJob*)));
     }
 
     void slotAddModifyContactDone(KJob *job)

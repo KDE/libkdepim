@@ -142,11 +142,11 @@ void LdapClient::startQuery(const QString &filter)
     d->startParseLDIF();
     d->mActive = true;
     d->mJob = KIO::get(url, KIO::NoReload, KIO::HideProgressInfo);
-    connect(d->mJob, SIGNAL(data(KIO::Job *,QByteArray)),
-            this, SLOT(slotData(KIO::Job *,QByteArray)));
-    connect(d->mJob, SIGNAL(infoMessage(KJob *,QString,QString)),
-            this, SLOT(slotInfoMessage(KJob *,QString,QString)));
-    connect(d->mJob, SIGNAL(result(KJob *)),
+    connect(d->mJob, SIGNAL(data(KIO::Job*,QByteArray)),
+            this, SLOT(slotData(KIO::Job*,QByteArray)));
+    connect(d->mJob, SIGNAL(infoMessage(KJob*,QString,QString)),
+            this, SLOT(slotInfoMessage(KJob*,QString,QString)));
+    connect(d->mJob, SIGNAL(result(KJob*)),
             this, SLOT(slotDone()));
 }
 
