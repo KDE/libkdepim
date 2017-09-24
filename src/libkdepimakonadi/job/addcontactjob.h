@@ -81,9 +81,6 @@ private:
     //@cond PRIVATE
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void slotSearchDone(KJob *))
-    Q_PRIVATE_SLOT(d, void slotAddContactDone(KJob *))
     //@endcond
 };
 }
