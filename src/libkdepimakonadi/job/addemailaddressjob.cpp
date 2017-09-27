@@ -151,7 +151,7 @@ public:
 
                     if (agentType.isValid()) {
                         Akonadi::AgentInstanceCreateJob *job = new Akonadi::AgentInstanceCreateJob(agentType, q);
-                        q->connect(job, SIGNAL(result(KJob*)), SLOT(slotResourceCreationDone(KJob*)));
+                        q->connect(job, &Akonadi::AgentInstanceCreateJob::result, q, [this](KJob *job) { slotResourceCreationDone(job); });
                         job->configure(mParentWidget);
                         job->start();
                         delete dlg;

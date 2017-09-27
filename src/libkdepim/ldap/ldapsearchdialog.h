@@ -106,9 +106,6 @@ private:
     Q_PRIVATE_SLOT(d, void slotStopSearch())
     Q_PRIVATE_SLOT(d, void slotSearchDone())
     Q_PRIVATE_SLOT(d, void slotError(const QString &))
-    Q_PRIVATE_SLOT(d, void slotSelectAll())
-    Q_PRIVATE_SLOT(d, void slotUnselectAll())
-    Q_PRIVATE_SLOT(d, void slotSelectionChanged())
     //@endcond
 };
 }

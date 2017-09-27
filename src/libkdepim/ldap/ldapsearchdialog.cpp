@@ -636,8 +636,7 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     d->mResultView->verticalHeader()->hide();
     d->mResultView->setSortingEnabled(true);
     d->mResultView->horizontalHeader()->setSortIndicatorShown(true);
-    connect(d->mResultView, SIGNAL(clicked(QModelIndex)),
-            SLOT(slotSelectionChanged()));
+    connect(d->mResultView, QOverload<const QModelIndex &>::of(&QTableView::clicked), [this]() {d->slotSelectionChanged(); });
     topLayout->addWidget(d->mResultView);
 
     d->mResultView->setContextMenuPolicy(Qt::CustomContextMenu);
@@ -653,10 +652,10 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     QDialogButtonBox *buttons = new QDialogButtonBox(page);
     QPushButton *button = buttons->addButton(i18n("Select All"),
                                              QDialogButtonBox::ActionRole);
-    connect(button, SIGNAL(clicked()), this, SLOT(slotSelectAll()));
+    connect(button, &QPushButton::clicked, this, [this]() { d->slotSelectAll(); });
     button = buttons->addButton(i18n("Unselect All"),
                                 QDialogButtonBox::ActionRole);
-    connect(button, SIGNAL(clicked()), this, SLOT(slotUnselectAll()));
+    connect(button, &QPushButton::clicked, this, [this]() { d->slotUnselectAll(); });
 
     buttonLayout->addWidget(buttons);
 
