@@ -70,13 +70,6 @@ private:
     //@cond PRIVATE
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void slotSearchDone(KJob *))
-    Q_PRIVATE_SLOT(d, void slotAddContactDone(KJob *))
-    Q_PRIVATE_SLOT(d, void slotCollectionsFetched(KJob *))
-    Q_PRIVATE_SLOT(d, void slotContactEditorError(const QString &))
-    Q_PRIVATE_SLOT(d, void contactStored(const Akonadi::Item &))
-
     //@endcond
 };
 }

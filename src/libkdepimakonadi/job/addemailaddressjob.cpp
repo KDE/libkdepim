@@ -107,7 +107,7 @@ public:
                                               Akonadi::CollectionFetchJob::Recursive);
 
         addressBookJob->fetchScope().setContentMimeTypes(mimeTypes);
-        q->connect(addressBookJob, SIGNAL(result(KJob*)), SLOT(slotCollectionsFetched(KJob*)));
+        q->connect(addressBookJob, &Akonadi::CollectionFetchJob::result, q, [this](KJob* job) { slotCollectionsFetched(job); });
     }
 
     void slotCollectionsFetched(KJob *job)
@@ -209,7 +209,7 @@ public:
 
         // save the new item in akonadi storage
         Akonadi::ItemCreateJob *createJob = new Akonadi::ItemCreateJob(item, addressBook, q);
-        q->connect(createJob, SIGNAL(result(KJob*)), SLOT(slotAddContactDone(KJob*)));
+        q->connect(createJob, &Akonadi::ItemCreateJob::result, q, [this](KJob*job) { slotAddContactDone(job); });
     }
 
     void slotAddContactDone(KJob *job)
@@ -243,10 +243,10 @@ public:
                     = new Akonadi::ContactEditorDialog(Akonadi::ContactEditorDialog::EditMode,
                                                        mParentWidget);
                 dlg->setContact(mItem);
-                connect(dlg, SIGNAL(contactStored(Akonadi::Item)),
-                        q, SLOT(contactStored(Akonadi::Item)));
-                connect(dlg, SIGNAL(error(QString)),
-                        q, SLOT(slotContactEditorError(QString)));
+                connect(dlg.data(), &Akonadi::ContactEditorDialog::contactStored,
+                        q, [this](const Akonadi::Item &item) { contactStored(item); });
+                connect(dlg.data(), &Akonadi::ContactEditorDialog::error,
+                        q, [this](const QString &str) { slotContactEditorError(str); });
                 dlg->exec();
                 delete dlg;
             }
@@ -295,7 +295,7 @@ void AddEmailAddressJob::start()
     searchJob->setLimit(1);
     searchJob->setQuery(Akonadi::ContactSearchJob::Email, d->mEmail.toLower(),
                         Akonadi::ContactSearchJob::ExactMatch);
-    connect(searchJob, SIGNAL(result(KJob*)), SLOT(slotSearchDone(KJob*)));
+    connect(searchJob, &Akonadi::ContactSearchJob::result, this, [this](KJob *job) { d->slotSearchDone(job); });
 }
 
 Akonadi::Item AddEmailAddressJob::contact() const
