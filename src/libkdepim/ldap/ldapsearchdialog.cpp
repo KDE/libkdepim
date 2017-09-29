@@ -541,8 +541,9 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     , d(new Private(this))
 {
     setWindowTitle(i18n("Import Contacts from LDAP"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel);
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel, this);
     d->user1Button = new QPushButton;
     buttonBox->addButton(d->user1Button, QDialogButtonBox::ActionRole);
 
