@@ -182,11 +182,6 @@ private:
     //@cond PRIVATE
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void makeInsertedItemsCheckable(const QModelIndex &, int start, int end))
-    Q_PRIVATE_SLOT(d, void updateCheckedItems(const QModelIndex &topLeft,
-                                              const QModelIndex &bottomRight))
-    Q_PRIVATE_SLOT(d, void toggleCheckState())
     //@endcond
 };
 }

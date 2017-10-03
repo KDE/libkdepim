@@ -100,10 +100,10 @@ void KDatePickerPopup::Private::buildMenu()
     }
 
     if (mModes & Words) {
-        q->addAction(i18nc("@option today", "&Today"), q, SLOT(slotToday()));
-        q->addAction(i18nc("@option tomorrow", "To&morrow"), q, SLOT(slotTomorrow()));
-        q->addAction(i18nc("@option next week", "Next &Week"), q, SLOT(slotNextWeek()));
-        q->addAction(i18nc("@option next month", "Next M&onth"), q, SLOT(slotNextMonth()));
+        q->addAction(i18nc("@option today", "&Today"), q, [this]() { slotToday(); });
+        q->addAction(i18nc("@option tomorrow", "To&morrow"), q, [this]() { slotTomorrow(); });
+        q->addAction(i18nc("@option next week", "Next &Week"), q, [this]() { slotNextWeek(); });
+        q->addAction(i18nc("@option next month", "Next M&onth"), q, [this]() { slotNextMonth(); });
 
         if (mModes & NoDate) {
             q->addSeparator();
@@ -111,7 +111,7 @@ void KDatePickerPopup::Private::buildMenu()
     }
 
     if (mModes & NoDate) {
-        q->addAction(i18nc("@option do not specify a date", "No Date"), q, SLOT(slotNoDate()));
+        q->addAction(i18nc("@option do not specify a date", "No Date"), q, [this]() { slotNoDate(); });
     }
 }
 

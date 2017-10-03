@@ -67,7 +67,7 @@ public:
         }
 
         AddEmailAddressJob *createJob = new AddEmailAddressJob(mCompleteAddress, mParentWidget, q);
-        q->connect(createJob, SIGNAL(result(KJob*)), SLOT(slotAddContactDone(KJob*)));
+        q->connect(createJob, &AddEmailAddressJob::result, q, [this](KJob *job) { slotAddContactDone(job); });
         createJob->start();
     }
 
@@ -116,7 +116,7 @@ void OpenEmailAddressJob::start()
     searchJob->setLimit(1);
     searchJob->setQuery(Akonadi::ContactSearchJob::Email, d->mEmail.toLower(),
                         Akonadi::ContactSearchJob::ExactMatch);
-    connect(searchJob, SIGNAL(result(KJob*)), SLOT(slotSearchDone(KJob*)));
+    connect(searchJob, &Akonadi::ContactSearchJob::result, this, [this](KJob *job) { d->slotSearchDone(job); });
 }
 
 #include "moc_openemailaddressjob.cpp"

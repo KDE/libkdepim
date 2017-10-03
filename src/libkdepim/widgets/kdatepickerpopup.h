@@ -100,13 +100,6 @@ private:
     //@cond PRIVATE
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void slotDateChanged(const QDate &))
-    Q_PRIVATE_SLOT(d, void slotToday())
-    Q_PRIVATE_SLOT(d, void slotTomorrow())
-    Q_PRIVATE_SLOT(d, void slotNextWeek())
-    Q_PRIVATE_SLOT(d, void slotNextMonth())
-    Q_PRIVATE_SLOT(d, void slotNoDate())
     //@endcond
 };
 
