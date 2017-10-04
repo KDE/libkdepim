@@ -146,8 +146,8 @@ void LdapClient::startQuery(const QString &filter)
             this, SLOT(slotData(KIO::Job*,QByteArray)));
     connect(d->mJob, SIGNAL(infoMessage(KJob*,QString,QString)),
             this, SLOT(slotInfoMessage(KJob*,QString,QString)));
-    connect(d->mJob, SIGNAL(result(KJob*)),
-            this, SLOT(slotDone()));
+    connect(d->mJob.data(), &KJob::result,
+            this, [this]() { d->slotDone(); });
 }
 
 void LdapClient::cancelQuery()
