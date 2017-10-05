@@ -174,7 +174,6 @@ private:
 
     Q_PRIVATE_SLOT(d, void slotLDAPResult(const KLDAP::LdapClient &, const KLDAP::LdapObject &))
     Q_PRIVATE_SLOT(d, void slotLDAPError(const QString &))
-    Q_PRIVATE_SLOT(d, void slotLDAPDone())
     //@endcond
 };
 }
