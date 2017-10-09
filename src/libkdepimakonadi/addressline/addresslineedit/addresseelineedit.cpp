@@ -225,12 +225,11 @@ void AddresseeLineEdit::insert(const QString &t)
     newText = KPIM::AddresseeLineEditUtil::adaptPasteMails(newText);
 
     QString contents = text();
-    int start_sel = 0;
     int pos = cursorPosition();
 
     if (hasSelectedText()) {
         // Cut away the selection.
-        start_sel = selectionStart();
+        int start_sel = selectionStart();
         pos = start_sel;
         contents = contents.left(start_sel) + contents.mid(start_sel + selectedText().length());
     }

@@ -103,6 +103,9 @@ public:
 
 void AddresseeLineEditPrivate::init()
 {
+    if (mToolButton) {
+        return;
+    }
     mToolButton = new QToolButton(q);
     mToolButton->setVisible(false);
     mToolButton->setCursor(Qt::ArrowCursor);
