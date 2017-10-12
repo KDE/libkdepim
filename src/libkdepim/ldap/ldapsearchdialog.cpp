@@ -637,7 +637,7 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     d->mResultView->verticalHeader()->hide();
     d->mResultView->setSortingEnabled(true);
     d->mResultView->horizontalHeader()->setSortIndicatorShown(true);
-    connect(d->mResultView, QOverload<const QModelIndex &>::of(&QTableView::clicked), [this]() {d->slotSelectionChanged(); });
+    connect(d->mResultView, QOverload<const QModelIndex &>::of(&QTableView::clicked), this, [this]() {d->slotSelectionChanged(); });
     topLayout->addWidget(d->mResultView);
 
     d->mResultView->setContextMenuPolicy(Qt::CustomContextMenu);
