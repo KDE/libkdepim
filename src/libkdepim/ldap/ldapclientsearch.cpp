@@ -191,8 +191,8 @@ void LdapClientSearch::Private::readConfig()
                        q, SLOT(slotLDAPResult(KLDAP::LdapClient,KLDAP::LdapObject)));
             q->connect(ldapClient, &LdapClient::done,
                        q, [this]() { slotLDAPDone(); });
-            q->connect(ldapClient, SIGNAL(error(QString)),
-                       q, SLOT(slotLDAPError(QString)));
+            q->connect(ldapClient, QOverload<const QString &>::of(&LdapClient::error),
+                       q, [this](const QString &str) { slotLDAPError(str);});
 
             mClients.append(ldapClient);
         }

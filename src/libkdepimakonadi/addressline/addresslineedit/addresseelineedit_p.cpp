@@ -134,8 +134,8 @@ void AddresseeLineEditPrivate::init()
                     this, SLOT(slotReturnPressed(QString)));
 
             KCompletionBox *box = q->completionBox();
-            connect(box, SIGNAL(activated(QString)),
-                    this, SLOT(slotPopupCompletion(QString)));
+            connect(box, QOverload<const QString &>::of(&KCompletionBox::activated),
+                    this, &AddresseeLineEditPrivate::slotPopupCompletion);
             connect(box, &KCompletionBox::userCancelled,
                     this, &AddresseeLineEditPrivate::slotUserCancelled);
             connect(AddresseeLineEditManager::self()->ldapTimer(), &QTimer::timeout, this, &AddresseeLineEditPrivate::slotStartLDAPLookup);
