@@ -100,10 +100,18 @@ void KDatePickerPopup::Private::buildMenu()
     }
 
     if (mModes & Words) {
-        q->addAction(i18nc("@option today", "&Today"), q, [this]() { slotToday(); });
-        q->addAction(i18nc("@option tomorrow", "To&morrow"), q, [this]() { slotTomorrow(); });
-        q->addAction(i18nc("@option next week", "Next &Week"), q, [this]() { slotNextWeek(); });
-        q->addAction(i18nc("@option next month", "Next M&onth"), q, [this]() { slotNextMonth(); });
+        q->addAction(i18nc("@option today", "&Today"), q, [this]() {
+            slotToday();
+        });
+        q->addAction(i18nc("@option tomorrow", "To&morrow"), q, [this]() {
+            slotTomorrow();
+        });
+        q->addAction(i18nc("@option next week", "Next &Week"), q, [this]() {
+            slotNextWeek();
+        });
+        q->addAction(i18nc("@option next month", "Next M&onth"), q, [this]() {
+            slotNextMonth();
+        });
 
         if (mModes & NoDate) {
             q->addSeparator();
@@ -111,7 +119,9 @@ void KDatePickerPopup::Private::buildMenu()
     }
 
     if (mModes & NoDate) {
-        q->addAction(i18nc("@option do not specify a date", "No Date"), q, [this]() { slotNoDate(); });
+        q->addAction(i18nc("@option do not specify a date", "No Date"), q, [this]() {
+            slotNoDate();
+        });
     }
 }
 
@@ -155,8 +165,12 @@ KDatePickerPopup::KDatePickerPopup(Modes modes, const QDate &date, QWidget *pare
     d->mDatePicker = new KDatePicker(this);
     d->mDatePicker->setCloseButton(false);
 
-    connect(d->mDatePicker, &KDatePicker::dateEntered, this, [this](const QDate &date) { d->slotDateChanged(date); });
-    connect(d->mDatePicker, &KDatePicker::dateSelected, this, [this](const QDate &date) { d->slotDateChanged(date); });
+    connect(d->mDatePicker, &KDatePicker::dateEntered, this, [this](const QDate &date) {
+        d->slotDateChanged(date);
+    });
+    connect(d->mDatePicker, &KDatePicker::dateSelected, this, [this](const QDate &date) {
+        d->slotDateChanged(date);
+    });
 
     d->mDatePicker->setDate(date);
 

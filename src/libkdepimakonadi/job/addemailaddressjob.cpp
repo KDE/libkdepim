@@ -107,7 +107,9 @@ public:
                                               Akonadi::CollectionFetchJob::Recursive);
 
         addressBookJob->fetchScope().setContentMimeTypes(mimeTypes);
-        q->connect(addressBookJob, &Akonadi::CollectionFetchJob::result, q, [this](KJob* job) { slotCollectionsFetched(job); });
+        q->connect(addressBookJob, &Akonadi::CollectionFetchJob::result, q, [this](KJob *job) {
+            slotCollectionsFetched(job);
+        });
     }
 
     void slotCollectionsFetched(KJob *job)
@@ -151,7 +153,9 @@ public:
 
                     if (agentType.isValid()) {
                         Akonadi::AgentInstanceCreateJob *job = new Akonadi::AgentInstanceCreateJob(agentType, q);
-                        q->connect(job, &Akonadi::AgentInstanceCreateJob::result, q, [this](KJob *job) { slotResourceCreationDone(job); });
+                        q->connect(job, &Akonadi::AgentInstanceCreateJob::result, q, [this](KJob *job) {
+                            slotResourceCreationDone(job);
+                        });
                         job->configure(mParentWidget);
                         job->start();
                         delete dlg;
@@ -209,7 +213,9 @@ public:
 
         // save the new item in akonadi storage
         Akonadi::ItemCreateJob *createJob = new Akonadi::ItemCreateJob(item, addressBook, q);
-        q->connect(createJob, &Akonadi::ItemCreateJob::result, q, [this](KJob*job) { slotAddContactDone(job); });
+        q->connect(createJob, &Akonadi::ItemCreateJob::result, q, [this](KJob *job) {
+            slotAddContactDone(job);
+        });
     }
 
     void slotAddContactDone(KJob *job)
@@ -244,9 +250,13 @@ public:
                                                        mParentWidget);
                 dlg->setContact(mItem);
                 connect(dlg.data(), &Akonadi::ContactEditorDialog::contactStored,
-                        q, [this](const Akonadi::Item &item) { contactStored(item); });
+                        q, [this](const Akonadi::Item &item) {
+                    contactStored(item);
+                });
                 connect(dlg.data(), &Akonadi::ContactEditorDialog::error,
-                        q, [this](const QString &str) { slotContactEditorError(str); });
+                        q, [this](const QString &str) {
+                    slotContactEditorError(str);
+                });
                 dlg->exec();
                 delete dlg;
             }
@@ -295,7 +305,9 @@ void AddEmailAddressJob::start()
     searchJob->setLimit(1);
     searchJob->setQuery(Akonadi::ContactSearchJob::Email, d->mEmail.toLower(),
                         Akonadi::ContactSearchJob::ExactMatch);
-    connect(searchJob, &Akonadi::ContactSearchJob::result, this, [this](KJob *job) { d->slotSearchDone(job); });
+    connect(searchJob, &Akonadi::ContactSearchJob::result, this, [this](KJob *job) {
+        d->slotSearchDone(job);
+    });
 }
 
 Akonadi::Item AddEmailAddressJob::contact() const

@@ -110,7 +110,9 @@ LdapClientSearch::LdapClientSearch(QObject *parent)
                                 "(|(cn=%1*)(mail=%1*)(givenName=%1*)(sn=%1*))");
 
     d->readConfig();
-    connect(KDirWatch::self(), &KDirWatch::dirty, this, [this](const QString &filename) { d->slotFileChanged(filename); });
+    connect(KDirWatch::self(), &KDirWatch::dirty, this, [this](const QString &filename) {
+        d->slotFileChanged(filename);
+    });
 }
 
 LdapClientSearch::~LdapClientSearch()
@@ -190,14 +192,20 @@ void LdapClientSearch::Private::readConfig()
             q->connect(ldapClient, SIGNAL(result(KLDAP::LdapClient,KLDAP::LdapObject)),
                        q, SLOT(slotLDAPResult(KLDAP::LdapClient,KLDAP::LdapObject)));
             q->connect(ldapClient, &LdapClient::done,
-                       q, [this]() { slotLDAPDone(); });
+                       q, [this]() {
+                slotLDAPDone();
+            });
             q->connect(ldapClient, QOverload<const QString &>::of(&LdapClient::error),
-                       q, [this](const QString &str) { slotLDAPError(str);});
+                       q, [this](const QString &str) {
+                slotLDAPError(str);
+            });
 
             mClients.append(ldapClient);
         }
 
-        q->connect(&mDataTimer, &QTimer::timeout, q, [this]() { slotDataTimer(); });
+        q->connect(&mDataTimer, &QTimer::timeout, q, [this]() {
+            slotDataTimer();
+        });
     }
     mConfigFile = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/kabldaprc");
     KDirWatch::self()->addFile(mConfigFile);

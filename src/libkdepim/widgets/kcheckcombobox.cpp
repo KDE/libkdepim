@@ -138,11 +138,16 @@ KCheckComboBox::KCheckComboBox(QWidget *parent)
     : KComboBox(parent)
     , d(new KCheckComboBox::Private(this))
 {
-    connect(this, QOverload<int>::of(&KComboBox::activated), this, [this]() { d->toggleCheckState(); });
+    connect(this, QOverload<int>::of(&KComboBox::activated), this, [this]() {
+        d->toggleCheckState();
+    });
     connect(model(), &QAbstractItemModel::rowsInserted, this,
-            [this](const QModelIndex &index, int start, int end) { d->makeInsertedItemsCheckable(index, start, end); });
-    connect(model(), &QAbstractItemModel::dataChanged, this, [this] (const QModelIndex &topLeft, const QModelIndex &bottomRight) {
-        d->updateCheckedItems(topLeft, bottomRight); });
+            [this](const QModelIndex &index, int start, int end) {
+        d->makeInsertedItemsCheckable(index, start, end);
+    });
+    connect(model(), &QAbstractItemModel::dataChanged, this, [this](const QModelIndex &topLeft, const QModelIndex &bottomRight) {
+        d->updateCheckedItems(topLeft, bottomRight);
+    });
 
     // read-only contents
     setEditable(true);

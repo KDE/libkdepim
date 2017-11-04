@@ -143,11 +143,15 @@ void LdapClient::startQuery(const QString &filter)
     d->mActive = true;
     d->mJob = KIO::get(url, KIO::NoReload, KIO::HideProgressInfo);
     connect(d->mJob, SIGNAL(data(KIO::Job*,QByteArray)),
-               this, SLOT(slotData(KIO::Job*,QByteArray)));
-    connect(d->mJob.data(), &KIO::TransferJob::infoMessage, this
-            , [this](KJob *job, const QString &str, const QString &val) { d->slotInfoMessage(job, str, val); });
+            this, SLOT(slotData(KIO::Job*,QByteArray)));
+    connect(d->mJob.data(), &KIO::TransferJob::infoMessage, this,
+            [this](KJob *job, const QString &str, const QString &val) {
+        d->slotInfoMessage(job, str, val);
+    });
     connect(d->mJob.data(), &KIO::TransferJob::result,
-            this, [this]() { d->slotDone(); });
+            this, [this]() {
+        d->slotDone();
+    });
 }
 
 void LdapClient::cancelQuery()
