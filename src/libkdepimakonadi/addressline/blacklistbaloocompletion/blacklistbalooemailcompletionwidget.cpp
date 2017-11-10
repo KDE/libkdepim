@@ -73,6 +73,13 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     mEmailList->setObjectName(QStringLiteral("email_list"));
     mainLayout->addWidget(mEmailList);
 
+    mBlackListWarning = new BlackListBalooEmailWarning(this);
+    mBlackListWarning->setObjectName(QStringLiteral("backlistwarning"));
+    connect(mBlackListWarning, &BlackListBalooEmailWarning::newSearch, this, &BlackListBalooEmailCompletionWidget::slotSearch);
+    connect(mBlackListWarning, &BlackListBalooEmailWarning::saveChanges, this, &BlackListBalooEmailCompletionWidget::slotSaveChanges);
+    mainLayout->addWidget(mBlackListWarning);
+
+
     QHBoxLayout *searchLineLayout = new QHBoxLayout;
     mainLayout->addLayout(searchLineLayout);
 
@@ -127,11 +134,6 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     mExcludeDomainLineEdit->setTrapReturnKey(true);
     mExcludeDomainLineEdit->setPlaceholderText(i18n("Separate domain with \'%1\'", QLatin1Char(',')));
 
-    mBlackListWarning = new BlackListBalooEmailWarning(this);
-    mBlackListWarning->setObjectName(QStringLiteral("backlistwarning"));
-    mainLayout->addWidget(mBlackListWarning);
-    connect(mBlackListWarning, &BlackListBalooEmailWarning::newSearch, this, &BlackListBalooEmailCompletionWidget::slotSearch);
-    connect(mBlackListWarning, &BlackListBalooEmailWarning::saveChanges, this, &BlackListBalooEmailCompletionWidget::slotSaveChanges);
 
     connect(mEmailList, &QListWidget::itemSelectionChanged, this, &BlackListBalooEmailCompletionWidget::slotSelectionChanged);
     slotSelectionChanged();
