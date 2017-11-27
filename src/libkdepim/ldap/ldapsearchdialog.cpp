@@ -45,8 +45,6 @@
 #include <QClipboard>
 
 #include <KLineEdit>
-//#include <collection.h>
-//#include <itemcreatejob.h>
 #include <kcombobox.h>
 #include <kconfig.h>
 #include <kconfiggroup.h>
@@ -240,7 +238,7 @@ public:
         ServerRole = Qt::UserRole + 1
     };
 
-    ContactListModel(QObject *parent)
+    explicit ContactListModel(QObject *parent)
         : QAbstractTableModel(parent)
     {
     }
@@ -315,62 +313,43 @@ public:
         switch (section) {
         case 0:
             return i18n("Full Name");
-            break;
         case 1:
             return i18nc("@title:column Column containing email addresses", "Email");
-            break;
         case 2:
             return i18n("Home Number");
-            break;
         case 3:
             return i18n("Work Number");
-            break;
         case 4:
             return i18n("Mobile Number");
-            break;
         case 5:
             return i18n("Fax Number");
-            break;
         case 6:
             return i18n("Company");
-            break;
         case 7:
             return i18n("Organization");
-            break;
         case 8:
             return i18n("Street");
-            break;
         case 9:
             return i18nc("@title:column Column containing the residential state of the address",
                          "State");
-            break;
         case 10:
             return i18n("Country");
-            break;
         case 11:
             return i18n("Zip Code");
-            break;
         case 12:
             return i18n("Postal Address");
-            break;
         case 13:
             return i18n("City");
-            break;
         case 14:
             return i18n("Department");
-            break;
         case 15:
             return i18n("Description");
-            break;
         case 16:
             return i18n("User ID");
-            break;
         case 17:
             return i18nc("@title:column Column containing title of the person", "Title");
-            break;
         default:
             return QVariant();
-            break;
         }
 
         return QVariant();
@@ -400,61 +379,42 @@ public:
         switch (index.column()) {
         case 0:
             return join(map.value(QStringLiteral("cn")), QStringLiteral(", "));
-            break;
         case 1:
             return join(map.value(QStringLiteral("mail")), QStringLiteral(", "));
-            break;
         case 2:
             return join(map.value(QStringLiteral("homePhone")), QStringLiteral(", "));
-            break;
         case 3:
             return join(map.value(QStringLiteral("telephoneNumber")), QStringLiteral(", "));
-            break;
         case 4:
             return join(map.value(QStringLiteral("mobile")), QStringLiteral(", "));
-            break;
         case 5:
             return join(map.value(QStringLiteral("facsimileTelephoneNumber")), QStringLiteral(", "));
-            break;
         case 6:
             return join(map.value(QStringLiteral("Company")), QStringLiteral(", "));
-            break;
         case 7:
             return join(map.value(QStringLiteral("o")), QStringLiteral(", "));
-            break;
         case 8:
             return join(map.value(QStringLiteral("street")), QStringLiteral(", "));
-            break;
         case 9:
             return join(map.value(QStringLiteral("st")), QStringLiteral(", "));
-            break;
         case 10:
             return join(map.value(QStringLiteral("co")), QStringLiteral(", "));
-            break;
         case 11:
             return join(map.value(QStringLiteral("postalCode")), QStringLiteral(", "));
-            break;
         case 12:
             return join(map.value(QStringLiteral("postalAddress")), QStringLiteral(", "));
-            break;
         case 13:
             return join(map.value(QStringLiteral("l")), QStringLiteral(", "));
-            break;
         case 14:
             return join(map.value(QStringLiteral("department")), QStringLiteral(", "));
-            break;
         case 15:
             return join(map.value(QStringLiteral("description")), QStringLiteral(", "));
-            break;
         case 16:
             return join(map.value(QStringLiteral("uid")), QStringLiteral(", "));
-            break;
         case 17:
             return join(map.value(QStringLiteral("title")), QStringLiteral(", "));
-            break;
         default:
             return QVariant();
-            break;
         }
 
         return QVariant();
@@ -470,19 +430,6 @@ class Q_DECL_HIDDEN LdapSearchDialog::Private
 public:
     Private(LdapSearchDialog *qq)
         : q(qq)
-        , mNumHosts(0)
-        , mIsConfigured(false)
-        , mFilterCombo(nullptr)
-        , mSearchType(nullptr)
-        , mSearchEdit(nullptr)
-        , mRecursiveCheckbox(nullptr)
-        , mResultView(nullptr)
-        , mSearchButton(nullptr)
-        , mModel(nullptr)
-        , progressIndication(nullptr)
-        , sortproxy(nullptr)
-        , searchLine(nullptr)
-        , user1Button(nullptr)
     {
     }
 
