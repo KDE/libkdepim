@@ -59,23 +59,23 @@ void SSLLabel::setState(State state)
 {
     switch (state) {
     case Encrypted:
-        this->setToolTip(i18n("Connection is encrypted"));
+        setToolTip(i18n("Connection is encrypted"));
         setPixmap(QIcon::fromTheme(QStringLiteral("security-high")).pixmap(IconSize(KIconLoader::Small)));
         show();
         break;
     case Unencrypted:
-        this->setToolTip(i18n("Connection is unencrypted"));
+        setToolTip(i18n("Connection is unencrypted"));
         setPixmap(QIcon::fromTheme(QStringLiteral("security-low")).pixmap(IconSize(KIconLoader::Small)));
         show();
         break;
     case Unknown:
     case Done:
-        this->setToolTip(QString());
+        setToolTip(QString());
         hide();
         break;
     case Clean:
     default:
-        this->setToolTip(QString());
+        setToolTip(QString());
         hide();
         //we return because we do not save the state as the only
         //action we want to perform is to hide ourself

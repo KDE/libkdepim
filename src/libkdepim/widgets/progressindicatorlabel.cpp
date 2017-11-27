@@ -22,8 +22,8 @@
 
 #include <QHBoxLayout>
 
-namespace KPIM {
-class ProgressIndicatorLabelPrivate
+using namespace KPIM;
+class KPIM::ProgressIndicatorLabelPrivate
 {
 public:
     ProgressIndicatorLabelPrivate(const QString &_label, ProgressIndicatorLabel *qq)
@@ -98,5 +98,4 @@ void ProgressIndicatorLabel::stop()
 void ProgressIndicatorLabel::setActiveLabel(const QString &label)
 {
     d->setActiveLabel(label);
-}
 }

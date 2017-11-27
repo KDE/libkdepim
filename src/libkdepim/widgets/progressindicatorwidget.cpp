@@ -22,7 +22,25 @@
 #include <QTimer>
 #include <KIconLoader>
 
-namespace KPIM {
+using namespace KPIM;
+class KPIM::ProgressIndicatorWidgetPrivate
+{
+public:
+    ProgressIndicatorWidgetPrivate(ProgressIndicatorWidget *qq)
+        : q(qq)
+    {
+        indicator = new IndicatorProgress(q);
+    }
+
+    ~ProgressIndicatorWidgetPrivate()
+    {
+        delete indicator;
+    }
+
+    IndicatorProgress *indicator = nullptr;
+    ProgressIndicatorWidget *q = nullptr;
+};
+
 IndicatorProgress::IndicatorProgress(ProgressIndicatorWidget *widget, QObject *parent)
     : QObject(parent)
     , mProgressCount(0)
@@ -70,23 +88,6 @@ bool IndicatorProgress::isActive() const
     return mIsActive;
 }
 
-class ProgressIndicatorWidgetPrivate
-{
-public:
-    ProgressIndicatorWidgetPrivate(ProgressIndicatorWidget *qq)
-        : q(qq)
-    {
-        indicator = new IndicatorProgress(q);
-    }
-
-    ~ProgressIndicatorWidgetPrivate()
-    {
-        delete indicator;
-    }
-
-    IndicatorProgress *indicator = nullptr;
-    ProgressIndicatorWidget *q = nullptr;
-};
 
 ProgressIndicatorWidget::ProgressIndicatorWidget(QWidget *parent)
     : QLabel(parent)
@@ -114,4 +115,4 @@ bool ProgressIndicatorWidget::isActive() const
 {
     return d->indicator->isActive();
 }
-}
+

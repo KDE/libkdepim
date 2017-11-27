@@ -49,13 +49,6 @@ class Q_DECL_HIDDEN KWidgetLister::Private
 public:
     Private(KWidgetLister *qq)
         : q(qq)
-        , mBtnMore(nullptr)
-        , mBtnFewer(nullptr)
-        , mBtnClear(nullptr)
-        , mLayout(nullptr)
-        , mButtonBox(nullptr)
-        , mMinWidgets(0)
-        , mMaxWidgets(0)
     {
     }
 
@@ -74,8 +67,8 @@ public:
     QVBoxLayout *mLayout = nullptr;
     QWidget *mButtonBox = nullptr;
     QList<QWidget *> mWidgetList;
-    int mMinWidgets;
-    int mMaxWidgets;
+    int mMinWidgets = 0;
+    int mMaxWidgets = 0;
 };
 
 void KWidgetLister::Private::enableControls()
