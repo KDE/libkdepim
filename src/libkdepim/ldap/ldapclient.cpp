@@ -40,9 +40,6 @@ class Q_DECL_HIDDEN LdapClient::Private
 public:
     Private(LdapClient *qq)
         : q(qq)
-        , mJob(nullptr)
-        , mActive(false)
-        , mClientNumber(0)
     {
     }
 
@@ -57,7 +54,6 @@ public:
     void finishCurrentObject();
 
     void slotData(KIO::Job *, const QByteArray &data);
-    void slotData(const QByteArray &data);
     void slotInfoMessage(KJob *, const QString &info, const QString &);
     void slotDone();
 
@@ -67,7 +63,7 @@ public:
     QString mScope;
     QStringList mAttrs;
 
-    QPointer<KJob> mJob;
+    QPointer<KJob> mJob = nullptr;
     bool mActive = false;
 
     KLDAP::LdapObject mCurrentObject;
@@ -165,11 +161,6 @@ void LdapClient::cancelQuery()
 }
 
 void LdapClient::Private::slotData(KIO::Job *, const QByteArray &data)
-{
-    parseLDIF(data);
-}
-
-void LdapClient::Private::slotData(const QByteArray &data)
 {
     parseLDIF(data);
 }
