@@ -669,8 +669,8 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     d->user1Button->setText(i18n("Add Selected"));
     user2Button->setText(i18n("Configure LDAP Servers..."));
 
-    connect(d->mRecursiveCheckbox, SIGNAL(toggled(bool)),
-            this, SLOT(slotSetScope(bool)));
+    connect(d->mRecursiveCheckbox, &QCheckBox::toggled,
+            this, [this](bool state) { d->slotSetScope(state); });
     connect(d->mSearchButton, SIGNAL(clicked()),
             this, SLOT(slotStartSearch()));
 
@@ -756,7 +756,7 @@ void LdapSearchDialog::Private::restoreSettings()
 
             q->connect(ldapClient, SIGNAL(result(KLDAP::LdapClient,KLDAP::LdapObject)), q, SLOT(slotAddResult(KLDAP::LdapClient,KLDAP::LdapObject)));
             q->connect(ldapClient, SIGNAL(done()), q, SLOT(slotSearchDone()));
-            q->connect(ldapClient, SIGNAL(error(QString)), q, SLOT(slotError(QString)));
+            q->connect(ldapClient, &LdapClient::error, q, [this](const QString &err) {slotError(err);});
 
             mLdapClientList.append(ldapClient);
         }

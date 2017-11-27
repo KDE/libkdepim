@@ -101,11 +101,9 @@ private:
     Private *const d;
 
     Q_PRIVATE_SLOT(d, void slotAddResult(const KLDAP::LdapClient &, const KLDAP::LdapObject &))
-    Q_PRIVATE_SLOT(d, void slotSetScope(bool))
     Q_PRIVATE_SLOT(d, void slotStartSearch())
     Q_PRIVATE_SLOT(d, void slotStopSearch())
     Q_PRIVATE_SLOT(d, void slotSearchDone())
-    Q_PRIVATE_SLOT(d, void slotError(const QString &))
     //@endcond
 };
 }
