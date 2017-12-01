@@ -74,7 +74,7 @@ public:
     void slotDataTimer();
     void slotFileChanged(const QString &);
 
-    LdapClientSearch *q;
+    LdapClientSearch *q = nullptr;
     QList<LdapClient *> mClients;
     QStringList mAttributes;
     QString mSearchText;

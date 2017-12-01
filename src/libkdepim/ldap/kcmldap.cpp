@@ -85,7 +85,7 @@ public:
 
 private:
     KLDAP::LdapServer mServer;
-    bool mIsActive;
+    bool mIsActive = false;
 };
 
 KCMLdap::KCMLdap(QWidget *parent, const QVariantList &)

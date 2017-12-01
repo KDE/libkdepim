@@ -123,16 +123,16 @@ protected Q_SLOTS:
 
 private:
     QList<MultiplyingLine *> mLines;
-    QPointer<MultiplyingLine> mCurDelLine;
+    QPointer<MultiplyingLine> mCurDelLine = nullptr;
     QWidget *mPage = nullptr;
     QLayout *mTopLayout = nullptr;
     MultiplyingLineFactory *mMultiplyingLineFactory = nullptr;
-    int mLineHeight;
-    int mFirstColumnWidth;
-    KCompletion::CompletionMode mCompletionMode;
-    bool mAutoResize;
-    bool mDynamicSizeHint;
-    bool mModified;
+    int mLineHeight = 0;
+    int mFirstColumnWidth = 0;
+    KCompletion::CompletionMode mCompletionMode = KCompletion::CompletionNone;
+    bool mAutoResize = false;
+    bool mDynamicSizeHint = true;
+    bool mModified = false;
 };
 }
 

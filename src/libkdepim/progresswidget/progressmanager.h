@@ -241,17 +241,17 @@ private:
     QString mLabel;
     QString mStatus;
     QPointer<ProgressItem> mParent;
-    bool mCanBeCanceled;
-    unsigned int mProgress;
+    bool mCanBeCanceled = false;
+    unsigned int mProgress = 0;
     ProgressItemMap mChildren;
-    unsigned int mTotal;
-    unsigned int mCompleted;
+    unsigned int mTotal = 0;
+    unsigned int mCompleted = 0;
     CryptoStatus mCryptoStatus;
-    unsigned int mType;
-    bool mWaitingForKids;
-    bool mCanceled;
-    bool mUsesBusyIndicator;
-    bool mCompletedCalled;
+    unsigned int mType = 0;
+    bool mWaitingForKids = false;
+    bool mCanceled = false;
+    bool mUsesBusyIndicator = false;
+    bool mCompletedCalled = false;
 };
 
 struct ProgressManagerPrivate;
