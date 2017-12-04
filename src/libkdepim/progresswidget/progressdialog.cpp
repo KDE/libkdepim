@@ -314,8 +314,7 @@ void ProgressDialog::slotTransactionAdded(ProgressItem *item)
 {
     if (item->typeProgressItem() == mShowTypeProgressItem) {
         if (item->parent()) {
-            if (mTransactionsToListviewItems.contains(item->parent())) {
-                TransactionItem *parent = mTransactionsToListviewItems[ item->parent() ];
+            if (TransactionItem *parent = mTransactionsToListviewItems.value(item->parent())) {
                 parent->addSubTransaction(item);
             }
         } else {
@@ -333,8 +332,7 @@ void ProgressDialog::slotTransactionAdded(ProgressItem *item)
 
 void ProgressDialog::slotTransactionCompleted(ProgressItem *item)
 {
-    if (mTransactionsToListviewItems.contains(item)) {
-        TransactionItem *ti = mTransactionsToListviewItems[ item ];
+    if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         mTransactionsToListviewItems.remove(item);
         ti->setItemComplete();
         QTimer::singleShot(3000, ti, &QObject::deleteLater);
