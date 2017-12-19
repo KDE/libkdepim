@@ -139,8 +139,8 @@ void AddresseeLineEditPrivate::init()
             connect(box, &KCompletionBox::userCancelled,
                     this, &AddresseeLineEditPrivate::slotUserCancelled);
             connect(AddresseeLineEditManager::self()->ldapTimer(), &QTimer::timeout, this, &AddresseeLineEditPrivate::slotStartLDAPLookup);
-            connect(AddresseeLineEditManager::self()->ldapSearch(), SIGNAL(searchData(KLDAP::LdapResult::List)),
-                    SLOT(slotLDAPSearchData(KLDAP::LdapResult::List)));
+            connect(AddresseeLineEditManager::self()->ldapSearch(), QOverload<const KLDAP::LdapResult::List &>::of(&KLDAP::LdapClientSearch::searchData),
+                    this, &AddresseeLineEditPrivate::slotLDAPSearchData);
 
             mCompletionInitialized = true;
         }
