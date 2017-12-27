@@ -33,7 +33,7 @@ QString KPIM::AddresseeLineEditUtil::adaptPasteMails(QString str)
     }
     newText = lines.join(QStringLiteral(", "));
 
-    if (newText.startsWith(QStringLiteral("mailto:"))) {
+    if (newText.startsWith(QLatin1String("mailto:"))) {
         const QUrl url(newText);
         newText = url.path();
     } else if (newText.contains(QStringLiteral(" at "))) {

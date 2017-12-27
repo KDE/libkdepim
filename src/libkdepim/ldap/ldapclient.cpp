@@ -226,7 +226,7 @@ void LdapClient::Private::finishCurrentObject()
             const QStringList lMail = mCurrentObject.dn().toString().split(QStringLiteral(",dc="), QString::SkipEmptyParts);
             const int n = lMail.count();
             if (n) {
-                if (lMail.first().toLower().startsWith(QStringLiteral("cn="))) {
+                if (lMail.first().toLower().startsWith(QLatin1String("cn="))) {
                     sMail = lMail.first().simplified().mid(3);
                     if (1 < n) {
                         sMail.append(QLatin1Char('@'));

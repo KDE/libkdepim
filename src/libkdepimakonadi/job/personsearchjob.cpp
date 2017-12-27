@@ -118,7 +118,7 @@ void PersonSearchJob::onLDAPSearchData(const KLDAP::LdapResultObject::List &list
         const int depth = item.object.dn().depth();
         for (int i = 0; i < depth; ++i) {
             const QString rdnStr = item.object.dn().rdnString(i);
-            if (rdnStr.startsWith(QStringLiteral("ou="), Qt::CaseInsensitive)) {
+            if (rdnStr.startsWith(QLatin1String("ou="), Qt::CaseInsensitive)) {
                 person.ou = rdnStr.mid(3);
                 break;
             }

@@ -72,7 +72,7 @@ using namespace KPIM;
 
 inline bool itemIsHeader(const QListWidgetItem *item)
 {
-    return item && !item->text().startsWith(QStringLiteral("     "));
+    return item && !item->text().startsWith(QLatin1String("     "));
 }
 
 // needs to be unique, but the actual name doesn't matter much
