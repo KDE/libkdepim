@@ -70,8 +70,11 @@ void OverlayWidget::reposition()
     }
     // p is in the alignWidget's coordinates
     QPoint p;
-    // We are always above the alignWidget, right-aligned with it.
-    p.setX(d->mAlignWidget->width() - width());
+    // We are always above the alignWidget, right-aligned with it for
+    // LTR locales, and left-aligned for RTL locales (default value=0).
+    if (layoutDirection() == Qt::LeftToRight) {
+        p.setX(d->mAlignWidget->width() - width());
+    }
     p.setY(-height());
     // Position in the toplevelwidget's coordinates
     QPoint pTopLevel = d->mAlignWidget->mapTo(topLevelWidget(), p);

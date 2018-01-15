@@ -257,7 +257,13 @@ void TransactionItem::addSubTransaction(ProgressItem *item)
 ProgressDialog::ProgressDialog(QWidget *alignWidget, QWidget *parent)
     : OverlayWidget(alignWidget, parent)
 {
-    setFrameStyle(QFrame::Panel | QFrame::Sunken);   // QFrame
+    // Qt Bug: Sunken is not applied for RTL layouts correctly (is not mirrored).
+    // For now let's just use Plain, which is fine for this.
+    if (layoutDirection() == Qt::LeftToRight) {
+        setFrameStyle(QFrame::Panel | QFrame::Sunken);   // QFrame
+    } else {
+        setFrameStyle(QFrame::Panel | QFrame::Plain);    // QFrame
+    }
 
     setAutoFillBackground(true);
 
