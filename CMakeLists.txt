@@ -3,7 +3,7 @@ set(PIM_VERSION "5.7.40")
 
 project(libkdepim VERSION ${PIM_VERSION})
 
-set(KF5_VERSION "5.41.0")
+set(KF5_VERSION "5.42.0")
 
 find_package(ECM ${KF5_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -73,13 +73,6 @@ configure_package_config_file(MailTransportDBusServiceConfig.cmake.in
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/MailTransportDBusServiceConfig.cmake
   DESTINATION "${CMAKECONFIG_INSTALL_PREFIX}/MailTransportDBusService")
-
-if(NOT CMAKE_VERSION VERSION_LESS "3.10.0" AND KF5_VERSION VERSION_LESS "5.42.0")
-  # CMake 3.9+ warns about automoc on files without Q_OBJECT, and doesn't know about other macros.
-  # 3.10+ lets us provide more macro names that require automoc.
-  # KF5 >= 5.42 takes care itself of adding its macros in its cmake config files
-  list(APPEND CMAKE_AUTOMOC_MACRO_NAMES "K_PLUGIN_FACTORY_WITH_JSON")
-endif()
 
 
 add_subdirectory(src)
