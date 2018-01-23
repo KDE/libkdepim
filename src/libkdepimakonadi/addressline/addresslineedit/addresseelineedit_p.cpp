@@ -130,8 +130,8 @@ void AddresseeLineEditPrivate::init()
             q->setCompletionObject(AddresseeLineEditManager::self()->completion(), false);
             connect(q, &KLineEdit::completion,
                     this, &AddresseeLineEditPrivate::slotCompletion);
-            connect(q, SIGNAL(returnPressed(QString)),
-                    this, SLOT(slotReturnPressed(QString)));
+            connect(q, &AddresseeLineEdit::returnPressed,
+                    this, &AddresseeLineEditPrivate::slotReturnPressed);
 
             KCompletionBox *box = q->completionBox();
             connect(box, QOverload<const QString &>::of(&KCompletionBox::activated),

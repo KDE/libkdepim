@@ -42,7 +42,7 @@ public:
 };
 
 TagSelectionCombo::TagSelectionCombo(QWidget *parent)
-    :   KPIM::KCheckComboBox(parent)
+    : KPIM::KCheckComboBox(parent)
 {
     Akonadi::Monitor *monitor = new Akonadi::Monitor(this);
     monitor->setObjectName(QStringLiteral("TagSelectionComboMonitor"));

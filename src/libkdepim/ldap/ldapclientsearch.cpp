@@ -189,8 +189,8 @@ void LdapClientSearch::Private::readConfig()
 
             ldapClient->setAttributes(mAttributes);
 
-            q->connect(ldapClient, SIGNAL(result(KLDAP::LdapClient,KLDAP::LdapObject)),
-                       q, SLOT(slotLDAPResult(KLDAP::LdapClient,KLDAP::LdapObject)));
+            q->connect(ldapClient, &LdapClient::result,
+                       q, [this](const LdapClient &client, const KLDAP::LdapObject &obj) { slotLDAPResult(client, obj); });
             q->connect(ldapClient, &LdapClient::done,
                        q, [this]() {
                 slotLDAPDone();

@@ -150,8 +150,6 @@ private:
     //@cond PRIVATE
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void slotData(KIO::Job *, const QByteArray &))
     //@endcond
 };
 }

@@ -171,8 +171,6 @@ private:
     //@cond PRIVATE
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void slotLDAPResult(const KLDAP::LdapClient &, const KLDAP::LdapObject &))
     //@endcond
 };
 }
