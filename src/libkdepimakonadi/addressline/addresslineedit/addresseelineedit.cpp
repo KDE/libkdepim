@@ -377,7 +377,7 @@ void AddresseeLineEdit::dropEvent(QDropEvent *event)
                         address = QUrl::fromPercentEncoding(url.path().toLatin1());
                         address = KCodecs::decodeRFC2047String(address);
                         if (!contents.isEmpty()) {
-                            contents.append(QStringLiteral(", "));
+                            contents.append(QLatin1String(", "));
                         }
                         contents.append(address);
                     }
