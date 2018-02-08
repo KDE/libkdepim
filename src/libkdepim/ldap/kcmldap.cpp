@@ -46,8 +46,13 @@
 
 #include "addhostdialog.h"
 
-K_PLUGIN_FACTORY_WITH_JSON(KCMLdapFactory, "kcmldap.json", registerPlugin<KCMLdap>();
-                           )
+#include <kcoreaddons_version.h>
+#if KCOREADDONS_VERSION < QT_VERSION_CHECK(5, 44, 0)
+#define K_PLUGIN_CLASS_WITH_JSON(classname, json) K_PLUGIN_FACTORY_WITH_JSON(classname ## Factory, json, registerPlugin<classname >();)
+#endif
+
+K_PLUGIN_CLASS_WITH_JSON(KCMLdap, "kcmldap.json")
+
 
 class LDAPItem : public QListWidgetItem
 {
