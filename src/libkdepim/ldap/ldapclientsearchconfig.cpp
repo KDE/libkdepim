@@ -43,9 +43,9 @@ public:
         }
     }
 
+    KWallet::Wallet *wallet = nullptr;
     bool useWallet = false;
     bool askWallet = true;
-    KWallet::Wallet *wallet = nullptr;
 };
 
 Q_GLOBAL_STATIC_WITH_ARGS(KConfig, s_config, (QLatin1String("kabldaprc"), KConfig::NoGlobals))

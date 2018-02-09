@@ -144,7 +144,7 @@ void RecentAddresses::setMaxCount(int count)
     }
 }
 
-uint RecentAddresses::maxCount() const
+int RecentAddresses::maxCount() const
 {
     return m_maxCount;
 }

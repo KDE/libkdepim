@@ -178,10 +178,6 @@ QString CustomLogWidget::toHtml() const
         case EndLine:
             logText = QStringLiteral("<br/>");
             break;
-        default:
-            qCDebug(LIBKDEPIM_LOG) << "LogType undefined" << type;
-            logText += itemWidget->text();
-            break;
         }
         result += QLatin1String("<p>") + logText + QLatin1String("</p>") + QLatin1Char('\n');
     }

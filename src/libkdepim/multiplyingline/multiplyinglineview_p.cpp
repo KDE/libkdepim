@@ -131,7 +131,7 @@ void MultiplyingLineView::slotReturnPressed(MultiplyingLine *line)
 void MultiplyingLineView::slotDownPressed(MultiplyingLine *line)
 {
     int pos = mLines.indexOf(line);
-    if (pos >= (int)mLines.count() - 1) {
+    if (pos >= (mLines.count() - 1)) {
         Q_EMIT focusDown();
     } else if (pos >= 0) {
         activateLine(mLines.at(pos + 1));

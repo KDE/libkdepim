@@ -812,7 +812,7 @@ bool KPIM::AddresseeLineEdit::eventFilter(QObject *object, QEvent *event)
 
             // when iterating forward, start at the currentindex, when backwards,
             // one up from our header, or at the end
-            uint j;
+            int j;
             if (keyEvent->key() == Qt::Key_Tab) {
                 j = currentIndex;
             } else {

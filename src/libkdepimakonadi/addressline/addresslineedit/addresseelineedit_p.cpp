@@ -566,7 +566,6 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
         break;
 
     case KCompletion::CompletionNone:
-    default: // fall through
         break;
     }
 }

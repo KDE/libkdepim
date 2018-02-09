@@ -80,7 +80,7 @@ public:
     /**
      * @returns the current maximum number of entries.
      */
-    uint maxCount() const;
+    int maxCount() const;
 
     /**
      * Loads the list of recently used addresses from the configfile.

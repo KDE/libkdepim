@@ -74,7 +74,6 @@ void SSLLabel::setState(State state)
         hide();
         break;
     case Clean:
-    default:
         setToolTip(QString());
         hide();
         //we return because we do not save the state as the only

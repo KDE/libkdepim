@@ -149,7 +149,7 @@ void KWidgetLister::slotMore()
 {
     // the class should make certain that slotMore can't
     // be called when mMaxWidgets are on screen.
-    assert((int)d->mWidgetList.count() < d->mMaxWidgets);
+    assert(d->mWidgetList.count() < d->mMaxWidgets);
 
     addWidgetAtEnd();
     //  adjustSize();
@@ -160,7 +160,7 @@ void KWidgetLister::slotFewer()
 {
     // the class should make certain that slotFewer can't
     // be called when mMinWidgets are on screen.
-    assert((int)d->mWidgetList.count() > d->mMinWidgets);
+    assert(d->mWidgetList.count() > d->mMinWidgets);
 
     removeLastWidget();
     //  adjustSize();
@@ -217,8 +217,8 @@ QWidget *KWidgetLister::createWidget(QWidget *parent)
 
 void KWidgetLister::setNumberOfShownWidgetsTo(int aNum)
 {
-    int superfluousWidgets = qMax((int)d->mWidgetList.count() - aNum, 0);
-    int missingWidgets = qMax(aNum - (int)d->mWidgetList.count(), 0);
+    int superfluousWidgets = qMax(d->mWidgetList.count() - aNum, 0);
+    int missingWidgets = qMax(aNum - d->mWidgetList.count(), 0);
 
     // remove superfluous widgets
     for (; superfluousWidgets; superfluousWidgets--) {

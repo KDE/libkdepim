@@ -286,7 +286,7 @@ void StatusbarProgressWidget::slotClean()
 bool StatusbarProgressWidget::eventFilter(QObject *obj, QEvent *ev)
 {
     if (ev->type() == QEvent::MouseButtonPress) {
-        QMouseEvent *e = (QMouseEvent *)ev;
+        QMouseEvent *e = static_cast<QMouseEvent *>(ev);
 
         if (e->button() == Qt::LeftButton && mMode == Progress) {      // toggle view on left mouse button
             // Consensus seems to be that we should show/hide the fancy dialog when the user
