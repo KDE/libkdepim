@@ -58,7 +58,7 @@ public:
     /**
      * Destroys the time zone combobox.
      */
-    virtual ~KCheckComboBox();
+    ~KCheckComboBox() override;
 
     /**
      * Hides the popup list if it is currently shown.

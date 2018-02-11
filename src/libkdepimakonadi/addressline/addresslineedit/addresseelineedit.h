@@ -70,7 +70,7 @@ public:
     /**
      * Destroys the addressee line edit.
      */
-    virtual ~AddresseeLineEdit();
+    ~AddresseeLineEdit() override;
 
     /**
      * Sets whether semicolons are allowed as separators.

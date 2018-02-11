@@ -58,7 +58,7 @@ public:
     /**
      * Destroys the ldap client.
      */
-    virtual ~LdapClient();
+    ~LdapClient() override;
 
     /**
      * Returns the number of this client.

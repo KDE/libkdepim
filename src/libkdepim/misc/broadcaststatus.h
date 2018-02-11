@@ -40,7 +40,7 @@ class KDEPIM_EXPORT BroadcastStatus : public QObject
     Q_OBJECT
 
 public:
-    virtual ~BroadcastStatus();
+    ~BroadcastStatus() override;
 
     /** Return the instance of the singleton object for this class */
     static BroadcastStatus *instance();

@@ -76,7 +76,7 @@ public:
     /**
      * Destroys the widget lister.
      */
-    virtual ~KWidgetLister();
+    ~KWidgetLister() override;
 
 protected Q_SLOTS:
     /**

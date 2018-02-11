@@ -37,7 +37,7 @@ class KDEPIMAKONADI_EXPORT PersonSearchJob : public KJob
     Q_OBJECT
 public:
     explicit PersonSearchJob(const QString &searchString, QObject *parent = nullptr);
-    virtual ~PersonSearchJob();
+    ~PersonSearchJob() override;
 
     void start() override;
 

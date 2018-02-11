@@ -45,7 +45,7 @@ public:
     * @param first5Checked if true the first 5 weekdays will be checked by default
     */
     explicit KWeekdayCheckCombo(QWidget *parent = nullptr, bool first5Checked = false);
-    virtual ~KWeekdayCheckCombo();
+    ~KWeekdayCheckCombo() override;
 
     /**
      * Retrieve the checked days
