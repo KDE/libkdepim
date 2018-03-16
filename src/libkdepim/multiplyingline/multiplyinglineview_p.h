@@ -37,7 +37,7 @@ class MultiplyingLineView : public QScrollArea
     Q_OBJECT
 public:
     MultiplyingLineView(MultiplyingLineFactory *factory, MultiplyingLineEditor *parent);
-    ~MultiplyingLineView()
+    ~MultiplyingLineView() override
     {
     }
 

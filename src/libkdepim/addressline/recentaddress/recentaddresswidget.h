@@ -36,7 +36,7 @@ class KDEPIM_EXPORT RecentAddressWidget : public QWidget
     Q_OBJECT
 public:
     explicit RecentAddressWidget(QWidget *parent = nullptr);
-    ~RecentAddressWidget();
+    ~RecentAddressWidget() override;
 
     void setAddresses(const QStringList &addrs);
     void storeAddresses(KConfig *config);

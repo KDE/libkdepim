@@ -40,7 +40,7 @@ class KCMLdap : public KCModule
 
 public:
     explicit KCMLdap(QWidget *parent, const QVariantList &args);
-    ~KCMLdap();
+    ~KCMLdap() override;
 
     void load() override;
     void save() override;

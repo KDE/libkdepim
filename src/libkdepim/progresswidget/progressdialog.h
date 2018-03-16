@@ -56,7 +56,7 @@ class TransactionItemView : public QScrollArea
 public:
     explicit TransactionItemView(QWidget *parent = nullptr, const QString &name = QString());
 
-    virtual ~TransactionItemView()
+    ~TransactionItemView() override
     {
     }
 

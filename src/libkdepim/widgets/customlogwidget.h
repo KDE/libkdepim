@@ -31,7 +31,7 @@ class LogItemDelegate : public QStyledItemDelegate
     Q_OBJECT
 public:
     explicit LogItemDelegate(QObject *parent);
-    ~LogItemDelegate();
+    ~LogItemDelegate() override;
 
     QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override;
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override;

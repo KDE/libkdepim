@@ -53,7 +53,7 @@ public:
     /**
      * Destroys the add email address job.
      */
-    ~AddEmailAddressJob();
+    ~AddEmailAddressJob() override;
 
     /**
      * Starts the job.

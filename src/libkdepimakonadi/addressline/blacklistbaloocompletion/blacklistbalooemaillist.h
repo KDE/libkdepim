@@ -45,7 +45,7 @@ class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailList : public QListWidget
     Q_OBJECT
 public:
     explicit BlackListBalooEmailList(QWidget *parent = nullptr);
-    ~BlackListBalooEmailList();
+    ~BlackListBalooEmailList() override;
 
     void setEmailBlackList(const QStringList &list);
 

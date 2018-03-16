@@ -51,7 +51,7 @@ class KDEPIM_EXPORT OverlayWidget : public QFrame
 
 public:
     OverlayWidget(QWidget *alignWidget, QWidget *parent);
-    ~OverlayWidget();
+    ~OverlayWidget() override;
 
     QWidget *alignWidget() const;
     void setAlignWidget(QWidget *alignWidget);

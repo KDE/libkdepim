@@ -59,7 +59,7 @@ class KDEPIM_EXPORT StatusbarProgressWidget : public QFrame
 
 public:
 
-    StatusbarProgressWidget(ProgressDialog *progressDialog, QWidget *parent, bool button = true);
+    explicit StatusbarProgressWidget(ProgressDialog *progressDialog, QWidget *parent, bool button = true);
 
     void setShowTypeProgressItem(unsigned int type);
 public Q_SLOTS:

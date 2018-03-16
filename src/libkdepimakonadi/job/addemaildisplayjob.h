@@ -36,7 +36,7 @@ class KDEPIMAKONADI_EXPORT AddEmailDiplayJob : public KJob
 public:
     explicit AddEmailDiplayJob(const QString &email, QWidget *parentWidget, QObject *parent = nullptr);
 
-    ~AddEmailDiplayJob();
+    ~AddEmailDiplayJob() override;
     void setShowAsHTML(bool html);
     void setRemoteContent(bool b);
     void setContact(const Akonadi::Item &contact);

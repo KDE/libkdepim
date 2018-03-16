@@ -52,7 +52,7 @@ public:
     /**
      * Destroys the open email address job.
      */
-    ~OpenEmailAddressJob();
+    ~OpenEmailAddressJob() override;
 
     /**
      * Starts the job.

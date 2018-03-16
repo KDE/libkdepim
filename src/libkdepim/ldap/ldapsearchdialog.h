@@ -66,7 +66,7 @@ public:
     /**
      * Destroys the ldap search dialog.
      */
-    ~LdapSearchDialog();
+    ~LdapSearchDialog() override;
 
     /**
      * Sets the @p text in the search line edit.

@@ -68,7 +68,7 @@ public:
     /**
      * Destroys the add email address job.
      */
-    ~AddContactJob();
+    ~AddContactJob() override;
 
     /**
      * Starts the job.
