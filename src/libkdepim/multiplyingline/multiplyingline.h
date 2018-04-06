@@ -66,7 +66,7 @@ class KDEPIM_EXPORT MultiplyingLine : public QWidget
     Q_OBJECT
 public:
     explicit MultiplyingLine(QWidget *parent);
-    virtual ~MultiplyingLine()
+    ~MultiplyingLine() override
     {
     }
 

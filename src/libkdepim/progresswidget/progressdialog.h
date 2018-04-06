@@ -127,7 +127,7 @@ class KDEPIM_EXPORT ProgressDialog : public OverlayWidget
     Q_OBJECT
 public:
     ProgressDialog(QWidget *alignWidget, QWidget *parent);
-    ~ProgressDialog();
+    ~ProgressDialog() override;
     void setVisible(bool b) override;
 
     void setShowTypeProgressItem(unsigned int type);
