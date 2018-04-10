@@ -149,10 +149,10 @@ void RecentAddressWidget::setAddresses(const QStringList &addrs)
 bool RecentAddressWidget::eventFilter(QObject *o, QEvent *e)
 {
     if (o == mLineEdit && e->type() == QEvent::KeyPress) {
-        QKeyEvent *keyEvent = (QKeyEvent *)e;
+        QKeyEvent *keyEvent = static_cast<QKeyEvent *>(e);
         if (keyEvent->key() == Qt::Key_Down
             || keyEvent->key() == Qt::Key_Up) {
-            return ((QObject *)mListView)->event(e);
+            return (static_cast<QObject *>(mListView))->event(e);
         }
     }
 

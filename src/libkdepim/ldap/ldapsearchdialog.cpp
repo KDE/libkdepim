@@ -351,8 +351,6 @@ public:
         default:
             return QVariant();
         }
-
-        return QVariant();
     }
 
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override
@@ -416,8 +414,6 @@ public:
         default:
             return QVariant();
         }
-
-        return QVariant();
     }
 
 private:

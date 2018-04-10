@@ -51,7 +51,7 @@ Q_SIGNALS:
 
 private:
     KPIM::AddresseeLineEdit *mLinedit = nullptr;
-    bool mEnabled = false;
+    bool mEnabled = true;
 };
 }
 
