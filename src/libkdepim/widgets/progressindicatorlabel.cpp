@@ -30,9 +30,8 @@ public:
         : labelStr(_label)
         , q(qq)
     {
-        QHBoxLayout *lay = new QHBoxLayout;
+        QHBoxLayout *lay = new QHBoxLayout(q);
         lay->setMargin(0);
-        q->setLayout(lay);
         indicator = new ProgressIndicatorWidget;
         lay->addWidget(indicator);
         label = new QLabel;

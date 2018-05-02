@@ -255,8 +255,8 @@ void KCMLdap::load()
     KConfig *config = KLDAP::LdapClientSearchConfig::config();
     KConfigGroup group(config, "LDAP");
 
-    uint count = group.readEntry("NumSelectedHosts", 0);
-    for (uint i = 0; i < count; ++i) {
+    int count = group.readEntry("NumSelectedHosts", 0);
+    for (int i = 0; i < count; ++i) {
         KLDAP::LdapServer server;
         mClientSearchConfig->readConfig(server, group, i, true);
         LDAPItem *item = new LDAPItem(mHostListView, server, true);
@@ -264,7 +264,7 @@ void KCMLdap::load()
     }
 
     count = group.readEntry("NumHosts", 0);
-    for (uint i = 0; i < count; ++i) {
+    for (int i = 0; i < count; ++i) {
         KLDAP::LdapServer server;
         mClientSearchConfig->readConfig(server, group, i, false);
         new LDAPItem(mHostListView, server);
@@ -281,8 +281,8 @@ void KCMLdap::save()
 
     KConfigGroup group(config, "LDAP");
 
-    uint selected = 0;
-    uint unselected = 0;
+    int selected = 0;
+    int unselected = 0;
     for (int i = 0; i < mHostListView->count(); ++i) {
         LDAPItem *item = dynamic_cast<LDAPItem *>(mHostListView->item(i));
         if (!item) {

@@ -300,7 +300,7 @@ public:
     /**
       Destruct color setting widget.
     */
-    ~KPrefsWidColor();
+    ~KPrefsWidColor() override;
 
     /**
       Return QLabel for the button
@@ -343,7 +343,7 @@ public:
     /**
       Destruct font setting widget.
     */
-    ~KPrefsWidFont();
+    ~KPrefsWidFont() override;
 
     /**
       Return QLabel.
@@ -397,7 +397,7 @@ public:
       @param parent  Parent widget.
     */
     explicit KPrefsWidRadios(KConfigSkeleton::ItemEnum *item, QWidget *parent = nullptr);
-    virtual ~KPrefsWidRadios();
+    ~KPrefsWidRadios() override;
 
     /**
       Add a radio button.
@@ -448,7 +448,7 @@ public:
       @param parent  Parent widget.
     */
     explicit KPrefsWidCombo(KConfigSkeleton::ItemEnum *item, QWidget *parent);
-    virtual ~KPrefsWidCombo();
+    ~KPrefsWidCombo() override;
 
     void readConfig() override;
     void writeConfig() override;
@@ -490,7 +490,7 @@ public:
     /**
       Destructor.
     */
-    virtual ~KPrefsWidString();
+    ~KPrefsWidString() override;
 
     /**
       Return QLabel used by this widget.
@@ -538,7 +538,7 @@ public:
     /**
       Destructor.
     */
-    virtual ~KPrefsWidPath();
+    ~KPrefsWidPath() override;
 
     /**
       Return QLabel used by this widget.
