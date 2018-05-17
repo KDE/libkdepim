@@ -47,7 +47,7 @@ void BlackListBalooEmailCompletionWidgetTest::shouldHaveDefaultValue()
 
     KLineEdit *searchLineEdit = widget.findChild<KLineEdit *>(QStringLiteral("search_lineedit"));
     QVERIFY(searchLineEdit);
-    QVERIFY(searchLineEdit->isClearButtonShown());
+    QVERIFY(searchLineEdit->isClearButtonEnabled());
     QVERIFY(searchLineEdit->trapReturnKey());
     QVERIFY(searchLineEdit->text().isEmpty());
 
@@ -83,7 +83,7 @@ void BlackListBalooEmailCompletionWidgetTest::shouldHaveDefaultValue()
     QVERIFY(excludeDomainLineEdit);
     QVERIFY(excludeDomainLineEdit->trapReturnKey());
     QVERIFY(excludeDomainLineEdit->text().isEmpty());
-    QVERIFY(excludeDomainLineEdit->isClearButtonShown());
+    QVERIFY(excludeDomainLineEdit->isClearButtonEnabled());
     QVERIFY(!excludeDomainLineEdit->placeholderText().isEmpty());
 
     KListWidgetSearchLine *searchInResult = widget.findChild<KListWidgetSearchLine *>(QStringLiteral("searchinresultlineedit"));

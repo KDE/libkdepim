@@ -52,7 +52,7 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     mSearchLineEdit = new KLineEdit(this);
     mSearchLineEdit->setPlaceholderText(i18n("Research is done from 3 characters"));
     mSearchLineEdit->setFocus();
-    mSearchLineEdit->setClearButtonShown(true);
+    mSearchLineEdit->setClearButtonEnabled(true);
     mSearchLineEdit->setTrapReturnKey(true);
     mSearchLineEdit->setObjectName(QStringLiteral("search_lineedit"));
     connect(mSearchLineEdit, &KLineEdit::returnPressed, this, &BlackListBalooEmailCompletionWidget::slotCheckIfUpdateBlackListIsNeeded);
@@ -130,7 +130,7 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     mExcludeDomainLineEdit = new KLineEdit(this);
     excludeDomainLayout->addWidget(mExcludeDomainLineEdit);
     mExcludeDomainLineEdit->setObjectName(QStringLiteral("domain_lineedit"));
-    mExcludeDomainLineEdit->setClearButtonShown(true);
+    mExcludeDomainLineEdit->setClearButtonEnabled(true);
     mExcludeDomainLineEdit->setTrapReturnKey(true);
     mExcludeDomainLineEdit->setPlaceholderText(i18n("Separate domain with \'%1\'", QLatin1Char(',')));
 
