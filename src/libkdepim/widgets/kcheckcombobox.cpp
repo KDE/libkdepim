@@ -149,9 +149,17 @@ KCheckComboBox::KCheckComboBox(QWidget *parent)
         d->updateCheckedItems(topLeft, bottomRight);
     });
 
+
     // read-only contents
     setEditable(true);
+
     lineEdit()->setAlignment(Qt::AlignLeft);
+    connect(lineEdit(), &QLineEdit::textChanged, this, [this](const QString &text) {
+        if (text.isEmpty()) {
+            //Clear checked items
+            setCheckedItems(QStringList());
+        }
+    });
     setInsertPolicy(KComboBox::NoInsert);
 
     view()->installEventFilter(this);

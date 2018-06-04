@@ -39,6 +39,7 @@ int main(int argc, char *argv[])
     combo->setCheckedItems(QStringList() << QStringLiteral("KDE") << QStringLiteral("Mac OSX") << QStringLiteral("Windows"));
     combo->resize(400, 20);
     combo->setSqueezeText(true);
+    combo->setDefaultText(QStringLiteral("Default text"));
     combo->show();
 
     return app.exec();
