@@ -152,9 +152,6 @@ KCheckComboBox::KCheckComboBox(QWidget *parent)
     // read-only contents
     setEditable(true);
     lineEdit()->setAlignment(Qt::AlignLeft);
-    // The cast is a workaround for the fact that QLineEdit::setReadOnly isn't virtual.
-    // KLineEdit copes with this case since kdelibs-4.6 though.
-    qobject_cast<KLineEdit *>(lineEdit())->setReadOnly(true);
     setInsertPolicy(KComboBox::NoInsert);
 
     view()->installEventFilter(this);
