@@ -40,7 +40,7 @@ public:
 
     void setAddresses(const QStringList &addrs);
     void storeAddresses(KConfig *config);
-    bool wasChanged() const;
+    Q_REQUIRED_RESULT bool wasChanged() const;
 
 protected:
     void updateButtonState();

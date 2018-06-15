@@ -54,17 +54,17 @@ public:
      * @return The id string which uniquely identifies the operation
      *         represented by this item.
      */
-    const QString &id() const;
+    Q_REQUIRED_RESULT const QString &id() const;
 
     /**
      * @return The parent item of this one, if there is one.
      */
-    ProgressItem *parent() const;
+    Q_REQUIRED_RESULT ProgressItem *parent() const;
 
     /**
      * @return The user visible string to be used to represent this item.
      */
-    const QString &label() const;
+    Q_REQUIRED_RESULT const QString &label() const;
 
     /**
      * @param v Set the user visible string identifying this item.
@@ -74,7 +74,7 @@ public:
     /**
      * @return The string to be used for showing this item's current status.
      */
-    const QString &status() const;
+    Q_REQUIRED_RESULT const QString &status() const;
     /**
      * Set the string to be used for showing this item's current status.
      * @param v The status string.
@@ -84,7 +84,7 @@ public:
     /**
      * @return Whether this item can be canceled.
      */
-    bool canBeCanceled() const;
+    Q_REQUIRED_RESULT bool canBeCanceled() const;
 
     /**
      * @param b Set if can be canceled
@@ -95,7 +95,7 @@ public:
      * @return Whether this item uses secure communication
      * (Account uses ssl, for example.).
      */
-    CryptoStatus cryptoStatus() const;
+    Q_REQUIRED_RESULT CryptoStatus cryptoStatus() const;
 
     /**
      * Set whether this item uses crypted communication, so listeners
@@ -107,7 +107,7 @@ public:
     /**
      * @return whether this item uses a busy indicator instead of real progress display
      */
-    bool usesBusyIndicator() const;
+    Q_REQUIRED_RESULT bool usesBusyIndicator() const;
 
     /**
      * Sets whether this item uses a busy indicator instead of real progress for its progress bar.
@@ -119,7 +119,7 @@ public:
     /**
      * @return The current progress value of this item in percent.
      */
-    unsigned int progress() const;
+    Q_REQUIRED_RESULT unsigned int progress() const;
 
     /**
      * Set the progress (percentage of completion) value of this item.
@@ -146,10 +146,10 @@ public:
 
     // Often needed values for calculating progress.
     void setTotalItems(unsigned int v);
-    unsigned int totalItems() const;
+    Q_REQUIRED_RESULT unsigned int totalItems() const;
     void setCompletedItems(unsigned int v);
     void incCompletedItems(unsigned int v = 1);
-    unsigned int completedItems() const;
+    Q_REQUIRED_RESULT unsigned int completedItems() const;
 
     /**
      * Recalculate progress according to total/completed items and update.

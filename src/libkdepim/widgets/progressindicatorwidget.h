@@ -37,7 +37,7 @@ public:
     explicit IndicatorProgress(ProgressIndicatorWidget *widget, QObject *parent = nullptr);
     ~IndicatorProgress();
 
-    bool isActive() const;
+    Q_REQUIRED_RESULT bool isActive() const;
 
     void startAnimation();
     void stopAnimation();

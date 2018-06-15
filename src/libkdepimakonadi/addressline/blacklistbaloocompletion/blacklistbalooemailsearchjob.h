@@ -32,7 +32,7 @@ public:
     explicit BlackListBalooEmailSearchJob(QObject *parent = nullptr);
     ~BlackListBalooEmailSearchJob();
 
-    bool start();
+    Q_REQUIRED_RESULT bool start();
 
     void setSearchEmail(const QString &searchEmail);
 

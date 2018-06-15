@@ -49,7 +49,7 @@ public:
 
     void setEncrypted(State enc = Encrypted);
     void setState(State state);
-    State lastState() const;
+    Q_REQUIRED_RESULT State lastState() const;
 
 private:
     State m_lastEncryptionState;

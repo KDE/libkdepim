@@ -53,7 +53,7 @@ public:
     OverlayWidget(QWidget *alignWidget, QWidget *parent);
     ~OverlayWidget() override;
 
-    QWidget *alignWidget() const;
+    Q_REQUIRED_RESULT QWidget *alignWidget() const;
     void setAlignWidget(QWidget *alignWidget);
 
 protected:

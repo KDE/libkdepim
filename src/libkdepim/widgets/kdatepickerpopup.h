@@ -80,7 +80,7 @@ public:
     /**
      * Returns the used KDatePicker object.
      */
-    KDatePicker *datePicker() const;
+    Q_REQUIRED_RESULT KDatePicker *datePicker() const;
 
 public Q_SLOTS:
     /**

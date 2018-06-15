@@ -51,7 +51,7 @@ public:
      * Retrieve the checked days
      * @param days a 7 bit array indicating the checked days (bit 0 = Monday, value 1 = checked).
      */
-    QBitArray days() const;
+    Q_REQUIRED_RESULT QBitArray days() const;
 
     /**
      * Set the checked days on this combobox

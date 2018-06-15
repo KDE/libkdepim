@@ -62,7 +62,7 @@ public:
      * Note: an entry doesn't have to be one email address, it can be multiple,
      * like "Foo <foo@bar.org>, Bar Baz <bar@baz.org>".
      */
-    QStringList     addresses() const;
+    Q_REQUIRED_RESULT QStringList     addresses() const;
 
     /**
      * Adds an entry to the list.
@@ -80,7 +80,7 @@ public:
     /**
      * @returns the current maximum number of entries.
      */
-    int maxCount() const;
+    Q_REQUIRED_RESULT int maxCount() const;
 
     /**
      * Loads the list of recently used addresses from the configfile.

@@ -68,7 +68,7 @@ public:
     /**
      * Returns the default text that is shown when no items are selected.
      */
-    QString defaultText() const;
+    Q_REQUIRED_RESULT QString defaultText() const;
 
     /**
      * Sets the default text that is shown when no items are selected.
@@ -97,7 +97,7 @@ public:
      *
      * @see KSqueezedTextLabel
      */
-    bool squeezeText() const;
+    Q_REQUIRED_RESULT bool squeezeText() const;
 
     /**
      * Sets whether or not the text must be squeezed.
@@ -110,7 +110,7 @@ public:
      * Return whether or not the item at @param index is enabled, i.e. if the
      * user can (un)check the item.
      */
-    bool itemEnabled(int index);
+    Q_REQUIRED_RESULT bool itemEnabled(int index);
 
     /**
      * Set the item at @param index to @param enabled, i.e. if the
@@ -123,7 +123,7 @@ public:
      *
      * @param index The index for which to return the check state.
      */
-    Qt::CheckState itemCheckState(int index) const;
+    Q_REQUIRED_RESULT Qt::CheckState itemCheckState(int index) const;
 
     /**
      * Changes the check state of the given index to the given state.
@@ -137,7 +137,7 @@ public:
      * Returns the current separator used to separate the selected items in the
      * line edit of the combo box.
      */
-    QString separator() const;
+    Q_REQUIRED_RESULT QString separator() const;
 
     /**
      * Sets the separator used to separate items in the line edit.
@@ -150,7 +150,7 @@ public:
      * Returns The currently selected items.
      * @param role The role the returned values belong to.
      */
-    QStringList checkedItems(int role = Qt::DisplayRole) const;
+    Q_REQUIRED_RESULT QStringList checkedItems(int role = Qt::DisplayRole) const;
 
 public Q_SLOTS:
     /**

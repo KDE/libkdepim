@@ -32,7 +32,7 @@ public:
     explicit ProgressStatusBarWidget(QWidget *alignWidget, QWidget *parent = nullptr, unsigned int showTypeProgressItem = 0);
     ~ProgressStatusBarWidget();
 
-    KPIM::StatusbarProgressWidget *littleProgress() const;
+    Q_REQUIRED_RESULT KPIM::StatusbarProgressWidget *littleProgress() const;
 
 private:
     ProgressStatusBarWidgetPrivate *const d;

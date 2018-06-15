@@ -52,9 +52,9 @@ public:
     void addTitleLogEntry(const QString &log);
     void addEndLineLogEntry();
 
-    QString toHtml() const;
-    QString toPlainText() const;
-    bool isEmpty() const;
+    Q_REQUIRED_RESULT QString toHtml() const;
+    Q_REQUIRED_RESULT QString toPlainText() const;
+    Q_REQUIRED_RESULT bool isEmpty() const;
 
 private:
     enum ItemType {

@@ -83,15 +83,15 @@ public:
     void setFont(const QFont &font);
 
     void setEnableBalooSearch(bool enable);
-    bool enableBalooSearch() const;
+    Q_REQUIRED_RESULT bool enableBalooSearch() const;
 
     void setEnableAkonadiSearch(bool enable);
-    bool enableAkonadiSearch() const;
+    Q_REQUIRED_RESULT bool enableAkonadiSearch() const;
 
     void setExpandIntern(bool);
-    bool expandIntern() const;
+    Q_REQUIRED_RESULT bool expandIntern() const;
 
-    bool isCompletionEnabled() const;
+    Q_REQUIRED_RESULT bool isCompletionEnabled() const;
 
     /**
      * Adds a new @p contact to the completion with a given
@@ -115,7 +115,7 @@ public:
      *
      * If the source already exists, the weight will be updated.
      */
-    int addCompletionSource(const QString &name, int weight);
+    Q_REQUIRED_RESULT int addCompletionSource(const QString &name, int weight);
 
     void removeCompletionSource(const QString &source);
     void emitTextCompleted();
@@ -127,13 +127,13 @@ public:
 
     void updateBalooBlackList();
     void updateCompletionOrder();
-    KLDAP::LdapClientSearch *ldapSearch() const;
+    Q_REQUIRED_RESULT KLDAP::LdapClientSearch *ldapSearch() const;
 
     void setShowRecentAddresses(bool b);
     bool showRecentAddresses() const;
 
     void setRecentAddressConfig(KConfig *config);
-    KConfig *recentAddressConfig() const;
+    Q_REQUIRED_RESULT KConfig *recentAddressConfig() const;
 
     void configureCompletion();
 
