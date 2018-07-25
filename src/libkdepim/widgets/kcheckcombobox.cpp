@@ -89,7 +89,7 @@ QString KCheckComboBox::Private::squeeze(const QString &text)
     const int minLB = qMax(0, -fm.minLeftBearing());
     const int minRB = qMax(0, -fm.minRightBearing());
     const int lineEditWidth = q->lineEdit()->width() - 4 - minLB - minRB;
-    const int textWidth = fm.width(text);
+    const int textWidth = fm.boundingRect(text).width();
     if (textWidth > lineEditWidth) {
         return fm.elidedText(text, Qt::ElideMiddle, lineEditWidth);
     }
