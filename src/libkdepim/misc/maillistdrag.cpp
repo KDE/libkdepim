@@ -40,7 +40,7 @@ QDataStream &operator<<(QDataStream &s, const MailSummary &d)
     s << d.from();
     s << d.to();
     QDateTime tempTime;
-    tempTime.setTime_t(d.date());
+    tempTime.setSecsSinceEpoch(d.date());
     s << tempTime;
     return s;
 }
@@ -57,7 +57,7 @@ QDataStream &operator>>(QDataStream &s, MailSummary &d)
     s >> to;
     QDateTime tempTime;
     s >> tempTime;
-    date = QDateTime(tempTime).toTime_t();
+    date = QDateTime(tempTime).toSecsSinceEpoch();
     d.set(serialNumber, messageId, subject, from, to, date);
     return s;
 }
