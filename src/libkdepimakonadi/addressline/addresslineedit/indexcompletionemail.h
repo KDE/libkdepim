@@ -17,23 +17,30 @@
   02110-1301, USA.
 
 */
-#include "blacklistbalooemailsearchjobtest.h"
-#include "../blacklistbalooemailsearchjob.h"
-#include <qtest.h>
 
-BlackListBalooEmailSearchJobTest::BlackListBalooEmailSearchJobTest(QObject *parent)
-    : QObject(parent)
+#ifndef INDEXCOMPLETIONEMAIL_H
+#define INDEXCOMPLETIONEMAIL_H
+
+#include <QStringList>
+#include "libkdepimakonadi_private_export.h"
+
+namespace KPIM {
+class LIBKDEPIMAKONADI_TESTS_EXPORT IndexCompletionEmail
 {
+public:
+    IndexCompletionEmail();
+    void setEmailList(const QStringList &lst);
+    void setExcludeDomain(const QStringList &lst);
+
+    void setBlackList(const QStringList &lst);
+
+    QStringList cleanupEmailList();
+private:
+    QString stripEmail(const QString &email, QString &address);
+    QStringList mListEmail;
+    QStringList mExcludeDomain;
+    QStringList mBlackList;
+};
 }
 
-BlackListBalooEmailSearchJobTest::~BlackListBalooEmailSearchJobTest()
-{
-}
-
-void BlackListBalooEmailSearchJobTest::shouldNotSearchWhenTextIsEmpty()
-{
-    KPIM::BlackListBalooEmailSearchJob *job = new KPIM::BlackListBalooEmailSearchJob;
-    QVERIFY(!job->start());
-}
-
-QTEST_MAIN(BlackListBalooEmailSearchJobTest)
+#endif // INDEXCOMPLETIONEMAIL_H

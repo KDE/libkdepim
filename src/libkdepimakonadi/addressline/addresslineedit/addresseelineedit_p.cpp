@@ -36,10 +36,10 @@
 #include <QToolButton>
 #include <KConfigGroup>
 #include <KLocalizedString>
-#include <AkonadiSearch/PIM/contactcompleter.h>
+#include <AkonadiSearch/ContactCompleter>
 
 #include <ldap/ldapclientsearch.h>
-#include <addressline/addresslineedit/baloocompletionemail.h>
+#include <addressline/addresslineedit/indexcompletionemail.h>
 #include <akonadi/contact/contactsearchjob.h>
 
 using namespace KPIM;
@@ -53,7 +53,7 @@ AddresseeLineEditPrivate::AddresseeLineEditPrivate(KPIM::AddresseeLineEdit *qq, 
     , mLastSearchMode(false)
     , mSearchExtended(false)
     , mUseSemicolonAsSeparator(false)
-    , mEnableBalooSearch(true)
+    , mEnableIndexSearch(true)
     , mEnableAkonadiSearch(true)
     , mExpandIntern(true)
     , mShowRecentAddresses(true)
@@ -123,7 +123,7 @@ void AddresseeLineEditPrivate::init()
 
     if (mUseCompletion) {
         AddresseeLineEditManager::self()->initializeLdap();
-        AddresseeLineEditManager::self()->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
+        AddresseeLineEditManager::self()->setIndexCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
         AddresseeLineEditManager::self()->updateLDAPWeights();
 
         if (!mCompletionInitialized) {
@@ -163,15 +163,18 @@ void AddresseeLineEditPrivate::setIcon(const QIcon &icon, const QString &tooltip
     }
 }
 
-void AddresseeLineEditPrivate::searchInBaloo()
+void AddresseeLineEditPrivate::searchInIndex()
 {
     const QString trimmedString = mSearchString.trimmed();
-    Akonadi::Search::PIM::ContactCompleter com(trimmedString, 20);
-    const QStringList listEmail = AddresseeLineEditManager::self()->cleanupEmailList(com.complete());
-    for (const QString &email : listEmail) {
-        addCompletionItem(email, 1, AddresseeLineEditManager::self()->balooCompletionSource());
-    }
-    doCompletion(mLastSearchMode);
+    auto completer = new Akonadi::Search::ContactCompleter(trimmedString, 20);
+    connect(completer, &Akonadi::Search::ContactCompleter::finished,
+            this, [this](const QStringList &results) {
+                const QStringList listEmail = AddresseeLineEditManager::self()->cleanupEmailList(results);
+                for (const QString &email : listEmail) {
+                    addCompletionItem(email, 1, AddresseeLineEditManager::self()->indexCompletionSource());
+                }
+                doCompletion(mLastSearchMode);
+            });
 }
 
 void AddresseeLineEditPrivate::setCompletedItems(const QStringList &items, bool autoSuggest)
@@ -387,12 +390,12 @@ void AddresseeLineEditPrivate::slotTriggerDelayedQueries()
         return;
     }
 
-    if (mEnableBalooSearch) {
-        searchInBaloo();
+    if (mEnableIndexSearch) {
+        searchInIndex();
     }
 
     // We send a contactsearch job through akonadi.
-    // This not only searches baloo but also servers if remote search is enabled
+    // This not only searches index but also servers if remote search is enabled
     if (mEnableAkonadiSearch) {
         akonadiPerformSearch();
     }
@@ -784,11 +787,11 @@ void AddresseeLineEditPrivate::slotShowOUChanged(bool checked)
     AddresseeLineEditManager::self()->setShowOU(checked);
 }
 
-void AddresseeLineEditPrivate::updateBalooBlackList()
+void AddresseeLineEditPrivate::updateIndexBlackList()
 {
-    AddresseeLineEditManager::self()->loadBalooBlackList();
+    AddresseeLineEditManager::self()->loadIndexBlackList();
     q->removeCompletionSource(i18nc("@title:group", "Contacts found in your data"));
-    AddresseeLineEditManager::self()->setBalooCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
+    AddresseeLineEditManager::self()->setIndexCompletionSource(q->addCompletionSource(i18nc("@title:group", "Contacts found in your data"), -1));
 }
 
 void AddresseeLineEditPrivate::updateCompletionOrder()
@@ -871,14 +874,14 @@ void AddresseeLineEditPrivate::setUseSemicolonAsSeparator(bool useSemicolonAsSep
     mUseSemicolonAsSeparator = useSemicolonAsSeparator;
 }
 
-bool AddresseeLineEditPrivate::enableBalooSearch() const
+bool AddresseeLineEditPrivate::enableIndexSearch() const
 {
-    return mEnableBalooSearch;
+    return mEnableIndexSearch;
 }
 
-void AddresseeLineEditPrivate::setEnableBalooSearch(bool enableBalooSearch)
+void AddresseeLineEditPrivate::setEnableIndexSearch(bool enableIndexSearch)
 {
-    mEnableBalooSearch = enableBalooSearch;
+    mEnableIndexSearch = enableIndexSearch;
 }
 
 bool AddresseeLineEditPrivate::enableAkonadiSearch() const

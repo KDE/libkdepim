@@ -18,24 +18,22 @@
 
 */
 
-#ifndef BLACKLISTBALOOEMAILUTIL_H
-#define BLACKLISTBALOOEMAILUTIL_H
+#ifndef BLACKLISTINDEXEMAILWARNINGTEST_H
+#define BLACKLISTINDEXEMAILWARNINGTEST_H
 
-#include "libkdepimakonadi_private_export.h"
-#include <QStringList>
-#include <QHash>
-namespace KPIM {
-class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailUtil
+#include <QObject>
+
+class BlackListIndexEmailWarningTest : public QObject
 {
+    Q_OBJECT
 public:
-    BlackListBalooEmailUtil();
-    ~BlackListBalooEmailUtil();
-    void initialBlackList(const QStringList &blackList);
-    void newBlackList(const QHash<QString, bool> &);
-    QStringList createNewBlackList();
-private:
-    QStringList mInitialList;
-    QHash<QString, bool> mNewBlackList;
+    explicit BlackListIndexEmailWarningTest(QObject *parent = nullptr);
+    ~BlackListIndexEmailWarningTest();
+
+private Q_SLOTS:
+    void shouldHaveDefaultValue();
+    void shouldEmitSaveChanges();
+    void shouldEmitNewSearch();
 };
-}
-#endif // BLACKLISTBALOOEMAILUTIL_H
+
+#endif // BLACKLISTINDEXEMAILWARNINGTEST_H

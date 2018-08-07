@@ -18,20 +18,22 @@
 
 */
 
-#ifndef BLACKLISTBALOOEMAILSEARCHJOBTEST_H
-#define BLACKLISTBALOOEMAILSEARCHJOBTEST_H
+#ifndef BLACKLISTINDEXEMAILCOMPLETIONWIDGETTEST_H
+#define BLACKLISTINDEXEMAILCOMPLETIONWIDGETTEST_H
 
 #include <QObject>
 
-class BlackListBalooEmailSearchJobTest : public QObject
+class BlackListIndexEmailCompletionWidgetTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailSearchJobTest(QObject *parent = nullptr);
-    ~BlackListBalooEmailSearchJobTest();
+    explicit BlackListIndexEmailCompletionWidgetTest(QObject *parent = nullptr);
+    ~BlackListIndexEmailCompletionWidgetTest();
 
 private Q_SLOTS:
-    void shouldNotSearchWhenTextIsEmpty();
+    void shouldHaveDefaultValue();
+    void shouldEnablePushButtonWhenTestSizeSupperiorToTwo();
+    void shouldChangeEnableSelectUnSelectButton();
 };
 
-#endif // BLACKLISTBALOOEMAILSEARCHJOBTEST_H
+#endif // BLACKLISTINDEXEMAILCOMPLETIONWIDGETTEST_H

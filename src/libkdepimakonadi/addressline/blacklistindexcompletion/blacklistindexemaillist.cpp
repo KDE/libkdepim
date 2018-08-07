@@ -18,7 +18,7 @@
 
 */
 
-#include "blacklistbalooemaillist.h"
+#include "blacklistindexemaillist.h"
 #include "libkdepimakonadi_debug.h"
 
 #include <QPainter>
@@ -27,18 +27,18 @@
 #include <KEmailAddress>
 using namespace KPIM;
 
-BlackListBalooEmailList::BlackListBalooEmailList(QWidget *parent)
+BlackListIndexEmailList::BlackListIndexEmailList(QWidget *parent)
     : QListWidget(parent)
 {
     setSelectionMode(QAbstractItemView::ExtendedSelection);
     setSortingEnabled(true);
 }
 
-BlackListBalooEmailList::~BlackListBalooEmailList()
+BlackListIndexEmailList::~BlackListIndexEmailList()
 {
 }
 
-void BlackListBalooEmailList::changeEvent(QEvent *event)
+void BlackListIndexEmailList::changeEvent(QEvent *event)
 {
     if (event->type() == QEvent::PaletteChange) {
         generalPaletteChanged();
@@ -46,17 +46,17 @@ void BlackListBalooEmailList::changeEvent(QEvent *event)
     QListWidget::changeEvent(event);
 }
 
-void BlackListBalooEmailList::setEmailBlackList(const QStringList &list)
+void BlackListIndexEmailList::setEmailBlackList(const QStringList &list)
 {
     mEmailBlackList = list;
 }
 
-QHash<QString, bool> BlackListBalooEmailList::blackListItemChanged() const
+QHash<QString, bool> BlackListIndexEmailList::blackListItemChanged() const
 {
     QHash<QString, bool> result;
     for (int i = 0; i < count(); ++i) {
         QListWidgetItem *element = item(i);
-        KPIM::BlackListBalooEmailListItem *blackListItem = static_cast<KPIM::BlackListBalooEmailListItem *>(element);
+        KPIM::BlackListIndexEmailListItem *blackListItem = static_cast<KPIM::BlackListIndexEmailListItem *>(element);
         bool currentStatus = (blackListItem->checkState() == Qt::Checked);
         if (blackListItem->initializeStatus() != currentStatus) {
             result.insert(blackListItem->text(), currentStatus);
@@ -65,12 +65,12 @@ QHash<QString, bool> BlackListBalooEmailList::blackListItemChanged() const
     return result;
 }
 
-void BlackListBalooEmailList::setExcludeDomain(const QStringList &domain)
+void BlackListIndexEmailList::setExcludeDomain(const QStringList &domain)
 {
     mExcludeDomain = domain;
 }
 
-int BlackListBalooEmailList::setEmailFound(const QStringList &list)
+int BlackListIndexEmailList::setEmailFound(const QStringList &list)
 {
     mFirstResult = true;
     clear();
@@ -94,7 +94,7 @@ int BlackListBalooEmailList::setEmailFound(const QStringList &list)
             continue;
         }
         if (!emailsAdded.contains(mail) && !emailsLower.contains(mailToLower) && !onlyEmails.contains(emailToLower)) {
-            BlackListBalooEmailListItem *item = new BlackListBalooEmailListItem(this);
+            BlackListIndexEmailListItem *item = new BlackListIndexEmailListItem(this);
             if (mEmailBlackList.contains(mail)) {
                 item->setCheckState(Qt::Checked);
                 item->setInitializeStatus(true);
@@ -110,7 +110,7 @@ int BlackListBalooEmailList::setEmailFound(const QStringList &list)
     return count();
 }
 
-void BlackListBalooEmailList::generalPaletteChanged()
+void BlackListIndexEmailList::generalPaletteChanged()
 {
     const QPalette palette = viewport()->palette();
     QColor color = palette.text().color();
@@ -118,7 +118,7 @@ void BlackListBalooEmailList::generalPaletteChanged()
     mTextColor = color;
 }
 
-void BlackListBalooEmailList::paintEvent(QPaintEvent *event)
+void BlackListIndexEmailList::paintEvent(QPaintEvent *event)
 {
     if (mFirstResult && (!model() || model()->rowCount() == 0)) {
         QPainter p(viewport());
@@ -138,23 +138,23 @@ void BlackListBalooEmailList::paintEvent(QPaintEvent *event)
     }
 }
 
-BlackListBalooEmailListItem::BlackListBalooEmailListItem(QListWidget *parent)
+BlackListIndexEmailListItem::BlackListIndexEmailListItem(QListWidget *parent)
     : QListWidgetItem(parent)
     , mInitializeStatus(false)
 {
     setFlags(Qt::ItemIsEnabled | Qt::ItemIsUserCheckable | Qt::ItemIsSelectable);
 }
 
-BlackListBalooEmailListItem::~BlackListBalooEmailListItem()
+BlackListIndexEmailListItem::~BlackListIndexEmailListItem()
 {
 }
 
-bool BlackListBalooEmailListItem::initializeStatus() const
+bool BlackListIndexEmailListItem::initializeStatus() const
 {
     return mInitializeStatus;
 }
 
-void BlackListBalooEmailListItem::setInitializeStatus(bool initializeStatus)
+void BlackListIndexEmailListItem::setInitializeStatus(bool initializeStatus)
 {
     mInitializeStatus = initializeStatus;
 }

@@ -128,12 +128,12 @@ void AddresseeLineEdit::setExpandIntern(bool expand)
     d->setExpandIntern(expand);
 }
 
-void AddresseeLineEdit::setEnableBalooSearch(bool enable)
+void AddresseeLineEdit::setEnableIndexSearch(bool enable)
 {
-    d->setEnableBalooSearch(enable);
+    d->setEnableIndexSearch(enable);
 }
 
-bool AddresseeLineEdit::enableBalooSearch() const
+bool AddresseeLineEdit::enableIndexSearch() const
 {
     return d->enableAkonadiSearch();
 }
@@ -489,7 +489,7 @@ bool AddresseeLineEdit::isCompletionEnabled() const
 
 void AddresseeLineEdit::addItem(const Akonadi::Item &item, int weight, int source)
 {
-    //Let Akonadi results always have a higher weight than baloo results
+    //Let Akonadi results always have a higher weight than index results
     if (item.hasPayload<KContacts::Addressee>()) {
         addContact(item.payload<KContacts::Addressee>(), weight + 1, source);
     } else if (item.hasPayload<KContacts::ContactGroup>()) {
@@ -616,7 +616,7 @@ void AddresseeLineEdit::configureCompletion()
     QScopedPointer<KPIM::CompletionConfigureDialog> dlg(new KPIM::CompletionConfigureDialog(this));
     dlg->setRecentAddresses(KPIM::RecentAddresses::self(recentAddressConfig())->addresses());
     dlg->setLdapClientSearch(ldapSearch());
-    dlg->setEmailBlackList(KPIM::AddresseeLineEditManager::self()->balooBlackList());
+    dlg->setEmailBlackList(KPIM::AddresseeLineEditManager::self()->indexBlackList());
     dlg->load();
     if (dlg->exec() && dlg) {
         if (dlg->recentAddressWasChanged()) {
@@ -624,7 +624,7 @@ void AddresseeLineEdit::configureCompletion()
             dlg->storeAddresses(recentAddressConfig());
             loadContacts();
         }
-        updateBalooBlackList();
+        updateIndexBlackList();
         updateCompletionOrder();
     }
     d->setCanDeleteLineEdit(true);
@@ -870,9 +870,9 @@ void AddresseeLineEdit::callSetUserSelection(bool b)
     setUserSelection(b);
 }
 
-void AddresseeLineEdit::updateBalooBlackList()
+void AddresseeLineEdit::updateIndexBlackList()
 {
-    d->updateBalooBlackList();
+    d->updateIndexBlackList();
 }
 
 void AddresseeLineEdit::updateCompletionOrder()

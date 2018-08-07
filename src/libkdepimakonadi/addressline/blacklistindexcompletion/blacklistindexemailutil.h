@@ -18,22 +18,24 @@
 
 */
 
-#ifndef BLACKLISTBALOOEMAILCOMPLETIONWIDGETTEST_H
-#define BLACKLISTBALOOEMAILCOMPLETIONWIDGETTEST_H
+#ifndef BLACKLISTINDEXEMAILUTIL_H
+#define BLACKLISTINDEXEMAILUTIL_H
 
-#include <QObject>
-
-class BlackListBalooEmailCompletionWidgetTest : public QObject
+#include "libkdepimakonadi_private_export.h"
+#include <QStringList>
+#include <QHash>
+namespace KPIM {
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListIndexEmailUtil
 {
-    Q_OBJECT
 public:
-    explicit BlackListBalooEmailCompletionWidgetTest(QObject *parent = nullptr);
-    ~BlackListBalooEmailCompletionWidgetTest();
-
-private Q_SLOTS:
-    void shouldHaveDefaultValue();
-    void shouldEnablePushButtonWhenTestSizeSupperiorToTwo();
-    void shouldChangeEnableSelectUnSelectButton();
+    BlackListIndexEmailUtil();
+    ~BlackListIndexEmailUtil();
+    void initialBlackList(const QStringList &blackList);
+    void newBlackList(const QHash<QString, bool> &);
+    QStringList createNewBlackList();
+private:
+    QStringList mInitialList;
+    QHash<QString, bool> mNewBlackList;
 };
-
-#endif // BLACKLISTBALOOEMAILCOMPLETIONWIDGETTEST_H
+}
+#endif // BLACKLISTINDEXEMAILUTIL_H

@@ -6,7 +6,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
 
 if(BUILD_TESTING)
     add_subdirectory(tests)
-    add_subdirectory(addressline/blacklistbaloocompletion/autotests)
+    add_subdirectory(addressline/blacklistindexcompletion/autotests)
     add_subdirectory(addressline/autotests/)
 endif()
 
@@ -21,18 +21,18 @@ set(kdepim_addressline_LIB_SRCS
     addressline/addresslineedit/addresseelineeditmanager.cpp
     addressline/addresslineedit/addresseelineeditldap.cpp
     addressline/addresslineedit/addresseelineeditakonadi.cpp
-    addressline/addresslineedit/addresseelineeditbaloo.cpp
+    addressline/addresslineedit/addresseelineeditindex.cpp
     addressline/addresslineedit/kmailcompletion.cpp
-    addressline/addresslineedit/baloocompletionemail.cpp
+    addressline/addresslineedit/indexcompletionemail.cpp
     addressline/completionconfiguredialog/completionconfiguredialog.cpp
     )
 
-set(kdepim_addressline_blacklist_baloo_LIB_SRCS
-    addressline/blacklistbaloocompletion/blacklistbalooemaillist.cpp
-    addressline/blacklistbaloocompletion/blacklistbalooemailsearchjob.cpp
-    addressline/blacklistbaloocompletion/blacklistbalooemailutil.cpp
-    addressline/blacklistbaloocompletion/blacklistbalooemailcompletionwidget.cpp
-    addressline/blacklistbaloocompletion/blacklistbalooemailwarning.cpp
+set(kdepim_addressline_blacklist_index_LIB_SRCS
+    addressline/blacklistindexcompletion/blacklistindexemaillist.cpp
+    addressline/blacklistindexcompletion/blacklistindexemailsearchjob.cpp
+    addressline/blacklistindexcompletion/blacklistindexemailutil.cpp
+    addressline/blacklistindexcompletion/blacklistindexemailcompletionwidget.cpp
+    addressline/blacklistindexcompletion/blacklistindexemailwarning.cpp
     )
 
 set(kdepim_addressline_plugin_LIB_SRCS
@@ -66,7 +66,7 @@ set(kdepimakonadi_LIB_SRCS
     ${kdepim_job_LIB_SRCS}
     ${kdepimakonadi_widgets_LIB_SRCS}
     ${kdepim_addressline_LIB_SRCS}
-    ${kdepim_addressline_blacklist_baloo_LIB_SRCS}
+    ${kdepim_addressline_blacklist_index_LIB_SRCS}
     ${kdepimakonadi_progresswidget_LIB_SRCS}
     ${kdepim_addressline_plugin_LIB_SRCS}
     )

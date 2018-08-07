@@ -17,34 +17,34 @@
    Boston, MA 02110-1301, USA.
 */
 
-#ifndef ADDRESSEELINEEDITBALOO_H
-#define ADDRESSEELINEEDITBALOO_H
+#ifndef ADDRESSEELINEEDITINDEX_H
+#define ADDRESSEELINEEDITINDEX_H
 
 #include <QStringList>
 
 namespace KPIM {
 class AddresseeLineEditManager;
-class AddresseeLineEditBaloo
+class AddresseeLineEditIndex
 {
 public:
-    explicit AddresseeLineEditBaloo(AddresseeLineEditManager *addressLineStatic);
-    ~AddresseeLineEditBaloo();
+    explicit AddresseeLineEditIndex(AddresseeLineEditManager *addressLineStatic);
+    ~AddresseeLineEditIndex();
 
-    int balooCompletionSource() const;
-    void setBalooCompletionSource(int value);
+    int indexCompletionSource() const;
+    void setIndexCompletionSource(int value);
 
-    QStringList balooBlackList() const;
+    QStringList indexBlackList() const;
     QStringList domainExcludeList() const;
 
-    void loadBalooBlackList();
+    void loadIndexBlackList();
     QStringList cleanupEmailList(const QStringList &inputList);
 private:
-    QStringList mBalooBlackList;
+    QStringList mIndexBlackList;
     QStringList mDomainExcludeList;
 
-    int mBalooCompletionSource = 0;
+    int mIndexCompletionSource = 0;
     AddresseeLineEditManager *mAddressLineStatic = nullptr;
 };
 }
 
-#endif // ADDRESSEELINEEDITBALOO_H
+#endif // ADDRESSEELINEEDITINDEX_H

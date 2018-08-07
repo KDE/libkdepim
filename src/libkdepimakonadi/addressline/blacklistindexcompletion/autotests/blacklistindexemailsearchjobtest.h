@@ -18,26 +18,20 @@
 
 */
 
-#ifndef BLACKLISTBALOOEMAILLISTTEST_H
-#define BLACKLISTBALOOEMAILLISTTEST_H
+#ifndef BLACKLISTINDEXEMAILSEARCHJOBTEST_H
+#define BLACKLISTINDEXEMAILSEARCHJOBTEST_H
 
 #include <QObject>
 
-class BlackListBalooEmailListTest : public QObject
+class BlackListIndexEmailSearchJobTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailListTest(QObject *parent = nullptr);
-    ~BlackListBalooEmailListTest();
+    explicit BlackListIndexEmailSearchJobTest(QObject *parent = nullptr);
+    ~BlackListIndexEmailSearchJobTest();
+
 private Q_SLOTS:
-    void shouldHaveDefaultValue();
-    void shouldFillListEmail();
-    void shouldFillListWithAlreadyBlackListedEmail();
-    void shouldReturnChangedItems();
-    void shouldNotAddDuplicateEmails();
-    void shouldExcludeDomain();
-    void shouldAvoidSameEmailWithDifferentCase();
-    void shouldAvoidSameEmailWithDisplayNameOrNot();
+    void shouldNotSearchWhenTextIsEmpty();
 };
 
-#endif // BLACKLISTBALOOEMAILLISTTEST_H
+#endif // BLACKLISTINDEXEMAILSEARCHJOBTEST_H

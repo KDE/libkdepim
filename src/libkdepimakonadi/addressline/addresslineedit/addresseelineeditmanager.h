@@ -35,7 +35,7 @@ class KMailCompletion;
 class AddresseeLineEdit;
 class AddresseeLineEditAkonadi;
 class AddresseeLineEditLdap;
-class AddresseeLineEditBaloo;
+class AddresseeLineEditIndex;
 class AddresseeLineEditManager
 {
 public:
@@ -97,9 +97,9 @@ public:
     void startLoadingLDAPEntries();
     void restartLdap(const QString &searchString, AddresseeLineEdit *addressLine);
 
-    //Baloo
-    int balooCompletionSource() const;
-    void setBalooCompletionSource(int value);
+    //Index
+    int indexCompletionSource() const;
+    void setIndexCompletionSource(int value);
 
     //Akonadi
     Akonadi::Session *akonadiSession() const;
@@ -110,9 +110,9 @@ public:
     void setAddressLineEdit(AddresseeLineEdit *addressLineEdit);
     bool isOnline() const;
 
-    void loadBalooBlackList();
+    void loadIndexBlackList();
     QStringList cleanupEmailList(const QStringList &inputList);
-    QStringList balooBlackList() const;
+    QStringList indexBlackList() const;
 
     bool showOU() const;
     void setShowOU(bool showOU);
@@ -129,7 +129,7 @@ private:
     KMailCompletion *mCompletion = nullptr;
     AddresseeLineEditAkonadi *mAddresseeLineEditAkonadi = nullptr;
     AddresseeLineEditLdap *mAddressessLineEditLdap = nullptr;
-    AddresseeLineEditBaloo *mAddressessLineEditBaloo = nullptr;
+    AddresseeLineEditIndex *mAddressessLineEditIndex = nullptr;
     QNetworkConfigurationManager *mNetworkConfigMgr = nullptr;
 };
 }

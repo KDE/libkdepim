@@ -18,13 +18,13 @@
 
 */
 
-#include "blacklistbalooemailwarning.h"
+#include "blacklistindexemailwarning.h"
 #include <KLocalizedString>
 #include <QAction>
 
 using namespace KPIM;
 
-BlackListBalooEmailWarning::BlackListBalooEmailWarning(QWidget *parent)
+BlackListIndexEmailWarning::BlackListIndexEmailWarning(QWidget *parent)
     : KMessageWidget(parent)
 {
     setVisible(false);
@@ -35,26 +35,26 @@ BlackListBalooEmailWarning::BlackListBalooEmailWarning(QWidget *parent)
     setText(i18n("The list was changed. Do you want to save before to make another search ?"));
     QAction *saveAction = new QAction(i18n("Save"), this);
     saveAction->setObjectName(QStringLiteral("saveblacklist"));
-    connect(saveAction, &QAction::triggered, this, &BlackListBalooEmailWarning::slotSaveBlackList);
+    connect(saveAction, &QAction::triggered, this, &BlackListIndexEmailWarning::slotSaveBlackList);
     addAction(saveAction);
 
     QAction *searchAction = new QAction(i18n("Search"), this);
     searchAction->setObjectName(QStringLiteral("search"));
-    connect(searchAction, &QAction::triggered, this, &BlackListBalooEmailWarning::slotSearch);
+    connect(searchAction, &QAction::triggered, this, &BlackListIndexEmailWarning::slotSearch);
     addAction(searchAction);
 }
 
-BlackListBalooEmailWarning::~BlackListBalooEmailWarning()
+BlackListIndexEmailWarning::~BlackListIndexEmailWarning()
 {
 }
 
-void BlackListBalooEmailWarning::slotSaveBlackList()
+void BlackListIndexEmailWarning::slotSaveBlackList()
 {
     animatedHide();
     Q_EMIT saveChanges();
 }
 
-void BlackListBalooEmailWarning::slotSearch()
+void BlackListIndexEmailWarning::slotSearch()
 {
     animatedHide();
     Q_EMIT newSearch();

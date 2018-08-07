@@ -68,8 +68,8 @@ public:
     QString searchString() const;
     void setSearchString(const QString &searchString);
 
-    bool enableBalooSearch() const;
-    void setEnableBalooSearch(bool enableBalooSearch);
+    bool enableIndexSearch() const;
+    void setEnableIndexSearch(bool enableIndexSearch);
 
     bool useSemicolonAsSeparator() const;
     void setUseSemicolonAsSeparator(bool useSemicolonAsSeparator);
@@ -80,7 +80,7 @@ public:
     void removeCompletionSource(const QString &source);
     int addCompletionSource(const QString &source, int weight);
     void restartTime(const QString &searchString);
-    void updateBalooBlackList();
+    void updateIndexBlackList();
     void updateCompletionOrder();
 
     KLDAP::LdapClientSearch *ldapSearch();
@@ -127,7 +127,7 @@ private Q_SLOTS:
     void slotAkonadiHandleItems(const Akonadi::Item::List &items);
     void slotAkonadiSearchResult(KJob *);
     void slotAkonadiCollectionsReceived(const Akonadi::Collection::List &);
-    void searchInBaloo();
+    void searchInIndex();
     void slotTriggerDelayedQueries();
 
 private:
@@ -145,7 +145,7 @@ private:
     bool mLastSearchMode = false;
     bool mSearchExtended = false; //has \" been added?
     bool mUseSemicolonAsSeparator = false;
-    bool mEnableBalooSearch = true;
+    bool mEnableIndexSearch = true;
     bool mEnableAkonadiSearch = true;
     bool mExpandIntern = true;
     bool mShowRecentAddresses = true;

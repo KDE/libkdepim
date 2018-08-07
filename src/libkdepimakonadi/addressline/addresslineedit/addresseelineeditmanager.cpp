@@ -17,7 +17,7 @@
 
 #include "addresseelineeditmanager.h"
 #include "addresseelineeditakonadi.h"
-#include "addresseelineeditbaloo.h"
+#include "addresseelineeditindex.h"
 #include "addresseelineeditldap.h"
 #include "kmailcompletion.h"
 
@@ -40,7 +40,7 @@ AddresseeLineEditManager::AddresseeLineEditManager()
     , mCompletion(new KMailCompletion)
     , mAddresseeLineEditAkonadi(new AddresseeLineEditAkonadi(this))
     , mAddressessLineEditLdap(new AddresseeLineEditLdap(this))
-    , mAddressessLineEditBaloo(new AddresseeLineEditBaloo(this))
+    , mAddressessLineEditIndex(new AddresseeLineEditIndex(this))
     , mNetworkConfigMgr(new QNetworkConfigurationManager(QCoreApplication::instance()))
 {
     KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");
@@ -54,7 +54,7 @@ AddresseeLineEditManager::~AddresseeLineEditManager()
 
     delete mAddresseeLineEditAkonadi;
     delete mAddressessLineEditLdap;
-    delete mAddressessLineEditBaloo;
+    delete mAddressessLineEditIndex;
 }
 
 AddresseeLineEditManager *AddresseeLineEditManager::self()
@@ -150,14 +150,14 @@ bool AddresseeLineEditManager::isLdapClientToCompletionSourceMapContains(int val
     return mAddressessLineEditLdap->isLdapClientToCompletionSourceMapContains(value);
 }
 
-int AddresseeLineEditManager::balooCompletionSource() const
+int AddresseeLineEditManager::indexCompletionSource() const
 {
-    return mAddressessLineEditBaloo->balooCompletionSource();
+    return mAddressessLineEditIndex->indexCompletionSource();
 }
 
-void AddresseeLineEditManager::setBalooCompletionSource(int value)
+void AddresseeLineEditManager::setIndexCompletionSource(int value)
 {
-    mAddressessLineEditBaloo->setBalooCompletionSource(value);
+    mAddressessLineEditIndex->setIndexCompletionSource(value);
 }
 
 void AddresseeLineEditManager::initializeLdap()
@@ -190,19 +190,19 @@ void AddresseeLineEditManager::restartLdap(const QString &searchString, Addresse
     mAddressessLineEditLdap->restartLdap(searchString, addressLine);
 }
 
-void AddresseeLineEditManager::loadBalooBlackList()
+void AddresseeLineEditManager::loadIndexBlackList()
 {
-    mAddressessLineEditBaloo->loadBalooBlackList();
+    mAddressessLineEditIndex->loadIndexBlackList();
 }
 
 QStringList AddresseeLineEditManager::cleanupEmailList(const QStringList &inputList)
 {
-    return mAddressessLineEditBaloo->cleanupEmailList(inputList);
+    return mAddressessLineEditIndex->cleanupEmailList(inputList);
 }
 
-QStringList AddresseeLineEditManager::balooBlackList() const
+QStringList AddresseeLineEditManager::indexBlackList() const
 {
-    return mAddressessLineEditBaloo->balooBlackList();
+    return mAddressessLineEditIndex->indexBlackList();
 }
 
 bool AddresseeLineEditManager::showOU() const

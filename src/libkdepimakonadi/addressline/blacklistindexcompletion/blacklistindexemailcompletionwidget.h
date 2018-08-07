@@ -18,8 +18,8 @@
 
 */
 
-#ifndef BLACKLISTBALOOEMAILCOMPLETIONWIDGET_H
-#define BLACKLISTBALOOEMAILCOMPLETIONWIDGET_H
+#ifndef BLACKLISTINDEXEMAILCOMPLETIONWIDGET_H
+#define BLACKLISTINDEXEMAILCOMPLETIONWIDGET_H
 
 #include <QWidget>
 #include "libkdepimakonadi_private_export.h"
@@ -28,14 +28,14 @@ class KLineEdit;
 class QLabel;
 class KListWidgetSearchLine;
 namespace KPIM {
-class BlackListBalooEmailList;
-class BlackListBalooEmailWarning;
-class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailCompletionWidget : public QWidget
+class BlackListIndexEmailList;
+class BlackListIndexEmailWarning;
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListIndexEmailCompletionWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailCompletionWidget(QWidget *parent = nullptr);
-    ~BlackListBalooEmailCompletionWidget();
+    explicit BlackListIndexEmailCompletionWidget(QWidget *parent = nullptr);
+    ~BlackListIndexEmailCompletionWidget();
 
     void save();
     void load();
@@ -56,16 +56,16 @@ private:
     QLabel *mNumberOfEmailsFound = nullptr;
     KLineEdit *mSearchLineEdit = nullptr;
     KLineEdit *mExcludeDomainLineEdit = nullptr;
-    BlackListBalooEmailList *mEmailList = nullptr;
+    BlackListIndexEmailList *mEmailList = nullptr;
     QPushButton *mSearchButton = nullptr;
     QPushButton *mSelectButton = nullptr;
     QPushButton *mUnselectButton = nullptr;
     QPushButton *mShowAllBlackListedEmails = nullptr;
     QLabel *mMoreResult = nullptr;
     KListWidgetSearchLine *mSearchInResultLineEdit = nullptr;
-    BlackListBalooEmailWarning *mBlackListWarning = nullptr;
+    BlackListIndexEmailWarning *mBlackListWarning = nullptr;
     int mLimit = 500;
 };
 }
 
-#endif // BLACKLISTBALOOEMAILCOMPLETIONWIDGET_H
+#endif // BLACKLISTINDEXEMAILCOMPLETIONWIDGET_H

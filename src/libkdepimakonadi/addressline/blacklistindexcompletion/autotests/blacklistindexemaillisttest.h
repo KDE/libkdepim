@@ -18,27 +18,26 @@
 
 */
 
-#ifndef BALOOCOMPLETIONEMAIL_H
-#define BALOOCOMPLETIONEMAIL_H
-#include <QStringList>
-#include "libkdepimakonadi_private_export.h"
-namespace KPIM {
-class LIBKDEPIMAKONADI_TESTS_EXPORT BalooCompletionEmail
+#ifndef BLACKLISTINDEXEMAILLISTTEST_H
+#define BLACKLISTINDEXEMAILLISTTEST_H
+
+#include <QObject>
+
+class BlackListIndexEmailListTest : public QObject
 {
+    Q_OBJECT
 public:
-    BalooCompletionEmail();
-    void setEmailList(const QStringList &lst);
-    void setExcludeDomain(const QStringList &lst);
-
-    void setBlackList(const QStringList &lst);
-
-    QStringList cleanupEmailList();
-private:
-    QString stripEmail(const QString &email, QString &address);
-    QStringList mListEmail;
-    QStringList mExcludeDomain;
-    QStringList mBlackList;
+    explicit BlackListIndexEmailListTest(QObject *parent = nullptr);
+    ~BlackListIndexEmailListTest();
+private Q_SLOTS:
+    void shouldHaveDefaultValue();
+    void shouldFillListEmail();
+    void shouldFillListWithAlreadyBlackListedEmail();
+    void shouldReturnChangedItems();
+    void shouldNotAddDuplicateEmails();
+    void shouldExcludeDomain();
+    void shouldAvoidSameEmailWithDifferentCase();
+    void shouldAvoidSameEmailWithDisplayNameOrNot();
 };
-}
 
-#endif // BALOOCOMPLETIONEMAIL_H
+#endif // BLACKLISTINDEXEMAILLISTTEST_H

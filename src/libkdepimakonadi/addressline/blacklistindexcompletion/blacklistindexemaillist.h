@@ -18,8 +18,8 @@
 
 */
 
-#ifndef BLACKLISTBALOOEMAILLIST_H
-#define BLACKLISTBALOOEMAILLIST_H
+#ifndef BLACKLISTINDEXEMAILLIST_H
+#define BLACKLISTINDEXEMAILLIST_H
 
 #include <QListWidget>
 #include <QListWidgetItem>
@@ -27,11 +27,11 @@
 #include "libkdepimakonadi_private_export.h"
 
 namespace KPIM {
-class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailListItem : public QListWidgetItem
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListIndexEmailListItem : public QListWidgetItem
 {
 public:
-    explicit BlackListBalooEmailListItem(QListWidget *parent = nullptr);
-    ~BlackListBalooEmailListItem();
+    explicit BlackListIndexEmailListItem(QListWidget *parent = nullptr);
+    ~BlackListIndexEmailListItem();
 
     Q_REQUIRED_RESULT bool initializeStatus() const;
     void setInitializeStatus(bool initializeStatus);
@@ -40,19 +40,19 @@ private:
     bool mInitializeStatus;
 };
 
-class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailList : public QListWidget
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListIndexEmailList : public QListWidget
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailList(QWidget *parent = nullptr);
-    ~BlackListBalooEmailList() override;
+    explicit BlackListIndexEmailList(QWidget *parent = nullptr);
+    ~BlackListIndexEmailList() override;
 
     void setEmailBlackList(const QStringList &list);
 
     Q_REQUIRED_RESULT QHash<QString, bool> blackListItemChanged() const;
 
     void setExcludeDomain(const QStringList &domain);
-    Q_REQUIRED_RESULT int setEmailFound(const QStringList &);
+    int setEmailFound(const QStringList &);
 protected:
     void paintEvent(QPaintEvent *event) override;
 
@@ -67,4 +67,4 @@ private:
 };
 }
 
-#endif // BLACKLISTBALOOEMAILLIST_H
+#endif // BLACKLISTINDEXEMAILLIST_H

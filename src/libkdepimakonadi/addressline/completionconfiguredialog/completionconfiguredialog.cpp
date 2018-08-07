@@ -27,7 +27,7 @@
 #include <KSharedConfig>
 #include <ldap/ldapclientsearch.h>
 #include <addressline/completionorder/completionorderwidget.h>
-#include <addressline/blacklistbaloocompletion/blacklistbalooemailcompletionwidget.h>
+#include <addressline/blacklistindexcompletion/blacklistindexemailcompletionwidget.h>
 #include <addressline/recentaddress/recentaddresswidget.h>
 
 using namespace KPIM;
@@ -41,7 +41,7 @@ public:
 
     QTabWidget *mTabWidget = nullptr;
     KPIM::CompletionOrderWidget *mCompletionOrderWidget = nullptr;
-    KPIM::BlackListBalooEmailCompletionWidget *mBlackListBalooWidget = nullptr;
+    KPIM::BlackListIndexEmailCompletionWidget *mBlackListIndexWidget = nullptr;
     KPIM::RecentAddressWidget *mRecentaddressWidget = nullptr;
 };
 
@@ -64,9 +64,9 @@ CompletionConfigureDialog::CompletionConfigureDialog(QWidget *parent)
     d->mRecentaddressWidget->setObjectName(QStringLiteral("recentaddress_widget"));
     d->mTabWidget->addTab(d->mRecentaddressWidget, i18n("Recent Address"));
 
-    d->mBlackListBalooWidget = new KPIM::BlackListBalooEmailCompletionWidget;
-    d->mBlackListBalooWidget->setObjectName(QStringLiteral("blacklistbaloo_widget"));
-    d->mTabWidget->addTab(d->mBlackListBalooWidget, i18n("Blacklist Email Address"));
+    d->mBlackListIndexWidget = new KPIM::BlackListIndexEmailCompletionWidget;
+    d->mBlackListIndexWidget->setObjectName(QStringLiteral("blacklistindex_widget"));
+    d->mTabWidget->addTab(d->mBlackListIndexWidget, i18n("Blacklist Email Address"));
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
@@ -111,7 +111,7 @@ void CompletionConfigureDialog::setLdapClientSearch(KLDAP::LdapClientSearch *lda
 void CompletionConfigureDialog::load()
 {
     d->mCompletionOrderWidget->loadCompletionItems();
-    d->mBlackListBalooWidget->load();
+    d->mBlackListIndexWidget->load();
 }
 
 bool CompletionConfigureDialog::recentAddressWasChanged() const
@@ -126,12 +126,12 @@ void CompletionConfigureDialog::storeAddresses(KConfig *config)
 
 void CompletionConfigureDialog::slotSave()
 {
-    d->mBlackListBalooWidget->save();
+    d->mBlackListIndexWidget->save();
     d->mCompletionOrderWidget->save();
     accept();
 }
 
 void CompletionConfigureDialog::setEmailBlackList(const QStringList &lst)
 {
-    d->mBlackListBalooWidget->setEmailBlackList(lst);
+    d->mBlackListIndexWidget->setEmailBlackList(lst);
 }

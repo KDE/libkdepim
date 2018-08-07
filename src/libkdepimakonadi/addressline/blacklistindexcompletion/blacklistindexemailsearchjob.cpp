@@ -18,22 +18,23 @@
 
 */
 
-#include "blacklistbalooemailsearchjob.h"
+#include "blacklistindexemailsearchjob.h"
 
-#include <AkonadiSearch/PIM/contactcompleter.h>
+#include <AkonadiSearch/ContactCompleter>
+
 using namespace KPIM;
 
-BlackListBalooEmailSearchJob::BlackListBalooEmailSearchJob(QObject *parent)
+BlackListIndexEmailSearchJob::BlackListIndexEmailSearchJob(QObject *parent)
     : QObject(parent)
     , mLimit(500)
 {
 }
 
-BlackListBalooEmailSearchJob::~BlackListBalooEmailSearchJob()
+BlackListIndexEmailSearchJob::~BlackListIndexEmailSearchJob()
 {
 }
 
-bool BlackListBalooEmailSearchJob::start()
+bool BlackListIndexEmailSearchJob::start()
 {
     const QString trimmedString = mSearchEmail.trimmed();
     if (trimmedString.isEmpty()) {
@@ -41,18 +42,22 @@ bool BlackListBalooEmailSearchJob::start()
         return false;
     }
 
-    Akonadi::Search::PIM::ContactCompleter com(trimmedString, mLimit);
-    Q_EMIT emailsFound(com.complete());
-    deleteLater();
+    auto completer = new Akonadi::Search::ContactCompleter(trimmedString, mLimit);
+    connect(completer, &Akonadi::Search::ContactCompleter::finished,
+            this, [this](const QStringList &results) {
+                Q_EMIT emailsFound(results);
+                deleteLater();
+            });
+    completer->start();
     return true;
 }
 
-void BlackListBalooEmailSearchJob::setSearchEmail(const QString &searchEmail)
+void BlackListIndexEmailSearchJob::setSearchEmail(const QString &searchEmail)
 {
     mSearchEmail = searchEmail;
 }
 
-void BlackListBalooEmailSearchJob::setLimit(int limit)
+void BlackListIndexEmailSearchJob::setLimit(int limit)
 {
     mLimit = qMax(10, limit);
 }

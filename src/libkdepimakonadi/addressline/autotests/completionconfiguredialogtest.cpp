@@ -53,7 +53,7 @@ void CompletionConfigureDialogTest::shouldHaveDefaultValue()
         const QString objName = tabWidget->widget(i)->objectName();
         const bool hasName = (objName == QLatin1String("completionorder_widget"))
                              || (objName == QLatin1String("recentaddress_widget"))
-                             || (objName == QLatin1String("blacklistbaloo_widget"));
+                             || (objName == QLatin1String("blacklistindex_widget"));
         QVERIFY(hasName);
     }
 }

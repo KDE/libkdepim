@@ -18,35 +18,35 @@
 
 */
 
-#include "blacklistbalooemailutiltest.h"
-#include "../blacklistbalooemailutil.h"
+#include "blacklistindexemailutiltest.h"
+#include "../blacklistindexemailutil.h"
 #include <qtest.h>
-BlackListBalooEmailUtilTest::BlackListBalooEmailUtilTest(QObject *parent)
+BlackListIndexEmailUtilTest::BlackListIndexEmailUtilTest(QObject *parent)
     : QObject(parent)
 {
 }
 
-BlackListBalooEmailUtilTest::~BlackListBalooEmailUtilTest()
+BlackListIndexEmailUtilTest::~BlackListIndexEmailUtilTest()
 {
 }
 
-void BlackListBalooEmailUtilTest::shouldReturnEmptyResult()
+void BlackListIndexEmailUtilTest::shouldReturnEmptyResult()
 {
-    KPIM::BlackListBalooEmailUtil util;
+    KPIM::BlackListIndexEmailUtil util;
     QVERIFY(util.createNewBlackList().isEmpty());
 }
 
-void BlackListBalooEmailUtilTest::shouldDontChangeWhenNotChanged()
+void BlackListIndexEmailUtilTest::shouldDontChangeWhenNotChanged()
 {
-    KPIM::BlackListBalooEmailUtil util;
+    KPIM::BlackListIndexEmailUtil util;
     const QStringList lst = QStringList() << QStringLiteral("foo") << QStringLiteral("foo1") << QStringLiteral("foo2");
     util.initialBlackList(lst);
     QCOMPARE(util.createNewBlackList(), lst);
 }
 
-void BlackListBalooEmailUtilTest::shouldCreateNewList()
+void BlackListIndexEmailUtilTest::shouldCreateNewList()
 {
-    KPIM::BlackListBalooEmailUtil util;
+    KPIM::BlackListIndexEmailUtil util;
     const QStringList lst = QStringList() << QStringLiteral("foo") << QStringLiteral("foo1") << QStringLiteral("foo2");
     util.initialBlackList(lst);
     QHash<QString, bool> newList;
@@ -55,9 +55,9 @@ void BlackListBalooEmailUtilTest::shouldCreateNewList()
     QCOMPARE(util.createNewBlackList(), QStringList() << QStringLiteral("foo1") << QStringLiteral("foo2"));
 }
 
-void BlackListBalooEmailUtilTest::shouldAddNewElements()
+void BlackListIndexEmailUtilTest::shouldAddNewElements()
 {
-    KPIM::BlackListBalooEmailUtil util;
+    KPIM::BlackListIndexEmailUtil util;
     QHash<QString, bool> newList;
     newList.insert(QStringLiteral("foo"), false);
     newList.insert(QStringLiteral("foo1"), false);
@@ -73,4 +73,4 @@ void BlackListBalooEmailUtilTest::shouldAddNewElements()
     QCOMPARE(util.createNewBlackList().count(), 3);
 }
 
-QTEST_MAIN(BlackListBalooEmailUtilTest)
+QTEST_MAIN(BlackListIndexEmailUtilTest)

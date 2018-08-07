@@ -17,23 +17,23 @@
   02110-1301, USA.
 
 */
+#include "blacklistindexemailsearchjobtest.h"
+#include "../blacklistindexemailsearchjob.h"
+#include <qtest.h>
 
-#ifndef BLACKLISTBALOOEMAILWARNINGTEST_H
-#define BLACKLISTBALOOEMAILWARNINGTEST_H
-
-#include <QObject>
-
-class BlackListBalooEmailWarningTest : public QObject
+BlackListIndexEmailSearchJobTest::BlackListIndexEmailSearchJobTest(QObject *parent)
+    : QObject(parent)
 {
-    Q_OBJECT
-public:
-    explicit BlackListBalooEmailWarningTest(QObject *parent = nullptr);
-    ~BlackListBalooEmailWarningTest();
+}
 
-private Q_SLOTS:
-    void shouldHaveDefaultValue();
-    void shouldEmitSaveChanges();
-    void shouldEmitNewSearch();
-};
+BlackListIndexEmailSearchJobTest::~BlackListIndexEmailSearchJobTest()
+{
+}
 
-#endif // BLACKLISTBALOOEMAILWARNINGTEST_H
+void BlackListIndexEmailSearchJobTest::shouldNotSearchWhenTextIsEmpty()
+{
+    KPIM::BlackListIndexEmailSearchJob *job = new KPIM::BlackListIndexEmailSearchJob;
+    QVERIFY(!job->start());
+}
+
+QTEST_MAIN(BlackListIndexEmailSearchJobTest)

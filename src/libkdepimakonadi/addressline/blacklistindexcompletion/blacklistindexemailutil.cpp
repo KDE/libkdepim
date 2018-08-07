@@ -18,28 +18,28 @@
 
 */
 
-#include "blacklistbalooemailutil.h"
+#include "blacklistindexemailutil.h"
 
 using namespace KPIM;
-BlackListBalooEmailUtil::BlackListBalooEmailUtil()
+BlackListIndexEmailUtil::BlackListIndexEmailUtil()
 {
 }
 
-BlackListBalooEmailUtil::~BlackListBalooEmailUtil()
+BlackListIndexEmailUtil::~BlackListIndexEmailUtil()
 {
 }
 
-void BlackListBalooEmailUtil::initialBlackList(const QStringList &blackList)
+void BlackListIndexEmailUtil::initialBlackList(const QStringList &blackList)
 {
     mInitialList = blackList;
 }
 
-void BlackListBalooEmailUtil::newBlackList(const QHash<QString, bool> &list)
+void BlackListIndexEmailUtil::newBlackList(const QHash<QString, bool> &list)
 {
     mNewBlackList = list;
 }
 
-QStringList BlackListBalooEmailUtil::createNewBlackList()
+QStringList BlackListIndexEmailUtil::createNewBlackList()
 {
     if (mNewBlackList.isEmpty()) {
         return mInitialList;

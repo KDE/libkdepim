@@ -18,19 +18,19 @@
 
 */
 
-#ifndef BLACKLISTBALOOEMAILWARNING_H
-#define BLACKLISTBALOOEMAILWARNING_H
+#ifndef BLACKLISTINDEXEMAILWARNING_H
+#define BLACKLISTINDEXEMAILWARNING_H
 
 #include <KMessageWidget>
 #include "libkdepimakonadi_private_export.h"
 
 namespace KPIM {
-class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailWarning : public KMessageWidget
+class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListIndexEmailWarning : public KMessageWidget
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailWarning(QWidget *parent = nullptr);
-    ~BlackListBalooEmailWarning();
+    explicit BlackListIndexEmailWarning(QWidget *parent = nullptr);
+    ~BlackListIndexEmailWarning();
 
 Q_SIGNALS:
     void newSearch();
@@ -41,4 +41,4 @@ private:
     void slotSearch();
 };
 }
-#endif // BLACKLISTBALOOEMAILWARNING_H
+#endif // BLACKLISTINDEXEMAILWARNING_H

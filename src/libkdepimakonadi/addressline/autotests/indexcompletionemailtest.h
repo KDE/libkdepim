@@ -18,17 +18,17 @@
 
 */
 
-#ifndef BALOOCOMPLETIONEMAILTEST_H
-#define BALOOCOMPLETIONEMAILTEST_H
+#ifndef INDEXCOMPLETIONEMAILTEST_H
+#define INDEXCOMPLETIONEMAILTEST_H
 
 #include <QObject>
 
-class BalooCompletionEmailTest : public QObject
+class IndexCompletionEmailTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit BalooCompletionEmailTest(QObject *parent = nullptr);
-    ~BalooCompletionEmailTest();
+    explicit IndexCompletionEmailTest(QObject *parent = nullptr);
+    ~IndexCompletionEmailTest();
 
 private Q_SLOTS:
     void returnEmptyListWhenEmailListIsEmpty();
@@ -45,4 +45,4 @@ private Q_SLOTS:
     void shouldExcludeEmptyNameWithDisplayNameForSameAddress();
 };
 
-#endif // BALOOCOMPLETIONEMAILTEST_H
+#endif // INDEXCOMPLETIONEMAILTEST_H

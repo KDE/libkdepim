@@ -17,58 +17,58 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "addresseelineeditbaloo.h"
-#include "baloocompletionemail.h"
+#include "addresseelineeditindex.h"
+#include "indexcompletionemail.h"
 #include <KConfigGroup>
 #include <KSharedConfig>
 
 using namespace KPIM;
 
-AddresseeLineEditBaloo::AddresseeLineEditBaloo(AddresseeLineEditManager *addressLineStatic)
-    : mBalooCompletionSource(0)
+AddresseeLineEditIndex::AddresseeLineEditIndex(AddresseeLineEditManager *addressLineStatic)
+    : mIndexCompletionSource(0)
     , mAddressLineStatic(addressLineStatic)
 {
-    loadBalooBlackList();
+    loadIndexBlackList();
 }
 
-AddresseeLineEditBaloo::~AddresseeLineEditBaloo()
+AddresseeLineEditIndex::~AddresseeLineEditIndex()
 {
 }
 
-int AddresseeLineEditBaloo::balooCompletionSource() const
+int AddresseeLineEditIndex::indexCompletionSource() const
 {
-    return mBalooCompletionSource;
+    return mIndexCompletionSource;
 }
 
-void AddresseeLineEditBaloo::setBalooCompletionSource(int value)
+void AddresseeLineEditIndex::setIndexCompletionSource(int value)
 {
-    mBalooCompletionSource = value;
+    mIndexCompletionSource = value;
 }
 
-QStringList AddresseeLineEditBaloo::balooBlackList() const
+QStringList AddresseeLineEditIndex::indexBlackList() const
 {
-    return mBalooBlackList;
+    return mIndexBlackList;
 }
 
-QStringList AddresseeLineEditBaloo::domainExcludeList() const
+QStringList AddresseeLineEditIndex::domainExcludeList() const
 {
     return mDomainExcludeList;
 }
 
-void AddresseeLineEditBaloo::loadBalooBlackList()
+void AddresseeLineEditIndex::loadIndexBlackList()
 {
     KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kpimbalooblacklist"));
     config->reparseConfiguration();
     KConfigGroup group(config, "AddressLineEdit");
-    mBalooBlackList = group.readEntry("BalooBackList", QStringList());
+    mIndexBlackList = group.readEntry("BalooBackList", QStringList());
     mDomainExcludeList = group.readEntry("ExcludeDomain", QStringList());
 }
 
-QStringList AddresseeLineEditBaloo::cleanupEmailList(const QStringList &inputList)
+QStringList AddresseeLineEditIndex::cleanupEmailList(const QStringList &inputList)
 {
-    KPIM::BalooCompletionEmail completionEmail;
+    KPIM::IndexCompletionEmail completionEmail;
     completionEmail.setEmailList(inputList);
-    completionEmail.setBlackList(mBalooBlackList);
+    completionEmail.setBlackList(mIndexBlackList);
     completionEmail.setExcludeDomain(mDomainExcludeList);
     return completionEmail.cleanupEmailList();
 }

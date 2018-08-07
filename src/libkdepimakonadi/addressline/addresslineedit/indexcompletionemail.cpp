@@ -18,33 +18,33 @@
 
 */
 
-#include "baloocompletionemail.h"
+#include "indexcompletionemail.h"
 #include <QMap>
 #include <KEmailAddress>
 #include "libkdepimakonadi_debug.h"
 
 using namespace KPIM;
 
-BalooCompletionEmail::BalooCompletionEmail()
+IndexCompletionEmail::IndexCompletionEmail()
 {
 }
 
-void BalooCompletionEmail::setEmailList(const QStringList &lst)
+void IndexCompletionEmail::setEmailList(const QStringList &lst)
 {
     mListEmail = lst;
 }
 
-void BalooCompletionEmail::setExcludeDomain(const QStringList &lst)
+void IndexCompletionEmail::setExcludeDomain(const QStringList &lst)
 {
     mExcludeDomain = lst;
 }
 
-void BalooCompletionEmail::setBlackList(const QStringList &lst)
+void IndexCompletionEmail::setBlackList(const QStringList &lst)
 {
     mBlackList = lst;
 }
 
-QStringList BalooCompletionEmail::cleanupEmailList()
+QStringList IndexCompletionEmail::cleanupEmailList()
 {
     if (mListEmail.isEmpty()) {
         return mListEmail;
@@ -84,7 +84,7 @@ QStringList BalooCompletionEmail::cleanupEmailList()
  * but "\"'a" <a@example.com> -> "\"'a" <a@example.com>
  * cause the start and end is not the same.
  */
-QString BalooCompletionEmail::stripEmail(const QString &email, QString &address)
+QString IndexCompletionEmail::stripEmail(const QString &email, QString &address)
 {
     QString displayName, addrSpec, comment;
     if (KEmailAddress::AddressOk == KEmailAddress::splitAddress(email, displayName, addrSpec, comment)) {

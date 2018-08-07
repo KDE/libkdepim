@@ -18,33 +18,22 @@
 
 */
 
-#ifndef BLACKLISTBALOOEMAILSEARCHJOB_H
-#define BLACKLISTBALOOEMAILSEARCHJOB_H
+#ifndef BLACKLISTINDEXEMAILUTILTEST_H
+#define BLACKLISTINDEXEMAILUTILTEST_H
 
 #include <QObject>
 
-#include "libkdepimakonadi_private_export.h"
-namespace KPIM {
-class LIBKDEPIMAKONADI_TESTS_EXPORT BlackListBalooEmailSearchJob : public QObject
+class BlackListIndexEmailUtilTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit BlackListBalooEmailSearchJob(QObject *parent = nullptr);
-    ~BlackListBalooEmailSearchJob();
-
-    Q_REQUIRED_RESULT bool start();
-
-    void setSearchEmail(const QString &searchEmail);
-
-    void setLimit(int limit);
-
-Q_SIGNALS:
-    void emailsFound(const QStringList &list);
-
-private:
-    QString mSearchEmail;
-    int mLimit = 500;
+    explicit BlackListIndexEmailUtilTest(QObject *parent = nullptr);
+    ~BlackListIndexEmailUtilTest();
+private Q_SLOTS:
+    void shouldReturnEmptyResult();
+    void shouldDontChangeWhenNotChanged();
+    void shouldCreateNewList();
+    void shouldAddNewElements();
 };
-}
 
-#endif // BLACKLISTBALOOEMAILSEARCHJOB_H
+#endif // BLACKLISTINDEXEMAILUTILTEST_H

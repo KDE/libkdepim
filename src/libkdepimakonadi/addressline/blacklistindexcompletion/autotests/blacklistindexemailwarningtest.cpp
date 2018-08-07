@@ -18,24 +18,24 @@
 
 */
 
-#include "blacklistbalooemailwarningtest.h"
-#include "../blacklistbalooemailwarning.h"
+#include "blacklistindexemailwarningtest.h"
+#include "../blacklistindexemailwarning.h"
 #include <QTest>
 #include <QSignalSpy>
 #include <QAction>
 
-BlackListBalooEmailWarningTest::BlackListBalooEmailWarningTest(QObject *parent)
+BlackListIndexEmailWarningTest::BlackListIndexEmailWarningTest(QObject *parent)
     : QObject(parent)
 {
 }
 
-BlackListBalooEmailWarningTest::~BlackListBalooEmailWarningTest()
+BlackListIndexEmailWarningTest::~BlackListIndexEmailWarningTest()
 {
 }
 
-void BlackListBalooEmailWarningTest::shouldHaveDefaultValue()
+void BlackListIndexEmailWarningTest::shouldHaveDefaultValue()
 {
-    KPIM::BlackListBalooEmailWarning warning;
+    KPIM::BlackListIndexEmailWarning warning;
     QVERIFY(!warning.isVisible());
     QVERIFY(!warning.isCloseButtonVisible());
     QVERIFY(warning.wordWrap());
@@ -47,9 +47,9 @@ void BlackListBalooEmailWarningTest::shouldHaveDefaultValue()
     QVERIFY(search);
 }
 
-void BlackListBalooEmailWarningTest::shouldEmitSaveChanges()
+void BlackListIndexEmailWarningTest::shouldEmitSaveChanges()
 {
-    KPIM::BlackListBalooEmailWarning warning;
+    KPIM::BlackListIndexEmailWarning warning;
     QSignalSpy spy1(&warning, SIGNAL(saveChanges()));
 
     QAction *save = warning.findChild<QAction *>(QStringLiteral("saveblacklist"));
@@ -57,9 +57,9 @@ void BlackListBalooEmailWarningTest::shouldEmitSaveChanges()
     QCOMPARE(spy1.count(), 1);
 }
 
-void BlackListBalooEmailWarningTest::shouldEmitNewSearch()
+void BlackListIndexEmailWarningTest::shouldEmitNewSearch()
 {
-    KPIM::BlackListBalooEmailWarning warning;
+    KPIM::BlackListIndexEmailWarning warning;
     QSignalSpy spy1(&warning, SIGNAL(newSearch()));
 
     QAction *search = warning.findChild<QAction *>(QStringLiteral("search"));
@@ -67,4 +67,4 @@ void BlackListBalooEmailWarningTest::shouldEmitNewSearch()
     QCOMPARE(spy1.count(), 1);
 }
 
-QTEST_MAIN(BlackListBalooEmailWarningTest)
+QTEST_MAIN(BlackListIndexEmailWarningTest)

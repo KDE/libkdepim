@@ -82,8 +82,8 @@ public:
      */
     void setFont(const QFont &font);
 
-    void setEnableBalooSearch(bool enable);
-    Q_REQUIRED_RESULT bool enableBalooSearch() const;
+    void setEnableIndexSearch(bool enable);
+    Q_REQUIRED_RESULT bool enableIndexSearch() const;
 
     void setEnableAkonadiSearch(bool enable);
     Q_REQUIRED_RESULT bool enableAkonadiSearch() const;
@@ -125,7 +125,7 @@ public:
     void callSetCompletedText(const QString &text);
     void callSetUserSelection(bool);
 
-    void updateBalooBlackList();
+    void updateIndexBlackList();
     void updateCompletionOrder();
     Q_REQUIRED_RESULT KLDAP::LdapClientSearch *ldapSearch() const;
 
