@@ -26,8 +26,9 @@
 #include <AkonadiCore/CollectionModifyJob>
 #include <AkonadiCore/CollectionFetchJob>
 #include <AkonadiCore/CollectionFetchScope>
-#include <AkonadiSearch/PIM/collectionquery.h>
+#include <AkonadiCore/SearchQuery>
 #include <AkonadiCore/collectionidentificationattribute.h>
+#include <AkonadiSearch/SearchRunner>
 
 using namespace KPIM;
 
@@ -75,33 +76,39 @@ bool PersonSearchJob::kill(KJob::KillVerbosity verbosity)
 
 void PersonSearchJob::start()
 {
-    Akonadi::Search::PIM::CollectionQuery query;
-    query.setNamespace(QStringList() << QStringLiteral("usertoplevel"));
-    query.nameMatches(d->mSearchString);
-    query.setLimit(200);
-    Akonadi::Search::PIM::ResultIterator it = query.exec();
-    Akonadi::Collection::List collections;
-    while (it.next()) {
-        collections << Akonadi::Collection(it.id());
-    }
-    qCDebug(LIBKDEPIMAKONADI_LOG) << "Found persons " << collections.size();
+    Akonadi::SearchQuery query;
+    query.addTerm(Akonadi::CollectionSearchTerm::hasNamespaces({ QStringLiteral("usertoplevel") }));
+    query.addTerm(Akonadi::CollectionSearchTerm::nameMatches(d->mSearchString));
+
+    auto searchRunner = new Akonadi::Search::SearchRunner(query, Akonadi::Collection::mimeType(), this);
+    searchRunner->setLimit(200);
+    connect(searchRunner, &Akonadi::Search::SearchRunner::finished,
+            this, [this](Akonadi::Search::ResultIterator iter) {
+                Akonadi::Collection::List collections;
+                while (iter.next()) {
+                    collections.push_back(Akonadi::Collection(iter.id()));
+                }
+                qCDebug(LIBKDEPIMAKONADI_LOG) << "Found persons" << collections.size();
+
+                if (collections.isEmpty()) {
+                    d->mCollectionSearchDone = true;
+                    if (d->mLdapSearchDone) {
+                        emitResult();
+                    }
+                } else {
+                    Akonadi::CollectionFetchJob *fetchJob = new Akonadi::CollectionFetchJob(collections, Akonadi::CollectionFetchJob::Base, this);
+                    fetchJob->fetchScope().setAncestorRetrieval(Akonadi::CollectionFetchScope::All);
+                    fetchJob->fetchScope().setListFilter(Akonadi::CollectionFetchScope::NoFilter);
+                    connect(fetchJob, &Akonadi::CollectionFetchJob::collectionsReceived, this, &PersonSearchJob::onCollectionsReceived);
+                    connect(fetchJob, &Akonadi::CollectionFetchJob::result, this, &PersonSearchJob::onCollectionsFetched);
+                }
+            });
 
     d->mCollectionSearchDone = false;
+    searchRunner->start();
+
     d->mLdapSearchDone = false;
-    if (collections.isEmpty()) {
-        //We didn't find anything
-        d->mCollectionSearchDone = true;
-    }
-
     d->mLdapSearch.startSearch(QStringLiteral("*") + d->mSearchString);
-
-    if (!collections.isEmpty()) {
-        Akonadi::CollectionFetchJob *fetchJob = new Akonadi::CollectionFetchJob(collections, Akonadi::CollectionFetchJob::Base, this);
-        fetchJob->fetchScope().setAncestorRetrieval(Akonadi::CollectionFetchScope::All);
-        fetchJob->fetchScope().setListFilter(Akonadi::CollectionFetchScope::NoFilter);
-        connect(fetchJob, &Akonadi::CollectionFetchJob::collectionsReceived, this, &PersonSearchJob::onCollectionsReceived);
-        connect(fetchJob, &Akonadi::CollectionFetchJob::result, this, &PersonSearchJob::onCollectionsFetched);
-    }
 
     //The IMAP resource should add a "Person" attribute to the collections in the person namespace,
     //the ldap query can then be used to update the name (entitydisplayattribute) for the person.

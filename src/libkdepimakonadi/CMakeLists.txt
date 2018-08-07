@@ -96,7 +96,7 @@ target_link_libraries(KF5LibkdepimAkonadi
     KF5::Codecs
     KF5::I18n
     KF5::ItemViews
-    KF5::AkonadiSearchPIM
+    KF5::AkonadiSearch
     KF5::KIOCore
     KF5::KIOWidgets
     Qt5::DBus

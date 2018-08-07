@@ -24,7 +24,8 @@ without including the source code for Qt in the source distribution.
 
 #include <AkonadiCore/CollectionFetchJob>
 #include <AkonadiCore/CollectionFetchScope>
-#include <AkonadiSearch/PIM/collectionquery.h>
+#include <AkonadiCore/SearchQuery>
+#include <AkonadiSearch/SearchRunner>
 
 using namespace KPIM;
 class KPIM::CollectionSearchJobPrivate
@@ -55,35 +56,37 @@ CollectionSearchJob::~CollectionSearchJob()
 
 void CollectionSearchJob::start()
 {
-    Akonadi::Search::PIM::CollectionQuery query;
+    Akonadi::SearchQuery query;
     if (d->mSearchString == QLatin1String("*")) {
-        query.setNamespace(QStringList() << QStringLiteral(""));
+        query.addTerm(Akonadi::CollectionSearchTerm::hasNamespaces({ QStringLiteral("") }));
     } else {
-        //We exclude the other users namespace
-        query.setNamespace(QStringList() << QStringLiteral("shared") << QStringLiteral(""));
-        query.pathMatches(d->mSearchString);
+        query.addTerm(Akonadi::CollectionSearchTerm::hasNamespaces({ QStringLiteral("shared"), QStringLiteral("") }));
+        query.addTerm(Akonadi::CollectionSearchTerm::nameMatches(d->mSearchString));
     }
-    query.setMimetype(d->mMimeTypeFilter);
-    query.setLimit(200);
-    Akonadi::Search::PIM::ResultIterator it = query.exec();
-    Akonadi::Collection::List collections;
-    while (it.next()) {
-        collections << Akonadi::Collection(it.id());
-    }
-    qCDebug(LIBKDEPIMAKONADI_LOG) << "Found collections " << collections.size();
+    query.addTerm(Akonadi::CollectionSearchTerm::hasMimeTypes(d->mMimeTypeFilter));
 
-    if (collections.isEmpty()) {
-        //We didn't find anything
-        emitResult();
-        return;
-    }
+    auto runner = new Akonadi::Search::SearchRunner(query, Akonadi::Collection::mimeType(), this);
+    runner->setLimit(200);
+    connect(runner, &Akonadi::Search::SearchRunner::finished,
+            this, [this](Akonadi::Search::ResultIterator iter) {
+                Akonadi::Collection::List cols;
+                while (iter.next()) {
+                    cols.push_back(Akonadi::Collection(iter.id()));
+                }
+                qCDebug(LIBKDEPIMAKONADI_LOG) << "Found collections " << cols.size();
+                if (cols.isEmpty()) {
+                    emitResult();
+                    return;
+                }
 
-    Akonadi::CollectionFetchJob *fetchJob = new Akonadi::CollectionFetchJob(collections, Akonadi::CollectionFetchJob::Base, this);
-    fetchJob->fetchScope().setAncestorRetrieval(Akonadi::CollectionFetchScope::All);
-    fetchJob->fetchScope().setListFilter(Akonadi::CollectionFetchScope::NoFilter);
-    fetchJob->fetchScope().setIgnoreRetrievalErrors(true);
-    connect(fetchJob, &Akonadi::CollectionFetchJob::collectionsReceived, this, &CollectionSearchJob::onCollectionsReceived);
-    connect(fetchJob, &Akonadi::CollectionFetchJob::result, this, &CollectionSearchJob::onCollectionsFetched);
+                Akonadi::CollectionFetchJob *fetchJob = new Akonadi::CollectionFetchJob(cols, Akonadi::CollectionFetchJob::Base, this);
+                fetchJob->fetchScope().setAncestorRetrieval(Akonadi::CollectionFetchScope::All);
+                fetchJob->fetchScope().setListFilter(Akonadi::CollectionFetchScope::NoFilter);
+                fetchJob->fetchScope().setIgnoreRetrievalErrors(true);
+                connect(fetchJob, &Akonadi::CollectionFetchJob::collectionsReceived, this, &CollectionSearchJob::onCollectionsReceived);
+                connect(fetchJob, &Akonadi::CollectionFetchJob::result, this, &CollectionSearchJob::onCollectionsFetched);
+            });
+    runner->start();
 }
 
 void CollectionSearchJob::onCollectionsReceived(const Akonadi::Collection::List &list)
