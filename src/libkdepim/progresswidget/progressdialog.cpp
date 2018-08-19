@@ -427,8 +427,9 @@ void ProgressDialog::slotToggleVisibility()
     * the statusbarwidget should not display the dialog, because there
     * are no items to be shown anymore. Guard against that.
     */
-    mWasLastShown = isHidden();
     if (!isHidden() || !mTransactionsToListviewItems.isEmpty()) {
-        setVisible(isHidden());
+        const bool showNow = isHidden();
+        setVisible(showNow);
+        mWasLastShown = showNow;
     }
 }
