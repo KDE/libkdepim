@@ -311,9 +311,9 @@ void StatusbarProgressWidget::updateProgressButton()
 
 void StatusbarProgressWidget::slotProgressButtonClicked()
 {
-    mShowDetailedProgress = !mShowDetailedProgress;
-    updateProgressButton();
     mProgressDialog->slotToggleVisibility();
+    mShowDetailedProgress = !mProgressDialog->isHidden();
+    updateProgressButton();
     setFixedWidth(qMax(600, mProgressDialog->width()));
 }
 
