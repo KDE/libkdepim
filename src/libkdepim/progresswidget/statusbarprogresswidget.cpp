@@ -245,19 +245,13 @@ void StatusbarProgressWidget::setMode()
 {
     switch (mMode) {
     case Clean:
-    case None:
         if (mShowButton) {
-            if (mMode == Clean) {
-                mButton->hide();
-            } else {
-                mButton->show();
-            }
+            mButton->hide();
         }
         mSslLabel->setState(SSLLabel::Done);
         // show the empty label in order to make the status bar look better
         mStackedWidget->show();
         mStackedWidget->setCurrentWidget(mLabel);
-        mMode = None;
         break;
     case Progress:
         mStackedWidget->show();
