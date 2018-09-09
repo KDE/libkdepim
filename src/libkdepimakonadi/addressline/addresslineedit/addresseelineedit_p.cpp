@@ -15,9 +15,9 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+#include "addresseelineedit_p.h"
 #include "addressline/completionorder/completionordereditor.h"
 #include "addresseelineeditmanager.h"
-#include "addresseelineedit_p.h"
 #include "addresseelineedit.h"
 #include "kmailcompletion.h"
 #include "libkdepimakonadi_debug.h"

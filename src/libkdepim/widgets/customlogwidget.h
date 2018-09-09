@@ -16,8 +16,8 @@
    the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
    Boston, MA 02110-1301, USA.
 */
-#ifndef IMPORTLOGWIDGET_H
-#define IMPORTLOGWIDGET_H
+#ifndef CUSTOMLOGWIDGET_H
+#define CUSTOMLOGWIDGET_H
 
 #include "kdepim_export.h"
 #include <QStyledItemDelegate>
@@ -70,4 +70,4 @@ private:
 };
 }
 
-#endif /* IMPORTLOGWIDGET_H */
+#endif /* CUSTOMLOGWIDGET_H */

@@ -22,8 +22,8 @@
     02110-1301, USA.
 */
 
-#ifndef MULTIPLYINGLINEEDITOR_P_H
-#define MULTIPLYINGLINEEDITOR_P_H
+#ifndef MULTIPLYINGLINEVIEW_P_H
+#define MULTIPLYINGLINEVIEW_P_H
 
 #include "multiplyingline.h"
 #include "multiplyinglineeditor.h"
@@ -136,4 +136,4 @@ private:
 };
 }
 
-#endif //MULTIPLYINGLINEEDITOR_P_H
+#endif //MULTIPLYINGLINEVIEW_P_H

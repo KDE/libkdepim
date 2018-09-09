@@ -15,8 +15,8 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef ADDRESSEELINEEDITSTATIC_H
-#define ADDRESSEELINEEDITSTATIC_H
+#ifndef ADDRESSEELINEEDITMANAGER_H
+#define ADDRESSEELINEEDITMANAGER_H
 
 #include <QMap>
 #include <AkonadiCore/Collection>
@@ -133,4 +133,4 @@ private:
     QNetworkConfigurationManager *mNetworkConfigMgr = nullptr;
 };
 }
-#endif // ADDRESSEELINEEDITSTATIC_H
+#endif // ADDRESSEELINEEDITMANAGER_H
