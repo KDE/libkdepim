@@ -20,7 +20,7 @@ include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
-include(ECMCoverageOption)
+
 
 set(LIBKDEPIM_LIB_VERSION ${PIM_VERSION})
 set(AKONADICONTACT_LIB_VERSION "5.9.40")
