@@ -136,7 +136,7 @@ void BalooCompletionEmailTest::shouldReturnEmailListWhenDomainListIsNotNull()
     emailList << QStringLiteral("foo6@kde.org");
     emailList.sort();
     completion.setEmailList(emailList);
-    completion.setExcludeDomain(QStringList() << QStringLiteral(""));
+    completion.setExcludeDomain(QStringList() << QString());
     QCOMPARE(completion.cleanupEmailList(), emailList);
 }
 
