@@ -48,10 +48,10 @@ class Q_DECL_HIDDEN AddEmailDiplayJob::Private
 public:
     Private(AddEmailDiplayJob *qq, const QString &emailString, QWidget *parentWidget)
         : q(qq)
-        , mShowAsHTML(false)
-        , mRemoteContent(false)
         , mCompleteAddress(emailString)
         , mParentWidget(parentWidget)
+        , mShowAsHTML(false)
+        , mRemoteContent(false)
     {
         KContacts::Addressee::parseEmailAddress(emailString, mName, mEmail);
     }
@@ -89,6 +89,8 @@ public:
             item.setPayload<KContacts::Addressee>(address);
             Akonadi::ItemModifyJob *job = new Akonadi::ItemModifyJob(item);
             q->connect(job, &Akonadi::ItemModifyJob::result, q, [this](KJob *job) {
+                Akonadi::ItemModifyJob *modifiedJob = static_cast<Akonadi::ItemModifyJob *>(job);
+                q->contactUpdated(modifiedJob->item(), messageId);
                 slotAddModifyContactDone(job);
             });
         } else {
@@ -118,6 +120,8 @@ public:
             item.setPayload<KContacts::Addressee>(contact);
             Akonadi::ItemModifyJob *job = new Akonadi::ItemModifyJob(item);
             q->connect(job, &Akonadi::ItemModifyJob::result, q, [this](KJob *job) {
+                Akonadi::ItemModifyJob *modifiedJob = static_cast<Akonadi::ItemModifyJob *>(job);
+                q->contactUpdated(modifiedJob->item(), messageId);
                 slotAddModifyContactDone(job);
             });
         }
@@ -240,6 +244,8 @@ public:
         // save the new item in akonadi storage
         Akonadi::ItemCreateJob *createJob = new Akonadi::ItemCreateJob(item, addressBook, q);
         q->connect(createJob, &Akonadi::ItemCreateJob::result, q, [this](KJob *job) {
+            Akonadi::ItemCreateJob *modifiedJob = static_cast<Akonadi::ItemCreateJob *>(job);
+            q->contactUpdated(modifiedJob->item(), messageId);
             slotAddModifyContactDone(job);
         });
     }
@@ -255,12 +261,13 @@ public:
 
     AddEmailDiplayJob *q;
     Akonadi::Item contact;
-    bool mShowAsHTML = false;
-    bool mRemoteContent = false;
+    Akonadi::Item::Id messageId;
     QString mCompleteAddress;
     QString mEmail;
     QString mName;
     QWidget *mParentWidget = nullptr;
+    bool mShowAsHTML = false;
+    bool mRemoteContent = false;
 };
 
 AddEmailDiplayJob::AddEmailDiplayJob(const QString &email, QWidget *parentWidget, QObject *parent)
@@ -287,6 +294,11 @@ void AddEmailDiplayJob::setRemoteContent(bool b)
 void AddEmailDiplayJob::setContact(const Akonadi::Item &contact)
 {
     d->contact = contact;
+}
+
+void AddEmailDiplayJob::setMessageId(Akonadi::Item::Id id)
+{
+    d->messageId = id;
 }
 
 void AddEmailDiplayJob::start()

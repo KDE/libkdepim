@@ -21,7 +21,7 @@
 #define ADDEMAILDISPLAYJOB_H
 
 #include "kdepimakonadi_export.h"
-
+#include <AkonadiCore/Item>
 #include <kjob.h>
 
 namespace Akonadi {
@@ -40,8 +40,12 @@ public:
     void setShowAsHTML(bool html);
     void setRemoteContent(bool b);
     void setContact(const Akonadi::Item &contact);
+    void setMessageId(Akonadi::Item::Id id);
 
     void start() override;
+
+Q_SIGNALS:
+    void contactUpdated(const Akonadi::Item &contact, Akonadi::Item::Id id);
 
 private:
     //@cond PRIVATE
