@@ -177,6 +177,7 @@ void BalooCompletionEmailTest::shouldExcludeDuplicateEntryWithDisplayNameAddAddr
     emailList << QStringLiteral("John Doe <doe@example.com>");
     emailList << QStringLiteral("\"John Doe\" <doe@example.com>");
     emailList << QStringLiteral("\"\'John Doe\'\" <doe@example.com>");
+    emailList << QStringLiteral("\"\"\"\"\'John Doe\'\"\"\"\" <doe@example.com>");
     emailList << QStringLiteral("John Doe <Doe@example.com>");
     emailList << QStringLiteral("John Doe <DOE@example.com>");
     emailList << QStringLiteral("John Doe <dOE@example.com>");

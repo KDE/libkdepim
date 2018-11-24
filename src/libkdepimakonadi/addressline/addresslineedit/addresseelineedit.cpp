@@ -646,8 +646,8 @@ void AddresseeLineEdit::loadContacts()
         const int idx = addCompletionSource(recentAddressGroupName, weight);
 
         QStringList::ConstIterator end = recent.constEnd();
+        KContacts::Addressee addr;
         for (; it != end; ++it) {
-            KContacts::Addressee addr;
             KEmailAddress::extractEmailAddressAndName(*it, email, name);
             name = KEmailAddress::quoteNameIfNecessary(name);
             if ((name[0] == QLatin1Char('"')) && (name[name.length() - 1] == QLatin1Char('"'))) {

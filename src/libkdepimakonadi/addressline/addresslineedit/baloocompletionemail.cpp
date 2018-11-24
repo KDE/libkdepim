@@ -89,13 +89,14 @@ QString BalooCompletionEmail::stripEmail(const QString &email, QString &address)
     QString displayName, addrSpec, comment;
     if (KEmailAddress::AddressOk == KEmailAddress::splitAddress(email, displayName, addrSpec, comment)) {
         address = addrSpec;
-        while ((displayName.startsWith(QLatin1Char('\'')) && displayName.endsWith(QLatin1Char('\'')))
-               || (displayName.startsWith(QLatin1Char('"')) && displayName.endsWith(QLatin1Char('"')))
-               || (displayName.startsWith(QLatin1String("\\\"")) && displayName.endsWith(QLatin1String("\\\"")))) {
-            if (displayName.startsWith(QLatin1String("\\\""))) {
+        while (1) {
+            if ((displayName.startsWith(QLatin1String("\\\"")) && displayName.endsWith(QLatin1String("\\\"")))) {
                 displayName = displayName.mid(2, displayName.length() - 4).trimmed();
-            } else {
+            } else if ((displayName.startsWith(QLatin1Char('\'')) && displayName.endsWith(QLatin1Char('\'')))
+                       || (displayName.startsWith(QLatin1Char('"')) && displayName.endsWith(QLatin1Char('"')))) {
                 displayName = displayName.mid(1, displayName.length() - 2).trimmed();
+            } else {
+                break;
             }
         }
         return KEmailAddress::normalizedAddress(displayName, addrSpec, comment);
