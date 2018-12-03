@@ -53,7 +53,7 @@ public:
     }
 
     /// call this to explitly restore the cursor
-    inline void restoreCursor(void)
+    inline void restoreCursor()
     {
         QApplication::restoreOverrideCursor();
         inited = false;
