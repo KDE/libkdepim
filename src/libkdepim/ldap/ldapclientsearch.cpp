@@ -221,11 +221,7 @@ void LdapClientSearch::Private::slotFileChanged(const QString &file)
 void LdapClientSearch::startSearch(const QString &txt)
 {
     if (d->mNoLDAPLookup) {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
         QMetaObject::invokeMethod(this, &LdapClientSearch::searchDone, Qt::QueuedConnection);
-#else
-        QMetaObject::invokeMethod(this, "searchDone", Qt::QueuedConnection);
-#endif
         return;
     }
 
