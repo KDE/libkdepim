@@ -25,13 +25,9 @@
 
 #include <kcmodule.h>
 
-class QListWidget;
-class QListWidgetItem;
-class QPushButton;
-class QToolButton;
 
 namespace KLDAP {
-class LdapClientSearchConfig;
+class LdapConfigureWidget;
 }
 
 class KCMLdap : public KCModule
@@ -45,28 +41,8 @@ public:
     void load() override;
     void save() override;
 
-private Q_SLOTS:
-    void slotAddHost();
-    void slotEditHost();
-    void slotRemoveHost();
-    void slotSelectionChanged(QListWidgetItem *);
-    void slotItemClicked(QListWidgetItem *);
-    void slotMoveUp();
-    void slotMoveDown();
-
 private:
-    void initGUI();
-    QWidget *dialogParent();
-
-    QListWidget *mHostListView = nullptr;
-
-    QPushButton *mAddButton = nullptr;
-    QPushButton *mEditButton = nullptr;
-    QPushButton *mRemoveButton = nullptr;
-
-    QToolButton *mUpButton = nullptr;
-    QToolButton *mDownButton = nullptr;
-    KLDAP::LdapClientSearchConfig *mClientSearchConfig = nullptr;
+    KLDAP::LdapConfigureWidget *mLdapConfigureWidget = nullptr;
 };
 
 #endif

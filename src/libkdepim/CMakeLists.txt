@@ -42,6 +42,7 @@ set(kdepim_ldap_LIB_SRCS
     ldap/ldapclientsearch.cpp
     ldap/ldapclientsearchconfig.cpp
     ldap/addhostdialog.cpp
+    ldap/ldapconfigurewidget.cpp
     )
 ecm_qt_declare_logging_category(kdepim_ldap_LIB_SRCS HEADER ldapclient_debug.h IDENTIFIER LDAPCLIENT_LOG CATEGORY_NAME org.kde.pim.ldapclient)
 
@@ -121,6 +122,7 @@ ecm_generate_headers(libkdepim_Camelcaseldap_HEADERS
     AddHostDialog
     LdapSearchDialog
     LdapClient
+    LdapConfigureWidget
     REQUIRED_HEADERS libkdepim_ldap_HEADERS
     PREFIX Libkdepim
     RELATIVE ldap
