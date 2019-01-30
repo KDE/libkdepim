@@ -37,7 +37,10 @@
 #include <QToolButton>
 #include <KConfigGroup>
 #include <KLocalizedString>
+#include <config-akonadi-search.h>
+#if !DISABLE_AKONADI_SEARCH
 #include <AkonadiSearch/PIM/contactcompleter.h>
+#endif
 
 #include <ldap/ldapclientsearch.h>
 #include <addressline/addresslineedit/baloocompletionemail.h>
@@ -166,6 +169,7 @@ void AddresseeLineEditPrivate::setIcon(const QIcon &icon, const QString &tooltip
 
 void AddresseeLineEditPrivate::searchInBaloo()
 {
+#if !DISABLE_AKONADI_SEARCH
     const QString trimmedString = mSearchString.trimmed();
     Akonadi::Search::PIM::ContactCompleter com(trimmedString, 20);
     const QStringList listEmail = AddresseeLineEditManager::self()->cleanupEmailList(com.complete());
@@ -173,6 +177,7 @@ void AddresseeLineEditPrivate::searchInBaloo()
         addCompletionItem(email, 1, AddresseeLineEditManager::self()->balooCompletionSource());
     }
     doCompletion(mLastSearchMode);
+#endif
 }
 
 void AddresseeLineEditPrivate::setCompletedItems(const QStringList &items, bool autoSuggest)
