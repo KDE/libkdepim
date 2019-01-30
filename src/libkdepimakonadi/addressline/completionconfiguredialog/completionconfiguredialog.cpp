@@ -27,7 +27,10 @@
 #include <KSharedConfig>
 #include <ldap/ldapclientsearch.h>
 #include <addressline/completionorder/completionorderwidget.h>
+#include <config-akonadi-search.h>
+#if !DISABLE_AKONADI_SEARCH
 #include <addressline/blacklistbaloocompletion/blacklistbalooemailcompletionwidget.h>
+#endif
 #include <addressline/recentaddress/recentaddresswidget.h>
 
 using namespace KPIM;
@@ -41,7 +44,9 @@ public:
 
     QTabWidget *mTabWidget = nullptr;
     KPIM::CompletionOrderWidget *mCompletionOrderWidget = nullptr;
+#if !DISABLE_AKONADI_SEARCH
     KPIM::BlackListBalooEmailCompletionWidget *mBlackListBalooWidget = nullptr;
+#endif
     KPIM::RecentAddressWidget *mRecentaddressWidget = nullptr;
 };
 
@@ -64,9 +69,11 @@ CompletionConfigureDialog::CompletionConfigureDialog(QWidget *parent)
     d->mRecentaddressWidget->setObjectName(QStringLiteral("recentaddress_widget"));
     d->mTabWidget->addTab(d->mRecentaddressWidget, i18n("Recent Address"));
 
+#if !DISABLE_AKONADI_SEARCH
     d->mBlackListBalooWidget = new KPIM::BlackListBalooEmailCompletionWidget;
     d->mBlackListBalooWidget->setObjectName(QStringLiteral("blacklistbaloo_widget"));
     d->mTabWidget->addTab(d->mBlackListBalooWidget, i18n("Blacklist Email Address"));
+#endif
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonbox"));
@@ -111,7 +118,9 @@ void CompletionConfigureDialog::setLdapClientSearch(KLDAP::LdapClientSearch *lda
 void CompletionConfigureDialog::load()
 {
     d->mCompletionOrderWidget->loadCompletionItems();
+#if !DISABLE_AKONADI_SEARCH
     d->mBlackListBalooWidget->load();
+#endif
 }
 
 bool CompletionConfigureDialog::recentAddressWasChanged() const
@@ -126,12 +135,16 @@ void CompletionConfigureDialog::storeAddresses(KConfig *config)
 
 void CompletionConfigureDialog::slotSave()
 {
+#if !DISABLE_AKONADI_SEARCH
     d->mBlackListBalooWidget->save();
+#endif
     d->mCompletionOrderWidget->save();
     accept();
 }
 
 void CompletionConfigureDialog::setEmailBlackList(const QStringList &lst)
 {
+#if !DISABLE_AKONADI_SEARCH
     d->mBlackListBalooWidget->setEmailBlackList(lst);
+#endif
 }

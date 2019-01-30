@@ -6,7 +6,9 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
 
 if(BUILD_TESTING)
     add_subdirectory(tests)
-    add_subdirectory(addressline/blacklistbaloocompletion/autotests)
+    if (NOT FORCE_DISABLE_AKONADI_SEARCH)
+        add_subdirectory(addressline/blacklistbaloocompletion/autotests)
+    endif()
     add_subdirectory(addressline/autotests/)
 endif()
 
@@ -27,13 +29,15 @@ set(kdepim_addressline_LIB_SRCS
     addressline/completionconfiguredialog/completionconfiguredialog.cpp
     )
 
+if (NOT FORCE_DISABLE_AKONADI_SEARCH)
 set(kdepim_addressline_blacklist_baloo_LIB_SRCS
     addressline/blacklistbaloocompletion/blacklistbalooemaillist.cpp
-    addressline/blacklistbaloocompletion/blacklistbalooemailsearchjob.cpp
     addressline/blacklistbaloocompletion/blacklistbalooemailutil.cpp
     addressline/blacklistbaloocompletion/blacklistbalooemailcompletionwidget.cpp
     addressline/blacklistbaloocompletion/blacklistbalooemailwarning.cpp
+    addressline/blacklistbaloocompletion/blacklistbalooemailsearchjob.cpp
     )
+endif()
 
 set(kdepim_addressline_plugin_LIB_SRCS
     addressline/plugins/addressesslineeditabstractplugin.cpp
@@ -51,9 +55,13 @@ set(kdepim_job_LIB_SRCS
     job/addcontactjob.cpp
     job/openemailaddressjob.cpp
     job/addemaildisplayjob.cpp
-    job/collectionsearchjob.cpp
-    job/personsearchjob.cpp
     )
+if (NOT FORCE_DISABLE_AKONADI_SEARCH)
+  list(APPEND kdepim_job_LIB_SRCS
+      job/collectionsearchjob.cpp
+      job/personsearchjob.cpp
+      )
+endif()
 
 set(kdepimakonadi_widgets_LIB_SRCS
     widgets/tagwidgets.cpp
@@ -96,7 +104,6 @@ target_link_libraries(KF5LibkdepimAkonadi
     KF5::Codecs
     KF5::I18n
     KF5::ItemViews
-    KF5::AkonadiSearchPIM
     KF5::KIOCore
     KF5::KIOWidgets
     Qt5::DBus
@@ -105,7 +112,11 @@ target_link_libraries(KF5LibkdepimAkonadi
     )
 
 if(MINGW)
-    target_link_libraries(KF5LibkdepimAkonadi oleaut32)
+    target_link_libraries(KF5LibkdepimAkonadi PRIVATE oleaut32)
+endif()
+
+if (NOT FORCE_DISABLE_AKONADI_SEARCH)
+    target_link_libraries(KF5LibkdepimAkonadi PRIVATE KF5::AkonadiSearchPIM)
 endif()
 
 set_target_properties(KF5LibkdepimAkonadi PROPERTIES
