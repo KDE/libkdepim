@@ -233,7 +233,7 @@ public:
         if (mInteractive) {
             const QString text
                 = xi18nc("@info",
-                         "<para>A contact for <email>%1</email> was successfully added "
+                         "<para>A contact for \"%1\" was successfully added "
                          "to your address book.</para>"
                          "<para>Do you want to edit this new contact now?</para>",
                          mCompleteAddress);
