@@ -50,7 +50,7 @@ TagWidget::TagWidget(QWidget *parent)
     d->mTagWidget = new Akonadi::TagWidget(this);
     connect(d->mTagWidget, &Akonadi::TagWidget::selectionChanged, this, &TagWidget::onSelectionChanged);
     QHBoxLayout *l = new QHBoxLayout(this);
-    l->setMargin(0);
+    l->setContentsMargins(0, 0, 0, 0);
     l->setSpacing(0);
     l->addWidget(d->mTagWidget);
 }

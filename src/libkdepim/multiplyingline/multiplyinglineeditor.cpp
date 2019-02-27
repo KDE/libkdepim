@@ -33,7 +33,7 @@ MultiplyingLineEditor::MultiplyingLineEditor(MultiplyingLineFactory *factory, QW
     , mMultiplyingLineFactory(factory)
 {
     QBoxLayout *topLayout = new QHBoxLayout(this);
-    topLayout->setMargin(0);
+    topLayout->setContentsMargins(0, 0, 0, 0);
 
     mView = new MultiplyingLineView(mMultiplyingLineFactory, this);
     topLayout->addWidget(mView);

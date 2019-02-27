@@ -31,7 +31,7 @@ public:
         , q(qq)
     {
         QHBoxLayout *lay = new QHBoxLayout(q);
-        lay->setMargin(0);
+        lay->setContentsMargins(0, 0, 0, 0);
         indicator = new ProgressIndicatorWidget;
         lay->addWidget(indicator);
         label = new QLabel;

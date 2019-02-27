@@ -293,7 +293,7 @@ void LdapConfigureWidget::initGUI()
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->setObjectName(QStringLiteral("layout"));
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     QGroupBox *groupBox = new QGroupBox(i18n("LDAP Servers"));
     layout->addWidget(groupBox);
@@ -309,7 +309,7 @@ void LdapConfigureWidget::initGUI()
     mainLayout->addWidget(hBox);
 
     QHBoxLayout *hBoxHBoxLayout = new QHBoxLayout(hBox);
-    hBoxHBoxLayout->setMargin(0);
+    hBoxHBoxLayout->setContentsMargins(0, 0, 0, 0);
     hBoxHBoxLayout->setSpacing(6);
     // Contents of the hbox: listview and up/down buttons on the right (vbox)
     mHostListView = new QListWidget(hBox);
@@ -318,7 +318,7 @@ void LdapConfigureWidget::initGUI()
 
     QWidget *upDownBox = new QWidget(hBox);
     QVBoxLayout *upDownBoxVBoxLayout = new QVBoxLayout(upDownBox);
-    upDownBoxVBoxLayout->setMargin(0);
+    upDownBoxVBoxLayout->setContentsMargins(0, 0, 0, 0);
     hBoxHBoxLayout->addWidget(upDownBox);
     upDownBoxVBoxLayout->setSpacing(6);
     mUpButton = new QToolButton(upDownBox);

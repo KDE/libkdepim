@@ -242,7 +242,7 @@ CompletionOrderWidget::CompletionOrderWidget(QWidget *parent)
 
     QWidget *page = new QWidget(this);
     QHBoxLayout *pageHBoxLayout = new QHBoxLayout(page);
-    pageHBoxLayout->setMargin(0);
+    pageHBoxLayout->setContentsMargins(0, 0, 0, 0);
     hbox->addWidget(page);
     mListView = new QTreeWidget(page);
     mListView->setObjectName(QStringLiteral("listview"));
@@ -257,7 +257,7 @@ CompletionOrderWidget::CompletionOrderWidget(QWidget *parent)
 
     QWidget *upDownBox = new QWidget(page);
     QVBoxLayout *upDownBoxVBoxLayout = new QVBoxLayout(upDownBox);
-    upDownBoxVBoxLayout->setMargin(0);
+    upDownBoxVBoxLayout->setContentsMargins(0, 0, 0, 0);
     pageHBoxLayout->addWidget(upDownBox);
     mUpButton = new QPushButton(upDownBox);
     upDownBoxVBoxLayout->addWidget(mUpButton);

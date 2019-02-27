@@ -504,7 +504,7 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     mainLayout->addWidget(buttonBox);
 
     QVBoxLayout *topLayout = new QVBoxLayout(page);
-    topLayout->setMargin(0);
+    topLayout->setContentsMargins(0, 0, 0, 0);
 
     QGroupBox *groupBox = new QGroupBox(i18n("Search for Addresses in Directory"),
                                         page);
@@ -589,7 +589,7 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     connect(d->mResultView, &QTableView::customContextMenuRequested, this, &LdapSearchDialog::slotCustomContextMenuRequested);
 
     QHBoxLayout *buttonLayout = new QHBoxLayout;
-    buttonLayout->setMargin(0);
+    buttonLayout->setContentsMargins(0, 0, 0, 0);
     topLayout->addLayout(buttonLayout);
 
     d->progressIndication = new KPIM::ProgressIndicatorLabel(i18n("Searching..."));

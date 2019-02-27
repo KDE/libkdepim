@@ -192,7 +192,7 @@ void AddresseeLineEditPrivate::setCompletedItems(const QStringList &items, bool 
             QListWidgetItem *item = new QListWidgetItem(items.at(i), completionBox);
             if (!items.at(i).startsWith(s_completionItemIndentString)) {
                 item->setFlags(item->flags() & ~Qt::ItemIsSelectable);
-                item->setBackgroundColor(AddresseeLineEditManager::self()->alternateColor());
+                item->setBackground(AddresseeLineEditManager::self()->alternateColor());
             }
             completionBox->addItem(item);
         }

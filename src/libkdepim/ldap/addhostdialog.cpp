@@ -90,7 +90,7 @@ AddHostDialog::AddHostDialog(KLDAP::LdapServer *server, QWidget *parent)
     mainLayout->addWidget(page);
     mainLayout->addWidget(buttonBox);
     QHBoxLayout *layout = new QHBoxLayout(page);
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     d->mCfg = new KLDAP::LdapConfigWidget(
         KLDAP::LdapConfigWidget::W_USER

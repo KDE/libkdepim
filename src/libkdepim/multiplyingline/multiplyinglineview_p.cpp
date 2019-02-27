@@ -46,7 +46,7 @@ MultiplyingLineView::MultiplyingLineView(MultiplyingLineFactory *factory, Multip
     mPage->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     setWidget(mPage);
 
-    mTopLayout->setMargin(0);
+    mTopLayout->setContentsMargins(0, 0, 0, 0);
     mTopLayout->setSpacing(0);
     mPage->setLayout(mTopLayout);
 }

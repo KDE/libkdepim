@@ -120,7 +120,7 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     searchLineLayout->addWidget(mSearchInResultLineEdit);
 
     QHBoxLayout *excludeDomainLayout = new QHBoxLayout;
-    excludeDomainLayout->setMargin(0);
+    excludeDomainLayout->setContentsMargins(0, 0, 0, 0);
     mainLayout->addLayout(excludeDomainLayout);
 
     QLabel *excludeDomainLabel = new QLabel(i18n("Exclude domain names:"), this);
