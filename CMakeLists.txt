@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-set(PIM_VERSION "5.10.41")
+set(PIM_VERSION "5.10.42")
 
 project(libkdepim VERSION ${PIM_VERSION})
 
@@ -28,7 +28,7 @@ set(QT_REQUIRED_VERSION "5.10.0")
 set(KLDAP_LIB_VERSION "5.10.40")
 set(KCONTACTS_LIB_VERSION "5.10.40")
 set(AKONADISEARCH_LIB_VERSION "5.10.40")
-set(AKONADI_VERSION "5.10.40")
+set(AKONADI_VERSION "5.10.48")
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus Network)
 
