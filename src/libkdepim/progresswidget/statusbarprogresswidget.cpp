@@ -272,7 +272,6 @@ void StatusbarProgressWidget::slotClean()
     // check if a new item showed up since we started the timer. If not, clear
     if (ProgressManager::instance()->isEmpty()) {
         mProgressBar->setValue(0);
-        //m_pLabel->clear();
         mMode = Clean;
         setMode();
     }
@@ -314,8 +313,10 @@ void StatusbarProgressWidget::slotProgressButtonClicked()
 
 void StatusbarProgressWidget::slotProgressDialogVisible(bool b)
 {
-    // Update the hide/show button when the detailed one is shown/hidden
-    if (b) {
+    // Show the hide/show button (mButton) as soon as the progress dialog is shown
+    // (StatusbarProgressWidget::slotShowItemDelayed happens later)
+    if (b && mMode != Progress) {
+        mMode = Progress;
         setMode();
     }
 }
