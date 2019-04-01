@@ -18,7 +18,7 @@
 
 #include "testldapclient.h"
 
-#include <qdebug.h>
+#include <QDebug>
 
 #include <kldap/ldapobject.h>
 

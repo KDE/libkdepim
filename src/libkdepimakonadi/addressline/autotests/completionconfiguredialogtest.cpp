@@ -21,8 +21,8 @@
 #include "completionconfiguredialogtest.h"
 #include "../completionconfiguredialog/completionconfiguredialog.h"
 #include <QTabWidget>
-#include <qdialogbuttonbox.h>
-#include <qtest.h>
+#include <QDialogButtonBox>
+#include <QTest>
 #include <QStandardPaths>
 
 CompletionConfigureDialogTest::CompletionConfigureDialogTest(QObject *parent)

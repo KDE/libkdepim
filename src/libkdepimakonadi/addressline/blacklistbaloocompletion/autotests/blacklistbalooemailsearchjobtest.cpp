@@ -19,7 +19,7 @@
 */
 #include "blacklistbalooemailsearchjobtest.h"
 #include "../blacklistbalooemailsearchjob.h"
-#include <qtest.h>
+#include <QTest>
 
 BlackListBalooEmailSearchJobTest::BlackListBalooEmailSearchJobTest(QObject *parent)
     : QObject(parent)

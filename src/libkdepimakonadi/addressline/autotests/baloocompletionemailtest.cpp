@@ -19,7 +19,7 @@
 */
 
 #include "baloocompletionemailtest.h"
-#include <qtest.h>
+#include <QTest>
 #include "libkdepimakonadi_debug.h"
 #include "../addresslineedit/baloocompletionemail.h"
 BalooCompletionEmailTest::BalooCompletionEmailTest(QObject *parent)

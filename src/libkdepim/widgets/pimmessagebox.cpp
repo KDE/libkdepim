@@ -24,7 +24,7 @@
 
 #include "pimmessagebox.h"
 
-#include <qdialog.h>
+#include <QDialog>
 #include <QPushButton>
 
 using namespace KPIM;

@@ -22,8 +22,8 @@
 #include "../recentaddress/recentaddresswidget.h"
 #include <KLineEdit>
 #include <QToolButton>
-#include <qlistwidget.h>
-#include <qtest.h>
+#include <QListWidget>
+#include <QTest>
 #include <qtestmouse.h>
 
 RecentAddressWidgetTest::RecentAddressWidgetTest(QObject *parent)

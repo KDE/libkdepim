@@ -28,7 +28,7 @@
 
 #include <kconfig.h>
 #include <kconfiggroup.h>
-#include <qdialogbuttonbox.h>
+#include <QDialogButtonBox>
 #include <QHBoxLayout>
 #include <kiconloader.h>
 #include <KLocalizedString>

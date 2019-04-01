@@ -23,7 +23,7 @@
 #define ADDHOSTDIALOG_H
 
 #include "kdepim_export.h"
-#include <qdialog.h>
+#include <QDialog>
 
 namespace KLDAP {
 class LdapServer;

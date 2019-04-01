@@ -24,8 +24,8 @@
 #include <KListWidgetSearchLine>
 #include <QLabel>
 #include <klineedit.h>
-#include <qpushbutton.h>
-#include <qtest.h>
+#include <QPushButton>
+#include <QTest>
 #include <addressline/blacklistbaloocompletion/blacklistbalooemailwarning.h>
 
 BlackListBalooEmailCompletionWidgetTest::BlackListBalooEmailCompletionWidgetTest(QObject *parent)

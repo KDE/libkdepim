@@ -20,7 +20,7 @@
 
 #include "blacklistbalooemailutiltest.h"
 #include "../blacklistbalooemailutil.h"
-#include <qtest.h>
+#include <QTest>
 BlackListBalooEmailUtilTest::BlackListBalooEmailUtilTest(QObject *parent)
     : QObject(parent)
 {

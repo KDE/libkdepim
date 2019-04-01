@@ -22,7 +22,7 @@
 #include <AkonadiCore/TagModel>
 
 #include <KCheckableProxyModel>
-#include <qitemselectionmodel.h>
+#include <QItemSelectionModel>
 
 using namespace KPIM;
 

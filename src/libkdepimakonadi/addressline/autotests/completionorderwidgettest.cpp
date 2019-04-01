@@ -22,7 +22,7 @@
 #include "../completionorder/completionorderwidget.h"
 #include <QPushButton>
 #include <QTreeWidget>
-#include <qtest.h>
+#include <QTest>
 
 CompletionOrderWidgetTest::CompletionOrderWidgetTest(QObject *parent)
     : QObject(parent)

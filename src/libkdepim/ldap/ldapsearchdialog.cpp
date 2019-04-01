@@ -49,10 +49,10 @@
 #include <kconfig.h>
 #include <kconfiggroup.h>
 #include <kcmultidialog.h>
-#include <qdialogbuttonbox.h>
+#include <QDialogButtonBox>
 #include <kldap/ldapobject.h>
 #include <kldap/ldapserver.h>
-#include <qlineedit.h>
+#include <QLineEdit>
 #include <kmessagebox.h>
 
 #include <QLocale>
