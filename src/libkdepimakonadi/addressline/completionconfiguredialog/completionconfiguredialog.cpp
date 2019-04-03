@@ -57,20 +57,20 @@ CompletionConfigureDialog::CompletionConfigureDialog(QWidget *parent)
     setWindowTitle(i18n("Configure completion"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
-    d->mTabWidget = new QTabWidget;
+    d->mTabWidget = new QTabWidget(this);
     d->mTabWidget->setObjectName(QStringLiteral("tabwidget"));
     mainLayout->addWidget(d->mTabWidget);
 
-    d->mCompletionOrderWidget = new KPIM::CompletionOrderWidget();
+    d->mCompletionOrderWidget = new KPIM::CompletionOrderWidget(this);
     d->mCompletionOrderWidget->setObjectName(QStringLiteral("completionorder_widget"));
     d->mTabWidget->addTab(d->mCompletionOrderWidget, i18n("Completion Order"));
 
-    d->mRecentaddressWidget = new KPIM::RecentAddressWidget;
+    d->mRecentaddressWidget = new KPIM::RecentAddressWidget(this);
     d->mRecentaddressWidget->setObjectName(QStringLiteral("recentaddress_widget"));
     d->mTabWidget->addTab(d->mRecentaddressWidget, i18n("Recent Address"));
 
 #if !DISABLE_AKONADI_SEARCH
-    d->mBlackListBalooWidget = new KPIM::BlackListBalooEmailCompletionWidget;
+    d->mBlackListBalooWidget = new KPIM::BlackListBalooEmailCompletionWidget(this);
     d->mBlackListBalooWidget->setObjectName(QStringLiteral("blacklistbaloo_widget"));
     d->mTabWidget->addTab(d->mBlackListBalooWidget, i18n("Blacklist Email Address"));
 #endif
