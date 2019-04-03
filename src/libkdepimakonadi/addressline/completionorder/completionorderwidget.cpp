@@ -335,7 +335,7 @@ void CompletionOrderWidget::addCompletionItemForCollection(const QModelIndex &in
         return;
     }
 
-    SimpleCompletionItem *item = new SimpleCompletionItem(this, index.data().toString(), QString::number(collection.id()), 60, true);
+    SimpleCompletionItem *item = new SimpleCompletionItem(this, index.data().toString(), QString::number(collection.id()), mDefaultValue++, true);
     item->setIcon(index.data(Qt::DecorationRole).value<QIcon>());
 
     new CompletionViewItem(mListView, item);
@@ -373,14 +373,13 @@ void CompletionOrderWidget::loadCompletionItems()
 
     connect(mimeTypeProxy, &QAbstractItemModel::rowsInserted,
             this, &CompletionOrderWidget::rowsInserted);
-
     for (int row = 0; row < mCollectionModel->rowCount(); ++row) {
         addCompletionItemForCollection(mCollectionModel->index(row, 0));
     }
-
     addRecentAddressItem();
 
     mListView->sortItems(0, Qt::AscendingOrder);
+
     mDirty = false;
 }
 
