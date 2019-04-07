@@ -56,12 +56,6 @@ set(kdepim_job_LIB_SRCS
     job/openemailaddressjob.cpp
     job/addemaildisplayjob.cpp
     )
-if (NOT FORCE_DISABLE_AKONADI_SEARCH)
-  list(APPEND kdepim_job_LIB_SRCS
-      job/collectionsearchjob.cpp
-      job/personsearchjob.cpp
-      )
-endif()
 
 set(kdepimakonadi_widgets_LIB_SRCS
     widgets/tagwidgets.cpp
@@ -152,10 +146,7 @@ ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
     AddContactJob
     AddEmailAddressJob
     AddEmailDisplayJob
-    CollectionSearchJob
     OpenEmailAddressJob
-    PersonSearchJob
-    Person
 
     REQUIRED_HEADERS libkdepim_job_HEADERS
     PREFIX LibkdepimAkonadi
