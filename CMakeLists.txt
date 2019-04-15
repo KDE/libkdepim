@@ -3,7 +3,7 @@ set(PIM_VERSION "5.11.41")
 
 project(libkdepim VERSION ${PIM_VERSION})
 
-set(KF5_MIN_VERSION "5.56.0")
+set(KF5_MIN_VERSION "5.57.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -69,10 +69,7 @@ if (${Qt5Widgets_VERSION} STRGREATER "5.13")
 else()
    add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
 endif()
-if (${KF5Config_VERSION} STRGREATER "5.56.0")
-        add_definitions(-DQT_NO_FOREACH)
-        MESSAGE(STATUS "compile without foreach")
-endif()
+add_definitions(-DQT_NO_FOREACH)
 
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Libkdepim")
