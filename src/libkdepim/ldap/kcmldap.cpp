@@ -52,7 +52,7 @@ KCMLdap::KCMLdap(QWidget *parent, const QVariantList &)
     mLdapConfigureWidget = new KLDAP::LdapConfigureWidget(this);
     layout->addWidget(mLdapConfigureWidget);
 
-    connect(mLdapConfigureWidget, &KLDAP::LdapConfigureWidget::changed, this, QOverload<bool>::of(&KCMLdap::changed));
+    connect(mLdapConfigureWidget, &KLDAP::LdapConfigureWidget::changed, this, qOverload<bool>(&KCMLdap::changed));
 }
 
 KCMLdap::~KCMLdap()

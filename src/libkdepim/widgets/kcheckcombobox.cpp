@@ -138,7 +138,7 @@ KCheckComboBox::KCheckComboBox(QWidget *parent)
     : KComboBox(parent)
     , d(new KCheckComboBox::Private(this))
 {
-    connect(this, QOverload<int>::of(&KComboBox::activated), this, [this]() {
+    connect(this, qOverload<int>(&KComboBox::activated), this, [this]() {
         d->toggleCheckState();
     });
     connect(model(), &QAbstractItemModel::rowsInserted, this,
