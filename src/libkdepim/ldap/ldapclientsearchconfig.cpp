@@ -230,7 +230,7 @@ void LdapClientSearchConfig::writeConfig(const KLDAP::LdapServer &server, KConfi
     case KLDAP::LdapServer::Simple:
         tmp = QStringLiteral("Simple");
         break;
-    case KLDAP::LdapServer::SSL:
+    case KLDAP::LdapServer::SASL:
         tmp = QStringLiteral("SASL");
         break;
     default:
