@@ -27,7 +27,7 @@ namespace KPIM {
 class KDEPIM_EXPORT AddresseeLineEditUtil
 {
 public:
-    static QString adaptPasteMails(QString str);
+    static QString adaptPasteMails(const QString &str);
 };
 }
 

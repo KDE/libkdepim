@@ -21,7 +21,7 @@
 #include <QRegularExpression>
 #include <QUrl>
 
-QString KPIM::AddresseeLineEditUtil::adaptPasteMails(QString str)
+QString KPIM::AddresseeLineEditUtil::adaptPasteMails(const QString &str)
 {
     QString newText = str;
     // remove newlines in the to-be-pasted string

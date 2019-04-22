@@ -50,7 +50,7 @@ void BlackListBalooEmailWarningTest::shouldHaveDefaultValue()
 void BlackListBalooEmailWarningTest::shouldEmitSaveChanges()
 {
     KPIM::BlackListBalooEmailWarning warning;
-    QSignalSpy spy1(&warning, SIGNAL(saveChanges()));
+    QSignalSpy spy1(&warning, &KPIM::BlackListBalooEmailWarning::saveChanges);
 
     QAction *save = warning.findChild<QAction *>(QStringLiteral("saveblacklist"));
     save->trigger();
@@ -60,7 +60,7 @@ void BlackListBalooEmailWarningTest::shouldEmitSaveChanges()
 void BlackListBalooEmailWarningTest::shouldEmitNewSearch()
 {
     KPIM::BlackListBalooEmailWarning warning;
-    QSignalSpy spy1(&warning, SIGNAL(newSearch()));
+    QSignalSpy spy1(&warning, &KPIM::BlackListBalooEmailWarning::newSearch);
 
     QAction *search = warning.findChild<QAction *>(QStringLiteral("search"));
     search->trigger();
