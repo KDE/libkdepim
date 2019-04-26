@@ -10,8 +10,8 @@ irc: akonadi
 libraries:
  - qmake: Libkdepim
    cmake: "KF5::Libkdepim"
-   cmakename: KF5Libkdepim
+cmakename: KF5Libkdepim
  - qmake: LibkdepimAkonadi
    cmake: "KF5::LibkdepimAkonadi"
-   cmakename: KF5LibkdepimAkonadi   
+cmakename: KF5LibkdepimAkonadi   
 

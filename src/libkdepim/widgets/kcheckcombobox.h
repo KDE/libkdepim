@@ -152,6 +152,14 @@ public:
      */
     Q_REQUIRED_RESULT QStringList checkedItems(int role = Qt::DisplayRole) const;
 
+    /**
+     * Update the KCheckComboBox text with Item belonging to the role.
+     * @param topLeft Curently unused.
+     * @param bottomRight Curently unused.
+     * @param role The role the updated values belong to.
+     */
+    void updateCheckedItems(const QModelIndex &topLeft = QModelIndex(), const QModelIndex &bottomRight = QModelIndex(), int role = Qt::DisplayRole);
+
 public Q_SLOTS:
     /**
      * Sets the currently selected items. Items that are not found in the model

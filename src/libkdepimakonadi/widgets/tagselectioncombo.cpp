@@ -59,8 +59,9 @@ TagSelectionCombo::TagSelectionCombo(QWidget *parent)
     setModel(checkableProxy);
 
     //We need to reconnect from the constructor of KCheckComboBox to the new model
-    connect(checkableProxy, SIGNAL(dataChanged(QModelIndex,QModelIndex)),
-            this, SLOT(updateCheckedItems(QModelIndex,QModelIndex)));
+    connect(checkableProxy, &QAbstractItemModel::dataChanged, this, [this] (const QModelIndex &topLeft, const QModelIndex &bottomRight) {
+        updateCheckedItems(topLeft, bottomRight);
+    });
 }
 
 TagCombo::TagCombo(QWidget *parent)

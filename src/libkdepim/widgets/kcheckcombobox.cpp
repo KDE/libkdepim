@@ -368,4 +368,9 @@ void KCheckComboBox::setAlwaysShowDefaultText(bool always)
     }
 }
 
+void KCheckComboBox::updateCheckedItems(const QModelIndex &topLeft, const QModelIndex &bottomRight, int role)
+{
+    d->updateCheckedItems(topLeft, bottomRight, role);
+}
+
 #include "moc_kcheckcombobox.cpp"
