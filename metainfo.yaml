@@ -2,6 +2,7 @@ name: libkdepim
 description: KDEpim Library 
 maintainer: mlaurent
 public_lib: true
+type: functional
 group: kdepim
 platforms:
     - name: All
