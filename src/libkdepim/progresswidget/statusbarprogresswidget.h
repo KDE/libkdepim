@@ -87,7 +87,7 @@ private:
         Clean
     };
     void setMode(Mode mode);
-    void updateProgressButton();
+    void updateProgressButton(bool showingProgress);
     void connectSingleItem();
     void activateSingleItemMode();
 

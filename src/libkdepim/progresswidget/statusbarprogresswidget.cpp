@@ -261,7 +261,7 @@ void StatusbarProgressWidget::setMode(Mode mode)
         mStackedWidget->setCurrentWidget(mProgressBar);
         if (mShowButton) {
             mShowDetailedProgress = mProgressDialog->wasLastShown();
-            updateProgressButton();
+            updateProgressButton(mShowDetailedProgress);
             mButton->show();
         }
         mSslLabel->setState(mSslLabel->lastState());
@@ -293,9 +293,9 @@ bool StatusbarProgressWidget::eventFilter(QObject *obj, QEvent *ev)
     return QFrame::eventFilter(obj, ev);
 }
 
-void StatusbarProgressWidget::updateProgressButton()
+void StatusbarProgressWidget::updateProgressButton(bool showingProgress)
 {
-    if (!mShowDetailedProgress) {
+    if (!showingProgress) {
         mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
         mButton->setToolTip(i18n("Show detailed progress window"));
     } else {
@@ -308,7 +308,6 @@ void StatusbarProgressWidget::slotProgressButtonClicked()
 {
     mProgressDialog->slotToggleVisibility();
     mShowDetailedProgress = !mProgressDialog->isHidden();
-    updateProgressButton();
     setFixedWidth(qMax(600, mProgressDialog->width()));
 }
 
@@ -319,4 +318,6 @@ void StatusbarProgressWidget::slotProgressDialogVisible(bool b)
     if (b) {
         setMode(Progress);
     }
+
+    updateProgressButton(b);
 }
