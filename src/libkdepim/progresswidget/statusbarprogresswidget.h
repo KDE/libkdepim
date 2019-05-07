@@ -79,24 +79,23 @@ protected Q_SLOTS:
     void updateBusyMode(KPIM::ProgressItem *);
 
 protected:
-    void setMode();
-    void connectSingleItem();
-    void activateSingleItemMode();
-
     bool eventFilter(QObject *, QEvent *) override;
 
 private:
+    enum Mode {
+        Progress,
+        Clean
+    };
+    void setMode(Mode mode);
     void updateProgressButton();
+    void connectSingleItem();
+    void activateSingleItemMode();
+
     unsigned int mShowTypeProgressItem = 0;
     QProgressBar *mProgressBar = nullptr;
     QLabel *mLabel = nullptr;
     SSLLabel *mSslLabel = nullptr;
     QPushButton *mButton = nullptr;
-
-    enum Mode {
-        Progress,
-        Clean
-    };
 
     Mode mMode = Clean;
     bool mShowButton = false;

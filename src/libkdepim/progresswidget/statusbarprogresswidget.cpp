@@ -103,8 +103,8 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     mButton->setMaximumHeight(maximumHeight);
     setFixedWidth(600);
 
-    mMode = Clean;
-    setMode();
+    mMode = Progress; // so the call below works
+    setMode(Clean);
 
     connect(mButton, &QAbstractButton::clicked,
             this, &StatusbarProgressWidget::slotProgressButtonClicked);
@@ -223,9 +223,8 @@ void StatusbarProgressWidget::slotShowItemDelayed()
         }
     }
 
-    if (!noItems && mMode != Progress) {
-        mMode = Progress;
-        setMode();
+    if (!noItems) {
+        setMode(Progress);
     }
 }
 
@@ -242,8 +241,11 @@ void StatusbarProgressWidget::slotProgressItemProgress(ProgressItem *item, unsig
     mProgressBar->setValue(value);
 }
 
-void StatusbarProgressWidget::setMode()
+void StatusbarProgressWidget::setMode(Mode mode)
 {
+    if (mMode == mode)
+        return;
+    mMode = mode;
     switch (mMode) {
     case Clean:
         if (mShowButton) {
@@ -272,8 +274,7 @@ void StatusbarProgressWidget::slotClean()
     // check if a new item showed up since we started the timer. If not, clear
     if (ProgressManager::instance()->isEmpty()) {
         mProgressBar->setValue(0);
-        mMode = Clean;
-        setMode();
+        setMode(Clean);
     }
 }
 
@@ -315,8 +316,7 @@ void StatusbarProgressWidget::slotProgressDialogVisible(bool b)
 {
     // Show the hide/show button (mButton) as soon as the progress dialog is shown
     // (StatusbarProgressWidget::slotShowItemDelayed happens later)
-    if (b && mMode != Progress) {
-        mMode = Progress;
-        setMode();
+    if (b) {
+        setMode(Progress);
     }
 }
