@@ -103,8 +103,8 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     mButton->setMaximumHeight(maximumHeight);
     setFixedWidth(600);
 
-    mMode = Clean;
-    setMode();
+    mMode = Progress; // so the call below works
+    setMode(Clean);
 
     connect(mButton, &QAbstractButton::clicked,
             this, &StatusbarProgressWidget::slotProgressButtonClicked);
@@ -223,9 +223,8 @@ void StatusbarProgressWidget::slotShowItemDelayed()
         }
     }
 
-    if (!noItems && mMode != Progress) {
-        mMode = Progress;
-        setMode();
+    if (!noItems) {
+        setMode(Progress);
     }
 }
 
@@ -242,8 +241,11 @@ void StatusbarProgressWidget::slotProgressItemProgress(ProgressItem *item, unsig
     mProgressBar->setValue(value);
 }
 
-void StatusbarProgressWidget::setMode()
+void StatusbarProgressWidget::setMode(Mode mode)
 {
+    if (mMode == mode)
+        return;
+    mMode = mode;
     switch (mMode) {
     case Clean:
         if (mShowButton) {
@@ -259,7 +261,7 @@ void StatusbarProgressWidget::setMode()
         mStackedWidget->setCurrentWidget(mProgressBar);
         if (mShowButton) {
             mShowDetailedProgress = mProgressDialog->wasLastShown();
-            updateProgressButton();
+            updateProgressButton(mShowDetailedProgress);
             mButton->show();
         }
         mSslLabel->setState(mSslLabel->lastState());
@@ -272,9 +274,7 @@ void StatusbarProgressWidget::slotClean()
     // check if a new item showed up since we started the timer. If not, clear
     if (ProgressManager::instance()->isEmpty()) {
         mProgressBar->setValue(0);
-        //m_pLabel->clear();
-        mMode = Clean;
-        setMode();
+        setMode(Clean);
     }
 }
 
@@ -293,9 +293,9 @@ bool StatusbarProgressWidget::eventFilter(QObject *obj, QEvent *ev)
     return QFrame::eventFilter(obj, ev);
 }
 
-void StatusbarProgressWidget::updateProgressButton()
+void StatusbarProgressWidget::updateProgressButton(bool showingProgress)
 {
-    if (!mShowDetailedProgress) {
+    if (!showingProgress) {
         mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
         mButton->setToolTip(i18n("Show detailed progress window"));
     } else {
@@ -308,14 +308,16 @@ void StatusbarProgressWidget::slotProgressButtonClicked()
 {
     mProgressDialog->slotToggleVisibility();
     mShowDetailedProgress = !mProgressDialog->isHidden();
-    updateProgressButton();
     setFixedWidth(qMax(600, mProgressDialog->width()));
 }
 
 void StatusbarProgressWidget::slotProgressDialogVisible(bool b)
 {
-    // Update the hide/show button when the detailed one is shown/hidden
+    // Show the hide/show button (mButton) as soon as the progress dialog is shown
+    // (StatusbarProgressWidget::slotShowItemDelayed happens later)
     if (b) {
-        setMode();
+        setMode(Progress);
     }
+
+    updateProgressButton(b);
 }
