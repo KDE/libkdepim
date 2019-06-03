@@ -25,7 +25,6 @@
 #include <QWidget>
 #include <QStringList>
 class KConfig;
-class QPushButton;
 class QListWidget;
 class KLineEdit;
 class QToolButton;

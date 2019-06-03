@@ -27,7 +27,6 @@
 #include <QObject>
 #include <QStringList>
 
-class KJob;
 
 namespace KLDAP {
 class LdapObject;
