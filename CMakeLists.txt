@@ -82,6 +82,10 @@ install(FILES
 
 add_subdirectory(src)
 
-install( FILES libkdepim.categories libkdepim.renamecategories DESTINATION ${KDE_INSTALL_CONFDIR} )
+if (${ECM_VERSION} STRGREATER "5.58.0")
+    install(FILES libkdepim.categories libkdepim.renamecategories  DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+else()
+    install(FILES libkdepim.categories libkdepim.renamecategories  DESTINATION ${KDE_INSTALL_CONFDIR})
+endif()
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
