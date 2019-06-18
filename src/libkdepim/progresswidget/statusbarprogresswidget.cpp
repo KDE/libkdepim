@@ -54,7 +54,6 @@ using KPIM::ProgressManager;
 #include <QPushButton>
 #include <QStackedWidget>
 #include <QTimer>
-#include <QDebug>
 
 using namespace KPIM;
 

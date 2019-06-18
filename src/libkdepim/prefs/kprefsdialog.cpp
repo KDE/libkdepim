@@ -48,7 +48,6 @@
 #include <QTimeEdit>
 #include <QButtonGroup>
 #include <QGroupBox>
-#include <QHBoxLayout>
 
 using namespace KPIM;
 

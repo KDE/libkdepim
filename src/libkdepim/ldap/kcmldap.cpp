@@ -26,9 +26,7 @@
 
 #include <KAboutData>
 #include <KPluginFactory>
-#include <QHBoxLayout>
 #include <KLocalizedString>
-#include <KMessageBox>
 #include "ldapconfigurewidget.h"
 
 K_PLUGIN_CLASS_WITH_JSON(KCMLdap, "kcmldap.json")
