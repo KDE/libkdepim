@@ -143,7 +143,7 @@ void LdapConfigureWidget::slotEditHost()
 
     KLDAP::LdapServer server = item->server();
     KLDAP::AddHostDialog dlg(&server, this);
-    dlg.setWindowTitle(i18n("Edit Host"));
+    dlg.setWindowTitle(i18nc("@title:window", "Edit Host"));
 
     if (dlg.exec() && !server.host().isEmpty()) {   //krazy:exclude=crashy
         item->setServer(server);

@@ -54,7 +54,7 @@ CompletionConfigureDialog::CompletionConfigureDialog(QWidget *parent)
     : QDialog(parent)
     , d(new KPIM::CompletionConfigureDialogPrivate)
 {
-    setWindowTitle(i18n("Configure completion"));
+    setWindowTitle(i18nc("@title:window", "Configure Completion"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     d->mTabWidget = new QTabWidget(this);

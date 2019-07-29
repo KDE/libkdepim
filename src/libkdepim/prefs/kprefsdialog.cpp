@@ -773,7 +773,7 @@ KPrefsDialog::KPrefsDialog(KConfigSkeleton *prefs, QWidget *parent, bool modal)
     , KPrefsWidManager(prefs)
 {
     setFaceType(List);
-    setWindowTitle(i18n("Preferences"));
+    setWindowTitle(i18nc("@title:window", "Preferences"));
     setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Apply | QDialogButtonBox::Cancel | QDialogButtonBox::RestoreDefaults);
     button(QDialogButtonBox::Ok)->setDefault(true);
     setModal(modal);

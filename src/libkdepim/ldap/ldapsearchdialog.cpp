@@ -483,7 +483,7 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     : QDialog(parent)
     , d(new Private(this))
 {
-    setWindowTitle(i18n("Import Contacts from LDAP"));
+    setWindowTitle(i18nc("@title:window", "Import Contacts from LDAP"));
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel, this);
@@ -877,7 +877,7 @@ void LdapSearchDialog::slotUser2()
     // Configure LDAP servers
 
     QPointer<KCMultiDialog> dialog = new KCMultiDialog(this);
-    dialog->setWindowTitle(i18n("Configure the Address Book LDAP Settings"));
+    dialog->setWindowTitle(i18nc("@title:window", "Configure the Address Book LDAP Settings"));
     dialog->addModule(QStringLiteral("kcmldap.desktop"));
 
     if (dialog->exec()) {   //krazy:exclude=crashy
