@@ -26,6 +26,10 @@
 namespace KPIM {
 class AddressessLineEditAbstractPlugin;
 class AddressessLineEditPluginManagerPrivate;
+/**
+ * @brief The AddressessLineEditPluginManager class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIMAKONADI_EXPORT AddressessLineEditPluginManager : public QObject
 {
     Q_OBJECT

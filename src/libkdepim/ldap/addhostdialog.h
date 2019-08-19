@@ -28,6 +28,10 @@
 namespace KLDAP {
 class LdapServer;
 class AddHostDialogPrivate;
+/**
+ * @brief The AddHostDialog class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIM_EXPORT AddHostDialog : public QDialog
 {
     Q_OBJECT

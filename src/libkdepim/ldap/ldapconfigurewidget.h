@@ -32,7 +32,10 @@ class QListWidgetItem;
 
 namespace KLDAP {
 class LdapClientSearchConfig;
-
+/**
+ * @brief The LdapConfigureWidget class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIM_EXPORT LdapConfigureWidget : public QWidget
 {
     Q_OBJECT

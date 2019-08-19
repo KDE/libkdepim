@@ -25,6 +25,10 @@
 
 namespace KPIM {
 class AddresseeLineEdit;
+/**
+ * @brief The AddressessLineEditAbstractPluginInfo struct
+ * @author Laurent Montel <montel@kde.org>
+ */
 struct KDEPIMAKONADI_EXPORT AddressessLineEditAbstractPluginInfo
 {
     QString name;
@@ -32,6 +36,10 @@ struct KDEPIMAKONADI_EXPORT AddressessLineEditAbstractPluginInfo
     QString description;
 };
 
+/**
+ * @brief The AddressessLineEditAbstractPlugin class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIMAKONADI_EXPORT AddressessLineEditAbstractPlugin : public QObject
 {
     Q_OBJECT

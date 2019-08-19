@@ -30,6 +30,10 @@ class LdapClientSearch;
 }
 namespace KPIM {
 class CompletionConfigureDialogPrivate;
+/**
+ * @brief The CompletionConfigureDialog class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIMAKONADI_EXPORT CompletionConfigureDialog : public QDialog
 {
     Q_OBJECT

@@ -29,6 +29,10 @@ class Item;
 }
 
 namespace KPIM {
+/**
+ * @brief The AddEmailDiplayJob class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIMAKONADI_EXPORT AddEmailDiplayJob : public KJob
 {
     Q_OBJECT

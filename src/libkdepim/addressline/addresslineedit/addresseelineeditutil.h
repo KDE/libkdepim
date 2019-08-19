@@ -24,6 +24,10 @@
 #include "kdepim_export.h"
 
 namespace KPIM {
+/**
+ * @brief The AddresseeLineEditUtil class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIM_EXPORT AddresseeLineEditUtil
 {
 public:

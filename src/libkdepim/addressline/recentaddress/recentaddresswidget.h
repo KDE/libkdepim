@@ -30,6 +30,10 @@ class KLineEdit;
 class QToolButton;
 
 namespace KPIM {
+/**
+ * @brief The RecentAddressWidget class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIM_EXPORT RecentAddressWidget : public QWidget
 {
     Q_OBJECT

@@ -41,6 +41,9 @@ class LdapClientSearch;
 
 namespace KPIM {
 class CompletionOrderEditorPrivate;
+/**
+ * @brief The CompletionOrderEditor class
+ */
 class KDEPIMAKONADI_EXPORT CompletionOrderEditor : public QDialog
 {
     Q_OBJECT

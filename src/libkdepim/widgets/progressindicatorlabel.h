@@ -25,6 +25,10 @@
 #include <QWidget>
 namespace KPIM {
 class ProgressIndicatorLabelPrivate;
+/**
+ * @brief The ProgressIndicatorLabel class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIM_EXPORT ProgressIndicatorLabel : public QWidget
 {
     Q_OBJECT

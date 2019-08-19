@@ -30,6 +30,10 @@ class KConfig;
 namespace KLDAP {
 class LdapServer;
 class LdapClient;
+/**
+ * @brief The LdapClientSearchConfig class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIM_EXPORT LdapClientSearchConfig : public QObject
 {
     Q_OBJECT
