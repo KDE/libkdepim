@@ -31,7 +31,7 @@ QString KPIM::AddresseeLineEditUtil::adaptPasteMails(const QString &str)
         // remove trailing commas and whitespace
         (*it).remove(QRegularExpression(QStringLiteral(",?\\s*$")));
     }
-    newText = lines.join(QStringLiteral(", "));
+    newText = lines.join(QLatin1String(", "));
 
     if (newText.startsWith(QLatin1String("mailto:"))) {
         const QUrl url(newText);

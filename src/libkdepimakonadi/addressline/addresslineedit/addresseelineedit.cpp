@@ -942,7 +942,7 @@ void AddresseeLineEdit::expandGroups()
         addresses.removeAll(group.name());
         expandJob->start();
     }
-    setText(addresses.join(QStringLiteral(", ")));
+    setText(addresses.join(QLatin1String(", ")));
     d->groupsClear();
 }
 
