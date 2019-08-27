@@ -652,7 +652,7 @@ void AddresseeLineEdit::loadContacts()
             name = KEmailAddress::quoteNameIfNecessary(name);
             if ((name[0] == QLatin1Char('"')) && (name[name.length() - 1] == QLatin1Char('"'))) {
                 name.remove(0, 1);
-                name.truncate(name.length() - 1);
+                name.chop(1);
             }
             addr.setNameFromString(name);
             addr.insertEmail(email, true);
