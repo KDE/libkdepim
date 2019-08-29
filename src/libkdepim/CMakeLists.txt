@@ -33,7 +33,6 @@ set(kdepim_widgets_LIB_SRCS
     widgets/pimmessagebox.cpp
     widgets/overlaywidget.cpp
     widgets/progressindicatorlabel.cpp
-    widgets/progressindicatorwidget.cpp
     )
 
 set(kdepim_ldap_LIB_SRCS
@@ -138,7 +137,6 @@ ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
     OverlayWidget
     PIMMessageBox
     ProgressIndicatorLabel
-    ProgressIndicatorWidget
     REQUIRED_HEADERS libkdepim_widgets_HEADERS
     PREFIX Libkdepim
     RELATIVE widgets

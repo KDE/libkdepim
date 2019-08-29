@@ -18,10 +18,10 @@
 */
 
 #include "progressindicatorlabel.h"
-#include "progressindicatorwidget.h"
 #include <KBusyIndicatorWidget>
 
 #include <QHBoxLayout>
+#include <QLabel>
 
 using namespace KPIM;
 class KPIM::ProgressIndicatorLabelPrivate
