@@ -19,6 +19,7 @@
 
 #include "progressindicatorlabel.h"
 #include "progressindicatorwidget.h"
+#include <KBusyIndicatorWidget>
 
 #include <QHBoxLayout>
 
@@ -32,7 +33,7 @@ public:
     {
         QHBoxLayout *lay = new QHBoxLayout(q);
         lay->setContentsMargins(0, 0, 0, 0);
-        indicator = new ProgressIndicatorWidget;
+        indicator = new KBusyIndicatorWidget;
         lay->addWidget(indicator);
         label = new QLabel;
         lay->addWidget(label);
@@ -44,26 +45,26 @@ public:
 
     void setActiveLabel(const QString &str)
     {
-        if (indicator->isActive()) {
+        if (!indicator->isHidden()) {
             label->setText(str);
         }
     }
 
     void start()
     {
-        indicator->start();
+        indicator->show();
         label->setText(labelStr);
     }
 
     void stop()
     {
-        indicator->stop();
+        indicator->hide();
         label->clear();
     }
 
     QString labelStr;
     QLabel *label = nullptr;
-    ProgressIndicatorWidget *indicator = nullptr;
+    KBusyIndicatorWidget *indicator = nullptr;
     ProgressIndicatorLabel *q;
 };
 
