@@ -296,7 +296,7 @@ const QStringList KPIM::AddresseeLineEditPrivate::adjustedCompletionItems(bool f
                 lastSourceIndex = index;
             }
 
-            (*it) = (*it).prepend(s_completionItemIndentString);
+            (*it).prepend(s_completionItemIndentString);
             // remove preferred email sort <blank> added in  addContact()
             (*it).replace(QLatin1String("  <"), QStringLiteral(" <"));
         }
@@ -558,7 +558,7 @@ void AddresseeLineEditPrivate::doCompletion(bool ctrlT)
                     }
                 } else if (mSearchExtended) {
                     //our added \" does not work anymore, remove it
-                    mSearchString = mSearchString.mid(1);
+                    mSearchString.remove(0, 1);
                     mSearchExtended = false;
                     q->setText(mPreviousAddresses + mSearchString);
                     //now try again
