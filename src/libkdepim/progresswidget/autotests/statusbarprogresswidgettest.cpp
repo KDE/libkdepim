@@ -21,7 +21,6 @@
 #include "../statusbarprogresswidget.h"
 #include "../progressdialog.h"
 #include "../progressmanager.h"
-#include "kdepimtest_layout.h"
 #include <QTest>
 #include <QHBoxLayout>
 #include <QPushButton>
@@ -44,7 +43,7 @@ void StatusbarProgressWidgetTest::shouldHaveDefaultValue()
     KPIM::StatusbarProgressWidget w(progress, widget);
     QHBoxLayout *boxLayout = w.findChild<QHBoxLayout *>(QStringLiteral("boxLayout"));
     QVERIFY(boxLayout);
-    KdepimTestLayout::checkContentsMargins(0, boxLayout);
+    QCOMPARE(boxLayout->contentsMargins(), QMargins(0, 0, 0, 0));
     QCOMPARE(boxLayout->spacing(), 0);
 
     QPushButton *mButton = w.findChild<QPushButton *>(QStringLiteral("button"));
