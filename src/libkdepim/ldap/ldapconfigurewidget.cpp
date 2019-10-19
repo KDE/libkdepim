@@ -30,7 +30,6 @@
 #include <kconfiggroup.h>
 #include <QDialogButtonBox>
 #include <QHBoxLayout>
-#include <kiconloader.h>
 #include <KLocalizedString>
 #include <KMessageBox>
 
@@ -324,13 +323,11 @@ void LdapConfigureWidget::initGUI()
     mUpButton = new QToolButton(upDownBox);
     upDownBoxVBoxLayout->addWidget(mUpButton);
     mUpButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
-    mUpButton->setIconSize(QSize(KIconLoader::SizeSmall, KIconLoader::SizeSmall));
     mUpButton->setEnabled(false);   // b/c no item is selected yet
 
     mDownButton = new QToolButton(upDownBox);
     upDownBoxVBoxLayout->addWidget(mDownButton);
     mDownButton->setIcon(QIcon::fromTheme(QStringLiteral("go-down")));
-    mDownButton->setIconSize(QSize(KIconLoader::SizeSmall, KIconLoader::SizeSmall));
     mDownButton->setEnabled(false);   // b/c no item is selected yet
 
     QWidget *spacer = new QWidget(upDownBox);
