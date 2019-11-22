@@ -13,7 +13,9 @@ if(BUILD_TESTING)
 endif()
 
 
-add_subdirectory(designer)
+if(BUILD_DESIGNERPLUGIN)
+    add_subdirectory(designer)
+endif()
 
 set(kdepim_addressline_LIB_SRCS
     addressline/completionorder/completionordereditor.cpp
