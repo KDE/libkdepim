@@ -25,8 +25,8 @@
 
 #include <QMap>
 #include <QTimer>
-#include <kcolorscheme.h>
-#include <kcompletionbox.h>
+#include <KColorScheme>
+#include <KCompletionBox>
 #include <AkonadiCore/Session>
 #include <Akonadi/Contact/ContactSearchJob>
 #include <Akonadi/Contact/ContactGroupSearchJob>

@@ -21,7 +21,7 @@
 #include "addressesslineeditabstractplugin.h"
 #include "libkdepimakonadi_debug.h"
 
-#include <kpluginmetadata.h>
+#include <KPluginMetaData>
 #include <KPluginLoader>
 #include <KPluginFactory>
 

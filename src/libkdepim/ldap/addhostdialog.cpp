@@ -23,7 +23,7 @@
 
 #include <QHBoxLayout>
 #include <KSharedConfig>
-#include <kacceleratormanager.h>
+#include <KAcceleratorManager>
 #include <kldap/ldapserver.h>
 #include <kldap/ldapconfigwidget.h>
 #include <KLocalizedString>

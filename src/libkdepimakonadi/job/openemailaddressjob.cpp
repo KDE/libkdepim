@@ -28,7 +28,7 @@
 #include <itemcreatejob.h>
 #include <kcontacts/addressee.h>
 #include <QPointer>
-#include <kmessagebox.h>
+#include <KMessageBox>
 
 using namespace KPIM;
 

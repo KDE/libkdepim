@@ -45,15 +45,15 @@
 #include <QClipboard>
 
 #include <KLineEdit>
-#include <kcombobox.h>
-#include <kconfig.h>
-#include <kconfiggroup.h>
-#include <kcmultidialog.h>
+#include <KComboBox>
+#include <KConfig>
+#include <KConfigGroup>
+#include <KCMultiDialog>
 #include <QDialogButtonBox>
 #include <kldap/ldapobject.h>
 #include <kldap/ldapserver.h>
 #include <QLineEdit>
-#include <kmessagebox.h>
+#include <KMessageBox>
 
 #include <QLocale>
 #include <KLocalizedString>

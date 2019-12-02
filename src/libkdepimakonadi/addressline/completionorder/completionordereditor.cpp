@@ -32,7 +32,7 @@
 
 #include "completionordereditor.h"
 #include "completionorderwidget.h"
-#include <kdescendantsproxymodel.h>
+#include <KDescendantsProxyModel>
 #include "Libkdepim/LdapClient"
 #include "ldap/ldapclientsearch.h"
 #include "ldap/ldapclientsearchconfig.h"

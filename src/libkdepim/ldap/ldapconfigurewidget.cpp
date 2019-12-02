@@ -26,8 +26,8 @@
 #include <QVBoxLayout>
 #include <QPushButton>
 
-#include <kconfig.h>
-#include <kconfiggroup.h>
+#include <KConfig>
+#include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QHBoxLayout>
 #include <KLocalizedString>

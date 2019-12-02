@@ -35,7 +35,7 @@
 
 #include <Job>
 #include <QUrl>
-#include <kconfiggroup.h>
+#include <KConfigGroup>
 
 #include <KEmailAddress>
 #include <KColorScheme>

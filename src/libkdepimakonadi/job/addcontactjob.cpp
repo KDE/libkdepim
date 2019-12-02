@@ -26,7 +26,7 @@
 #include <itemcreatejob.h>
 #include <kcontacts/addressee.h>
 #include <KLocalizedString>
-#include <kmessagebox.h>
+#include <KMessageBox>
 
 #include <QPointer>
 

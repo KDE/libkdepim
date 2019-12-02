@@ -26,7 +26,7 @@
 #include "kdepim_export.h"
 
 #include <KConfigSkeleton>
-#include <kfile.h>
+#include <KFile>
 #include <KLineEdit>
 #include <KPageDialog>
 #include <KCModule>

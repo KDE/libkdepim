@@ -23,7 +23,7 @@
 #include "../blacklistbalooemaillist.h"
 #include <KListWidgetSearchLine>
 #include <QLabel>
-#include <klineedit.h>
+#include <KLineEdit>
 #include <QPushButton>
 #include <QTest>
 #include <addressline/blacklistbaloocompletion/blacklistbalooemailwarning.h>

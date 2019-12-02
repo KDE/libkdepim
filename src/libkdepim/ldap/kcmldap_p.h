@@ -23,7 +23,7 @@
 #ifndef KCMLDAP_H
 #define KCMLDAP_H
 
-#include <kcmodule.h>
+#include <KCModule>
 
 
 namespace KLDAP {

@@ -22,7 +22,7 @@
 
 #include "kdepimakonadi_export.h"
 #include <AkonadiCore/Item>
-#include <kjob.h>
+#include <KJob>
 
 namespace Akonadi {
 class Item;
