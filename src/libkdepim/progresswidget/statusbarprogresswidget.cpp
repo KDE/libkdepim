@@ -242,8 +242,9 @@ void StatusbarProgressWidget::slotProgressItemProgress(ProgressItem *item, unsig
 
 void StatusbarProgressWidget::setMode(Mode mode)
 {
-    if (mMode == mode)
+    if (mMode == mode) {
         return;
+    }
     mMode = mode;
     switch (mMode) {
     case Clean:

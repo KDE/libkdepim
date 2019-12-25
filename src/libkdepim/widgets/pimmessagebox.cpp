@@ -29,8 +29,7 @@
 
 using namespace KPIM;
 
-QDialogButtonBox::StandardButton PIMMessageBox::fourBtnMsgBox(QWidget *parent, QMessageBox::Icon type, const QString &text, const QString &caption, const QString &button1Text,
-                                                              const QString &button2Text, const QString &button3Text, KMessageBox::Options options)
+QDialogButtonBox::StandardButton PIMMessageBox::fourBtnMsgBox(QWidget *parent, QMessageBox::Icon type, const QString &text, const QString &caption, const QString &button1Text, const QString &button2Text, const QString &button3Text, KMessageBox::Options options)
 {
     QDialog *dialog = new QDialog(parent);
     dialog->setWindowTitle(caption);

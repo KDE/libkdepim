@@ -40,7 +40,7 @@ void BlackListBalooEmailListTest::shouldHaveDefaultValue()
 void BlackListBalooEmailListTest::shouldFillListEmail()
 {
     KPIM::BlackListBalooEmailList blackList;
-    QCOMPARE(blackList.setEmailFound(QStringList() << QStringLiteral("foo@kde.org") << QStringLiteral("bla@kde.org") << QStringLiteral("bli@kde.org")),3);
+    QCOMPARE(blackList.setEmailFound(QStringList() << QStringLiteral("foo@kde.org") << QStringLiteral("bla@kde.org") << QStringLiteral("bli@kde.org")), 3);
     QCOMPARE(blackList.count(), 3);
     for (int i = 0; i < blackList.count(); ++i) {
         QListWidgetItem *item = blackList.item(i);

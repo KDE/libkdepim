@@ -139,7 +139,9 @@ void LdapClient::startQuery(const QString &filter)
     d->mActive = true;
     KIO::TransferJob *transfertJob = KIO::get(url, KIO::NoReload, KIO::HideProgressInfo);
     d->mJob = transfertJob;
-    connect(transfertJob, &KIO::TransferJob::data, this, [this](KIO::Job *job, const QByteArray &data) { d->slotData(job, data);});
+    connect(transfertJob, &KIO::TransferJob::data, this, [this](KIO::Job *job, const QByteArray &data) {
+        d->slotData(job, data);
+    });
     connect(d->mJob.data(), &KIO::TransferJob::infoMessage, this,
             [this](KJob *job, const QString &str, const QString &val) {
         d->slotInfoMessage(job, str, val);

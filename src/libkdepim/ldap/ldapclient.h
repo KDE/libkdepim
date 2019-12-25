@@ -27,7 +27,6 @@
 #include <QObject>
 #include <QStringList>
 
-
 namespace KLDAP {
 class LdapObject;
 class LdapServer;

@@ -31,7 +31,6 @@
 
 K_PLUGIN_CLASS_WITH_JSON(KCMLdap, "kcmldap.json")
 
-
 KCMLdap::KCMLdap(QWidget *parent, const QVariantList &)
     : KCModule(parent)
 {

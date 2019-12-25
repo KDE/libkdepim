@@ -278,8 +278,7 @@ ProgressItem *ProgressManager::createProgressItem(unsigned int progressType, con
                                               QString(), true, KPIM::ProgressItem::Unencrypted, progressType);
 }
 
-ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool cancellable, ProgressItem::CryptoStatus cryptoStatus,
-                                                      unsigned int progressType)
+ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool cancellable, ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType)
 {
     ProgressItem *t = nullptr;
     if (!mTransactions.value(id)) {
@@ -318,8 +317,7 @@ ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent, cons
     return t;
 }
 
-ProgressItem *ProgressManager::createProgressItemImpl(const QString &parent, const QString &id, const QString &label, const QString &status, bool canBeCanceled,
-                                                      ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType)
+ProgressItem *ProgressManager::createProgressItemImpl(const QString &parent, const QString &id, const QString &label, const QString &status, bool canBeCanceled, ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType)
 {
     ProgressItem *p = mTransactions.value(parent);
     return createProgressItemImpl(p, id, label, status, canBeCanceled, cryptoStatus, progressType);

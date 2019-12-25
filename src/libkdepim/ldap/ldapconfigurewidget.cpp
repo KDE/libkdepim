@@ -91,7 +91,6 @@ LdapConfigureWidget::LdapConfigureWidget(QWidget *parent)
 
     connect(mUpButton, &QToolButton::clicked, this, &LdapConfigureWidget::slotMoveUp);
     connect(mDownButton, &QToolButton::clicked, this, &LdapConfigureWidget::slotMoveDown);
-
 }
 
 LdapConfigureWidget::~LdapConfigureWidget()
@@ -333,7 +332,6 @@ void LdapConfigureWidget::initGUI()
     QWidget *spacer = new QWidget(upDownBox);
     upDownBoxVBoxLayout->addWidget(spacer);
     upDownBoxVBoxLayout->setStretchFactor(spacer, 100);
-
 
     QDialogButtonBox *buttons = new QDialogButtonBox(this);
     QPushButton *add = buttons->addButton(i18n("&Add Host..."),

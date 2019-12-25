@@ -17,7 +17,6 @@
  * Boston, MA 02110-1301, USA.
  */
 
-
 #ifndef LDAPCONFIGUREWIDGET_H
 #define LDAPCONFIGUREWIDGET_H
 
@@ -28,7 +27,6 @@ class QListWidget;
 class QPushButton;
 class QToolButton;
 class QListWidgetItem;
-
 
 namespace KLDAP {
 class LdapClientSearchConfig;

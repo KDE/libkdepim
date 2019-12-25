@@ -328,21 +328,18 @@ public:
      * canceled) and ongoing children prevent parents from finishing.
      * @return The ProgressItem representing the operation.
      */
-    static ProgressItem *createProgressItem(ProgressItem *parent, const QString &id, const QString &label,
-                                            const QString &status = QString(), bool canBeCanceled = true, KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
+    static ProgressItem *createProgressItem(ProgressItem *parent, const QString &id, const QString &label, const QString &status = QString(), bool canBeCanceled = true, KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
 
     /**
      * Use this version if you have the id string of the parent and want to
      * add a subjob to it.
      */
-    static ProgressItem *createProgressItem(const QString &parent, const QString &id, const QString &label,
-                                            const QString &status = QString(), bool canBeCanceled = true, KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
+    static ProgressItem *createProgressItem(const QString &parent, const QString &id, const QString &label, const QString &status = QString(), bool canBeCanceled = true, KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
 
     /**
      * Version without a parent.
      */
-    static ProgressItem *createProgressItem(const QString &id, const QString &label,
-                                            const QString &status = QString(), bool canBeCanceled = true, KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
+    static ProgressItem *createProgressItem(const QString &id, const QString &label, const QString &status = QString(), bool canBeCanceled = true, KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
 
     /**
      * @return true when there are no more progress items.
@@ -412,11 +409,9 @@ private:
     // prevent unsolicited copies
     ProgressManager(const ProgressManager &);
 
-    ProgressItem *createProgressItemImpl(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool cancellable, ProgressItem::CryptoStatus cryptoStatus,
-                                         unsigned int progressType = 0);
+    ProgressItem *createProgressItemImpl(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool cancellable, ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
 
-    ProgressItem *createProgressItemImpl(const QString &parent, const QString &id, const QString &label, const QString &status, bool cancellable, ProgressItem::CryptoStatus cryptoStatus,
-                                         unsigned int progressType = 0);
+    ProgressItem *createProgressItemImpl(const QString &parent, const QString &id, const QString &label, const QString &status, bool cancellable, ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType = 0);
     void emitShowProgressDialogImpl();
 
     QHash< QString, ProgressItem * > mTransactions;

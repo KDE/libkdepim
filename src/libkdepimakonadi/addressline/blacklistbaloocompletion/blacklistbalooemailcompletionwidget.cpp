@@ -79,7 +79,6 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     connect(mBlackListWarning, &BlackListBalooEmailWarning::saveChanges, this, &BlackListBalooEmailCompletionWidget::slotSaveChanges);
     mainLayout->addWidget(mBlackListWarning);
 
-
     QHBoxLayout *searchLineLayout = new QHBoxLayout;
     mainLayout->addLayout(searchLineLayout);
 
@@ -133,7 +132,6 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     mExcludeDomainLineEdit->setClearButtonEnabled(true);
     mExcludeDomainLineEdit->setTrapReturnKey(true);
     mExcludeDomainLineEdit->setPlaceholderText(i18n("Separate domain with \'%1\'", QLatin1Char(',')));
-
 
     connect(mEmailList, &QListWidget::itemSelectionChanged, this, &BlackListBalooEmailCompletionWidget::slotSelectionChanged);
     slotSelectionChanged();

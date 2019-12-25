@@ -149,7 +149,6 @@ KCheckComboBox::KCheckComboBox(QWidget *parent)
         d->updateCheckedItems(topLeft, bottomRight);
     });
 
-
     // read-only contents
     setEditable(true);
 
