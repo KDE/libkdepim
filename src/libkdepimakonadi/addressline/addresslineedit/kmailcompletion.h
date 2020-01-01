@@ -2,7 +2,7 @@
   This file is part of libkdepim.
 
   Copyright (c) 2006 Christian Schaarschmidt <schaarsc@gmx.de>
-  Copyright (C) 2017-2019 Laurent Montel <montel@kde.org>
+  Copyright (C) 2017-2020 Laurent Montel <montel@kde.org>
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Library General Public
