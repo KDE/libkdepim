@@ -71,9 +71,7 @@ bool AddressessLineEditPluginManagerPrivate::initializePlugins()
     if (!mPluginList.isEmpty()) {
         return true;
     }
-    const QVector<KPluginMetaData> plugins = KPluginLoader::findPlugins(QStringLiteral("addressline"), [](const KPluginMetaData &md) {
-        return md.serviceTypes().contains(QLatin1String("AddressLineEdit/Plugin"));
-    });
+    const QVector<KPluginMetaData> plugins = KPluginLoader::findPlugins(QStringLiteral("addressline"));
 
     QVectorIterator<KPluginMetaData> i(plugins);
     i.toBack();
