@@ -39,9 +39,9 @@ AddresseeLineEditManager::AddresseeLineEditManager()
     : mShowOU(false)
     , mAutoGroupExpand(false)
     , mCompletion(new KMailCompletion)
-    , mAddresseeLineEditAkonadi(new AddresseeLineEditAkonadi(this))
+    , mAddresseeLineEditAkonadi(new AddresseeLineEditAkonadi)
     , mAddressessLineEditLdap(new AddresseeLineEditLdap(this))
-    , mAddressessLineEditBaloo(new AddresseeLineEditBaloo(this))
+    , mAddressessLineEditBaloo(new AddresseeLineEditBaloo)
     , mNetworkConfigMgr(new QNetworkConfigurationManager(QCoreApplication::instance()))
 {
     KConfigGroup group(KSharedConfig::openConfig(), "AddressLineEdit");

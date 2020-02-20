@@ -887,7 +887,8 @@ KLDAP::LdapClientSearch *AddresseeLineEdit::ldapSearch() const
 
 void AddresseeLineEdit::slotEditingFinished()
 {
-    for (KJob *job : d->mightBeGroupJobs()) {
+    const QList<KJob *> listJob = d->mightBeGroupJobs();
+    for (KJob *job : listJob) {
         disconnect(job);
         job->deleteLater();
     }

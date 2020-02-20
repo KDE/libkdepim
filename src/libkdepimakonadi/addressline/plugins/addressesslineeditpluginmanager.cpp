@@ -145,8 +145,10 @@ QVector<KPIM::AddressessLineEditAbstractPlugin *> AddressessLineEditPluginManage
 
 KPIM::AddressessLineEditAbstractPlugin *AddressessLineEditPluginManager::plugin(const QString &identifier)
 {
-    for (KPIM::AddressessLineEditAbstractPlugin *p : pluginsList()) {
-        for (const AddressessLineEditAbstractPluginInfo &info : p->names()) {
+    const QVector<KPIM::AddressessLineEditAbstractPlugin *> lstPlugins = pluginsList();
+    for (KPIM::AddressessLineEditAbstractPlugin *p : lstPlugins) {
+        const QVector<AddressessLineEditAbstractPluginInfo> lstPluginsInfo = p->names();
+        for (const AddressessLineEditAbstractPluginInfo &info : lstPluginsInfo) {
             if (info.identifier == identifier) {
                 return p;
             }

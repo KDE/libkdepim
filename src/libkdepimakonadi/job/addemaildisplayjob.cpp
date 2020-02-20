@@ -90,7 +90,7 @@ public:
             Akonadi::ItemModifyJob *job = new Akonadi::ItemModifyJob(item);
             q->connect(job, &Akonadi::ItemModifyJob::result, q, [this](KJob *job) {
                 Akonadi::ItemModifyJob *modifiedJob = static_cast<Akonadi::ItemModifyJob *>(job);
-                q->contactUpdated(modifiedJob->item(), messageId);
+                Q_EMIT q->contactUpdated(modifiedJob->item(), messageId);
                 slotAddModifyContactDone(job);
             });
         } else {
@@ -121,7 +121,7 @@ public:
             Akonadi::ItemModifyJob *job = new Akonadi::ItemModifyJob(item);
             q->connect(job, &Akonadi::ItemModifyJob::result, q, [this](KJob *job) {
                 Akonadi::ItemModifyJob *modifiedJob = static_cast<Akonadi::ItemModifyJob *>(job);
-                q->contactUpdated(modifiedJob->item(), messageId);
+                Q_EMIT q->contactUpdated(modifiedJob->item(), messageId);
                 slotAddModifyContactDone(job);
             });
         }
@@ -245,7 +245,7 @@ public:
         Akonadi::ItemCreateJob *createJob = new Akonadi::ItemCreateJob(item, addressBook, q);
         q->connect(createJob, &Akonadi::ItemCreateJob::result, q, [this](KJob *job) {
             Akonadi::ItemCreateJob *modifiedJob = static_cast<Akonadi::ItemCreateJob *>(job);
-            q->contactUpdated(modifiedJob->item(), messageId);
+            Q_EMIT q->contactUpdated(modifiedJob->item(), messageId);
             slotAddModifyContactDone(job);
         });
     }

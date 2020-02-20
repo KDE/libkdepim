@@ -42,7 +42,8 @@ void AddresseeLineEditLdap::updateLDAPWeights()
        * that they map to the LdapClient::clientNumber() */
     mLdapSearch->updateCompletionWeights();
     int clientIndex = 0;
-    for (const KLDAP::LdapClient *client : mLdapSearch->clients()) {
+    const QList<KLDAP::LdapClient *> lstClients = mLdapSearch->clients();
+    for (const KLDAP::LdapClient *client : lstClients) {
         const int sourceIndex
             = mAddressLineStatic->addCompletionSource(i18n("LDAP server: %1", client->server().host()),
                                                       client->completionWeight());

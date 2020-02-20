@@ -196,7 +196,9 @@ void BlackListBalooEmailCompletionWidget::slotSearch()
         job->setSearchEmail(searchEmail);
         job->setLimit(mLimit);
         connect(job, &BlackListBalooEmailSearchJob::emailsFound, this, &BlackListBalooEmailCompletionWidget::slotEmailFound);
-        job->start();
+        if (!job->start()) {
+            qCWarning(LIBKDEPIMAKONADI_LOG) << "Impossible to start search job";
+        }
     }
 }
 

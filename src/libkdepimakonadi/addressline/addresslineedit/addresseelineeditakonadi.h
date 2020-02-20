@@ -33,14 +33,13 @@ class AddresseeLineEditManager;
 class AddresseeLineEditAkonadi
 {
 public:
-    explicit AddresseeLineEditAkonadi(AddresseeLineEditManager *addressLineStatic);
+    explicit AddresseeLineEditAkonadi();
     ~AddresseeLineEditAkonadi();
 
     Akonadi::Session *akonadiSession() const;
 
 private:
     mutable Akonadi::Session *m_akonadiSession = nullptr;
-    AddresseeLineEditManager *mAddressLineStatic = nullptr;
 };
 }
 

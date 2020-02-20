@@ -23,11 +23,10 @@
 #include <QStringList>
 
 namespace KPIM {
-class AddresseeLineEditManager;
 class AddresseeLineEditBaloo
 {
 public:
-    explicit AddresseeLineEditBaloo(AddresseeLineEditManager *addressLineStatic);
+    AddresseeLineEditBaloo();
     ~AddresseeLineEditBaloo();
 
     int balooCompletionSource() const;
@@ -43,7 +42,6 @@ private:
     QStringList mDomainExcludeList;
 
     int mBalooCompletionSource = 0;
-    AddresseeLineEditManager *mAddressLineStatic = nullptr;
 };
 }
 
