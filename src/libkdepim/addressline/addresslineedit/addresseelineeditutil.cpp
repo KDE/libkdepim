@@ -25,7 +25,11 @@ QString KPIM::AddresseeLineEditUtil::adaptPasteMails(const QString &str)
 {
     QString newText = str;
     // remove newlines in the to-be-pasted string
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     QStringList lines = newText.split(QRegularExpression(QStringLiteral("\r?\n")), QString::SkipEmptyParts);
+#else
+    QStringList lines = newText.split(QRegularExpression(QStringLiteral("\r?\n")), Qt::SkipEmptyParts);
+#endif
     QStringList::iterator end(lines.end());
     for (QStringList::iterator it = lines.begin(); it != end; ++it) {
         // remove trailing commas and whitespace
