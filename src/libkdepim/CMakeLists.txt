@@ -43,7 +43,16 @@ set(kdepim_ldap_LIB_SRCS
     ldap/addhostdialog.cpp
     ldap/ldapconfigurewidget.cpp
     )
-ecm_qt_declare_logging_category(kdepim_ldap_LIB_SRCS HEADER ldapclient_debug.h IDENTIFIER LDAPCLIENT_LOG CATEGORY_NAME org.kde.pim.ldapclient)
+
+if (ECM_VERSION VERSION_LESS "5.68.0")
+    ecm_qt_declare_logging_category(kdepim_ldap_LIB_SRCS HEADER ldapclient_debug.h IDENTIFIER LDAPCLIENT_LOG CATEGORY_NAME org.kde.pim.ldapclient)
+else()
+    ecm_qt_declare_logging_category(kdepim_ldap_LIB_SRCS HEADER ldapclient_debug.h IDENTIFIER LDAPCLIENT_LOG CATEGORY_NAME org.kde.pim.ldapclient
+        DESCRIPTION "ldapclient (libkdepim)"
+        OLD_CATEGORY_NAMES log_ldapclient
+        EXPORT LIBKDEPIM
+    )
+endif()
 
 set(kdepim_misc_LIB_SRCS
     misc/broadcaststatus.cpp
@@ -74,7 +83,16 @@ set(kdepim_LIB_SRCS
     ${kdepim_addressline_LIB_SRCS}
     prefs/kprefsdialog.cpp
     )
-ecm_qt_declare_logging_category(kdepim_LIB_SRCS HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim)
+if (ECM_VERSION VERSION_LESS "5.68.0")
+    ecm_qt_declare_logging_category(kdepim_LIB_SRCS HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim)
+else()
+    ecm_qt_declare_logging_category(kdepim_LIB_SRCS HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
+        DESCRIPTION "libkdepim (libkdepim)"
+        OLD_CATEGORY_NAMES log_libkdepim
+        EXPORT LIBKDEPIM
+    )
+endif()
+
 
 
 add_library(KF5Libkdepim ${kdepim_LIB_SRCS})
