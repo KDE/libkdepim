@@ -1,3 +1,0 @@
-org.kde.pim.libkdepim libkdepim (libkdepim) IDENTIFIER [LIBKDEPIM_LOG]
-org.kde.pim.libkdepimakonadi libkdepimakonadi (libkdepim) IDENTIFIER [LIBKDEPIMAKONADI_LOG]
-org.kde.pim.ldapclient ldapclient (libkdepim) IDENTIFIER [LDAPCLIENT_LOG]
