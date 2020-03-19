@@ -436,7 +436,7 @@ KPrefsWidRadios::KPrefsWidRadios(KConfigSkeleton::ItemEnum *item, QWidget *paren
 #if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(mGroup, qOverload<int>(&QButtonGroup::buttonClicked), this, &KPrefsWidRadios::changed);
 #else
-    connect(mGroup, &QButtonGroup::buttonClicked, this, &KPrefsWidRadios::changed);
+    connect(mGroup, qOverload<QAbstractButton *>(&QButtonGroup::buttonClicked), this, &KPrefsWidRadios::changed);
 #endif
 }
 
