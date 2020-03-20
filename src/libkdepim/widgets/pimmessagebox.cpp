@@ -41,7 +41,7 @@ QDialogButtonBox::StandardButton PIMMessageBox::fourBtnMsgBox(QWidget *parent, Q
     box->button(QDialogButtonBox::Yes)->setDefault(true);
 
     bool checkboxResult = false;
-    QDialogButtonBox::StandardButton result = KMessageBox::createKMessageBox(
+    const QDialogButtonBox::StandardButton result = KMessageBox::createKMessageBox(
         dialog, box, type, text, QStringList(), QString(), &checkboxResult, options);
     return result;
 }
