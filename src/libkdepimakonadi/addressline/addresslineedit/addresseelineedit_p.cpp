@@ -272,13 +272,12 @@ const QStringList KPIM::AddresseeLineEditPrivate::adjustedCompletionItems(bool f
     // The algo for non-weighted mode is different.
 
     int lastSourceIndex = -1;
-    unsigned int i = 0;
 
     // Maps indices of the items list, which are section headers/source items,
     // to a QStringList which are the items of that section/source.
     QMap<int, QStringList> sections;
     QStringList sortedItems;
-    for (QStringList::Iterator it = items.begin(); it != items.end(); ++it, ++i) {
+    for (QStringList::Iterator it = items.begin(); it != items.end(); ++it) {
         AddresseeLineEditManager::CompletionItemsMap::const_iterator cit = AddresseeLineEditManager::self()->completionItemMap.constFind(*it);
         if (cit == AddresseeLineEditManager::self()->completionItemMap.constEnd()) {
             continue;
