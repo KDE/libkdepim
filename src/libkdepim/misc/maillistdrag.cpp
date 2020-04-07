@@ -189,7 +189,7 @@ MailList MailList::decode(const QByteArray &payload)
     MailList mailList;
     // A read-only data stream
     QDataStream stream(payload);
-    if (payload.size()) {
+    if (!payload.isEmpty()) {
         stream >> mailList;
     }
     return mailList;
@@ -198,7 +198,7 @@ MailList MailList::decode(const QByteArray &payload)
 QByteArray MailList::serialsFromMimeData(const QMimeData *md)
 {
     MailList mailList = fromMimeData(md);
-    if (mailList.count()) {
+    if (!mailList.isEmpty()) {
         MailList::const_iterator it;
         QByteArray a;
         QBuffer buffer(&a);

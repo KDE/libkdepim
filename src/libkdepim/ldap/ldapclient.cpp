@@ -255,7 +255,7 @@ void LdapClient::Private::finishCurrentObject()
 void LdapClient::Private::parseLDIF(const QByteArray &data)
 {
     //qCDebug(LDAPCLIENT_LOG) <<"LdapClient::parseLDIF(" << QCString(data.data(), data.size()+1) <<" )";
-    if (data.size()) {
+    if (!data.isEmpty()) {
         mLdif.setLdif(data);
     } else {
         mLdif.endLdif();
