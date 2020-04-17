@@ -45,7 +45,7 @@
 #include <QClipboard>
 
 #include <KLineEdit>
-#include <KComboBox>
+#include <QComboBox>
 #include <KConfig>
 #include <KConfigGroup>
 #include <KCMultiDialog>
@@ -465,8 +465,8 @@ public:
     bool mIsConfigured = false;
     KContacts::Addressee::List mSelectedContacts;
 
-    KComboBox *mFilterCombo = nullptr;
-    KComboBox *mSearchType = nullptr;
+    QComboBox *mFilterCombo = nullptr;
+    QComboBox *mSearchType = nullptr;
     QLineEdit *mSearchEdit = nullptr;
 
     QCheckBox *mRecursiveCheckbox = nullptr;
@@ -523,7 +523,7 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     label = new QLabel(i18nc("In LDAP attribute", "in"), groupBox);
     boxLayout->addWidget(label, 0, 2);
 
-    d->mFilterCombo = new KComboBox(groupBox);
+    d->mFilterCombo = new QComboBox(groupBox);
     d->mFilterCombo->addItem(i18nc("@item:inlistbox Name of the contact", "Name"), QVariant::fromValue(Name));
     d->mFilterCombo->addItem(i18nc("@item:inlistbox email address of the contact", "Email"), QVariant::fromValue(Email));
     d->mFilterCombo->addItem(i18nc("@item:inlistbox", "Home Number"), QVariant::fromValue(HomeNumber));
@@ -549,7 +549,7 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
     d->mRecursiveCheckbox->setChecked(true);
     boxLayout->addWidget(d->mRecursiveCheckbox, 1, 0, 1, 5);
 
-    d->mSearchType = new KComboBox(groupBox);
+    d->mSearchType = new QComboBox(groupBox);
     d->mSearchType->addItem(i18n("Contains"));
     d->mSearchType->addItem(i18n("Starts With"));
     boxLayout->addWidget(d->mSearchType, 1, 3, 1, 2);
