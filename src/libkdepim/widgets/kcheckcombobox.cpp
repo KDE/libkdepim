@@ -25,7 +25,6 @@
 
 #include "kcheckcombobox.h"
 
-#include <KLineEdit>
 #include "libkdepim_debug.h"
 
 #include <QAbstractItemView>
@@ -135,10 +134,10 @@ void KCheckComboBox::Private::toggleCheckState()
 /// Class KCheckComboBox
 
 KCheckComboBox::KCheckComboBox(QWidget *parent)
-    : KComboBox(parent)
+    : QComboBox(parent)
     , d(new KCheckComboBox::Private(this))
 {
-    connect(this, qOverload<int>(&KComboBox::activated), this, [this]() {
+    connect(this, qOverload<int>(&QComboBox::activated), this, [this]() {
         d->toggleCheckState();
     });
     connect(model(), &QAbstractItemModel::rowsInserted, this,
@@ -159,7 +158,6 @@ KCheckComboBox::KCheckComboBox(QWidget *parent)
             setCheckedItems(QStringList());
         }
     });
-    setInsertPolicy(KComboBox::NoInsert);
 
     view()->installEventFilter(this);
     view()->viewport()->installEventFilter(this);
@@ -177,7 +175,7 @@ KCheckComboBox::~KCheckComboBox()
 void KCheckComboBox::hidePopup()
 {
     if (!d->mIgnoreHide) {
-        KComboBox::hidePopup();
+        QComboBox::hidePopup();
     }
     d->mIgnoreHide = false;
 }
@@ -310,7 +308,7 @@ void KCheckComboBox::wheelEvent(QWheelEvent *event)
 
 void KCheckComboBox::resizeEvent(QResizeEvent *event)
 {
-    KComboBox::resizeEvent(event);
+    QComboBox::resizeEvent(event);
     if (d->mSqueezeText) {
         d->updateCheckedItems();
     }
@@ -351,7 +349,7 @@ bool KCheckComboBox::eventFilter(QObject *receiver, QEvent *event)
     default:
         break;
     }
-    return KComboBox::eventFilter(receiver, event);
+    return QComboBox::eventFilter(receiver, event);
 }
 
 bool KCheckComboBox::alwaysShowDefaultText() const

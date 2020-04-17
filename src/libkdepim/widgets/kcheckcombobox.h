@@ -28,7 +28,7 @@
 
 #include "kdepim_export.h"
 
-#include <KComboBox>
+#include <QComboBox>
 #include <QModelIndex>
 
 namespace KPIM {
@@ -38,7 +38,7 @@ namespace KPIM {
  * and the separator that is used to show the items that are selected in the line
  * edit.
  */
-class KDEPIM_EXPORT KCheckComboBox : public KComboBox
+class KDEPIM_EXPORT KCheckComboBox : public QComboBox
 {
     Q_OBJECT
 
