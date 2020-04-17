@@ -124,6 +124,9 @@ void MultiplyingLineView::slotReturnPressed(MultiplyingLine *line)
         if (!empty) {
             empty = addLine();
         }
+        if (!empty) {
+            return;
+        }
         activateLine(empty);
     }
 }
