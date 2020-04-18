@@ -25,7 +25,6 @@ class Session;
 }
 
 namespace KPIM {
-class AddresseeLineEditManager;
 /**
  * @brief The AddresseeLineEditAkonadi class
  * @author Laurent Montel <montel@kde.org>
