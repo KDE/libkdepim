@@ -55,6 +55,7 @@ set(kdepim_misc_LIB_SRCS
     misc/emailvalidator.cpp
     misc/maillistdrag.cpp
     misc/uistatesaver.cpp
+    misc/lineeditcatchreturnkey.cpp
     )
 
 set(kdepim_multiplyingline_LIB_SRCS
@@ -158,6 +159,7 @@ ecm_generate_headers(libkdepim_Camelcasemisc_HEADERS
     MaillistDrag
     UiStateSaver
     KCursorSaver
+    LineEditCatchReturnKey
     REQUIRED_HEADERS libkdepim_misc_HEADERS
     PREFIX Libkdepim
     RELATIVE misc
