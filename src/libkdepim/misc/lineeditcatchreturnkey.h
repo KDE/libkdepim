@@ -24,6 +24,10 @@
 #include "kdepim_export.h"
 class QLineEdit;
 namespace KPIM {
+/**
+ * @brief The LineEditCatchReturnKey class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class KDEPIM_EXPORT LineEditCatchReturnKey : public QObject
 {
     Q_OBJECT
