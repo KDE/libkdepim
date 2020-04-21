@@ -27,6 +27,7 @@
 
 #include "ldapclientsearchconfig.h"
 #include "widgets/progressindicatorlabel.h"
+#include "misc/lineeditcatchreturnkey.h"
 
 #include <QPair>
 #include <QApplication>
@@ -44,7 +45,7 @@
 #include <QMenu>
 #include <QClipboard>
 
-#include <KLineEdit>
+#include <QLineEdit>
 #include <QComboBox>
 #include <KConfig>
 #include <KConfigGroup>
@@ -52,7 +53,6 @@
 #include <QDialogButtonBox>
 #include <kldap/ldapobject.h>
 #include <kldap/ldapserver.h>
-#include <QLineEdit>
 #include <KMessageBox>
 
 #include <QLocale>
@@ -475,7 +475,7 @@ public:
     ContactListModel *mModel = nullptr;
     KPIM::ProgressIndicatorLabel *progressIndication = nullptr;
     QSortFilterProxyModel *sortproxy = nullptr;
-    KLineEdit *searchLine = nullptr;
+    QLineEdit *searchLine = nullptr;
     QPushButton *user1Button = nullptr;
 };
 
@@ -558,8 +558,8 @@ LdapSearchDialog::LdapSearchDialog(QWidget *parent)
 
     QHBoxLayout *quickSearchLineLayout = new QHBoxLayout;
     quickSearchLineLayout->addStretch();
-    d->searchLine = new KLineEdit;
-    d->searchLine->setTrapReturnKey(true);
+    d->searchLine = new QLineEdit;
+    new KPIM::LineEditCatchReturnKey(d->searchLine, this);
     d->searchLine->setClearButtonEnabled(true);
     d->searchLine->setPlaceholderText(i18n("Search in result"));
     quickSearchLineLayout->addWidget(d->searchLine);
