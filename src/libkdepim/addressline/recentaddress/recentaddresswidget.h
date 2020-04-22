@@ -26,7 +26,7 @@
 #include <QStringList>
 class KConfig;
 class QListWidget;
-class KLineEdit;
+class QLineEdit;
 class QToolButton;
 
 namespace KPIM {
@@ -56,7 +56,7 @@ private:
     QToolButton *mNewButton = nullptr;
     QToolButton *mRemoveButton = nullptr;
     QListWidget *mListView = nullptr;
-    KLineEdit *mLineEdit = nullptr;
+    QLineEdit *mLineEdit = nullptr;
     bool mDirty = false;
 };
 }

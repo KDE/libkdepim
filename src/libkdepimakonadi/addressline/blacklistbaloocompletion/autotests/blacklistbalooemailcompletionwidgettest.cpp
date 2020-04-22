@@ -23,7 +23,7 @@
 #include "../blacklistbalooemaillist.h"
 #include <KListWidgetSearchLine>
 #include <QLabel>
-#include <KLineEdit>
+#include <QLineEdit>
 #include <QPushButton>
 #include <QTest>
 #include <addressline/blacklistbaloocompletion/blacklistbalooemailwarning.h>
@@ -45,10 +45,9 @@ void BlackListBalooEmailCompletionWidgetTest::shouldHaveDefaultValue()
     QLabel *searchLabel = widget.findChild<QLabel *>(QStringLiteral("search_label"));
     QVERIFY(searchLabel);
 
-    KLineEdit *searchLineEdit = widget.findChild<KLineEdit *>(QStringLiteral("search_lineedit"));
+    QLineEdit *searchLineEdit = widget.findChild<QLineEdit *>(QStringLiteral("search_lineedit"));
     QVERIFY(searchLineEdit);
     QVERIFY(searchLineEdit->isClearButtonEnabled());
-    QVERIFY(searchLineEdit->trapReturnKey());
     QVERIFY(searchLineEdit->text().isEmpty());
 
     QPushButton *seachButton = widget.findChild<QPushButton *>(QStringLiteral("search_button"));
@@ -79,9 +78,8 @@ void BlackListBalooEmailCompletionWidgetTest::shouldHaveDefaultValue()
     QLabel *excludeDomainLabel = widget.findChild<QLabel *>(QStringLiteral("domain_label"));
     QVERIFY(excludeDomainLabel);
 
-    KLineEdit *excludeDomainLineEdit = widget.findChild<KLineEdit *>(QStringLiteral("domain_lineedit"));
+    QLineEdit *excludeDomainLineEdit = widget.findChild<QLineEdit *>(QStringLiteral("domain_lineedit"));
     QVERIFY(excludeDomainLineEdit);
-    QVERIFY(excludeDomainLineEdit->trapReturnKey());
     QVERIFY(excludeDomainLineEdit->text().isEmpty());
     QVERIFY(excludeDomainLineEdit->isClearButtonEnabled());
     QVERIFY(!excludeDomainLineEdit->placeholderText().isEmpty());
@@ -99,7 +97,7 @@ void BlackListBalooEmailCompletionWidgetTest::shouldHaveDefaultValue()
 void BlackListBalooEmailCompletionWidgetTest::shouldEnablePushButtonWhenTestSizeSupperiorToTwo()
 {
     KPIM::BlackListBalooEmailCompletionWidget widget;
-    KLineEdit *searchLineEdit = widget.findChild<KLineEdit *>(QStringLiteral("search_lineedit"));
+    QLineEdit *searchLineEdit = widget.findChild<QLineEdit *>(QStringLiteral("search_lineedit"));
     QPushButton *seachButton = widget.findChild<QPushButton *>(QStringLiteral("search_button"));
     QVERIFY(!seachButton->isEnabled());
     searchLineEdit->setText(QStringLiteral("fo"));

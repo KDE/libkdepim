@@ -20,9 +20,10 @@
 
 #include "recentaddresswidget.h"
 #include "recentaddresses.h"
+#include "misc/lineeditcatchreturnkey.h"
 
 #include <KConfig>
-#include <KLineEdit>
+#include <QLineEdit>
 #include <QPushButton>
 #include <KMessageBox>
 #include <KLocalizedString>
@@ -44,14 +45,14 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
     QHBoxLayout *lineLayout = new QHBoxLayout;
     layout->addLayout(lineLayout);
 
-    mLineEdit = new KLineEdit(this);
+    mLineEdit = new QLineEdit(this);
     mLineEdit->setObjectName(QStringLiteral("line_edit"));
-    mLineEdit->setTrapReturnKey(true);
+    new LineEditCatchReturnKey(mLineEdit, this);
     mLineEdit->installEventFilter(this);
     mLineEdit->setClearButtonEnabled(true);
     KPIM::EmailValidator *emailValidator = new KPIM::EmailValidator(this);
     mLineEdit->setValidator(emailValidator);
-    connect(mLineEdit, &KLineEdit::returnPressed, this, &RecentAddressWidget::slotAddItem);
+    connect(mLineEdit, &QLineEdit::returnPressed, this, &RecentAddressWidget::slotAddItem);
 
     lineLayout->addWidget(mLineEdit);
 
@@ -61,7 +62,7 @@ RecentAddressWidget::RecentAddressWidget(QWidget *parent)
     mNewButton->setIcon(QIcon::fromTheme(QStringLiteral("list-add")));
     mNewButton->setEnabled(false);
     connect(mNewButton, &QPushButton::clicked, this, &RecentAddressWidget::slotAddItem);
-    connect(mLineEdit, &KLineEdit::textChanged, this, &RecentAddressWidget::slotUpdateAddButton);
+    connect(mLineEdit, &QLineEdit::textChanged, this, &RecentAddressWidget::slotUpdateAddButton);
     lineLayout->addWidget(mNewButton);
 
     mRemoveButton = new QToolButton(this);

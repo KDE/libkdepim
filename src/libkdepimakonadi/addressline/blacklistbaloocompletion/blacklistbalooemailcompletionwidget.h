@@ -24,7 +24,7 @@
 #include <QWidget>
 #include "libkdepimakonadi_private_export.h"
 class QPushButton;
-class KLineEdit;
+class QLineEdit;
 class QLabel;
 class KListWidgetSearchLine;
 namespace KPIM {
@@ -54,8 +54,8 @@ private:
     void hideMoreResultAndChangeLimit();
     QStringList mOriginalExcludeDomain;
     QLabel *mNumberOfEmailsFound = nullptr;
-    KLineEdit *mSearchLineEdit = nullptr;
-    KLineEdit *mExcludeDomainLineEdit = nullptr;
+    QLineEdit *mSearchLineEdit = nullptr;
+    QLineEdit *mExcludeDomainLineEdit = nullptr;
     BlackListBalooEmailList *mEmailList = nullptr;
     QPushButton *mSearchButton = nullptr;
     QPushButton *mSelectButton = nullptr;

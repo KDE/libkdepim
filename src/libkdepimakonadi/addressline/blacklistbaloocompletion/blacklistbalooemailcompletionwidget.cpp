@@ -23,9 +23,10 @@
 #include "blacklistbalooemailsearchjob.h"
 #include "blacklistbalooemailutil.h"
 #include "blacklistbalooemailwarning.h"
+#include "misc/lineeditcatchreturnkey.h"
 
 #include <KLocalizedString>
-#include <KLineEdit>
+#include <QLineEdit>
 #include <QPushButton>
 #include <QLabel>
 #include <QHBoxLayout>
@@ -49,13 +50,13 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     lab->setObjectName(QStringLiteral("search_label"));
     searchLayout->addWidget(lab);
 
-    mSearchLineEdit = new KLineEdit(this);
+    mSearchLineEdit = new QLineEdit(this);
     mSearchLineEdit->setPlaceholderText(i18n("Research is done from 3 characters"));
     mSearchLineEdit->setFocus();
     mSearchLineEdit->setClearButtonEnabled(true);
-    mSearchLineEdit->setTrapReturnKey(true);
+    new KPIM::LineEditCatchReturnKey(mSearchLineEdit, this);
     mSearchLineEdit->setObjectName(QStringLiteral("search_lineedit"));
-    connect(mSearchLineEdit, &KLineEdit::returnPressed, this, &BlackListBalooEmailCompletionWidget::slotCheckIfUpdateBlackListIsNeeded);
+    connect(mSearchLineEdit, &QLineEdit::returnPressed, this, &BlackListBalooEmailCompletionWidget::slotCheckIfUpdateBlackListIsNeeded);
     searchLayout->addWidget(mSearchLineEdit);
 
     mSearchButton = new QPushButton(QIcon::fromTheme(QStringLiteral("edit-find")), i18n("Search"), this);
@@ -126,11 +127,11 @@ BlackListBalooEmailCompletionWidget::BlackListBalooEmailCompletionWidget(QWidget
     excludeDomainLabel->setObjectName(QStringLiteral("domain_label"));
     excludeDomainLayout->addWidget(excludeDomainLabel);
 
-    mExcludeDomainLineEdit = new KLineEdit(this);
+    mExcludeDomainLineEdit = new QLineEdit(this);
     excludeDomainLayout->addWidget(mExcludeDomainLineEdit);
     mExcludeDomainLineEdit->setObjectName(QStringLiteral("domain_lineedit"));
     mExcludeDomainLineEdit->setClearButtonEnabled(true);
-    mExcludeDomainLineEdit->setTrapReturnKey(true);
+    new KPIM::LineEditCatchReturnKey(mExcludeDomainLineEdit, this);
     mExcludeDomainLineEdit->setPlaceholderText(i18n("Separate domain with \'%1\'", QLatin1Char(',')));
 
     connect(mEmailList, &QListWidget::itemSelectionChanged, this, &BlackListBalooEmailCompletionWidget::slotSelectionChanged);

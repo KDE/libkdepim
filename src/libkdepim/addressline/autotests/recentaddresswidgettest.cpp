@@ -20,7 +20,7 @@
 
 #include "recentaddresswidgettest.h"
 #include "../recentaddress/recentaddresswidget.h"
-#include <KLineEdit>
+#include <QLineEdit>
 #include <QToolButton>
 #include <QListWidget>
 #include <QTest>
@@ -38,10 +38,9 @@ RecentAddressWidgetTest::~RecentAddressWidgetTest()
 void RecentAddressWidgetTest::shouldHaveDefaultValue()
 {
     KPIM::RecentAddressWidget w;
-    KLineEdit *lineedit = w.findChild<KLineEdit *>(QStringLiteral("line_edit"));
+    QLineEdit *lineedit = w.findChild<QLineEdit *>(QStringLiteral("line_edit"));
     QVERIFY(lineedit);
     QVERIFY(lineedit->isClearButtonEnabled());
-    QVERIFY(lineedit->trapReturnKey());
     QVERIFY(lineedit->text().isEmpty());
 
     QToolButton *newButton = w.findChild<QToolButton *>(QStringLiteral("new_button"));
@@ -76,7 +75,7 @@ void RecentAddressWidgetTest::shouldInformThatItWasChanged()
 {
     KPIM::RecentAddressWidget w;
     QVERIFY(!w.wasChanged());
-    KLineEdit *lineedit = w.findChild<KLineEdit *>(QStringLiteral("line_edit"));
+    QLineEdit *lineedit = w.findChild<QLineEdit *>(QStringLiteral("line_edit"));
     lineedit->setText(QStringLiteral("foo"));
     QToolButton *newButton = w.findChild<QToolButton *>(QStringLiteral("new_button"));
     QVERIFY(newButton);
@@ -90,7 +89,7 @@ void RecentAddressWidgetTest::shouldInformThatItWasChanged()
 void RecentAddressWidgetTest::shouldNotAddMultiSameLine()
 {
     KPIM::RecentAddressWidget w;
-    KLineEdit *lineedit = w.findChild<KLineEdit *>(QStringLiteral("line_edit"));
+    QLineEdit *lineedit = w.findChild<QLineEdit *>(QStringLiteral("line_edit"));
     QToolButton *newButton = w.findChild<QToolButton *>(QStringLiteral("new_button"));
 
     QListWidget *listview = w.findChild<QListWidget *>(QStringLiteral("list_view"));
@@ -108,7 +107,7 @@ void RecentAddressWidgetTest::shouldNotAddMultiSameLine()
 void RecentAddressWidgetTest::shouldNotAddEmptyLine()
 {
     KPIM::RecentAddressWidget w;
-    KLineEdit *lineedit = w.findChild<KLineEdit *>(QStringLiteral("line_edit"));
+    QLineEdit *lineedit = w.findChild<QLineEdit *>(QStringLiteral("line_edit"));
     QToolButton *newButton = w.findChild<QToolButton *>(QStringLiteral("new_button"));
     QListWidget *listview = w.findChild<QListWidget *>(QStringLiteral("list_view"));
     QCOMPARE(listview->count(), 0);
@@ -129,7 +128,7 @@ void RecentAddressWidgetTest::shouldNotAddEmptyLine()
 void RecentAddressWidgetTest::shouldDisableAddButton()
 {
     KPIM::RecentAddressWidget w;
-    KLineEdit *lineedit = w.findChild<KLineEdit *>(QStringLiteral("line_edit"));
+    QLineEdit *lineedit = w.findChild<QLineEdit *>(QStringLiteral("line_edit"));
     QToolButton *newButton = w.findChild<QToolButton *>(QStringLiteral("new_button"));
 
     lineedit->setText(QStringLiteral("foo"));
