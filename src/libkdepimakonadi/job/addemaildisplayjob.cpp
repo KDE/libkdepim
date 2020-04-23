@@ -43,10 +43,10 @@
 
 using namespace KPIM;
 
-class Q_DECL_HIDDEN AddEmailDiplayJob::Private
+class Q_DECL_HIDDEN AddEmailDisplayJob::Private
 {
 public:
-    Private(AddEmailDiplayJob *qq, const QString &emailString, QWidget *parentWidget)
+    Private(AddEmailDisplayJob *qq, const QString &emailString, QWidget *parentWidget)
         : q(qq)
         , mCompleteAddress(emailString)
         , mParentWidget(parentWidget)
@@ -259,7 +259,7 @@ public:
         q->emitResult();
     }
 
-    AddEmailDiplayJob *q;
+    AddEmailDisplayJob *q;
     Akonadi::Item contact;
     Akonadi::Item::Id messageId;
     QString mCompleteAddress;
@@ -270,38 +270,38 @@ public:
     bool mRemoteContent = false;
 };
 
-AddEmailDiplayJob::AddEmailDiplayJob(const QString &email, QWidget *parentWidget, QObject *parent)
+AddEmailDisplayJob::AddEmailDisplayJob(const QString &email, QWidget *parentWidget, QObject *parent)
     : KJob(parent)
     , d(new Private(this, email, parentWidget))
 {
 }
 
-AddEmailDiplayJob::~AddEmailDiplayJob()
+AddEmailDisplayJob::~AddEmailDisplayJob()
 {
     delete d;
 }
 
-void AddEmailDiplayJob::setShowAsHTML(bool html)
+void AddEmailDisplayJob::setShowAsHTML(bool html)
 {
     d->mShowAsHTML = html;
 }
 
-void AddEmailDiplayJob::setRemoteContent(bool b)
+void AddEmailDisplayJob::setRemoteContent(bool b)
 {
     d->mRemoteContent = b;
 }
 
-void AddEmailDiplayJob::setContact(const Akonadi::Item &contact)
+void AddEmailDisplayJob::setContact(const Akonadi::Item &contact)
 {
     d->contact = contact;
 }
 
-void AddEmailDiplayJob::setMessageId(Akonadi::Item::Id id)
+void AddEmailDisplayJob::setMessageId(Akonadi::Item::Id id)
 {
     d->messageId = id;
 }
 
-void AddEmailDiplayJob::start()
+void AddEmailDisplayJob::start()
 {
     if (d->contact.isValid()) {
         d->modifyContact();

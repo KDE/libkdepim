@@ -30,17 +30,17 @@ class Item;
 
 namespace KPIM {
 /**
- * @brief The AddEmailDiplayJob class
+ * @brief The AddEmailDisplayJob class
  * @author Laurent Montel <montel@kde.org>
  */
-class KDEPIMAKONADI_EXPORT AddEmailDiplayJob : public KJob
+class KDEPIMAKONADI_EXPORT AddEmailDisplayJob : public KJob
 {
     Q_OBJECT
 
 public:
-    explicit AddEmailDiplayJob(const QString &email, QWidget *parentWidget, QObject *parent = nullptr);
+    explicit AddEmailDisplayJob(const QString &email, QWidget *parentWidget, QObject *parent = nullptr);
 
-    ~AddEmailDiplayJob() override;
+    ~AddEmailDisplayJob() override;
     void setShowAsHTML(bool html);
     void setRemoteContent(bool b);
     void setContact(const Akonadi::Item &contact);
