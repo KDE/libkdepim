@@ -49,7 +49,7 @@ public:
     void start() override;
 
 Q_SIGNALS:
-    void contactUpdated(const Akonadi::Item &contact, Akonadi::Item::Id id);
+    void contactUpdated(const Akonadi::Item &contact, Akonadi::Item::Id id, bool showAsHTML, bool remoteContent);
 
 private:
     //@cond PRIVATE
