@@ -265,7 +265,7 @@ public:
         q->emitResult();
     }
 
-    AddEmailDisplayJob *q;
+    AddEmailDisplayJob *q = nullptr;
     Akonadi::Item contact;
     Akonadi::Item::Id messageId;
     QString mCompleteAddress;

@@ -278,7 +278,7 @@ public:
         }
     }
 
-    AddEmailAddressJob *q;
+    AddEmailAddressJob *q = nullptr;
     QString mCompleteAddress;
     QString mEmail;
     QString mName;

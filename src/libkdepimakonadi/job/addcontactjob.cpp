@@ -39,16 +39,13 @@ public:
         : q(qq)
         , mContact(contact)
         , mParentWidget(parentWidget)
-        , mShowMessageBox(true)
     {
     }
 
     Private(AddContactJob *qq, const KContacts::Addressee &contact, const Akonadi::Collection &collection)
         : q(qq)
         , mContact(contact)
-        , mParentWidget(nullptr)
         , mCollection(collection)
-        , mShowMessageBox(true)
     {
     }
 
@@ -138,11 +135,11 @@ public:
         q->emitResult();
     }
 
-    AddContactJob *q;
+    AddContactJob *q = nullptr;
     KContacts::Addressee mContact;
     QWidget *mParentWidget = nullptr;
     Akonadi::Collection mCollection;
-    bool mShowMessageBox = false;
+    bool mShowMessageBox = true;
 };
 
 AddContactJob::AddContactJob(const KContacts::Addressee &contact, QWidget *parentWidget, QObject *parent)

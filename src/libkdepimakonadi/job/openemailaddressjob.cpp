@@ -93,7 +93,7 @@ public:
         q->emitResult();
     }
 
-    OpenEmailAddressJob *q;
+    OpenEmailAddressJob *q = nullptr;
     QString mCompleteAddress;
     QString mEmail;
     QString mName;
