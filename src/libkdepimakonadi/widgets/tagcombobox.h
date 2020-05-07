@@ -16,33 +16,23 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef TAGSELECTIONCOMBO_H
-#define TAGSELECTIONCOMBO_H
+#ifndef TAGCOMBOBOX_H
+#define TAGCOMBOBOX_H
 
 #include "kdepimakonadi_export.h"
 #include <KComboBox>
-#include <libkdepim/kcheckcombobox.h>
 
 namespace KPIM {
-/**
- * @brief The TagSelectionCombo class
- */
-class KDEPIMAKONADI_EXPORT TagSelectionCombo : public KPIM::KCheckComboBox
-{
-    Q_OBJECT
-public:
-    explicit TagSelectionCombo(QWidget *parent = nullptr);
-};
 
 /**
  * @brief The TagCombo class
  */
-class KDEPIMAKONADI_EXPORT TagCombo : public KComboBox
+class KDEPIMAKONADI_EXPORT TagComboBox : public KComboBox
 {
     Q_OBJECT
 public:
-    explicit TagCombo(QWidget *parent = nullptr);
+    explicit TagComboBox(QWidget *parent = nullptr);
 };
 }
 
-#endif // TAGSELECTIONCOMBO_H
+#endif

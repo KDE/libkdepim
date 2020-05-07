@@ -60,7 +60,7 @@ set(kdepim_job_LIB_SRCS
     )
 
 set(kdepimakonadi_widgets_LIB_SRCS
-    widgets/tagselectioncombo.cpp
+    widgets/tagcombobox.cpp
     )
 
 
@@ -130,7 +130,7 @@ install(TARGETS
 
 ecm_generate_headers(libkdepimakonadi_Camelcasewidgets_HEADERS
     HEADER_NAMES
-    TagSelectionCombo
+    TagComboBox
     REQUIRED_HEADERS libkdepimakonadi_widgets_HEADERS
     PREFIX LibkdepimAkonadi
     RELATIVE widgets
