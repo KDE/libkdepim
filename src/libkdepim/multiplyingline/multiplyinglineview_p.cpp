@@ -341,7 +341,7 @@ void MultiplyingLineView::clearModified()
 
 void MultiplyingLineView::setFocus()
 {
-    if (!mLines.empty() && mLines.last()->isActive()) {
+    if (!mLines.empty() && mLines.constLast()->isActive()) {
         setFocusBottom();
     } else {
         setFocusTop();
@@ -351,7 +351,7 @@ void MultiplyingLineView::setFocus()
 void MultiplyingLineView::setFocusTop()
 {
     if (!mLines.empty()) {
-        MultiplyingLine *line = mLines.first();
+        MultiplyingLine *line = mLines.constFirst();
         if (line) {
             line->activate();
         } else {
@@ -364,7 +364,7 @@ void MultiplyingLineView::setFocusTop()
 
 void MultiplyingLineView::setFocusBottom()
 {
-    MultiplyingLine *line = mLines.last();
+    MultiplyingLine *line = mLines.constLast();
     if (line) {
         ensureWidgetVisible(line);
         line->activate();
