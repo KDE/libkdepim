@@ -48,7 +48,7 @@ public:
 
     MultiplyingLine *emptyLine() const;
 
-    QList<MultiplyingLineData::Ptr> allData() const;
+    QVector<MultiplyingLineData::Ptr> allData() const;
 
     /** Removes data provided it can be found. The Data class must support operator==
         @param data The data you want to remove.

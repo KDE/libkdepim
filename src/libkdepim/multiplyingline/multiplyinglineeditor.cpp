@@ -122,7 +122,7 @@ MultiplyingLineFactory *MultiplyingLineEditor::factory() const
     return mMultiplyingLineFactory;
 }
 
-QList< MultiplyingLineData::Ptr > MultiplyingLineEditor::allData() const
+QVector< MultiplyingLineData::Ptr > MultiplyingLineEditor::allData() const
 {
     return mView->allData();
 }

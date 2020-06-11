@@ -96,7 +96,7 @@ public:
     MultiplyingLineFactory *factory() const;
 
     /** Retrieve the data from the editor */
-    QList<MultiplyingLineData::Ptr> allData() const;
+    QVector<MultiplyingLineData::Ptr> allData() const;
 
     /** Retrieve the data of the active line */
     MultiplyingLineData::Ptr activeData() const;

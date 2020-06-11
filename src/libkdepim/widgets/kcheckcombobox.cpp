@@ -197,6 +197,7 @@ QStringList KCheckComboBox::checkedItems(int role) const
         const QModelIndex index = model()->index(0, modelColumn(), rootModelIndex());
         const QModelIndexList indexes = model()->match(index, Qt::CheckStateRole,
                                                        Qt::Checked, -1, Qt::MatchExactly);
+        items.reserve(indexes.count());
         for (const QModelIndex &index : indexes) {
             items += index.data(role).toString();
         }
