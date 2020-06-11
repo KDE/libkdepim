@@ -24,7 +24,6 @@ set(kdepim_progresswidget_LIB_SRCS
     )
 
 set(kdepim_widgets_LIB_SRCS
-    widgets/customlogwidget.cpp
     widgets/kdatepickerpopup.cpp
     widgets/kcheckcombobox.cpp
     widgets/kweekdaycheckcombo.cpp
@@ -138,7 +137,6 @@ ecm_generate_headers(libkdepim_Camelcaseldap_HEADERS
 
 ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
     HEADER_NAMES
-    CustomLogWidget
     KCheckComboBox
     KDatePickerPopup
     KWeekdayCheckCombo
