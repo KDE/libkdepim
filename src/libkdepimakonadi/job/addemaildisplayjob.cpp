@@ -18,7 +18,6 @@
 */
 
 #include "addemaildisplayjob.h"
-#include <Libkdepim/BroadcastStatus>
 #include "akonadi/contact/selectaddressbookdialog.h"
 
 #include <CollectionDialog>

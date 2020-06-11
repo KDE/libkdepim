@@ -26,7 +26,6 @@ set(kdepim_progresswidget_LIB_SRCS
 set(kdepim_widgets_LIB_SRCS
     widgets/kdatepickerpopup.cpp
     widgets/kcheckcombobox.cpp
-    widgets/kweekdaycheckcombo.cpp
     widgets/kwidgetlister.cpp
     widgets/pimmessagebox.cpp
     widgets/overlaywidget.cpp
@@ -139,7 +138,6 @@ ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
     HEADER_NAMES
     KCheckComboBox
     KDatePickerPopup
-    KWeekdayCheckCombo
     KWidgetLister
     OverlayWidget
     PIMMessageBox
