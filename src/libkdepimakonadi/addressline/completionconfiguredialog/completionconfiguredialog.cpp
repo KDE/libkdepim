@@ -25,7 +25,8 @@
 #include <QTabWidget>
 #include <KConfigGroup>
 #include <KSharedConfig>
-#include <ldap/ldapclientsearch.h>
+#include <KLDAP/LdapClientSearch>
+
 #include <addressline/completionorder/completionorderwidget.h>
 #include <config-akonadi-search.h>
 #if !DISABLE_AKONADI_SEARCH

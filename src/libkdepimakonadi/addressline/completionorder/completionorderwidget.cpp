@@ -22,8 +22,9 @@
 
 #include <KDescendantsProxyModel>
 #include "Libkdepim/LdapClient"
-#include "ldap/ldapclientsearch.h"
-#include "ldap/ldapclientsearchconfig.h"
+#include <KLDAP/LdapClientSearch>
+
+//#include "ldap/ldapclientsearchconfig.h"
 #include <KContacts/Addressee>
 #include <KContacts/ContactGroup>
 
@@ -77,11 +78,12 @@ public:
 
     void save(CompletionOrderWidget *) override
     {
-        KConfig *config = KLDAP::LdapClientSearchConfig::config();
-        KConfigGroup group(config, "LDAP");
-        group.writeEntry(QStringLiteral("SelectedCompletionWeight%1").arg(mLdapClient->clientNumber()),
-                         mWeight);
-        group.sync();
+        //FIXME
+//        KConfig *config = KLDAP::LdapClientSearchConfig::config();
+//        KConfigGroup group(config, "LDAP");
+//        group.writeEntry(QStringLiteral("SelectedCompletionWeight%1").arg(mLdapClient->clientNumber()),
+//                         mWeight);
+//        group.sync();
     }
 
     bool hasEnableSupport() const override

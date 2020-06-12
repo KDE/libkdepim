@@ -26,7 +26,8 @@
 #include <AkonadiCore/Session>
 #include <QVector>
 #include <QPointer>
-#include <ldap/ldapclientsearch.h>
+#include <KLDAP/LdapClientSearch>
+
 #include <QColor>
 
 class QTimer;

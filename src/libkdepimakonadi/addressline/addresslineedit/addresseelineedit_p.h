@@ -21,7 +21,8 @@
 #include <QStringList>
 #include <QObject>
 #include <QList>
-#include "ldap/ldapclientsearch.h"
+#include <KLDAP/LdapClientSearch>
+
 #include <AkonadiCore/Item>
 #include <AkonadiCore/Collection>
 #include <kcontacts/contactgroup.h>

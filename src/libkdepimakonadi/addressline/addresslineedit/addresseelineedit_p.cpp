@@ -42,7 +42,8 @@
 #include <AkonadiSearch/PIM/contactcompleter.h>
 #endif
 
-#include <ldap/ldapclientsearch.h>
+#include <KLDAP/LdapClientSearch>
+
 #include <addressline/addresslineedit/baloocompletionemail.h>
 #include <akonadi/contact/contactsearchjob.h>
 

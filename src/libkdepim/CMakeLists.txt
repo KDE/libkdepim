@@ -32,21 +32,6 @@ set(kdepim_widgets_LIB_SRCS
     widgets/progressindicatorlabel.cpp
     )
 
-set(kdepim_ldap_LIB_SRCS
-    ldap/ldapclient.cpp
-    ldap/ldapsearchdialog.cpp
-    ldap/ldapclientsearch.cpp
-    ldap/ldapclientsearchconfig.cpp
-    ldap/addhostdialog.cpp
-    ldap/ldapconfigurewidget.cpp
-    )
-
-ecm_qt_declare_logging_category(kdepim_ldap_LIB_SRCS HEADER ldapclient_debug.h IDENTIFIER LDAPCLIENT_LOG CATEGORY_NAME org.kde.pim.ldapclient
-        DESCRIPTION "ldapclient (libkdepim)"
-        OLD_CATEGORY_NAMES log_ldapclient
-        EXPORT LIBKDEPIM
-    )
-
 set(kdepim_misc_LIB_SRCS
     misc/emailvalidator.cpp
     misc/maillistdrag.cpp
@@ -70,7 +55,6 @@ set(kdepim_addressline_LIB_SRCS
 set(kdepim_LIB_SRCS
     ${kdepim_progresswidget_LIB_SRCS}
     ${kdepim_widgets_LIB_SRCS}
-    ${kdepim_ldap_LIB_SRCS}
     ${kdepim_misc_LIB_SRCS}
     ${kdepim_multiplyingline_LIB_SRCS}
     ${kdepim_addressline_LIB_SRCS}
@@ -118,19 +102,6 @@ set_target_properties(KF5Libkdepim PROPERTIES
 install(TARGETS
     KF5Libkdepim
     EXPORT KF5LibkdepimTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS} ${LIBRARY_NAMELINK}
-    )
-
-ecm_generate_headers(libkdepim_Camelcaseldap_HEADERS
-    HEADER_NAMES
-    LdapClientSearchConfig
-    LdapClientSearch
-    AddHostDialog
-    LdapSearchDialog
-    LdapClient
-    LdapConfigureWidget
-    REQUIRED_HEADERS libkdepim_ldap_HEADERS
-    PREFIX Libkdepim
-    RELATIVE ldap
     )
 
 ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
@@ -212,7 +183,6 @@ ecm_generate_pri_file(BASE_NAME Libkdepim
 
 install(FILES
     ${libkdepim_CamelcaseCamelCase_HEADERS}
-    ${libkdepim_Camelcaseldap_HEADERS}
     ${libkdepim_Camelcasewidgets_HEADERS}
     ${libkdepim_Camelcaseprogresswidget_HEADERS}
     ${libkdepim_Camelcasemisc_HEADERS}
@@ -227,7 +197,6 @@ install(FILES
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/kdepim_export.h
     ${libkdepim_CamelCase_HEADERS}
-    ${libkdepim_ldap_HEADERS}
     ${libkdepim_progresswidget_HEADERS}
     ${libkdepim_misc_HEADERS}
     ${libkdepim_widgets_HEADERS}
@@ -246,24 +215,6 @@ install(FILES
 if(BUILD_DESIGNERPLUGIN)
     add_subdirectory(designer)
 endif()
-########### next target ###############
-
-
-set( kcm_ldap_SRCS
-    ldap/kcmldap.cpp
-    )
-
-add_library(kcm_ldap MODULE ${kcm_ldap_SRCS})
-
-
-target_link_libraries(kcm_ldap KF5::Libkdepim KF5::KCMUtils KF5::I18n KF5::Ldap Qt5::Core)
-
-kcoreaddons_desktop_to_json(kcm_ldap ldap/kcmldap.desktop DEFAULT_SERVICE_TYPE)
-
-install(TARGETS kcm_ldap DESTINATION ${KDE_INSTALL_PLUGINDIR})
-
-install(FILES ldap/kcmldap.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
-
 ########### install files ###############
 
 install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mailtransport.service.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})

@@ -34,8 +34,8 @@
 #include "completionorderwidget.h"
 #include <KDescendantsProxyModel>
 #include "Libkdepim/LdapClient"
-#include "ldap/ldapclientsearch.h"
-#include "ldap/ldapclientsearchconfig.h"
+#include <KLDAP/LdapClientSearch>
+//#include "ldap/ldapclientsearchconfig.h"
 
 #include <kcontacts/addressee.h>
 #include <kcontacts/contactgroup.h>
