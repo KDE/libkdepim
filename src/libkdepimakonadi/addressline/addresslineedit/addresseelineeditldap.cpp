@@ -19,7 +19,7 @@
 
 #include "addresseelineeditldap.h"
 #include "addresseelineeditmanager.h"
-#include <Libkdepim/LdapClientSearch>
+#include <KLDAP/LdapClientSearch>
 #include <KLDAP/LdapClient>
 #include <KLDAP/LdapServer>
 #include <KLocalizedString>
