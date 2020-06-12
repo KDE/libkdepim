@@ -22,7 +22,7 @@
 #include "addresseelineeditldap.h"
 #include "kmailcompletion.h"
 
-#include <Libkdepim/LdapClient>
+#include <KLDAP/LdapClient>
 #include <QNetworkConfigurationManager>
 #include <QTimer>
 #include <QCoreApplication>
