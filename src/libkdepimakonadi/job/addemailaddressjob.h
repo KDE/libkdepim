@@ -63,9 +63,11 @@ public:
     /**
      * Returns the item that represents the new contact.
      */
-    Akonadi::Item contact() const;
+    Q_REQUIRED_RESULT Akonadi::Item contact() const;
 
     void setInteractive(bool b);
+Q_SIGNALS:
+    void successMessage(const QString &message);
 private:
     //@cond PRIVATE
     class Private;

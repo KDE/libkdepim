@@ -19,7 +19,6 @@
 */
 
 #include "addemailaddressjob.h"
-#include <Libkdepim/BroadcastStatus>
 #include "akonadi/contact/selectaddressbookdialog.h"
 
 #include <KContacts/ContactGroup>
@@ -274,7 +273,7 @@ public:
     void contactStored(const Akonadi::Item &)
     {
         if (mInteractive) {
-            KPIM::BroadcastStatus::instance()->setStatusMsg(i18n("Contact created successfully"));
+            Q_EMIT q->successMessage(i18n("Contact created successfully"));
         }
     }
 
