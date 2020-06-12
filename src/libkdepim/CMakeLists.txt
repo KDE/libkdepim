@@ -48,7 +48,6 @@ ecm_qt_declare_logging_category(kdepim_ldap_LIB_SRCS HEADER ldapclient_debug.h I
     )
 
 set(kdepim_misc_LIB_SRCS
-    misc/broadcaststatus.cpp
     misc/emailvalidator.cpp
     misc/maillistdrag.cpp
     misc/uistatesaver.cpp
@@ -150,7 +149,6 @@ ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
 ecm_generate_headers(libkdepim_Camelcasemisc_HEADERS
     HEADER_NAMES
     EmailValidator
-    BroadcastStatus
     MaillistDrag
     UiStateSaver
     KCursorSaver

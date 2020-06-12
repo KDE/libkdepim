@@ -9,7 +9,6 @@ kmailcompletion
 
 # Move to kdepimlibs/kontactinterfaces?
 agentprogressmonitor
-broadcaststatus
 overlaywidget
 progressdialog
 progressmanager
