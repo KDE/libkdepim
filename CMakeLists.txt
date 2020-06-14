@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-set(PIM_VERSION "5.14.49")
+set(PIM_VERSION "5.14.50")
 
 project(libkdepim VERSION ${PIM_VERSION})
 

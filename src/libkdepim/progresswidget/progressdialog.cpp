@@ -50,6 +50,90 @@
 using namespace KPIM;
 static const int MAX_LABEL_WIDTH = 650;
 
+class KPIM::OverlayWidgetPrivate
+{
+public:
+    OverlayWidgetPrivate()
+    {
+    }
+
+    QWidget *mAlignWidget = nullptr;
+};
+
+OverlayWidget::OverlayWidget(QWidget *alignWidget, QWidget *parent)
+    : QFrame(parent)
+    , d(new KPIM::OverlayWidgetPrivate)
+{
+    setAlignWidget(alignWidget);
+    setLayout(new QHBoxLayout(this));
+}
+
+OverlayWidget::~OverlayWidget()
+{
+    delete d;
+}
+
+QWidget *OverlayWidget::alignWidget() const
+{
+    return d->mAlignWidget;
+}
+
+void OverlayWidget::reposition()
+{
+    if (!d->mAlignWidget) {
+        return;
+    }
+    // p is in the alignWidget's coordinates
+    QPoint p;
+    // We are always above the alignWidget, right-aligned with it for
+    // LTR locales, and left-aligned for RTL locales (default value=0).
+    if (layoutDirection() == Qt::LeftToRight) {
+        p.setX(d->mAlignWidget->width() - width());
+    }
+    p.setY(-height());
+    // Position in the toplevelwidget's coordinates
+    QPoint pTopLevel = d->mAlignWidget->mapTo(topLevelWidget(), p);
+    // Position in the widget's parentWidget coordinates
+    QPoint pParent = parentWidget()->mapFrom(topLevelWidget(), pTopLevel);
+    // Move 'this' to that position.
+    move(pParent);
+}
+
+void OverlayWidget::setAlignWidget(QWidget *w)
+{
+    if (w == d->mAlignWidget) {
+        return;
+    }
+
+    if (d->mAlignWidget) {
+        d->mAlignWidget->removeEventFilter(this);
+    }
+
+    d->mAlignWidget = w;
+
+    if (d->mAlignWidget) {
+        d->mAlignWidget->installEventFilter(this);
+    }
+
+    reposition();
+}
+
+bool OverlayWidget::eventFilter(QObject *o, QEvent *e)
+{
+    if (o == d->mAlignWidget
+        && (e->type() == QEvent::Move || e->type() == QEvent::Resize)) {
+        reposition();
+    }
+    return QFrame::eventFilter(o, e);
+}
+
+void OverlayWidget::resizeEvent(QResizeEvent *ev)
+{
+    reposition();
+    QFrame::resizeEvent(ev);
+}
+
+
 TransactionItemView::TransactionItemView(QWidget *parent, const QString &name)
     : QScrollArea(parent)
 {

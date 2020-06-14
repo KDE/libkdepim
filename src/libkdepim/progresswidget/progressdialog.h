@@ -34,7 +34,6 @@
 #ifndef KDEPIM_PROGRESSDIALOG_H
 #define KDEPIM_PROGRESSDIALOG_H
 
-#include "libkdepim/overlaywidget.h"
 #include "kdepim_export.h"
 
 #include "progressmanager.h"
@@ -50,6 +49,35 @@ class QPushButton;
 namespace KPIM {
 class TransactionItem;
 class SSLLabel;
+
+/**
+ * This is a widget that can align itself with another one, without using a layout,
+ * so that it can actually be on top of other widgets.
+ * Currently the only supported type of alignment is "right aligned, on top of the other widget".
+ *
+ */
+class OverlayWidgetPrivate;
+class OverlayWidget : public QFrame
+{
+    Q_OBJECT
+
+public:
+    OverlayWidget(QWidget *alignWidget, QWidget *parent);
+    ~OverlayWidget() override;
+
+    Q_REQUIRED_RESULT QWidget *alignWidget() const;
+    void setAlignWidget(QWidget *alignWidget);
+
+protected:
+    void resizeEvent(QResizeEvent *ev) override;
+    bool eventFilter(QObject *o, QEvent *e) override;
+
+private:
+    void reposition();
+
+private:
+    OverlayWidgetPrivate *const d;
+};
 
 class TransactionItemView : public QScrollArea
 {
