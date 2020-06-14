@@ -52,16 +52,7 @@ set(kdepimakonadi_progresswidget_LIB_SRCS
     progresswidget/agentprogressmonitor.cpp
     )
 
-set(kdepim_job_LIB_SRCS
-    job/addemailaddressjob.cpp
-    job/addcontactjob.cpp
-    job/openemailaddressjob.cpp
-    job/addemaildisplayjob.cpp
-    )
-
-
 set(kdepimakonadi_LIB_SRCS
-    ${kdepim_job_LIB_SRCS}
     ${kdepim_addressline_LIB_SRCS}
     ${kdepim_addressline_blacklist_baloo_LIB_SRCS}
     ${kdepimakonadi_progresswidget_LIB_SRCS}
@@ -130,18 +121,6 @@ ecm_generate_headers(libkdepimakonadi_Camelcaseprogresswidget_HEADERS
     RELATIVE progresswidget
     )
 
-ecm_generate_headers(libkdepim_Camelcasejob_HEADERS
-    HEADER_NAMES
-    AddContactJob
-    AddEmailAddressJob
-    AddEmailDisplayJob
-    OpenEmailAddressJob
-
-    REQUIRED_HEADERS libkdepim_job_HEADERS
-    PREFIX LibkdepimAkonadi
-    RELATIVE job
-    )
-
 ecm_generate_headers(libkdepim_Camelcaseaddressline_HEADERS
     HEADER_NAMES
     AddresseeLineEdit
@@ -175,7 +154,6 @@ install(FILES
     ${libkdepim_Camelcasecompletionconfiguredialog_HEADERS}
     ${libkdepim_Camelcasecompletionorder_HEADERS}
     ${libkdepimakonadi_Camelcaseprogresswidget_HEADERS}
-    ${libkdepim_Camelcasejob_HEADERS}
     ${libkdepim_Camelcaseaddressline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/LibkdepimAkonadi
     COMPONENT Devel
@@ -186,7 +164,6 @@ install(FILES
     ${libkdepim_completionorder_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/kdepimakonadi_export.h
     ${libkdepimakonadi_progresswidget_HEADERS}
-    ${libkdepim_job_HEADERS}
     ${libkdepim_addressline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepimakonadi
     COMPONENT Devel
