@@ -47,15 +47,9 @@ set(kdepim_addressline_plugin_LIB_SRCS
     )
 
 ############ next target ###############
-set(kdepimakonadi_progresswidget_LIB_SRCS
-    progresswidget/progressmanagerakonadi.cpp
-    progresswidget/agentprogressmonitor.cpp
-    )
-
 set(kdepimakonadi_LIB_SRCS
     ${kdepim_addressline_LIB_SRCS}
     ${kdepim_addressline_blacklist_baloo_LIB_SRCS}
-    ${kdepimakonadi_progresswidget_LIB_SRCS}
     ${kdepim_addressline_plugin_LIB_SRCS}
     )
 
@@ -113,14 +107,6 @@ install(TARGETS
     EXPORT KF5LibkdepimAkonadiTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS} ${LIBRARY_NAMELINK}
     )
 
-ecm_generate_headers(libkdepimakonadi_Camelcaseprogresswidget_HEADERS
-    HEADER_NAMES
-    ProgressManagerAkonadi
-    REQUIRED_HEADERS libkdepimakonadi_progresswidget_HEADERS
-    PREFIX LibkdepimAkonadi
-    RELATIVE progresswidget
-    )
-
 ecm_generate_headers(libkdepim_Camelcaseaddressline_HEADERS
     HEADER_NAMES
     AddresseeLineEdit
@@ -153,7 +139,6 @@ ecm_generate_pri_file(BASE_NAME LibkdepimAkonadi
 install(FILES
     ${libkdepim_Camelcasecompletionconfiguredialog_HEADERS}
     ${libkdepim_Camelcasecompletionorder_HEADERS}
-    ${libkdepimakonadi_Camelcaseprogresswidget_HEADERS}
     ${libkdepim_Camelcaseaddressline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/LibkdepimAkonadi
     COMPONENT Devel
@@ -163,7 +148,6 @@ install(FILES
     ${libkdepim_completionconfiguredialog_HEADERS}
     ${libkdepim_completionorder_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/kdepimakonadi_export.h
-    ${libkdepimakonadi_progresswidget_HEADERS}
     ${libkdepim_addressline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepimakonadi
     COMPONENT Devel
