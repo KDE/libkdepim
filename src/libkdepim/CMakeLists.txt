@@ -24,7 +24,6 @@ set(kdepim_progresswidget_LIB_SRCS
     )
 
 set(kdepim_widgets_LIB_SRCS
-    widgets/kdatepickerpopup.cpp
     widgets/kcheckcombobox.cpp
     widgets/kwidgetlister.cpp
     widgets/progressindicatorlabel.cpp
@@ -105,7 +104,6 @@ install(TARGETS
 ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
     HEADER_NAMES
     KCheckComboBox
-    KDatePickerPopup
     KWidgetLister
     ProgressIndicatorLabel
     REQUIRED_HEADERS libkdepim_widgets_HEADERS
