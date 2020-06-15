@@ -8,7 +8,6 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
 if (BUILD_TESTING)
     add_subdirectory(tests)
     add_subdirectory(misc/autotests)
-    add_subdirectory(addressline/autotests/)
     add_subdirectory(progresswidget/autotests/)
     add_subdirectory(progresswidget/tests/)
 endif()
@@ -41,19 +40,11 @@ set(kdepim_multiplyingline_LIB_SRCS
     multiplyingline/multiplyinglineview_p.cpp
     )
 
-set(kdepim_addressline_LIB_SRCS
-    addressline/recentaddress/recentaddresswidget.cpp
-    addressline/recentaddress/recentaddresses.cpp
-    addressline/addresslineedit/addresseelineeditutil.cpp
-    )
-
-
 set(kdepim_LIB_SRCS
     ${kdepim_progresswidget_LIB_SRCS}
     ${kdepim_widgets_LIB_SRCS}
     ${kdepim_misc_LIB_SRCS}
     ${kdepim_multiplyingline_LIB_SRCS}
-    ${kdepim_addressline_LIB_SRCS}
     prefs/kprefsdialog.cpp
     )
 ecm_qt_declare_logging_category(kdepim_LIB_SRCS HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
@@ -149,25 +140,6 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
     RELATIVE multiplyingline
     )
 
-ecm_generate_headers(libkdepim_Camelcaserecentaddress_HEADERS
-    HEADER_NAMES
-    RecentAddresses
-    REQUIRED_HEADERS libkdepim_recentaddress_HEADERS
-    PREFIX Libkdepim
-    RELATIVE addressline/recentaddress/
-    )
-
-ecm_generate_headers(libkdepim_Camelcaseaddressline_HEADERS
-    HEADER_NAMES
-    AddresseeLineEditUtil
-    REQUIRED_HEADERS libkdepim_addressline_HEADERS
-    PREFIX Libkdepim
-    RELATIVE addressline/addresslineedit/
-    )
-
-
-
-
 ecm_generate_pri_file(BASE_NAME Libkdepim
     LIB_NAME KF5Libkdepim
     DEPS "" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
@@ -180,8 +152,6 @@ install(FILES
     ${libkdepim_Camelcasemisc_HEADERS}
     ${libkdepim_Camelcasepref_HEADERS}
     ${libkdepim_Camelcasemultiline_HEADERS}
-    ${libkdepim_Camelcaserecentaddress_HEADERS}
-    ${libkdepim_Camelcaseaddressline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
     COMPONENT Devel
     )
@@ -194,8 +164,6 @@ install(FILES
     ${libkdepim_widgets_HEADERS}
     ${libkdepim_pref_HEADERS}
     ${libkdepim_multiline_HEADERS}
-    ${libkdepim_recentaddress_HEADERS}
-    ${libkdepim_addressline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim
     COMPONENT Devel
     )

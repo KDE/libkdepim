@@ -5,4 +5,3 @@ if(BUILD_TESTING)
 endif()
 
 add_subdirectory(libkdepim)
-add_subdirectory(libkdepimakonadi)

@@ -11,7 +11,5 @@ irc: akonadi
 libraries:
  - qmake: Libkdepim
    cmake: "KF5::Libkdepim"
- - qmake: LibkdepimAkonadi
-   cmake: "KF5::LibkdepimAkonadi"
 cmakename: KF5Libkdepim
 
