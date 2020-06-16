@@ -7,7 +7,6 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
 
 if (BUILD_TESTING)
     add_subdirectory(tests)
-    add_subdirectory(misc/autotests)
     add_subdirectory(progresswidget/autotests/)
     add_subdirectory(progresswidget/tests/)
 endif()
@@ -29,7 +28,6 @@ set(kdepim_widgets_LIB_SRCS
     )
 
 set(kdepim_misc_LIB_SRCS
-    misc/emailvalidator.cpp
     misc/uistatesaver.cpp
     misc/lineeditcatchreturnkey.cpp
     )
@@ -103,7 +101,6 @@ ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
 
 ecm_generate_headers(libkdepim_Camelcasemisc_HEADERS
     HEADER_NAMES
-    EmailValidator
     UiStateSaver
     KCursorSaver
     LineEditCatchReturnKey
