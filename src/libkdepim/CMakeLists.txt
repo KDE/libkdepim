@@ -64,10 +64,10 @@ target_link_libraries(KF5Libkdepim
     KF5::Codecs
     KF5::Completion
     KF5::I18n
-    KF5::KCMUtils
-    KF5::Wallet
     KF5::KIOCore
     KF5::KIOWidgets
+    KF5::ConfigGui
+    KF5::KCMUtils
     )
 
 
