@@ -35,15 +35,7 @@ ProgressItem::ProgressItem(ProgressItem *parent, const QString &id, const QStrin
     , mStatus(status)
     , mParent(parent)
     , mCanBeCanceled(canBeCanceled)
-    , mProgress(0)
-    , mTotal(0)
-    , mCompleted(0)
     , mCryptoStatus(cryptoStatus)
-    , mType(0)
-    , mWaitingForKids(false)
-    , mCanceled(false)
-    , mUsesBusyIndicator(false)
-    , mCompletedCalled(false)
 {
 }
 
