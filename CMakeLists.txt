@@ -24,7 +24,7 @@ include(ECMAddTests)
 
 
 set(LIBKDEPIM_LIB_VERSION ${PIM_VERSION})
-set(QT_REQUIRED_VERSION "5.11.0")
+set(QT_REQUIRED_VERSION "5.13.0")
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus Network)
 
