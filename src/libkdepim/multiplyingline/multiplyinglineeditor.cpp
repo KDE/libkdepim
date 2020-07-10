@@ -29,7 +29,6 @@
 using namespace KPIM;
 MultiplyingLineEditor::MultiplyingLineEditor(MultiplyingLineFactory *factory, QWidget *parent)
     : QWidget(parent)
-    , mModified(false)
     , mMultiplyingLineFactory(factory)
 {
     QBoxLayout *topLayout = new QHBoxLayout(this);

@@ -177,10 +177,10 @@ public Q_SLOTS:
 
 protected:
     virtual MultiplyingLine *activeLine() const;
-    bool mModified;
+    bool mModified = false;
 
 private:
-    MultiplyingLineFactory *mMultiplyingLineFactory = nullptr;
+    MultiplyingLineFactory *const mMultiplyingLineFactory;
     MultiplyingLineView *mView = nullptr;
 };
 }
