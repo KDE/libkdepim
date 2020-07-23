@@ -96,10 +96,17 @@ ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
     RELATIVE widgets
     )
 
+ecm_generate_headers(libkdepim_Camelcasemisc_old_HEADERS
+    HEADER_NAMES
+    KCursorSaver
+    REQUIRED_HEADERS libkdepim_misc_old_HEADERS
+    PREFIX Libkdepim
+    RELATIVE misc
+    )
+
 ecm_generate_headers(libkdepim_Camelcasemisc_HEADERS
     HEADER_NAMES
     UiStateSaver
-    KCursorSaver
     LineEditCatchReturnKey
     REQUIRED_HEADERS libkdepim_misc_HEADERS
     PREFIX Libkdepim
@@ -151,6 +158,21 @@ install(FILES
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim
     COMPONENT Devel
     )
+
+if (${KF5GuiAddons_VERSION} VERSION_LESS "5.73.0")
+	MESSAGE(STATUS "Install old kcursorsaver")
+install(FILES
+    ${libkdepim_Camelcasemisc_old_HEADERS}
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
+    COMPONENT Devel
+    )
+
+install(FILES
+    ${libkdepim_misc_old_HEADERS}
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim
+    COMPONENT Devel
+    )
+endif()
 
 install(FILES
     ${PRI_FILENAME}
