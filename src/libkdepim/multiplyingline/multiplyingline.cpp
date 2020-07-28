@@ -28,7 +28,8 @@
 
 using namespace KPIM;
 
-MultiplyingLine::MultiplyingLine(QWidget *parent) : QWidget(parent)
+MultiplyingLine::MultiplyingLine(QWidget *parent)
+    : QWidget(parent)
 {
 }
 

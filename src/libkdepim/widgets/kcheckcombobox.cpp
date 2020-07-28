@@ -39,15 +39,11 @@ using namespace KPIM;
 namespace KPIM {
 class Q_DECL_HIDDEN KCheckComboBox::Private
 {
-    KCheckComboBox *q = nullptr;
 
 public:
     Private(KCheckComboBox *qq)
-        : q(qq)
-        , mSeparator(QLatin1Char(','))
-        , mSqueezeText(false)
-        , mIgnoreHide(false)
-        , mAlwaysShowDefaultText(false)
+        : mSeparator(QLatin1Char(','))
+        , q(qq)
     {
     }
 
@@ -59,9 +55,11 @@ public:
 public:
     QString mSeparator;
     QString mDefaultText;
-    bool mSqueezeText;
-    bool mIgnoreHide;
-    bool mAlwaysShowDefaultText;
+    bool mSqueezeText = false;
+    bool mIgnoreHide = false;
+    bool mAlwaysShowDefaultText = false;
+private:
+    KCheckComboBox *const q;
 };
 }
 
