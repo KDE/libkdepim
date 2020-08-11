@@ -1,8 +1,8 @@
 /*
   This file is part of libkdepim.
 
-  Copyright (c) 2008 Thomas Thrainer <tom_t@gmx.at>
-  Copyright (c) 2010 Bertjan Broeksema <broeksema@kde.org>
+  SPDX-FileCopyrightText: 2008 Thomas Thrainer <tom_t@gmx.at>
+  SPDX-FileCopyrightText: 2010 Bertjan Broeksema <broeksema@kde.org>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by

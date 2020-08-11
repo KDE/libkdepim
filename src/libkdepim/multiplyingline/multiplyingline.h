@@ -1,10 +1,10 @@
 /*
-    Copyright (C) 2010 Casey Link <unnamedrambler@gmail.com>
-    Copyright (C) 2009-2010 Klaralvdalens Datakonsult AB, a KDAB Group company <info@kdab.net>
+    SPDX-FileCopyrightText: 2010 Casey Link <unnamedrambler@gmail.com>
+    SPDX-FileCopyrightText: 2009-2010 Klaralvdalens Datakonsult AB, a KDAB Group company <info@kdab.net>
 
     Refactored from earlier code by:
-    Copyright (c) 2010 Volker Krause <vkrause@kde.org>
-    Copyright (c) 2004 Cornelius Schumacher <schumacher@kde.org>
+    SPDX-FileCopyrightText: 2010 Volker Krause <vkrause@kde.org>
+    SPDX-FileCopyrightText: 2004 Cornelius Schumacher <schumacher@kde.org>
 
     This library is free software; you can redistribute it and/or modify it
     under the terms of the GNU Library General Public License as published by

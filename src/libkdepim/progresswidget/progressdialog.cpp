@@ -1,8 +1,8 @@
 /** -*- c++ -*-
  * progressdialog.cpp
  *
- *  Copyright (c) 2004 Till Adam <adam@kde.org>,
- *                     David Faure <faure@kde.org>
+ *  SPDX-FileCopyrightText: 2004 Till Adam <adam@kde.org>
+ *  SPDX-FileCopyrightText: 2004 David Faure <faure@kde.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

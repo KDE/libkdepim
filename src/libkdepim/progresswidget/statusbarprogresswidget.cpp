@@ -1,13 +1,12 @@
 /*
   statusbarprogresswidget.cpp
 
-  (C) 2004 Till Adam <adam@kde.org>
-           Don Sanders
-           David Faure <dfaure@kde.org>
+  SPDX-FileCopyrightText: 2004 Till Adam <adam@kde.org>
+  SPDX-FileCopyrightText: 2004 Don Sanders
+  SPDX-FileCopyrightText: 2004 David Faure <faure@kde.org>
 
-  Copyright 2004 David Faure <faure@kde.org>
   Includes StatusbarProgressWidget which is based on KIOLittleProgressDlg
-  by Matt Koss <koss@miesto.sk>
+  by SPDX-FileCopyrightText: Matt Koss <koss@miesto.sk>
 
   KMail is free software; you can redistribute it and/or modify it
   under the terms of the GNU General Public License as published by

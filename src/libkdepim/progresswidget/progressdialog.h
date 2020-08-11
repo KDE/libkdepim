@@ -1,9 +1,9 @@
 /* -*- c++ -*-
  * progressdialog.h
  *
- *  Copyright (c) 2004 Till Adam <adam@kde.org>
+ *  SPDX-FileCopyrightText: 2004 Till Adam <adam@kde.org>
  *  based on imapprogressdialog.cpp ,which is
- *  Copyright (c) 2002-2003 Klar�vdalens Datakonsult AB
+ *  SPDX-FileCopyrightText: 2002-2003 Klarälvdalens Datakonsult AB
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

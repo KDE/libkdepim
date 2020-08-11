@@ -1,7 +1,7 @@
 /*
     This file is part of libkdepim.
 
-    Copyright (c) 2010 David Faure <faure@kde.org>
+    SPDX-FileCopyrightText: 2010 David Faure <faure@kde.org>
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Library General Public

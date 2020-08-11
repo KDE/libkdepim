@@ -2,7 +2,7 @@
  *
  *  This file is part of KMail, the KDE mail client.
  *
- *  Copyright (c) 2003 Zack Rusin <zack@kde.org>
+ *  SPDX-FileCopyrightText: 2003 Zack Rusin <zack@kde.org>
  *
  *  KMail is free software; you can redistribute it and/or modify it
  *  under the terms of the GNU General Public License as published by

@@ -3,10 +3,9 @@
 /*
   statusbarprogresswidget.h
 
-  (C) 2004 Till Adam <adam@kde.org>
-           Don Sanders
-           David Faure <dfaure@kde.org>
-  Copyright 2004 David Faure <faure@kde.org>
+  SPDX-FileCopyrightText: 2004 Till Adam <adam@kde.org>
+  SPDX-FileCopyrightText: 2004 Don Sanders
+  SPDX-FileCopyrightText: 2004 David Faure <faure@kde.org>
 
   KMail is free software; you can redistribute it and/or modify it
   under the terms of the GNU General Public License as published by
