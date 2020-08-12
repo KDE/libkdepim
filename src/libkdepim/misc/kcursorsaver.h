@@ -52,7 +52,7 @@ public:
         }
     }
 
-    /// call this to explitly restore the cursor
+    /// call this to explicitly restore the cursor
     inline void restoreCursor()
     {
         QApplication::restoreOverrideCursor();
