@@ -52,7 +52,7 @@ public:
     QString labelStr;
     QLabel *label = nullptr;
     KBusyIndicatorWidget *indicator = nullptr;
-    ProgressIndicatorLabel *q;
+    ProgressIndicatorLabel *const q;
 };
 
 ProgressIndicatorLabel::ProgressIndicatorLabel(const QString &label, QWidget *parent)
