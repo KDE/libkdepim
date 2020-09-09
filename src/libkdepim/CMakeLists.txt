@@ -28,7 +28,6 @@ set(kdepim_widgets_LIB_SRCS
     )
 
 set(kdepim_misc_LIB_SRCS
-    misc/uistatesaver.cpp
     misc/lineeditcatchreturnkey.cpp
     )
 
@@ -96,7 +95,6 @@ ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
 
 ecm_generate_headers(libkdepim_Camelcasemisc_HEADERS
     HEADER_NAMES
-    UiStateSaver
     LineEditCatchReturnKey
     REQUIRED_HEADERS libkdepim_misc_HEADERS
     PREFIX Libkdepim
