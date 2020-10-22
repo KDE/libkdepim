@@ -22,7 +22,6 @@ using KPIM::ProgressManager;
 #include <KLocalizedString>
 
 #include <QEvent>
-#include <QFrame>
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QMouseEvent>

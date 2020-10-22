@@ -11,7 +11,6 @@
 
 #include <KLocalizedString>
 
-#include <QLabel>
 #include <QIcon>
 #include <QStyle>
 
