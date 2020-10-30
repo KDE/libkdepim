@@ -34,7 +34,7 @@ class SSLLabel;
  *
  */
 class OverlayWidgetPrivate;
-class OverlayWidget : public QFrame
+class KDEPIM_EXPORT OverlayWidget : public QFrame
 {
     Q_OBJECT
 
