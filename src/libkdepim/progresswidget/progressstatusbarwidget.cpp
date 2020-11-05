@@ -23,7 +23,7 @@ ProgressStatusBarWidget::ProgressStatusBarWidget(QWidget *alignWidget, QWidget *
     : QObject(parent)
     , d(new KPIM::ProgressStatusBarWidgetPrivate)
 {
-    KPIM::ProgressDialog *progressDialog = new KPIM::ProgressDialog(alignWidget, parent);
+    auto *progressDialog = new KPIM::ProgressDialog(alignWidget, parent);
     progressDialog->setObjectName(QStringLiteral("progressDialog"));
     progressDialog->setShowTypeProgressItem(showTypeProgressItem);
     progressDialog->hide();

@@ -26,7 +26,7 @@ namespace KPIM {
 class KDEPIM_EXPORT MultiplyingLineData
 {
 public:
-    typedef QSharedPointer<MultiplyingLineData> Ptr;
+    using Ptr = QSharedPointer<MultiplyingLineData>;
     virtual ~MultiplyingLineData()
     {
     }

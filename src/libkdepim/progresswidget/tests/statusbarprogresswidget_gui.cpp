@@ -23,7 +23,7 @@ int main(int argc, char **argv)
     parser.addVersionOption();
     parser.addHelpOption();
     parser.process(app);
-    StatusbarProgressWidget_Gui *w = new StatusbarProgressWidget_Gui;
+    auto *w = new StatusbarProgressWidget_Gui;
     w->resize(800, 600);
     w->show();
     app.exec();

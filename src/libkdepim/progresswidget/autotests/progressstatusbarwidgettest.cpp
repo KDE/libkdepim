@@ -22,11 +22,11 @@ void ProgressStatusBarWidgetTest::shouldHaveDefaultValue()
     KPIM::ProgressStatusBarWidget w(widget, widget);
     widget->show();
 
-    KPIM::ProgressDialog *progressDialog = widget->findChild<KPIM::ProgressDialog *>(QStringLiteral("progressDialog"));
+    auto *progressDialog = widget->findChild<KPIM::ProgressDialog *>(QStringLiteral("progressDialog"));
     QVERIFY(progressDialog);
     QVERIFY(progressDialog->isHidden());
 
-    KPIM::StatusbarProgressWidget *mLittleProgress = widget->findChild<KPIM::StatusbarProgressWidget *>(QStringLiteral("littleprogress"));
+    auto *mLittleProgress = widget->findChild<KPIM::StatusbarProgressWidget *>(QStringLiteral("littleprogress"));
     QVERIFY(mLittleProgress);
     QVERIFY(mLittleProgress->isVisible());
 

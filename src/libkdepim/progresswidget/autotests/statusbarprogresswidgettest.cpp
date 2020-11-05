@@ -26,27 +26,27 @@ StatusbarProgressWidgetTest::StatusbarProgressWidgetTest(QObject *parent)
 void StatusbarProgressWidgetTest::shouldHaveDefaultValue()
 {
     QWidget *widget = new QWidget;
-    KPIM::ProgressDialog *progress = new KPIM::ProgressDialog(widget, widget);
+    auto *progress = new KPIM::ProgressDialog(widget, widget);
     KPIM::StatusbarProgressWidget w(progress, widget);
-    QHBoxLayout *boxLayout = w.findChild<QHBoxLayout *>(QStringLiteral("boxLayout"));
+    auto *boxLayout = w.findChild<QHBoxLayout *>(QStringLiteral("boxLayout"));
     QVERIFY(boxLayout);
     QCOMPARE(boxLayout->contentsMargins(), QMargins(0, 0, 0, 0));
     QCOMPARE(boxLayout->spacing(), 0);
 
-    QPushButton *mButton = w.findChild<QPushButton *>(QStringLiteral("button"));
+    auto *mButton = w.findChild<QPushButton *>(QStringLiteral("button"));
     QVERIFY(mButton);
     QVERIFY(mButton->text().isEmpty());
 
-    QStackedWidget *mStackedWidget = w.findChild<QStackedWidget *>(QStringLiteral("stackedwidget"));
+    auto *mStackedWidget = w.findChild<QStackedWidget *>(QStringLiteral("stackedwidget"));
     QVERIFY(mStackedWidget);
 
-    KPIM::SSLLabel *mSslLabel = w.findChild<KPIM::SSLLabel *>(QStringLiteral("ssllabel"));
+    auto *mSslLabel = w.findChild<KPIM::SSLLabel *>(QStringLiteral("ssllabel"));
     QVERIFY(mSslLabel);
 
-    QProgressBar *mProgressBar = w.findChild<QProgressBar *>(QStringLiteral("progressbar"));
+    auto *mProgressBar = w.findChild<QProgressBar *>(QStringLiteral("progressbar"));
     QVERIFY(mProgressBar);
 
-    QLabel *mLabel = w.findChild<QLabel *>(QStringLiteral("emptylabel"));
+    auto *mLabel = w.findChild<QLabel *>(QStringLiteral("emptylabel"));
     QVERIFY(mLabel);
 }
 

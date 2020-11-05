@@ -117,7 +117,7 @@ TransactionItemView::TransactionItemView(QWidget *parent, const QString &name)
     setObjectName(name);
     setFrameStyle(NoFrame);
     mBigBox = new QWidget(this);
-    QVBoxLayout *mBigBoxVBoxLayout = new QVBoxLayout(mBigBox);
+    auto *mBigBoxVBoxLayout = new QVBoxLayout(mBigBox);
     mBigBoxVBoxLayout->setContentsMargins(0, 0, 0, 0);
     setWidget(mBigBox);
     setWidgetResizable(true);
@@ -126,7 +126,7 @@ TransactionItemView::TransactionItemView(QWidget *parent, const QString &name)
 
 TransactionItem *TransactionItemView::addTransactionItem(ProgressItem *item, bool first)
 {
-    TransactionItem *ti = new TransactionItem(mBigBox, item, first);
+    auto *ti = new TransactionItem(mBigBox, item, first);
     mBigBox->layout()->addWidget(ti);
 
     resize(mBigBox->width(), mBigBox->height());
@@ -185,7 +185,7 @@ void TransactionItemView::slotLayoutFirstItem()
      be the first item very shortly. That's the one we want to remove the
      hline for.
     */
-    TransactionItem *ti = mBigBox->findChild<KPIM::TransactionItem *>(QStringLiteral("TransactionItem"));
+    auto *ti = mBigBox->findChild<KPIM::TransactionItem *>(QStringLiteral("TransactionItem"));
     if (ti) {
         ti->hideHLine();
     }
@@ -197,7 +197,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     : QWidget(parent)
     , mItem(item)
 {
-    QVBoxLayout *vboxLayout = new QVBoxLayout(this);
+    auto *vboxLayout = new QVBoxLayout(this);
     vboxLayout->setSpacing(2);
     vboxLayout->setContentsMargins(2, 2, 2, 2);
     setSizePolicy(QSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed));
@@ -209,7 +209,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     layout()->addWidget(mFrame);
 
     QWidget *h = new QWidget(this);
-    QHBoxLayout *hHBoxLayout = new QHBoxLayout(h);
+    auto *hHBoxLayout = new QHBoxLayout(h);
     hHBoxLayout->setContentsMargins(0, 0, 0, 0);
     hHBoxLayout->setSpacing(5);
     layout()->addWidget(h);

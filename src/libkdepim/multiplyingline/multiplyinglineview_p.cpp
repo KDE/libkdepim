@@ -227,7 +227,7 @@ void MultiplyingLineView::resizeEvent(QResizeEvent *ev)
 QSize MultiplyingLineView::sizeHint() const
 {
     if (mDynamicSizeHint) {
-        return QSize(200, mLineHeight * mLines.count());
+        return {200, mLineHeight * mLines.count()};
     } else {
         return QScrollArea::sizeHint();
     }
@@ -243,7 +243,7 @@ QSize MultiplyingLineView::minimumSizeHint() const
         } else {
             height = mLineHeight * numLines;
         }
-        return QSize(200, height);
+        return {200, height};
     } else {
         return QScrollArea::minimumSizeHint();
     }

@@ -50,7 +50,7 @@ private:
 void KCheckComboBox::Private::makeInsertedItemsCheckable(const QModelIndex &parent, int start, int end)
 {
     Q_UNUSED(parent);
-    QStandardItemModel *model = qobject_cast<QStandardItemModel *>(q->model());
+    auto *model = qobject_cast<QStandardItemModel *>(q->model());
     if (model) {
         for (int r = start; r <= end; ++r) {
             QStandardItem *item = model->item(r, 0);
@@ -106,7 +106,7 @@ void KCheckComboBox::Private::toggleCheckState()
         const QModelIndex index = q->view()->currentIndex();
         QVariant value = index.data(Qt::CheckStateRole);
         if (value.isValid()) {
-            Qt::CheckState state = static_cast<Qt::CheckState>(value.toInt());
+            auto state = static_cast<Qt::CheckState>(value.toInt());
             q->model()->setData(index, state == Qt::Unchecked ? Qt::Checked : Qt::Unchecked,
                                 Qt::CheckStateRole);
         }
@@ -229,7 +229,7 @@ bool KCheckComboBox::itemEnabled(int index)
 {
     Q_ASSERT(index >= 0 && index <= count());
 
-    QStandardItemModel *itemModel = qobject_cast<QStandardItemModel *>(model());
+    auto *itemModel = qobject_cast<QStandardItemModel *>(model());
     Q_ASSERT(itemModel);
 
     QStandardItem *item = itemModel->item(index, 0);
@@ -240,7 +240,7 @@ void KCheckComboBox::setItemEnabled(int index, bool enabled)
 {
     Q_ASSERT(index >= 0 && index <= count());
 
-    QStandardItemModel *itemModel = qobject_cast<QStandardItemModel *>(model());
+    auto *itemModel = qobject_cast<QStandardItemModel *>(model());
     Q_ASSERT(itemModel);
 
     QStandardItem *item = itemModel->item(index, 0);
