@@ -310,7 +310,7 @@ void TransactionItem::slotItemCanceled()
 
 void TransactionItem::addSubTransaction(ProgressItem *item)
 {
-    Q_UNUSED(item);
+    Q_UNUSED(item)
 }
 
 // ---------------------------------------------------------------------------
