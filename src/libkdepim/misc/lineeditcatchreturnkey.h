@@ -20,7 +20,7 @@ class KDEPIM_EXPORT LineEditCatchReturnKey : public QObject
     Q_OBJECT
 public:
     explicit LineEditCatchReturnKey(QLineEdit *lineEdit, QObject *parent = nullptr);
-    ~LineEditCatchReturnKey();
+    ~LineEditCatchReturnKey() override;
 
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
