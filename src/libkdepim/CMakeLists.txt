@@ -59,7 +59,6 @@ target_include_directories(KF5Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SO
 
 target_link_libraries(KF5Libkdepim
     PRIVATE
-    KF5::Codecs
     KF5::Completion
     KF5::I18n
     KF5::ConfigGui
