@@ -52,6 +52,9 @@ ecm_qt_declare_logging_category(kdepim_LIB_SRCS HEADER libkdepim_debug.h IDENTIF
 
 
 add_library(KF5Libkdepim ${kdepim_LIB_SRCS})
+if (COMPILE_WITH_CMAKE_SUPPORT)
+    set_target_properties(KF5Libkdepim PROPERTIES UNITY_BUILD ON)
+endif()
 generate_export_header(KF5Libkdepim BASE_NAME kdepim)
 add_library(KF5::Libkdepim ALIAS KF5Libkdepim)
 target_include_directories(KF5Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim/;${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim>")
