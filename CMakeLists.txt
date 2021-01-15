@@ -54,11 +54,11 @@ set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Libkdepim")
 configure_package_config_file(MailTransportDBusServiceConfig.cmake.in
   ${CMAKE_CURRENT_BINARY_DIR}/MailTransportDBusServiceConfig.cmake
   PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
-  INSTALL_DESTINATION "${CMAKECONFIG_INSTALL_PREFIX}/MailTransportDBusService")
+  INSTALL_DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/MailTransportDBusService")
 
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/MailTransportDBusServiceConfig.cmake
-  DESTINATION "${CMAKECONFIG_INSTALL_PREFIX}/MailTransportDBusService")
+  DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/MailTransportDBusService")
 
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" FALSE)
 
