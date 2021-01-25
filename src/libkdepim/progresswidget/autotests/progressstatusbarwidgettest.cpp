@@ -18,7 +18,7 @@ ProgressStatusBarWidgetTest::ProgressStatusBarWidgetTest(QObject *parent)
 
 void ProgressStatusBarWidgetTest::shouldHaveDefaultValue()
 {
-    QWidget *widget = new QWidget;
+    auto widget = new QWidget;
     KPIM::ProgressStatusBarWidget w(widget, widget);
     widget->show();
 

@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     parser.addHelpOption();
     parser.process(app);
 
-    auto *combo = new KPIM::KCheckComboBox(nullptr);
+    auto combo = new KPIM::KCheckComboBox(nullptr);
     combo->addItems(QStringList() << QStringLiteral("KDE") << QStringLiteral("Mac OSX") << QStringLiteral("Windows") << QStringLiteral("XFCE") << QStringLiteral("FVWM") << QStringLiteral("TWM"));
     combo->setCheckedItems(QStringList() << QStringLiteral("KDE") << QStringLiteral("Mac OSX") << QStringLiteral("Windows"));
     combo->resize(400, 20);

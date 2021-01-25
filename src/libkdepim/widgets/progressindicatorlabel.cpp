@@ -18,7 +18,7 @@ public:
         : labelStr(_label)
         , q(qq)
     {
-        auto *lay = new QHBoxLayout(q);
+        auto lay = new QHBoxLayout(q);
         lay->setContentsMargins(0, 0, 0, 0);
         indicator = new KBusyIndicatorWidget;
         lay->addWidget(indicator);

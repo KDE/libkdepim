@@ -39,7 +39,7 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     , mProgressDialog(progressDialog)
 {
     int w = fontMetrics().boundingRect(QStringLiteral(" 999.9 kB/s 00:00:01 ")).width() + 8;
-    auto *boxLayout = new QHBoxLayout(this);
+    auto boxLayout = new QHBoxLayout(this);
     boxLayout->setObjectName(QStringLiteral("boxLayout"));
     boxLayout->setContentsMargins(0, 0, 0, 0);
     boxLayout->setSpacing(0);
@@ -256,7 +256,7 @@ void StatusbarProgressWidget::slotClean()
 bool StatusbarProgressWidget::eventFilter(QObject *obj, QEvent *ev)
 {
     if (ev->type() == QEvent::MouseButtonPress) {
-        auto *e = static_cast<QMouseEvent *>(ev);
+        auto e = static_cast<QMouseEvent *>(ev);
 
         if (e->button() == Qt::LeftButton && mMode == Progress) {      // toggle view on left mouse button
             // Consensus seems to be that we should show/hide the fancy dialog when the user

@@ -25,8 +25,8 @@ StatusbarProgressWidgetTest::StatusbarProgressWidgetTest(QObject *parent)
 
 void StatusbarProgressWidgetTest::shouldHaveDefaultValue()
 {
-    QWidget *widget = new QWidget;
-    auto *progress = new KPIM::ProgressDialog(widget, widget);
+    auto widget = new QWidget;
+    auto progress = new KPIM::ProgressDialog(widget, widget);
     KPIM::StatusbarProgressWidget w(progress, widget);
     auto *boxLayout = w.findChild<QHBoxLayout *>(QStringLiteral("boxLayout"));
     QVERIFY(boxLayout);

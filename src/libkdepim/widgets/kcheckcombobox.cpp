@@ -50,7 +50,7 @@ private:
 void KCheckComboBox::Private::makeInsertedItemsCheckable(const QModelIndex &parent, int start, int end)
 {
     Q_UNUSED(parent)
-    auto *model = qobject_cast<QStandardItemModel *>(q->model());
+    auto model = qobject_cast<QStandardItemModel *>(q->model());
     if (model) {
         for (int r = start; r <= end; ++r) {
             QStandardItem *item = model->item(r, 0);
@@ -229,7 +229,7 @@ bool KCheckComboBox::itemEnabled(int index)
 {
     Q_ASSERT(index >= 0 && index <= count());
 
-    auto *itemModel = qobject_cast<QStandardItemModel *>(model());
+    auto itemModel = qobject_cast<QStandardItemModel *>(model());
     Q_ASSERT(itemModel);
 
     QStandardItem *item = itemModel->item(index, 0);
@@ -240,7 +240,7 @@ void KCheckComboBox::setItemEnabled(int index, bool enabled)
 {
     Q_ASSERT(index >= 0 && index <= count());
 
-    auto *itemModel = qobject_cast<QStandardItemModel *>(model());
+    auto itemModel = qobject_cast<QStandardItemModel *>(model());
     Q_ASSERT(itemModel);
 
     QStandardItem *item = itemModel->item(index, 0);

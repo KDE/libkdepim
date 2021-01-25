@@ -22,7 +22,7 @@
 namespace KPIM {
 class ProgressItem;
 class ProgressManager;
-typedef QMap<ProgressItem *, bool> ProgressItemMap;
+using ProgressItemMap = QMap<ProgressItem *, bool>;
 /**
  * @brief The ProgressItem class
  */

@@ -84,7 +84,7 @@ void KWidgetLister::init(bool fewerMoreButton)
     d->mLayout->setSpacing(4);
 
     d->mButtonBox = new QWidget(this);
-    auto *mButtonBoxHBoxLayout = new QHBoxLayout(d->mButtonBox);
+    auto mButtonBoxHBoxLayout = new QHBoxLayout(d->mButtonBox);
     mButtonBoxHBoxLayout->setContentsMargins(0, 0, 0, 0);
     d->mLayout->addWidget(d->mButtonBox);
 
@@ -101,7 +101,7 @@ void KWidgetLister::init(bool fewerMoreButton)
                                                 QStringLiteral("list-remove")));
         mButtonBoxHBoxLayout->setStretchFactor(d->mBtnFewer, 0);
     }
-    QWidget *spacer = new QWidget(d->mButtonBox);
+    auto spacer = new QWidget(d->mButtonBox);
     mButtonBoxHBoxLayout->addWidget(spacer);
     mButtonBoxHBoxLayout->setStretchFactor(spacer, 1);
 

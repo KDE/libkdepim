@@ -117,7 +117,7 @@ TransactionItemView::TransactionItemView(QWidget *parent, const QString &name)
     setObjectName(name);
     setFrameStyle(NoFrame);
     mBigBox = new QWidget(this);
-    auto *mBigBoxVBoxLayout = new QVBoxLayout(mBigBox);
+    auto mBigBoxVBoxLayout = new QVBoxLayout(mBigBox);
     mBigBoxVBoxLayout->setContentsMargins(0, 0, 0, 0);
     setWidget(mBigBox);
     setWidgetResizable(true);
@@ -126,7 +126,7 @@ TransactionItemView::TransactionItemView(QWidget *parent, const QString &name)
 
 TransactionItem *TransactionItemView::addTransactionItem(ProgressItem *item, bool first)
 {
-    auto *ti = new TransactionItem(mBigBox, item, first);
+    auto ti = new TransactionItem(mBigBox, item, first);
     mBigBox->layout()->addWidget(ti);
 
     resize(mBigBox->width(), mBigBox->height());
@@ -197,7 +197,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     : QWidget(parent)
     , mItem(item)
 {
-    auto *vboxLayout = new QVBoxLayout(this);
+    auto vboxLayout = new QVBoxLayout(this);
     vboxLayout->setSpacing(2);
     vboxLayout->setContentsMargins(2, 2, 2, 2);
     setSizePolicy(QSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed));
@@ -208,8 +208,8 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     mFrame->show();
     layout()->addWidget(mFrame);
 
-    QWidget *h = new QWidget(this);
-    auto *hHBoxLayout = new QHBoxLayout(h);
+    auto h = new QWidget(this);
+    auto hHBoxLayout = new QHBoxLayout(h);
     hHBoxLayout->setContentsMargins(0, 0, 0, 0);
     hHBoxLayout->setSpacing(5);
     layout()->addWidget(h);
