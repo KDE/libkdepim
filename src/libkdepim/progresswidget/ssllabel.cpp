@@ -53,8 +53,8 @@ void SSLLabel::setState(State state)
     case Clean:
         setToolTip(QString());
         hide();
-        //we return because we do not save the state as the only
-        //action we want to perform is to hide ourself
+        // we return because we do not save the state as the only
+        // action we want to perform is to hide ourself
         return;
     }
     m_lastEncryptionState = state;

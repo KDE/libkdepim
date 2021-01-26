@@ -11,13 +11,13 @@
 #include "multiplyinglineview_p.h"
 
 #include "libkdepim_debug.h"
-#include <KMessageBox>
 #include <KLocalizedString>
+#include <KMessageBox>
 
-#include <QVBoxLayout>
-#include <QTimer>
-#include <QScrollBar>
 #include <QResizeEvent>
+#include <QScrollBar>
+#include <QTimer>
+#include <QVBoxLayout>
 
 using namespace KPIM;
 
@@ -59,8 +59,7 @@ MultiplyingLine *MultiplyingLineView::addLine()
     if (maximumRecipients != -1) {
         int numberOfLine = mLines.count();
         if (numberOfLine++ >= maximumRecipients) {
-            KMessageBox::sorry(this,
-                               i18n("We can not add more recipients. We have reached maximum recipients"));
+            KMessageBox::sorry(this, i18n("We can not add more recipients. We have reached maximum recipients"));
 
             return nullptr;
         }
@@ -70,17 +69,12 @@ MultiplyingLine *MultiplyingLineView::addLine()
     mTopLayout->addWidget(line);
     line->setCompletionMode(mCompletionMode);
     line->show();
-    connect(line, &MultiplyingLine::returnPressed,
-            this, &MultiplyingLineView::slotReturnPressed);
-    connect(line, &MultiplyingLine::upPressed,
-            this, &MultiplyingLineView::slotUpPressed);
-    connect(line, &MultiplyingLine::downPressed,
-            this, &MultiplyingLineView::slotDownPressed);
+    connect(line, &MultiplyingLine::returnPressed, this, &MultiplyingLineView::slotReturnPressed);
+    connect(line, &MultiplyingLine::upPressed, this, &MultiplyingLineView::slotUpPressed);
+    connect(line, &MultiplyingLine::downPressed, this, &MultiplyingLineView::slotDownPressed);
     connect(line, &MultiplyingLine::rightPressed, this, &MultiplyingLineView::focusRight);
-    connect(line, &MultiplyingLine::deleteLine,
-            this, &MultiplyingLineView::slotDecideLineDeletion);
-    connect(line, &MultiplyingLine::completionModeChanged,
-            this, &MultiplyingLineView::setCompletionMode);
+    connect(line, &MultiplyingLine::deleteLine, this, &MultiplyingLineView::slotDecideLineDeletion);
+    connect(line, &MultiplyingLine::completionModeChanged, this, &MultiplyingLineView::setCompletionMode);
 
     if (!mLines.isEmpty()) {
         line->fixTabOrder(mLines.last()->tabOut());
@@ -278,7 +272,7 @@ void MultiplyingLineView::setCompletionMode(KCompletion::CompletionMode mode)
         line->setCompletionMode(mode);
         line->blockSignals(false);
     }
-    Q_EMIT completionModeChanged(mode);   //report change to MultiplyingLineEditor
+    Q_EMIT completionModeChanged(mode); // report change to MultiplyingLineEditor
 }
 
 void MultiplyingLineView::removeData(const MultiplyingLineData::Ptr &data)
@@ -374,7 +368,7 @@ int MultiplyingLineView::setFirstColumnWidth(int w)
     return mFirstColumnWidth;
 }
 
-QList< MultiplyingLine * > MultiplyingLineView::lines() const
+QList<MultiplyingLine *> MultiplyingLineView::lines() const
 {
     return mLines;
 }

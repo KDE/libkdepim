@@ -5,15 +5,15 @@
 */
 
 #include "statusbarprogresswidgettest.h"
-#include "../statusbarprogresswidget.h"
 #include "../progressdialog.h"
 #include "../progressmanager.h"
-#include <QTest>
+#include "../statusbarprogresswidget.h"
 #include <QHBoxLayout>
+#include <QProgressBar>
 #include <QPushButton>
 #include <QStackedWidget>
-#include <QProgressBar>
 #include <QStandardPaths>
+#include <QTest>
 #include <progresswidget/ssllabel.h>
 QTEST_MAIN(StatusbarProgressWidgetTest)
 

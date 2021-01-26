@@ -5,10 +5,10 @@
 */
 
 #include "progressstatusbarwidgettest.h"
-#include "../progressstatusbarwidget.h"
-#include <QTest>
 #include "../progressdialog.h"
+#include "../progressstatusbarwidget.h"
 #include "../statusbarprogresswidget.h"
+#include <QTest>
 QTEST_MAIN(ProgressStatusBarWidgetTest)
 
 ProgressStatusBarWidgetTest::ProgressStatusBarWidgetTest(QObject *parent)

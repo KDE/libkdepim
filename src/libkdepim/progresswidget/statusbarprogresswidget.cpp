@@ -46,8 +46,7 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
 
     mButton = new QPushButton(this);
     mButton->setObjectName(QStringLiteral("button"));
-    mButton->setSizePolicy(QSizePolicy(QSizePolicy::Minimum,
-                                       QSizePolicy::Minimum));
+    mButton->setSizePolicy(QSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum));
     mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
     boxLayout->addWidget(mButton);
     mStackedWidget = new QStackedWidget(this);
@@ -80,28 +79,21 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     mMode = Progress; // so the call below works
     setMode(Clean);
 
-    connect(mButton, &QAbstractButton::clicked,
-            this, &StatusbarProgressWidget::slotProgressButtonClicked);
+    connect(mButton, &QAbstractButton::clicked, this, &StatusbarProgressWidget::slotProgressButtonClicked);
 
-    connect(ProgressManager::instance(), &ProgressManager::progressItemAdded,
-            this, &StatusbarProgressWidget::slotProgressItemAdded);
-    connect(ProgressManager::instance(), &ProgressManager::progressItemCompleted,
-            this, &StatusbarProgressWidget::slotProgressItemCompleted);
-    connect(ProgressManager::instance(), &ProgressManager::progressItemUsesBusyIndicator,
-            this, &StatusbarProgressWidget::updateBusyMode);
+    connect(ProgressManager::instance(), &ProgressManager::progressItemAdded, this, &StatusbarProgressWidget::slotProgressItemAdded);
+    connect(ProgressManager::instance(), &ProgressManager::progressItemCompleted, this, &StatusbarProgressWidget::slotProgressItemCompleted);
+    connect(ProgressManager::instance(), &ProgressManager::progressItemUsesBusyIndicator, this, &StatusbarProgressWidget::updateBusyMode);
 
-    connect(progressDialog, &ProgressDialog::visibilityChanged,
-            this, &StatusbarProgressWidget::slotProgressDialogVisible);
+    connect(progressDialog, &ProgressDialog::visibilityChanged, this, &StatusbarProgressWidget::slotProgressDialogVisible);
 
     mDelayTimer = new QTimer(this);
     mDelayTimer->setSingleShot(true);
-    connect(mDelayTimer, &QTimer::timeout,
-            this, &StatusbarProgressWidget::slotShowItemDelayed);
+    connect(mDelayTimer, &QTimer::timeout, this, &StatusbarProgressWidget::slotShowItemDelayed);
 
     mCleanTimer = new QTimer(this);
     mCleanTimer->setSingleShot(true);
-    connect(mCleanTimer, &QTimer::timeout,
-            this, &StatusbarProgressWidget::slotClean);
+    connect(mCleanTimer, &QTimer::timeout, this, &StatusbarProgressWidget::slotClean);
 }
 
 void StatusbarProgressWidget::setShowTypeProgressItem(unsigned int type)
@@ -118,15 +110,14 @@ void StatusbarProgressWidget::updateBusyMode(KPIM::ProgressItem *item)
 {
     if (item->typeProgressItem() == mShowTypeProgressItem) {
         connectSingleItem(); // if going to 1 item
-        if (mCurrentItem) {   // Exactly one item
+        if (mCurrentItem) { // Exactly one item
             delete mBusyTimer;
             mBusyTimer = nullptr;
             mDelayTimer->start(1000);
         } else { // N items
             if (!mBusyTimer) {
                 mBusyTimer = new QTimer(this);
-                connect(mBusyTimer, &QTimer::timeout,
-                        this, &StatusbarProgressWidget::slotBusyIndicator);
+                connect(mBusyTimer, &QTimer::timeout, this, &StatusbarProgressWidget::slotBusyIndicator);
                 mDelayTimer->start(1000);
             }
         }
@@ -136,7 +127,7 @@ void StatusbarProgressWidget::updateBusyMode(KPIM::ProgressItem *item)
 void StatusbarProgressWidget::slotProgressItemAdded(ProgressItem *item)
 {
     if (item->parent()) {
-        return;    // we are only interested in top level items
+        return; // we are only interested in top level items
     }
 
     updateBusyMode(item);
@@ -152,10 +143,10 @@ void StatusbarProgressWidget::slotProgressItemCompleted(ProgressItem *item)
     item->deleteLater();
     item = nullptr;
     connectSingleItem(); // if going back to 1 item
-    if (ProgressManager::instance()->isEmpty()) {   // No item
+    if (ProgressManager::instance()->isEmpty()) { // No item
         // Done. In 5s the progress-widget will close, then we can clean up the statusbar
         mCleanTimer->start(5000);
-    } else if (mCurrentItem) {   // Exactly one item
+    } else if (mCurrentItem) { // Exactly one item
         delete mBusyTimer;
         mBusyTimer = nullptr;
         activateSingleItemMode();
@@ -165,14 +156,12 @@ void StatusbarProgressWidget::slotProgressItemCompleted(ProgressItem *item)
 void StatusbarProgressWidget::connectSingleItem()
 {
     if (mCurrentItem) {
-        disconnect(mCurrentItem, &ProgressItem::progressItemProgress,
-                   this, &StatusbarProgressWidget::slotProgressItemProgress);
+        disconnect(mCurrentItem, &ProgressItem::progressItemProgress, this, &StatusbarProgressWidget::slotProgressItemProgress);
         mCurrentItem = nullptr;
     }
     mCurrentItem = ProgressManager::instance()->singleItem();
     if (mCurrentItem) {
-        connect(mCurrentItem, &ProgressItem::progressItemProgress,
-                this, &StatusbarProgressWidget::slotProgressItemProgress);
+        connect(mCurrentItem, &ProgressItem::progressItemProgress, this, &StatusbarProgressWidget::slotProgressItemProgress);
     }
 }
 
@@ -188,7 +177,7 @@ void StatusbarProgressWidget::slotShowItemDelayed()
     bool noItems = ProgressManager::instance()->isEmpty();
     if (mCurrentItem) {
         activateSingleItemMode();
-    } else if (!noItems) {   // N items
+    } else if (!noItems) { // N items
         mProgressBar->setMaximum(0);
         mProgressBar->setTextVisible(false);
         Q_ASSERT(mBusyTimer);
@@ -210,7 +199,7 @@ void StatusbarProgressWidget::slotBusyIndicator()
 
 void StatusbarProgressWidget::slotProgressItemProgress(ProgressItem *item, unsigned int value)
 {
-    Q_ASSERT(item == mCurrentItem);  // the only one we should be connected to
+    Q_ASSERT(item == mCurrentItem); // the only one we should be connected to
     Q_UNUSED(item)
     mProgressBar->setValue(value);
 }
@@ -258,7 +247,7 @@ bool StatusbarProgressWidget::eventFilter(QObject *obj, QEvent *ev)
     if (ev->type() == QEvent::MouseButtonPress) {
         auto e = static_cast<QMouseEvent *>(ev);
 
-        if (e->button() == Qt::LeftButton && mMode == Progress) {      // toggle view on left mouse button
+        if (e->button() == Qt::LeftButton && mMode == Progress) { // toggle view on left mouse button
             // Consensus seems to be that we should show/hide the fancy dialog when the user
             // clicks anywhere in the small one.
             slotProgressButtonClicked();

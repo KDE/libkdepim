@@ -6,10 +6,11 @@
 #ifndef PROGRESSSTATUSBARWIDGET_H
 #define PROGRESSSTATUSBARWIDGET_H
 
-#include <QObject>
 #include "kdepim_export.h"
+#include <QObject>
 
-namespace KPIM {
+namespace KPIM
+{
 class StatusbarProgressWidget;
 class ProgressStatusBarWidgetPrivate;
 /**

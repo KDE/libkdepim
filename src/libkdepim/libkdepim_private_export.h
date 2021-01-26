@@ -11,11 +11,11 @@
 
 /* Classes which are exported only for unit tests */
 #ifdef BUILD_TESTING
-# ifndef LIBKDEPIM_TESTS_EXPORT
-#  define LIBKDEPIM_TESTS_EXPORT KDEPIM_EXPORT
-# endif
+#ifndef LIBKDEPIM_TESTS_EXPORT
+#define LIBKDEPIM_TESTS_EXPORT KDEPIM_EXPORT
+#endif
 #else /* not compiling tests */
-# define LIBKDEPIM_TESTS_EXPORT
+#define LIBKDEPIM_TESTS_EXPORT
 #endif
 
 #endif

@@ -10,9 +10,9 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 /**
-  *  A specialized progress widget class, heavily based on
-  *  kio_littleprogress_dlg (it looks similar)
-  */
+ *  A specialized progress widget class, heavily based on
+ *  kio_littleprogress_dlg (it looks similar)
+ */
 
 #include "kdepim_export.h"
 
@@ -25,7 +25,8 @@ class QStackedWidget;
 class QLabel;
 class QTimer;
 
-namespace KPIM {
+namespace KPIM
+{
 class SSLLabel;
 class ProgressItem;
 class ProgressDialog;
@@ -35,7 +36,6 @@ class KDEPIM_EXPORT StatusbarProgressWidget : public QFrame
     Q_OBJECT
 
 public:
-
     explicit StatusbarProgressWidget(ProgressDialog *progressDialog, QWidget *parent, bool button = true);
 
     void setShowTypeProgressItem(unsigned int type);
@@ -58,10 +58,7 @@ protected:
     bool eventFilter(QObject *, QEvent *) override;
 
 private:
-    enum Mode {
-        Progress,
-        Clean
-    };
+    enum Mode { Progress, Clean };
     void setMode(Mode mode);
     void updateProgressButton(bool showingProgress);
     void connectSingleItem();

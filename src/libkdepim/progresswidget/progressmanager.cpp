@@ -227,37 +227,49 @@ bool ProgressManager::isEmpty() const
     return mTransactions.isEmpty();
 }
 
-ProgressItem *ProgressManager::createProgressItem(const QString &id, const QString &label, const QString &status, bool canBeCanceled, ProgressItem::CryptoStatus cryptoStatus)
+ProgressItem *
+ProgressManager::createProgressItem(const QString &id, const QString &label, const QString &status, bool canBeCanceled, ProgressItem::CryptoStatus cryptoStatus)
 {
-    return instance()->createProgressItemImpl(nullptr, id, label, status,
-                                              canBeCanceled, cryptoStatus);
+    return instance()->createProgressItemImpl(nullptr, id, label, status, canBeCanceled, cryptoStatus);
 }
 
-ProgressItem *ProgressManager::createProgressItem(const QString &parent, const QString &id, const QString &label, const QString &status, bool canBeCanceled, ProgressItem::CryptoStatus cryptoStatus)
+ProgressItem *ProgressManager::createProgressItem(const QString &parent,
+                                                  const QString &id,
+                                                  const QString &label,
+                                                  const QString &status,
+                                                  bool canBeCanceled,
+                                                  ProgressItem::CryptoStatus cryptoStatus)
 {
-    return instance()->createProgressItemImpl(parent, id, label,
-                                              status, canBeCanceled, cryptoStatus);
+    return instance()->createProgressItemImpl(parent, id, label, status, canBeCanceled, cryptoStatus);
 }
 
-ProgressItem *ProgressManager::createProgressItem(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool canBeCanceled, ProgressItem::CryptoStatus cryptoStatus)
+ProgressItem *ProgressManager::createProgressItem(ProgressItem *parent,
+                                                  const QString &id,
+                                                  const QString &label,
+                                                  const QString &status,
+                                                  bool canBeCanceled,
+                                                  ProgressItem::CryptoStatus cryptoStatus)
 {
-    return instance()->createProgressItemImpl(parent, id, label, status,
-                                              canBeCanceled, cryptoStatus);
+    return instance()->createProgressItemImpl(parent, id, label, status, canBeCanceled, cryptoStatus);
 }
 
 ProgressItem *ProgressManager::createProgressItem(const QString &label)
 {
-    return instance()->createProgressItemImpl(nullptr, getUniqueID(), label,
-                                              QString(), true, KPIM::ProgressItem::Unencrypted);
+    return instance()->createProgressItemImpl(nullptr, getUniqueID(), label, QString(), true, KPIM::ProgressItem::Unencrypted);
 }
 
 ProgressItem *ProgressManager::createProgressItem(unsigned int progressType, const QString &label)
 {
-    return instance()->createProgressItemImpl(nullptr, getUniqueID(), label,
-                                              QString(), true, KPIM::ProgressItem::Unencrypted, progressType);
+    return instance()->createProgressItemImpl(nullptr, getUniqueID(), label, QString(), true, KPIM::ProgressItem::Unencrypted, progressType);
 }
 
-ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool cancellable, ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType)
+ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent,
+                                                      const QString &id,
+                                                      const QString &label,
+                                                      const QString &status,
+                                                      bool cancellable,
+                                                      ProgressItem::CryptoStatus cryptoStatus,
+                                                      unsigned int progressType)
 {
     ProgressItem *t = nullptr;
     if (!mTransactions.value(id)) {
@@ -271,22 +283,14 @@ ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent, cons
             }
         }
         // connect all signals
-        connect(t, &ProgressItem::progressItemCompleted,
-                this, &ProgressManager::slotTransactionCompleted);
-        connect(t, &ProgressItem::progressItemProgress,
-                this, &ProgressManager::progressItemProgress);
-        connect(t, &ProgressItem::progressItemAdded,
-                this, &ProgressManager::progressItemAdded);
-        connect(t, &ProgressItem::progressItemCanceled,
-                this, &ProgressManager::progressItemCanceled);
-        connect(t, &ProgressItem::progressItemStatus,
-                this, &ProgressManager::progressItemStatus);
-        connect(t, &ProgressItem::progressItemLabel,
-                this, &ProgressManager::progressItemLabel);
-        connect(t, &ProgressItem::progressItemCryptoStatus,
-                this, &ProgressManager::progressItemCryptoStatus);
-        connect(t, &ProgressItem::progressItemUsesBusyIndicator,
-                this, &ProgressManager::progressItemUsesBusyIndicator);
+        connect(t, &ProgressItem::progressItemCompleted, this, &ProgressManager::slotTransactionCompleted);
+        connect(t, &ProgressItem::progressItemProgress, this, &ProgressManager::progressItemProgress);
+        connect(t, &ProgressItem::progressItemAdded, this, &ProgressManager::progressItemAdded);
+        connect(t, &ProgressItem::progressItemCanceled, this, &ProgressManager::progressItemCanceled);
+        connect(t, &ProgressItem::progressItemStatus, this, &ProgressManager::progressItemStatus);
+        connect(t, &ProgressItem::progressItemLabel, this, &ProgressManager::progressItemLabel);
+        connect(t, &ProgressItem::progressItemCryptoStatus, this, &ProgressManager::progressItemCryptoStatus);
+        connect(t, &ProgressItem::progressItemUsesBusyIndicator, this, &ProgressManager::progressItemUsesBusyIndicator);
 
         Q_EMIT progressItemAdded(t);
     } else {
@@ -296,7 +300,13 @@ ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent, cons
     return t;
 }
 
-ProgressItem *ProgressManager::createProgressItemImpl(const QString &parent, const QString &id, const QString &label, const QString &status, bool canBeCanceled, ProgressItem::CryptoStatus cryptoStatus, unsigned int progressType)
+ProgressItem *ProgressManager::createProgressItemImpl(const QString &parent,
+                                                      const QString &id,
+                                                      const QString &label,
+                                                      const QString &status,
+                                                      bool canBeCanceled,
+                                                      ProgressItem::CryptoStatus cryptoStatus,
+                                                      unsigned int progressType)
 {
     ProgressItem *p = mTransactions.value(parent);
     return createProgressItemImpl(p, id, label, status, canBeCanceled, cryptoStatus, progressType);
@@ -323,15 +333,15 @@ void ProgressManager::slotStandardCancelHandler(ProgressItem *item)
 ProgressItem *ProgressManager::singleItem() const
 {
     ProgressItem *item = nullptr;
-    QHash< QString, ProgressItem * >::const_iterator it = mTransactions.constBegin();
-    QHash< QString, ProgressItem * >::const_iterator end = mTransactions.constEnd();
+    QHash<QString, ProgressItem *>::const_iterator it = mTransactions.constBegin();
+    QHash<QString, ProgressItem *>::const_iterator end = mTransactions.constEnd();
     while (it != end) {
         // No single item for progress possible, as one of them is a busy indicator one.
         if ((*it)->usesBusyIndicator()) {
             return nullptr;
         }
 
-        if (!(*it)->parent()) {               // if it's a top level one, only those count
+        if (!(*it)->parent()) { // if it's a top level one, only those count
             if (item) {
                 return nullptr; // we found more than one
             } else {

@@ -15,10 +15,11 @@
 #include "kdepim_export.h"
 
 #include <KCompletion>
-#include <QWidget>
 #include <QSharedPointer>
+#include <QWidget>
 
-namespace KPIM {
+namespace KPIM
+{
 /**
   @short ABC representing line data
   @author Casey Link

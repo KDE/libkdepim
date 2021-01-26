@@ -16,7 +16,8 @@
 #include <QComboBox>
 #include <QModelIndex>
 
-namespace KPIM {
+namespace KPIM
+{
 /**
  * A combobox that shows its items in such a way that they can be checked in the
  * drop menu. It provides methods to set the default text when no items are selected

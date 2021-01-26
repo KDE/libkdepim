@@ -10,15 +10,15 @@
 
 #include "kwidgetlister.h"
 
-#include <KLocalizedString>
 #include <KGuiItem>
+#include <KLocalizedString>
 #include <QHBoxLayout>
 
 #include <QPushButton>
 #include <QVBoxLayout>
 
-#include <assert.h>
 #include <KStandardGuiItem>
+#include <assert.h>
 
 using namespace KPIM;
 
@@ -91,14 +91,12 @@ void KWidgetLister::init(bool fewerMoreButton)
     if (fewerMoreButton) {
         d->mBtnMore = new QPushButton(d->mButtonBox);
         mButtonBoxHBoxLayout->addWidget(d->mBtnMore);
-        KGuiItem::assign(d->mBtnMore, KGuiItem(i18nc("more widgets", "More"),
-                                               QStringLiteral("list-add")));
+        KGuiItem::assign(d->mBtnMore, KGuiItem(i18nc("more widgets", "More"), QStringLiteral("list-add")));
         mButtonBoxHBoxLayout->setStretchFactor(d->mBtnMore, 0);
 
         d->mBtnFewer = new QPushButton(d->mButtonBox);
         mButtonBoxHBoxLayout->addWidget(d->mBtnFewer);
-        KGuiItem::assign(d->mBtnFewer, KGuiItem(i18nc("fewer widgets", "Fewer"),
-                                                QStringLiteral("list-remove")));
+        KGuiItem::assign(d->mBtnFewer, KGuiItem(i18nc("fewer widgets", "Fewer"), QStringLiteral("list-remove")));
         mButtonBoxHBoxLayout->setStretchFactor(d->mBtnFewer, 0);
     }
     auto spacer = new QWidget(d->mButtonBox);

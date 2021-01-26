@@ -20,10 +20,10 @@ using namespace KPIM;
 
 /// Class KCheckComboBox::Private
 
-namespace KPIM {
+namespace KPIM
+{
 class Q_DECL_HIDDEN KCheckComboBox::Private
 {
-
 public:
     Private(KCheckComboBox *qq)
         : mSeparator(QLatin1Char(','))
@@ -42,6 +42,7 @@ public:
     bool mSqueezeText = false;
     bool mIgnoreHide = false;
     bool mAlwaysShowDefaultText = false;
+
 private:
     KCheckComboBox *const q;
 };
@@ -107,8 +108,7 @@ void KCheckComboBox::Private::toggleCheckState()
         QVariant value = index.data(Qt::CheckStateRole);
         if (value.isValid()) {
             auto state = static_cast<Qt::CheckState>(value.toInt());
-            q->model()->setData(index, state == Qt::Unchecked ? Qt::Checked : Qt::Unchecked,
-                                Qt::CheckStateRole);
+            q->model()->setData(index, state == Qt::Unchecked ? Qt::Checked : Qt::Unchecked, Qt::CheckStateRole);
         }
     }
 }
@@ -122,8 +122,7 @@ KCheckComboBox::KCheckComboBox(QWidget *parent)
     connect(this, qOverload<int>(&QComboBox::activated), this, [this]() {
         d->toggleCheckState();
     });
-    connect(model(), &QAbstractItemModel::rowsInserted, this,
-            [this](const QModelIndex &index, int start, int end) {
+    connect(model(), &QAbstractItemModel::rowsInserted, this, [this](const QModelIndex &index, int start, int end) {
         d->makeInsertedItemsCheckable(index, start, end);
     });
     connect(model(), &QAbstractItemModel::dataChanged, this, [this](const QModelIndex &topLeft, const QModelIndex &bottomRight) {
@@ -136,7 +135,7 @@ KCheckComboBox::KCheckComboBox(QWidget *parent)
     lineEdit()->setAlignment(Qt::AlignLeft);
     connect(lineEdit(), &QLineEdit::textChanged, this, [this](const QString &text) {
         if (text.isEmpty()) {
-            //Clear checked items
+            // Clear checked items
             setCheckedItems(QStringList());
         }
     });
@@ -177,8 +176,7 @@ QStringList KCheckComboBox::checkedItems(int role) const
     QStringList items;
     if (model()) {
         const QModelIndex index = model()->index(0, modelColumn(), rootModelIndex());
-        const QModelIndexList indexes = model()->match(index, Qt::CheckStateRole,
-                                                       Qt::Checked, -1, Qt::MatchExactly);
+        const QModelIndexList indexes = model()->match(index, Qt::CheckStateRole, Qt::Checked, -1, Qt::MatchExactly);
         items.reserve(indexes.count());
         for (const QModelIndex &index : indexes) {
             items += index.data(role).toString();

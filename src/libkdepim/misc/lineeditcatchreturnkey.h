@@ -7,10 +7,11 @@
 #ifndef LINEEDITCATCHRETURNKEY_H
 #define LINEEDITCATCHRETURNKEY_H
 
-#include <QObject>
 #include "kdepim_export.h"
+#include <QObject>
 class QLineEdit;
-namespace KPIM {
+namespace KPIM
+{
 /**
  * @brief The LineEditCatchReturnKey class
  * @author Laurent Montel <montel@kde.org>

@@ -15,15 +15,16 @@
 
 #include "progressmanager.h"
 
-#include <QScrollArea>
 #include <QMap>
+#include <QScrollArea>
 
 class QProgressBar;
 class QFrame;
 class QLabel;
 class QPushButton;
 
-namespace KPIM {
+namespace KPIM
+{
 class TransactionItem;
 class SSLLabel;
 

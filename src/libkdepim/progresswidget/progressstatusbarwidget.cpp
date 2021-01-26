@@ -5,8 +5,8 @@
 */
 #include "progressstatusbarwidget.h"
 
-#include "statusbarprogresswidget.h"
 #include "progressdialog.h"
+#include "statusbarprogresswidget.h"
 
 using namespace KPIM;
 class KPIM::ProgressStatusBarWidgetPrivate

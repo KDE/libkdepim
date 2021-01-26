@@ -10,18 +10,18 @@
 #include "progressdialog.h"
 #include "ssllabel.h"
 
-#include <QHBoxLayout>
 #include <KLocalizedString>
+#include <QHBoxLayout>
 
 #include <QCloseEvent>
 #include <QFrame>
 #include <QLabel>
+#include <QLayout>
 #include <QObject>
 #include <QProgressBar>
 #include <QPushButton>
 #include <QScrollBar>
 #include <QTimer>
-#include <QLayout>
 #include <QVBoxLayout>
 
 using namespace KPIM;
@@ -97,8 +97,7 @@ void OverlayWidget::setAlignWidget(QWidget *w)
 
 bool OverlayWidget::eventFilter(QObject *o, QEvent *e)
 {
-    if (o == d->mAlignWidget
-        && (e->type() == QEvent::Move || e->type() == QEvent::Resize)) {
+    if (o == d->mAlignWidget && (e->type() == QEvent::Move || e->type() == QEvent::Resize)) {
         reposition();
     }
     return QFrame::eventFilter(o, e);
@@ -109,7 +108,6 @@ void OverlayWidget::resizeEvent(QResizeEvent *ev)
     reposition();
     QFrame::resizeEvent(ev);
 }
-
 
 TransactionItemView::TransactionItemView(QWidget *parent, const QString &name)
     : QScrollArea(parent)
@@ -171,9 +169,9 @@ QSize TransactionItemView::minimumSizeHint() const
 
 void TransactionItemView::slotLayoutFirstItem()
 {
-    //This slot is called whenever a TransactionItem is deleted, so this is a
-    //good place to call updateGeometry(), so our parent takes the new size
-    //into account and resizes.
+    // This slot is called whenever a TransactionItem is deleted, so this is a
+    // good place to call updateGeometry(), so our parent takes the new size
+    // into account and resizes.
     updateGeometry();
 
     /*
@@ -214,8 +212,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     hHBoxLayout->setSpacing(5);
     layout()->addWidget(h);
 
-    mItemLabel
-        = new QLabel(fontMetrics().elidedText(item->label(), Qt::ElideRight, MAX_LABEL_WIDTH), h);
+    mItemLabel = new QLabel(fontMetrics().elidedText(item->label(), Qt::ElideRight, MAX_LABEL_WIDTH), h);
     h->layout()->addWidget(mItemLabel);
     h->setSizePolicy(QSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed));
 
@@ -229,8 +226,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
         mCancelButton = new QPushButton(QIcon::fromTheme(QStringLiteral("dialog-cancel")), QString(), h);
         hHBoxLayout->addWidget(mCancelButton);
         mCancelButton->setToolTip(i18n("Cancel this operation."));
-        connect(mCancelButton, &QAbstractButton::clicked,
-                this, &TransactionItem::slotItemCanceled);
+        connect(mCancelButton, &QAbstractButton::clicked, this, &TransactionItem::slotItemCanceled);
         h->layout()->addWidget(mCancelButton);
     }
 
@@ -247,8 +243,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     mItemStatus = new QLabel(h);
     hHBoxLayout->addWidget(mItemStatus);
     mItemStatus->setTextFormat(Qt::RichText);
-    mItemStatus->setText(
-        fontMetrics().elidedText(item->status(), Qt::ElideRight, MAX_LABEL_WIDTH));
+    mItemStatus->setText(fontMetrics().elidedText(item->status(), Qt::ElideRight, MAX_LABEL_WIDTH));
     h->layout()->addWidget(mItemStatus);
     setCryptoStatus(item->cryptoStatus());
     if (first) {
@@ -321,9 +316,9 @@ ProgressDialog::ProgressDialog(QWidget *alignWidget, QWidget *parent)
     // Qt Bug: Sunken is not applied for RTL layouts correctly (is not mirrored).
     // For now let's just use Plain, which is fine for this.
     if (layoutDirection() == Qt::LeftToRight) {
-        setFrameStyle(QFrame::Panel | QFrame::Sunken);   // QFrame
+        setFrameStyle(QFrame::Panel | QFrame::Sunken); // QFrame
     } else {
-        setFrameStyle(QFrame::Panel | QFrame::Plain);    // QFrame
+        setFrameStyle(QFrame::Panel | QFrame::Plain); // QFrame
     }
 
     setAutoFillBackground(true);
@@ -331,26 +326,18 @@ ProgressDialog::ProgressDialog(QWidget *alignWidget, QWidget *parent)
     mScrollView = new TransactionItemView(this, QStringLiteral("ProgressScrollView"));
     layout()->addWidget(mScrollView);
     /*
-    * Get the singleton ProgressManager item which will inform us of
-    * appearing and vanishing items.
-    */
+     * Get the singleton ProgressManager item which will inform us of
+     * appearing and vanishing items.
+     */
     ProgressManager *pm = ProgressManager::instance();
-    connect(pm, &ProgressManager::progressItemAdded,
-            this, &ProgressDialog::slotTransactionAdded);
-    connect(pm, &ProgressManager::progressItemCompleted,
-            this, &ProgressDialog::slotTransactionCompleted);
-    connect(pm, &ProgressManager::progressItemProgress,
-            this, &ProgressDialog::slotTransactionProgress);
-    connect(pm, &ProgressManager::progressItemStatus,
-            this, &ProgressDialog::slotTransactionStatus);
-    connect(pm, &ProgressManager::progressItemLabel,
-            this, &ProgressDialog::slotTransactionLabel);
-    connect(pm, &ProgressManager::progressItemCryptoStatus,
-            this, &ProgressDialog::slotTransactionCryptoStatus);
-    connect(pm, &ProgressManager::progressItemUsesBusyIndicator,
-            this, &ProgressDialog::slotTransactionUsesBusyIndicator);
-    connect(pm, &ProgressManager::showProgressDialog,
-            this, &ProgressDialog::slotShow);
+    connect(pm, &ProgressManager::progressItemAdded, this, &ProgressDialog::slotTransactionAdded);
+    connect(pm, &ProgressManager::progressItemCompleted, this, &ProgressDialog::slotTransactionCompleted);
+    connect(pm, &ProgressManager::progressItemProgress, this, &ProgressDialog::slotTransactionProgress);
+    connect(pm, &ProgressManager::progressItemStatus, this, &ProgressDialog::slotTransactionStatus);
+    connect(pm, &ProgressManager::progressItemLabel, this, &ProgressDialog::slotTransactionLabel);
+    connect(pm, &ProgressManager::progressItemCryptoStatus, this, &ProgressDialog::slotTransactionCryptoStatus);
+    connect(pm, &ProgressManager::progressItemUsesBusyIndicator, this, &ProgressDialog::slotTransactionUsesBusyIndicator);
+    connect(pm, &ProgressManager::showProgressDialog, this, &ProgressDialog::slotShow);
 }
 
 void ProgressDialog::closeEvent(QCloseEvent *e)
@@ -404,8 +391,7 @@ void ProgressDialog::slotTransactionCompleted(ProgressItem *item)
         ti->setItemComplete();
         QTimer::singleShot(3000, ti, &QObject::deleteLater);
         // see the slot for comments as to why that works
-        connect(ti, &QObject::destroyed,
-                mScrollView, &TransactionItemView::slotLayoutFirstItem);
+        connect(ti, &QObject::destroyed, mScrollView, &TransactionItemView::slotLayoutFirstItem);
     }
     // This was the last item, hide.
     if (mTransactionsToListviewItems.empty()) {
@@ -484,10 +470,10 @@ void ProgressDialog::setVisible(bool b)
 void ProgressDialog::slotToggleVisibility()
 {
     /* Since we are only hiding with a timeout, there is a short period of
-    * time where the last item is still visible, but clicking on it in
-    * the statusbarwidget should not display the dialog, because there
-    * are no items to be shown anymore. Guard against that.
-    */
+     * time where the last item is still visible, but clicking on it in
+     * the statusbarwidget should not display the dialog, because there
+     * are no items to be shown anymore. Guard against that.
+     */
     if (!isHidden() || !mTransactionsToListviewItems.isEmpty()) {
         const bool showNow = isHidden();
         setVisible(showNow);

@@ -25,12 +25,10 @@ MultiplyingLineEditor::MultiplyingLineEditor(MultiplyingLineFactory *factory, QW
     topLayout->addWidget(mView);
     connect(mView, &MultiplyingLineView::focusUp, this, &MultiplyingLineEditor::focusUp);
     connect(mView, &MultiplyingLineView::focusDown, this, &MultiplyingLineEditor::focusDown);
-    connect(mView, &MultiplyingLineView::completionModeChanged,
-            this, &MultiplyingLineEditor::completionModeChanged);
+    connect(mView, &MultiplyingLineView::completionModeChanged, this, &MultiplyingLineEditor::completionModeChanged);
     connect(mView, &MultiplyingLineView::lineDeleted, this, &MultiplyingLineEditor::lineDeleted);
     connect(mView, &MultiplyingLineView::lineAdded, this, &MultiplyingLineEditor::lineAdded);
-    connect(mView, &MultiplyingLineView::sizeHintChanged,
-            this, &MultiplyingLineEditor::sizeHintChanged);
+    connect(mView, &MultiplyingLineView::sizeHintChanged, this, &MultiplyingLineEditor::sizeHintChanged);
 }
 
 MultiplyingLineEditor::~MultiplyingLineEditor()
@@ -108,7 +106,7 @@ MultiplyingLineFactory *MultiplyingLineEditor::factory() const
     return mMultiplyingLineFactory;
 }
 
-QVector< MultiplyingLineData::Ptr > MultiplyingLineEditor::allData() const
+QVector<MultiplyingLineData::Ptr> MultiplyingLineEditor::allData() const
 {
     return mView->allData();
 }
@@ -118,7 +116,7 @@ MultiplyingLineData::Ptr MultiplyingLineEditor::activeData() const
     return mView->activeLine()->data();
 }
 
-QList< MultiplyingLine * > MultiplyingLineEditor::lines() const
+QList<MultiplyingLine *> MultiplyingLineEditor::lines() const
 {
     return mView->lines();
 }

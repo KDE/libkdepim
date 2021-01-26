@@ -17,10 +17,11 @@
 #include "multiplyingline.h"
 
 #include <KCompletion>
-#include <QWidget>
 #include <QObject>
+#include <QWidget>
 
-namespace KPIM {
+namespace KPIM
+{
 class MultiplyingLineView;
 
 /**
@@ -32,7 +33,8 @@ class KDEPIM_EXPORT MultiplyingLineFactory : public QObject
 {
     Q_OBJECT
 public:
-    explicit MultiplyingLineFactory(QObject *parent) : QObject(parent)
+    explicit MultiplyingLineFactory(QObject *parent)
+        : QObject(parent)
     {
     }
 
@@ -72,7 +74,6 @@ class KDEPIM_EXPORT MultiplyingLineEditor : public QWidget
     Q_PROPERTY(bool dynamicSizeHint READ dynamicSizeHint WRITE setDynamicSizeHint)
 
 public:
-
     // We take ownership of factory
     explicit MultiplyingLineEditor(MultiplyingLineFactory *factory, QWidget *parent = nullptr);
 
@@ -98,7 +99,7 @@ public:
     bool isModified();
 
     /** Resets the modified flag to false.
-    */
+     */
     void clearModified();
 
     /** Adds data to one line of the editor.
