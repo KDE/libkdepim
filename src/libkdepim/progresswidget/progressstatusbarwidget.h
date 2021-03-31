@@ -3,8 +3,7 @@
 
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
-#ifndef PROGRESSSTATUSBARWIDGET_H
-#define PROGRESSSTATUSBARWIDGET_H
+#pragma once
 
 #include "kdepim_export.h"
 #include <QObject>
@@ -31,4 +30,3 @@ private:
 };
 }
 
-#endif // PROGRESSSTATUSBARWIDGET_H

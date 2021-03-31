@@ -7,8 +7,7 @@
  *  SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#ifndef KDEPIM_SSLLABEL_H
-#define KDEPIM_SSLLABEL_H
+#pragma once
 
 #include <QLabel>
 
@@ -29,4 +28,3 @@ private:
 };
 }
 
-#endif

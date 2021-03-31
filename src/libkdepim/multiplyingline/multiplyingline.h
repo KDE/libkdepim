@@ -9,8 +9,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MULTIPLYINGLINE_H
-#define MULTIPLYINGLINE_H
+#pragma once
 
 #include "kdepim_export.h"
 
@@ -196,4 +195,3 @@ protected:
 };
 }
 
-#endif // MULTIPLYINGLINE_H

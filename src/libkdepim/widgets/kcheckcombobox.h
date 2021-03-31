@@ -8,8 +8,7 @@
 
 */
 
-#ifndef KCHECKCOMBOBOX_H
-#define KCHECKCOMBOBOX_H
+#pragma once
 
 #include "kdepim_export.h"
 
@@ -180,4 +179,3 @@ private:
 };
 }
 
-#endif // KCHECKCOMBOBOX_H

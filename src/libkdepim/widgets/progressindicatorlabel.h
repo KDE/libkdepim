@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef PROGRESSINDICATORLABEL_H
-#define PROGRESSINDICATORLABEL_H
+#pragma once
 
 #include "kdepim_export.h"
 
@@ -40,4 +39,3 @@ private:
 };
 }
 
-#endif // PROGRESSINDICATORLABEL_H

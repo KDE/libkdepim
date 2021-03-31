@@ -1,5 +1,4 @@
-#ifndef KDEPIM_STATUSBARPROGRESSWIDGET_H
-#define KDEPIM_STATUSBARPROGRESSWIDGET_H
+#pragma once
 /*
   statusbarprogresswidget.h
 
@@ -83,4 +82,3 @@ private:
 };
 } // namespace
 
-#endif

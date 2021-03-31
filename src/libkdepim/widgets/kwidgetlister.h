@@ -8,8 +8,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KDEPIM_KWIDGETLISTER_H
-#define KDEPIM_KWIDGETLISTER_H
+#pragma once
 
 #include "kdepim_export.h"
 #include <QWidget>
@@ -191,4 +190,3 @@ private:
 };
 }
 
-#endif /* _KWIDGETLISTER_H_ */

@@ -4,8 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef LINEEDITCATCHRETURNKEY_H
-#define LINEEDITCATCHRETURNKEY_H
+#pragma once
 
 #include "kdepim_export.h"
 #include <QObject>
@@ -30,4 +29,3 @@ private:
     QLineEdit *mLineEdit = nullptr;
 };
 }
-#endif // LINEEDITCATCHRETURNKEY_H

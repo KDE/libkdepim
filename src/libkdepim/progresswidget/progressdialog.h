@@ -8,8 +8,7 @@
  *  SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#ifndef KDEPIM_PROGRESSDIALOG_H
-#define KDEPIM_PROGRESSDIALOG_H
+#pragma once
 
 #include "kdepim_export.h"
 
@@ -171,4 +170,3 @@ protected:
 };
 } // namespace KPIM
 
-#endif // __KPIM_PROGRESSDIALOG_H__

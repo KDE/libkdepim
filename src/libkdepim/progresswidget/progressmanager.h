@@ -8,8 +8,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef KDEPIM_PROGRESSMANAGER_H
-#define KDEPIM_PROGRESSMANAGER_H
+#pragma once
 
 #include "kdepim_export.h"
 
@@ -428,4 +427,3 @@ private:
 };
 }
 
-#endif // __KPIM_PROGRESSMANAGER_H__
