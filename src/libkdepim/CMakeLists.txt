@@ -75,7 +75,7 @@ endif()
 
 
 set_target_properties(KF5Libkdepim PROPERTIES
-    VERSION ${LIBKDEPIM_VERSION_STRING}
+    VERSION ${LIBKDEPIM_VERSION}
     SOVERSION ${LIBKDEPIM_SOVERSION}
     EXPORT_NAME Libkdepim
     )
