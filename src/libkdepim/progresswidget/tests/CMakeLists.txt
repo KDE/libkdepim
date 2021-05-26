@@ -1,5 +1,4 @@
-set(statusbarprogresswidgetgui_SRCS statusbarprogresswidget_gui.cpp)
-add_executable(statusbarprogresswidgetgui ${statusbarprogresswidgetgui_SRCS})
+add_executable(statusbarprogresswidgetgui statusbarprogresswidget_gui.cpp)
 target_link_libraries(statusbarprogresswidgetgui
   Qt::Widgets
   Qt::Core

@@ -1,4 +1,5 @@
-
+add_library(KF5Libkdepim)
+add_library(KF5::Libkdepim ALIAS KF5Libkdepim)
 ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfigVersion.cmake"
@@ -13,50 +14,31 @@ endif()
 
 
 ########### next target ###############
-set(kdepim_progresswidget_LIB_SRCS
+target_sources(KF5Libkdepim PRIVATE
     progresswidget/progressmanager.cpp
     progresswidget/progressdialog.cpp
     progresswidget/statusbarprogresswidget.cpp
     progresswidget/ssllabel.cpp
     progresswidget/progressstatusbarwidget.cpp
-    )
-
-set(kdepim_widgets_LIB_SRCS
     widgets/kcheckcombobox.cpp
     widgets/kwidgetlister.cpp
     widgets/progressindicatorlabel.cpp
-    )
-
-set(kdepim_misc_LIB_SRCS
     misc/lineeditcatchreturnkey.cpp
-    )
-
-set(kdepim_multiplyingline_LIB_SRCS
     multiplyingline/multiplyingline.cpp
     multiplyingline/multiplyinglineeditor.cpp
     multiplyingline/multiplyinglineview_p.cpp
     )
-
-set(kdepim_LIB_SRCS
-    ${kdepim_progresswidget_LIB_SRCS}
-    ${kdepim_widgets_LIB_SRCS}
-    ${kdepim_misc_LIB_SRCS}
-    ${kdepim_multiplyingline_LIB_SRCS}
-    )
-ecm_qt_declare_logging_category(kdepim_LIB_SRCS HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
+ecm_qt_declare_logging_category(KF5Libkdepim HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
         DESCRIPTION "libkdepim (libkdepim)"
         OLD_CATEGORY_NAMES log_libkdepim
         EXPORT LIBKDEPIM
     )
 
 
-
-add_library(KF5Libkdepim ${kdepim_LIB_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KF5Libkdepim PROPERTIES UNITY_BUILD ON)
 endif()
 generate_export_header(KF5Libkdepim BASE_NAME kdepim)
-add_library(KF5::Libkdepim ALIAS KF5Libkdepim)
 target_include_directories(KF5Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim/;${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim>")
 target_include_directories(KF5Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
 
