@@ -23,6 +23,9 @@
 #include <QScrollBar>
 #include <QTimer>
 #include <QVBoxLayout>
+#include <chrono>
+
+using namespace std::chrono_literals;
 
 using namespace KPIM;
 static const int MAX_LABEL_WIDTH = 650;
@@ -378,7 +381,7 @@ void ProgressDialog::slotTransactionAdded(ProgressItem *item)
                 mTransactionsToListviewItems.insert(item, ti);
             }
             if (first && mWasLastShown) {
-                QTimer::singleShot(1000, this, &ProgressDialog::slotShow);
+                QTimer::singleShot(1s, this, &ProgressDialog::slotShow);
             }
         }
     }
@@ -389,13 +392,13 @@ void ProgressDialog::slotTransactionCompleted(ProgressItem *item)
     if (TransactionItem *ti = mTransactionsToListviewItems.value(item)) {
         mTransactionsToListviewItems.remove(item);
         ti->setItemComplete();
-        QTimer::singleShot(3000, ti, &QObject::deleteLater);
+        QTimer::singleShot(3s, ti, &QObject::deleteLater);
         // see the slot for comments as to why that works
         connect(ti, &QObject::destroyed, mScrollView, &TransactionItemView::slotLayoutFirstItem);
     }
     // This was the last item, hide.
     if (mTransactionsToListviewItems.empty()) {
-        QTimer::singleShot(3000, this, &ProgressDialog::slotHide);
+        QTimer::singleShot(3s, this, &ProgressDialog::slotHide);
     }
 }
 
