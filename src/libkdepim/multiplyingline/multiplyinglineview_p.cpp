@@ -45,7 +45,7 @@ MultiplyingLine *MultiplyingLineView::activeLine() const
 
 MultiplyingLine *MultiplyingLineView::emptyLine() const
 {
-    for (MultiplyingLine *line : qAsConst(mLines)) {
+    for (MultiplyingLine *line : std::as_const(mLines)) {
         if (line->isEmpty()) {
             return line;
         }

@@ -148,7 +148,7 @@ void KWidgetLister::slotClear()
     setNumberOfShownWidgetsTo(d->mMinWidgets);
 
     // clear remaining widgets
-    for (QWidget *widget : qAsConst(d->mWidgetList)) {
+    for (QWidget *widget : std::as_const(d->mWidgetList)) {
         clearWidget(widget);
     }
 
