@@ -89,7 +89,7 @@ public:
     /**
       Set the data of this line. The containing widgets should be
       populated accordingly.
-      @param data the data to populate this line wit
+      @param data the data to populate this line with
     */
     virtual void setData(const MultiplyingLineData::Ptr &data) = 0;
 

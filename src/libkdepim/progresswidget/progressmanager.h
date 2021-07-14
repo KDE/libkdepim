@@ -82,7 +82,7 @@ public:
     Q_REQUIRED_RESULT CryptoStatus cryptoStatus() const;
 
     /**
-     * Set whether this item uses crypted communication, so listeners
+     * Set whether this item uses encrypted communication, so listeners
      * can display a nice crypto icon.
      * @param v The value.
      */

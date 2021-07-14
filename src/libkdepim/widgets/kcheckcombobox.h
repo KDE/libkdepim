@@ -139,8 +139,8 @@ public:
 
     /**
      * Update the KCheckComboBox text with Item belonging to the role.
-     * @param topLeft Curently unused.
-     * @param bottomRight Curently unused.
+     * @param topLeft Currently unused.
+     * @param bottomRight Currently unused.
      * @param role The role the updated values belong to.
      */
     void updateCheckedItems(const QModelIndex &topLeft = QModelIndex(), const QModelIndex &bottomRight = QModelIndex(), int role = Qt::DisplayRole);

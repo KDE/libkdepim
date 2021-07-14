@@ -106,7 +106,7 @@ void KWidgetLister::init(bool fewerMoreButton)
     d->mBtnClear = new QPushButton(d->mButtonBox);
     mButtonBoxHBoxLayout->addWidget(d->mBtnClear);
     KGuiItem::assign(d->mBtnClear, KStandardGuiItem::clear());
-    // FIXME a useful whats this. KStandardGuiItem::clear() returns a text with an edit box
+    // FIXME a useful what's this. KStandardGuiItem::clear() returns a text with an edit box
     d->mBtnClear->setWhatsThis(QString());
     mButtonBoxHBoxLayout->setStretchFactor(d->mBtnClear, 0);
 
