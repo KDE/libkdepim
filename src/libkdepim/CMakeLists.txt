@@ -163,3 +163,32 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
     )
+
+if (BUILD_QCH)
+    ecm_add_qch(
+        KF5Libkdepim_QCH
+        NAME KF5Libkdepim
+        BASE_NAME KF5Libkdepim
+        VERSION ${PIM_VERSION}
+        ORG_DOMAIN org.kde
+        SOURCES # using only public headers, to cover only public API
+            ${libkdepim_CamelCase_HEADERS}
+            ${libkdepim_progresswidget_HEADERS}
+            ${libkdepim_misc_HEADERS}
+            ${libkdepim_widgets_HEADERS}
+            ${libkdepim_multiline_HEADERS}
+        #MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
+        #IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
+        LINK_QCHS
+            Qt5Core_QCH
+            Qt5Gui_QCH
+            Qt5Widgets_QCH
+        INCLUDE_DIRS
+            ${CMAKE_CURRENT_BINARY_DIR}
+        BLANK_MACROS
+            KDEPIM_EXPORT
+        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        COMPONENT Devel
+    )
+endif()
