@@ -20,9 +20,6 @@ kdatepickerpopup
 kwidgetlister
 uistatesaver
 
-# Port korganizer and kontact to kconfigdialogmanager instead
-kprefsdialog
-
 # Get rid of
 recentaddresses      # replace with live searches?
 
