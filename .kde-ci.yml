@@ -6,7 +6,7 @@ Dependencies:
   'require':
     'frameworks/kdesignerplugin' : '@latest'
     'frameworks/kcontacts' : '@latest'
-    'kde/pim/akonadi' : '@latest'
-    'kde/pim/akonadi-contacts' : '@latest'
-    'kde/pim/akonadi-search' : '@latest'
-    'kde/pim/kldap' : '@latest'
+    'kde/pim/akonadi' : '@same'
+    'kde/pim/akonadi-contacts' : '@same'
+    'kde/pim/akonadi-search' : '@same'
+    'kde/pim/kldap' : '@same'
