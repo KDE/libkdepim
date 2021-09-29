@@ -20,9 +20,9 @@ public:
     {
         auto lay = new QHBoxLayout(q);
         lay->setContentsMargins(0, 0, 0, 0);
-        indicator = new KBusyIndicatorWidget;
+        indicator = new KBusyIndicatorWidget(q);
         lay->addWidget(indicator);
-        label = new QLabel;
+        label = new QLabel(q);
         lay->addWidget(label);
     }
 
