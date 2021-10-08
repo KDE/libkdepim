@@ -18,14 +18,14 @@
 
 using namespace KPIM;
 
-/// Class KCheckComboBox::Private
+/// Class KCheckComboBox::KCheckComboBoxPrivate
 
 namespace KPIM
 {
-class Q_DECL_HIDDEN KCheckComboBox::Private
+class Q_DECL_HIDDEN KCheckComboBox::KCheckComboBoxPrivate
 {
 public:
-    Private(KCheckComboBox *qq)
+    KCheckComboBoxPrivate(KCheckComboBox *qq)
         : mSeparator(QLatin1Char(','))
         , q(qq)
     {
@@ -48,7 +48,7 @@ private:
 };
 }
 
-void KCheckComboBox::Private::makeInsertedItemsCheckable(const QModelIndex &parent, int start, int end)
+void KCheckComboBox::KCheckComboBoxPrivate::makeInsertedItemsCheckable(const QModelIndex &parent, int start, int end)
 {
     Q_UNUSED(parent)
     auto model = qobject_cast<QStandardItemModel *>(q->model());
@@ -62,7 +62,7 @@ void KCheckComboBox::Private::makeInsertedItemsCheckable(const QModelIndex &pare
     }
 }
 
-QString KCheckComboBox::Private::squeeze(const QString &text)
+QString KCheckComboBox::KCheckComboBoxPrivate::squeeze(const QString &text)
 {
     QFontMetrics fm(q->fontMetrics());
     // The 4 pixels is 2 * horizontalMargin from QLineEdit.
@@ -79,7 +79,7 @@ QString KCheckComboBox::Private::squeeze(const QString &text)
     return text;
 }
 
-void KCheckComboBox::Private::updateCheckedItems(const QModelIndex &topLeft, const QModelIndex &bottomRight, int role)
+void KCheckComboBox::KCheckComboBoxPrivate::updateCheckedItems(const QModelIndex &topLeft, const QModelIndex &bottomRight, int role)
 {
     Q_UNUSED(topLeft)
     Q_UNUSED(bottomRight)
@@ -101,7 +101,7 @@ void KCheckComboBox::Private::updateCheckedItems(const QModelIndex &topLeft, con
     Q_EMIT q->checkedItemsChanged(items);
 }
 
-void KCheckComboBox::Private::toggleCheckState()
+void KCheckComboBox::KCheckComboBoxPrivate::toggleCheckState()
 {
     if (q->view()->isVisible()) {
         const QModelIndex index = q->view()->currentIndex();
@@ -117,7 +117,7 @@ void KCheckComboBox::Private::toggleCheckState()
 
 KCheckComboBox::KCheckComboBox(QWidget *parent)
     : QComboBox(parent)
-    , d(new KCheckComboBox::Private(this))
+    , d(new KCheckComboBox::KCheckComboBoxPrivate(this))
 {
     connect(this, &QComboBox::activated, this, [this]() {
         d->toggleCheckState();
@@ -148,10 +148,7 @@ KCheckComboBox::KCheckComboBox(QWidget *parent)
     d->updateCheckedItems();
 }
 
-KCheckComboBox::~KCheckComboBox()
-{
-    delete d;
-}
+KCheckComboBox::~KCheckComboBox() = default;
 
 void KCheckComboBox::hidePopup()
 {

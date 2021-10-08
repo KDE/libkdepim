@@ -184,8 +184,8 @@ Q_SIGNALS:
 
 private:
     //@cond PRIVATE
-    class Private;
-    Private *const d;
+    class KWidgetListerPrivate;
+    std::unique_ptr<KWidgetListerPrivate> const d;
     //@endcond
 };
 }

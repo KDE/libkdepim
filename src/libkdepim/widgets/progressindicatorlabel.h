@@ -35,7 +35,7 @@ public Q_SLOTS:
 
 private:
     friend class ProgressIndicatorLabelPrivate;
-    ProgressIndicatorLabelPrivate *const d;
+    std::unique_ptr<ProgressIndicatorLabelPrivate> const d;
 };
 }
 

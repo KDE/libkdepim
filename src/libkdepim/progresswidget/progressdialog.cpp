@@ -48,10 +48,7 @@ OverlayWidget::OverlayWidget(QWidget *alignWidget, QWidget *parent)
     setLayout(new QHBoxLayout(this));
 }
 
-OverlayWidget::~OverlayWidget()
-{
-    delete d;
-}
+OverlayWidget::~OverlayWidget() = default;
 
 QWidget *OverlayWidget::alignWidget() const
 {

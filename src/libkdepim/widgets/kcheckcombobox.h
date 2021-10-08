@@ -173,8 +173,8 @@ protected:
 
 private:
     //@cond PRIVATE
-    class Private;
-    Private *const d;
+    class KCheckComboBoxPrivate;
+    std::unique_ptr<KCheckComboBoxPrivate> const d;
     //@endcond
 };
 }

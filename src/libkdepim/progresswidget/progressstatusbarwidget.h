@@ -7,7 +7,7 @@
 
 #include "kdepim_export.h"
 #include <QObject>
-
+#include <memory>
 namespace KPIM
 {
 class StatusbarProgressWidget;
@@ -26,7 +26,7 @@ public:
     Q_REQUIRED_RESULT KPIM::StatusbarProgressWidget *littleProgress() const;
 
 private:
-    ProgressStatusBarWidgetPrivate *const d;
+    std::unique_ptr<ProgressStatusBarWidgetPrivate> const d;
 };
 }
 

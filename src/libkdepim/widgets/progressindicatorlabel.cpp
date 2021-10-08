@@ -69,10 +69,7 @@ ProgressIndicatorLabel::ProgressIndicatorLabel(QWidget *parent)
     d->stop();
 }
 
-ProgressIndicatorLabel::~ProgressIndicatorLabel()
-{
-    delete d;
-}
+ProgressIndicatorLabel::~ProgressIndicatorLabel() = default;
 
 void ProgressIndicatorLabel::start()
 {

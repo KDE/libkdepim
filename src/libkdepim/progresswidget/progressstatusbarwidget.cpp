@@ -34,10 +34,7 @@ ProgressStatusBarWidget::ProgressStatusBarWidget(QWidget *alignWidget, QWidget *
     d->mLittleProgress->show();
 }
 
-ProgressStatusBarWidget::~ProgressStatusBarWidget()
-{
-    delete d;
-}
+ProgressStatusBarWidget::~ProgressStatusBarWidget() = default;
 
 KPIM::StatusbarProgressWidget *ProgressStatusBarWidget::littleProgress() const
 {

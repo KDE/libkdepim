@@ -53,7 +53,7 @@ private:
     void reposition();
 
 private:
-    OverlayWidgetPrivate *const d;
+    std::unique_ptr<OverlayWidgetPrivate> const d;
 };
 
 class TransactionItemView : public QScrollArea

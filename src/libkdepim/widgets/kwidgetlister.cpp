@@ -22,15 +22,15 @@
 
 using namespace KPIM;
 
-class Q_DECL_HIDDEN KWidgetLister::Private
+class Q_DECL_HIDDEN KWidgetLister::KWidgetListerPrivate
 {
 public:
-    Private(KWidgetLister *qq)
+    KWidgetListerPrivate(KWidgetLister *qq)
         : q(qq)
     {
     }
 
-    ~Private()
+    ~KWidgetListerPrivate()
     {
         qDeleteAll(mWidgetList);
         mWidgetList.clear();
@@ -49,7 +49,7 @@ public:
     int mMaxWidgets = 0;
 };
 
-void KWidgetLister::Private::enableControls()
+void KWidgetLister::KWidgetListerPrivate::enableControls()
 {
     const int count = mWidgetList.count();
     const bool isMaxWidgets = (count >= mMaxWidgets);
@@ -64,17 +64,14 @@ void KWidgetLister::Private::enableControls()
 
 KWidgetLister::KWidgetLister(bool fewerMoreButton, int minWidgets, int maxWidgets, QWidget *parent)
     : QWidget(parent)
-    , d(new Private(this))
+    , d(new KWidgetListerPrivate(this))
 {
     d->mMinWidgets = qMax(minWidgets, 1);
     d->mMaxWidgets = qMax(maxWidgets, d->mMinWidgets + 1);
     init(fewerMoreButton);
 }
 
-KWidgetLister::~KWidgetLister()
-{
-    delete d;
-}
+KWidgetLister::~KWidgetLister() = default;
 
 void KWidgetLister::init(bool fewerMoreButton)
 {
