@@ -68,14 +68,14 @@ public:
      @param resize turn on or off this behavior of auto resizing
      */
     void setAutoResize(bool resize);
-    bool autoResize();
+    Q_REQUIRED_RESULT bool autoResize() const;
 
     /**
      * Sets whether the size hint of the editor shall be calculated
      * dynamically by the number of lines. Default is @c true.
      */
     void setDynamicSizeHint(bool dynamic);
-    bool dynamicSizeHint() const;
+    Q_REQUIRED_RESULT bool dynamicSizeHint() const;
 
     QList<MultiplyingLine *> lines() const;
     MultiplyingLine *addLine(bool showDialogBox);

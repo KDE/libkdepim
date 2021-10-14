@@ -18,7 +18,7 @@ MultiplyingLineEditor::MultiplyingLineEditor(MultiplyingLineFactory *factory, QW
     : QWidget(parent)
     , mMultiplyingLineFactory(factory)
 {
-    QBoxLayout *topLayout = new QHBoxLayout(this);
+    auto topLayout = new QHBoxLayout(this);
     topLayout->setContentsMargins(0, 0, 0, 0);
 
     mView = new MultiplyingLineView(mMultiplyingLineFactory, this);

@@ -116,7 +116,7 @@ void MultiplyingLineView::slotReturnPressed(MultiplyingLine *line)
 
 void MultiplyingLineView::slotDownPressed(MultiplyingLine *line)
 {
-    int pos = mLines.indexOf(line);
+    const int pos = mLines.indexOf(line);
     if (pos >= (mLines.count() - 1)) {
         Q_EMIT focusDown();
     } else if (pos >= 0) {
@@ -126,7 +126,7 @@ void MultiplyingLineView::slotDownPressed(MultiplyingLine *line)
 
 void MultiplyingLineView::slotUpPressed(MultiplyingLine *line)
 {
-    int pos = mLines.indexOf(line);
+    const int pos = mLines.indexOf(line);
     if (pos > 0) {
         activateLine(mLines.at(pos - 1));
     } else {
@@ -157,7 +157,7 @@ void MultiplyingLineView::slotDeleteLine()
 
     MultiplyingLine *line = mCurDelLine;
     line->aboutToBeDeleted();
-    int pos = mLines.indexOf(line);
+    const int pos = mLines.indexOf(line);
 
     if (mCurDelLine->isActive()) {
         int newPos;
@@ -389,7 +389,7 @@ void MultiplyingLineView::setAutoResize(bool resize)
     }
 }
 
-bool MultiplyingLineView::autoResize()
+bool MultiplyingLineView::autoResize() const
 {
     return mAutoResize;
 }
