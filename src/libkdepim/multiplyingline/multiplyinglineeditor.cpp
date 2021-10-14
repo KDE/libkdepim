@@ -36,12 +36,12 @@ MultiplyingLineEditor::~MultiplyingLineEditor()
     delete mMultiplyingLineFactory;
 }
 
-bool MultiplyingLineEditor::addData(const MultiplyingLineData::Ptr &data)
+bool MultiplyingLineEditor::addData(const MultiplyingLineData::Ptr &data, bool showDialogBox)
 {
     MultiplyingLine *line = mView->emptyLine();
     bool tooManyAddress = false;
     if (!line) {
-        line = mView->addLine();
+        line = mView->addLine(showDialogBox);
     }
     if (!line) {
         tooManyAddress = true;

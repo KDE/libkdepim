@@ -78,10 +78,10 @@ public:
     bool dynamicSizeHint() const;
 
     QList<MultiplyingLine *> lines() const;
+    MultiplyingLine *addLine(bool showDialogBox);
 
 public Q_SLOTS:
     void setCompletionMode(KCompletion::CompletionMode mode);
-    MultiplyingLine *addLine();
 
     void setFocus();
     void setFocusTop();

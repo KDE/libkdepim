@@ -53,13 +53,15 @@ MultiplyingLine *MultiplyingLineView::emptyLine() const
     return nullptr;
 }
 
-MultiplyingLine *MultiplyingLineView::addLine()
+MultiplyingLine *MultiplyingLineView::addLine(bool showDialogBox)
 {
     const int maximumRecipients = mMultiplyingLineFactory->maximumRecipients();
     if (maximumRecipients != -1) {
         int numberOfLine = mLines.count();
         if (numberOfLine++ >= maximumRecipients) {
-            KMessageBox::sorry(this, i18n("We can not add more recipients. We have reached maximum recipients"));
+            if (showDialogBox) {
+                KMessageBox::sorry(this, i18n("We can not add more recipients. We have reached maximum recipients"));
+            }
 
             return nullptr;
         }
@@ -103,7 +105,7 @@ void MultiplyingLineView::slotReturnPressed(MultiplyingLine *line)
     if (!line->data()->isEmpty()) {
         MultiplyingLine *empty = emptyLine();
         if (!empty) {
-            empty = addLine();
+            empty = addLine(true);
         }
         if (!empty) {
             return;
