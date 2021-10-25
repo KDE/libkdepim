@@ -13,6 +13,6 @@ class StatusbarProgressWidget_Gui : public QWidget
     Q_OBJECT
 public:
     explicit StatusbarProgressWidget_Gui(QWidget *parent = nullptr);
-    ~StatusbarProgressWidget_Gui() = default;
+    ~StatusbarProgressWidget_Gui() override = default;
 };
 

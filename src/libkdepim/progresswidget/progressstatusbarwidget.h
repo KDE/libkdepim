@@ -21,7 +21,7 @@ class KDEPIM_EXPORT ProgressStatusBarWidget : public QObject
     Q_OBJECT
 public:
     explicit ProgressStatusBarWidget(QWidget *alignWidget, QWidget *parent = nullptr, unsigned int showTypeProgressItem = 0);
-    ~ProgressStatusBarWidget();
+    ~ProgressStatusBarWidget() override;
 
     Q_REQUIRED_RESULT KPIM::StatusbarProgressWidget *littleProgress() const;
 

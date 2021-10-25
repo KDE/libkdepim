@@ -13,7 +13,7 @@ class StatusbarProgressWidgetTest : public QObject
     Q_OBJECT
 public:
     explicit StatusbarProgressWidgetTest(QObject *parent = nullptr);
-    ~StatusbarProgressWidgetTest() = default;
+    ~StatusbarProgressWidgetTest() override = default;
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldShowItems();

@@ -37,7 +37,7 @@ public:
     {
     }
 
-    virtual ~MultiplyingLineFactory()
+    ~MultiplyingLineFactory() override
     {
     }
 

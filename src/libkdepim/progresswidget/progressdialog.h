@@ -87,7 +87,7 @@ class TransactionItem : public QWidget
 public:
     TransactionItem(QWidget *parent, ProgressItem *item, bool first);
 
-    ~TransactionItem();
+    ~TransactionItem() override;
 
     void hideHLine();
 
