@@ -27,6 +27,19 @@ target_sources(KF5Libkdepim PRIVATE
     multiplyingline/multiplyingline.cpp
     multiplyingline/multiplyinglineeditor.cpp
     multiplyingline/multiplyinglineview_p.cpp
+    misc/lineeditcatchreturnkey.h
+    progresswidget/statusbarprogresswidget.h
+    progresswidget/ssllabel.h
+    progresswidget/progressmanager.h
+    progresswidget/progressdialog.h
+    progresswidget/progressstatusbarwidget.h
+    multiplyingline/multiplyinglineeditor.h
+    multiplyingline/multiplyingline.h
+    multiplyingline/multiplyinglineview_p.h
+    libkdepim_private_export.h
+    widgets/kwidgetlister.h
+    widgets/kcheckcombobox.h
+    widgets/progressindicatorlabel.h
     )
 ecm_qt_declare_logging_category(KF5Libkdepim HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
         DESCRIPTION "libkdepim (libkdepim)"
