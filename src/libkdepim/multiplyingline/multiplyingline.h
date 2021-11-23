@@ -27,9 +27,7 @@ class KDEPIM_EXPORT MultiplyingLineData
 {
 public:
     using Ptr = QSharedPointer<MultiplyingLineData>;
-    virtual ~MultiplyingLineData()
-    {
-    }
+    virtual ~MultiplyingLineData() = default;
 
     /**
       Clear data, reset to defaults
@@ -53,9 +51,7 @@ class KDEPIM_EXPORT MultiplyingLine : public QWidget
     Q_OBJECT
 public:
     explicit MultiplyingLine(QWidget *parent);
-    ~MultiplyingLine() override
-    {
-    }
+    ~MultiplyingLine() override = default;
 
     /**
       This line is being activated. Focus should be set

@@ -26,9 +26,7 @@ ProgressItem::ProgressItem(ProgressItem *parent, const QString &id, const QStrin
 {
 }
 
-ProgressItem::~ProgressItem()
-{
-}
+ProgressItem::~ProgressItem() = default;
 
 void ProgressItem::setComplete()
 {
@@ -208,9 +206,7 @@ ProgressManager::ProgressManager()
 {
 }
 
-ProgressManager::~ProgressManager()
-{
-}
+ProgressManager::~ProgressManager() = default;
 
 ProgressManager *ProgressManager::instance()
 {

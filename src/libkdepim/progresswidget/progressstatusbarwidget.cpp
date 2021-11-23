@@ -12,9 +12,7 @@ using namespace KPIM;
 class KPIM::ProgressStatusBarWidgetPrivate
 {
 public:
-    ProgressStatusBarWidgetPrivate()
-    {
-    }
+    ProgressStatusBarWidgetPrivate() = default;
 
     KPIM::StatusbarProgressWidget *mLittleProgress = nullptr;
 };

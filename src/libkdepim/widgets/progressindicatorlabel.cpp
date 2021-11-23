@@ -26,9 +26,7 @@ public:
         lay->addWidget(label);
     }
 
-    ~ProgressIndicatorLabelPrivate()
-    {
-    }
+    ~ProgressIndicatorLabelPrivate() = default;
 
     void setActiveLabel(const QString &str)
     {

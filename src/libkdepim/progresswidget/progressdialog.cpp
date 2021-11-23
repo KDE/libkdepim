@@ -33,9 +33,7 @@ static const int MAX_LABEL_WIDTH = 650;
 class KPIM::OverlayWidgetPrivate
 {
 public:
-    OverlayWidgetPrivate()
-    {
-    }
+    OverlayWidgetPrivate() = default;
 
     QWidget *mAlignWidget = nullptr;
 };
@@ -251,9 +249,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     }
 }
 
-KPIM::TransactionItem::~TransactionItem()
-{
-}
+KPIM::TransactionItem::~TransactionItem() = default;
 
 void TransactionItem::hideHLine()
 {

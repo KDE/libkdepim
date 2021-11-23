@@ -24,9 +24,7 @@ class MultiplyingLineView : public QScrollArea
     Q_OBJECT
 public:
     MultiplyingLineView(MultiplyingLineFactory *factory, MultiplyingLineEditor *parent);
-    ~MultiplyingLineView() override
-    {
-    }
+    ~MultiplyingLineView() override = default;
 
     QSize minimumSizeHint() const override;
     QSize sizeHint() const override;

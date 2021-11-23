@@ -62,9 +62,7 @@ class TransactionItemView : public QScrollArea
 public:
     explicit TransactionItemView(QWidget *parent = nullptr, const QString &name = QString());
 
-    ~TransactionItemView() override
-    {
-    }
+    ~TransactionItemView() override = default;
 
     TransactionItem *addTransactionItem(ProgressItem *item, bool first);
 

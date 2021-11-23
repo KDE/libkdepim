@@ -37,9 +37,7 @@ public:
     {
     }
 
-    ~MultiplyingLineFactory() override
-    {
-    }
+    ~MultiplyingLineFactory() override = default;
 
     virtual MultiplyingLine *newLine(QWidget *parent) = 0;
     virtual int maximumRecipients()

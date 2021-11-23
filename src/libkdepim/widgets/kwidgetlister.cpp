@@ -18,7 +18,7 @@
 #include <QVBoxLayout>
 
 #include <KStandardGuiItem>
-#include <assert.h>
+#include <cassert>
 
 using namespace KPIM;
 
