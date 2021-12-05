@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: none
+# SPDX-License-Identifier: BSD-3-Clause
 add_library(KF5Libkdepim)
 add_library(KF5::Libkdepim ALIAS KF5Libkdepim)
 ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM

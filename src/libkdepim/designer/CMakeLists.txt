@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: none
+# SPDX-License-Identifier: BSD-3-Clause
 include(ECMAddQtDesignerPlugin)
 ecm_qtdesignerplugin_widget(KPIM::KCheckComboBox
     INCLUDE_FILE "Libkdepim/KCheckComboBox"
