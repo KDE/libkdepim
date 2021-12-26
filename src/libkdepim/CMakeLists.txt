@@ -54,7 +54,7 @@ if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KF5Libkdepim PROPERTIES UNITY_BUILD ON)
 endif()
 generate_export_header(KF5Libkdepim BASE_NAME kdepim)
-target_include_directories(KF5Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim/;${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim>")
+target_include_directories(KF5Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/Libkdepim/;${KDE_INSTALL_INCLUDEDIR_KF}/libkdepim>")
 target_include_directories(KF5Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
 
 target_link_libraries(KF5Libkdepim
@@ -122,7 +122,7 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
 
 ecm_generate_pri_file(BASE_NAME Libkdepim
     LIB_NAME KF5Libkdepim
-    DEPS "" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
+    DEPS "" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/Libkdepim
     )
 
 install(FILES
@@ -131,7 +131,7 @@ install(FILES
     ${libkdepim_Camelcaseprogresswidget_HEADERS}
     ${libkdepim_Camelcasemisc_HEADERS}
     ${libkdepim_Camelcasemultiline_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/Libkdepim
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/Libkdepim
     COMPONENT Devel
     )
 
@@ -142,7 +142,7 @@ install(FILES
     ${libkdepim_misc_HEADERS}
     ${libkdepim_widgets_HEADERS}
     ${libkdepim_multiline_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/libkdepim
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/libkdepim
     COMPONENT Devel
     )
 
@@ -176,7 +176,7 @@ install(EXPORT KF5LibkdepimTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF} COMPONENT Devel
     )
 
 if (BUILD_QCH)
