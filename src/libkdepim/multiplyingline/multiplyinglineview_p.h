@@ -23,17 +23,17 @@ class MultiplyingLineView : public QScrollArea
 {
     Q_OBJECT
 public:
-    MultiplyingLineView(MultiplyingLineFactory *factory, MultiplyingLineEditor *parent);
+    explicit MultiplyingLineView(MultiplyingLineFactory *factory, MultiplyingLineEditor *parent);
     ~MultiplyingLineView() override = default;
 
     QSize minimumSizeHint() const override;
     QSize sizeHint() const override;
 
-    MultiplyingLine *activeLine() const;
+    Q_REQUIRED_RESULT MultiplyingLine *activeLine() const;
 
     MultiplyingLine *emptyLine() const;
 
-    QVector<MultiplyingLineData::Ptr> allData() const;
+    Q_REQUIRED_RESULT QVector<MultiplyingLineData::Ptr> allData() const;
 
     /** Removes data provided it can be found. The Data class must support operator==
         @param data The data you want to remove.
@@ -44,7 +44,7 @@ public:
         recipients.
         @return whether the view is modified or not.
     */
-    bool isModified() const;
+    Q_REQUIRED_RESULT bool isModified() const;
 
     /** Resets the modified flag to false.
      */
@@ -75,7 +75,7 @@ public:
     void setDynamicSizeHint(bool dynamic);
     Q_REQUIRED_RESULT bool dynamicSizeHint() const;
 
-    QList<MultiplyingLine *> lines() const;
+    Q_REQUIRED_RESULT QList<MultiplyingLine *> lines() const;
     MultiplyingLine *addLine(bool showDialogBox);
 
 public Q_SLOTS:

@@ -29,12 +29,16 @@ using KPIM::ProgressManager;
 #include <QPushButton>
 #include <QStackedWidget>
 #include <QTimer>
+#include <chrono>
+
+using namespace std::chrono_literals;
 
 using namespace KPIM;
 
 //-----------------------------------------------------------------------------
 StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog, QWidget *parent, bool button)
     : QFrame(parent)
+    , mButton(new QPushButton(this))
     , mShowButton(button)
     , mProgressDialog(progressDialog)
 {
@@ -44,7 +48,6 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     boxLayout->setContentsMargins(0, 0, 0, 0);
     boxLayout->setSpacing(0);
 
-    mButton = new QPushButton(this);
     mButton->setObjectName(QStringLiteral("button"));
     mButton->setSizePolicy(QSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum));
     mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
@@ -113,12 +116,12 @@ void StatusbarProgressWidget::updateBusyMode(KPIM::ProgressItem *item)
         if (mCurrentItem) { // Exactly one item
             delete mBusyTimer;
             mBusyTimer = nullptr;
-            mDelayTimer->start(1000);
+            mDelayTimer->start(1s);
         } else { // N items
             if (!mBusyTimer) {
                 mBusyTimer = new QTimer(this);
                 connect(mBusyTimer, &QTimer::timeout, this, &StatusbarProgressWidget::slotBusyIndicator);
-                mDelayTimer->start(1000);
+                mDelayTimer->start(1s);
             }
         }
     }
@@ -182,7 +185,7 @@ void StatusbarProgressWidget::slotShowItemDelayed()
         mProgressBar->setTextVisible(false);
         Q_ASSERT(mBusyTimer);
         if (mBusyTimer) {
-            mBusyTimer->start(100);
+            mBusyTimer->start(100ms);
         }
     }
 

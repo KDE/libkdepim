@@ -26,6 +26,6 @@ protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
 private:
-    QLineEdit *mLineEdit = nullptr;
+    QLineEdit *const mLineEdit;
 };
 }

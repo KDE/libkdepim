@@ -70,12 +70,12 @@ private:
     QPushButton *mButton = nullptr;
 
     Mode mMode = Clean;
-    bool mShowButton = false;
+    const bool mShowButton = false;
     bool mShowDetailedProgress = false;
 
     QStackedWidget *mStackedWidget = nullptr;
     ProgressItem *mCurrentItem = nullptr;
-    ProgressDialog *mProgressDialog = nullptr;
+    ProgressDialog *const mProgressDialog;
     QTimer *mDelayTimer = nullptr;
     QTimer *mBusyTimer = nullptr;
     QTimer *mCleanTimer = nullptr;
