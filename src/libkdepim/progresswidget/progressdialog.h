@@ -76,7 +76,7 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
 
 private:
-    QWidget *mBigBox = nullptr;
+    QWidget *const mBigBox = nullptr;
 };
 
 class TransactionItem : public QWidget

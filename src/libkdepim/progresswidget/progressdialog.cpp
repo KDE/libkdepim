@@ -109,10 +109,10 @@ void OverlayWidget::resizeEvent(QResizeEvent *ev)
 
 TransactionItemView::TransactionItemView(QWidget *parent, const QString &name)
     : QScrollArea(parent)
+    , mBigBox(new QWidget(this))
 {
     setObjectName(name);
     setFrameStyle(NoFrame);
-    mBigBox = new QWidget(this);
     auto mBigBoxVBoxLayout = new QVBoxLayout(mBigBox);
     mBigBoxVBoxLayout->setContentsMargins(0, 0, 0, 0);
     setWidget(mBigBox);
@@ -135,7 +135,7 @@ void TransactionItemView::resizeEvent(QResizeEvent *event)
     // Tell the layout in the parent (progressdialog) that our size changed
     updateGeometry();
 
-    QSize sz = parentWidget()->sizeHint();
+    const QSize sz = parentWidget()->sizeHint();
     int currentWidth = parentWidget()->width();
 
     // Don't resize to sz.width() every time when it only reduces a little bit
@@ -154,11 +154,11 @@ QSize TransactionItemView::sizeHint() const
 
 QSize TransactionItemView::minimumSizeHint() const
 {
-    int f = 2 * frameWidth();
+    const int f = 2 * frameWidth();
     // Make room for a vertical scrollbar in all cases, to avoid a horizontal one
-    int vsbExt = verticalScrollBar()->sizeHint().width();
-    int minw = topLevelWidget()->width() / 3;
-    int maxh = topLevelWidget()->height() / 2;
+    const int vsbExt = verticalScrollBar()->sizeHint().width();
+    const int minw = topLevelWidget()->width() / 3;
+    const int maxh = topLevelWidget()->height() / 2;
     QSize sz(mBigBox->minimumSizeHint());
     sz.setWidth(qMax(sz.width(), minw) + f + vsbExt);
     sz.setHeight(qMin(sz.height(), maxh) + f);
