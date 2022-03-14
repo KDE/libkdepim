@@ -148,7 +148,7 @@ void StatusbarProgressWidget::slotProgressItemCompleted(ProgressItem *item)
     connectSingleItem(); // if going back to 1 item
     if (ProgressManager::instance()->isEmpty()) { // No item
         // Done. In 5s the progress-widget will close, then we can clean up the statusbar
-        mCleanTimer->start(5000);
+        mCleanTimer->start(5s);
     } else if (mCurrentItem) { // Exactly one item
         delete mBusyTimer;
         mBusyTimer = nullptr;
