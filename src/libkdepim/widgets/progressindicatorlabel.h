@@ -38,4 +38,3 @@ private:
     std::unique_ptr<ProgressIndicatorLabelPrivate> const d;
 };
 }
-

@@ -81,4 +81,3 @@ private:
     QTimer *mCleanTimer = nullptr;
 };
 } // namespace
-

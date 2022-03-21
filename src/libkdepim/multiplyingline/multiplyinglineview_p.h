@@ -120,4 +120,3 @@ private:
     bool mModified = false;
 };
 }
-

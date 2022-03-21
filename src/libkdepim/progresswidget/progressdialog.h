@@ -167,4 +167,3 @@ protected:
     bool mWasLastShown = false;
 };
 } // namespace KPIM
-

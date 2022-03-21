@@ -29,4 +29,3 @@ private:
     std::unique_ptr<ProgressStatusBarWidgetPrivate> const d;
 };
 }
-

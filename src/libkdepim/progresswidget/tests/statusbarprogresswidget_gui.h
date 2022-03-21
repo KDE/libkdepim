@@ -15,4 +15,3 @@ public:
     explicit StatusbarProgressWidget_Gui(QWidget *parent = nullptr);
     ~StatusbarProgressWidget_Gui() override = default;
 };
-

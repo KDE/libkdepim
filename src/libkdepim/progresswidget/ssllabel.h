@@ -27,4 +27,3 @@ private:
     State m_lastEncryptionState;
 };
 }
-
