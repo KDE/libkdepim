@@ -6,10 +6,6 @@ Dependencies:
   'require':
     'frameworks/extra-cmake-modules': '@latest'
     'frameworks/kcontacts' : '@latest'
-    'pim/akonadi' : '@same'
-    'pim/akonadi-contacts' : '@same'
-    'pim/akonadi-search' : '@same'
-    'pim/kldap' : '@same'
     'frameworks/kconfig': '@latest'
     'frameworks/kcompletion': '@latest'
     'frameworks/kconfigwidgets': '@latest'
