@@ -181,7 +181,7 @@ void TransactionItemView::slotLayoutFirstItem()
      be the first item very shortly. That's the one we want to remove the
      hline for.
     */
-    auto *ti = mBigBox->findChild<KPIM::TransactionItem *>(QStringLiteral("TransactionItem"));
+    auto ti = mBigBox->findChild<KPIM::TransactionItem *>(QStringLiteral("TransactionItem"));
     if (ti) {
         ti->hideHLine();
     }
