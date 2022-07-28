@@ -60,7 +60,7 @@ MultiplyingLine *MultiplyingLineView::addLine(bool showDialogBox)
         int numberOfLine = mLines.count();
         if (numberOfLine++ >= maximumRecipients) {
             if (showDialogBox) {
-                KMessageBox::sorry(this, i18n("We can not add more recipients. We have reached maximum recipients"));
+                KMessageBox::error(this, i18n("We can not add more recipients. We have reached maximum recipients"));
             }
 
             return nullptr;
