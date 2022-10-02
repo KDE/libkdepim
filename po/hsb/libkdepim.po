@@ -1,0 +1,675 @@
+# translation of libkdepim.po to Upper Sorbian
+# Copyright (C) 2003,2004 Free Software Foundation, Inc.
+# Prof. Dr. Eduard Werner <e.werner@rz.uni-leipzig.de>, 2003,2004
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2004-04-16 18:00+0200\n"
+"Last-Translator: Prof. Dr. Eduard Werner <e.werner@rz.uni-leipzig.de>\n"
+"Language-Team: Upper Sorbian\n"
+"Language: hsb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr ""
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr ""
+
+#~ msgid "Choose..."
+#~ msgstr "Wubrać..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Preferency"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Sadźiće wšě preferency na standardne hódnoty. Wšitke waše modifikacije so "
+#~ "zhubja."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Standardne preferency"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "Dod&aj"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "<< Zničić"
+
+#, fuzzy
+#~ msgid "vCard Import Failed"
+#~ msgstr "Pokročowanje importowanja"
+
+#, fuzzy
+#~ msgid "Configure Completion..."
+#~ msgstr "Kategorije &wobdźěłać..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Njedawno wužiwane adresy"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search email:"
+#~ msgstr "Rozdźělowak:"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search"
+#~ msgstr "Rozdźělowak:"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Emailowa adresa"
+
+#, fuzzy
+#~ msgid "&Select"
+#~ msgstr "Wubraće mustra"
+
+#, fuzzy
+#~ msgid "&Unselect"
+#~ msgstr "Wubraće mustra"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search in result..."
+#~ msgstr "Rozdźělowak:"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Kategorije &wobdźěłać..."
+
+#, fuzzy
+#~ msgid "Completion Order"
+#~ msgstr "Kategorije &wobdźěłać..."
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Njedawno wužiwane adresy"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Emailowa adresa"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Kategorije &wobdźěłać..."
+
+#, fuzzy
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "dźensa"
+
+#, fuzzy
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "jutře"
+
+#, fuzzy
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Wosobinski adresnik"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Wosobinski adresnik"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Editować..."
+
+#, fuzzy
+#~ msgid "Remove Host"
+#~ msgstr "<< Zničić"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "Editować..."
+
+#, fuzzy
+#~ msgid "&Remove Host"
+#~ msgstr "<< Zničić"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Full Name"
+#~ msgstr "Mjeno"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#, fuzzy
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~| msgid "Show Postal Addresses"
+#~ msgid "Postal Address"
+#~ msgstr "Pokaž póštowe adresy"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Wubraće mustra"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search for:"
+#~ msgstr "Rozdźělowak:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Mjeno"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Rozdźělowak:"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Searching..."
+#~ msgstr "Rozdźělowak:"
+
+#, fuzzy
+#~ msgid "Select All"
+#~ msgstr "Wubraće mustra"
+
+#, fuzzy
+#~ msgid "Unselect All"
+#~ msgstr "Wubraće mustra"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "Add Selected"
+#~ msgstr "Wubraće adresy"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Kategorije &wobdźěłać..."
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "<< Zničić"
+
+#, fuzzy
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Njedawno wužiwane adresy"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Wosobinski adresnik"
+
+#, fuzzy
+#~ msgid "Unavailable"
+#~ msgstr "Móžne adresy"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Wubraće mustra"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Mjeno"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#, fuzzy
+#~ msgid "Select Address Book"
+#~ msgstr "Wosobinski adresnik"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "jutře"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "dźensa"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "wčera"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "dźensa"
+
+#~ msgid "To"
+#~ msgstr "Na"
+
+#~ msgid "CC"
+#~ msgstr "Kopija na"
+
+#~ msgid "BCC"
+#~ msgstr "Dalša kopija na:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Wubraće adresy"
+
+#, fuzzy
+#~ msgid "Filter on:"
+#~ msgstr "Filter na:"
+
+#, fuzzy
+#~ msgid "To >>"
+#~ msgstr "Na >>"
+
+#, fuzzy
+#~ msgid "CC >>"
+#~ msgstr "Kopija na >>"
+
+#, fuzzy
+#~ msgid "BCC >>"
+#~ msgstr "Dalša kopija na >>"
+
+#, fuzzy
+#~ msgid "<< Remove"
+#~ msgstr "<< Zničić"
+
+#, fuzzy
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Jako rozpósłansku lisćinu zawěsćić"
+
+#~ msgid "Address Selection"
+#~ msgstr "Wubraće adresy"
+
+#, fuzzy
+#~ msgid "&To >>"
+#~ msgstr "Na >>"
+
+#, fuzzy
+#~ msgid "&CC >>"
+#~ msgstr "Kopija na >>"
+
+#, fuzzy
+#~ msgid "&BCC >>"
+#~ msgstr "Dalša kopija na >>"
+
+#, fuzzy
+#~ msgid "&Selected Addresses"
+#~ msgstr "Wubrane adresy"
+
+#, fuzzy
+#~ msgid "&Filter on:"
+#~ msgstr "Filter na:"
+
+#, fuzzy
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Jako rozpósłansku lisćinu zawěsćić"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Pokaž narodniny"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Pokaž póštowe adresy"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Pokaž emailowe adresy"
+
+#, fuzzy
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Pokaž póštowe adresy"
+
+#~ msgid "Homepage"
+#~ msgstr "Domjaca strona"
+
+#~ msgid "Notes"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~ msgid "IM Address"
+#~ msgstr "Emailowa adresa"
+
+#, fuzzy
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "Wosobinski adresnik"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Mjeno"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Mjeno"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Domjaca strona"
+
+#, fuzzy
+#~ msgid "Other Addresses"
+#~ msgstr "Wubrane adresy"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Nowa rozpósłanska lisćina"
+
+#, fuzzy
+#~ msgid "Please enter name:"
+#~ msgstr "Prošu zapodaj mjeno."
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "Rozpósłanska lisćina z tutym mjenom (%1) hižo eksistuje. Prošu wubjerće "
+#~ "hinaše pomjenowanje."
+
+#, fuzzy
+#~ msgid "Distribution Lists"
+#~ msgstr "Nowa rozpósłanska lisćina"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Kategorije wobdźěłać"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Kategorija"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Kategorija"
+
+#~ msgid "Select Categories"
+#~ msgstr "Kategorije wubrać"
+
+#, fuzzy
+#~ msgid "Date"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~ msgid "Import Page..."
+#~ msgstr "Pokročowanje importowanja"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Kategorije &wobdźěłać..."
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Kategorije wubrać"
+
+#, fuzzy
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Kategorije wubrać"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Kategorije wubrać"
+
+#, fuzzy
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Wubraće mustra"
+
+#, fuzzy
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Wubraće mustra"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "dźensa"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Wubraće mustra"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Pokaž narodniny"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "Kategorija"
+
+#, fuzzy
+#~ msgid "Category list"
+#~ msgstr "Kategorije wobdźěłać"
+
+#, fuzzy
+#~| msgid "Select Categories"
+#~ msgid "Default Category"
+#~ msgstr "Kategorije wubrać"
+
+#~ msgid "Category"
+#~ msgstr "Kategorija"
+
+#, fuzzy
+#~ msgid "&Clear Selection"
+#~ msgstr "Wubraće mustra"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "Kategorije &wobdźěłać..."
+
+#, fuzzy
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~ msgid "Categories"
+#~ msgstr "Kategorije wobdźěłać"
+
+#, fuzzy
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "w róžkatymaj spinkomaj"
+
+#, fuzzy
+#~ msgid "End Date"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~ msgid "Due Date"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "w róžkatymaj spinkomaj"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "News"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~ msgid "Not"
+#~ msgstr "Zapiski"
+
+#, fuzzy
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "Mjeno"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Mjeno"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Preferency"
+
+#, fuzzy
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Preferency"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Preferency"
+
+#, fuzzy
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Preferency"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Preferency"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Mjeno"
+
+#, fuzzy
+#~| msgid "Plain"
+#~ msgid "Floating"
+#~ msgstr "Prosty tekst"

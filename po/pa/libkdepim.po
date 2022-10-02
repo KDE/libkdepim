@@ -1,0 +1,1358 @@
+# translation of libkdepim.po to Punjabi
+#
+# Amanpreet Singh Alam <aalam@redhat.com>, 2004, 2005.
+# A S Alam <aalam@users.sf.net>, 2007, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2010-01-16 09:15+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: ਪੰਜਾਬੀ <punjabi-users@lists.sf.net>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "ਇਹ ਕਾਰਵਾਈ ਰੱਦ ਕਰੋ।"
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "ਅਧੂਰਾ ਛੱਡਿਆ ਜਾ ਰਿਹਾ ਹੈ..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "ਵੇਰਵਾ ਤਰੱਕੀ ਝਰੋਖਾ ਓਹਲੇ"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "ਵੱਧ"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "ਘੱਟ"
+
+#~ msgid "Choose..."
+#~ msgstr "ਚੋਣ..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "ਮੇਰੀ ਪਸੰਦ"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr "ਤੁਸੀਂ ਸਭ ਪਸੰਦਾਂ ਨੂੰ ਮੂਲ ਬਣਾਉਣ ਜਾ ਰਹੇ ਹੋ। ਸਭ ਕੀਤੀਆਂ ਸੋਧਾਂ ਹਟਾ ਦਿੱਤੀਆਂ ਜਾਣਗੀਆਂ।"
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "ਮੂਲ ਪਸੰਦ ਨਿਰਧਾਰਿਤ ਕਰੋ"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "ਮੂਲ ਪ੍ਰਾਪਤ ਕਰੋ"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "ਸ਼ਾਮਿਲ(&d)"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< ਹਟਾਓ(&R)"
+
+#, fuzzy
+#~| msgid "Import Page"
+#~ msgid "vCard Import Failed"
+#~ msgstr "ਪੇਜ਼ ਇੰਪੋਰਟ"
+
+#~ msgid "Recent Addresses"
+#~ msgstr "ਤਾਜ਼ੇ ਐਡਰੈੱਸ"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search email:"
+#~ msgstr "ਖੋਜ:"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "Search"
+#~ msgstr "ਖੋਜ"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "ਈ-ਪੱਤਰ ਸਿਰਨਾਵਾਂ"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "ਚੋਣ"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Unselect"
+#~ msgstr "ਚੋਣ"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "'%1' ਨੂੰ ਪੱਤਰ ਭੇਜੋ"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Configuration Wizard"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "ਸੰਰਚਨਾ ਸਹਾਇਕ"
+
+#, fuzzy
+#~| msgctxt "to-do completion percentage"
+#~| msgid "Complete"
+#~ msgid "Completion Order"
+#~ msgstr "ਮੁਕੰਮਲ"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "ਤਾਜ਼ੇ ਐਡਰੈੱਸ"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "ਈ-ਪੱਤਰ ਸਿਰਨਾਵਾਂ"
+
+#, fuzzy
+#~| msgctxt "to-do completion percentage"
+#~| msgid "Complete"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "ਮੁਕੰਮਲ"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "ਅੱਜ(&T)"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "ਭਲਕੇ(&m)"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "ਅਗਲੇ ਹਫਤੇ(&W)"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "ਅਗਲੇ ਮਹੀਨੇ(&o)"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "ਕੋਈ ਮਿਤੀ ਨਹੀਂ"
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "ਕੋਈ ਵੇਰਵਾ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "ਸਿਰਨਾਵਾਂ ਕਿਤਾਬ(&A)"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "aalam@users.sf.net"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "ਸੋਧ..."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove Host"
+#~ msgstr "ਹਟਾਓ(&R)"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "ਸੋਧ..."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "&Remove Host"
+#~ msgstr "ਹਟਾਓ(&R)"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Full Name"
+#~ msgstr "ਨਾਂ"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "ਈ-ਪੱਤਰ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Home Number"
+#~ msgstr "ਟੈਲੀਫੋਨ ਨੰਬਰ ਓਹਲੇ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Work Number"
+#~ msgstr "ਟੈਲੀਫੋਨ ਨੰਬਰ ਓਹਲੇ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Mobile Number"
+#~ msgstr "ਟੈਲੀਫੋਨ ਨੰਬਰ ਓਹਲੇ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Fax Number"
+#~ msgstr "ਟੈਲੀਫੋਨ ਨੰਬਰ ਓਹਲੇ"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "ਸਥਿਤੀ"
+
+#, fuzzy
+#~| msgid "Organizer"
+#~ msgid "Organization"
+#~ msgstr "ਪ੍ਰਬੰਧਕ"
+
+#~ msgid "Department"
+#~ msgstr "ਵਿਭਾਗ"
+
+#, fuzzy
+#~| msgid "Show Postal Addresses"
+#~ msgid "Postal Address"
+#~ msgstr "ਪੱਤਰ ਸਿਰਨਾਵਾਂ ਵੇਖਾਓ"
+
+#~ msgid "Description"
+#~ msgstr "ਵੇਰਵਾ"
+
+#, fuzzy
+#~| msgid "UID"
+#~ msgid "User ID"
+#~ msgstr "UID"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "ਈ-ਪੱਤਰ"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "ਸਥਿਤੀ"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search for:"
+#~ msgstr "ਖੋਜ:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "ਨਾਂ"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "ਈ-ਪੱਤਰ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "ਟੈਲੀਫੋਨ ਨੰਬਰ ਓਹਲੇ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "ਟੈਲੀਫੋਨ ਨੰਬਰ ਓਹਲੇ"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "ਖੋਜ"
+
+#, fuzzy
+#~| msgid "Conditions"
+#~ msgid "Contains"
+#~ msgstr "ਹਾਲਾਤ"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgid "Starts With"
+#~ msgstr "ਸ਼ੁਰੂ ਸਮਾਂ"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Select All"
+#~ msgstr "ਚੋਣ"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Unselect All"
+#~ msgstr "ਚੋਣ"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "Add Selected"
+#~ msgstr "ਸਿਰਨਾਵਾਂ ਚੋਣ"
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "ਨਿਯਮ ਨਕਲ"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< ਹਟਾਓ(&R)"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "ਤਾਜ਼ਾ ਐਡਰੈੱਸ ਸੋਧ"
+
+#, fuzzy
+#~| msgid "Select Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "ਐਡਰੈੱਸਬੁੱਕ ਚੁਣੋ"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "ਉਪਲੱਬਧ ਸਫੇ"
+
+#~ msgid "Unknown"
+#~ msgstr "ਅਣਜਾਣ"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "ਪ੍ਰਤੀਨਿਧੀ"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "ਸ਼ੁਰੂ ਸਮਾਂ"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "ਅੰਤਰਾਲ"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission complete. %1 new message in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~| msgid_plural ""
+#~| "Transmission complete. %1 new messages in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] "ਸੰਚਾਰ ਮੁਕੰਮਲ ਹੈ। %1 ਨਵਾਂ ਸੁਨੇਹਾ %2 ਕਿਬਾ ਵਿੱਚ ਹੈ(%3 ਕਿਬਾ ਸਰਵਰ ਤੇ ਬਾਕੀ ਹਨ)।"
+#~ msgstr[1] "ਸੰਚਾਰ ਮੁਕੰਮਲ ਹੈ। %1 ਨਵੇਂ ਸੁਨੇਹੇ %2 ਕਿਬਾ ਵਿੱਚ ਹਨ (%3 ਕਿਬਾ ਸਰਵਰ ਤੇ ਬਾਕੀ ਹਨ)।"
+
+#, fuzzy
+#~| msgid "Transmission complete. %1 new message."
+#~| msgid_plural "Transmission complete. %1 new messages."
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "ਸੰਚਾਰ ਮੁਕੰਮਲ ਹੈ। %1 ਨਵਾਂ ਸੁਨੇਹਾ ਹੈ"
+#~ msgstr[1] "ਸੰਚਾਰ ਮੁਕੰਮਲ ਹੈ। %1 ਨਵੇਂ ਸੁਨੇਹੇ ਹਨ।"
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "ਸੰਚਾਰ ਮੁਕੰਮਲ ਹੈ। %1 ਨਵਾਂ ਸੁਨੇਹਾ ਹੈ"
+#~ msgstr[1] "ਸੰਚਾਰ ਮੁਕੰਮਲ ਹੈ। %1 ਨਵੇਂ ਸੁਨੇਹੇ ਹਨ।"
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "ਸੰਚਾਰ ਮੁਕੰਮਲ ਹੈ। ਕੋਈ ਨਵਾਂ ਸੁਨੇਹਾ ਨਹੀਂ ਹੈ।"
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission for account %4 complete. %1 new message in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~| msgid_plural ""
+#~| "Transmission for account %4 complete. %1 new messages in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "%4 ਖਾਤੇ ਲਈ ਜਾਂਚ ਮੁਕੰਮਲ ਹੋ ਗਈ ਹੈ। %1 ਨਵਾਂ ਸੁਨੇਹਾ %2 ਕਿਬਾ ਦਾ ਹੈ (%3 ਕਿਬਾ ਸਰਵਰ ਤੇ ਬਾਕੀ "
+#~ "ਹੈ)।"
+#~ msgstr[1] ""
+#~ "%4 ਖਾਤੇ ਲਈ ਜਾਂਚ ਮੁਕੰਮਲ ਹੋ ਗਈ ਹੈ। %1 ਨਵੇਂ ਸੁਨੇਹੇ %2 ਕਿਬਾ ਦੇ ਹਨ (%3 ਕਿਬਾ ਸਰਵਰ ਤੇ ਬਾਕੀ ਹੈ)।"
+
+#, fuzzy
+#~| msgid "Transmission for account %2 complete. %1 new message."
+#~| msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "%2 ਖਾਤੇ ਲਈ ਸੰਚਾਰ ਸਮਾਪਤ। %1 ਨਵਾਂ ਸੁਨੇਹਾ ਹੈ।"
+#~ msgstr[1] "%2 ਖਾਤੇ ਲਈ ਸੰਚਾਰ ਸਮਾਪਤ। %1 ਨਵੇ ਸੁਨੇਹੇ ਹਨੈ।"
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "%2 ਖਾਤੇ ਲਈ ਸੰਚਾਰ ਸਮਾਪਤ। %1 ਨਵਾਂ ਸੁਨੇਹਾ ਹੈ।"
+#~ msgstr[1] "%2 ਖਾਤੇ ਲਈ ਸੰਚਾਰ ਸਮਾਪਤ। %1 ਨਵੇ ਸੁਨੇਹੇ ਹਨੈ।"
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "%1 ਖਾਤੇ ਲਈ ਜਾਂਚ ਮੁਕੰਮਲ ਹੋਈ ਹੈ। ਕੋਈ ਨਵਾਂ ਸੁਨੇਹਾ ਨਹੀਂ ਹੈ।"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "ਨਾਂ"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "ਈ-ਪੱਤਰ"
+
+#, fuzzy
+#~| msgid "Notify Message"
+#~ msgid "Total Messages"
+#~ msgstr "ਸੁਨੇਹਾ ਵੇਖਾਓ"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Unread Messages"
+#~ msgstr "ਸੁਨੇਹਾ"
+
+#~ msgid "Send SMS"
+#~ msgstr "SMS ਭੇਜੋ"
+
+#~ msgid "Message"
+#~ msgstr "ਸੁਨੇਹਾ"
+
+#~ msgid "Recipient:"
+#~ msgstr "ਪ੍ਰਾਪਤ ਕਰਤਾ:"
+
+#~ msgid "Send"
+#~ msgstr "ਭੇਜੋ"
+
+#~ msgid "Select Address Book"
+#~ msgstr "ਐਡਰੈੱਸਬੁੱਕ ਚੁਣੋ"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "ਭਲਕੇ"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "ਅੱਜ"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "ਕੱਲ"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "ਅੱਜ"
+
+#~ msgid "To"
+#~ msgstr "ਵੱਲ"
+
+#~ msgid "CC"
+#~ msgstr "CC"
+
+#~ msgid "BCC"
+#~ msgstr "BCC"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਨਮੂਨੇ ਲਈ ਇੱਕ ਨਾਂ ਦਿਓ:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "ਸਿਰਨਾਵਾਂ ਚੋਣ"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "ਫਿਲਟਰ ਲਗਾਓ(&F):"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "ਵੱਲ(&T) >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&CC >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&BCC >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< ਹਟਾਓ(&R)"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Save as Distribution List..."
+#~ msgstr "ਨਵੀਂ ਵੰਡ ਸੂਚੀ"
+
+#~ msgid "Address Selection"
+#~ msgstr "ਸਿਰਨਾਵਾਂ ਚੋਣ"
+
+#~ msgid "&To >>"
+#~ msgstr "ਵੱਲ(&T) >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&CC >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "&Filter on:"
+#~ msgstr "ਫਿਲਟਰ ਲਗਾਓ(&F):"
+
+#~ msgid "Show Birthday"
+#~ msgstr "ਜਨਮਦਿਨ ਵੇਖਾਓ"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "ਪੱਤਰ ਸਿਰਨਾਵਾਂ ਵੇਖਾਓ"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "ਈ-ਪੱਤਰ ਸਿਰਨਾਵਾਂ ਵੇਖਾਓ"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "ਟੈਲੀਫੋਨ ਨੰਬਰ ਵੇਖਾਓ"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "ਵੈਬ ਸਫਾ ਵੇਖਾਓ (URL)"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "ਮੁੱਖ ਸਫਾ"
+
+#~ msgid "Notes"
+#~ msgstr "ਸੂਚਨਾ"
+
+#~ msgid "Profession"
+#~ msgstr "ਕਿੱਤਾ"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "ਸਹਾਇਕ ਦਾ ਨਾਂ"
+
+#~ msgid "Manager's Name"
+#~ msgstr "ਮੁੱਖੀ ਦਾ ਨਾਂ"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "ਸਹਿਯੋਗੀ ਦਾ ਨਾਂ"
+
+#~ msgid "Office"
+#~ msgstr "ਦਫ਼ਤਰ"
+
+#~ msgid "IM Address"
+#~ msgstr "IM ਸਿਰਨਾਵਾਂ"
+
+#~ msgid "Anniversary"
+#~ msgstr "ਵਰ੍ਹੇ ਗੰਢ"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>ਐਡਰੈੱਸ ਬੁੱਕ:</b>: %1</p>"
+
+#~ msgid "Call number %1"
+#~ msgstr "ਕਾਲ ਨੰਬਰ %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "%1 ਤੇ ਫੈਕਸ ਕਰੋ"
+
+#~ msgid "Show address on map"
+#~ msgstr "ਨਕਸ਼ੇ ਉੱਤੇ ਐਡਰੈੱਸ ਵੇਖੋ"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "%1 ਨੂੰ SMS ਭੇਜੋ"
+
+#~ msgid "Open URL %1"
+#~ msgstr "%1 URL ਖੋਲ੍ਹੋ"
+
+#~ msgid "Chat with %1"
+#~ msgstr "%1 ਨਾਲ ਗੱਲਬਾਤ"
+
+#, fuzzy
+#~| msgctxt "@title:column, address books overview"
+#~| msgid "Address Books"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "ਐਡਰੈੱਸ ਬੁੱਕ"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "ਨਾਂ"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "ਨਾਂ"
+
+#, fuzzy
+#~| msgctxt "@title:column, home address of a person"
+#~| msgid "Home"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "ਘਰ"
+
+#, fuzzy
+#~| msgctxt "@title:column, home address of a person"
+#~| msgid "Work"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Work"
+#~ msgstr "ਕੰਮ"
+
+#, fuzzy
+#~| msgctxt "@title:column, phone numbers of a person"
+#~| msgid "Phone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "ਫੋਨ ਨੰਬਰ"
+
+#, fuzzy
+#~| msgctxt "@title:column, the preferred email addresses of a person"
+#~| msgid "Preferred EMail"
+#~ msgctxt "@title:column the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "ਪਸੰਦੀਦਾ ਈਮੇਲ"
+
+#, fuzzy
+#~| msgctxt "@title:column, all email addresses of a person"
+#~| msgid "All EMails"
+#~ msgctxt "@title:column all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "ਸਭ ਈਮੇਲ"
+
+#~ msgid "<group>"
+#~ msgstr "<group>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "ਹੋਰ ਐਡਰੈੱਸ"
+
+#~ msgid "New Distribution List"
+#~ msgstr "ਨਵੀਂ ਵੰਡ ਸੂਚੀ"
+
+#~ msgid "Please enter name:"
+#~ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਨਾਂ ਦਿਓ:"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "ਵੰਡ ਸੂਚੀ"
+
+#, fuzzy
+#~| msgid "&Insert"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "ਸ਼ਾਮਲ(&I)"
+
+#, fuzzy
+#~| msgid "Insert File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "ਫਾਇਲ ਸ਼ਾਮਲ ਕਰੋ"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "ਨਿਯਮ ਸੰਪਾਦਕ"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "ਨਿਯਮ ਸੰਪਾਦਕ"
+
+#~ msgid "Edit Categories"
+#~ msgstr "ਵਰਗ ਸੋਧ"
+
+#~ msgid "New category"
+#~ msgstr "ਨਵੀਂ ਕੈਟਾਗਰੀ"
+
+#, fuzzy
+#~| msgid "New category"
+#~ msgid "New subcategory"
+#~ msgstr "ਨਵੀਂ ਕੈਟਾਗਰੀ"
+
+#~ msgid "Select Categories"
+#~ msgstr "ਵਰਗ ਚੁਣੋ"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "%1 URL ਖੋਲ੍ਹੋ"
+
+#~ msgid "Text"
+#~ msgstr "ਟੈਕਸਟ"
+
+#~ msgid "Numeric Value"
+#~ msgstr "ਅੰਕੀ ਮੁੱਲ"
+
+#~ msgid "Boolean"
+#~ msgstr "ਬੁਲੀਅਨ"
+
+#~ msgid "Date & Time"
+#~ msgstr "ਮਿਤੀ ਤੇ ਸਫਾ"
+
+#~ msgid "Date"
+#~ msgstr "ਮਿਤੀ"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "ਸਫ਼ਾ ਹਟਾਓ"
+
+#~ msgid "Import Page..."
+#~ msgstr "ਸਫ਼ਾ ਇੰਪੋਰਟ ਕਰੋ..."
+
+#~ msgid "Key:"
+#~ msgstr "ਕੁੰਜੀ:"
+
+#~ msgid "Type:"
+#~ msgstr "ਕਿਸਮ:"
+
+#~ msgid "Description:"
+#~ msgstr "ਵੇਰਵਾ:"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "ਨਿਯਮ"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "ਸੈੱਟਅੱਪ ਨਿਯਮ"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "ਸਰੋਤ"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "ਟਾਰਗੇਟ"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "ਸ਼ਰਤ"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "ਤਬਦੀਲ"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "ਸੈਟਅੱਪ ਬਦਲਾਅ"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "ਕਾਰਵਾਈ"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "ਚੋਣ"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "ਮੁੱਲ"
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "ਚੇਤਾਵਨੀ"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "ਸਹਾਇਕ ਹੁਣੇ ਚਲਾਉ"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "ਚੋਣ"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "ਅੰਤਰਾਲ"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "ਅੱਜ"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "ਸਥਿਤੀ"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "ਜਨਮਦਿਨ ਵੇਖਾਓ"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "ਬੇਨਾਮ ਪਲੱਗਿੰਨ"
+
+#, fuzzy
+#~| msgid "Add &subcategory"
+#~ msgid "Add &Subcategory"
+#~ msgstr "ਸਬ-ਕੈਟਾਗਰੀ ਸ਼ਾਮਲ(&s)"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "ਵਰਗ"
+
+#, fuzzy
+#~| msgid "Select Categories"
+#~ msgid "Default Category"
+#~ msgstr "ਵਰਗ ਚੁਣੋ"
+
+#~ msgid "Category"
+#~ msgstr "ਵਰਗ"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "ਵਰਗ ਸੋਧ(&E)..."
+
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "ਨਹੀਂ"
+
+#~ msgid "Organizer"
+#~ msgstr "ਪ੍ਰਬੰਧਕ"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Has duration"
+#~ msgstr "ਅੰਤਰਾਲ"
+
+#~ msgid "Summary"
+#~ msgstr "ਸੰਖੇਪ"
+
+#~ msgid "Status"
+#~ msgstr "ਸਥਿਤੀ"
+
+#~ msgid "Priority"
+#~ msgstr "ਦਰਜਾ"
+
+#~ msgid "Location"
+#~ msgstr "ਸਥਿਤੀ"
+
+#~ msgid "Categories"
+#~ msgstr "ਵਰਗ"
+
+#~ msgid "Alarms"
+#~ msgstr "ਅਲਾਰਮ"
+
+#~ msgid "Resources"
+#~ msgstr "ਸਰੋਤ"
+
+#~ msgid "Relations"
+#~ msgstr "ਸੰਬੰਧ"
+
+#~ msgid "Attachments"
+#~ msgstr "ਨੱਥੀ"
+
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "ਨਿਰਮਾਣ"
+
+#~ msgid "End Date"
+#~ msgstr "ਅੰਤ ਮਿਤੀ"
+
+#~ msgid "Has Start Date"
+#~ msgstr "ਸ਼ੁਰੂ ਮਿਤੀ ਹੈ"
+
+#~ msgid "Has Due Date"
+#~ msgstr "ਮਿਆਦ ਮਿਤੀ"
+
+#~ msgid "Due Date"
+#~ msgstr "ਮਿਆਦ"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "ਮੁਕੰਮਲ ਮਿਤੀ"
+
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "ਮੁਕੰਮਲ"
+
+#~ msgid "Local"
+#~ msgstr "ਲੋਕਲ"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "News"
+#~ msgstr "ਖ਼ਬਰਾਂ"
+
+#~ msgid "None"
+#~ msgstr "ਕੋਈ ਨਹੀਂ"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "ਖ਼ਬਰਾਂ"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "ਲੋਕਲ ਮੇਲਬਾਕਸ"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "ਅਣਜਾਣ"
+
+#~ msgid "Adjust Score"
+#~ msgstr "ਅੰਕ ਅਨੁਕੂਲ"
+
+#~ msgid "Display Message"
+#~ msgstr "ਸੁਨੇਹਾ ਵੇਖਾਓ"
+
+#~ msgid "Colorize Header"
+#~ msgstr "ਰੰਗਦਾਰ ਸਿਰਲੇਖ"
+
+#, fuzzy
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "ਪੜ੍ਹਿਆ ਬਣਾਓ"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "ਨਿਯਮਤ ਸਮੀਕਰਨ ਮੇਲ"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "ਬਿਲਕੁੱਲ ਇਸਤਰਾਂ ਦਾ"
+
+#~ msgid "Less Than"
+#~ msgstr "ਘੱਟ"
+
+#~ msgid "Greater Than"
+#~ msgstr "ਤੋਂ ਵੱਧ"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "ਹੋਰ ਨਾਂ ਚੁਣੋ"
+
+#~ msgid "rule %1"
+#~ msgstr "ਨਿਯਮ %1"
+
+#~ msgid "Not"
+#~ msgstr "ਨਹੀਂ"
+
+#~ msgid "Negate this condition"
+#~ msgstr "ਇਹ ਹਾਲਾਤ ਅਣਡਿੱਠੀ ਕਰੋ"
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "ਨਾਂ(&N):"
+
+#~ msgid "&Groups:"
+#~ msgstr "ਸਮੂਹ(&G):"
+
+#~ msgid "A&dd Group"
+#~ msgstr "ਸਮੂਹ ਸ਼ਾਮਿਲ (&d)"
+
+#~ msgid "Conditions"
+#~ msgstr "ਹਾਲਾਤ"
+
+#~ msgid "Actions"
+#~ msgstr "ਕਾਰਵਾਈ"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] "  ਦਿਨ"
+#~ msgstr[1] " ਦਿਨ"
+
+#~ msgid "New rule"
+#~ msgstr "ਨਵਾਂ ਨਿਯਮ"
+
+#~ msgid "Edit rule"
+#~ msgstr "ਨਿਯਮ ਸੋਧ"
+
+#~ msgid "Remove rule"
+#~ msgstr "ਨਿਯਮ ਹਟਾਓ"
+
+#~ msgid "Rule Editor"
+#~ msgstr "ਨਿਯਮ ਸੰਪਾਦਕ"
+
+#~ msgid "Edit Rule"
+#~ msgstr "ਨਿਯਮ ਸੋਧ"
+
+#~ msgid "Reload &List"
+#~ msgstr "ਲਿਸਟ ਮੁੜ-ਲੋਡ ਕਰੋ(&L)"
+
+#~ msgid "S&earch:"
+#~ msgstr "ਖੋਜ(&e):"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "ਲੜੀ ਦਰਿਸ਼ ਨਹੀਂ(&t)"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "ਮੈਂਬਰ ਹੀ (&S)"
+
+#~ msgid "&New only"
+#~ msgstr "ਸਿਰਫ਼ ਨਵੇਂ(&N)"
+
+#~ msgid "Current changes:"
+#~ msgstr "ਮੌਜੂਦਾ ਤਬਦੀਲ:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "ਨਾਂ"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "ਵੇਰਵਾ"
+
+#~ msgid "Subscribe To"
+#~ msgstr "ਇਸ ਦਾ ਮੈਂਬਰ ਬਣਾਓ"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "ਇਸ ਦੀ ਮੈਂਬਰੀ ਛੱਡੋ"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "ਲੋਕਲ ਲਵੋ"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "ਨਵਾਂ ਲਵੋ"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "ਦੋਵੇਂ ਲਵੋ"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "ਲੋਕਲ ਇੰਦਰਾਜ਼"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "ਆਖਰੀ ਸੋਧ "
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "ਆਖਰੀ ਸੋਧ "
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "ਵੇਰਵਾ ਵੇਖੋ"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "ਅੰਤਰ ਵੇਖੋ"
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "ਮੇਰੀ ਪਸੰਦ"
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "ਮੇਰੀ ਪਸੰਦ"
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "ਮੇਰੀ ਪਸੰਦ"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "ਲੋਕਲ ਇੰਦਰਾਜ਼"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "ਲੋਕਲ ਇੰਦਰਾਜ਼"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "ਨਵਾਂ ਜਰਨਲ"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "ਨਵੀਂ ਘਟਨਾ"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "ਨਵਾਂ ਜਰਨਲ"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "ਵੇਰਵਾ ਓਹਲੇ"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "ਵੇਰਵਾ ਓਹਲੇ"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "ਵੇਰਵਾ ਵੇਖਾਓ..."
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "ਅੰਤਰ ਵੇਖਾਓ"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "ਲੋਕਲ ਇੰਦਰਾਜ਼"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "ਵੇਰਵਾ ਵੇਖਾਓ..."
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "ਵੇਰਵਾ ਓਹਲੇ"
+
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "ਨਾਂ"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "Floating"
+#~ msgstr "ਸਥਿਤੀ"
+
+#~ msgid "Plain"
+#~ msgstr "ਸਮਤਲ"
+
+#~ msgid "Undefined"
+#~ msgstr "ਨਾ-ਪ੍ਰਭਾਸ਼ਿਤ"
+
+#~ msgid "Separator:"
+#~ msgstr "ਵੱਖਰੇਵਾ:"
+
+#~ msgid "Tab"
+#~ msgstr "ਟੈਬ"
+
+#~ msgid "Space"
+#~ msgstr "ਥਾਂ"
+
+#~ msgid "Header"
+#~ msgstr "ਸਿਰਲੇਖ"
+
+#~ msgid "Loading Progress"
+#~ msgstr "ਲੋਡ ਕਰਨ ਦੀ ਕਾਰਵਾਈ"
+
+#~ msgid "Importing Progress"
+#~ msgstr "ਆਯਾਤ ਤਰੱਕੀ"
+
+#~ msgid "Template Name"
+#~ msgstr "ਨਮੂਨਾ ਨਾਂ"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "ਜਨਮਦਿਨ ਓਹਲੇ"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "ਪੱਤਰ ਸਿਰਨਾਵਾਂ ਓਹਲੇ"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "ਈ-ਪੱਤਰ ਸਿਰਨਾਵਾਂ ਓਹਲੇ"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "ਟੈਲੀਫੋਨ ਨੰਬਰ ਓਹਲੇ"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "ਵੈਬ ਸਫਾ ਓਹਲੇ (URL)"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "ਪਾਠ"
+
+#~ msgid "Suggestions"
+#~ msgstr "ਸੁਝਾਅ"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "ਪਾਠ"
+
+#~ msgid "Standard"
+#~ msgstr "ਸਟੈਂਡਰਡ"
+
+#~ msgid "No Suggestions"
+#~ msgstr "ਕੋਈ ਸੁਝਾਅ ਨਹੀਂ"
+
+#~ msgid "Unknown error %1."
+#~ msgstr "ਅਣਜਾਣ ਗਲਤੀ %1।"
+
+#~ msgid "Error"
+#~ msgstr "ਗਲਤੀ"
+
+#~ msgid "Cc"
+#~ msgstr "Cc"
+
+#~ msgid "Bcc"
+#~ msgstr "Bcc"
+
+#~ msgid "All"
+#~ msgstr "ਸਭ"

@@ -1,0 +1,534 @@
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# translation of libkdepim.po to Xhosa
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# Copyright (C) 2002 Free Software Foundation, Inc.
+# Lwandle Mgidlana <lwandle@translate.org.za>, 2002
+# Thelma Lungcuzo <thelma@translate.org.za>, 2002
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2002-10-12 16:04+0200\n"
+"Last-Translator: Thelma Lungcuzo <thelma@translate.org.za>\n"
+"Language-Team: Xhosa <xhosa@translate.org.za>\n"
+"Language: xh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0beta2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr ""
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr ""
+
+#~ msgid "Choose..."
+#~ msgstr "Khetha..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Iinketho"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Umalunga nokucwangcisa zonke iinketho kumaxabiso angagqibekanga. Zonke "
+#~ "iinguqulelo kancinane zesiko zizakulahleka."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Icwangcisa Iinketho Ezingagqibekanga"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "Yo&ngeza"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Rhweba ngaphakathi Ifayile Yombhalo"
+
+#, fuzzy
+#~ msgid "Configure Completion..."
+#~ msgstr "&Hlela Iintlobo"
+
+#, fuzzy
+#~ msgid "Recent Addresses"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search email:"
+#~ msgstr "Umahluli:"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search"
+#~ msgstr "Umahluli:"
+
+#, fuzzy
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "&Select"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "&Unselect"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search in result..."
+#~ msgstr "Umahluli:"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "&Hlela Iintlobo"
+
+#, fuzzy
+#~ msgid "Completion Order"
+#~ msgstr "&Hlela Iintlobo"
+
+#, fuzzy
+#~ msgid "Recent Address"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "&Hlela Iintlobo"
+
+#, fuzzy
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "namhlanje"
+
+#, fuzzy
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "ngomso"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "&Hlela Iintlobo"
+
+#, fuzzy
+#~ msgid "&Edit Host..."
+#~ msgstr "&Hlela Iintlobo"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Isithuba"
+
+#, fuzzy
+#~ msgid "Postal Address"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Isithuba"
+
+#, fuzzy
+#~| msgid "Import starts at row:"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Urhwebo lwangaphakathi luqala kumqolo:"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search for:"
+#~ msgstr "Umahluli:"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Umahluli:"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Searching..."
+#~ msgstr "Umahluli:"
+
+#, fuzzy
+#~ msgid "Select All"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "Unselect All"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "Add Selected"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "&Hlela Iintlobo"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "ngomso"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "namhlanje"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "izolo"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "namhlanje"
+
+#, fuzzy
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Nceda ngenisa igama le template"
+
+#, fuzzy
+#~ msgid "EMail Address Selection"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "Address Selection"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "IM Address"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "Please enter name:"
+#~ msgstr "Nceda ngenisa igama le template"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Hlela iintlobo"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Uhlobo"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Uhlobo"
+
+#~ msgid "Select Categories"
+#~ msgstr "Khetha iintlobo"
+
+#, fuzzy
+#~ msgid "Import Page"
+#~ msgstr "Irhweba ngaphakathi Inkqubo"
+
+#, fuzzy
+#~ msgid "Import Page..."
+#~ msgstr "Irhweba ngaphakathi Inkqubo"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "&Hlela Iintlobo"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Khetha iintlobo"
+
+#, fuzzy
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Khetha iintlobo"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Khetha iintlobo"
+
+#, fuzzy
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "namhlanje"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "namhlanje"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "Uhlobo"
+
+#, fuzzy
+#~ msgid "Category list"
+#~ msgstr "Hlela iintlobo"
+
+#, fuzzy
+#~| msgid "Select Categories"
+#~ msgid "Default Category"
+#~ msgstr "Khetha iintlobo"
+
+#~ msgid "Category"
+#~ msgstr "Uhlobo"
+
+#, fuzzy
+#~ msgid "&Clear Selection"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "Categories"
+#~ msgstr "Hlela iintlobo"
+
+#, fuzzy
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Enezigweqe"
+
+#, fuzzy
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Enezigweqe"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Iinketho"
+
+#, fuzzy
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Iinketho"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Iinketho"
+
+#, fuzzy
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Iinketho"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Iinketho"
+
+#, fuzzy
+#~| msgid "Plain"
+#~ msgid "Floating"
+#~ msgstr "Cacileyo"
+
+#~ msgid "Plain"
+#~ msgstr "Cacileyo"
+
+#~ msgid "Unquoted"
+#~ msgstr "Engacatshulwanga"
+
+#~ msgid "Bracketed"
+#~ msgstr "Enezigweqe"
+
+#~ msgid "Undefined"
+#~ msgstr "Engacaciswanga"
+
+#~ msgid "File to import:"
+#~ msgstr "Ifayile ezakurhwetywa ngaphakathi:"
+
+#~ msgid "Separator:"
+#~ msgstr "Umahluli:"
+
+#~ msgid "Tab"
+#~ msgstr "Tab"
+
+#~ msgid "Space"
+#~ msgstr "Isithuba"
+
+#~ msgid "Header"
+#~ msgstr "Umbhalo ophezulu ephepheni"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Nikela ku Mhlathi Okhethiweyo"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Susa Okwalathiweyo Kumhlathi Okhethiweyo"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Nikela nge Itemplate."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Gcina i Template Yangoku"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Ilayisha Inkqubo"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Nceda linda ngexesha ifayile ilayishwa."
+
+#~ msgid "Template Selection"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Nceda khetha i template, efana nefayile ye cvs."
+
+#~ msgid "Importing Progress"
+#~ msgstr "Irhweba ngaphakathi Inkqubo"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Nceda yima ngexesha i data irhwebwa ngaphakathi."
+
+#, fuzzy
+#~ msgid "Template Name"
+#~ msgstr "Igama le template"
+
+#, fuzzy
+#~ msgid "Suggestions"
+#~ msgstr "Ukhetho lwe Template"
+
+#, fuzzy
+#~ msgid "Unnamed"
+#~ msgstr "Engacaciswanga"
+
+#, fuzzy
+#~ msgid "&Replace"
+#~ msgstr "Isithuba"
+
+#, fuzzy
+#~ msgid "Presence"
+#~ msgstr "Iinketho"
+
+#, fuzzy
+#~ msgid "is not in address book"
+#~ msgstr "Ukhetho lwe Template"

@@ -1,0 +1,77 @@
+# Translation of libkdepim into Japanese.
+# This file is distributed under the same license as the kdepim package.
+# Taiki Komoda <kom@kde.gr.jp>, 2002.
+# Shinichi Tsunoda <tsuno@ngy.1st.ne.jp>, 2004, 2005.
+# Tadashi Jokagi <elf2000@users.sourceforge.net>, 2004.
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2006, 2007, 2008, 2009, 2010.
+# Daniel E. Moctezuma <democtezuma@gmail.com>, 2010.
+# Fumiaki Okushi <okushi@kde.gr.jp>, 2011, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2012-01-28 16:19-0800\n"
+"Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
+"Language-Team: Japanese <kde-jp@kde.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 1.0\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "この操作を取り消します。"
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "中止します..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "暗号化で接続中"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "暗号化せずに接続中"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "詳細な進捗ダイアログを開きます"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "詳細な進捗ウィンドウを表示します"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "詳細な進捗ウィンドウを隠します"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "増やす"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "減らす"

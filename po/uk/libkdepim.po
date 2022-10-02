@@ -1,0 +1,1351 @@
+# Translation of libkdepim.po to Ukrainian
+# Copyright (C) 2004-2019 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Ivan Petrouchtchak <fr.ivan@ukrainian-orthodox.org>, 2004, 2005, 2006, 2007, 2008.
+# Eugene Onischenko <oneugene@ukr.net>, 2005, 2006.
+# Andriy Rysin <rysin@kde.org>, 2006.
+# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2019-07-31 08:50+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.07.70\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Подальше додавання отримувачів неможливе. Ми досягли максимальної кількості "
+"записів отримувачів."
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Скасовувати цю операцію."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Припиняється…"
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "З'єднання шифрується"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "З'єднання не шифрується"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Відкрити вікно детального поступу"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Показувати вікно детального поступу"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Ховати вікно детального поступу"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Більше"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Менше"
+
+#~ msgid "Choose..."
+#~ msgstr "Виберіть…"
+
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Налаштування"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Ви зараз зміните значення всіх параметрів до стандартних. Всі "
+#~ "нестандартні налаштування будуть втрачені."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Встановлення стандартних значень"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Повернути стандартні значення"
+
+#~ msgid "Add"
+#~ msgstr "Додати"
+
+#~ msgid "Remove"
+#~ msgstr "Вилучення"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Хочете вилучити цю %1 адресу електронної пошти?"
+#~ msgstr[1] "Хочете вилучити ці %1 адреси електронної пошти?"
+#~ msgstr[2] "Хочете вилучити ці %1 адрес електронної пошти?"
+#~ msgstr[3] "Хочете вилучити цю адресу електронної пошти?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "Не вдалося імпортувати візитівку"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Не вдалося отримати доступ до <b>%1</b>.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "Вибір адреси ел. пошти із запису контакту"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Показувати модуль установи для результатів із LDAP"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "Налаштувати доповнення…"
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "Автоматично розгортати групи"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "Розгорнути групи…"
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Недавні адреси"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Записи контактів, виявлені у ваших даних"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "Сервер LDAP: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "Шукати ел. адресу:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "Результати отримано за 3 символами"
+
+#~ msgid "Search"
+#~ msgstr "Шукати"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Показати поштові повідомлення з «чорного» списку"
+
+#~ msgid "&Select"
+#~ msgstr "Ви&брати"
+
+#~ msgid "&Unselect"
+#~ msgstr "&Скасувати вибір"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">Інші результати…</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "Шукати у результатах…"
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "Виключити назви доменів:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Відокремити домен з «%1»"
+
+#~ msgid "No email found."
+#~ msgstr "Нічого не знайдено."
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "Знайдено %1 повідомлення"
+#~ msgstr[1] "Знайдено %1 повідомлення"
+#~ msgstr[2] "Знайдено %1 повідомлень"
+#~ msgstr[3] "Знайдено одне повідомлення"
+
+#~ msgid "No result found"
+#~ msgstr "Нічого не знайдено"
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr ""
+#~ "До списку внесено зміни. Хочете зберегти їх до виконання іншого пошуку?"
+
+#~ msgid "Save"
+#~ msgstr "Збереження"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Налаштовування порядку доповнення"
+
+#~ msgid "Completion Order"
+#~ msgstr "Порядок доповнення"
+
+#~ msgid "Recent Address"
+#~ msgstr "Недавня адреса"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Додати адресу до «чорного» списку"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Редагування порядку завершення"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Сервер LDAP %1"
+
+#~ msgid "Move Up"
+#~ msgstr "Пересунути вище"
+
+#~ msgid "Move Down"
+#~ msgstr "Пересунути нижче"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Сьогодні"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Завтра"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Наступний &тиждень"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Наступний м&ісяць"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Немає дати"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "Запис основної адреси електронної пошти візитівки vCard вже є у вашій "
+#~ "адресній книзі. Однак, можна зберегти vCard до файла, а потім вручну "
+#~ "імпортувати його до адресної книги."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "Візитівку vCard було додано до вашої адресної книги. Можна відкрити "
+#~ "адресну книгу і додати до цієї візитівки більше інформації."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Запис контакту з адресою електронної пошти <email>%1</email> вже є у "
+#~ "вашій адресній книзі."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Перш ніж додавати запис контакту, вам слід створити адресну книгу. Хочете "
+#~ "створити адресну книгу?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Не знайдено адресної книги"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Додавання адресної книги"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>До вашої адресної книги було успішно додано запис контакту для «%1»."
+#~ "</para><para>Хочете розпочати редагування цього нового запису зараз?</"
+#~ "para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Не вдалося зберегти запис контакту: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Помилка під час збереження запису контакту"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Запис контакту успішно створено"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Іван Петрущак"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "ivanpetrouchtchak@yahoo.com"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Додавання вузла"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Параметри серверів LDAP"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "© Tobias Koenig, 2009–2010"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "Пароль до LDAP зберігається у незашифрованому форматі, хочете зберегти "
+#~ "його у kwallet?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Зберегти незашифрований пароль у KWallet"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Редагування вузла"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Хочете вилучити запис для вузла «%1»?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Вилучення вузла"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "Сервери LDAP"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Позначте всі сервери, які слід використовувати:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Додати вузол…"
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Змінити вузол…"
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Вилучити вузол"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Звертання"
+
+#~ msgid "Full Name"
+#~ msgstr "Повне ім'я"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Ел. пошта"
+
+#~ msgid "Home Number"
+#~ msgstr "Домашній телефон"
+
+#~ msgid "Work Number"
+#~ msgstr "Робочий телефон"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Мобільний телефон"
+
+#~ msgid "Fax Number"
+#~ msgstr "Номер факсу"
+
+#~ msgid "Pager"
+#~ msgstr "Пейджер"
+
+#~ msgid "Street"
+#~ msgstr "Вулиця"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Стан"
+
+#~ msgid "Country"
+#~ msgstr "Країна"
+
+#~ msgid "City"
+#~ msgstr "Місто"
+
+#~ msgid "Organization"
+#~ msgstr "Організація"
+
+#~ msgid "Company"
+#~ msgstr "Компанія"
+
+#~ msgid "Department"
+#~ msgstr "Відділ"
+
+#~ msgid "Zip Code"
+#~ msgstr "Поштовий код"
+
+#~ msgid "Postal Address"
+#~ msgstr "Поштова адреса"
+
+#~ msgid "Description"
+#~ msgstr "Опис"
+
+#~ msgid "User ID"
+#~ msgstr "ІД користувача"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Ел. пошта"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Стан"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Звертання"
+
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Імпортування контактів з LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Шукати на адреси у каталозі"
+
+#~ msgid "Search for:"
+#~ msgstr "Шукати за:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "в"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Назва"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Ел. пошта"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Домашній телефон"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Робочий телефон"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Шукати"
+
+#~ msgid "Recursive search"
+#~ msgstr "Рекурсивний пошук"
+
+#~ msgid "Contains"
+#~ msgstr "Містить"
+
+#~ msgid "Starts With"
+#~ msgstr "Починається з"
+
+#~ msgid "Search in result"
+#~ msgstr "Шукати у результатах"
+
+#~ msgid "Searching..."
+#~ msgstr "Шукаємо…"
+
+#~ msgid "Select All"
+#~ msgstr "Вибрати все"
+
+#~ msgid "Unselect All"
+#~ msgstr "Скасувати вибір всього"
+
+#~ msgid "Add Selected"
+#~ msgstr "Додати вибрані"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Налаштувати сервери LDAP…"
+
+#~ msgid "Copy"
+#~ msgstr "Копіювати"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Перед виконанням пошуку вам слід вибрати сервер LDAP."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Імпортовано з каталогу LDAP %1 на %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Налаштовування параметрів LDAP адресної книги"
+
+#~ msgid "&Remove"
+#~ msgstr "&Вилучити"
+
+#~ msgid "Blacklist Email Completion"
+#~ msgstr "Заблокувати доповнення адрес електронної пошти"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Редагувати недавні адреси"
+
+#~ msgid "Configure Email Blacklist..."
+#~ msgstr "Налаштувати «чорний» список ел. пошти…"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Вибір адресної книги"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Оберіть адресну книгу, у якій буде збережено новий запис контакту:"
+
+#~ msgid "Free"
+#~ msgstr "Вільний"
+
+#~ msgid "Busy"
+#~ msgstr "Зайнятий"
+
+#~ msgid "Unavailable"
+#~ msgstr "Недоступний"
+
+#~ msgid "Tentative"
+#~ msgstr "Умовно прийнято"
+
+#~ msgid "Unknown"
+#~ msgstr "Невідомий"
+
+#~ msgid "Attendee"
+#~ msgstr "Учасник"
+
+#~ msgctxt "@label Day of the week name, example: Monday,"
+#~ msgid "%1,"
+#~ msgstr "%1,"
+
+#~ msgctxt ""
+#~ "@label A time period duration. It is preceded/followed (based on the "
+#~ "orientation) by the name of the week, see the message above. example: 12 "
+#~ "June, 8:00am to 9:30am"
+#~ msgid "%1 %2, %3 to %4"
+#~ msgstr "%1 %2, від %3 до %4"
+
+#~ msgctxt ""
+#~ "@label A time period duration. KLocale is used to format the components. "
+#~ "example: Monday, 12 June, 8:00am to 9:30am"
+#~ msgid "%1, %2 %3, %4 to %5"
+#~ msgstr "%1, %2 %3, від %4 до %5"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Free Period"
+#~ msgstr "Вільний час"
+
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Початок:"
+
+#~ msgctxt "@info:tooltip period end time"
+#~ msgid "End:"
+#~ msgstr "Завершення:"
+
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Тривалість:"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Перенесення завершено, %1 нове повідомлення (%2 кБ). %3 кБ залишилось на "
+#~ "сервері."
+#~ msgstr[1] ""
+#~ "Перенесення завершено, %1 нових повідомлення, (%2 кБ). %3 кБ залишилось "
+#~ "на сервері."
+#~ msgstr[2] ""
+#~ "Перенесення завершено, %1 нових повідомлень, (%2 кБ). %3 кБ залишилось на "
+#~ "сервері."
+#~ msgstr[3] ""
+#~ "Перенесення завершено, %1 нове повідомлення (%2 кБ). %3 кБ залишилось на "
+#~ "сервері."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Перенесення завершено, %1 повідомлення (%2 кБ)."
+#~ msgstr[1] "Перенесення завершено, %1 повідомлення (%2 кБ)."
+#~ msgstr[2] "Перенесення завершено, %1 повідомлень (%2 кБ)."
+#~ msgstr[3] "Перенесення завершено, %1 повідомлення (%2 кБ)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Перенесення завершено. %1 нове повідомлення."
+#~ msgstr[1] "Перенесення завершено. %1 нові повідомлення."
+#~ msgstr[2] "Перенесення завершено. %1 нових повідомлень."
+#~ msgstr[3] "Перенесення завершено. %1 нове повідомлення."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Перенесення завершено. Нових повідомлень немає."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Перенесення для облікового запису %4 завершено, %1 нове повідомлення (%2 "
+#~ "кБ). %3 кБ залишилось на сервері."
+#~ msgstr[1] ""
+#~ "Перенесення для облікового запису %4 завершено, %1 нових повідомлення (%2 "
+#~ "кБ). %3 кБ залишилось на сервері."
+#~ msgstr[2] ""
+#~ "Перенесення для облікового запису %4 завершено, %1 нових повідомлень (%2 "
+#~ "кБ). %3 кБ залишилось на сервері."
+#~ msgstr[3] ""
+#~ "Перенесення для облікового запису %4 завершено, %1 нове повідомлення (%2 "
+#~ "кБ). %3 кБ залишилось на сервері."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Перенесення для запису %3 завершено, %1 повідомлення (%2 кБ)."
+#~ msgstr[1] "Перенесення для запису %3 завершено, %1 повідомлення (%2 кБ)."
+#~ msgstr[2] "Перенесення для запису %3 завершено, %1 повідомлень (%2 кБ)."
+#~ msgstr[3] "Перенесення для запису %3 завершено, %1 повідомлення (%2 кБ)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] ""
+#~ "Перенесення для облікового запису %2 завершено. %1 нове повідомлення."
+#~ msgstr[1] ""
+#~ "Перенесення для облікового запису %2 завершено. %1 нові повідомлення."
+#~ msgstr[2] ""
+#~ "Перенесення для облікового запису %2 завершено. %1 нових повідомлень."
+#~ msgstr[3] ""
+#~ "Перенесення для облікового запису %2 завершено. %1 нове повідомлення."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr ""
+#~ "Перенесення для облікового запису %1 завершено. Нових повідомлень немає."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Ім’я"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Ел. пошта"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Мова для перевірки правопису"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Отримання і збереження повідомлень..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Загалом повідомлень"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Непрочитаних повідомлень"
+
+#~ msgid "Quota"
+#~ msgstr "Квота"
+
+#~ msgid "Storage Size"
+#~ msgstr "Об’єм сховища"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Об’єм сховища підтек"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Розмір"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Всього"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Непрочитаних"
+
+#~ msgid "Stop"
+#~ msgstr "Зупинити"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "У вашій системі не увімкнено систему семантичної стільниці. Значну "
+#~ "частину списку важливих можливостей пов’язано з цією системою, отже "
+#~ "програма не зможе працювати на повну потужність."
+
+#~ msgid "&Configure"
+#~ msgstr "&Налаштувати"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "У вашій системі не знайдено модуля налаштовування системи семантичної "
+#~ "стільниці (Nepomuk). Переконайтеся, що Nepomuk було встановлено належним "
+#~ "чином."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "У вашій системі не увімкнено систему семантичної стільниці. Ви не зможете "
+#~ "скористатися такими можливостями:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "Надіслати SMS"
+
+#~ msgid "Message"
+#~ msgstr "Повідомлення"
+
+#~ msgid "Recipient:"
+#~ msgstr "Адресат:"
+
+#~ msgid "Send"
+#~ msgstr "Надсилати"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Вибір адресної книги"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Оберіть адресну книгу, у якій слід зберегти новий запис контакту:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>Адреса ел. пошти <b>%1</b> була додана до вашої адресної книги. Можна "
+#~ "відкрити адресну книгу і додати до цієї адреси більше інформації.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "завтра"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "сьогодні"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "вчора"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "Дата не може бути ранішою за %1"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be later than %1"
+#~ msgstr "Дата не може бути пізнішою за %1"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "сьогодні"
+
+#~ msgid "To"
+#~ msgstr "Кому"
+
+#~ msgid "CC"
+#~ msgstr "Копія"
+
+#~ msgid "BCC"
+#~ msgstr "Потайна копія"
+
+#~ msgid "Select the address book the new contact group shall be saved in:"
+#~ msgstr "Оберіть адресну книгу, у якій слід зберегти нову групу контактів::"
+
+#~ msgid "New Contact Group"
+#~ msgstr "Нова група контактів"
+
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Будь ласка, введіть назву нової групи контактів:"
+
+#~ msgid "EMail Address Selection"
+#~ msgstr "Вибір адреси ел. пошти"
+
+#~ msgid "Filter on:"
+#~ msgstr "Фільтр:"
+
+#~ msgid "Search Directory Service"
+#~ msgstr "Служба пошуку у каталозі"
+
+#~ msgid "To >>"
+#~ msgstr "Кому >>"
+
+#~ msgid "CC >>"
+#~ msgstr "Копія >>"
+
+#~ msgid "BCC >>"
+#~ msgstr "Потайна копія >>"
+
+#~ msgid "<< Remove"
+#~ msgstr "<< Вилучити"
+
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Зберегти як список розповсюдження..."
+
+#~ msgid "Akonadi Storage"
+#~ msgstr "Сховище даних Akonadi"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Ви повинні вибрати сервер LDAP перед пошуком.\n"
+#~ "Це можна зробити у пункті меню Параметри/Налаштувати KAddressBook."
+
+#~ msgid "Address Selection"
+#~ msgstr "Вибір адреси"
+
+#~ msgid "Email Address"
+#~ msgstr "Адреса ел. пошти"
+
+#~ msgid "&To >>"
+#~ msgstr "&Кому >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&Копія >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&Потайна копія >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "&Вибрані адреси"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Фільтр:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Зберегти як &список розповсюдження..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "Служба пошуку у &каталозі"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Показувати день народження"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Показувати поштові адреси"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Показувати адреси ел. пошти"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Показувати номери телефонів"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Показувати сторінки Тенет (адреси URL)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Показати адреси миттєвого зв'язку"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Показати нетипові поля"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Домашня сторінка"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Подача вебщоденника"
+
+#~ msgid "Notes"
+#~ msgstr "Нотатки"
+
+#~ msgid "Profession"
+#~ msgstr "Професія"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Ім'я заступника"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Ім'я керівника"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Ім'я чоловіка/дружини"
+
+#~ msgid "Office"
+#~ msgstr "Офіс"
+
+#~ msgid "IM Address"
+#~ msgstr "Адреса МЗ"
+
+#~ msgid "Anniversary"
+#~ msgstr "Річниця"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Адресна книга</b>: %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Не вказано програму для виконання. Будь ласка, налаштуйте її у вікні "
+#~ "установок."
+
+#~ msgid "Send mail to '%1'"
+#~ msgstr "Надіслати листа до «%1»"
+
+#~ msgid "Call number %1"
+#~ msgstr "Задзвонити за номером %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Надіслати фах до %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Показувати адресу на карті"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Надіслати SMS до %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Відкрити посилання %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Балакати з %1"
+
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Адресні книги"
+
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Ім’я"
+
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Прізвище"
+
+#~ msgctxt "@title:column given name of a person"
+#~ msgid "Given Name"
+#~ msgstr "Ім’я"
+
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Домашня адреса"
+
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Work"
+#~ msgstr "Робоча адреса"
+
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Номери телефонів"
+
+#~ msgctxt "@title:column the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Основна адреса ел. пошти"
+
+#~ msgctxt "@title:column all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Всі адреси ел. пошти"
+
+#~ msgid "<group>"
+#~ msgstr "<група>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Інші адреси"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "У вашому списку немає адрес. Додайте декілька адрес із вашої адресної "
+#~ "книги і спробуйте знов."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Новий список розповсюдження"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Будь ласка, введіть назву:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Список розповсюдження з даною назвою <b>%1</b> вже існує. Будь ласка, "
+#~ "виберіть іншу назву.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Списки розповсюдження"
+
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Вставити"
+
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Вставити файл"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The external editor is still running.<nl/>Do you want to stop the editor "
+#~ "or keep it running?<nl/><warning>Stopping the editor will cause all your "
+#~ "unsaved changes to be lost.</warning>"
+#~ msgstr ""
+#~ "Роботу зовнішнього редактора не завершено.<nl/>Бажаєте завершити роботу "
+#~ "редактора чи продовжити її?<nl/><warning>Завершення роботи редактора "
+#~ "призведе до втрати всіх незбережених змін.</warning>"
+
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Запущено зовнішній редактор"
+
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Завершити роботу"
+
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Продовжити роботу"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Редагувати категорії"
+
+#~ msgid "Apply changes and close"
+#~ msgstr "Застосувати зміни і закрити"
+
+#~ msgid ""
+#~ "When clicking <b>Ok</b>, the settings will be handed over to the program "
+#~ "and the dialog will be closed."
+#~ msgstr ""
+#~ "Після натискання кнопки <b>Гаразд</b> параметри буде передано програмі, а "
+#~ "діалогове вікно закрито."
+
+#~ msgid "Cancel changes and close"
+#~ msgstr "Скасувати зміни і закрити"
+
+#~ msgid ""
+#~ "When clicking <b>Cancel</b>, the settings will be discarded and the "
+#~ "dialog will be closed."
+#~ msgstr ""
+#~ "Після натискання кнопки <b>Скасувати</b> зміни у параметрах буде "
+#~ "відкинуто, а діалогове вікно закрито."
+
+#~ msgid ""
+#~ "When clicking <b>Help</b>, a separate KHelpCenter window will open "
+#~ "providing more information about the settings."
+#~ msgstr ""
+#~ "Після натискання кнопки <b>Довідка</b> буде відкрито окреме вікно "
+#~ "KHelpCenter з додатковими відомостями щодо параметрів."
+
+#~ msgid "New category"
+#~ msgstr "Нова категорія"
+
+#~ msgid "New subcategory"
+#~ msgstr "Нова підкатегорія"
+
+#~ msgid "Select Categories"
+#~ msgstr "Виберіть категорії"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Показ URL %1"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Число"
+
+#~ msgid "Boolean"
+#~ msgstr "Булеве"
+
+#~ msgid "Date & Time"
+#~ msgstr "Дата і час"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Вікно з полями - Qt Designer"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Файли дизайнера"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>попередження:</b> Qt Designer не знайдено. Мабуть, програма не "
+#~ "встановлена. Ви зможете тільки імпортувати файли дизайнера, які вже "
+#~ "створені.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Перегляд вибраної сторінки"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>В цьому розділі можна додавати свої власні елементи графічного "
+#~ "інтерфейсу («<i>Віджети</i>») для зберігання власних значень в %1. Процес "
+#~ "створення описано нижче:</p><ol><li>Натисніть кнопку «<i>Редагувати з Qt "
+#~ "Designer</i>»</li><li>У вікні виберіть «<i>Віджет</i>» і натисніть "
+#~ "<i>Гаразд</i></li> <li>Додайте ваші віджети у форму</li><li>Збережіть "
+#~ "файл у каталозі, який запропонує Qt Designer</li><li>Закрийте Qt "
+#~ "Designer</li></ol><p>Якщо ви вже маєте файл дизайнера Qt (*.ui) десь на "
+#~ "вашому диску, просто виберіть «<i>Імпорт сторінки</i>»</p><p><b>Важливо:</"
+#~ "b> Назва кожного віджета вводу у формі має починатись з «<i>X_</i>». "
+#~ "Отже, якщо ви хочете, щоб віджет було пов’язано з вашим елементом «<i>X-"
+#~ "Foo</i>», змініть властивість віджета <i>name</i> на «<i>X_Foo</i>».</"
+#~ "p><p><b>Важливо:</b> Віджети призначено для редагування нетипових полів в "
+#~ "програмі %2.  Для зміни програми, в якій слід виконувати редагування "
+#~ "змініть назву віджета в Qt Designer.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Як це працює?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Вилучити сторінку"
+
+#~ msgid "Import Page..."
+#~ msgstr "Імпорт сторінки..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Редагувати з Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Ключ:"
+
+#~ msgid "Type:"
+#~ msgstr "Тип:"
+
+#~ msgid "Classname:"
+#~ msgstr "Назва класу:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Змінити параметр"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Майстер налаштування"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Правила"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Налаштувати правила"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Джерело"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Ціль"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Умова"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Зміни"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Налаштувати зміни"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Дія"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Параметр"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Значення"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Будь ласка, переконайтесь, що програми, які ви налагоджуєте за допомогою "
+#~ "майстра, не запущено паралельно. Інакше зміни, зроблені майстром, "
+#~ "можуть бути втрачені."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Попередження"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Запустити майстер"
+
+#~ msgctxt "incidence category: appointment"
+#~ msgid "Appointment"
+#~ msgstr "Зустріч"
+
+#~ msgctxt "incidence category"
+#~ msgid "Business"
+#~ msgstr "Бізнес"
+
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Збори"
+
+#~ msgctxt "incidence category: phone call"
+#~ msgid "Phone Call"
+#~ msgstr "Телефонний дзвінок"
+
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Освіта"
+
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "Свято"
+
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Відпустка"
+
+#~ msgctxt ""
+#~ "incidence category: examples: anniversary of historical or personal "
+#~ "event; big date; remembrance, etc"
+#~ msgid "Special Occasion"
+#~ msgstr "Особлива подія"
+
+#~ msgctxt "incidence category"
+#~ msgid "Personal"
+#~ msgstr "Особисте"
+
+#~ msgctxt ""
+#~ "incidence category: typically associated with leaving home for business, "
+#~ "and not pleasure"
+#~ msgid "Travel"
+#~ msgstr "Відрядження"
+
+#~ msgctxt "incidence category"
+#~ msgid "Miscellaneous"
+#~ msgstr "Різне"
+
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "День народження"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Модуль без назви"
+
+#~ msgid "New category entry"
+#~ msgstr "Новий пункт категорії"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr ""
+#~ "Введіть будь-який текст, який ви бажаєте використати для назви нової "
+#~ "категорії або підкатегорії."
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Додати пункт до списку категорій"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr "Натисніть цю кнопку, щоб вставити пункт до списку категорій."
+
+#~ msgid "A&dd"
+#~ msgstr "&Додати"
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr "Додати новий пункт-підкатегорію до вибраної категорії"
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Натисніть цю кнопку, щоб вставити новий пункт-підкатегорію до поточної "
+#~ "вибраної категорії."
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Додати &підкатегорію"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "Вилучити вибрану категорію"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr ""
+#~ "Натисніть цю кнопку, щоб вилучити вибрану категорію зі списку категорій."
+
+#~ msgid "Category list"
+#~ msgstr "Список категорій"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Це список всіх доступних категорій. Ви можете створювати як завгодно "
+#~ "багато підкатегорій у цьому списку."
+
+#~ msgid "Default Category"
+#~ msgstr "Типова категорія"
+
+#~ msgid "Category"
+#~ msgstr "Категорія"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&Очистити вибір"

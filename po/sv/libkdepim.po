@@ -1,0 +1,1939 @@
+# translation of libkdepim.po to Swedish
+# Copyright (C).
+#
+# Mattias Newzella <newzella@linux.nu>, 2002,2003, 2004, 2005.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+# Stefan Asserhall <stefan.asserhall@bredband.net>, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2019-07-31 11:32+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Det går inte att lägga till fler mottagare. Maximalt antal mottagare har "
+"nåtts."
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Avbryt åtgärden."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Avbryter..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Anslutningen är krypterad"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Anslutningen är inte krypterad"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Visa detaljerat förloppsdialogruta"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Visa detaljerat förloppsfönster"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Dölj detaljerat förloppsfönster"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Fler"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Färre"
+
+#~ msgid "Choose..."
+#~ msgstr "Välj..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Inställningar"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Du är på väg att ställa in alla inställningar till standardvärden. Alla "
+#~ "egna ändringar kommer att gå förlorade."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Ställer in standardinställningar"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Återställ till standardvärden"
+
+#~ msgid "Add"
+#~ msgstr "Lägg till"
+
+#~ msgid "Remove"
+#~ msgstr "Ta bort"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Vill du ta bort den här e-postadressen?"
+#~ msgstr[1] "Vill du ta bort de här %1 e-postadresserna?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "Misslyckades importera visitkort"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Kan inte komma åt <b>%1</b>.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "Välj e-postadress från kontakt"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Visa organisationsenhet för LDAP-resultat"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "Anpassa komplettering..."
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "Expandera grupper automatiskt"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "Expandera grupper..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Senaste adresser"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Kontakter hittades i data"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP-server: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "Sök i brev:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "Forskning görs från tre tecken"
+
+#~ msgid "Search"
+#~ msgstr "Sök"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Visa svartlistade e-postadresser"
+
+#~ msgid "&Select"
+#~ msgstr "&Markera"
+
+#~ msgid "&Unselect"
+#~ msgstr "&Avmarkera"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">Fler resultat...</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "Sök i resultat..."
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "Undanta domännamn:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Skilj domäner med '%1'"
+
+#~ msgid "No email found."
+#~ msgstr "Inget brev hittades."
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "1 brev hittades"
+#~ msgstr[1] "%1 brev hittades"
+
+#~ msgid "No result found"
+#~ msgstr "Inget resultat hittades"
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr "Listan har ändrats. Vill du spara innan du gör en annan sökning?"
+
+#~ msgid "Save"
+#~ msgstr "Spara"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Anpassa komplettering"
+
+#~ msgid "Completion Order"
+#~ msgstr "Kompletteringsordning"
+
+#~ msgid "Recent Address"
+#~ msgstr "Senaste adresser"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Svartlista e-postadress"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Redigera kompletteringsordning"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP-server %1"
+
+#~ msgid "Move Up"
+#~ msgstr "Flytta upp"
+
+#~ msgid "Move Down"
+#~ msgstr "Flytta ner"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "I &dag"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "I &morgon"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Nästa &vecka"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Nästa må&nad"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Inget datum"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "Den huvudsaklig e-postadressen för detta vCard finns redan i adressboken. "
+#~ "Du kan dock spara detta vCard i en fil och importera det i adressboken "
+#~ "för hand."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "Detta vCard har lagts till i adressboken. Du kan lägga till mer "
+#~ "information i posten genom att öppna adressboken."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "En kontakt med e-postadressen <email>%1</email> finns redan i adressboken."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Du måste skapa en adressbok innan en kontakt läggs till. Vill du skapa en "
+#~ "adressbok?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Ingen adressbok tillgänglig"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Lägg till adressbok"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>En kontakt för \"%1\" har lagts till i adressboken.</"
+#~ "para><para>Vill du redigera den nya kontakten nu?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Kontakten kan inte lagras: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Misslyckades lagra kontakt"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Kontakt skapad med lyckat resultat"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Mattias Newzella,Stefan Asserhäll"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "newzella@linux.nu,stefan.asserhall@bredband.net"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Lägg till värddator"
+
+#~ msgid "kcmldap"
+#~ msgstr "IM-LDAP"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP-serverinställningar"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "© 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "LDAP-lösenordet lagras som vanlig text. Vill du lagra det i plånboken?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Lagra klartextlösenord i plånboken"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Redigera värddator"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Vill du ta bort inställningen för värddatorn \"%1\"?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Ta bort värddator"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-servrar"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Markera alla servrar som ska användas:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Lägg till värddator..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Redigera värddator..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "Ta bo&rt värddator"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgid "Full Name"
+#~ msgstr "Fullständigt namn"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#~ msgid "Home Number"
+#~ msgstr "Hemnummer"
+
+#~ msgid "Work Number"
+#~ msgstr "Jobbnummer"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Mobilnummer"
+
+#~ msgid "Fax Number"
+#~ msgstr "Telefaxnummer"
+
+#~ msgid "Pager"
+#~ msgstr "Personsökare"
+
+#~ msgid "Street"
+#~ msgstr "Gata"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Stat"
+
+#~ msgid "Country"
+#~ msgstr "Land"
+
+#~ msgid "City"
+#~ msgstr "Stad"
+
+#~ msgid "Organization"
+#~ msgstr "Organisation"
+
+#~ msgid "Company"
+#~ msgstr "Företag"
+
+#~ msgid "Department"
+#~ msgstr "Avdelning"
+
+#~ msgid "Zip Code"
+#~ msgstr "Postnummer"
+
+#~ msgid "Postal Address"
+#~ msgstr "Postadress"
+
+#~ msgid "Description"
+#~ msgstr "Beskrivning"
+
+#~ msgid "User ID"
+#~ msgstr "Användar-id"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Stat"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Importerar kontakter från LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Sök efter adresser i katalog"
+
+#~ msgid "Search for:"
+#~ msgstr "Sök:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "i"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Namn"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Hemnummer"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Arbetsnummer"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Sök"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekursiv sökning"
+
+#~ msgid "Contains"
+#~ msgstr "Innehåller"
+
+#~ msgid "Starts With"
+#~ msgstr "Börjar med"
+
+#~ msgid "Search in result"
+#~ msgstr "Sök i resultatet"
+
+#~ msgid "Searching..."
+#~ msgstr "Söker..."
+
+#~ msgid "Select All"
+#~ msgstr "Markera alla"
+
+#~ msgid "Unselect All"
+#~ msgstr "Avmarkera alla"
+
+#~ msgid "Add Selected"
+#~ msgstr "Lägg till markerad"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Anpassa LDAP-servrar..."
+
+#~ msgid "Copy"
+#~ msgstr "Kopiera"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Du måste välja en LDAP-server innan sökning."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Importerat från LDAP-katalogen %1 %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Anpassa adressbokens LDAP-inställningar"
+
+#~ msgid "&Remove"
+#~ msgstr "Ta bo&rt"
+
+#~ msgid "Blacklist Email Completion"
+#~ msgstr "Svartlista E-postkomplettering"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Redigera senaste adresser"
+
+#~ msgid "Configure Email Blacklist..."
+#~ msgstr "Anpassa e-postsvartlista..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Välj adressbok"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Välj adressbok där kontakten ska sparas:"
+
+#~ msgid "Free"
+#~ msgstr "Ledigt"
+
+#~ msgid "Busy"
+#~ msgstr "Upptagen"
+
+#~ msgid "Unavailable"
+#~ msgstr "Inte tillgängligt"
+
+#~ msgid "Tentative"
+#~ msgstr "Möjlig"
+
+#~ msgid "Unknown"
+#~ msgstr "Okänd"
+
+#~ msgid "Attendee"
+#~ msgstr "Deltagare"
+
+#~ msgctxt "@label Day of the week name, example: Monday,"
+#~ msgid "%1,"
+#~ msgstr "%1,"
+
+#~ msgctxt ""
+#~ "@label A time period duration. It is preceded/followed (based on the "
+#~ "orientation) by the name of the week, see the message above. example: 12 "
+#~ "June, 8:00am to 9:30am"
+#~ msgid "%1 %2, %3 to %4"
+#~ msgstr "%1 %2, %3 till %4"
+
+#~ msgctxt ""
+#~ "@label A time period duration. KLocale is used to format the components. "
+#~ "example: Monday, 12 June, 8:00am to 9:30am"
+#~ msgid "%1, %2 %3, %4 to %5"
+#~ msgstr "%1, %2 %3, %4 till %5"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Free Period"
+#~ msgstr "Ledig period"
+
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Start:"
+
+#~ msgctxt "@info:tooltip period end time"
+#~ msgid "End:"
+#~ msgstr "Slut:"
+
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Längd:"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Överföring klar. %1 nytt brev (%2 Kibyte). %3 Kibyte kvar på servern."
+#~ msgstr[1] ""
+#~ "Överföring klar. %1 nya brev (%2 Kibyte). %3 Kibyte kvar på servern."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Överföring klar. %1 brev (%2 Kibyte)."
+#~ msgstr[1] "Överföring klar. %1 brev (%2 Kibyte)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Överföring klar. %1 nytt brev."
+#~ msgstr[1] "Överföring klar. %1 nya brev."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Överföring klar. Inga nya brev."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Överföring för kontot %4 klar. %1 nytt brev (%2 Kibyte). %3 Kibyte kvar "
+#~ "på servern."
+#~ msgstr[1] ""
+#~ "Överföring för kontot %4 klar. %1 nya brev (%2 Kibyte). %3 Kibyte kvar på "
+#~ "servern."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Överföring för kontot %3 klar. %1 brev (%2 Kibyte)."
+#~ msgstr[1] "Överföring för kontot %3 klar. %1 brev (%2 Kibyte)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Överföring för kontot %2 klar. %1 nytt brev."
+#~ msgstr[1] "Överföring  för kontot %2 klar. %1 nya brev."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Överföring för kontot %1 klar. Inga nya brev."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Namn"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Språk för stavningskontroll"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Hämtar och lagrar brev..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Totalt antal brev"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Olästa brev"
+
+#~ msgid "Quota"
+#~ msgstr "Kvoter"
+
+#~ msgid "Storage Size"
+#~ msgstr "Lagringsstorlek"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Lagringsstorlek hos underkataloger"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Storlek"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Totalt"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Olästa"
+
+#~ msgid "Stop"
+#~ msgstr "Stoppa"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Du har inte aktiverat det semantiska skrivbordssystemet. Flera viktiga "
+#~ "funktioner i den här programvaran beror på det semantiska "
+#~ "skrivbordssystemet och kommer inte att fungera som de ska utan det."
+
+#~ msgid "&Configure"
+#~ msgstr "An&passa"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Modulen för att anpassa det semantiska skrivbordssystemet (Nepomuk) "
+#~ "hittades inte på systemet. Försäkra dig om att Nepomuk är korrekt "
+#~ "installerat."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Du har inte aktiverat det semantiska skrivbordssystemet. Följande "
+#~ "funktioner kommer inte att fungera som de ska:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "Skicka SMS"
+
+#~ msgid "Message"
+#~ msgstr "Brev"
+
+#~ msgid "Recipient:"
+#~ msgstr "Mottagare:"
+
+#~ msgid "Send"
+#~ msgstr "Skicka"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Välj adressbok"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Välj adressbok den nya kontakten ska sparas i:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>E-postadressen <b>%1</b> har lagts till i adressboken. Du kan lägga "
+#~ "till mer information i posten genom att öppna adressboken.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "i morgon"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "i dag"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "i går"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "Datum kan inte vara tidigare än %1"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be later than %1"
+#~ msgstr "Datum kan inte vara senare än %1"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "i dag"
+
+#~ msgid "To"
+#~ msgstr "Till"
+
+#~ msgid "CC"
+#~ msgstr "Kopia"
+
+#~ msgid "BCC"
+#~ msgstr "Dold kopia"
+
+#~ msgid "Select the address book the new contact group shall be saved in:"
+#~ msgstr "Välj adressbok den nya kontaktgruppen ska sparas i:"
+
+#~ msgid "New Contact Group"
+#~ msgstr "Ny kontaktgrupp"
+
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Skriv in namnet på den nya kontaktgruppen:"
+
+#~ msgid "EMail Address Selection"
+#~ msgstr "Val av e-postadress"
+
+#~ msgid "Filter on:"
+#~ msgstr "Filtrera på:"
+
+#~ msgid "Search Directory Service"
+#~ msgstr "Sök katalogtjänst"
+
+#~ msgid "To >>"
+#~ msgstr "Till >>"
+
+#~ msgid "CC >>"
+#~ msgstr "Kopia >>"
+
+#~ msgid "BCC >>"
+#~ msgstr "Dold kopia >>"
+
+#~ msgid "<< Remove"
+#~ msgstr "<< Ta bort"
+
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Spara som distributionslista..."
+
+#~ msgid "Akonadi Storage"
+#~ msgstr "Akonadi-lagring"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Du måste välja en LDAP-server innan sökning.\n"
+#~ "Du kan göra det med menyn Inställningar/Anpassa Kadressbok"
+
+#~ msgid "Address Selection"
+#~ msgstr "Val av adress"
+
+#~ msgid "Email Address"
+#~ msgstr "E-postadress"
+
+#~ msgid "&To >>"
+#~ msgstr "&Till >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "K&opia >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "Dold &kopia >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "Valda adre&sser"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Filtrera på:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Spara som &distributionslista..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "&Sök katalogtjänst"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Visa födelsedag"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Visa postadresser"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Visa e-postadresser"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Visa telefonnummer"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Visa webbsidor (webbadresser)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Visa direktmeddelandeadresser"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Visa egna fält"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Hemsida"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Webbloggkälla"
+
+#~ msgid "Notes"
+#~ msgstr "Anteckningar"
+
+#~ msgid "Profession"
+#~ msgstr "Yrke"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Sekreterarens namn"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Chefens namn"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Partners namn"
+
+#~ msgid "Office"
+#~ msgstr "Kontor"
+
+#~ msgid "IM Address"
+#~ msgstr "Direktmeddelandeadress"
+
+#~ msgid "Anniversary"
+#~ msgstr "Årsdag"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Adressbok</b>: %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Det finns inget program inställt som kan köras. Gå till "
+#~ "inställningsdialogrutan och ställ in ett."
+
+#~ msgid "Send mail to '%1'"
+#~ msgstr "Skicka brev till \"%1\""
+
+#~ msgid "Call number %1"
+#~ msgstr "Ring nummer %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Skicka fax till %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Visa adress på karta"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Skicka SMS till %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Öppna webbadress %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Chatta med %1"
+
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Adressböcker"
+
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Namn"
+
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Efternamn"
+
+#~ msgctxt "@title:column given name of a person"
+#~ msgid "Given Name"
+#~ msgstr "Förnamn"
+
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Hem"
+
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Work"
+#~ msgstr "Arbete"
+
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefonnummer"
+
+#~ msgctxt "@title:column the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Föredragen e-postadress"
+
+#~ msgctxt "@title:column all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Alla e-postadresser"
+
+#~ msgid "<group>"
+#~ msgstr "<grupp>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Övriga adresser"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Det finns inga adresser i din lista. Lägg först till några adresser från "
+#~ "adressboken, försök sedan igen."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Ny distributionsslista"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Ange namn:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Distributionsslistan med angivet namn <b>%1</b> finns redan. Välj ett "
+#~ "annat namn.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Distributionsslistor"
+
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Infoga"
+
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Infoga fil"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The external editor is still running.<nl/>Do you want to stop the editor "
+#~ "or keep it running?<nl/><warning>Stopping the editor will cause all your "
+#~ "unsaved changes to be lost.</warning>"
+#~ msgstr ""
+#~ "Den externa editorn kör fortfarande.<nl/>Vill du stoppa editorn eller "
+#~ "låta den fortsätta köra?<nl/><warning>Att stoppa editorn gör att alla "
+#~ "osparande ändringar går förlorade.</warning>"
+
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Extern editor kör"
+
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Stoppa editor"
+
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Låt editorn fortsätta köra"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Redigera kategorier"
+
+#~ msgid "Apply changes and close"
+#~ msgstr "Utför ändringar och stäng"
+
+#~ msgid ""
+#~ "When clicking <b>Ok</b>, the settings will be handed over to the program "
+#~ "and the dialog will be closed."
+#~ msgstr ""
+#~ "Vid klick på <b>Ok</b>, kommer inställningarna att skickas vidare till "
+#~ "programmet och dialogrutan stängas."
+
+#~ msgid "Cancel changes and close"
+#~ msgstr "Avbryt ändringar och stäng"
+
+#~ msgid ""
+#~ "When clicking <b>Cancel</b>, the settings will be discarded and the "
+#~ "dialog will be closed."
+#~ msgstr ""
+#~ "Vid klick på <b>Avbryt</b>, kastas inställningarna och dialogrutan kommer "
+#~ "att stängas,"
+
+#~ msgid ""
+#~ "When clicking <b>Help</b>, a separate KHelpCenter window will open "
+#~ "providing more information about the settings."
+#~ msgstr ""
+#~ "Vid klick på <b>Hjälp</b>, visas ett separat fönster i Hjälpcentralen som "
+#~ "tillhandahåller mer information om inställningarna,"
+
+#~ msgid "New category"
+#~ msgstr "Ny kategori"
+
+#~ msgid "New subcategory"
+#~ msgstr "Ny delkategori"
+
+#~ msgid "Select Categories"
+#~ msgstr "Välj kategorier"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Visar webbadress %1"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Numeriskt värde"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolesk"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datum och tid"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "IM Designer-fält"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Qt Designer-fältdialogruta"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer-filer"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Varning:</b> Qt Designer kunde inte hittas. Den är troligen inte "
+#~ "installerad. Du kommer bara att kunna importera befintliga Designer-filer."
+#~ "</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Förhandsgranskning av vald sida"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Den här sidan låter dig lägga till dina egna grafiska element "
+#~ "('<i>komponenter</i>') för att lagra egna värden i %1. Fortsätt enligt "
+#~ "beskrivningen nedan:</p><ol><li>Klicka på '<i>Redigera med Qt Designer..."
+#~ "</i>'</li><li>Välj '<i>Widget</i>' i dialogrutan, och klicka därefter på "
+#~ "<i>OK</i></li><li>Lägg till dina egna grafiska komponenter i formuläret</"
+#~ "li><li>Spara filen i katalogen som föreslås av Qt Designer</li><li>Stäng "
+#~ "Qt Designer</li></ol><p> Om du redan har en Designer-fil (*.ui) "
+#~ "någonstans på hårddisken, välj helt enkelt '<i>Importera sida</i>'</p> "
+#~ "<p><b>Viktigt:</b> Namnet på varje indatakomponent som du lägger till i "
+#~ "formuläret måste börja med '<i>X_</i>', så om du vill att den grafiska "
+#~ "komponenten ska motsvara din egen post '<i>X-Post</i>', ska den grafiska "
+#~ "komponentens namnegenskap anges som '<i>X_Post</i>'.</p><p><b>Viktigt:</"
+#~ "b> Den grafiska komponenten redigerar egna fält med programnamnet %2. För "
+#~ "att ändra programnamnet som ska redigeras, ange den grafiska komponentens "
+#~ "namn i Qt Designer.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Hur fungerar det här?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Ta bort sida"
+
+#~ msgid "Import Page..."
+#~ msgstr "Importera sida..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Redigera med Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Nyckel:"
+
+#~ msgid "Type:"
+#~ msgstr "Typ:"
+
+#~ msgid "Classname:"
+#~ msgstr "Klassnamn:"
+
+#~ msgid "Description:"
+#~ msgstr "Beskrivning:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Ändra inställningsvärde"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Inställningsguide"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Regler"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Inställning av regler"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Källa"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Mål"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Villkor"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Ändringar"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Inställning av ändringar"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Åtgärd"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Alternativ"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Värde"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Försäkra dig om att programmen som ställs in av guiden inte körs "
+#~ "samtidigt som guiden, annars kan ändringar som görs i guiden gå förlorade."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Varning"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Kör guide nu"
+
+#~ msgctxt "incidence category: appointment"
+#~ msgid "Appointment"
+#~ msgstr "Möte"
+
+#~ msgctxt "incidence category"
+#~ msgid "Business"
+#~ msgstr "Affärer"
+
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Sammanträde"
+
+#~ msgctxt "incidence category: phone call"
+#~ msgid "Phone Call"
+#~ msgstr "Telefonsamtal"
+
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Utbildning"
+
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "Helgdag"
+
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Semester"
+
+#~ msgctxt ""
+#~ "incidence category: examples: anniversary of historical or personal "
+#~ "event; big date; remembrance, etc"
+#~ msgid "Special Occasion"
+#~ msgstr "Speciellt tillfälle"
+
+#~ msgctxt "incidence category"
+#~ msgid "Personal"
+#~ msgstr "Personligt"
+
+#~ msgctxt ""
+#~ "incidence category: typically associated with leaving home for business, "
+#~ "and not pleasure"
+#~ msgid "Travel"
+#~ msgstr "Resor"
+
+#~ msgctxt "incidence category"
+#~ msgid "Miscellaneous"
+#~ msgstr "Diverse"
+
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Födelsedag"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Namnlöst insticksprogram"
+
+#~ msgid "New category entry"
+#~ msgstr "Ny kategoripost"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr ""
+#~ "Skriv in vilken text som helst som du vill använda som en ny kategori "
+#~ "eller delkategori."
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Lägg till posten i kategorilistan"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr "Klicka på knappen för att infoga posten i kategorilistan."
+
+#~ msgid "A&dd"
+#~ msgstr "Lä&gg till"
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr "Lägg till posten som en delkategori i den markerade kategorin"
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Klicka på knappen för att infoga posten som en delkategori i kategorin "
+#~ "som för närvarande är markerad."
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Lägg till &delkategori"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "Ta bort den markerade kategorin"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr ""
+#~ "Klicka på knappen för att ta bort den markerade kategorin från "
+#~ "kategorilistan."
+
+#~ msgid "Category list"
+#~ msgstr "Kategorilista"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Det här är en lista med alla tillgängliga kategorier. Här kan du skapa så "
+#~ "många delkategorier du vill."
+
+#~ msgid "Default Category"
+#~ msgstr "Standardkategori"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&Töm val"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "Redigera &kategorier..."
+
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Nej"
+
+#~ msgid "Organizer"
+#~ msgstr "Organisatör"
+
+#~ msgid "UID"
+#~ msgstr "Unik identifierare"
+
+#~ msgid "Is all-day"
+#~ msgstr "Heldag"
+
+#~ msgid "Has duration"
+#~ msgstr "Har varaktighet"
+
+#~ msgid "Summary"
+#~ msgstr "Sammanfattning"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Secrecy"
+#~ msgstr "Hemlig"
+
+#~ msgid "Priority"
+#~ msgstr "Prioritet"
+
+#~ msgid "Location"
+#~ msgstr "Plats"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorier"
+
+#~ msgid "Alarms"
+#~ msgstr "Alarm"
+
+#~ msgid "Resources"
+#~ msgstr "Resurser"
+
+#~ msgid "Relations"
+#~ msgstr "Förhållanden"
+
+#~ msgid "Attachments"
+#~ msgstr "Bilagor"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Undantagna datum"
+
+#~ msgid "Exception Times"
+#~ msgstr "Undantagna tider"
+
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Skapad"
+
+#~ msgid "Related Uid"
+#~ msgstr "Tillhörande användar-id"
+
+#~ msgid "Has End Date"
+#~ msgstr "Har slutdatum"
+
+#~ msgid "End Date"
+#~ msgstr "Slutdatum"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Har startdatum"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Har datumfrist"
+
+#~ msgid "Due Date"
+#~ msgstr "Datumfrist"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Har färdigdatum"
+
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Färdig"
+
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Slutförd"
+
+#~ msgid "Local"
+#~ msgstr "Lokal"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "Cached IMAP"
+#~ msgstr "IMAP lagrad i cache"
+
+#~ msgid "News"
+#~ msgstr "Nyheter"
+
+#~ msgid "None"
+#~ msgstr "Ingen"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Maildir-brevlåda"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Nyheter"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "Nerkopplad IMAP"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Lokal brevlåda"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Okänd"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "Visa inte det här meddelandet igen"
+
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "Artikeln\n"
+#~ "<b>%1</b><br /><b>%2</b><br />medförde att följande meddelande visas:<br /"
+#~ ">%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Justera poäng"
+
+#~ msgid "Display Message"
+#~ msgstr "Visa meddelande"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Färglägg huvud"
+
+#~ msgid "Mark as Read"
+#~ msgstr "Markera som läst"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Lista över insamlade anteckningar</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Insamlade anteckningar"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Innehåller delsträng"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Uppfyller reguljärt uttryck"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Uppfyller reguljärt uttryck (skiftlägeskänsligt)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Är exakt lika med"
+
+#~ msgid "Less Than"
+#~ msgstr "Mindre än"
+
+#~ msgid "Greater Than"
+#~ msgstr "Större än"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Välj ett annat regelnamn"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Regelnamnet är redan tilldelat, välj ett annat namn:"
+
+#~ msgid "rule %1"
+#~ msgstr "regel %1"
+
+#~ msgid "Not"
+#~ msgstr "Inte"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Negera villkoret"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Välj huvudet som villkoret ska matchas med"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Välj typ av uttryck att uppfylla"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Villkoret att uppfylla"
+
+#~ msgid "Select an action."
+#~ msgstr "Välj en åtgärd."
+
+#~ msgid "Properties"
+#~ msgstr "Egenskaper"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Namn:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Grupp(er):"
+
+#~ msgid "A&dd Group"
+#~ msgstr "&Lägg till grupp"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "&Ta bort regeln automatiskt"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "&Regeln är giltig i:"
+
+#~ msgid "Conditions"
+#~ msgstr "Villkor"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "&Uppfyll alla villkor"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Uppfyll &något villkor"
+
+#~ msgid "Actions"
+#~ msgstr "Åtgärder"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " dag"
+#~ msgstr[1] " dagar"
+
+#~ msgid "New rule"
+#~ msgstr "Ny regel"
+
+#~ msgid "Edit rule"
+#~ msgstr "Redigera regel"
+
+#~ msgid "Remove rule"
+#~ msgstr "Ta bort regel"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>alla grupper</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "Visa endast regler f&ör grupp:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Regeleditor"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Redigera regel"
+
+#~ msgid "Reload &List"
+#~ msgstr "&Ladda om lista"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr "Hantera vilka e-postkorgar du vill se i din korgvy"
+
+#~ msgid "S&earch:"
+#~ msgstr "&Sök:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Inaktivera &trädvy"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "Endast &prenumerationer"
+
+#~ msgid "&New only"
+#~ msgstr "E&ndast nya"
+
+#~ msgid "Current changes:"
+#~ msgstr "Aktuella ändringar:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Namn"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Beskrivning"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Prenumerera på"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Säg upp prenumerationen från"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Laddar... (1 träff)"
+#~ msgstr[1] "Laddar... (%1 träffar)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (1 träff)"
+#~ msgstr[1] "%2: (%1 träffar)"
+
+#~ msgid "View Columns"
+#~ msgstr "Visa kolumner"
+
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Konflikt identifierad"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "En konflikt identifierades. Det betyder antagligen att någon redigerade "
+#~ "samma förekomst på servern medan du ändrade den lokalt.<nl/><note>Du "
+#~ "måste kontrollera posten igen för att verkställa dina ändringar på "
+#~ "servern.</note>"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Använd lokal"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take your local copy of the incidence"
+#~ msgstr "Använd lokal kopia av förekomsten"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Local\" button to make "
+#~ "sure your local copy is used."
+#~ msgstr ""
+#~ "En konflikt detekterades mellan din lokala kopia av förekomsten och "
+#~ "fjärrförekomsten på servern. Klicka på knappen \"Använd lokal\" för att "
+#~ "vara säker på att den lokala kopian används."
+
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Använd ny"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take the server copy of the incidence"
+#~ msgstr "Använd serverns kopia av förekomsten"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take New\" button to use the "
+#~ "server copy, thereby overwriting your local copy"
+#~ msgstr ""
+#~ "En konflikt detekterades mellan din lokala kopia av förekomsten och "
+#~ "fjärrförekomsten på servern. Klicka på knappen \"Använd ny\" för att "
+#~ "använda serverns kopia, och därigenom skriva över den lokala kopian."
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Använd båda"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both copies of the incidence"
+#~ msgstr "Använd båda kopior av förekomsten"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Both\" button to keep "
+#~ "both the local and the server copies."
+#~ msgstr ""
+#~ "En konflikt detekterades mellan din lokala kopia av förekomsten och "
+#~ "fjärrförekomsten på servern. Klicka på knappen \"Använd båda\" för att "
+#~ "behålla både den lokala och serverns kopia."
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Lokal förekomst"
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Lokal förekomstöversikt"
+
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Senast ändrad:"
+
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Ange senast ändrad"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Visa detaljinformation"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Hide/Show incidence details"
+#~ msgstr "Dölj eller visa förekomstinformation"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Press this button to toggle the incidence details display."
+#~ msgstr "Klicka på knappen för att ändra visning av förekomstinformation."
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Visa skillnader"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show the differences between the two incidences"
+#~ msgstr "Visa skillnader mellan de två förekomsterna"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press the \"Show Differences\" button to see the specific differences "
+#~ "between the incidences which are in conflict."
+#~ msgstr ""
+#~ "Klicka på knappen \"Visa skillnader\" för att se de specifika "
+#~ "skillnaderna mellan förekomsterna som har konflikter."
+
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Inställningar av synkronisering"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Inställningar av synkronisering"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Inställningar av synkronisering"
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Använd lokal kopia vid konflikt"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Använd lokal kopia av förekomsten vid konflikt"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the local copy."
+#~ msgstr ""
+#~ "När en konflikt detekteras mellan en lokal kopia av en förekomst och en "
+#~ "fjärrförekomst på servern, tvingar det här alternativet att den lokala "
+#~ "kopian används."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Använd fjärrkopia vid konflikt"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Använd fjärrkopia av förekomsten vid konflikt"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the remote "
+#~ "copy."
+#~ msgstr ""
+#~ "När en konflikt detekteras mellan en lokal kopia av en förekomst och en "
+#~ "fjärrförekomst på servern, tvingar det här alternativet att fjärrkopian "
+#~ "används."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Använd nyaste förekomsten vid konflikt"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Använd nyaste versionen av förekomsten vid konflikter"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the newest "
+#~ "version available."
+#~ msgstr ""
+#~ "När en konflikt detekteras mellan en lokal kopia av en förekomst och en "
+#~ "fjärrförekomst på servern, tvingar det här alternativet att den nyaste "
+#~ "versionen används."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Fråga för varje konflikt"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Fråga för varje förekomstkonflikt"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to ask the user which "
+#~ "version they want to keep."
+#~ msgstr ""
+#~ "När en konflikt detekteras mellan en lokal kopia av en förekomst och en "
+#~ "fjärrförekomst på servern, talar det här alternativet om att användaren "
+#~ "ska tillfrågas om vilken version som ska behållas."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Ta båda vid konflikt"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Ta båda förekomster vid konflikt"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to keep both versions of "
+#~ "the incidence."
+#~ msgstr ""
+#~ "När en konflikt detekteras mellan en lokal kopia av en förekomst och en "
+#~ "fjärrförekomst på servern, talar det här alternativet om att båda "
+#~ "versionerna av förekomsten ska behållas."
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr ""
+#~ "Verkställ inställningen för alla konflikter under denna synkroniseringen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Apply the preference to all conflicts that may occur during the sync"
+#~ msgstr ""
+#~ "Verkställ inställningen för alla konflikter som kan uppstå under "
+#~ "synkroniseringen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press this button to apply the selected preference to all future "
+#~ "conflicts that might occur during this sync."
+#~ msgstr ""
+#~ "Klicka på knappen för att verkställ inställningen för alla framtida "
+#~ "konflikter som kan uppstå under den här synkroniseringen."
+
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Lokal händelse"
+
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Lokal uppgift"
+
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Lokal journal"
+
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Ny händelse"
+
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Ny uppgift"
+
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Ny journal"
+
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Dölj detaljinformation"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Dölj detaljinformation"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "This area shows the incidence details"
+#~ msgstr "Det här området visar förekomstinformation"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Visa detaljinformation..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Skillnader mellan %1 och %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Skillnad för %1"
+
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Lokal förekomst"
+
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Fjärrförekomst"
+
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Visa detaljinformation"
+
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Dölj detaljinformation"
+
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Namn"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "This area shows the incidencedetails"
+#~ msgstr "Det här området visar förekomstinformation"

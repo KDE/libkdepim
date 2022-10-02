@@ -1,0 +1,513 @@
+# translation of libkdepim.po to Spanish
+# Translation of libkdepim to Spanish
+# translation of libkdepim.po to
+# Spanish .po file for libkdepim.
+# Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
+#
+# Juan Manuel Garcia Molina <juanma@superiodico.net>, 2002, 2003, 2004, 2005, 2006.
+# Juan Manuel García Molina <juanma@superiodico.net>, 2006.
+# Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2007.
+# Jaime Robles <jaime@kde.org>, 2007.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2008, 2009, 2019.
+# Franco Mariluis <fmariluis@gmail.com>, 2008.
+# Dario Andres Rodriguez <andresbajotierra@gmail.com>, 2009.
+# Dario Andres Rodriguez <andrebajotierra@gmail.com>, 2009.
+# Javier Vinal <fjvinalgmail.com>, 2009, 2010, 2011.
+# Javier Viñal <fjvinal@gmail.com>, 2010, 2012, 2013, 2014.
+# Javier Vinal <fjvinalgmail.com>, 2010, 2012, 2015, 2016, 2017, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2019-09-17 21:49+0200\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.08.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"No podemos añadir más destinatarios. Hemos alcanzado al máximo número máximo "
+"de destinatarios"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Cancelar esta operación."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Interrumpiendo..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "La conexión está cifrada"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "La conexión no está cifrada"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Abrir la ventana de progreso detallado"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Mostrar la ventana detallada de progreso"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Ocultar la ventana detallada de progreso"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Más"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Menos"
+
+#~ msgid "Choose..."
+#~ msgstr "Elegir..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Preferencias"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Va a establecer todas las preferencias con los valores predeterminados. "
+#~ "Se perderán todas las modificaciones personalizadas."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Estableciendo las preferencias predeterminadas"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Volver a los predeterminados"
+
+#~ msgid "Add"
+#~ msgstr "Añadir"
+
+#~ msgid "Remove"
+#~ msgstr "Eliminar"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "¿Quiere usted eliminar esta dirección de correo?"
+#~ msgstr[1] "¿Quiere usted eliminar estas %1 direcciones de correo?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "La importación de la vCard ha fallado"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>No es posible acceder a <b>%1</b>.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "Seleccionar correo desde el contacto"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Mostrar unidad organizativa para resultados de LDAP"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "Configurar orden de terminación..."
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "Expandir grupos automáticamente"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "Expandir grupos..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Direcciones recientes"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Contactos encontrados en sus datos"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "Servidor LDAP: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "Buscar correo:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "La búsqueda se hace a partir de 3 caracteres"
+
+#~ msgid "Search"
+#~ msgstr "Buscar"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Mostrar correos puestos en la lista negra"
+
+#~ msgid "&Select"
+#~ msgstr "&Seleccionar"
+
+#~ msgid "&Unselect"
+#~ msgstr "&Deseleccionar"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">Más resultados...</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "Buscar en el resultado..."
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "Excluir nombres de dominios:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Separar dominio con «%1»"
+
+#~ msgid "No email found."
+#~ msgstr "No se encontró ningún correo."
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "Se encontró un correo"
+#~ msgstr[1] "Se encontraron %1 correos"
+
+#~ msgid "No result found"
+#~ msgstr "No se encontró ningún resultado"
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr ""
+#~ "La lista se cambió. ¿Quiere usted guardarla antes de realizar otra "
+#~ "búsqueda?"
+
+#~ msgid "Save"
+#~ msgstr "Guardar"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Configurar terminación"
+
+#~ msgid "Completion Order"
+#~ msgstr "Orden de terminación"
+
+#~ msgid "Recent Address"
+#~ msgstr "Dirección reciente"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Dirección correo de lista negra"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Editar orden de terminación"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Servidor LDAP %1"
+
+#~ msgid "Move Up"
+#~ msgstr "Mover hacia arriba"
+
+#~ msgid "Move Down"
+#~ msgstr "Mover hacia abajo"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Hoy"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Mañana"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "La próxima &semana"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "El próxim&o mes"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Sin fecha"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "La dirección de correo primaria de la vCard ya está en su libreta de "
+#~ "direcciones; sin embargo, puede guardar la vCard en un archivo e "
+#~ "importarla manualmente en la libreta de direcciones."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "Se ha añadido la vCard a su libreta de direcciones; usted puede añadir "
+#~ "más información a esta entrada abriendo la libreta de direcciones."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Un contacto con la dirección de correo <email>%1</email> está ya en su "
+#~ "libreta de direcciones."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Usted debe crear una libreta de direcciones antes de añadir un contacto. "
+#~ "¿Quiere usted crear una libreta de direcciones?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "No hay ninguna libreta de direcciones disponible"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Añadir libreta de direcciones"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Un contacto para  \"%1\"  se añadió satisfactoriamente a su libreta "
+#~ "de direcciones.</para><para>¿Quiere usted editar este nuevo contacto "
+#~ "ahora?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "El contacto no puede almacenarse: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Ha fallado al almacenar el contacto"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Contacto creado correctamente"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr ""
+#~ "Juan Manuel García Molina,Enrique Matías Sánchez,Franco Mariluis,Javier "
+#~ "Viñal"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr ""
+#~ "juanma@superiodico.net,cronopios@gmail.com,fmariluis@gmail.com,"
+#~ "fjvinal@gmail.com"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Añadir servidor"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Configuración del servidor LDAP"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "© 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "La contraseña LDAP se almacena como texto sin cifrar, ¿quiere usted "
+#~ "guardarla en kwallet?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Guardar contraseña de texto sin cifrar en KWallet"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Editar servidor"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "¿Quiere usted eliminar las preferencias del servidor «%1»?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Eliminar servidor"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "Servidores LDAP"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Marque todos los servidores que se deban usar:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Añadir servidor..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Editar servidor..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "Elimina&r servidor"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Título"
+
+#~ msgid "Full Name"
+#~ msgstr "Nombre completo"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Correo"
+
+#~ msgid "Home Number"
+#~ msgstr "Número particular"
+
+#~ msgid "Work Number"
+#~ msgstr "Número del trabajo"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Número de móvil"
+
+#~ msgid "Fax Number"
+#~ msgstr "Número de fax"
+
+#~ msgid "Pager"
+#~ msgstr "Localizador"
+
+#~ msgid "Street"
+#~ msgstr "Calle"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Estado"
+
+#~ msgid "Country"
+#~ msgstr "País"
+
+#~ msgid "City"
+#~ msgstr "Ciudad"
+
+#~ msgid "Organization"
+#~ msgstr "Organización"
+
+#~ msgid "Company"
+#~ msgstr "Compañía"
+
+#~ msgid "Department"
+#~ msgstr "Departamento"
+
+#~ msgid "Zip Code"
+#~ msgstr "Código postal"
+
+#~ msgid "Postal Address"
+#~ msgstr "Dirección postal"
+
+#~ msgid "Description"
+#~ msgstr "Descripción"
+
+#~ msgid "User ID"
+#~ msgstr "ID de usuario"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Correo"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Estado"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Título"
+
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Importar contactos desde LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Buscar por direcciones en el directorio"
+
+#~ msgid "Search for:"
+#~ msgstr "Buscar:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "en"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Nombre"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Correo"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Número particular"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Número del trabajo"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Bu&scar"
+
+#~ msgid "Recursive search"
+#~ msgstr "Búsqueda recursiva"
+
+#~ msgid "Contains"
+#~ msgstr "Contiene"
+
+#~ msgid "Starts With"
+#~ msgstr "Comienza con"
+
+#~ msgid "Search in result"
+#~ msgstr "Buscar en el resultado"
+
+#~ msgid "Searching..."
+#~ msgstr "Buscando..."
+
+#~ msgid "Select All"
+#~ msgstr "Seleccionar Todo"
+
+#~ msgid "Unselect All"
+#~ msgstr "Deseleccionar todos"
+
+#~ msgid "Add Selected"
+#~ msgstr "Agregar seleccionado"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Configurar servidores LDAP..."
+
+#~ msgid "Copy"
+#~ msgstr "Copiar"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Debe seleccionar un servidor LDAP antes de buscar."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Importado desde directorio LDAP %1 en %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Configure las preferencias de la libreta de direcciones LDAP"

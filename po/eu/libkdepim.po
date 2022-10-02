@@ -1,0 +1,1768 @@
+# translation of libkdepim.po to
+# Copyright (C) 2003, 2005, 2006 Free Software Foundation, Inc.
+# Copyright (C) 2007-2021, This file is copyright:
+# This file is distributed under the same license as the libkdepim package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+#
+# Translators:
+# Marcos  <marcos@euskalgnu.org>, 2003, 2005.
+# Ion Gaztañaga <ion_g_m@hotmail.com>, 2005.
+# Ion Gaztañaga <igaztanaga@gmail.com>, 2005.
+# marcos <marcos@euskalgnu.org>, 2006.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2021-08-06 12:45+0200\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 21.04.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Ezin dituzu hartzaile gehiago gehitu. Gehienezko hartzaile kopurura iritsi "
+"gara"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Bertan behera utzi eragiketa hau."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Abortzen..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Konexioa enkriptatuta dago"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Konexioa ez dago enkriptatuta"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Ireki aurrerapen elkarrizketa-koadroa xehea"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Erakutsi aurrerapen elkarrizketa-koadroa xehea"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Ezkutatu aurrerapen elkarrizketa-koadroa xehea"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Gehiago"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Gutxiago"
+
+#~ msgid "Choose..."
+#~ msgstr "Hautatu..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Hobespenak"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Hobespen guztiak balio lehenetsira ezartzeko zorian zaude. Aldaketa "
+#~ "pertsonal guztiak galduko dira."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Hobespen lehenetsiak ezartzen"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Lehenetsiak berrezartzen"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "&Gehitu"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< &Kendu"
+
+#, fuzzy
+#~| msgid "Import Page"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Inportatu orria"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ziur zaude '<b>%1</b>' ezabatu nahi duzula?</qt>"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "Konfiguratu osatze-ordena..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Oraintsuko helbideak"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "%1 LDAP zerbitzaria"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search email:"
+#~ msgstr "Bilatu:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search"
+#~ msgstr "Bilatu:"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "E-posta helbidea"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Hautapena"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Unselect"
+#~ msgstr "Hautapena"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "Kargatzen..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Bidali posta '%1'-(r)i"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Konfiguratu osatze-ordena..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Editatu osatze ordena"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Oraintsuko helbideak"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "E-posta helbidea"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Editatu osatze ordena"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "%1 LDAP zerbitzaria"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "Mugitu araua gorantz"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "Mugitu araua behera"
+
+#, fuzzy
+#~| msgid "&Today"
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Gaur"
+
+#, fuzzy
+#~| msgid "To&morrow"
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Bihar"
+
+#, fuzzy
+#~| msgid "Next &Week"
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Hurrengo &astea"
+
+#, fuzzy
+#~| msgid "Next M&onth"
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Hurrengo &hilabetea"
+
+#, fuzzy
+#~| msgid "No Date"
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Datarik ez"
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard's primary email address is already in your addressbook; "
+#~| "however, you may save the VCard into a file and import it into the "
+#~| "addressbook manually."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "VCard-aren e-posta helbide nagusia dagoeneko zure helbide-liburuan "
+#~ "daukazu, hala ere, VCard-a fitxategi batera gorde eta helbide liburura "
+#~ "eskuz inporta dezakezu."
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard was added to your addressbook; you can add more information to "
+#~| "this entry by opening the addressbook."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "VCard-a zure helbide-liburura gehitu da; sarrera honi, helbide-liburua "
+#~ "irekiz, informazio gehiago gehi diezaiokezu."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "<qt><b>%1</b> e-posta helbidea dagoeneko zure helbide-liburuan dago.</qt>"
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Ez dago deskribapenik eskuragarri"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "&Helbide-liburua"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<qt><b>%1</b> e-posta helbidea dagoeneko zure helbide-liburuan dago.</qt>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Ion Gaztañaga"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "igaztanaga@gmail.com"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Server Settings"
+#~ msgstr "%1 LDAP zerbitzaria"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Editatu..."
+
+#, fuzzy
+#~ msgid "Remove Host"
+#~ msgstr "<< &Kendu"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Servers"
+#~ msgstr "%1 LDAP zerbitzaria"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "Editatu..."
+
+#, fuzzy
+#~ msgid "&Remove Host"
+#~ msgstr "<< &Kendu"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Full Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-posta"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Home Number"
+#~ msgstr "Ezkutatu telefono zenbakiak"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Work Number"
+#~ msgstr "Ezkutatu telefono zenbakiak"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Mobile Number"
+#~ msgstr "Ezkutatu telefono zenbakiak"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Fax Number"
+#~ msgstr "Ezkutatu telefono zenbakiak"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Egoera"
+
+#, fuzzy
+#~| msgid "Organizer"
+#~ msgid "Organization"
+#~ msgstr "Antolatzailea"
+
+#~ msgid "Department"
+#~ msgstr "Saila"
+
+#, fuzzy
+#~| msgid "Show Postal Addresses"
+#~ msgid "Postal Address"
+#~ msgstr "Erakutsi posta helbideak"
+
+#~ msgid "Description"
+#~ msgstr "Deskribapena"
+
+#, fuzzy
+#~| msgid "UID"
+#~ msgid "User ID"
+#~ msgstr "UID-a"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-posta"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Egoera"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search for:"
+#~ msgstr "Bilatu:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-posta"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Ezkutatu telefono zenbakiak"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Ezkutatu telefono zenbakiak"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Bilatu:"
+
+#, fuzzy
+#~| msgid "Conditions"
+#~ msgid "Contains"
+#~ msgstr "Baldintzak"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgid "Starts With"
+#~ msgstr "Hasierako ordua"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "Kargatzen..."
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Select All"
+#~ msgstr "Hautapena"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Unselect All"
+#~ msgstr "Hautapena"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "Add Selected"
+#~ msgstr "Helbide hautapena"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Konfiguratu osatze-ordena..."
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "Kopiatu araua"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< &Kendu"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Editatu oraintsuko helbideak"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "&Helbide-liburua"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Orri eskuragarriak"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Partaideak"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Hasierako ordua"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Iraunpena"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission complete. %1 new message in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~| msgid_plural ""
+#~| "Transmission complete. %1 new messages in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Transmisioa osatu da. mezu berri %1 %2 KB-etan (%3 KB gelditzen "
+#~ "dirazerbitzarian)."
+#~ msgstr[1] ""
+#~ "Transmisioa osatu da. %1 mezu berri %2 KB-etan (%3 KB gelditzen "
+#~ "dirazerbitzarian)."
+
+#, fuzzy
+#~| msgid "Transmission complete. %1 message in %2 KB."
+#~| msgid_plural "Transmission complete. %1 messages in %2 KB."
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Transmisioa osatu da. mezu %1 %2 KB-etan."
+#~ msgstr[1] "Transmisioa osatu da. %1 mezu %2 KB-etan."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Transmisioa osatu da. Mezu berri %1 ."
+#~ msgstr[1] "Transmisioa osatu da. %1 mezu berri."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Transmisioa osatu da. Ez dago mezu berririk."
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission for account %4 complete. %1 new message in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~| msgid_plural ""
+#~| "Transmission for account %4 complete. %1 new messages in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "%4 kontuaren transmisioa amaitu da. Mezu berri %1 %2 KB-etan (%3 KB "
+#~ "gelditzen diren zerbitzarian)."
+#~ msgstr[1] ""
+#~ "%4 kontuaren transmisioa amaitu da. %1 mezu berri %2 KB-etan (%3 KB "
+#~ "gelditzen diren zerbitzarian)."
+
+#, fuzzy
+#~| msgid "Transmission for account %3 complete. %1 message in %2 KB."
+#~| msgid_plural "Transmission for account %3 complete. %1 messages in %2 KB."
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "%3 kontuaren transmisioa amaitu da. Mezu %1 %2 KB-etan."
+#~ msgstr[1] "%3 kontuaren transmisioa amaitu da. %1 mezu %2 KB-etan."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "%2 kontuaren transmisioa amaitu da. Mezu berri %1."
+#~ msgstr[1] "%2 kontuaren transmisioa amaitu da. %1 mezu berri."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "%1 kontuaren transmisioa osatu da. Ez dago mezu berririk."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-posta"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Mezuak eskuratu eta biltegiratzen..."
+
+#, fuzzy
+#~ msgid "Total Messages"
+#~ msgstr "Bistaratu mezua"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Unread Messages"
+#~ msgstr "Mezua"
+
+#~ msgid "Send SMS"
+#~ msgstr "Bidali SMS-a"
+
+#~ msgid "Message"
+#~ msgstr "Mezua"
+
+#~ msgid "Recipient:"
+#~ msgstr "Hartzailea:"
+
+#~ msgid "Send"
+#~ msgstr "Bidali"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgid "Select Address Book"
+#~ msgstr "&Helbide-liburua"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> was added to your addressbook; you can "
+#~| "add more information to this entry by opening the addressbook.</qt>"
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt><b>%1</b> e-posta helbidea zure helbide-liburura gehitu da; sarrera "
+#~ "honi, helbide-liburua irekiz informazio gehiago gehi diezaiokezu.</qt>"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "bihar"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "gaur"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "atzo"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "gaur"
+
+#~ msgid "To"
+#~ msgstr "Nori"
+
+#~ msgid "CC"
+#~ msgstr "Kopia CC"
+
+#~ msgid "BCC"
+#~ msgstr "Kopia ezkutua BCC"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Helbide hautapena"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&Iragazi honen arabera:"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Nori >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&CC >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&BCC >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Kendu"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Gorde &banaketa zerrenda bezala..."
+
+#~ msgid "Address Selection"
+#~ msgstr "Helbide hautapena"
+
+#~ msgid "&To >>"
+#~ msgstr "&Nori >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&CC >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "&Hautatutako helbideak"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Iragazi honen arabera:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Gorde &banaketa zerrenda bezala..."
+
+#~ msgid "Show Birthday"
+#~ msgstr "Erakutsi urtebetetzea"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Erakutsi posta helbideak"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Erakutsi e-posta helbideak"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Erakutsi telefono zenbakiak"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Erakutsi web orriak (URL-ak)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Erakutsi berehalako mezularitzaren helbideak"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Erakutsi eremu pertsonalizatuak"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Orri nagusia"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Blog iturburua"
+
+#~ msgid "Notes"
+#~ msgstr "Oharrak"
+
+#~ msgid "Profession"
+#~ msgstr "Lanbidea"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Laguntzailearen izena"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Zuzendariaren izena"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Kidearen izena"
+
+#~ msgid "Office"
+#~ msgstr "Bulegoa"
+
+#~ msgid "IM Address"
+#~ msgstr "BE helbidea"
+
+#~ msgid "Anniversary"
+#~ msgstr "Urteurrena"
+
+#, fuzzy
+#~| msgid "Address book:"
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "Helbide-liburua:"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Ez da exekutagarri den aplikaziorik ezarri. Joan ezarpen elkarrizketa-"
+#~ "koadrora eta konfiguratu bat."
+
+#~ msgid "Call number %1"
+#~ msgstr "Deitu %1 zenbakira"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Bidali faxa %1-(r)i"
+
+#~ msgid "Show address on map"
+#~ msgstr "Erakutsi helbideak mapan"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Bidali SMS-a %1-(r)i"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Ireki %1 URL-a"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Berriketan egin %1-(r)ekin"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "&Helbide-liburua"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Orri nagusia"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Ezkutatu telefono zenbakiak"
+
+#~ msgid "<group>"
+#~ msgstr "<taldea>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Beste helbideak"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Ez dago helbiderik zure zerrendan. Lehenengo gehitu zenbait helbide zure "
+#~ "helbide-liburutik eta saiatu berriro."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Banaketa zerrenda berria"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Sartu izena:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Emandako izena (<b>%1</b>) duen banaketa zerrenda existitzen da "
+#~ "dagoeneko. Hautatu beste izen bat.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Banaketa zerrendak"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "Gorde fitxategira"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Gorde fitxategira"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Arau editorea"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Arau editorea"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Editatu kategoriak"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Kategoria"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Kategoria"
+
+#~ msgid "Select Categories"
+#~ msgstr "Hautatu kategoriak"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "%1 URL-a erakusten"
+
+#~ msgid "Text"
+#~ msgstr "Testua"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Balio numerikoa"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolearra"
+
+#~ msgid "Date & Time"
+#~ msgstr "Data eta ordua"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Qt Designer-en eremu elkarrizketa-koadroa"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer fitxategiak"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Abisua:</b> Ezin da Qt Designer aurkitu. Seguraski ez da "
+#~ "instalatuta egongo. Existitzen diren fitxategiak bakarrik inportatzeko "
+#~ "gaitasuna izango duzu.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Hautatutako orriaren aurrebista"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><p>This section allows you to add your own GUI  Elements "
+#~| "('<i>Widgets</i>') to store your own values into %1. Proceed as "
+#~| "described below:</p><ol><li>Click on '<i>Edit with Qt Designer</"
+#~| "i>'<li>In the dialog, select '<i>Widget</i>', then click <i>OK</"
+#~| "i><li>Add your widgets to the form<li>Save the file in the directory "
+#~| "proposed by Qt Designer<li>Close Qt Designer</ol><p>In case you already "
+#~| "have a designer file (*.ui) located somewhere on your hard disk, simply "
+#~| "choose '<i>Import Page</i>'</p><p><b>Important:</b> The name of each "
+#~| "input widget you place within the form must start with '<i>X_</i>'; so "
+#~| "if you want the widget to correspond to your custom entry '<i>X-Foo</"
+#~| "i>', set the widget's <i>name</i> property to '<i>X_Foo</i>'.</"
+#~| "p><p><b>Important:</b> The widget will edit custom fields with an "
+#~| "application name of %2.  To change the application name to be edited, "
+#~| "set the widget name in Qt Designer.</p></qt>"
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Atal honek zure GUI elementuak ('<i>Trepetak</i>') gehitzeko "
+#~ "aukera emango dizu zure balioak %1-(e)n gordetzeko. Jarrai itzazu "
+#~ "ondorengo pausoak:</p><ol><li>Klikatu '<i>Editatu Qt Designer-ekin</"
+#~ "i>'<li>Elkarrizketa-koadroan, hautatu '<i>Trepeta</i>', eta klikatu "
+#~ "<i>Ados</i><li>Gehitu zure trepetak formulariora (datu-orrira)<li>Gorde "
+#~ "fitxategia Qt Designer-ek proposatutako direktorioan<li>Itxi Qt Designer</"
+#~ "ol><p> Ordurako designer fitxategi bat (*.ui) baduzu zure diska "
+#~ "gogorrean, hautatu '<i>Importatu orria</i>'</p><p><b>Garrantzitsua:</"
+#~ "b>Datu-orrian kokatzen duzun sarrerako trepeta bakoitzaren izenak '<i>X_</"
+#~ "i>' aurrizkia izan behar du. Beraz, trepeta '<i>X-Foo</i>' izenako zure "
+#~ "sarrera pertsonalizatuarekin parekatu nahi baduzu, ezarri trepetaren "
+#~ "<i>izena</i> propietatea '<i>X_Foo</i>' baliora.</p><p><b>Garrantzitsua:</"
+#~ "b> Trepetak eremu pertsonalizatuak %2 aplikazio-izenekin editatuko ditu. "
+#~ "Editatuko den aplikazio-izena aldatzeko, ezarri trepetaren izena Qt "
+#~ "Designer-en.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Nola funtzionatzen du honek?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Ezabatu orria"
+
+#~ msgid "Import Page..."
+#~ msgstr "Inportatu orria..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Editatu Qt Designer-ekin..."
+
+#~ msgid "Key:"
+#~ msgstr "Gakoa:"
+
+#~ msgid "Type:"
+#~ msgstr "Mota:"
+
+#~ msgid "Classname:"
+#~ msgstr "Klase-izena:"
+
+#~ msgid "Description:"
+#~ msgstr "Deskribapena:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Aldatu konfigurazioaren balioa"
+
+#, fuzzy
+#~| msgid "Configuration Wizard"
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Konfigurazio morroia"
+
+#, fuzzy
+#~| msgid "Rules"
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Arauak"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Arauak"
+
+#, fuzzy
+#~| msgid "Source"
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Iturburua"
+
+#, fuzzy
+#~| msgid "Target"
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Helburua"
+
+#, fuzzy
+#~| msgid "Condition"
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Baldintza"
+
+#, fuzzy
+#~| msgid "Changes"
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Aldaketak"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Aldaketak"
+
+#, fuzzy
+#~| msgid "Action"
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Ekintza"
+
+#, fuzzy
+#~| msgid "Option"
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Aukera"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Balioa"
+
+#, fuzzy
+#~| msgid ""
+#~| "Please make sure that the programs which are configured by the wizard do "
+#~| "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~| "could be lost."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Ziurtatu morroiak konfiguratutako programak martxan ez daudela morroia "
+#~ "martxan dagoen bitartean. Bestela, morroiak egindako aldaketak gal "
+#~ "daitezke."
+
+#, fuzzy
+#~| msgid "Run Wizard Now"
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Exekutatu morroia orain"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Hautapena"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Iraunpena"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "gaur"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Kokalekua"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Erakutsi urtebetetzea"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Izen gabeko plugin-a"
+
+#, fuzzy
+#~| msgid "New (remote) entry"
+#~ msgid "New category entry"
+#~ msgstr "Sarrera berria (urrunekoa)"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "Kategoria"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "Kategoriak"
+
+#, fuzzy
+#~ msgid "Default Category"
+#~ msgstr "%1 (Lehenetsia)"
+
+#~ msgid "Category"
+#~ msgstr "Kategoria"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&Garbitu hautapena"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&Editatu kategoriak..."
+
+#, fuzzy
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Ez"
+
+#~ msgid "Organizer"
+#~ msgstr "Antolatzailea"
+
+#~ msgid "UID"
+#~ msgstr "UID-a"
+
+#~ msgid "Has duration"
+#~ msgstr "Iraunpena definitua du"
+
+#~ msgid "Summary"
+#~ msgstr "Laburpena"
+
+#~ msgid "Status"
+#~ msgstr "Egoera"
+
+#~ msgid "Secrecy"
+#~ msgstr "Pribakortasuna"
+
+#~ msgid "Priority"
+#~ msgstr "Lehentasuna"
+
+#~ msgid "Location"
+#~ msgstr "Kokalekua"
+
+#~ msgid "Categories"
+#~ msgstr "Kategoriak"
+
+#~ msgid "Alarms"
+#~ msgstr "Alarmak"
+
+#~ msgid "Resources"
+#~ msgstr "Errekurtsoak"
+
+#~ msgid "Relations"
+#~ msgstr "Erlazioak"
+
+#~ msgid "Attachments"
+#~ msgstr "Eranskinak"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Salbuespen datak"
+
+#~ msgid "Exception Times"
+#~ msgstr "Salbuespen orduak"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Sortuta"
+
+#~ msgid "Related Uid"
+#~ msgstr "Erlazionatutako Uid-a"
+
+#~ msgid "Has End Date"
+#~ msgstr "Amaierako data dauka"
+
+#~ msgid "End Date"
+#~ msgstr "Amaierako data"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Hasierako data dauka"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Iraungipen data dauka"
+
+#~ msgid "Due Date"
+#~ msgstr "Iraungipen data"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Osatze data du"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Osatua"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Osatuta"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgid "Local"
+#~ msgstr "Hartu lokala"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "News"
+#~ msgstr "Oharrak"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "Oharrak"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Egunkari lokala"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Oharrak"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Egunkari lokala"
+
+#, fuzzy
+#~| msgid ""
+#~| "Article\n"
+#~| "<b>%1</b><br><b>%2</b><br>caused the following note to appear:<br>%3"
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "<b>%1</b><br><b>%2</b>\n"
+#~ "artikuluak ondorengo oharra sortu du:<br>%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Doitu puntuazioa"
+
+#~ msgid "Display Message"
+#~ msgstr "Bistaratu mezua"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Koloreztatu goiburua"
+
+#, fuzzy
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "Markatu irakurrita bezala"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Bildutako oharren zerrenda</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Bildutako oharrak"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Azpi-kate hau du"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Espresio erregular honekin dator bat"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr ""
+#~ "Espresio erregular honekin dator bat (maiuskula/minuskuletara sentibera)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Zehazki honen berdina da"
+
+#~ msgid "Less Than"
+#~ msgstr "Hau baina gutxiago"
+
+#~ msgid "Greater Than"
+#~ msgstr "Hau baina gehiago"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Hautatu beste izen bat arauarentzat"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Arauaren izena dagoeneko esleituta dago, hautatu beste izen bat:"
+
+#~ msgid "rule %1"
+#~ msgstr "%1 araua"
+
+#~ msgid "Not"
+#~ msgstr "Ez"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Ukatu baldintza hau"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Hautatu baldintza honekin bat egiteko goiburua"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Hautatu bat-egite mota"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Bat-egiterako baldintza"
+
+#~ msgid "Select an action."
+#~ msgstr "Hautatu ekintza bat."
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Izena:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Taldeak:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "&Gehitu taldea"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "&Irungi araua automatikoki"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "&Araua epe honetan da baliozkoa :"
+
+#~ msgid "Conditions"
+#~ msgstr "Baldintzak"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Baldintza &guztiak bat egin"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "&Edozein baldintza bat egin"
+
+#~ msgid "Actions"
+#~ msgstr "Ekintzak"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " egun"
+#~ msgstr[1] " egun"
+
+#~ msgid "New rule"
+#~ msgstr "Arau berria"
+
+#~ msgid "Edit rule"
+#~ msgstr "Editatu araua"
+
+#~ msgid "Remove rule"
+#~ msgstr "kendu araua"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "Erakut&si talde honen arauak bakarrik:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Arau editorea"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Editatu araua"
+
+#~ msgid "Reload &List"
+#~ msgstr "Birkargatu &zerrenda"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr ""
+#~ "Kudeatu zein posta karpeta ikusi nahi dituzun zure karpeten ikuspegian"
+
+#~ msgid "S&earch:"
+#~ msgstr "B&ilatu:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Ezgaitu &zuhaitz ikuspegia"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "&Harpidetutakoak bakarrik"
+
+#~ msgid "&New only"
+#~ msgstr "&Berriak bakarrik"
+
+#~ msgid "Current changes:"
+#~ msgstr "Uneko aldaketak:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Deskribapena"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Harpidetu hemen"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Harpidetza kendu hemendik"
+
+#, fuzzy
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Kargatzen... (bat-egite 1)"
+#~ msgstr[1] "Kargatzen... (%1 bat-egite)"
+
+#, fuzzy
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (bat-egite 1)"
+#~ msgstr[1] "%2 (%1 bat-egite)"
+
+#~ msgid "View Columns"
+#~ msgstr "Ikusi zutabeak"
+
+#, fuzzy
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Gatazka aurkitu da"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>A conflict was detected. This probably means someone edited the same "
+#~| "entry on the server while you changed it locally.<br/>NOTE: You have to "
+#~| "check mail again to apply your changes to the server.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "<qt>Gatazka bat aurkitu da. Honek seguruenik zuk lokalean aldatzen zenuen "
+#~ "bitartean norbaitek zerbitzarian sarrera berdina editatu duela esan nahi "
+#~ "du.<br/>OHARRA: Posta berriro egiaztatu behar duzu zure aldaketak "
+#~ "zerbitzariari aplikatzeko.</qt>"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Hartu lokala"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Hartu berria"
+
+#, fuzzy
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Hartu biak"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Gatazka lokala"
+
+#, fuzzy
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Gatazka lokalen laburpena"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Azken aldatutakoa:"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Azken aldatutakoa:"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Erakutsi xehetasunak"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Erakutsi desberdintasunak"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Sinkronizazio hobespenak"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Sinkronizazio hobespenak"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Sinkronizazio hobespenak"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Hartu sarrera lokala gatazketan"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Hartu sarrera lokala gatazketan"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Hartu sarrera berria (urrunekoa) gatazketan"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Hartu sarrera berria (urrunekoa) gatazketan"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Hartu sarrera berriena gatazketan"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Hartu sarrera berriena gatazketan"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Galdatu gatazkadun sarrera bakoitzean"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Galdatu gatazkadun sarrera bakoitzean"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Hartu biak gatazketan"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Hartu biak gatazketan"
+
+#, fuzzy
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "Aplikatu hau sinkronizazio honen gatazka guztietan"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Gertaera lokala"
+
+#, fuzzy
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Egiteko lokala"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Egunkari lokala"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Gertaera berria"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Egiteko berria"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Egunkari berria"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Ezkutatu xehetasunak"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Ezkutatu xehetasunak"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Erakutsi xehetasunak..."
+
+#, fuzzy
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "%1 eta %2-(r)en arteko desberdintasunak"
+
+#, fuzzy
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "%1-(r)en desberdintasunak"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Gatazka lokala"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Gatazka lokala"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Erakutsi xehetasunak"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Ezkutatu xehetasunak"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~| msgid "Is floating"
+#~ msgid "Floating"
+#~ msgstr "Mugikorra da"
+
+#~ msgid "Local entry"
+#~ msgstr "Sarrera lokala"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Sarrera berria (urrunekoa)"

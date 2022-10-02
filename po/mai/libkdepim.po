@@ -1,0 +1,278 @@
+# translation of libkdepim.po to Maithili
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Rajesh Ranjan <rajesh672@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2010-09-24 16:29+0530\n"
+"Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
+"Language-Team: Maithili <bhashaghar@googlegroups.com>\n"
+"Language: mai\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr ""
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "बेसी"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr ""
+
+#~ msgid "Choose..."
+#~ msgstr "चयन करू..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "वरीयतासभ"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "पूर्वनिर्धारितमे फेर सेट करू"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "एकरा लेल खोज:"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "खोज (&S)"
+
+#, fuzzy
+#~| msgid "Select All"
+#~ msgid "&Select"
+#~ msgstr "सभ चुनू"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "सभ विचयनित करू"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search in result..."
+#~ msgstr "खोज (&S)"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "आइ (&T)"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "संगीता कुमारी"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "sangeeta09@gmail.com"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "होस्ट जोड़ू"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "टाबियस कोएनिग"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "होस्ट संपादित करू"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "शीर्षक"
+
+#~ msgid "Full Name"
+#~ msgstr "पूरा नाम"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#~ msgid "Pager"
+#~ msgstr "पेजर"
+
+#~ msgid "Street"
+#~ msgstr "सड़क"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "स्थिति"
+
+#~ msgid "Country"
+#~ msgstr "देश"
+
+#~ msgid "City"
+#~ msgstr "नगर"
+
+#~ msgid "Organization"
+#~ msgstr "संस्था"
+
+#~ msgid "Company"
+#~ msgstr "कंपनी"
+
+#~ msgid "Department"
+#~ msgstr "विभाग"
+
+#~ msgid "Zip Code"
+#~ msgstr "जिप कोड"
+
+#~ msgid "Description"
+#~ msgstr "विवरण"
+
+#~ msgid "User ID"
+#~ msgstr "प्रयोक्ता आइडी"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "स्थिति"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "शीर्षक"
+
+#~ msgid "Search for:"
+#~ msgstr "एकरा लेल खोज:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "in"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "खोज (&S)"
+
+#~ msgid "Contains"
+#~ msgstr "समाहित करैछ"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Searching..."
+#~ msgstr "खोज (&S)"
+
+#~ msgid "Select All"
+#~ msgstr "सभ चुनू"
+
+#~ msgid "Unselect All"
+#~ msgstr "सभ विचयनित करू"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "विवरण"
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Total Messages"
+#~ msgstr "संदेश"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Unread Messages"
+#~ msgstr "संदेश"
+
+#~ msgid "Stop"
+#~ msgstr "रोकू"
+
+#~ msgid "Message"
+#~ msgstr "संदेश"
+
+#~ msgid "Send"
+#~ msgstr "पठाबू"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "आइ"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "कालि"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "आइ"

@@ -1,0 +1,363 @@
+# translation of libkdepim.po to
+# KDE Hebrew Localization Project
+# Translation of libkdepim.po into Hebrew
+#
+# In addition to the copyright owners of the program
+# which this translation accompanies, this translation is
+# Copyright (C) 2002 Meni Livne <livne@kde.org>
+#
+# This translation is subject to the same Open Source
+# license as the program which it accompanies.
+#
+# Diego Iastrubni <elcuco@kde.org>, 2005, 2007.
+# Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2017-05-16 06:42-0400\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: <he@li.org>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr ""
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr ""
+
+#~ msgid "Choose..."
+#~ msgstr "בחירה..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "העדפות"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "אתה עומד להגדיר את כל ההעדפות לערכי ברירת המחדל שלהן. כל השינויים "
+#~ "המותאמים אישית יאבדו."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "הגדרות העדפות ברירת מחדל"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "שחזר לברירת מחדל"
+
+#, fuzzy
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "בעיות לא ידועות אם כתובת הדוא\"ל"
+#~ msgstr[1] "בעיות לא ידועות אם כתובת הדוא\"ל"
+
+#, fuzzy
+#~ msgid "vCard Import Failed"
+#~ msgstr "ייבוא קובץ טקסט"
+
+#, fuzzy
+#~ msgid "Configure Completion..."
+#~ msgstr "ערוך סדר השלמה..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "כתובות אחרונות"
+
+#, fuzzy
+#~ msgid "LDAP server: %1"
+#~ msgstr "שרת LDAP %1"
+
+#, fuzzy
+#~ msgid "Search email:"
+#~ msgstr "חיפוש:"
+
+#, fuzzy
+#~ msgid "Search"
+#~ msgstr "חיפוש:"
+
+#, fuzzy
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "הסתר כתובות דוא\"ל"
+
+#, fuzzy
+#~ msgid "&Select"
+#~ msgstr "בחירת תבנית"
+
+#, fuzzy
+#~ msgid "&Unselect"
+#~ msgstr "בחירת תבנית"
+
+#, fuzzy
+#~ msgid "Search in result..."
+#~ msgstr "חיפוש:"
+
+#, fuzzy
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "של דוא\"ל אל \"%1\""
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "ערוך סדר השלמה..."
+
+#, fuzzy
+#~ msgid "Completion Order"
+#~ msgstr "ערוך סדר ההשלמה"
+
+#, fuzzy
+#~ msgid "Recent Address"
+#~ msgstr "כתובות אחרונות"
+
+#, fuzzy
+#~ msgid "Blacklist Email Address"
+#~ msgstr "הסתר כתובות דוא\"ל"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "ערוך סדר ההשלמה"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "שרת LDAP %1"
+
+#, fuzzy
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "היום"
+
+#, fuzzy
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "מחר"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "שבוע הבא"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "חודש הבא"
+
+#, fuzzy
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "הערות"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "VCard התווסף לספר הכתובות; באפשרותך להוסיף מידע בעזרת פתיחת ספר הכתובות"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "בחירת תבנית"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "בחירת תבנית"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "צוות התרגום של KDE ישראל"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kde-l10n-he@kde.org"
+
+#, fuzzy
+#~ msgid "LDAP Server Settings"
+#~ msgstr "שרת LDAP %1"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "ערוך..."
+
+#, fuzzy
+#~ msgid "LDAP Servers"
+#~ msgstr "שרת LDAP %1"
+
+#, fuzzy
+#~ msgid "&Edit Host..."
+#~ msgstr "ערוך..."
+
+#, fuzzy
+#~ msgid "Full Name"
+#~ msgstr "שם:"
+
+#, fuzzy
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "דוא\"ל"
+
+#, fuzzy
+#~ msgid "Home Number"
+#~ msgstr "הסתר מספרי טלפון"
+
+#, fuzzy
+#~ msgid "Work Number"
+#~ msgstr "הסתר מספרי טלפון"
+
+#, fuzzy
+#~ msgid "Mobile Number"
+#~ msgstr "הסתר מספרי טלפון"
+
+#, fuzzy
+#~ msgid "Fax Number"
+#~ msgstr "הסתר מספרי טלפון"
+
+#, fuzzy
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "מצב"
+
+#, fuzzy
+#~ msgid "Organization"
+#~ msgstr "מארגן"
+
+#~ msgid "Department"
+#~ msgstr "מחלקה"
+
+#, fuzzy
+#~ msgid "Postal Address"
+#~ msgstr "כתובות אחרות"
+
+#~ msgid "Description"
+#~ msgstr "תיאור"
+
+#, fuzzy
+#~ msgid "User ID"
+#~ msgstr "זיהוי משתמש"
+
+#, fuzzy
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "דוא\"ל"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "מצב"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "הייבוא מתחיל בשורה:"
+
+#, fuzzy
+#~ msgid "Search for:"
+#~ msgstr "חיפוש:"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "שם:"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "דוא\"ל"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "הסתר מספרי טלפון"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "הסתר מספרי טלפון"
+
+#, fuzzy
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "חיפוש:"
+
+#, fuzzy
+#~ msgid "Contains"
+#~ msgstr "תנאי"
+
+#, fuzzy
+#~ msgid "Starts With"
+#~ msgstr "זמן התחלה"
+
+#, fuzzy
+#~ msgid "Searching..."
+#~ msgstr "חיפוש:"
+
+#, fuzzy
+#~ msgid "Select All"
+#~ msgstr "בחירת תבנית"
+
+#, fuzzy
+#~ msgid "Unselect All"
+#~ msgstr "בחירת תבנית"
+
+#, fuzzy
+#~ msgid "Add Selected"
+#~ msgstr "בחירת כתובות"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "ערוך סדר השלמה..."

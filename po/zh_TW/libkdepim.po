@@ -1,0 +1,514 @@
+# translation of libkdepim.po to Chinese Traditional
+# Copyright (C) 2006, 2007, 2008 Free Software Foundation, Inc.
+# Keanu <keanu@ms50.url.com.tw>, 2002.
+# Franklin Weng <franklin@goodhorse.idv.tw>, 2010, 2011, 2012, 2013, 2014, 2015.
+#
+# Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2006, 2007, 2008, 2009, 2010.
+# Franklin Weng <franklin at goodhorse dot idv dot tw>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2015-06-14 13:40+0800\n"
+"Last-Translator: Franklin\n"
+"Language-Team: Chinese Traditional <kde-i18n-doc@kde.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr "無法新增更多的收件者。已達收件者上限"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "取消這個動作"
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "取消中..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "連線已加密"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "連線未加密"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "開啟詳情進度視窗"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "顯示詳情進度對視窗"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "開啟詳情進度視窗"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "更多"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "較少"
+
+#~ msgid "Choose..."
+#~ msgstr "選擇..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "喜好設定"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr "您打算將所有的設定都設回預設值。先前所有的改變都會消失。"
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "回復預設喜好設定"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "重設為預設值"
+
+#, fuzzy
+#~| msgid "&Add"
+#~ msgid "Add"
+#~ msgstr "新增(&A)"
+
+#~ msgid "Remove"
+#~ msgstr "移除"
+
+#, fuzzy
+#~| msgid "Do you want to remove this email?"
+#~| msgid_plural "Do you want to remove %1 emails?"
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "您要移除 %1 封電子郵件嗎？"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "匯入文字檔"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>您確定要刪除 <b>%1</b> 嗎？</qt>"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "LDAP 結果顯示組織單元"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "設定完成順序..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "最近使用的地址"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "在您的資料中找到聯絡人"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP 伺服器：%1"
+
+#~ msgid "Search email:"
+#~ msgstr "在郵件中尋找："
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "重新搜尋已完成"
+
+#~ msgid "Search"
+#~ msgstr "搜尋"
+
+#, fuzzy
+#~| msgid "Blacklist address email"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "將此地址加入黑名單"
+
+#~ msgid "&Select"
+#~ msgstr "選擇(&S)"
+
+#~ msgid "&Unselect"
+#~ msgstr "取消選取(&U)"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">更多結果...</a></qt>"
+
+#, fuzzy
+#~| msgid "Search in result"
+#~ msgid "Search in result..."
+#~ msgstr "在結果中搜尋"
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "排除網域名稱："
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "以 %1 分隔網域"
+
+#, fuzzy
+#~| msgid "No result found"
+#~ msgid "No email found."
+#~ msgstr "找不到符合的結果"
+
+#, fuzzy
+#~| msgid "No result found"
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "找不到符合的結果"
+
+#~ msgid "No result found"
+#~ msgstr "找不到符合的結果"
+
+#, fuzzy
+#~| msgid "Configure completion"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "設定補完"
+
+#, fuzzy
+#~| msgid "Completion order"
+#~ msgid "Completion Order"
+#~ msgstr "補完順序"
+
+#~ msgid "Recent Address"
+#~ msgstr "最近使用的地址"
+
+#, fuzzy
+#~| msgid "Blacklist address email"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "將此地址加入黑名單"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "編輯補完順序"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP 伺服器 %1"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "將規則上移"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "將規則下移"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "今天(&T)"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "明天(&M)"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "下週(&W)"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "下個月(&O)"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "沒有日期"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "vCard 的主要電子郵件已經在您的通訊錄中了。然而，您還是可以將 VCard 存到檔"
+#~ "案中，並手動匯入通訊錄中。"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr "vCard 已經加入您的通訊錄中。您可以開啟通訊錄並新增其資訊。"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr "某位電子郵件地址為 <email>%1</email> 的聯絡人已經在您的通訊錄中了。"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr "在新增聯絡人前，您必須先建立通訊錄。您要建立新的通訊錄嗎？"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "沒有可用的通訊錄"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "新增通訊錄"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>某位電子郵件地址為 <email>%1</email> 的聯絡人已經成功加入您的通訊錄"
+#~ "中了。</para><para>您要現在編輯此新聯絡人嗎？</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "聯絡人無法儲存：%1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "儲存聯絡人失敗"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "聯絡人已成功建立"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Franklin Weng"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "franklin@goodhorse.idv.tw"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "新增主機"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP 伺服器設定"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr "LDAP 密碼被儲存成純文字，您要將它改存放在 kwallet 錢包裡嗎？"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "將純文字密碼改存在 KWallet"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "編輯主機"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "您要移除主機 %1 的設定嗎？"
+
+#~ msgid "Remove Host"
+#~ msgstr "移除主機"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP 伺服器"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "請勾選所有要使用的伺服器："
+
+#~ msgid "&Add Host..."
+#~ msgstr "新增主機(&A)..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "編輯主機(&E)..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "移除主機(&R)"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "職稱"
+
+#~ msgid "Full Name"
+#~ msgstr "全名"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "電子郵件地址"
+
+#~ msgid "Home Number"
+#~ msgstr "家裡電話號碼"
+
+#~ msgid "Work Number"
+#~ msgstr "辦公室電話號碼"
+
+#~ msgid "Mobile Number"
+#~ msgstr "手機號碼"
+
+#~ msgid "Fax Number"
+#~ msgstr "傳真號碼"
+
+#~ msgid "Pager"
+#~ msgstr "呼叫器"
+
+#~ msgid "Street"
+#~ msgstr "街道"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "省/州"
+
+#~ msgid "Country"
+#~ msgstr "國家"
+
+#~ msgid "City"
+#~ msgstr "城市"
+
+#~ msgid "Organization"
+#~ msgstr "組織"
+
+#~ msgid "Company"
+#~ msgstr "公司"
+
+#~ msgid "Department"
+#~ msgstr "部門"
+
+#~ msgid "Zip Code"
+#~ msgstr "郵遞區號"
+
+#~ msgid "Postal Address"
+#~ msgstr "郵寄地址"
+
+#~ msgid "Description"
+#~ msgstr "描述"
+
+#~ msgid "User ID"
+#~ msgstr "使用者 ID"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "電子郵件地址"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "省/州"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "職稱"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "從 LDAP 匯入聯絡人"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "搜尋目錄裡的地址"
+
+#~ msgid "Search for:"
+#~ msgstr "尋找："
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "包含於"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "名稱"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "電子郵件地址"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "家裡電話號碼"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "辦公室電話號碼"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "搜尋(&S)"
+
+#~ msgid "Recursive search"
+#~ msgstr "遞迴搜尋"
+
+#~ msgid "Contains"
+#~ msgstr "包含"
+
+#~ msgid "Starts With"
+#~ msgstr "開始於"
+
+#~ msgid "Search in result"
+#~ msgstr "在結果中搜尋"
+
+#~ msgid "Searching..."
+#~ msgstr "搜尋中..."
+
+#~ msgid "Select All"
+#~ msgstr "全部選取"
+
+#~ msgid "Unselect All"
+#~ msgstr "取消全選"
+
+#~ msgid "Add Selected"
+#~ msgstr "新增選擇的"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "設定 LDAP 伺服器..."
+
+#~ msgid "Copy"
+#~ msgstr "複製"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "在搜尋以前，您必須先選取 LDAP 伺服器。"
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "從 %2 上的 LDAP 目錄 %1 匯入"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "設定通訊錄 LDAP 設定"

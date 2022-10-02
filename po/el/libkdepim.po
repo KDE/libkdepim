@@ -1,0 +1,2063 @@
+# translation of libkdepim.po to Greek
+# Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+#
+# Stergios Dramis <sdramis@egnatia.ee.auth.gr>, 2002-2004.
+# Spiros Georgaras <sng@hellug.gr>, 2005, 2006, 2007, 2008.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2005, 2007, 2008, 2009.
+# Spiros Georgaras <sngeorgaras@otenet.gr>, 2008.
+# Giorgos Katsikatsos <giorgos.katsikatsos@gmail.com>, 2010.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2011, 2012, 2014.
+# Stelios <sstavra@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2014-04-19 15:10+0200\n"
+"Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Δεν είναι δυνατή η προσθήκη περισσότερων παραληπτών. Έχετε προσθέσει τον "
+"μέγιστο αριθμό παραληπτών."
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Ακύρωση αυτής της λειτουργίας."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Διακοπή..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Η σύνδεση είναι κρυπτογραφημένη"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Η σύνδεση δεν είναι κρυπτογραφημένη"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Άνοιγμα παραθύρου λεπτομερούς προόδου"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Εμφάνιση παραθύρου λεπτομερούς προόδου"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Απόκρυψη παραθύρου λεπτομερούς προόδου"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Περισσότερα"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Λιγότερα"
+
+#~ msgid "Choose..."
+#~ msgstr "Επιλογή..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Προτιμήσεις"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Πρόκειται να ορίσετε όλες τις προτιμήσεις στις προκαθορισμένες τιμές "
+#~ "τους. Όλες οι προσαρμοσμένες τροποποιήσεις θα χαθούν."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Ορισμός προκαθορισμένων προτιμήσεων"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Επαναφορά στα προκαθορισμένα"
+
+#, fuzzy
+#~| msgid "&Add"
+#~ msgid "Add"
+#~ msgstr "&Προσθήκη"
+
+#~ msgid "Remove"
+#~ msgstr "Αφαίρεση"
+
+#, fuzzy
+#~| msgid "Do you want to remove this email?"
+#~| msgid_plural "Do you want to remove %1 emails?"
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Θέλετε να διαγράψετε την διεύθυνση ηλ αλληλογραφίας;"
+#~ msgstr[1] "Θέλετε να διαγράψετε %1 διευθύνσεις ηλ. αλληλογραφίας;"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Εισαγωγή αρχείου κειμένου"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Θέλετε πραγματικά να διαγράψετε το '<b>%1</b>';</qt>"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "Διαμόρφωση της σειράς συμπλήρωσης..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Πρόσφατες διευθύνσεις"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Επαφές που βρέθηκαν στα δεδομένα σας"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "Εξυπηρετητής LDAP %1"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "Αναζήτηση για:"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Αναζήτηση"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Διεύθυνση email"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Επιλογή"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "Αποεπιλογή όλων"
+
+#, fuzzy
+#~| msgid "Search in result"
+#~ msgid "Search in result..."
+#~ msgstr "Αναζήτηση στα αποτελέσματα"
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Αποστολή mail σε '%1'"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Διαμόρφωση της σειράς συμπλήρωσης..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Επεξεργασία της σειράς συμπλήρωσης"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Πρόσφατες διευθύνσεις"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Διεύθυνση email"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Επεξεργασία της σειράς συμπλήρωσης"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Εξυπηρετητής LDAP %1"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "Μετακίνηση κανόνα πάνω"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "Μετακίνηση κανόνα κάτω"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Σήμερα"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Αύριο"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Επόμενη εβ&δομάδα"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Επόμενος &μήνας"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Χωρίς ημερομηνία"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "Η κύρια διεύθυνση ηλ. αλληλογραφίας της vCard υπάρχει ήδη στο βιβλίο "
+#~ "διευθύνσεων σας· μπορείτε ωστόσο να αποθηκεύσετε τη vCard σε ένα αρχείο "
+#~ "και να το εισάγετε χειροκίνητα."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "Η vCard προστέθηκε στο βιβλίο διευθύνσεων σας· μπορείτε να προσθέσετε "
+#~ "περισσότερες πληροφορίες σε αυτήν την εγγραφή ανοίγοντας το βιβλίο "
+#~ "διευθύνσεων."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Επαφή με τη διεύθυνση ηλ. αλληλογραφίας <email>%1</email> υπάρχει ήδη στο "
+#~ "βιβλίο διευθύνσεών σας."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Πρέπει να δημιουργήστε ένα βιβλίο διευθύνσεων πριν προσθέσετε μια επαφή. "
+#~ "Θέλετε να δημιουργήσετε ένα βιβλίο διεθυύνσεων;"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Δεν υπάρχει διαθέσιμο βιβλίο διευθύνσεων"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Προσθήκη βιβλίου διευθύνσεων"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Μια επαφή για το <email>%1</email> προστέθηκε με επιτυχία στο "
+#~ "βιβλίο διευθύνσεων σας.</para><para>Θέλετε να επεξεργαστείτε αυτήν τη νέα "
+#~ "επαφή τώρα;</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Αδυναμία αποθήκευσης της επαφής: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Αποτυχία αποθήκευσης της επαφής"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Η επαφή δημιουργήθηκε με επιτυχία"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr ""
+#~ "Σπύρος Γεωργαράς, Τούσης Μανώλης, Γιώργος Κατσικάτσος, Δημήτριος "
+#~ "Γλενταδάκης"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr ""
+#~ "sng@hellug.gr, manolis@koppermind.homelinux.org, giorgos."
+#~ "katsikatsos@gmail.com, dglent@gmail.com"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Προσθήκη υπολογιστή"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Ρυθμίσεις εξυπηρετητή LDAP"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "Ο κωδικός πρόσβασης του LDAP αποθηκεύτηκε ως απλό κείμενο, θέλετε να "
+#~ "αποθηκευτεί στο kwallet;"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Να αποθηκευτεί ο κωδικός πρόσβασης ως απλό κείμενο στο KWallet"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Επεξεργασία υπολογιστή"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Θέλετε να διαγράψετε τη ρύθμιση για τον υπολογιστή «%1»;"
+
+#~ msgid "Remove Host"
+#~ msgstr "Διαγραφή υπολογιστή"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "Εξυπηρετητές LDAP"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Επιλέξτε όλους του εξυπηρετητές που πρέπει να χρησιμοποιηθούν:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Προσθήκη υπολογιστή..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Επεξεργασία υπολογιστή..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Αφαίρεση υπολογιστή"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Τίτλος"
+
+#~ msgid "Full Name"
+#~ msgstr "Πλήρες όνομα"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Ηλ. αλληλογραφία"
+
+#~ msgid "Home Number"
+#~ msgstr "Τηλέφωνο οικίας"
+
+#~ msgid "Work Number"
+#~ msgstr "Τηλέφωνο εργασίας"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Κινητό τηλέφωνο"
+
+#~ msgid "Fax Number"
+#~ msgstr "Αριθμός φαξ"
+
+#~ msgid "Pager"
+#~ msgstr "Βομβητής"
+
+#~ msgid "Street"
+#~ msgstr "Οδός"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Νομός"
+
+#~ msgid "Country"
+#~ msgstr "Χώρα"
+
+#~ msgid "City"
+#~ msgstr "Πόλη"
+
+#~ msgid "Organization"
+#~ msgstr "Οργανισμός"
+
+#~ msgid "Company"
+#~ msgstr "Εταιρεία"
+
+#~ msgid "Department"
+#~ msgstr "Τμήμα"
+
+#~ msgid "Zip Code"
+#~ msgstr "Ταχ. κώδικας"
+
+#~ msgid "Postal Address"
+#~ msgstr "Ταχυδρομική διεύθυνση"
+
+#~ msgid "Description"
+#~ msgstr "Περιγραφή"
+
+#~ msgid "User ID"
+#~ msgstr "Αναγνωριστικό χρήστη"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Ηλ. αλληλογραφία"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Νομός"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Τίτλος"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Εισαγωγή επαφών από το LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Αναζήτηση διευθύνσεων στον κατάλογο"
+
+#~ msgid "Search for:"
+#~ msgstr "Αναζήτηση για:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "στο"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Όνομα"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Ηλ. αλληλογραφία"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Τηλέφωνο οικίας"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Τηλέφωνο εργασίας"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Αναζήτηση"
+
+#~ msgid "Recursive search"
+#~ msgstr "Αναδρομική αναζήτηση"
+
+#~ msgid "Contains"
+#~ msgstr "Περιέχει"
+
+#~ msgid "Starts With"
+#~ msgstr "Ξεκινά με"
+
+#~ msgid "Search in result"
+#~ msgstr "Αναζήτηση στα αποτελέσματα"
+
+#~ msgid "Searching..."
+#~ msgstr "Αναζήτηση..."
+
+#~ msgid "Select All"
+#~ msgstr "Επιλογή όλων"
+
+#~ msgid "Unselect All"
+#~ msgstr "Αποεπιλογή όλων"
+
+#~ msgid "Add Selected"
+#~ msgstr "Προσθήκη επιλεγμένου"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Διαμόρφωση εξυπηρετητών LDAP..."
+
+#~ msgid "Copy"
+#~ msgstr "Αντιγραφή"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Πρέπει να επιλέξετε έναν εξυπηρετητή LDAP πριν την αναζήτηση."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Εισαγωγή από τον κατάλογο LDAP %1 από %2"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Διαμόρφωση των ρυθμίσεων LDAP του βιβλίου διευθύνσεων"
+
+#~ msgid "&Remove"
+#~ msgstr "Α&φαίρεση"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Επεξεργασία προσφάτων διευθύνσεων"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Επιλογή βιβλίου διευθύνσεων"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Επιλέξτε το βιβλίο διευθύνσεων στο οποίο θα αποθηκευτεί η επαφή:"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Διαθέσιμες σελίδες"
+
+#~ msgid "Unknown"
+#~ msgstr "Άγνωστο"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Συμμετέχοντες"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Ώρα έναρξης"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Διάρκεια"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Η μετάδοση ολοκληρώθηκε. %1 νέο μήνυμα (%2 KB). %3 KB παραμένουν στο "
+#~ "διακομιστή."
+#~ msgstr[1] ""
+#~ "Η μετάδοση ολοκληρώθηκε. %1 νέα μηνύματα (%2 KB). %3 KB παραμένουν στο "
+#~ "διακομιστή."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Η μετάδοση ολοκληρώθηκε. %1 μήνυμα (%2 KB)."
+#~ msgstr[1] "Η μετάδοση ολοκληρώθηκε. %1 μηνύματα (%2 KB)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Η μετάδοση ολοκληρώθηκε. %1 νέο μήνυμα."
+#~ msgstr[1] "Η μετάδοση ολοκληρώθηκε. %1 νέα μηνύματα."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Η μετάδοση ολοκληρώθηκε. Δεν υπάρχουν νέα μηνύματα."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Η μετάδοση για το λογαριασμό %4 ολοκληρώθηκε. %1 νέο μήνυμα (%2 KB). %3 "
+#~ "KB παραμένουν στο διακομιστή."
+#~ msgstr[1] ""
+#~ "Η μετάδοση για το λογαριασμό %4 ολοκληρώθηκε. %1 νέα μηνύματα (%2 KB). %3 "
+#~ "KB παραμένουν στο διακομιστή."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Η μετάδοση για το λογαριασμό %3 ολοκληρώθηκε. %1 μήνυμα (%2 KB)."
+#~ msgstr[1] ""
+#~ "Η μετάδοση για το λογαριασμό %3 ολοκληρώθηκε. %1 μηνύματα (%2 KB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Η μετάδοση για το λογαριασμό %2 ολοκληρώθηκε. %1 νέο μήνυμα."
+#~ msgstr[1] "Η μετάδοση για το λογαριασμό %2 ολοκληρώθηκε. %1 νέα μηνύματα."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Η μετάδοση για το λογαριασμό %1 ολοκληρώθηκε. Κανένα νέο μήνυμα."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Όνομα"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Ηλ. αλληλογραφία"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Γλώσσα ελέγχου ορθογραφίας"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Ανάκτηση και αποθήκευση μηνυμάτων..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Συνολικά μηνύματα"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Μη αναγνωσμένα μηνύματα"
+
+#~ msgid "Quota"
+#~ msgstr "Χώρος"
+
+#~ msgid "Storage Size"
+#~ msgstr "Χωρητικότητα αποθήκευσης"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Χωρητικότητα αποθήκευσης υποφακέλου"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Μέγεθος"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Σύνολο"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Μη αναγνωσμένα"
+
+#~ msgid "Stop"
+#~ msgstr "Διακοπή"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Η σημασιολογική επιφάνεια εργασίας δεν είναι ενεργοποιημένη. Πολλά "
+#~ "σημαντικά χαρακτηριστικά αυτού του προγράμματος εξαρτώνται από το σύστημα "
+#~ "της σημασιολογικής επιφάνειας εργασίας και δεν θα δουλεύουν σωστά χωρίς "
+#~ "αυτό."
+
+#~ msgid "&Configure"
+#~ msgstr "&Διαμόρφωση"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Το άρθρωμα για τη διαμόρφωση του συστήματος σημασιολογικής επιφάνειας "
+#~ "εργασίας (Nepomuk) δεν βρέθηκε στο σύστημά σας. Παρακαλώ σιγουρευτείτε "
+#~ "ότι το Nepomuk έχει εγκατασταθεί σωστά."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Δεν έχετε ενεργοποιημένο το σύστημα της σημασιολογικής επιφάνειας "
+#~ "εργασίας. Τα παρακάτω χαρακτηριστικά δεν θα δουλεύουν σωστά:<ul><li>%1</"
+#~ "li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "Αποστολή SMS"
+
+#~ msgid "Message"
+#~ msgstr "Μήνυμα"
+
+#~ msgid "Recipient:"
+#~ msgstr "Παραλήπτης:"
+
+#~ msgid "Send"
+#~ msgstr "Αποστολή"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Επιλογή βιβλίου διευθύνσεων"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr ""
+#~ "Επιλέξτε το βιβλίο διευθύνσεων στο οποίο θα αποθηκευτεί η νέα επαφή:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>Η διεύθυνση ηλ. αλληλογραφίας <b>%1</b> προστέθηκε στο βιβλίο "
+#~ "διευθύνσεων σας: Μπορείτε να προσθέσετε περισσότερες πληροφορίες σε αυτή "
+#~ "την εγγραφή ανοίγοντας το βιβλίο διευθύνσεων.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "αύριο"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "σήμερα"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "χθες"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "Η ημερομηνία δεν μπορεί να είναι πριν από τις %1"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "σήμερα"
+
+#~ msgid "To"
+#~ msgstr "Προς"
+
+#~ msgid "CC"
+#~ msgstr "Κοινοποίηση"
+
+#~ msgid "BCC"
+#~ msgstr "Κρυφή κοινοποίηση"
+
+#, fuzzy
+#~| msgid "Select the address book the new contact shall be saved in:"
+#~ msgid "Select the address book the new contact group shall be saved in:"
+#~ msgstr ""
+#~ "Επιλέξτε το βιβλίο διευθύνσεων στο οποίο θα αποθηκευτεί η νέα επαφή:"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Παρακαλώ δώστε ένα όνομα για το πρότυπο:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Επιλογή διεύθυνσης"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&Φίλτρο σε:"
+
+#, fuzzy
+#~| msgid "&Search Directory Service"
+#~ msgid "Search Directory Service"
+#~ msgstr "Αναζήτηση υπηρεσίας &καταλόγου"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Προς >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&Κοινοποίηση >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "Κ&ρυφή κοινοποίηση >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Αφαίρεση"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Αποθήκευση ως &λίστα διανομής..."
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Πρέπει να επιλέξετε έναν εξυπηρετητή LDAP πριν την αναζήτηση.\n"
+#~ "Αυτό μπορεί να γίνει από το μενού Ρυθμίσεις/Ρύθμιση του KAddressBook."
+
+#~ msgid "Address Selection"
+#~ msgstr "Επιλογή διεύθυνσης"
+
+#~ msgid "&To >>"
+#~ msgstr "&Προς >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&Κοινοποίηση >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "Κ&ρυφή κοινοποίηση >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "&Επιλεγμένες διευθύνσεις"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Φίλτρο σε:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Αποθήκευση ως &λίστα διανομής..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "Αναζήτηση υπηρεσίας &καταλόγου"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Εμφάνιση γενεθλίων"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Εμφάνιση ταχυδρομικών διευθύνσεων"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Εμφάνιση διευθύνσεων email"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Εμφάνιση τηλεφωνικών αριθμών"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Εμφάνιση ιστοσελίδων (URLs)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Εμφάνιση διευθύνσεων στιγμιαίων μηνυμάτων"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Προβολή προσαρμοσμένων πεδίων"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Προσωπική σελίδα"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Ροή Blog"
+
+#~ msgid "Notes"
+#~ msgstr "Σημειώσεις"
+
+#~ msgid "Profession"
+#~ msgstr "Επάγγελμα"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Όνομα βοηθού"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Όνομα διαχειριστή"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Όνομα συντρόφου"
+
+#~ msgid "Office"
+#~ msgstr "Γραφείο"
+
+#~ msgid "IM Address"
+#~ msgstr "Διεύθυνση στιγμιαίων μηνυμάτων"
+
+#~ msgid "Anniversary"
+#~ msgstr "Επέτειος"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Βιβλίο διευθύνσεων</b>: %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Δεν έχει ορισθεί εφαρμογή που μπορεί να εκτελεστεί. Παρακαλώ πηγαίνετε "
+#~ "στο διάλογο ρυθμίσεων και επιλέξτε μία."
+
+#~ msgid "Call number %1"
+#~ msgstr "Κλήση του αριθμού %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Αποστολή φαξ σε %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Εμφάνιση της διεύθυνσης στο χάρτη"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Αποστολή SMS σε %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Άνοιγμα URL %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Συνομιλία με %1"
+
+#, fuzzy
+#~| msgctxt "@title:column, address books overview"
+#~| msgid "Address Books"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Βιβλία διευθύνσεων"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Όνομα"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Πλήρες όνομα"
+
+#, fuzzy
+#~| msgctxt "@title:column, home address of a person"
+#~| msgid "Home"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Οικία"
+
+#, fuzzy
+#~| msgctxt "@title:column, home address of a person"
+#~| msgid "Work"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Work"
+#~ msgstr "Εργασία"
+
+#, fuzzy
+#~| msgctxt "@title:column, phone numbers of a person"
+#~| msgid "Phone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Τηλέφωνα οικίας"
+
+#, fuzzy
+#~| msgctxt "@title:column, the preferred email addresses of a person"
+#~| msgid "Preferred EMail"
+#~ msgctxt "@title:column the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Προτιμώμενο email"
+
+#, fuzzy
+#~| msgctxt "@title:column, all email addresses of a person"
+#~| msgid "All EMails"
+#~ msgctxt "@title:column all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "giorgos.katsikatsos@gmail.com"
+
+#~ msgid "<group>"
+#~ msgstr "<ομάδα>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Άλλες διευθύνσεις"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Δεν υπάρχουν διευθύνσεις στη λίστα σας. Προσθέστε πρώτα κάποιες "
+#~ "διευθύνσεις στο βιβλίο διευθύνσεών σας και έπειτα δοκιμάστε ξανά."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Νέα λίστα διανομής"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Παρακαλώ εισάγετε όνομα:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Η λίστα διανομής με το δοσμένο όνομα <b>%1</b> υπάρχει ήδη. Παρακαλώ "
+#~ "επιλέξτε ένα διαφορετικό όνομα.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Λίστες διανομής"
+
+#~| msgid "Yes"
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Ναι"
+
+#~| msgid "No"
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Όχι"
+
+#~ msgid "Organizer"
+#~ msgstr "Οργανωτής"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Is all-day"
+#~ msgstr "Ημερήσιο"
+
+#~ msgid "Has duration"
+#~ msgstr "Έχει διάρκεια"
+
+#~ msgid "Summary"
+#~ msgstr "Περίληψη"
+
+#~ msgid "Status"
+#~ msgstr "Κατάσταση"
+
+#~ msgid "Secrecy"
+#~ msgstr "Διαβάθμιση απόρρητου"
+
+#~ msgid "Priority"
+#~ msgstr "Προτεραιότητα"
+
+#~ msgid "Location"
+#~ msgstr "Τοποθεσία"
+
+#~ msgid "Categories"
+#~ msgstr "Κατηγορίες"
+
+#~ msgid "Alarms"
+#~ msgstr "Ειδοποιήσεις"
+
+#~ msgid "Resources"
+#~ msgstr "Πόροι"
+
+#~ msgid "Relations"
+#~ msgstr "Σχέσεις"
+
+#~ msgid "Attachments"
+#~ msgstr "Συνημμένα"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Εξαιρετέες ημερομηνίες"
+
+#~ msgid "Exception Times"
+#~ msgstr "Εξαιρετέες ώρες"
+
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Δημιουργήθηκε"
+
+#~ msgid "Related Uid"
+#~ msgstr "Σχετικό Uid"
+
+#~ msgid "Has End Date"
+#~ msgstr "Έχει ημερομηνία λήξης"
+
+#~ msgid "End Date"
+#~ msgstr "Ημερομηνία λήξης"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Έχει ημερομηνία έναρξης"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Έχει ημερομηνία λήξης"
+
+#~ msgid "Due Date"
+#~ msgstr "Ημερομηνία λήξης"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Έχει ημερομηνία ολοκλήρωσης"
+
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Ολοκληρωμένο"
+
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Ολοκληρώθηκε"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Επεξεργασία κατηγοριών"
+
+#~ msgid "New category"
+#~ msgstr "Νέα κατηγορία"
+
+#~ msgid "Select Categories"
+#~ msgstr "Επιλογή κατηγοριών"
+
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Όνομα"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Εμφάνιση του URL %1"
+
+#~ msgid "Local"
+#~ msgstr "Τοπικό"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "Cached IMAP"
+#~ msgstr "IMAP στη λανθάνουσα μνήμη"
+
+#~ msgid "News"
+#~ msgstr "Ειδήσεις"
+
+#~ msgid "None"
+#~ msgstr "Κανένα"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Θυρίδα αλληλογραφίας maildir"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Ειδήσεις"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "Αποσυνδεδεμένο IMAP"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Τοπική θυρίδα αλληλογραφίας"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Άγνωστο"
+
+#~ msgid "Text"
+#~ msgstr "Κείμενο"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Αριθμητική τιμή"
+
+#~ msgid "Boolean"
+#~ msgstr "Δυαδικός"
+
+#~ msgid "Date & Time"
+#~ msgstr "Ημερομηνία & Ώρα"
+
+#~ msgid "Date"
+#~ msgstr "Ημερομηνία"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "Πεδία του KCM Designer"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Διάλογος πεδίων του Qt Designer"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Αρχεία Designer"
+
+#~ msgid "Import Page"
+#~ msgstr "Εισαγωγή σελίδας"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Προειδοποίηση:</b> Το Qt Designer δεν μπορεί να βρεθεί. Πιθανότατα "
+#~ "να μην είναι εγκατεστημένο. Θα μπορείτε να εισάγετε μόνο υπάρχοντα αρχεία "
+#~ "designer.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Προεπισκόπηση της επιλεγμένης σελίδας"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Αυτό το τμήμα σας επιτρέπει να προσθέσετε τα δικά σας στοιχεία "
+#~ "γραφικού περιβάλλοντος ('<i>Γραφικά συστατικά</i>') για την αποθήκευση "
+#~ "στο %1 των δικών σας τιμών. Συνεχίστε όπως περιγράφεται παρακάτω:</"
+#~ "p><ol><li>Κάντε κλικ στο '<i>Επεξεργασία με το Qt Designer</i>'</"
+#~ "li><li>Στο διάλογο, επιλέξτε '<i>Γραφικό συστατικό</i>', και κάντε κλικ "
+#~ "στο <i>Εντάξει</i></li><li>Προσθέστε τα δικά σας γραφικά συστατικά στη "
+#~ "φόρμα</li><li>Αποθηκεύστε το αρχείο στον κατάλογο που προτείνεται από το "
+#~ "Qt Designer</li><li>Κλείστε το Qt Designer</li></ol><p>Στη περίπτωση που "
+#~ "έχετε ήδη ένα αρχείο designer (*.ui) κάπου στο σκληρό δίσκο σας, απλά "
+#~ "επιλέξτε '<i>Εισαγωγή σελίδας</i>'</p><p><b>Σημαντικό:</b>Το όνομα κάθε "
+#~ "γραφικού συστατικού εισόδου που τοποθετείται μέσα στη φόρμα πρέπει να "
+#~ "αρχίζει με '<i>X_</i>': έτσι ώστε αν επιθυμείτε το γραφικό συστατικό να "
+#~ "αντιστοιχεί στην προσαρμοσμένη σας καταχώρηση '<i>X-Foo</i>', ορίστε το "
+#~ "<i>όνομα</i> του γραφικού συστατικού σε '<i>X_Foo</i>'.</"
+#~ "p><p><b>Σημαντικό:</b> Το γραφικό συστατικό θα επεξεργάζεται "
+#~ "προσαρμοσμένα πεδία με ένα όνομα εφαρμογής %2.  Για να τροποποιήσετε το "
+#~ "όνομα της εφαρμογής που θα επεξεργάζεται το πεδίο, ορίστε το όνομα του "
+#~ "γραφικού συστατικού στο Qt Designer.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Πώς λειτουργεί;</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Διαγραφή σελίδας"
+
+#~ msgid "Import Page..."
+#~ msgstr "Εισαγωγή σελίδας..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Επεξεργασία με Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Κλειδί:"
+
+#~ msgid "Type:"
+#~ msgstr "Τύπος:"
+
+#~ msgid "Classname:"
+#~ msgstr "Όνομα κλάσης:"
+
+#~ msgid "Description:"
+#~ msgstr "Περιγραφή:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Τροποποίηση τιμής ρύθμισης"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Αυτόματος οδηγός ρύθμισης"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Κανόνες"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Ρύθμιση κανόνων"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Πηγή"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Προορισμός"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Συνθήκη"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Τροποποιήσεις"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Ρύθμιση τροποποιήσεων"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Ενέργεια"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Επιλογή"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Τιμή"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Παρακαλώ σιγουρευτείτε ότι τα προγράμματα που ρυθμίστηκαν από τον "
+#~ "αυτόματο οδηγό δεν εκτελούνται παράλληλα με τον  αυτόματο οδηγό. "
+#~ "Διαφορετικά οι τροποποιήσεις που έγιναν από τον αυτόματο οδηγό μπορεί να "
+#~ "χαθούν."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Προειδοποίηση"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Εκτέλεση του αυτόματου οδηγού τώρα"
+
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Ανιχνεύτηκε σύγκρουση"
+
+#~| msgid ""
+#~| "<qt>A conflict was detected. This probably means someone edited the same "
+#~| "entry on the server while you changed it locally.<br/>NOTE: You have to "
+#~| "check mail again to apply your changes to the server.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "Ανιχνεύτηκε μία σύγκρουση. Αυτό πιθανότατα σημαίνει ότι κάποιος "
+#~ "επεξεργάστηκε την ίδια καταχώρηση στον εξυπηρετητή ενώ εσείς την "
+#~ "τροποποιήσατε τοπικά. <nl/><note>Πρέπει να ελέγξετε ξανά την αλληλογραφία "
+#~ "για την εφαρμογή των τροποποιήσεων στον εξυπηρετητή.</note>"
+
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Λήψη τοπικού"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take your local copy of the incidence"
+#~ msgstr "Λήψη τοπικού αντιγράφου"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Local\" button to make "
+#~ "sure your local copy is used."
+#~ msgstr ""
+#~ "Μία σύγκρουση ανιχνεύθηκε μεταξύ του τοπικού αντιγράφου και του "
+#~ "απομακρυσμένου αντιγράφου στον εξυπηρετητή. Παρακαλώ πιέστε το κουμπί "
+#~ "\"Λήψη τοπικού αντιγράφου\" για να βεβαιωθείτε για τη χρήση του τοπικού "
+#~ "αντιγράφου."
+
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Λήψη νέου"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take the server copy of the incidence"
+#~ msgstr "Αντιγραφή του αντιγράφου από τον εξυπηρετητή τοπικά"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take New\" button to use the "
+#~ "server copy, thereby overwriting your local copy"
+#~ msgstr ""
+#~ "Μία σύγκρουση ανιχνεύθηκε μεταξύ του τοπικού αντιγράφου και του "
+#~ "απομακρυσμένου αντιγράφου στον εξυπηρετητή. Παρακαλώ πιέστε το κουμπί "
+#~ "\"Λήψη νέου\" για να χρησιμοποιήσετε το αντίγραφο που βρίσκεται στον "
+#~ "εξυπηρετητή και έτσι αντικαθιστώντας το τοπικό σας αντίγραφο"
+
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Λήψη και των δύο"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both copies of the incidence"
+#~ msgstr "Λήψη και των δύο αντιγράφων"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Both\" button to keep "
+#~ "both the local and the server copies."
+#~ msgstr ""
+#~ "Μία σύγκρουση ανιχνεύθηκε μεταξύ του τοπικού αντιγράφου και του "
+#~ "απομακρυσμένου αντιγράφου στον εξυπηρετητή. Παρακαλώ πιέστε το κουμπί "
+#~ "\"Λήψη και των δύο\" για να διατηρήσετε και τα δύο αντίγραφα, τοπικά και "
+#~ "στον εξυπηρετητή."
+
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Τοπικό αντίγραφο"
+
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Περίληψη τοπικού αντιγράφου"
+
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Τελευταία τροποποίηση:"
+
+#~| msgid "Set Last modified"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Ορισμός τελευταίας τροποποίησης"
+
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Εμφάνιση λεπτομερειών"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Hide/Show incidence details"
+#~ msgstr "Απόκρυψη/Προβολή λεπτομερειών αντιγράφου"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Press this button to toggle the incidence details display."
+#~ msgstr ""
+#~ "Πιέστε αυτό το κουμπί για την εμφάνιση ή απόκρυψη της προβολής "
+#~ "λεπτομερειών του αντιγράφου."
+
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Εμφάνιση διαφορών"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show the differences between the two incidences"
+#~ msgstr "Εμφάνιση διαφορών μεταξύ των δύο αντιγράφων"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press the \"Show Differences\" button to see the specific differences "
+#~ "between the incidences which are in conflict."
+#~ msgstr ""
+#~ "Πιέστε το κουμπί \"Εμφανιση διαφορών\" για να δείτε τις διαφορές μεταξύ "
+#~ "των δύο συγκρουόμενων αντιγράφων."
+
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Συγχρονισμός προτιμήσεων"
+
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Συγχρονισμός προτιμήσεων"
+
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Συγχρονισμός προτιμήσεων"
+
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Λήψη της τοπικής καταχώρησης σε περίπτωση σύγκρουσης"
+
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Λήψη της τοπικής καταχώρησης σε περίπτωση σύγκρουσης"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the local copy."
+#~ msgstr ""
+#~ "Στην περίπτωση σύγκρουσης μεταξύ του τοπικού αντιγράφου και του "
+#~ "απομακρυσμένου αντιγράφου στον εξυπηρετητή, γίνεται επιλογή του τοπικού "
+#~ "αντιγράφου."
+
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Λήψη του απομακρυσμένου αντιγράφου σε περίπτωση σύγκρουσης"
+
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Λήψη του απομακρυσμένου αντιγράφου σε περίπτωση σύγκρουσης"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the remote "
+#~ "copy."
+#~ msgstr ""
+#~ "Στην περίπτωση σύγκρουσης μεταξύ του τοπικού αντιγράφου και του "
+#~ "απομακρυσμένου αντιγράφου στον εξυπηρετητή, γίνεται επιλογή του  "
+#~ "απομακρυσμένου αντιγράφου."
+
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Λήψη του νεότερου αντιγράφου σε περίπτωση σύγκρουσης"
+
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Λήψη της νεότερης έκδοσης του αντιγράφου σε περίπτωση σύγκρουσης"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the newest "
+#~ "version available."
+#~ msgstr ""
+#~ "Στην περίπτωση σύγκρουσης μεταξύ του τοπικού αντιγράφου και του "
+#~ "απομακρυσμένου αντιγράφου στον εξυπηρετητή, γίνεται επιλογή της νεότερης "
+#~ "διαθέσιμης έκδοσης."
+
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Γίνεται ερώτηση για κάθε συγκρουόμενη καταχώρηση"
+
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Γίνεται ερώτηση για κάθε συγκρουόμενη καταχώρηση"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to ask the user which "
+#~ "version they want to keep."
+#~ msgstr ""
+#~ "Στην περίπτωση σύγκρουσης μεταξύ του τοπικού αντιγράφου και του "
+#~ "απομακρυσμένου αντιγράφου στον εξυπηρετητή, γίνεται ερώτηση για την "
+#~ "επιθυμητή έκδοση του αντιγράφου."
+
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Λήψη και των δύο σε περίπτωση σύγκρουσης"
+
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Λήψη και των δύο σε περίπτωση σύγκρουσης"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to keep both versions of "
+#~ "the incidence."
+#~ msgstr ""
+#~ "Στην περίπτωση σύγκρουσης μεταξύ του τοπικού αντιγράφου και του "
+#~ "απομακρυσμένου αντιγράφου στον εξυπηρετητή, διατηρούνται και οι δύο "
+#~ "εκδόσεις της καταχώρησης."
+
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr ""
+#~ "Εφαρμογή αυτής της επιλογής σε όλες τις συγκρούσεις αυτού του συγχρονισμού"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Apply the preference to all conflicts that may occur during the sync"
+#~ msgstr ""
+#~ "Εφαρμογή αυτής της επιλογής σε όλες τις συγκρούσεις που ενδέχεται να "
+#~ "προκύψουν κατά τη διάρκεια αυτού του συγχρονισμού"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press this button to apply the selected preference to all future "
+#~ "conflicts that might occur during this sync."
+#~ msgstr ""
+#~ "Πιέστε αυτό το κουμπί για να εφαρμοστούν οι επιλεγμένες επιλογές σε όλες "
+#~ "τις μελλοντικές συγκρούσεις που ενδέχεται να υπάρξουν κατά τη διάρκεια "
+#~ "αυτού του συγχρονισμού."
+
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Τοπικό γεγονός"
+
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Τοπική εργασία προς υλοποίηση"
+
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Τοπικό χρονικό"
+
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Νέο γεγονός"
+
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Νέα εργασία προς υλοποίηση"
+
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Νέο χρονικό"
+
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Απόκρυψη λεπτομερειών"
+
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Απόκρυψη λεπτομερειών"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "This area shows the incidence details"
+#~ msgstr "Στην περιοχή αυτή εμφανίζονται οι λεπτομέρειες των εγγραφών"
+
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Εμφάνιση λεπτομερειών..."
+
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Διαφορές μεταξύ του %1 και του %2"
+
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Διαφορές του %1"
+
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Τοπικό αντίγραφο"
+
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Απομακρυσμένο αντίγραφο"
+
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Εμφάνιση λεπτομερειών"
+
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Απόκρυψη λεπτομερειών"
+
+#~| msgid "&Insert"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Εισαγωγή"
+
+#~| msgid "Insert File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Εισαγωγή αρχείου"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The external editor is still running.<nl>Do you want to stop the editor "
+#~ "or keep it running?</nl><warning>Stopping the editor will cause all your "
+#~ "unsaved changes to be lost.</warning>"
+#~ msgstr ""
+#~ "Ο εξωτερικός επεξεργαστής τρέχει ακόμα.<nl>Επιθυμείτε να τερματίσετε  τον "
+#~ "επεξεργαστή ή να συνεχίσει να εκτελείται;</nl><warning>Ο τερματισμός της "
+#~ "λειτουργείας του επεξεργαστή θα έχει σαν αποτέλεσμα την απώλεια όλων των "
+#~ "μη αποθηκευμένων αλλαγών που έχετε κάνει.</warning>"
+
+#~| msgid "External Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Ο εξωτερικός επεξεργαστής εκτελείται"
+
+#~| msgid "Abort Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Τερματισμός επεξεργαστή"
+
+#~| msgid "Leave Editor Open"
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Συνέχιση εκτέλεσης του επεξεργαστή"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "Να μην εμφανιστεί αυτό το μήνυμα ξανά"
+
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "Το άρθρο\n"
+#~ "<b>%1</b><br /><b>%2</b><br />προκάλεσε την εμφάνιση της παρακάτω "
+#~ "σημείωσης:<br />%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Προσαρμογή βαθμολογίας"
+
+#~ msgid "Display Message"
+#~ msgstr "Εμφάνιση μηνύματος"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Χρωματισμός επικεφαλίδας"
+
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "Σημείωση ως αναγνωσμένο"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Λίστα συλλεχθεισών σημειώσεων</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Συλλεχθείσες σημειώσεις"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Περιέχει υποσυμβολοσειρά"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Ταιριάζει στην κανονική έκφραση"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Ταιριάζει στην κανονική έκφραση (με διάκριση πεζών/κεφαλαίων)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Είναι πανομοιότυπο με"
+
+#~ msgid "Less Than"
+#~ msgstr "Μικρότερο από"
+
+#~ msgid "Greater Than"
+#~ msgstr "Μεγαλύτερο από"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Επιλέξτε ένα άλλο όνομα κανόνα"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr ""
+#~ "Η ονομασία του κανόνα χρησιμοποιείται ήδη, παρακαλώ επιλέξτε άλλη "
+#~ "ονομασία:"
+
+#~ msgid "rule %1"
+#~ msgstr "κανόνας %1"
+
+#~ msgid "Not"
+#~ msgstr "Λογικό όχι"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Αντιστροφή αυτής της συνθήκης"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Επιλέξτε την επικεφαλίδα για το ταίριασμα αυτής της συνθήκης με"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Επιλέξτε τον τύπο ταιριάσματος"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Η συνθήκη του ταιριάσματος"
+
+#~ msgid "Select an action."
+#~ msgstr "Επιλέξτε μια ενέργεια."
+
+#~ msgid "Properties"
+#~ msgstr "Ιδιότητες"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "Ό&νομα:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Ομάδες:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "Π&ροσθήκη ομάδας"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "Αυτόματη &λήξη του κανόνα"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "Ο &κανόνας είναι έγκυρος για:"
+
+#~ msgid "Conditions"
+#~ msgstr "Συνθήκες"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Ταίριασμα ό&λων των συνθηκών"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Ταίριασμα ο&ποιασδήποτε συνθήκης"
+
+#~ msgid "Actions"
+#~ msgstr "Ενέργειες"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " ημέρα"
+#~ msgstr[1] " ημέρες"
+
+#~ msgid "New rule"
+#~ msgstr "Νέος κανόνας"
+
+#~ msgid "Edit rule"
+#~ msgstr "Επεξεργασία κανόνα"
+
+#~ msgid "Remove rule"
+#~ msgstr "Διαγραφή κανόνα"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>όλες οι ομάδες</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "Ε&μφάνιση μόνο των κανόνων για την ομάδα:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Επεξεργαστής κανόνων"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Επεξεργασία κανόνα"
+
+#~ msgid "Reload &List"
+#~ msgstr "Επαναφόρτωση &λίστας"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr ""
+#~ "Διαχειριστείτε τους φακέλους αλληλογραφίας που επιθυμείτε να δείτε στην "
+#~ "προβολή φακέλου σας"
+
+#~ msgid "S&earch:"
+#~ msgstr "&Αναζήτηση:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Απενεργοποίηση προβολής &δέντρου"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "Μόνο &εγγεγραμμένες"
+
+#~ msgid "&New only"
+#~ msgstr "Μόνο &νέες"
+
+#~ msgid "Current changes:"
+#~ msgstr "Τρέχουσες τροποποιήσεις:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Όνομα"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Περιγραφή"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Εγγραφή σε"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Διαγραφή από"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Φόρτωση... (1 ταίριασμα)"
+#~ msgstr[1] "Φόρτωση... (%1 ταιριάσματα)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (1 ταίριασμα)"
+#~ msgstr[1] "%2: (%1 ταιριάσματα)"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Ανώνυμο πρόσθετο"
+
+#~ msgid "New category entry"
+#~ msgstr "Νέα καταχώρηση κατηγορίας"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr ""
+#~ "Πληκτρολογήστε το κείμενο που θα χρησιμοποιήσετε ως νέα κατηγορία ή "
+#~ "υποκατηγορία."
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Προσθήκη καταχώρησης στη λίστα κατηγοριών"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr ""
+#~ "Πιέστε αυτό το κουμπί για την εισαγωγή της καταχώρησης στη λίστα "
+#~ "κατηγοριών."
+
+#~ msgid "A&dd"
+#~ msgstr "&Προσθήκη"
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr "Προσθήκη καταχώρησης ως υποκατηγορία της επιλεγμένης κατηγορίας"
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Πιέστε αυτό το κουμπί για την εισαγωγή μιας καταχώρησης ως υποκατηγορία "
+#~ "της τρέχουσας επιλεγμένης κατηγορίας."
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Προσθήκη &υποκατηγορίας"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "Αφαίρεση της επιλεγμένης κατηγορίας"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr ""
+#~ "Πιέστε αυτό το κουμπί για την αφαίρεση της επιλεγμένης κατηγορίας από τη "
+#~ "λίστα."
+
+#~ msgid "Category list"
+#~ msgstr "Λίστα κατηγοριών"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Αυτό είναι η λίστα των διαθέσιμων κατηγοριών. Μπορείτε να δημιουργήσετε "
+#~ "όσες υποκατηγορίες επιθυμείτε."
+
+#~| msgid "Default category"
+#~ msgid "Default Category"
+#~ msgstr "Προεπιλεγμένη κατηγορία"
+
+#~ msgid "Category"
+#~ msgstr "Κατηγορία"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&Καθαρισμός επιλογής"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&Επεξεργασία κατηγοριών..."
+
+#~ msgid "View Columns"
+#~ msgstr "Προβολή στηλών"
+
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "Ο εξωτερικός επεξεργαστής εκτελείται ακόμα.\n"
+#~ "Εγκατάλειψη του επεξεργαστή ή να παραμείνει ανοιχτός;"
+
+#~ msgid "Floating"
+#~ msgstr "Επιπλέει"
+
+#~ msgid "Local entry"
+#~ msgstr "Τοπική καταχώρηση"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Νέα (απομακρυσμένη) καταχώρηση"
+
+#~ msgid "Plain"
+#~ msgstr "Απλό"
+
+#~ msgid "Unquoted"
+#~ msgstr "Χωρίς αναφορά"
+
+#~ msgid "Bracketed"
+#~ msgstr "Με παρενθέσεις"
+
+#~ msgid "Undefined"
+#~ msgstr "Απροσδιόριστο"
+
+#~ msgid "File to import:"
+#~ msgstr "Αρχείο για εισαγωγή:"
+
+#~ msgid "Separator:"
+#~ msgstr "Διαχωριστικό:"
+
+#~ msgid "Tab"
+#~ msgstr "Στηλοθέτης"
+
+#~ msgid "Space"
+#~ msgstr "Κενό"
+
+#~ msgid "Header"
+#~ msgstr "Επικεφαλίδα"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Ανάθεση στην επιλεγμένη στήλη"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Αφαίρεση ανάθεσης από την επιλεγμένη στήλη"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Ανάθεση με πρότυπο..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Αποθήκευση τρέχοντος προτύπου"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Πρόοδος φόρτωσης"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Παρακαλώ περιμένετε καθώς το αρχείο φορτώνεται."
+
+#~ msgid "Template Selection"
+#~ msgstr "Επιλογή προτύπου"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Παρακαλώ επιλέξτε ένα πρότυπο που ταιριάζει στο αρχείο CSV:"
+
+#~ msgid "Importing Progress"
+#~ msgstr "Πρόοδος εισαγωγής"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Παρακαλώ περιμένετε καθώς το δεδομένα εισάγονται."
+
+#~ msgid "Template Name"
+#~ msgstr "Όνομα προτύπου"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Απόκρυψη γενεθλίων"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Απόκρυψη ταχυδρομικών διευθύνσεων"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Απόκρυψη διευθύνσεων email"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Απόκρυψη τηλεφωνικών αριθμών"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Απόκρυψη ιστοσελίδων (URLs)"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Απόκρυψη διευθύνσεων στιγμιαίων μηνυμάτων"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Απόκρυψη προσαρμοσμένων πεδίων"
+
+#~ msgid "Test"
+#~ msgstr "Δοκιμή"
+
+#~ msgid "Suggestions"
+#~ msgstr "Προτάσεις"
+
+#~ msgid "Ignore"
+#~ msgstr "Παράβλεψη"
+
+#~ msgid "Add to Dictionary"
+#~ msgstr "Προσθήκη στο λεξικό"

@@ -1,0 +1,1824 @@
+# translation of libkdepim.po to Latvian
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008, 2010.
+# Maris Nartiss <maris.kde@gmail.com>, 2008.
+# Viesturs Zariņš <viesturs.zarins@algorego.com>, 2008.
+# Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2010-01-13 21:09+0200\n"
+"Last-Translator: Viesturs Zarins <viesturs.zarins@mii.lu.lv>\n"
+"Language-Team: Latvian <locale@laka.lv>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 1.0\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Atcelt šo darbību."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Pārtrauc..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Savienojums ir šifrēts"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Savienojums nav šifrēts"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Atvērt detalizētu progresa logu"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Rādīt detalizētu progresa logu"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Slēpt detalizētu progresa logu"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Vairāk"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Mazāk"
+
+#~ msgid "Choose..."
+#~ msgstr "Izvēlēties..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Iestatījumi"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Jūs grasāties atjaunot iestatījumus uz noklusētajām vērtībām. Tiks "
+#~ "pazaudēti visi pielāgojumi."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Uzstāda noklusētos iestatījumus"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Atjaunot noklusēto"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "&Pievienot"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< &Noņemt"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Importēt teksta failu"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Vai jūs tiešām vēlaties dzēst '<b>%1</b>'?</qt>"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "Konfigurēt pabeigšans kārtību..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Nesenās adreses"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP serveris %1"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "Meklēt:"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "Search"
+#~ msgstr "Meklēt"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "E-pasta adrese"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Izvēle"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "Noņemt izvēli"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "Ielādē..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Sūtīt pastu uz '%1'"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Konfigurēt pabeigšans kārtību..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Rediģēt pabeigšanas kārtību"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Nesenās adreses"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "E-pasta adrese"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Rediģēt pabeigšanas kārtību"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP serveris %1"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "Pārvietot noteikumu uz augšu"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "Pārvietot noteikumu uz leju"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "Š&odiena"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "Rī&tdiena"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Nākamā &nedēļa"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Nākamais &mēnesis"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Nav datuma"
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard's primary email address is already in your address book; "
+#~| "however, you may save the VCard into a file and import it into the "
+#~| "address book manually."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "VKartes primārā e-pasta adrese jau ir jūsu adrešu grāmatā, bet jūs varat "
+#~ "saglabāt VKarti failā un pašrocīgi importēt adrešu grāmatā."
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard was added to your address book; you can add more information "
+#~| "to this entry by opening the address book."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "VKarte tika pievienota jūsu adrešu grāmatai, vairāk informācijas par to "
+#~ "varat ieraudzīt, atverot adrešu grāmatu."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your address book.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr "<qt>E-pasta adrese <b>%1</b> jau atrodas jūsu adrešu grāmatā.</qt>"
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Apraksts nav pieejams"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "&Adrešu grāmata"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your address book.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr "<qt>E-pasta adrese <b>%1</b> jau atrodas jūsu adrešu grāmatā.</qt>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Andris Maziks"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "viesturs.zarins@mi.lu.lv"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP serveris %1"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Rediģēt...."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove Host"
+#~ msgstr "&Izņemt"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP serveris %1"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "Rediģēt...."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "&Remove Host"
+#~ msgstr "&Izņemt"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Virsraksts"
+
+#~ msgid "Full Name"
+#~ msgstr "Pilns vārds"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-pasts"
+
+#~ msgid "Home Number"
+#~ msgstr "Mājas telefons"
+
+#~ msgid "Work Number"
+#~ msgstr "Darba telefons"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Mobīlais telefons"
+
+#~ msgid "Fax Number"
+#~ msgstr "Fakss"
+
+#~ msgid "Pager"
+#~ msgstr "Peidžers"
+
+#~ msgid "Street"
+#~ msgstr "Iela"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Štats"
+
+#~ msgid "Country"
+#~ msgstr "Valsts"
+
+#~ msgid "City"
+#~ msgstr "Pilsēta"
+
+#~ msgid "Organization"
+#~ msgstr "Organizācija"
+
+#~ msgid "Company"
+#~ msgstr "Firma"
+
+#~ msgid "Department"
+#~ msgstr "Nodaļa"
+
+#~ msgid "Zip Code"
+#~ msgstr "ZIP/Pasta indekss"
+
+#~ msgid "Postal Address"
+#~ msgstr "Pasta adrese"
+
+#~ msgid "Description"
+#~ msgstr "Apraksts"
+
+#~ msgid "User ID"
+#~ msgstr "Lietotāja ID"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-pasts"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Štats"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Virsraksts"
+
+#, fuzzy
+#~| msgid "Import starts at row:"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Sākt importēt no rindas:"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Meklēt adresi direktorijā"
+
+#~ msgid "Search for:"
+#~ msgstr "Meklēt:"
+
+#, fuzzy
+#~| msgid "in"
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "iekš"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Vārds"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-pasts"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Mājas telefons"
+
+#, fuzzy
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Darba telefons"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Meklēt"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekursīva meklēšana"
+
+#~ msgid "Contains"
+#~ msgstr "Satur"
+
+#~ msgid "Starts With"
+#~ msgstr "Sākas ar"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "Ielādē..."
+
+#~ msgid "Select All"
+#~ msgstr "Izvēlēties visu"
+
+#~ msgid "Unselect All"
+#~ msgstr "Noņemt izvēli"
+
+#~ msgid "Add Selected"
+#~ msgstr "Pievienot izvēlētos"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Konfigurēt pabeigšans kārtību..."
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "Kopēt noteikumu"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< &Noņemt"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Rediģēt nesenās adreses"
+
+#, fuzzy
+#~| msgid "Select Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Izvēlieties adrešu grāmatu"
+
+#, fuzzy
+#~| msgid "Select the address book the new contact shall be saved in:"
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Izvēlieties adrešu grāmatu, kurā saglabāt jauno kontaktu:"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Pieejamās lapas"
+
+#~ msgid "Unknown"
+#~ msgstr "Nezināms"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Dalībnieki"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Sākuma laiks"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Ilgums"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Pārsūtīšana pabeigta. %1 jauna vēstule (%2 KB).  Uz servera palicis vēl "
+#~ "%3 KB."
+#~ msgstr[1] ""
+#~ "Pārsūtīšana pabeigta. %1 jaunas vēstules (%2 KB).  Uz servera palicis vēl "
+#~ "%3 KB."
+#~ msgstr[2] ""
+#~ "Pārsūtīšana pabeigta. %1 jaunas vēstules (%2 KB).  Uz servera palicis vēl "
+#~ "%3 KB."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Pārsūtīšana pabeigta. %1 vēstule (%2 KB)."
+#~ msgstr[1] "Pārsūtīšana pabeigta. %1 vēstules (%2 KB)."
+#~ msgstr[2] "Pārsūtīšana pabeigta. %1 vēstules (%2 KB)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Pārsūtīšana pabeigta. %1 jauna vēstule."
+#~ msgstr[1] "Pārsūtīšana pabeigta. %1 jaunas vēstules."
+#~ msgstr[2] "Pārsūtīšana pabeigta. %1 jaunas vēstules."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Pārsūtīšana pabeigta. Nav jaunu vēstuļu."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Konta %4 pārsūtīšana pabeigta. %1 jauna vēstule (%2 KB). Uz servera "
+#~ "palicis vēl %3 KB."
+#~ msgstr[1] ""
+#~ "Konta %4 pārsūtīšana pabeigta. %1 jaunas vēstules (%2 KB). Uz servera "
+#~ "palicis vēl %3 KB."
+#~ msgstr[2] ""
+#~ "Konta %4 pārsūtīšana pabeigta. %1 jaunas vēstules (%2 KB). Uz servera "
+#~ "palicis vēl %3 KB."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Konta %3 pārsūtīšana pabeigta. %1 jauna vēstule (%2 KB)."
+#~ msgstr[1] "Konta %3 pārsūtīšana pabeigta. %1 jaunas vēstules (%2 KB)."
+#~ msgstr[2] "Konta %3 pārsūtīšana pabeigta. %1 jaunas vēstules (%2 KB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Konta %2 pārsūtīšana pabeigta. %1 jauna vēstule."
+#~ msgstr[1] "Konta %2 pārsūtīšana pabeigta. %1 jaunas vēstules."
+#~ msgstr[2] "Konta %2 pārsūtīšana pabeigta. %1 jaunas vēstules."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Konta %1 pārsūtīšana pabeigta. Nav jaunu vēstuļu."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Vārds"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-pasts"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Ielādē un saglabā vēstules..."
+
+#, fuzzy
+#~| msgid "Notify Message"
+#~ msgid "Total Messages"
+#~ msgstr "Paziņojums"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Unread Messages"
+#~ msgstr "Ziņojums"
+
+#~ msgid "Stop"
+#~ msgstr "Apturēt"
+
+#~ msgid "Send SMS"
+#~ msgstr "Sūtīt SMS"
+
+#~ msgid "Message"
+#~ msgstr "Ziņojums"
+
+#~ msgid "Recipient:"
+#~ msgstr "Saņēmējs:"
+
+#~ msgid "Send"
+#~ msgstr "Sūtīt"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Izvēlieties adrešu grāmatu"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Izvēlieties adrešu grāmatu, kurā saglabāt jauno kontaktu:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>E-pasta adree <b>%1</b> tika pievienota jūsu adrešu grāmatai, vairāk "
+#~ "informācijas par šo ierakstu varat pievienot, atverot adrešu grāmatu.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "rītdiena"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "šodiena"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "vakardiena"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "šodiena"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Rādīt dzimšanas dienu"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Rādīt pasta adresi"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Rādīt e-pasta adresi"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Rādīt telefona numurus"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Rādīt tīmekļa lapas (URLus)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Rādīt tūlītējās ziņapmaiņas adreses"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Rādīt papildus laukus"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Mājas lapa"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Tīmekļa dienasgrāmatas padeve"
+
+#~ msgid "Notes"
+#~ msgstr "Piezīmes"
+
+#~ msgid "Profession"
+#~ msgstr "Profesija"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Palīga vārds"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Menedžera vārds"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Partnera vārds"
+
+#~ msgid "Office"
+#~ msgstr "Birojs"
+
+#~ msgid "IM Address"
+#~ msgstr "Ziņapm. adrese"
+
+#~ msgid "Anniversary"
+#~ msgstr "Gadadiena"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Adrešu grāmata</b>: %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Nav iestatīta izpildāmā programma. Lūdzu atveriet iestatījumu dialogu un "
+#~ "norādiet to."
+
+#~ msgid "Call number %1"
+#~ msgstr "Zvanīt uz %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Sūtīt faksu uz %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Parādīt adresi kartē"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Sūtīt SMS uz %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Atvērt URL %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Tērzēt ar %1"
+
+#~ msgid "<group>"
+#~ msgstr "<grupa>"
+
+#~ msgid "Address Selection"
+#~ msgstr "Adreses izvēle"
+
+#~ msgid "To"
+#~ msgstr "Uz"
+
+#~ msgid "CC"
+#~ msgstr "CC"
+
+#~ msgid "BCC"
+#~ msgstr "BCC"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Citas adreses"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Jūsu sarakstā nav nevienas adreses. Vispirms pievienojiet jūsu adrešu "
+#~ "grāmatai kādu adresi un mēģiniet vēlreiz."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Jauns adresātu saraksts"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Lūdzu ievadiet nosaukumu:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Adresātu saraksts ar šādu nosaukumu <b>%1</b> jau pastāv. Lūdzu "
+#~ "izvēlieties citu nosaukumu.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Adresātu saraksti"
+
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Jā"
+
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Nē"
+
+#~ msgid "Organizer"
+#~ msgstr "Organizators"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Is all-day"
+#~ msgstr "Visa diena"
+
+#~ msgid "Has duration"
+#~ msgstr "Ir ilgums"
+
+#~ msgid "Summary"
+#~ msgstr "Kopsavilkums"
+
+#~ msgid "Status"
+#~ msgstr "Statuss"
+
+#~ msgid "Secrecy"
+#~ msgstr "Slepenība"
+
+#~ msgid "Priority"
+#~ msgstr "Prioritāte"
+
+#~ msgid "Location"
+#~ msgstr "Vieta"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorijas"
+
+#~ msgid "Alarms"
+#~ msgstr "Atgādinājumi"
+
+#~ msgid "Resources"
+#~ msgstr "Resursi"
+
+#~ msgid "Relations"
+#~ msgstr "Attiecības"
+
+#~ msgid "Attachments"
+#~ msgstr "Pielikumi"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Izņēmuma datumi"
+
+#~ msgid "Exception Times"
+#~ msgstr "Izņēmuma laiki"
+
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Izveidots"
+
+#~ msgid "Related Uid"
+#~ msgstr "Saistītais Uid"
+
+#~ msgid "Has End Date"
+#~ msgstr "Ir beigu datums"
+
+#~ msgid "End Date"
+#~ msgstr "Beigu datums"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Is sākuma datums"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Ir termiņš"
+
+#~ msgid "Due Date"
+#~ msgstr "Termiņš"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Ir pabeigšanas datums"
+
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Pabeigts"
+
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Pabeigts"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Kategoriju rediģēšana"
+
+#~ msgid "New category"
+#~ msgstr "Jauna kategorija"
+
+#~ msgid "Select Categories"
+#~ msgstr "Izvēlieties kategorijas"
+
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Adrešu grāmatas"
+
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Vārds"
+
+#~ msgctxt "@title:column, home address of a person"
+#~ msgid "Home"
+#~ msgstr "Mājas"
+
+#~ msgctxt "@title:column, home address of a person"
+#~ msgid "Work"
+#~ msgstr "Darba"
+
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Tālruņu numuri"
+
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Vēlamais e-pasts"
+
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Visi e-pasti"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Rāda URL %1"
+
+#~ msgid "Local"
+#~ msgstr "Lokāls"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "Cached IMAP"
+#~ msgstr "Kešots IMAP"
+
+#~ msgid "News"
+#~ msgstr "News"
+
+#~ msgid "None"
+#~ msgstr "Nav"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Maildir mailbox"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "News"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "Atvienots IMAP"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Lokāla mailbox"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Nezināms"
+
+#~ msgid "Text"
+#~ msgstr "Teksts"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Skaitlis"
+
+#~ msgid "Boolean"
+#~ msgstr "Ir/Nav"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datums un laiks"
+
+#~ msgid "Date"
+#~ msgstr "Datums"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Qt dizainera lauku dialogs"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Dizainera faili"
+
+#~ msgid "Import Page"
+#~ msgstr "Importēt lapu"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Brīdinājums:</b>Neizdevās atrast Qt Dizaineri. Iespējams, tas nav "
+#~ "instalēts. Būs iespējams importēt tikai esošus failus.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Izvēlētās lapas priekšapskate"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Šī sadaļa ļauj pievienot savus saskarnes elementus ('<i>Logdaļas</"
+#~ "i>'), lai saglabātu jūsu individuālos laukus %1. Rīkojieties, kā "
+#~ "paskaidrots zemāk:</p><ol><li>Nospiediet '<i>Rediģēt ar Qt Designer</i>'</"
+#~ "li><li>Logā izvēleities  '<i>Logdaļa</i>', un nospiediet  <i>Labi</i></"
+#~ "li><li>Pievienojiet logdaļas formai</li><li>Saglabājiet failu mapē, ko "
+#~ "iesaka Qt Designer</li><li>Aizveriet Qt Designer</li></ol><p>Gadījumā ja "
+#~ "jums jau ir dizainera fails (*.ui), kas atrodas kautkur uz cietā diska, "
+#~ "izvēlieties '<i>Importēt lapu</i>'</p><p><b>Svarīgi:</b> Katras "
+#~ "pievienotās logdaļas nosaukumam ir jāsākas ar '<i>X_</i>'. Tāpēc, ja "
+#~ "vēlaties lauku jūsu vērtībai '<i>X-Foo</i>', logdaļas <i>nosaukumam</i> "
+#~ "jābūt '<i>X_Foo</i>'.</p><p><b>Svarīgi:</b> Logs pielāgoto lauku "
+#~ "rediģēšanai sauksies %2.  Lai mainītu programmas nosaukumu, norādiet to "
+#~ "Qt Designer.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Kā tas strādā?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Dzēst lapu"
+
+#~ msgid "Import Page..."
+#~ msgstr "Importēt lapu..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Rediģēt ar Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Atslēga:"
+
+#~ msgid "Type:"
+#~ msgstr "Tips:"
+
+#~ msgid "Classname:"
+#~ msgstr "Klases nosaukums:"
+
+#~ msgid "Description:"
+#~ msgstr "Apraksts:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Mainīt konfigurācijas vērtību"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Konfigurācijas vednis"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Noteikumi"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Iestatīšanas noteikumi"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Avots"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Mērķis"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Nosacījums"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Izmaiņas"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Konfigurēt izmaiņas"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Darbība"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Opcija"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Vērtība"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Lūdzu pārliecinieties visas ka programmas, ko šis vednis konfigurē ir "
+#~ "aizvērtas, savādāk var pazaudēt vedņa veiktās izmaiņas."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Brīdinājums"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Palaist vedni tagad"
+
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Atklāts konflikts"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "Tika atklāts konflikts. Tas visdrīzāk nozīmē ka kāds ir mainījis to pašu "
+#~ "ierakstu, ko jūs esat izmainījis lokāli.<br/><note>Jums vēlreiz "
+#~ "jāpārbauda pasts, lai saglabātu izmaiņas uz servera.</note>"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Lietot lokālo"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take your local copy of the incidence"
+#~ msgstr "Lietot lokālo ieraksta versiju"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Local\" button to make "
+#~ "sure your local copy is used."
+#~ msgstr ""
+#~ "Tika atklāts konflikts starp ieraksta lokālo kopiju un servera kopiju. "
+#~ "Nospiediet \"Lietot lokālo\", lai nodrošinātu ka tiek lietota lokālā "
+#~ "kopija."
+
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Lietot jauno"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take the server copy of the incidence"
+#~ msgstr "Lietot ieraksta servera kopiju"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take New\" button to use the "
+#~ "server copy, thereby overwriting your local copy"
+#~ msgstr ""
+#~ "Tika atklāts konflikts starp ieraksta lokālo kopiju un servera kopiju. "
+#~ "Nospiediet \"Lietot jauno\", lai lietotu servera kopiju, tādējādi "
+#~ "pārrakstot lokālo."
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Lietot abas"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both copies of the incidence"
+#~ msgstr "Lietot abas ieraksta kopijas"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Both\" button to keep "
+#~ "both the local and the server copies."
+#~ msgstr ""
+#~ "Tika atklāts konflikts starp ieraksta lokālo kopiju un servera kopiju. "
+#~ "Nospiediet \"Lietot abas\", lai paturētu gan lokālo gan servera ierakstu."
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Lokāls ieraksts"
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Lokālā ieraksta kopsavilkums"
+
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Pēdējoreiz mainīts:"
+
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Uzstādīt pēdējoreiz mainīts"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Rādīt detaļas"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Hide/Show incidence details"
+#~ msgstr "Rādīt/Slēpt ieraksta detaļas"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Press this button to toggle the incidence details display."
+#~ msgstr "Nospiediet šo pogu, lai pārslēgtu ieraksta detaļu redzamību."
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Rādīt atšķirības"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show the differences between the two incidences"
+#~ msgstr "Rādīt atšķirības starp abiem ierakstiem"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press the \"Show Differences\" button to see the specific differences "
+#~ "between the incidences which are in conflict."
+#~ msgstr ""
+#~ "Nospiediet \"Rādīt atšķirības\", lai apskatītu konfliktējošās atšķirības."
+
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Sinhronizēšanas iestatījumi"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Sinhronizēšanas iestatījumi"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Sinhronizēšanas iestatījumi"
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Konflikta gadījumā lietot lokālo"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Konflikta gadījumā lietot ieraksta lokālo kopiju"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the local copy."
+#~ msgstr ""
+#~ "Kad atklāts konflikts starp ieraksta lokālo kopiju un servera kopiju, šis "
+#~ "variants liek lietot lokālo kopiju."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Konflikta gadījumā lietot attālināto kopiju"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Ierakstu konflikta gadījumā lietot attālināto kopiju"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the remote "
+#~ "copy."
+#~ msgstr ""
+#~ "Kad atklāts konflikts starp ieraksta lokālo kopiju un servera kopiju, šis "
+#~ "variants liek lietot attālināto kopiju."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Konflikta gadījumā lietot jaunāko"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Konflikta gadījumā lietot jaunāko ieraksta versiju"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the newest "
+#~ "version available."
+#~ msgstr ""
+#~ "Kad atklāts konflikts starp ieraksta lokālo kopiju un servera kopiju, šis "
+#~ "variants liek lietot jaunāko versiju."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Prasīt katram konfliktam"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Prasīt katra ieraksta konfliktam"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to ask the user which "
+#~ "version they want to keep."
+#~ msgstr ""
+#~ "Kad atklāts konflikts starp ieraksta lokālo kopiju un servera kopiju, šis "
+#~ "variants vaicā lietotājam kuru versiju lietot."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Konflikta gadījumā lietot abus"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Konflikta gadījumā lietot abus ierakstus"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to keep both versions of "
+#~ "the incidence."
+#~ msgstr ""
+#~ "Kad atklāts konflikts starp ieraksta lokālo kopiju un servera kopiju, šis "
+#~ "variants liek paturēt abas ieraksta versijas."
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "Pielietot visiem šīs sinhronizācijas konfliktiem"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Apply the preference to all conflicts that may occur during the sync"
+#~ msgstr "Pielietot šo izvēli visiem šīs sinhronizācijas konfliktiem"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press this button to apply the selected preference to all future "
+#~ "conflicts that might occur during this sync."
+#~ msgstr ""
+#~ "Nospiediet šo pogu, lai pielietotu izvēli visiem šīs sinhronizācijas "
+#~ "konfliktiem."
+
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Lokāls notikums"
+
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Lokāls darbs"
+
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Lokāls žurnāls"
+
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Jauns notikums"
+
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Jauns darbs"
+
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Jauns žurnāls"
+
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Slēpt detaļas"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Ieraksta detaļas"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "This area shows the incidence details"
+#~ msgstr "Šis laukums rāda ieraksta detaļas"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Rādīt detaļas..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Atšķirības starp %1 un %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Atšķirības no %1"
+
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Lokālais ieraksts"
+
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Attālinātais ieraksts"
+
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Rādīt detaļas"
+
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Slēpt detaļas"
+
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Ievietot"
+
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Ievietot failu"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "The external editor is still running.<nl>Do you want to stop the editor "
+#~| "or keep it running?</nl><warning>Stopping the editor will cause all your "
+#~| "unsaved changes to be lost.</warning>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The external editor is still running.<nl/>Do you want to stop the editor "
+#~ "or keep it running?<nl/><warning>Stopping the editor will cause all your "
+#~ "unsaved changes to be lost.</warning>"
+#~ msgstr ""
+#~ "Ārējais redaktors joprojām darbojas.<nl>Vai vēlaties to apturēt vai ļaut "
+#~ "darboties?</nl><warning>Apturot redaktoru pazudīs visas jūsu veiktās "
+#~ "izmaiņas.</warning>"
+
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Atvērts ārējs redaktors"
+
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Aizvērt redaktoru"
+
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Atstāt redaktoru atvērtu"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "Vairs nerādīt šo paziņojumu"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Mainīt vērtējumu"
+
+#~ msgid "Display Message"
+#~ msgstr "Parādīt paziņojumu"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Iekrāsot galveni"
+
+#~ msgid "Mark as Read"
+#~ msgstr "Atzīmēt kā izlasītu"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Savākto paziņojumu saraksts</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Savāktie paziņojumi"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Satur apakšvirkni"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Atbilst regulārai izteiksmei"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Atbilst regulārai izteiksmei (reģistrjūtīgs)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Ir precīzi tāds kā"
+
+#~ msgid "Less Than"
+#~ msgstr "Mazāks par"
+
+#~ msgid "Greater Than"
+#~ msgstr "Lielāks par"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Izvēlieties citu noteikuma nosaukumu"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Ši noteikuma nosaukums jau ir aizņemts, lūdzu izvēlieties citu:"
+
+#~ msgid "rule %1"
+#~ msgstr "noteikums %1"
+
+#~ msgid "Not"
+#~ msgstr "Nav"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Invertēt šo nosacījumu"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Norādiet galveni, kurai pārbaudīt šo nosacījumu"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Norādiet atbilstības veidu"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Norādiet nosacījumu"
+
+#~ msgid "Select an action."
+#~ msgstr "Izvēlieties darbību."
+
+#~ msgid "Properties"
+#~ msgstr "Īpašības"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Nosaukums:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Grupas: "
+
+#~ msgid "A&dd Group"
+#~ msgstr "Pie&vienot grupu"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "Noteikums ir de&rīgs:"
+
+#~ msgid "Conditions"
+#~ msgstr "Nosacījumi"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Atbilst &visiem nosacījumiem"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Atbilst &jebkuram nosacījumam"
+
+#~ msgid "Actions"
+#~ msgstr "Darbības"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " diena"
+#~ msgstr[1] " dienas"
+#~ msgstr[2] " dienu"
+
+#~ msgid "New rule"
+#~ msgstr "Jauns noteikums"
+
+#~ msgid "Edit rule"
+#~ msgstr "Rediģēt noteikumu"
+
+#~ msgid "Remove rule"
+#~ msgstr "Noņemt noteikumu"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>visas grupas</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "&Rādīt tikai noteikumus no grupas:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Noteikumu redaktors"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Rediģēt noteikumu"
+
+#~ msgid "Reload &List"
+#~ msgstr "Pār&lādēt sarakstu"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr "Pārvadlīt kuras pasta mapes rādīt mapju skatā"
+
+#~ msgid "S&earch:"
+#~ msgstr "M&eklēt:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Atslēgt &koka skatījumu"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "&Tikai pierakstītās"
+
+#~ msgid "&New only"
+#~ msgstr "Tikai &jaunās"
+
+#~ msgid "Current changes:"
+#~ msgstr "Pašreizējās izmaiņas:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Nosaukums"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Apraksts"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Pierakstīties uz"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Atrakstīties no"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Ielādē... (%1 atbilst)"
+#~ msgstr[1] "Ielādē... (%1 atbilst)"
+#~ msgstr[2] "Ielādē... (%1 atbilst)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (%1 atbilst)"
+#~ msgstr[1] "%2: (%1 atbilst)"
+#~ msgstr[2] "%2: (%1 atbilst)"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Pirms meklēt, nepieciešams izvēlēties LDAP serveri.\n"
+#~ "To var izdarīt izvēlnē Iestatījumi/Konfigurēt KAddressBook."
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Nenosaukts spraudnis"
+
+#~ msgid "&To >>"
+#~ msgstr "&Kam >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&CC >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "&Izvēlētās adreses"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Filtrs uz:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Saglabāt kā a&dresātu sarakstu..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "&Meklēt direktoriju servisā"
+
+#~ msgid "New category entry"
+#~ msgstr "Jauns kategorijas ieraksts"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr ""
+#~ "Šiet rakstiet tekstu, ko vēlaties izmantot kā kategoriju vai "
+#~ "apakškategoriju."
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Pievienot ierakstu kategoriju sarakstam"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr "Nospiediet šo pogu, lai pievienotu ierakstu kategoriju sarakstam."
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr "Pievienot ierakstu kā izvēlētās kategorijas apakškategoriju"
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Nospiediet šo pogu, lai pievienotu ierakstu kā apakškategoriju šobrīd "
+#~ "izvēlētajai kategorijai."
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Pievienot apa&kškategoriju"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "Izņemt izvēlēto kategoriju"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr "Nospiediet šo pogu, lai izvēlēto kategoriju izņemtu no saraksta."
+
+#~ msgid "Category list"
+#~ msgstr "Kategoriju saraksts"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Šis ir visu pieejamo kategoriju saraksts. Šeit varat izveidot "
+#~ "apakškategorijas, cik vien vēlaties."
+
+#~ msgid "Default Category"
+#~ msgstr "Noklusētā kategorija"
+
+#~ msgid "Category"
+#~ msgstr "Kategorija"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&Tīrīt izvēli"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "R&ediģēt kategorijas..."
+
+#~ msgid "View Columns"
+#~ msgstr "Skatīt kolonas"
+
+#~ msgid "Local entry"
+#~ msgstr "Lokālais ieraksts"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Jaunais (attālinātais) ieraksts"
+
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "Joprojām darbojas arējais redaktors.\n"
+#~ "Aizvērt to vai atstāt atvērtu?"
+
+#~ msgid "Floating"
+#~ msgstr "Peldošs"
+
+#~ msgid "Plain"
+#~ msgstr "Vienkāršs"
+
+#~ msgid "Unquoted"
+#~ msgstr "Bez pēdiņām"
+
+#~ msgid "Bracketed"
+#~ msgstr "Kvadrātiekavās"
+
+#~ msgid "Undefined"
+#~ msgstr "Nedefinēts"
+
+#~ msgid "File to import:"
+#~ msgstr "Importējamais fails:"
+
+#~ msgid "Separator:"
+#~ msgstr "Atdalītājs:"
+
+#~ msgid "Tab"
+#~ msgstr "Tabulācija"
+
+#~ msgid "Space"
+#~ msgstr "Atstarpe"
+
+#~ msgid "Header"
+#~ msgstr "Galvene"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Piešķirt izvēlētajai kolonai"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Noņemt piešķīrumu no izvēlētās kolonas"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Piešķirt ar sagatavi..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Saglabāt aktīvo sagatavi"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Ielādes progress"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Lūdzu uzgaidiet kamēr ielādē failu."
+
+#~ msgid "Template Selection"
+#~ msgstr "Sagataves izvēle"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Lūdzu izvēlieties sagatavi, kas atbilst CSV failam:"
+
+#~ msgid "Importing Progress"
+#~ msgstr "Importēšanas progress"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Lūdzu uzgaidiet kamēr importē datus."
+
+#~ msgid "Template Name"
+#~ msgstr "Sagataves nosaukums"
+
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Lūdzu ievadiet sagataves nosaukumu:"
+
+#~ msgid "Suggestions"
+#~ msgstr "Ieteikumi"
+
+#~ msgid "Ignore"
+#~ msgstr "Ignorēt"
+
+#~ msgid "Add to Dictionary"
+#~ msgstr "Pievienot vārdnīcai"
+
+#~ msgid "Test"
+#~ msgstr "Pārbaudīt"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Slēpt dzimšanas dienu"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Slēpt pasta adresi"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Slēpt e-pasta adresi"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Slēpt tīmekļa lapas (URLus)"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Slēpt tūlītējās ziņapmaiņas adreses"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Slēpt papildus laukus"

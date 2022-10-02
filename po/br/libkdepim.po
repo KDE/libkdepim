@@ -1,0 +1,1449 @@
+# KDE breton translation
+# Thierry Vignaud <tvignaud@mandriva.com>, 2004-2005
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2005-03-04 00:29+0100\n"
+"Last-Translator: Thierry Vignaud <tvignaud@mandriva.com>\n"
+"Language-Team: Breton <LL@li.org>\n"
+"Language: br\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr ""
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Emaon o nullañ ..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Enrineget eo ar gevreadenn"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "N'eo ket enrineget ar gevreadenn"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Muioc'h"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Nebeutoc'h"
+
+#~ msgid "Choose..."
+#~ msgstr "Dibabit ..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Dibaboù"
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "O lakaat an dibarzhoù dre ziouer"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "&Ouzhpennañ"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< &Lemel"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Enporzhañ ur restr skrid"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ha fellout a ra deoc'h da vat lemel '<b>%1</b>' ?</qt>"
+
+#, fuzzy
+#~ msgid "Configure Completion..."
+#~ msgstr "Skoazeller evit ar gefluniadur"
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Chomlec'hioù nevezig"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "Servijer LDAP %1"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search email:"
+#~ msgstr "Klask :"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search"
+#~ msgstr "Klask :"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Chomlec'h postel"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Diuzadenn"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Unselect"
+#~ msgstr "Diuzadenn"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "Emaon o kargañ ..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Kas ar postel da '%1'"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Skoazeller evit ar gefluniadur"
+
+#, fuzzy
+#~ msgid "Completion Order"
+#~ msgstr "Skoazeller evit ar gefluniadur"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Chomlec'hioù nevezig"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Chomlec'h postel"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Skoazeller evit ar gefluniadur"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Servijer LDAP %1"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "Pignit ar reolenn"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "Diskennit ar reolenn"
+
+#, fuzzy
+#~| msgid "&Today"
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Hiziv"
+
+#, fuzzy
+#~| msgid "To&morrow"
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "Wa&rc'hoazh"
+
+#, fuzzy
+#~| msgid "Next &Week"
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "&Sizhun a heul"
+
+#, fuzzy
+#~| msgid "Next M&onth"
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "M&iz a heul"
+
+#, fuzzy
+#~| msgid "No Date"
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Deiziad ebet"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "<qt>Ar chomlec'h postel <b>%1</b> a zo c'hoazh en ho c'harned "
+#~ "chomlec'hioù.</qt>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "<qt>Ar chomlec'h postel <b>%1</b> a zo c'hoazh en ho c'harned "
+#~ "chomlec'hioù.</qt>"
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "N'eus deskrivadur ebet da gaout"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "&Karned chomlec'hioù"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<qt>Ar chomlec'h postel <b>%1</b> a zo c'hoazh en ho c'harned "
+#~ "chomlec'hioù.</qt>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Thierry Vignaud, Jañ-Mai Drapier"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "tvignaud@mandriva.com, jdrapier@club-internet.fr"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Servijer LDAP %1"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Aozañ ..."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove Host"
+#~ msgstr "&Lemel"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Servers"
+#~ msgstr "Servijer LDAP %1"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "Aozañ ..."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "&Remove Host"
+#~ msgstr "&Lemel"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Full Name"
+#~ msgstr "Anv"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Lizher elektronek"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Home Number"
+#~ msgstr "Kuzhat an niverennoù pellgomz"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Work Number"
+#~ msgstr "Kuzhat an niverennoù pellgomz"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Mobile Number"
+#~ msgstr "Kuzhat an niverennoù pellgomz"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Fax Number"
+#~ msgstr "Kuzhat an niverennoù pellgomz"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Stad"
+
+#, fuzzy
+#~| msgid "Organizer"
+#~ msgid "Organization"
+#~ msgstr "Deiziater"
+
+#~ msgid "Department"
+#~ msgstr "Kevrenn"
+
+#, fuzzy
+#~| msgid "Show Postal Addresses"
+#~ msgid "Postal Address"
+#~ msgstr "Diskouez ar chomlec'hioù postel"
+
+#~ msgid "Description"
+#~ msgstr "Deskrivadur"
+
+#, fuzzy
+#~| msgid "UID"
+#~ msgid "User ID"
+#~ msgstr "UID"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Lizher elektronek"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Stad"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search for:"
+#~ msgstr "Klask :"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Anv"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Lizher elektronek"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Kuzhat an niverennoù pellgomz"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Kuzhat an niverennoù pellgomz"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Klask :"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgid "Starts With"
+#~ msgstr "Amzer an deroù"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "Emaon o kargañ ..."
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Select All"
+#~ msgstr "Diuzadenn"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Unselect All"
+#~ msgstr "Diuzadenn"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "Add Selected"
+#~ msgstr "Diuzadenn ar chomlec'h"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Skoazeller evit ar gefluniadur"
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "Eilañ ar reolenn"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< &Lemel"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Aozañ ar chomlec'hoù red"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "&Karned chomlec'hioù"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Pajennoù da gaout"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Amzer an deroù"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Pad"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Anv"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Lizher elektronek"
+
+#, fuzzy
+#~ msgid "Total Messages"
+#~ msgstr "Diskouez ar c'hemennad"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Unread Messages"
+#~ msgstr "Kemennad"
+
+#~ msgid "Send SMS"
+#~ msgstr "Kas ur SMS"
+
+#~ msgid "Message"
+#~ msgstr "Kemennad"
+
+#~ msgid "Recipient:"
+#~ msgstr "Degemerer :"
+
+#~ msgid "Send"
+#~ msgstr "Kas"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgid "Select Address Book"
+#~ msgstr "&Karned chomlec'hioù"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "warc'hoazh"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "hiziv"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "dec'h"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "hiziv"
+
+#~ msgid "To"
+#~ msgstr "Da"
+
+#~ msgid "CC"
+#~ msgstr "CC"
+
+#~ msgid "BCC"
+#~ msgstr "BCC"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Roit un anv evit ar patrom :"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Diuzadenn ar chomlec'h"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Da >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&CC >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&BCC >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Lemel"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Enrollañ evel ur roll &ingaladur ..."
+
+#~ msgid "Address Selection"
+#~ msgstr "Diuzadenn ar chomlec'h"
+
+#~ msgid "&To >>"
+#~ msgstr "&Da >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&CC >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "&Chomelec'hoù diuzet"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Enrollañ evel ur roll &ingaladur ..."
+
+#~ msgid "Show Birthday"
+#~ msgstr "Diskouez an deiz-ha-bloaz"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Diskouez ar chomlec'hioù postel"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Kuzhat ar postelioù"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Diskouez an niverennoù pellgomz"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Diskouez ar pajennoù gwiad (URLoù)"
+
+#, fuzzy
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Diskouez ar chomlec'hioù postel"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Diskouez an tachennoù diouzhoc'h"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Pajenn Er-Gêr"
+
+#~ msgid "Notes"
+#~ msgstr "Notennoù"
+
+#~ msgid "Profession"
+#~ msgstr "Labour"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Anv ar skoazeller"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Anv ar merour"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Anv ar c'henc'hoarier"
+
+#~ msgid "Office"
+#~ msgstr "Burev"
+
+#~ msgid "IM Address"
+#~ msgstr "Chomlec'h IM"
+
+#~ msgid "Anniversary"
+#~ msgstr "Deiz ha bloaz"
+
+#, fuzzy
+#~| msgid "Address book:"
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "Karned chomlec'hioù :"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Kas ar faks da %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Diskouez ar chomlec'h war ar gartenn"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Kas ur SMS da %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Digeriñ an URL %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Flapañ gant %1"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "&Karned chomlec'hioù"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Anv"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Anv"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Pajenn Er-Gêr"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Kuzhat an niverennoù pellgomz"
+
+#~ msgid "<group>"
+#~ msgstr "<strollad>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Chomlec'hoù all"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Roll ingaladur nevez"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Skrivit anv an arveriad mar plij :"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Rolloù ingaladur"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "Enrollañ en ur restr"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Enrollañ en ur restr"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Aozer reolennoù"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Aozer reolennoù"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Aozañ ar rummoù"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Rumm"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Rumm"
+
+#~ msgid "Select Categories"
+#~ msgstr "Dibabit ar rummoù"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Emaon o tiskouez an URL %1"
+
+#~ msgid "Text"
+#~ msgstr "Skrid"
+
+#~ msgid "Date & Time"
+#~ msgstr "Deiziad hag eur"
+
+#~ msgid "Date"
+#~ msgstr "Deiziad"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Restroù Designer"
+
+#~ msgid "Import Page"
+#~ msgstr "Enporzh ar bajenn"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Rakgwel ar bajenn dibabet"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Penaos 'vez labourat an dra-se ?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Lemel ur bajenn"
+
+#~ msgid "Import Page..."
+#~ msgstr "Enporzh ar bajenn ..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Aozañ gant Qt Designer ..."
+
+#~ msgid "Key:"
+#~ msgstr "Alc'hwez :"
+
+#~ msgid "Type:"
+#~ msgstr "Rizh :"
+
+#~ msgid "Description:"
+#~ msgstr "Deskrivadur :"
+
+#, fuzzy
+#~| msgid "Configuration Wizard"
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Skoazeller evit ar gefluniadur"
+
+#, fuzzy
+#~| msgid "Rules"
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Reolennoù"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Reolennoù"
+
+#, fuzzy
+#~| msgid "Source"
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Tarzh"
+
+#, fuzzy
+#~| msgid "Target"
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Gwenn"
+
+#, fuzzy
+#~| msgid "Changes"
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Kemmoù"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Kemmoù"
+
+#, fuzzy
+#~| msgid "Action"
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Gwezhiad"
+
+#, fuzzy
+#~| msgid "Option"
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Dibarzh"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Gwerzh"
+
+#, fuzzy
+#~| msgid "Warning"
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Diwallit"
+
+#, fuzzy
+#~| msgid "Run Wizard Now"
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Seveniñ ar skoazeller bremañ"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Diuzadenn"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Pad"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "hiziv"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Lec'hiadur"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Diskouez an deiz-ha-bloaz"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Lugent dianav"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "Rumm nevez"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "Rummoù"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgid "Default Category"
+#~ msgstr "Dre ziouer"
+
+#~ msgid "Category"
+#~ msgstr "Rumm"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&Goullonderiñ an diuzadenn"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&Aozañ ar rummoù ..."
+
+#, fuzzy
+#~| msgid "Yes"
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Ya"
+
+#, fuzzy
+#~| msgid "No"
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "N'eo ket"
+
+#~ msgid "Organizer"
+#~ msgstr "Deiziater"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Summary"
+#~ msgstr "Diverrañ"
+
+#~ msgid "Status"
+#~ msgstr "Stad"
+
+#~ msgid "Priority"
+#~ msgstr "Renk"
+
+#~ msgid "Location"
+#~ msgstr "Lec'hiadur"
+
+#~ msgid "Categories"
+#~ msgstr "Rummoù"
+
+#~ msgid "Alarms"
+#~ msgstr "Dihunerioù"
+
+#~ msgid "Resources"
+#~ msgstr "Danvezioù"
+
+#~ msgid "Attachments"
+#~ msgstr "Stagadennoù"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Krouet"
+
+#~ msgid "End Date"
+#~ msgstr "Deiziad ar fin"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Echu"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Echuet"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgid "Local"
+#~ msgstr "Bouetadur lec'hel"
+
+#, fuzzy
+#~| msgid "IMAP"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "News"
+#~ msgstr "Notennoù"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "Notennoù"
+
+#, fuzzy
+#~| msgid "IMAP"
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Notennoù"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "&Ne ziskouezit ket ar c'hemennad-mañ adarre"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Lakaat ar merk"
+
+#~ msgid "Display Message"
+#~ msgstr "Diskouez ar c'hemennad"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Livañ ar reollin"
+
+#, fuzzy
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "Merkañ evel lenn"
+
+#~ msgid "Less Than"
+#~ msgstr "Nebeutoc'h evit"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Dibab un anv all a reolenn"
+
+#~ msgid "rule %1"
+#~ msgstr "reolenn %1"
+
+#~ msgid "Not"
+#~ msgstr "N'eo ket"
+
+#~ msgid "Properties"
+#~ msgstr "Perzhioù"
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Anv :"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Strolladoù :"
+
+#~ msgid "A&dd Group"
+#~ msgstr "O&uzhpennañ ur strollad"
+
+#~ msgid "Actions"
+#~ msgstr "Oberoù"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " deizioù"
+
+#~ msgid "New rule"
+#~ msgstr "Reolenn nevez"
+
+#~ msgid "Edit rule"
+#~ msgstr "Aozañ ar reolenn"
+
+#~ msgid "Remove rule"
+#~ msgstr "Dilemel ar reolenn"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Aozer reolennoù"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Aozañ ar reolenn"
+
+#~ msgid "Reload &List"
+#~ msgstr "Adkargañ ar &roll"
+
+#~ msgid "S&earch:"
+#~ msgstr "K&aslk :"
+
+#~ msgid "Current changes:"
+#~ msgstr "Kemmoù red :"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Anv"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Deskrivadur"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Koumanatiñ ouzh"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Digoumanatiñ eus"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Bouetadur lec'hel"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Bouetadur lec'hel"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Kemm diwezhañ :"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Kemm diwezhañ :"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Diskouez ar munudoù"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Dibaboù"
+
+#, fuzzy
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Dibaboù"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Dibaboù"
+
+#, fuzzy
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Dibaboù"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Bouetadur lec'hel"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Bouetadur lec'hel"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Deizlevr nevez"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Tra d'ober nevez"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Deizlevr nevez"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Kuzhat ar munudoù"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Kuzhat ar munudoù"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Diskouez ar munudoù ..."
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Dibaboù"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Bouetadur lec'hel"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Diskouez ar munudoù"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Kuzhat ar munudoù"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Anv"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "Floating"
+#~ msgstr "Lec'hiadur"
+
+#~ msgid "Plain"
+#~ msgstr "Leun"
+
+#~ msgid "Undefined"
+#~ msgstr "Didermenet"
+
+#~ msgid "File to import:"
+#~ msgstr "Restr da enporzh :"
+
+#~ msgid "Separator:"
+#~ msgstr "Troc'h :"
+
+#~ msgid "Tab"
+#~ msgstr "Blavennig"
+
+#~ msgid "Space"
+#~ msgstr "Egor"
+
+#~ msgid "Header"
+#~ msgstr "Reollin"
+
+#~ msgid "Save Current Template"
+#~ msgstr "Enrollañ ar patrom red"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Gortozit en ur kargañ mar plij."
+
+#~ msgid "Template Selection"
+#~ msgstr "Diuzadenn ar patrom"
+
+#~ msgid "Template Name"
+#~ msgstr "emplate.*ame"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Kuzhat an deiz-ha-bloaz"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Kuzhat ar chomlec'h postel"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Kuzhat ar chomlec'hoù postel"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Kuzhat an niverennoù pellgomz"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Kuzhat ar pajennoù gwiad (URLoù)"
+
+#, fuzzy
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Kuzhat ar chomlec'h postel"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Kuzhat an tachennoù diouzhoc'h"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "Skrid"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Suggestions"
+#~ msgstr "Diuzadenn"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "Skrid"
+
+#~ msgid "Standard"
+#~ msgstr "Reoliek"
+
+#~ msgid "Error"
+#~ msgstr "Fazi"
+
+#~ msgid "Cc"
+#~ msgstr "Cc"
+
+#~ msgid "Bcc"
+#~ msgstr "Bcc"
+
+#~ msgid "All"
+#~ msgstr "Holl"
+
+#~ msgid "Open"
+#~ msgstr "Digeriñ"
+
+#~ msgid "<all groups>"
+#~ msgstr "<an holl strolladoù>"
+
+#~ msgid "%1 (Default)"
+#~ msgstr "%1 (dre ziouer)"
+
+#~ msgid "Unnamed"
+#~ msgstr "Anv ebet"
+
+#~ msgid "File I/O Error"
+#~ msgstr "Fazi E/D war ur restr"
+
+#~ msgid ""
+#~ "The specified file does not exist:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ar restr lavaret n'eus ket anezhañ :\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "This is a folder and not a file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Setu a renkell ha n'eo ket ur restr :\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "You do not have read permissions to the file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "N'oc'h ket aotreet da lenn ar restr :\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not read file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ne m'eus ket gallet lenn ar restr:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ne m'eus ket gallet digeriñ ar restr :\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while reading file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Fazi en ur lenn ar restr :\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "File %1 exists.\n"
+#~ "Do you want to replace it?"
+#~ msgstr ""
+#~ "Bez' ez eus ar restr %1 endeo.\n"
+#~ "Ha fellout a ra deoc'h e erlec'hiañ ?"
+
+#~ msgid "Save to File"
+#~ msgstr "Enrollañ en ur restr"
+
+#~ msgid "&Replace"
+#~ msgstr "&Erlec'hiañ"
+
+#~ msgid ""
+#~ "Could not write to file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ne m'eus ket gallet skrivañ ar restr :\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file for writing:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "N'hellan ket digeriñ ar restr evit skrivañ :\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while writing file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Fazi en ur skrivañ ar restr :\n"
+#~ "%1"
+
+#~ msgid "%1 does not exist"
+#~ msgstr "N'eo ket endeo %1"
+
+#~ msgctxt "clear widgets"
+#~ msgid "Clear"
+#~ msgstr "Goullonderiñ"
+
+#~ msgid "is not in address book"
+#~ msgstr "n'eo ket er c'harned chomlec'hioù"
+
+#~ msgid "Select Region of Image"
+#~ msgstr "Dibabit gorread ar skeudenn"

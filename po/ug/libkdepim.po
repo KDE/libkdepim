@@ -1,0 +1,434 @@
+# Uyghur translation for libkdepim.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sahran <sahran.ug@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2013-09-08 07:05+0900\n"
+"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "بۇ مەشغۇلاتنى ئەمەلدىن قالدۇرىدۇ."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "توختىتىلىۋاتىدۇ..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "تەپسىلىي جەريان كۆزنىكىنى ئاچىدۇ"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "تەپسىلىي جەريان كۆزنىكىنى كۆرسەت"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "تەپسىلىي جەريان كۆزنىكىنى يوشۇر"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "تېخىمۇ كۆپ"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "ئازراق"
+
+#~ msgid "Choose..."
+#~ msgstr "تاللا…"
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "مايىللىق"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "بارلىق تەڭشەكنى كۆڭۈلدىكى قىممەتكە توغرىلىماقچى بولۇۋاتىسىز. بارلىق "
+#~ "ئۆزگەرتىشلەر يوق بولىدۇ."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "كۆڭۈلدىكى مايىللىقنى بەلگىلەش"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "كۆڭۈلدىكىگە قايتۇر"
+
+#, fuzzy
+#~| msgid "&Add"
+#~ msgid "Add"
+#~ msgstr "قوش(&A)"
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove"
+#~ msgstr "چىقىرىۋەت(&R)"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "تولۇقلاش تەرتىپىنى سەپلەش"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Select Address Book"
+#~ msgid "Recent Addresses"
+#~ msgstr "ئادرېس دەپتىرى تاللاش"
+
+#, fuzzy
+#~| msgid "LDAP Servers"
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP مۇلازىمېتىرلىرى"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "ئىزدە:"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "ئىزدە(&S)"
+
+#, fuzzy
+#~| msgid "Postal Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "پوچتا ئادرېسى"
+
+#, fuzzy
+#~| msgid "Select All"
+#~ msgid "&Select"
+#~ msgstr "ھەممىنى تاللا"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "ھەممىنى تاللىما"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search in result..."
+#~ msgstr "ئىزدە(&S)"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "تولۇقلاش تەرتىپىنى سەپلەش"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Completion Order"
+#~ msgstr "تولۇقلاش تەرتىپىنى سەپلەش"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Select Address Book"
+#~ msgid "Recent Address"
+#~ msgstr "ئادرېس دەپتىرى تاللاش"
+
+#, fuzzy
+#~| msgid "Postal Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "پوچتا ئادرېسى"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "تولۇقلاش تەرتىپىنى سەپلەش"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "بۈگۈن(&T)"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "ئەتە(&M)"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "كېيىنكى ھەپتە(&W)"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "كېيىنكى ئاي(&O)"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "چېسلا يوق"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Select Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "ئادرېس دەپتىرى تاللاش"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "ئالاقەداشنى ساقلىغىلى بولمىدى: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "ئالاقەداشنى ساقلاش مەغلۇپ بولدى"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "ماشىنا قوش"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP مۇلازىمېتىر تەڭشىكى"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "ماشىنا قوش"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP مۇلازىمېتىرلىرى"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "ماۋزۇ"
+
+#~ msgid "Full Name"
+#~ msgstr "تولۇق ئاتى"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "ئېلخەت"
+
+#~ msgid "Home Number"
+#~ msgstr "ئوي نومۇرى"
+
+#~ msgid "Work Number"
+#~ msgstr "ئىش تېلېفونى:"
+
+#~ msgid "Fax Number"
+#~ msgstr "فاكىس نومۇرى"
+
+#~ msgid "Pager"
+#~ msgstr "چاقىرغۇ"
+
+#~ msgid "Street"
+#~ msgstr "كوچا"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "ھالەت"
+
+#~ msgid "Country"
+#~ msgstr "دۆلەت"
+
+#~ msgid "City"
+#~ msgstr "شەھەر"
+
+#~ msgid "Organization"
+#~ msgstr "ئورگان"
+
+#~ msgid "Company"
+#~ msgstr "شىركەت"
+
+#~ msgid "Department"
+#~ msgstr "تارماق"
+
+#~ msgid "Postal Address"
+#~ msgstr "پوچتا ئادرېسى"
+
+#~ msgid "Description"
+#~ msgstr "چۈشەندۈرۈش"
+
+#~ msgid "User ID"
+#~ msgstr "ئىشلەتكۈچى ID"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "ئېلخەت"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "ھالەت"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "ماۋزۇ"
+
+#~ msgid "Search for:"
+#~ msgstr "ئىزدە:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "دىيۇيم"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "ئاتى"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "ئېلخەت"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "ئوي نومۇرى"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "ئىش تېلېفونى:"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "ئىزدە(&S)"
+
+#~ msgid "Recursive search"
+#~ msgstr "قايتىلانما ئىزدەش"
+
+#~ msgid "Contains"
+#~ msgstr "ئۆز ئىچىگە ئالغان"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Searching..."
+#~ msgstr "ئىزدە(&S)"
+
+#~ msgid "Select All"
+#~ msgstr "ھەممىنى تاللا"
+
+#~ msgid "Unselect All"
+#~ msgstr "ھەممىنى تاللىما"
+
+#~ msgid "Add Selected"
+#~ msgstr "تاللانغاننى قوش"
+
+#~ msgid "&Remove"
+#~ msgstr "چىقىرىۋەت(&R)"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "چۈشەندۈرۈش"
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "ئاتى"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "ئېلخەت"
+
+#~ msgid "Unread Messages"
+#~ msgstr "ئوقۇلمىغان ئۇچۇرلار"
+
+#~ msgid "Quota"
+#~ msgstr "نورما"
+
+#~ msgid "Storage Size"
+#~ msgstr "ساقلىغۇچ چوڭلۇقى"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "چوڭلۇقى"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "جەمئىي"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "ئوقۇلمىغان"
+
+#~ msgid "Stop"
+#~ msgstr "توختا"
+
+#~ msgid "&Configure"
+#~ msgstr "سەپلە(&C)"
+
+#~ msgid "Send SMS"
+#~ msgstr "SMS ئەۋەتىش"
+
+#~ msgid "Message"
+#~ msgstr "ئۇچۇر"
+
+#~ msgid "Recipient:"
+#~ msgstr "تاپشۇرۇۋالغۇچى:"
+
+#~ msgid "Send"
+#~ msgstr "ئەۋەتىش"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "يېڭى ئالاقەدەش ساقلىنىدىغان ئادرېس دەپتىرىنى تاللاڭ:"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "ئەتە"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "بۈگۈن"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "تۈنۈگۈن"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "چېسلا %1 دىن بۇرۇن بولسا بولمايدۇ"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "بۈگۈن"

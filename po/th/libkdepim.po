@@ -1,0 +1,1877 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2010-02-26 16:12+0700\n"
+"Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.0\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "ยกเลิกปฏิบัติการนี้"
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "กำลังยกเลิก..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "การเชื่อมต่อมีการเข้ารหัสข้อมูล"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "การเชื่อมต่อไม่มีการเข้ารหัสข้อมูล"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "เปิดกล่องแสดงรายละเอียดความคืบหน้า"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "แสดงกล่องแสดงรายละเอียดความคืบหน้า"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "ซ่อนกล่องแสดงรายละเอียดความคืบหน้า"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "ตัวเลือกเพิ่มเติม"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "ตัวเลือกน้อย"
+
+#~ msgid "Choose..."
+#~ msgstr "เลือก..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "ปรับแต่ง"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "คุณกำลังจะตั้งค่าการปรับแต่งทั้งหมดกลับเป็นค่าปริยายของมัน "
+#~ "และคุณจะเสียค่าการแก้ไขด้วยตนเองทั้งหมด"
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "ตั้งค่าการปรับแต่งปริยาย"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "ปรับใช้ค่าปริยาย"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "เ&พิ่ม"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< เ&อาออก"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "นำเข้าแฟ้มข้อความ"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>คุณต้องการจะลบ '<b>%1</b>' จริงหรือไม่ ?</qt>"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "ปรับแต่งการเติมคำให้สมบูรณ์..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "ที่อยู่ล่าสุด"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "เซิร์ฟเวอร์ LDAP %1"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "ค้นหา:"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "Search"
+#~ msgstr "ค้นหา"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "ที่อยู่อีเมล"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "การเลือก"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "ไม่เลือกทั้งหมด"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "กำลังเรียกใช้..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "ส่งอีเมลไปยัง '%1'"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "ปรับแต่งการเติมคำให้สมบูรณ์..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "แก้ไขการเติมคำให้สมบูรณ์"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "ที่อยู่ล่าสุด"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "ที่อยู่อีเมล"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "แก้ไขการเติมคำให้สมบูรณ์"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "เซิร์ฟเวอร์ LDAP %1"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "เลื่อนกฏขึ้น"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "เลื่อนกฏลง"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "วันนี้"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "วันพรุ่งนี้"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "สัปดาห์หน้า"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "เดือนหน้า"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "ไม่มีวันที่"
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard's primary email address is already in your addressbook; "
+#~| "however, you may save the VCard into a file and import it into the "
+#~| "addressbook manually."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "ที่อยู่อีเมลหลักของนามบัตรเสมือนมีอยู่ในสมุดที่อยู่ของคุณอยู่แล้ว อย่างไรก็ตาม "
+#~ "คุณอาจจะบันทึกนามบัตรเสมือนไปยังแฟ้มและส่งออกมันไปยังสมุดที่อยู่ด้วยตนเองก็ได้"
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard was added to your addressbook; you can add more information to "
+#~| "this entry by opening the addressbook."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "นามบัตรเสมือนถูกเพิ่มไว้ในสมุดที่อยู่ของคุณแล้ว คุณสามารถเพิ่มข้อมูลไปยังรายการนี้ได้ "
+#~ "โดยการเปิดในสมุดที่อยู่"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr "<qt>ที่อยู่อีเมล <b>%1</b> นี้ มีอยู่ในสมุดที่อยู่ของคุณแล้ว</qt>"
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "ไม่มีข้อมูลรายละเอียด"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "ส&มุดที่อยู่"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr "<qt>ที่อยู่อีเมล <b>%1</b> นี้ มีอยู่ในสมุดที่อยู่ของคุณแล้ว</qt>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "ถนอมทรัพย์ นพบูรณ์"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "donga.nb@gmail.com"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Server Settings"
+#~ msgstr "เซิร์ฟเวอร์ LDAP %1"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "สงวนลิขสิทธิ์ (c), 2004 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "แก้ไข..."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove Host"
+#~ msgstr "เ&อาออก"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Servers"
+#~ msgstr "เซิร์ฟเวอร์ LDAP %1"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "แก้ไข..."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "&Remove Host"
+#~ msgstr "เ&อาออก"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "ชื่อ"
+
+#~ msgid "Full Name"
+#~ msgstr "ชื่อเต็ม"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "อีเมล"
+
+#~ msgid "Home Number"
+#~ msgstr "หมายเลขโทรศัพท์ที่บ้าน"
+
+#~ msgid "Work Number"
+#~ msgstr "หมายเลขโทรศัพท์ที่ทำงาน"
+
+#~ msgid "Mobile Number"
+#~ msgstr "หมายเลขโทรศัพท์เคลื่อนที่"
+
+#~ msgid "Fax Number"
+#~ msgstr "หมายเลขโทรสาร"
+
+#~ msgid "Pager"
+#~ msgstr "หมายเลขเพจเจอร์"
+
+#~ msgid "Street"
+#~ msgstr "ถนน"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "รัฐ"
+
+#~ msgid "Country"
+#~ msgstr "ประเทศ"
+
+#~ msgid "City"
+#~ msgstr "เมือง"
+
+#~ msgid "Organization"
+#~ msgstr "องค์กร"
+
+#~ msgid "Company"
+#~ msgstr "บริษัท"
+
+#~ msgid "Department"
+#~ msgstr "แผนก"
+
+#~ msgid "Zip Code"
+#~ msgstr "รหัสไปรษณีย์"
+
+#~ msgid "Postal Address"
+#~ msgstr "ที่อยู่ทางไปรษณีย์"
+
+#~ msgid "Description"
+#~ msgstr "คำอธิบาย"
+
+#~ msgid "User ID"
+#~ msgstr "หมายเลขผู้ใช้"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "อีเมล"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "รัฐ"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "ชื่อ"
+
+#, fuzzy
+#~| msgid "Import starts at row:"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "นำเข้าสถานะเป็นบรรทัด:"
+
+#~ msgid "Search for:"
+#~ msgstr "ค้นหา:"
+
+#, fuzzy
+#~| msgid "in"
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "ใน"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "อีเมล"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "หมายเลขโทรศัพท์ที่บ้าน"
+
+#, fuzzy
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "หมายเลขโทรศัพท์ที่ทำงาน"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "ค้นหา"
+
+#~ msgid "Contains"
+#~ msgstr "มีคำว่า"
+
+#~ msgid "Starts With"
+#~ msgstr "ขึ้นต้นด้วย"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "กำลังเรียกใช้..."
+
+#~ msgid "Select All"
+#~ msgstr "เลือกทั้งหมด"
+
+#~ msgid "Unselect All"
+#~ msgstr "ไม่เลือกทั้งหมด"
+
+#~ msgid "Add Selected"
+#~ msgstr "เพิ่มที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "ปรับแต่งการเติมคำให้สมบูรณ์..."
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "คัดลอกกฏ"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< เ&อาออก"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "แก้ไขที่อยู่ล่าสุด"
+
+#, fuzzy
+#~| msgid "Select Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "เลือกสมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "หน้าออกแบบที่มีอยู่"
+
+#, fuzzy
+#~| msgctxt "@item unknown mail account"
+#~| msgid "Unknown"
+#~ msgid "Unknown"
+#~ msgstr "ไม่ทราบ"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "ผู้เข้าร่วม"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "เวลาเริ่ม"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "ช่วงเวลา"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission complete. %1 new message in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~| msgid_plural ""
+#~| "Transmission complete. %1 new messages in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "การส่งถ่ายข้อมูลเสร็จสมบูรณ์แล้ว มีจดหมายใหม่ %1 ฉบับ ขนาด %2 กิโลไบต์ (คงเหลืออีก %3 "
+#~ "กิโลไบต์บนเครื่องเซิร์ฟเวอร์)"
+
+#, fuzzy
+#~| msgid "Transmission complete. %1 message in %2 KB."
+#~| msgid_plural "Transmission complete. %1 messages in %2 KB."
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "การส่งถ่ายข้อมูลเสร็จสมบูรณ์แล้ว มีจดหมายใหม่ %1 ฉบับ ขนาด %2 กิโลไบต์"
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "การส่งถ่ายข้อมูลเสร็จสมบูรณ์แล้ว มีจดหมายใหม่ %1 ฉบับ"
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "การส่งถ่ายข้อมูลเสร็จสมบูรณ์แล้ว ไม่มีจดหมายใหม่"
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission for account %4 complete. %1 new message in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~| msgid_plural ""
+#~| "Transmission for account %4 complete. %1 new messages in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "การส่งถ่ายข้อมูลสำหรับบัญชีผู้ใช้ %4 เสร็จสมบูรณ์แล้ว มีจดหมายใหม่ %1 ฉบับ ขนาด %2 กิโลไบต์ "
+#~ "(คงเหลืออีก %3 กิโลไบต์บนเครื่องเซิร์ฟเวอร์)"
+
+#, fuzzy
+#~| msgid "Transmission for account %3 complete. %1 message in %2 KB."
+#~| msgid_plural "Transmission for account %3 complete. %1 messages in %2 KB."
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] ""
+#~ "การส่งถ่ายข้อมูลสำหรับบัญชีผู้ใช้ %3 เสร็จสมบูรณ์แล้ว มีจดหมายใหม่ %1 ฉบับ ขนาด %2 กิโลไบต์"
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "การส่งถ่ายข้อมูลสำหรับบัญชีผู้ใช้ %2 เสร็จสมบูรณ์แล้ว มีจดหมายใหม่ %1 ฉบับ"
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "การส่งถ่ายข้อมูลสำหรับบัญชีผู้ใช้ %1 เสร็จสมบูรณ์แล้ว ไม่มีจดหมายใหม่"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "อีเมล"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "กำลังรับและจัดเก็บจดหมาย..."
+
+#, fuzzy
+#~| msgid "Notify Message"
+#~ msgid "Total Messages"
+#~ msgstr "ข้อความแจ้งให้ทราบ"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Unread Messages"
+#~ msgstr "จดหมาย"
+
+#~ msgid "Stop"
+#~ msgstr "หยุด"
+
+#~ msgid "Send SMS"
+#~ msgstr "ส่งข้อความ SMS"
+
+#~ msgid "Message"
+#~ msgstr "จดหมาย"
+
+#~ msgid "Recipient:"
+#~ msgstr "ผู้รับ:"
+
+#~ msgid "Send"
+#~ msgstr "ส่ง"
+
+#~ msgid "Select Address Book"
+#~ msgstr "เลือกสมุดที่อยู่"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> was added to your addressbook; you can "
+#~| "add more information to this entry by opening the addressbook.</qt>"
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>ที่อยู่อีเมล <b>%1</b> ถูกเพิ่มไว้ในสมุดที่อยู่ของคุณแล้ว; "
+#~ "คุณสามารถเพิ่มข้อมูลเพิ่มเติมไปยังรายการนี้ได้ โดยการเปิดสมุดที่อยู่</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "วันพรุ่งนี้"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "วันนี้"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "เมื่อวานนี้"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "วันนี้"
+
+#~ msgid "To"
+#~ msgstr "ถึง"
+
+#~ msgid "CC"
+#~ msgstr "สำเนาถึง"
+
+#~ msgid "BCC"
+#~ msgstr "สำเนาถึง (ซ่อน)"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "โปรดป้อนชื่อสำหรับแม่แบบ:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "การเลือกที่อยู่"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "กรองค่าบน:"
+
+#~ msgid "To >>"
+#~ msgstr "ถึง >>"
+
+#~ msgid "CC >>"
+#~ msgstr "สำเนาถึง >>"
+
+#~ msgid "BCC >>"
+#~ msgstr "ซ่อนสำเนาถึง >>"
+
+#~ msgid "<< Remove"
+#~ msgstr "<< เอาออก"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "บันทึกเป็นรายการแจกจ่าย..."
+
+#~ msgid "Address Selection"
+#~ msgstr "การเลือกที่อยู่"
+
+#~ msgid "&To >>"
+#~ msgstr "&ถึง >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&สำเนาถึง >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "ซ่อ&นสำเนาถึง >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "ที่อยู่ที่เ&ลือกไว้"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&กรองค่าบน:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "บันทึกเป็นรายการแจกจ่าย..."
+
+#~ msgid "Show Birthday"
+#~ msgstr "แสดงวันเกิด"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "แสดงที่อยู่ทางไปรษณีย์"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "แสดงที่อยู่อีเมล"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "แสดงหมายเลขโทรศัพท์"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "แสดงหน้าเว็บ (ที่อยู่ URL)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "แสดงที่อยู่ติดต่อททางข้อความด่วนทันใจ"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "แสดงช่องข้อมูลกำหนดเอง"
+
+#~ msgid "SMS"
+#~ msgstr "ข้อความ SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "หน้าเว็บหลัก"
+
+#~ msgid "Blog Feed"
+#~ msgstr "แหล่งป้อนบล็อก"
+
+#~ msgid "Notes"
+#~ msgstr "บันทึกช่วยจำ"
+
+#~ msgid "Profession"
+#~ msgstr "อาชีพ"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "ชื่อที่ปรึกษา"
+
+#~ msgid "Manager's Name"
+#~ msgstr "ชื่อผู้จัดการ"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "ชื่อหุ้นส่วน"
+
+#~ msgid "Office"
+#~ msgstr "สำนักงาน"
+
+#~ msgid "IM Address"
+#~ msgstr "ที่อยู่ข้อความด่วนทันใจ"
+
+#~ msgid "Anniversary"
+#~ msgstr "วันครบรอบ"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>สมุดที่อยู่</b>: %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr "ยังไม่มีการตั้งโปรแกรมที่จะใช้ประมวลผล โปรดไปยังกล่องการตั้งค่าเพื่อปรับแต่งมันก่อน"
+
+#~ msgid "Call number %1"
+#~ msgstr "โทรศัพท์ไปยัง %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "ส่งโทรสารไปยัง %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "แสดงที่อยู่บนแผนที่"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "ส่งข้อความ SMS ไปยัง %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "เปิดที่อยู่ URL %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "คุยกับ %1"
+
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "สมุดที่อยู่"
+
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "ชื่อเต็ม"
+
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "บ้าน"
+
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Work"
+#~ msgstr "ที่ทำงาน"
+
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "หมายเลขโทรศัพท์"
+
+#~ msgctxt "@title:column the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "อีเมลที่ควรใช้"
+
+#~ msgctxt "@title:column all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "อีเมลทั้งหมด"
+
+#~ msgid "<group>"
+#~ msgstr "<กลุ่ม>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "ที่อยู่อื่น ๆ"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "ยังไม่มีที่อยู่ในช่องรายการของคุณ ขั้นแรกให้เพิ่มที่อยู่บางตัวจากสมุดที่อยู่ของคุณก่อน "
+#~ "แล้วลองใหม่อีกครั้ง"
+
+#~ msgid "New Distribution List"
+#~ msgstr "รายการแจกจ่ายใหม่"
+
+#~ msgid "Please enter name:"
+#~ msgstr "โปรดป้อนชื่อ:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>มีรายการแจกจ่ายใหม่ที่กำหนดชื่อ <b>%1</b> มีอยู่แล้ว โปรดตั้งชื่อที่แตกต่างจากเดิม</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "รายการแจกจ่าย"
+
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "แ&ทรก"
+
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "แทรกแฟ้ม"
+
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "เครื่องมือแก้ไขภายนอกกำลังทำงานอยู่"
+
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "หยุดเครื่องมือแก้ไข"
+
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "คงการเปิดเครื่องมือแก้ไขไว้"
+
+#~ msgid "Edit Categories"
+#~ msgstr "แก้ไขหมวดหมู่"
+
+#~ msgid "New category"
+#~ msgstr "หมวดหมู่ใหม่"
+
+#~ msgid "New subcategory"
+#~ msgstr "หมวดหมู่ย่อยใหม่"
+
+#~ msgid "Select Categories"
+#~ msgstr "เลือกหมวดหมู่"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "กำลังแสดงที่อยู่ URL %1"
+
+#~ msgid "Text"
+#~ msgstr "ข้อความ"
+
+#~ msgid "Numeric Value"
+#~ msgstr "ค่าตัวเลข"
+
+#~ msgid "Boolean"
+#~ msgstr "ค่าตรรกะ"
+
+#~ msgid "Date & Time"
+#~ msgstr "วันและเวลา"
+
+#~ msgid "Date"
+#~ msgstr "วันที่"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "กล่องสร้างช่องข้อมูลด้วย Qt Designer"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|แฟ้มออกแบบ Qt"
+
+#~ msgid "Import Page"
+#~ msgstr "นำเข้าหน้าออกแบบ"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>คำเตือน:</b> ไม่พบโปรแกรม Qt Designer เนื่องจากมันอาจจะยังไม่ได้รับการติดตั้ง  "
+#~ "คุณจะสามารถทำได้เพียงนำเข้าแฟ้มออกแบบที่มีอยู่แล้วได้เท่านั้น</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "แสดงตัวอย่างหน้าออกแบบที่เลือกไว้"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>ในส่วนนี้อนุญาตให้คุณได้ทำการเพิ่มส่วนประกอบแบบกราฟิกแบบของคุณเอง ('<i>วิดเจ็ต</"
+#~ "i>') เพื่อเก็บข้อมูลของคุณเองไว้ใน %1 โดยให้ดำเนินการตามการแนะนำด้านล่างนี้:</"
+#~ "p><ol><li>คลิกบน '<i>แก้ไขด้วย Qt Designer</i>'</li><li>ในกล่องโต้ตอบ, เลือก "
+#~ "'<i>วิดเจ็ต</i>', จากนั้นคลิก <i>ตกลง</i></li><li>เพิ่มวิดเจ็ตของคุณเองไปยังแบบฟอร์ม</"
+#~ "li><li>บันทึกแฟ้มในไดเร็กทอรีที่เสนอโดย Qt Designer</li><li>ปิด Qt Designer</li></"
+#~ "ol><p>ส่วนกรณีที่คุณมีแฟ้มออกแบบ (*.ui) อยู่ในฮาร์ดดิสก์ของคุณอยู่แล้ว ให้เลือกที่ "
+#~ "'<i>นำเข้าหน้าออกแบบ</i>'</p><p><b>โปรดจำ สำคัญมาก:</b> "
+#~ "ชื่อของวิดเจ็ตนำเข้าข้อมูลแต่ละตัวที่คุณวางไว้ในแบบฟอร์ม จะต้องเริ่มต้นชื่อด้วย '<i>X_</i>'; "
+#~ "เช่น หากคุณต้องการให้วิดเจ็ตตอบสนองต่อส่วนที่คุณกำหนดเองชื่อ '<i>X-Foo</i>', "
+#~ "ให้ตั้งคุณสมบัติ<i>ชื่อ</i>วิดเจ็ต เป็น '<i>X_Foo</i>' </p><p><b>สำคัญมาก:</b> "
+#~ "วิดเจ็ตจะทำการแก้ไขช่องข้อมูลกำหนดเองด้วยชื่อโปรแกรมของ %2  "
+#~ "หากต้องการให้ชื่อของโปรแกรมแก้ไขได้ ให้ตั้งค่าชื่อวิดเจ็ตใน Qt Designer</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">มันทำงานอย่างไร ?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "ลบหน้าออกแบบ"
+
+#~ msgid "Import Page..."
+#~ msgstr "นำเข้าหน้าออกแบบ..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "แก้ไขด้วย Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "คีย์:"
+
+#~ msgid "Type:"
+#~ msgstr "ประเภท:"
+
+#~ msgid "Classname:"
+#~ msgstr "ชื่อคลาส:"
+
+#~ msgid "Description:"
+#~ msgstr "คำอธิบาย:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "เปลี่ยนค่าปรับแต่ง"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "ตัวช่วยการปรับแต่งค่า"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "กฏ"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "ตั้งค่ากฏต่าง ๆ"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "ต้นทาง"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "เป้าหมาย"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "เงื่อนไข"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "เปลี่ยนแปลง"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Setup Changes"
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "ตั้งค่าการเปลียนแปลง"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "การกระทำ"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "ตัวเลือก"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "ค่า"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "โปรดตรวจสอบให้แน่ใจว่า โปรแกรมที่ถูกปรับแต่งด้วยตัวช่วยปรับแต่งนี้ "
+#~ "ไม่ได้ทำงานอยู่ควบคู่ไปกับตัวช่วยนี้ ไม่เช่นนั้นแล้ว "
+#~ "การเปลี่ยนแปลงที่เกิดขึ้นกับตัวช่วยนี้อาจจะสูญหายได้"
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "แจ้งเตือน"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "เรียกตัวช่วยตั้งค่าเดี๋ยวนี้"
+
+#~ msgctxt "incidence category: appointment"
+#~ msgid "Appointment"
+#~ msgstr "การนัดหมาย"
+
+#~ msgctxt "incidence category"
+#~ msgid "Business"
+#~ msgstr "ธุรกิจ"
+
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "ประชุม"
+
+#~ msgctxt "incidence category: phone call"
+#~ msgid "Phone Call"
+#~ msgstr "การโทรศัพท์"
+
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "การศึกษา"
+
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "วันหยุด"
+
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "การพักร้อน/ปิดภาคเรียน"
+
+#~ msgctxt ""
+#~ "incidence category: examples: anniversary of historical or personal "
+#~ "event; big date; remembrance, etc"
+#~ msgid "Special Occasion"
+#~ msgstr "โอกาสพิเศษ"
+
+#~ msgctxt "incidence category"
+#~ msgid "Personal"
+#~ msgstr "ส่วนบุคคล"
+
+#~ msgctxt ""
+#~ "incidence category: typically associated with leaving home for business, "
+#~ "and not pleasure"
+#~ msgid "Travel"
+#~ msgstr "ท่องเที่ยว"
+
+#~ msgctxt "incidence category"
+#~ msgid "Miscellaneous"
+#~ msgstr "เบ็ดเตล็ด"
+
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "วันเกิด"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "ส่วนเสริมที่ยังไม่กำหนดชื่อ"
+
+#, fuzzy
+#~| msgid "New (remote) entry"
+#~ msgid "New category entry"
+#~ msgstr "รายการใหม่ (จากระยะไกล)"
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "เพิ่มหมวดหมู่ย่อย"
+
+#~ msgid "Category list"
+#~ msgstr "รายการหมวดหมู่"
+
+#~ msgid "Default Category"
+#~ msgstr "หมวดหมู่ปริยาย"
+
+#~ msgid "Category"
+#~ msgstr "หมวดหมู่"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "ล้างการเลือก"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "แก้ไขหมวดหมู่..."
+
+#, fuzzy
+#~| msgid "Yes"
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "ใช่"
+
+#, fuzzy
+#~| msgid "No"
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "ไม่ใช่"
+
+#~ msgid "Organizer"
+#~ msgstr "ผู้จัด"
+
+#~ msgid "UID"
+#~ msgstr "หมายเลขผู้ใช้"
+
+#~ msgid "Is all-day"
+#~ msgstr "ทั้งวัน"
+
+#~ msgid "Has duration"
+#~ msgstr "กำหนดช่วงเวลา"
+
+#~ msgid "Summary"
+#~ msgstr "สรุป"
+
+#~ msgid "Status"
+#~ msgstr "สถานะ"
+
+#~ msgid "Secrecy"
+#~ msgstr "ชั้นความลับ"
+
+#~ msgid "Priority"
+#~ msgstr "ความสำคัญ"
+
+#~ msgid "Location"
+#~ msgstr "สถานที่"
+
+#~ msgid "Categories"
+#~ msgstr "หมวดหมู่"
+
+#~ msgid "Alarms"
+#~ msgstr "แจ้งเตือน"
+
+#~ msgid "Resources"
+#~ msgstr "ทรัพยากร"
+
+#~ msgid "Relations"
+#~ msgstr "ความเกี่ยวข้อง"
+
+#~ msgid "Attachments"
+#~ msgstr "สิ่งที่ส่งมาด้วย"
+
+#~ msgid "Exception Dates"
+#~ msgstr "วันที่ยกเว้น"
+
+#~ msgid "Exception Times"
+#~ msgstr "เวลาที่ยกเว้น"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "สร้างเมื่อ"
+
+#~ msgid "Related Uid"
+#~ msgstr "เลขผู้ใช้ที่เกี่ยวข้อง"
+
+#~ msgid "Has End Date"
+#~ msgstr "มีวันสิ้นสุด"
+
+#~ msgid "End Date"
+#~ msgstr "วันสิ้นสุด"
+
+#~ msgid "Has Start Date"
+#~ msgstr "มีวันเริ่ม"
+
+#~ msgid "Has Due Date"
+#~ msgstr "มีวันครบกำหนด"
+
+#~ msgid "Due Date"
+#~ msgstr "วันครบกำหนด"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "มีวันที่เสร็จสมบูรณ์"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "เสร็จสมบูรณ์"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "เสร็จสมบูรณ์แล้ว"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgid "Local"
+#~ msgstr "ยึดเอาตัวภายในระบบ"
+
+#, fuzzy
+#~| msgctxt "@item IMAP account"
+#~| msgid "IMAP"
+#~ msgid "IMAP"
+#~ msgstr "บริการ IMAP"
+
+#, fuzzy
+#~| msgctxt "@item usenet account"
+#~| msgid "News"
+#~ msgid "News"
+#~ msgstr "กลุ่มข่าว"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "บันทึกช่วยจำ"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "บริการ IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "กล่องจดหมายแบบ MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "กล่องจดหมายแบบ Maildir"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "กลุ่มข่าว"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "บริการ IMAP ที่ไม่ได้เชื่อมต่อ"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "กล่องจดหมายภายในระบบ"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "บริการ POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "ไม่ทราบ"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "ไม่ต้องแสดงข้อความนี้อีก"
+
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "บทความ\n"
+#~ "<b>%1</b><br /><b>%2</b><br />เนื่องจากบันทึกช่วยจำต่อไปนี้ปรากฏ:<br />%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "ปรับแต้ม"
+
+#~ msgid "Display Message"
+#~ msgstr "แสดงข้อความ"
+
+#~ msgid "Colorize Header"
+#~ msgstr "ส่วนหัวแบบสีสัน"
+
+#, fuzzy
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "ปรับเป็นอ่านแล้ว"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>รายการชุดสะสมบันทึกช่วยจำ</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "ชุดสะสมบันทึกช่วยจำ"
+
+#~ msgid "Contains Substring"
+#~ msgstr "มีส่วนข้อความอยู่ว่า"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "ตรงกับเงื่อนไขการค้นหา"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "ตรงกับเงื่อนไขการค้นหา (พิจารณาตัวพิมพ์เล็ก-ใหญ่)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "ตรงกันกับหรือเหมือนกันกับ"
+
+#~ msgid "Less Than"
+#~ msgstr "น้อยกว่า"
+
+#~ msgid "Greater Than"
+#~ msgstr "มากกว่า"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "เลือกชื่อกฏเป็นชื่ออื่น"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "ชื่อกฏมีการกำหนดใช้แล้ว โปรดเลือกชื่ออื่น ๆ"
+
+#~ msgid "rule %1"
+#~ msgstr "กฏ %1"
+
+#~ msgid "Not"
+#~ msgstr "ไม่"
+
+#~ msgid "Negate this condition"
+#~ msgstr "ตรงข้ามเงื่อนไขนี้"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "เลือกส่วนหัวที่ตรงกับการขัดแย้งเงื่อนไขนี้"
+
+#~ msgid "Select the type of match"
+#~ msgstr "เลือกชนิดของการตรงกัน"
+
+#~ msgid "The condition for the match"
+#~ msgstr "เงื่อนไขของการตรงกัน"
+
+#~ msgid "Select an action."
+#~ msgstr "เลือกการกระทำ"
+
+#~ msgid "Properties"
+#~ msgstr "คุณสมบัติ"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "ชื่อ:"
+
+#~ msgid "&Groups:"
+#~ msgstr "กลุ่ม:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "เพิ่มกลุ่ม"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "ให้กฏหมดอายุโดยอัตโนมัติ"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "กฏจะใช้ได้จนถึง:"
+
+#~ msgid "Conditions"
+#~ msgstr "เงื่อนไข"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "ตรงกับเงื่อนไขทั้งหมด"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "ตรงกับบางเงื่อนไข"
+
+#~ msgid "Actions"
+#~ msgstr "การกระทำ"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " วัน"
+
+#~ msgid "New rule"
+#~ msgstr "สร้างกฏใหม่"
+
+#~ msgid "Edit rule"
+#~ msgstr "แก้ไขกฏ"
+
+#~ msgid "Remove rule"
+#~ msgstr "เอากฏออก"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>ทุกกลุ่ม</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "แสดงเฉพาะกฏสำหรับกลุ่ม:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "ตัวแก้ไขกฏ"
+
+#~ msgid "Edit Rule"
+#~ msgstr "แก้ไขกฏ"
+
+#~ msgid "Reload &List"
+#~ msgstr "เรียกรายการอีกครั้ง"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr "จัดการว่าจะใช้โฟลเดอร์จดหมายโฟลเดอร์ใดที่คุณอาจจะดูในมุมมองโฟลเดอร์ของคุณ"
+
+#~ msgid "S&earch:"
+#~ msgstr "ค้นหา:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "ปิดการใช้มุมมองต้นไม้"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "บอกรับเท่านั้น"
+
+#~ msgid "&New only"
+#~ msgstr "ตัวใหม่เท่านั้น"
+
+#~ msgid "Current changes:"
+#~ msgstr "การเปลี่ยนแปลงปัจจุบัน:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "คำอธิบาย"
+
+#~ msgid "Subscribe To"
+#~ msgstr "สมัครสมาชิก"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "ยกเลิกสมัครสมาชิก"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "กำลังเรียก... (ตรงเงื่อนไข %1 รายการ)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (ตรงเงื่อนไข %1 รายการ)"
+
+#~ msgid "View Columns"
+#~ msgstr "แสดงคอลัมน์"
+
+#, fuzzy
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "ตรวจพบความขัดแย้งกัน"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>A conflict was detected. This probably means someone edited the same "
+#~| "entry on the server while you changed it locally.<br/>NOTE: You have to "
+#~| "check mail again to apply your changes to the server.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "<qt>ตรวจสอบพบความขัดแย้งขึ้น "
+#~ "ซึ่งอาจจะเกิดจากมีบางคนได้แก้ไขรายการเดียวกันนี้บนเซิร์ฟเวอร์อยู "
+#~ "ในขณะที่คุณกำลังเปลี่ยนแปลงมันอยู่ภายใน<br/>ข้อควรจำ: "
+#~ "คุณควรจะตรวจจดหมายอีกครั้งเพื่อปรับใช้การเปลี่ยนแปลงของคุณไปยังเซิร์ฟเวอร์</qt>"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "ยึดเอาตัวภายในระบบ"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "ยึดเอาตัวใหม่"
+
+#, fuzzy
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "ยึดเอาตัวของทั้งคู่"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "เกิดเหตุภายใน"
+
+#, fuzzy
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "สรุปรวมการเกิดเหตุภายใน"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "แก้ไขล่าสุด:"
+
+#, fuzzy
+#~| msgid "Set Last modified"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "ตั้งคาแก้ไขล่าสุด"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "แสดงรายละเอียด"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "แสดงความแตกต่าง"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "ปรับเทียบการปรับเปลี่ยนค่า"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "ปรับเทียบการปรับเปลี่ยนค่า"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "ปรับเทียบการปรับเปลี่ยนค่า"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "ยึดเอารายการภายในเมื่อมีการขัดแย้ง"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "ยึดเอารายการภายในเมื่อมีการขัดแย้ง"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "ยึดเอารายการใหม่ (ระยะไกล) เมื่อเกิดการขัดแย้ง"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "ยึดเอารายการใหม่ (ระยะไกล) เมื่อเกิดการขัดแย้ง"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "ยึดเอารายการที่ใหม่ที่สุดเมื่อเกิดการขัดแย้ง"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "ยึดเอารายการที่ใหม่ที่สุดเมื่อเกิดการขัดแย้ง"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "ให้ถามสำหรับทุกรายการที่เกิดการขัดแย้ง"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "ให้ถามสำหรับทุกรายการที่เกิดการขัดแย้ง"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "ยึดเอาของทั้งคู่เมื่อเกิดการขัดแย้ง"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "ยึดเอาของทั้งคู่เมื่อเกิดการขัดแย้ง"
+
+#, fuzzy
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "ปรับใช้นี่ไปยังการขัดแย้งทั้งหมดของการปรับเทียบข้อมูลนี้"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "เหตุการณ์ภายในระบบ"
+
+#, fuzzy
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "สิ่งที่จะทำภายในระบบ"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "บันทึกประจำวันภายในระบบ่"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "เหตุการณ์ใหม่"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "สิ่งที่จะทำใหม่"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "บันทึกประจำวันใหม่"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "ซ่อนรายละเอียด"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "ซ่อนรายละเอียด"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "แสดงรายละเอียด..."
+
+#, fuzzy
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "ความแตกต่างระหว่าง %1 กับ %2"
+
+#, fuzzy
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "ความแตกต่างของ %1"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "เกิดเหตุภายใน"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "เกิดเหตุภายใน"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "แสดงรายละเอียด"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "ซ่อนรายละเอียด"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "เครื่องมือแก้ไขภายนอกกำลังทำงานอยู่\n"
+#~ "ต้องการจะยกเลิกเครื่องมือแก้ไขภายนอก หรือจะปล่อยมันไว้ ?"
+
+#~ msgid "Floating"
+#~ msgstr "เปลี่ยนแปลงได้"
+
+#~ msgid "Local entry"
+#~ msgstr "รายการภายในระบบ"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "รายการใหม่ (จากระยะไกล)"
+
+#~ msgid "Plain"
+#~ msgstr "ธรรมดา"
+
+#~ msgid "Unquoted"
+#~ msgstr "ไม่ปิดอัญประกาศ"
+
+#~ msgid "Bracketed"
+#~ msgstr "มีวงเล็บ"
+
+#~ msgid "Undefined"
+#~ msgstr "ยังไม่ระบุ"
+
+#~ msgid "File to import:"
+#~ msgstr "แฟ้มที่จะนำเข้า:"
+
+#~ msgid "Separator:"
+#~ msgstr "ตัวแยก:"
+
+#~ msgid "Tab"
+#~ msgstr "แท็บ"
+
+#~ msgid "Space"
+#~ msgstr "ช่องว่าง"
+
+#~ msgid "Header"
+#~ msgstr "ส่วนหัว"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "กำหนดไปยังคอลัมน์ที่เลือกไว้"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "เอาการกำหนดที่มีออกจากคอลัมน์ที่เลือกไว้"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "กำหนดให้โดยใช้แม่แบบ..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "จัดเก็บแม่แบบปัจจุบัน"
+
+#~ msgid "Loading Progress"
+#~ msgstr "ความคืบหน้าการเรียก"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "โปรดรอระหว่างที่กำลังเรียกแฟ้ม"
+
+#~ msgid "Template Selection"
+#~ msgstr "การเลือกแม่แบบ"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "โปรดเลือกแม่แบบ ซึ่งควรเป็นแฟ้มแบบ CSV:"
+
+#~ msgid "Importing Progress"
+#~ msgstr "ความคืบหน้าการนำเข้า"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "โปรดรอระหว่างทำการนำเข้าข้อมูล"
+
+#~ msgid "Template Name"
+#~ msgstr "ชื่อแม่แบบ"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "ซ่อนวันเกิด"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "ซ่อนที่อยู่ทางไปรษณีย์"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "ซ่อนที่อยู่อีเมล"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "ซ่อนหมายเลขโทรศัพท์"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "ซ่อนหน้าเว็บ (ที่อยู่ URL)"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "ซ่อนที่อยู่ติดต่อททางข้อความด่วนทันใจ"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "ซ่อนช่องข้อมูลกำหนดเอง"
+
+#~ msgid "Test"
+#~ msgstr "ทดสอบ"
+
+#~ msgid "Suggestions"
+#~ msgstr "คำแนะนำ"
+
+#~ msgid "Ignore"
+#~ msgstr "ไม่สนใจ"
+
+#~ msgid "Add to Dictionary"
+#~ msgstr "เพิ่มไว้ในพจนานุกรม"
+
+#~ msgid "Manage Link"
+#~ msgstr "จัดการส่วนเชื่อมโยง"
+
+#~ msgid "Link Text"
+#~ msgstr "ข้อความเชื่อมโยง"
+
+#~ msgid "Link URL"
+#~ msgstr "ตำแหน่ง URL เชื่อมโยง"
+
+#~ msgid "Standard"
+#~ msgstr "มาตรฐาน"
+
+#~ msgid "Bulleted List (Disc)"
+#~ msgstr "รายการแบบปุ่ม (โดนัท)"
+
+#~ msgid "Bulleted List (Circle)"
+#~ msgstr "รายการแบบปุ่ม (กลม)"
+
+#~ msgid "Bulleted List (Square)"
+#~ msgstr "รายการแบบปุ่ม (สี่เหลี่ยม)"
+
+#~ msgid "Ordered List (Decimal)"
+#~ msgstr "รายการลำดับ (ตัวเลข)"
+
+#~ msgid "Ordered List (Alpha lower)"
+#~ msgstr "รายการลำดับ (ตัวอักษรพิมพ์เล็ก)"
+
+#~ msgid "Ordered List (Alpha upper)"
+#~ msgstr "รายการลำดับ (ตัวอักษรพิมพ์ใหญ่)"
+
+#~ msgid "No Suggestions"
+#~ msgstr "ไม่มีคำแนะนำ"

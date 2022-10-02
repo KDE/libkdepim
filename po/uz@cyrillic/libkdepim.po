@@ -1,0 +1,1194 @@
+# translation of libkdepim.po to Uzbek
+# Copyright (C) 2003, 2004, 2006 Free Software Foundation, Inc.
+#
+# Mashrab Kuvatov <kmashrab@uni-bremen.de>, 2003, 2004, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2006-05-11 23:17+0200\n"
+"Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
+"Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
+"Language: uz@cyrillic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Амални бекор қилиш"
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Тўхтатилмоқда..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Амаллар тафсилот ойнасини кўрсатиш"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Амаллар тафсилот ойнасини бекитиш"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr ""
+
+#~ msgid "Choose..."
+#~ msgstr "Танлаш"
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Мослаш"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "Қўш&иш"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< &Олиб ташлаш"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Матн файлини импорт қилиш"
+
+#, fuzzy
+#~| msgid "&Selected Addresses"
+#~ msgid "Recent Addresses"
+#~ msgstr "&Танланган манзиллар"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP сервери %1"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search email:"
+#~ msgstr "Қидириш:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search"
+#~ msgstr "Қидириш:"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Электрон почта"
+
+#, fuzzy
+#~ msgid "&Select"
+#~ msgstr "Намунани танлаш"
+
+#, fuzzy
+#~ msgid "&Unselect"
+#~ msgstr "Намунани танлаш"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "Юкланмоқда..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Хат жўнатиш: '%1'"
+
+#, fuzzy
+#~| msgid "Configuration Wizard"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Мослаш учун ёрдамчи"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgid "Completion Order"
+#~ msgstr "Яратилган"
+
+#, fuzzy
+#~| msgid "&Selected Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "&Танланган манзиллар"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Электрон почта"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Яратилган"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP сервери %1"
+
+#, fuzzy
+#~| msgid "&Today"
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Бугун"
+
+#, fuzzy
+#~| msgid "To&morrow"
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Эртага"
+
+#, fuzzy
+#~| msgid "Next &Week"
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Келаси &ҳафта"
+
+#, fuzzy
+#~| msgid "Next M&onth"
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "&Келаси ой"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> was added to your addressbook; you can "
+#~| "add more information to this entry by opening the addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "<qt>Электрон почта <b>%1</b> манзиллар дафтарига қўшилди. Манзиллар "
+#~ "дафтарини очиб қўшимча маълумотни қўшиш мумкин.</qt>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr "<qt>Электрон почта <b>%1</b> аллақачон манзиллар дафтарида.</qt>"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Манзиллар &дафтари"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Манзиллар &дафтари"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr "<qt>Электрон почта <b>%1</b> аллақачон манзиллар дафтарида.</qt>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Машраб Қуватов"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kmashrab@uni-bremen.de"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP сервери %1"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Таҳрирлаш"
+
+#, fuzzy
+#~ msgid "Remove Host"
+#~ msgstr "<< &Олиб ташлаш"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP сервери %1"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "Таҳрирлаш"
+
+#, fuzzy
+#~ msgid "&Remove Host"
+#~ msgstr "<< &Олиб ташлаш"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Full Name"
+#~ msgstr "Номи"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Электрон почта"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Home Number"
+#~ msgstr "Телефон рақамларни бекитиш"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Work Number"
+#~ msgstr "Телефон рақамларни бекитиш"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Mobile Number"
+#~ msgstr "Телефон рақамларни бекитиш"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Fax Number"
+#~ msgstr "Телефон рақамларни бекитиш"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Ҳолати"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgid "Organization"
+#~ msgstr "Давом этиши"
+
+#~ msgid "Department"
+#~ msgstr "Бўлим"
+
+#, fuzzy
+#~| msgid "Show Postal Addresses"
+#~ msgid "Postal Address"
+#~ msgstr "Манзилгоҳни кўрсатиш"
+
+#~ msgid "Description"
+#~ msgstr "Таърифи"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Электрон почта"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Ҳолати"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search for:"
+#~ msgstr "Қидириш:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Номи"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Электрон почта"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Телефон рақамларни бекитиш"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Телефон рақамларни бекитиш"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Қидириш:"
+
+#, fuzzy
+#~| msgid "Conditions"
+#~ msgid "Contains"
+#~ msgstr "Шартлар"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgid "Starts With"
+#~ msgstr "Бошланиш вақти"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "Юкланмоқда..."
+
+#, fuzzy
+#~ msgid "Select All"
+#~ msgstr "Намунани танлаш"
+
+#, fuzzy
+#~ msgid "Unselect All"
+#~ msgstr "Намунани танлаш"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< &Олиб ташлаш"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Манзиллар &дафтари"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Бошланиш вақти"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Давом этиши"
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission complete. %1 new message in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~| msgid_plural ""
+#~| "Transmission complete. %1 new messages in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Текшириш тугади. %1 янги хат, ҳажми %2 Кб (серверда %3 Кб қолди)."
+
+#, fuzzy
+#~| msgid "Transmission complete. %1 message in %2 KB."
+#~| msgid_plural "Transmission complete. %1 messages in %2 KB."
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Текшириш тугади. %1 янги хат, ҳажми %2 Кб."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Текшириш тугади. %1 янги хат."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Текшириш тугади. Янги хат йўқ."
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission for account %4 complete. %1 new message in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~| msgid_plural ""
+#~| "Transmission for account %4 complete. %1 new messages in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "%4 ҳисоби учун текшириш тугади. %1 янги хат, ҳажми %2 Кб (серверда %3 Кб "
+#~ "қолди).%4 ҳисоби учун текшириш тугади. %1 янги хат, ҳажми %2 Кб (серверда "
+#~ "%3 Кб қолди)."
+
+#, fuzzy
+#~| msgid "Transmission for account %3 complete. %1 message in %2 KB."
+#~| msgid_plural "Transmission for account %3 complete. %1 messages in %2 KB."
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "%3 ҳисоби учун текшириш тугади. %1 янги хат, ҳажми %2 Кб."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "%2 ҳисоби учун текшириш тугади. %1 янги хат."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "%1 ҳисоби учун текшириш тугади. Янги хат йўқ."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Номи"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Электрон почта"
+
+#, fuzzy
+#~ msgid "Total Messages"
+#~ msgstr "Хабар"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Unread Messages"
+#~ msgstr "Хабар"
+
+#~ msgid "Send SMS"
+#~ msgstr "SMS жўнатиш"
+
+#~ msgid "Message"
+#~ msgstr "Хабар"
+
+#~ msgid "Recipient:"
+#~ msgstr "Қабул қилувчи:"
+
+#~ msgid "Send"
+#~ msgstr "Жўнатиш"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgid "Select Address Book"
+#~ msgstr "Манзиллар &дафтари"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> was added to your addressbook; you can "
+#~| "add more information to this entry by opening the addressbook.</qt>"
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>Электрон почта <b>%1</b> манзиллар дафтарига қўшилди. Манзиллар "
+#~ "дафтарини очиб қўшимча маълумотни қўшиш мумкин.</qt>"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "эртага"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "бугун"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "кеча"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "бугун"
+
+#~ msgid "To"
+#~ msgstr "Кимга"
+
+#~ msgid "CC"
+#~ msgstr "Нусха"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Электрон почта"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Кимга >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&Нусха >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&BCC >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Олиб ташлаш"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Янги тарқариш рўйхати"
+
+#~ msgid "&To >>"
+#~ msgstr "&Кимга >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&Нусха >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Туғилган кунни кўрсатиш"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Манзилгоҳни кўрсатиш"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Электрон почтани кўрсатиш"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Телефон рақамларни кўрсатиш"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Веб-саҳифани кўрсатиш"
+
+#, fuzzy
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Манзилгоҳни кўрсатиш"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Веб-саҳифа"
+
+#~ msgid "Notes"
+#~ msgstr "Изоҳлар"
+
+#~ msgid "Profession"
+#~ msgstr "Касб"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Ёрдамчисининг исми"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Бошлиғининг исми"
+
+#, fuzzy
+#~| msgid "Manager's Name"
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Бошлиғининг исми"
+
+#~ msgid "Office"
+#~ msgstr "Идора"
+
+#, fuzzy
+#~ msgid "IM Address"
+#~ msgstr "Электрон почта"
+
+#~ msgid "Anniversary"
+#~ msgstr "Йиллик"
+
+#, fuzzy
+#~| msgid "Address book:"
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "Манзиллар дафтари:"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Факс жўнатиш: '%1'"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "SMS жўнатиш: '%1'"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Манзилни очиш: '%1'"
+
+#~ msgid "Chat with %1"
+#~ msgstr "%1 билан хабар алмашиш"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Номи"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Номи"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Веб-саҳифа"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Телефон рақамларни бекитиш"
+
+#~ msgid "<group>"
+#~ msgstr "<гуруҳ>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Бошқа манзиллар"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Янги тарқариш рўйхати"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Илтимос номини киритинг:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt><b>%1</b> номли тарқатиш рўйхати аллақачон мавжуд. Илтимос бошқа "
+#~ "номни танланг.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Тарқариш рўйхатлари"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Қоида таҳрирчиси"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Қоида таҳрирчиси"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Туркумларни таҳрирлаш"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Туркум"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Туркум"
+
+#~ msgid "Select Categories"
+#~ msgstr "Танланган туркумлар"
+
+#~ msgid "Text"
+#~ msgstr "Матн"
+
+#~ msgid "Date & Time"
+#~ msgstr "Сана ва вақт"
+
+#~ msgid "Date"
+#~ msgstr "Сана"
+
+#~ msgid "Key:"
+#~ msgstr "Калит:"
+
+#~ msgid "Type:"
+#~ msgstr "Тури:"
+
+#~ msgid "Description:"
+#~ msgstr "Таърифи:"
+
+#, fuzzy
+#~| msgid "Rules"
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Қоидалар"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Қоидалар"
+
+#, fuzzy
+#~| msgid "Source"
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Манба"
+
+#, fuzzy
+#~| msgid "Target"
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Мўлжал"
+
+#, fuzzy
+#~| msgid "Condition"
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Шарт"
+
+#, fuzzy
+#~| msgid "Changes"
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Ўзгаришлар"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Ўзгаришлар"
+
+#, fuzzy
+#~| msgid "Action"
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Амал"
+
+#, fuzzy
+#~| msgid "Option"
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Параметр"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Қиймат"
+
+#, fuzzy
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Намунани танлаш"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Давом этиши"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "бугун"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Манзили"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Туғилган кунни кўрсатиш"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "Туркум"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "Туркумлар"
+
+#, fuzzy
+#~ msgid "Default Category"
+#~ msgstr "%1 (Андоза)"
+
+#~ msgid "Category"
+#~ msgstr "Туркум"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&Туркумларни таҳрирлаш"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Изоҳлар"
+
+#~ msgid "Summary"
+#~ msgstr "Ҳисобот"
+
+#~ msgid "Status"
+#~ msgstr "Ҳолати"
+
+#~ msgid "Priority"
+#~ msgstr "Муҳимлик даражаси"
+
+#~ msgid "Location"
+#~ msgstr "Манзили"
+
+#~ msgid "Categories"
+#~ msgstr "Туркумлар"
+
+#~ msgid "Alarms"
+#~ msgstr "Огоҳномалар"
+
+#~ msgid "Attachments"
+#~ msgstr "Иловалар"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Яратилган"
+
+#~ msgid "End Date"
+#~ msgstr "Тугаш куни"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "Local"
+#~ msgstr "Манзили"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "News"
+#~ msgstr "Изоҳлар"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "Изоҳлар"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Изоҳлар"
+
+#, fuzzy
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "Номи"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Гуруҳлар:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "&Гуруҳни қўшиш"
+
+#~ msgid "Conditions"
+#~ msgstr "Шартлар"
+
+#~ msgid "Actions"
+#~ msgstr "Амаллар"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Қоида таҳрирчиси"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Қоидани таҳрирлаш"
+
+#~ msgid "Reload &List"
+#~ msgstr "&Рўйхатни қайтадан юклаш"
+
+#~ msgid "S&earch:"
+#~ msgstr "Қид&ириш:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Номи"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Таърифи"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Манзили"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Тафсилотларни кўрсатиш"
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Мослаш"
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Мослаш"
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Мослаш"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Манзили"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Манзили"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Янги кундалик"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Янги ҳодиса"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Янги вазифа"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Янги кундалик"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Тафсилотларни бекитиш"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Тафсилотларни бекитиш"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Тафсилотларни кўрсатиш"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Тафсилотларни кўрсатиш"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Тафсилотларни бекитиш"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Номи"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "Floating"
+#~ msgstr "Манзили"
+
+#~ msgid "Undefined"
+#~ msgstr "Ноаниқ"
+
+#~ msgid "File to import:"
+#~ msgstr "Импорт қилиш учун файл:"
+
+#~ msgid "Separator:"
+#~ msgstr "Ажратувчи:"
+
+#~ msgid "Tab"
+#~ msgstr "Таб"
+
+#~ msgid "Space"
+#~ msgstr "Бўш жой"
+
+#~ msgid "Header"
+#~ msgstr "Сарлавҳа"
+
+#~ msgid "Save Current Template"
+#~ msgstr "Жорий намунани сақлаш"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Илтимос файл юклангунча кутиб туринг."
+
+#~ msgid "Template Selection"
+#~ msgstr "Намунани танлаш"
+
+#~ msgid "Template Name"
+#~ msgstr "Намунанинг номи"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Туғилган кунни бекитиш"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Манзилгоҳни бекитиш"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Электрон почтани бекитиш"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Телефон рақамларни бекитиш"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Веб-саҳифани бекитиш"
+
+#, fuzzy
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Манзилгоҳни бекитиш"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "Матн"
+
+#, fuzzy
+#~ msgid "Suggestions"
+#~ msgstr "Намунани танлаш"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "Матн"
+
+#~ msgid "Cc"
+#~ msgstr "Нусха"
+
+#~ msgid "All"
+#~ msgstr "Ҳаммаси"
+
+#, fuzzy
+#~ msgid "Open"
+#~ msgstr "Параметр"
+
+#~ msgid "<all groups>"
+#~ msgstr "<ҳамма гуруҳлар>"
+
+#~ msgid "%1 (Default)"
+#~ msgstr "%1 (Андоза)"
+
+#~ msgid "Unnamed"
+#~ msgstr "Номсиз"
+
+#~ msgid ""
+#~ "File %1 exists.\n"
+#~ "Do you want to replace it?"
+#~ msgstr ""
+#~ "%1 файли аллақачон мавжуд.\n"
+#~ "Уни алмаштиришни истайсизми?"
+
+#~ msgid "&Replace"
+#~ msgstr "&Алмаштириш"
+
+#~ msgid "Cannot save to addressbook."
+#~ msgstr "Манзиллар дафтарига сақлаб бўлмади."
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> cannot be found in your addressbook.</qt>"
+#~ msgstr "<qt>Электрон почта <b>%1</b> аллақачон манзиллар дафтарида.</qt>"
+
+#, fuzzy
+#~ msgid "is not in address book"
+#~ msgstr "Манзиллар дафтарига сақлаб бўлмади."
+
+#~ msgid "Image Operations"
+#~ msgstr "Расм амаллари"
+
+#~ msgid "&Rotate Clockwise"
+#~ msgstr "Соат кўрсатгичи &бўйича буриш"
+
+#~ msgid "Rotate &Counterclockwise"
+#~ msgstr "Соат &кўрсатгичига қарши буриш"

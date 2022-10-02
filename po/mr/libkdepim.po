@@ -1,0 +1,307 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Chetan Khona <chetan@kompkin.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2013-03-15 13:24+0530\n"
+"Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
+"Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr ""
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "अधिक"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "कमी"
+
+#~ msgid "Choose..."
+#~ msgstr "निवडा..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "प्राधान्ये"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "मूलभूत पुन्हस्थापित करा"
+
+#, fuzzy
+#~| msgid "&Add"
+#~ msgid "Add"
+#~ msgstr "जोडा (&A)"
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove"
+#~ msgstr "काढून टाका (&R)"
+
+#, fuzzy
+#~| msgid "&Configure"
+#~ msgid "Configure Completion..."
+#~ msgstr "संयोजीत करा (&C)"
+
+#, fuzzy
+#~| msgid "LDAP Server Settings"
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP सर्व्हर संयोजना"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "याकरिता शोधा :"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "शोध (&S)"
+
+#, fuzzy
+#~| msgid "Select All"
+#~ msgid "&Select"
+#~ msgstr "सर्व निवडा"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "सर्व निवड काढून टाका"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search in result..."
+#~ msgstr "शोध (&S)"
+
+#, fuzzy
+#~| msgid "&Configure"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "संयोजीत करा (&C)"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "आज (&T)"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "उद्या (&M)"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "पुढील आठवडा (&W)"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "पुढील महिना (&O)"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "दिनांक नाही"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "चेतन खोना"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "chetan@kompkin.com"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "यजमान जोडा"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP सर्व्हर संयोजना"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) 2009 - 2010 टोबिआस कोएनिग"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "टोबीआस कोएनींग"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "यजमान संपादन"
+
+#~ msgid "Remove Host"
+#~ msgstr "यजमान काढून टाका"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "शिर्षक"
+
+#~ msgid "Full Name"
+#~ msgstr "पूर्ण नाव"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#~ msgid "Pager"
+#~ msgstr "पेजर"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "स्थिती"
+
+#~ msgid "Country"
+#~ msgstr "देश"
+
+#~ msgid "City"
+#~ msgstr "शहर"
+
+#~ msgid "Organization"
+#~ msgstr "संस्था"
+
+#~ msgid "Company"
+#~ msgstr "कंपनी"
+
+#~ msgid "Description"
+#~ msgstr "वर्णन"
+
+#~ msgid "User ID"
+#~ msgstr "वापरकर्ता ID :"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "स्थिती"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "शिर्षक"
+
+#~ msgid "Search for:"
+#~ msgstr "याकरिता शोधा :"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "च्या आत"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "नाव"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "शोध (&S)"
+
+#~ msgid "Contains"
+#~ msgstr "समाविष्टीत आहे"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Searching..."
+#~ msgstr "शोध (&S)"
+
+#~ msgid "Select All"
+#~ msgstr "सर्व निवडा"
+
+#~ msgid "Unselect All"
+#~ msgstr "सर्व निवड काढून टाका"
+
+#~ msgid "&Remove"
+#~ msgstr "काढून टाका (&R)"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "वर्णन"
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "नाव"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "आकार"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "एकूण"
+
+#~ msgid "Stop"
+#~ msgstr "थांबा"
+
+#~ msgid "Send SMS"
+#~ msgstr "SMS पाठवा"
+
+#~ msgid "Message"
+#~ msgstr "संदेश"
+
+#~ msgid "Send"
+#~ msgstr "पाठवा"

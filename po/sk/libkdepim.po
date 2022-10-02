@@ -1,0 +1,695 @@
+# translation of libkdepim.po to Slovak
+# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2002.
+# Pavol Cvengros <orpheus@hq.alert.sk>, 2003.
+# Stanislav Visnovsky <visnovsky@kde.org>, 2004.
+# Richard Fric <Richard.Fric@kdemail.net>, 2006, 2007, 2009.
+# Roman Paholík <wizzardsk@gmail.com>, 2012, 2013, 2014, 2015, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2017-08-02 21:42+0100\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr "Nemôžeme pridať viac prijímateľov. Dosiahli sme maximálny počet"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Zruší túto operáciu."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Prerušujem..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Spojenie je šifrované"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Spojenie nie je šifrované"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Otvorí detailný dialóg priebehu"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Zobraziť detailný dialóg prebiehu"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Skryje okno s detailným priebehom"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Viac"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Menej"
+
+#~ msgid "Choose..."
+#~ msgstr "Vybrať..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Nastavenia"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Chystáte sa zmeniť všetky nastavenia na štandardné. Všetky vaše úpravy "
+#~ "budú zahodené."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Použitie štandardného nastavenia"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Vrátiť pôvodné"
+
+#~ msgid "Add"
+#~ msgstr "Pridať"
+
+#~ msgid "Remove"
+#~ msgstr "Odstrániť"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Chcete odstrániť tento e-mail?"
+#~ msgstr[1] "Chcete odstrániť %1 e-mailových adries?"
+#~ msgstr[2] "Chcete odstrániť %1 e-mailov?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "Import vCard zlyhal"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Nepodarilo sa pristúpiť k <b>%1</b>.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "Vybrať e-mail z kontaktu"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Zobraziť organizačné jednotky pre výsledky LDAP"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "Nastaviť dopĺňanie..."
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "Automaticky rozbaliť skupiny"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "Rozbaliť skupiny..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Posledné adresy"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Kontakty nájdené vo vašich dátach"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "Server LDAP: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "Hľadať e-mail:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "Prieskum sa robí z 3 znakov"
+
+#~ msgid "Search"
+#~ msgstr "Hľadať"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Zobraziť blacklistové e-maily"
+
+#~ msgid "&Select"
+#~ msgstr "&Vybrať"
+
+#~ msgid "&Unselect"
+#~ msgstr "Odznačiť"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">Viac výsledkov...</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "Hľadať vo výsledku..."
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "Vylúčiť názov domény:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Domény oddeľte pomocou '%1'"
+
+#~ msgid "No email found."
+#~ msgstr "E-mail sa nenašiel."
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "1 e-mail nájdený"
+#~ msgstr[1] "%1 e-maily nájdené"
+#~ msgstr[2] "%1 e-mailov nájdených"
+
+#~ msgid "No result found"
+#~ msgstr "Nenašli sa žiadne výsledky"
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr ""
+#~ "Zoznam sa zmenil. Chcete ho uložiť pred vykonaním ďalšieho hľadania?"
+
+#~ msgid "Save"
+#~ msgstr "Uložiť"
+
+#, fuzzy
+#~| msgid "Configure completion"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Nastaviť dopĺňanie"
+
+#~ msgid "Completion Order"
+#~ msgstr "Poradie dopĺňania"
+
+#~ msgid "Recent Address"
+#~ msgstr "Posledné adresy"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Blacklist e-mailovej adresy"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Upraviť poradie dopĺňania"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Server LDAP %1"
+
+#~ msgid "Move Up"
+#~ msgstr "Posunúť hore"
+
+#~ msgid "Move Down"
+#~ msgstr "Posunúť dole"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Dnes"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "Za&jtra"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Nasledujúci &týždeň"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Nasledujúci m&esiac"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Žiadny dátum"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "Hlavná e-mailová adresa uvedená na vizitke sa už nachádza vo vašom "
+#~ "adresári; môžete napríklad uložiť vizitku do súboru a importovať ju do "
+#~ "adresára manuálne."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "Vizitka bola pridaná do vášho adresára; viac informácií k tejto položke "
+#~ "môžete pridať v samotnom adresári."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Kontakt s e-mailovou adresou <email>%1</email> je už vo vašom adresári "
+#~ "kontaktov."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Pred pridaním kontaktu musíte vytvoriť adresár kontaktov. Chcete vytvoriť "
+#~ "adresár kontaktov?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Žiadny adresár kontaktov nie je dostupný"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Pridať adresár kontaktov"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Kontakt pre <email>%1</email> bol úspešne pridaný do vášho "
+#~ "adresárakontaktov.</para><para>Chcete tento nový kontakt teraz upraviť?</"
+#~ "para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Kontakt nie je možné uložiť: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Zlyhalo uloženie kontaktu"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Kontakt vytvorený úspešne"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Stanislav Višňovský"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "visnovsky@kde.org"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Pridať hostiteľa"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Nastavenie servera LDAP"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr "LDAP heslo je uložené ako čistý text, chcete ho uložiť v KWallete?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Uložiť heslá v čistom texte v KWallete"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Upraviť hostiteľa"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Chcete odstrániť nastavenia pre hostiteľa \"%1\"?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Odstrániť hostiteľa"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP servery"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Skontrolovať všetky servery, ktoré sa majú použiť:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "Pridať hostiteľa..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "Upraviť hostiteľa..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "Odstrániť hostiteľa"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Názov"
+
+#~ msgid "Full Name"
+#~ msgstr "Celé meno"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Home Number"
+#~ msgstr "Číslo domov"
+
+#~ msgid "Work Number"
+#~ msgstr "Číslo do práce"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Mobil"
+
+#~ msgid "Fax Number"
+#~ msgstr "Faxové číslo"
+
+#~ msgid "Pager"
+#~ msgstr "Pager"
+
+#~ msgid "Street"
+#~ msgstr "Ulica"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Štát"
+
+#~ msgid "Country"
+#~ msgstr "Krajina"
+
+#~ msgid "City"
+#~ msgstr "Mesto"
+
+#~ msgid "Organization"
+#~ msgstr "Organizácia"
+
+#~ msgid "Company"
+#~ msgstr "Firma"
+
+#~ msgid "Department"
+#~ msgstr "Oddelenie"
+
+#~ msgid "Zip Code"
+#~ msgstr "PSČ"
+
+#~ msgid "Postal Address"
+#~ msgstr "Poštová adresa"
+
+#~ msgid "Description"
+#~ msgstr "Popis"
+
+#~ msgid "User ID"
+#~ msgstr "ID užívateľa"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Stav"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Názov"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Importovať kontakty z LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Hľadať adresy v adresári"
+
+#~ msgid "Search for:"
+#~ msgstr "Hľadať:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "v"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Názov"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Číslo domov"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Číslo do práce"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Hľadať"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekurzívne hľadanie"
+
+#~ msgid "Contains"
+#~ msgstr "Obsahuje"
+
+#~ msgid "Starts With"
+#~ msgstr "Začína na"
+
+#~ msgid "Search in result"
+#~ msgstr "Hľadať vo výsledku"
+
+#~ msgid "Searching..."
+#~ msgstr "Hľadá sa..."
+
+#~ msgid "Select All"
+#~ msgstr "Vybrať všetko"
+
+#~ msgid "Unselect All"
+#~ msgstr "Odznačiť všetko"
+
+#~ msgid "Add Selected"
+#~ msgstr "Pridať vybrané"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Nastaviť servery LDAP..."
+
+#~ msgid "Copy"
+#~ msgstr "Kopírovať"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Musíte vybrať LDAP server pred hľadaním."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Importované z LDAP adresára %1 na %2"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Nastaviť nastavenia adresára LDAP"
+
+#~ msgid "&Remove"
+#~ msgstr "O&dstrániť"
+
+#~ msgid "Blacklist Email Completion"
+#~ msgstr "Blacklist ukončovania e-mailu"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Editovať posledné adresy"
+
+#~ msgid "Configure Email Blacklist..."
+#~ msgstr "Nastaviť blacklist e-mailu..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Vybrať adresár kontaktov"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Vyberte adresár kontaktov, kam sa má uložiť nový kontakt:"
+
+#~ msgid "Free"
+#~ msgstr "Voľné"
+
+#~ msgid "Busy"
+#~ msgstr "Zaneprázdnený"
+
+#~ msgid "Unavailable"
+#~ msgstr "Nedostupné"
+
+#~ msgid "Tentative"
+#~ msgstr "Nezáväzný"
+
+#~ msgid "Unknown"
+#~ msgstr "Neznáme"
+
+#~ msgid "Attendee"
+#~ msgstr "Účastník"
+
+#~ msgctxt "@label Day of the week name, example: Monday,"
+#~ msgid "%1,"
+#~ msgstr "%1,"
+
+#~ msgctxt ""
+#~ "@label A time period duration. It is preceded/followed (based on the "
+#~ "orientation) by the name of the week, see the message above. example: 12 "
+#~ "June, 8:00am to 9:30am"
+#~ msgid "%1 %2, %3 to %4"
+#~ msgstr "%1 %2, %3 do %4"
+
+#~ msgctxt ""
+#~ "@label A time period duration. KLocale is used to format the components. "
+#~ "example: Monday, 12 June, 8:00am to 9:30am"
+#~ msgid "%1, %2 %3, %4 to %5"
+#~ msgstr "%1, %2 %3, %4 do %5"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Free Period"
+#~ msgstr "Voľné obdobie"
+
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Začiatok:"
+
+#~ msgctxt "@info:tooltip period end time"
+#~ msgid "End:"
+#~ msgstr "Koniec:"
+
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Trvanie:"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Prenos dokončený. %1 nová správa o veľkosti (%2 KB). %3 KB zostáva na "
+#~ "serveri."
+#~ msgstr[1] ""
+#~ "Prenos dokončený. %1 nové správy o veľkosti (%2 KB). %3 KB zostáva na "
+#~ "serveri."
+#~ msgstr[2] ""
+#~ "Prenos dokončený. %1 nových správ o veľkosti (%2 KB). %3 KB zostáva na "
+#~ "serveri."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Prenos dokončený. %1 nová správa."
+#~ msgstr[1] "Prenos dokončený. %1 nové správy o veľkosti %2 KB."
+#~ msgstr[2] "Prenos dokončený. %1 nových správ o veľkosti %2 KB."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Prenos dokončený. %1 nová správa."
+#~ msgstr[1] "Prenos dokončený. %1 nové správy."
+#~ msgstr[2] "Prenos dokončený. %1 nových správ."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Prenos dokončený. Žiadne nové správy."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Prenos pre účet %4 dokončený. %1 nová správa o veľkosti (%2 KB). %3 KB "
+#~ "zostáva na serveri."
+#~ msgstr[1] ""
+#~ "Prenos pre účet %4 dokončený. %1 nové správy o veľkosti (%2 KB). %3 KB "
+#~ "zostáva na serveri."
+#~ msgstr[2] ""
+#~ "Prenos pre účet %4 dokončený. %1 nových správ o veľkosti (%2 KB). %3 KB "
+#~ "zostáva na serveri."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Prenos pre účet %2 dokončený. %1 nová správa (%2 KB)."
+#~ msgstr[1] "Prenos pre účet %3 dokončený. %1 nové správy (%2 KB)."
+#~ msgstr[2] "Prenos pre účet %3 dokončený. %1 nových správ (%2 KB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Prenos pre účet %2 dokončený. %1 nová správa."
+#~ msgstr[1] "Prenos pre účet %2 dokončený. %1 nové správy."
+#~ msgstr[2] "Prenos pre účet %2 dokončený. %1 nových správ."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Prenos pre účet %1 dokončený. Žiadne nové správy."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Názov"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Jazyk kontroly pravopisu"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Prijímanie a ukladanie správ..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Spolu správ"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Neprečítaných správ"
+
+#~ msgid "Quota"
+#~ msgstr "Kvóta"
+
+#~ msgid "Storage Size"
+#~ msgstr "Veľkosť úložiska"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Veľkosť úložiska podpriečinka"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Veľkosť"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Celkom"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Neprečítané"

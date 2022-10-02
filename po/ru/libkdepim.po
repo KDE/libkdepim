@@ -1,0 +1,2349 @@
+# KDE3 - kdepim/libkdepim.po Russian translation.
+# Copyright (C) 2005 KDE Russian translation team.
+#
+# Andrey Cherepanov <sibskull@mail.ru>, 2002-2005.
+# Nick Shaforostoff <shafff@ukr.net>, 2006.
+# Andrey Cherepanov <skull@kde.ru>, 2009.
+# Nick Shaforostoff <shaforostoff@kde.ru>, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2010, 2011, 2014, 2015, 2016.
+# Julia Dronova <juliette.tux@gmail.com>, 2012.
+# Alexander Lakhin <exclusion@gmail.com>, 2013.
+# Александр Яворский <yavorsky.a@t-rosta.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2018-08-14 09:53+0300\n"
+"Last-Translator: Александр Яворский <yavorsky.a@t-rosta.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Невозможно добавить больше получателей: достигнуто максимальное число "
+"получателей."
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Прервать операцию."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Прерывание..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Соединение шифруется"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Соединение не шифруется"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Открыть окно прогресса выполнения"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Показать окно прогресса выполнения"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Скрыть окно прогресса выполнения"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Дополнительно >>"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Дополнительно &lt;&lt;"
+
+#~ msgid "Choose..."
+#~ msgstr "Выбрать..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Настройка"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Можно восстановить для всех параметров значения по умолчанию. Все "
+#~ "изменения будут потеряны."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Восстановление значений по умолчанию"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Вернуть значения по умолчанию"
+
+#~ msgid "Add"
+#~ msgstr "Добавить"
+
+# BUGME: please add @title:window --aspotashev
+#~ msgid "Remove"
+#~ msgstr "Удаление"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Удалить %1 адрес электронной почты?"
+#~ msgstr[1] "Удалить %1 адреса электронной почты?"
+#~ msgstr[2] "Удалить %1 адресов электронной почты?"
+#~ msgstr[3] "Удалить этот адрес электронной почты?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "Не удалось импортировать vCard"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Не удалось получить доступ к <b>%1</b>.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "Выберите адрес эл. почты контакта"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Показывать подразделение для адресов из LDAP"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "Настроить автодополнение адресов..."
+
+# BUGME: what kind of groups are meant here? --aspotashev
+#~ msgid "Automatically expand groups"
+#~ msgstr "Автоматически разворачивать группы"
+
+# BUGME: what kind of groups are meant here? --aspotashev
+#~ msgid "Expand Groups..."
+#~ msgstr "Развернуть группы..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Последние адреса"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Найдены контакты"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "Сервер LDAP: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "Искать адреса эл. почты:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "Введите не менее 3 символов для поиска"
+
+#~ msgid "Search"
+#~ msgstr "Продолжить поиск"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Показать исключённые адреса"
+
+#~ msgid "&Select"
+#~ msgstr "&Выбрать"
+
+#~ msgid "&Unselect"
+#~ msgstr "&Снять отметки"
+
+# BUGME: this is not English --aspotashev
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">Показать больше результатов...</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "Поиск в результатах..."
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "Исключить доменные имена:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Разделяйте доменные имена символами «%1»"
+
+#~ msgid "No email found."
+#~ msgstr "Не найдено адресов."
+
+# BUGME: please fix Ukrainian translation: email = "email address" here --aspotashev
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "Найден %1 адрес."
+#~ msgstr[1] "Найдены %1 адреса."
+#~ msgstr[2] "Найдены %1 адресов."
+#~ msgstr[3] "Найден %1 адрес."
+
+#~ msgid "No result found"
+#~ msgstr "Ничего не найдено."
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr "Список изменился. Сохранить его перед началом нового поиска?"
+
+#~ msgid "Save"
+#~ msgstr "Сохранить"
+
+#, fuzzy
+#~| msgid "Configure completion"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Настройка автодополнения адресов получателей"
+
+#~ msgid "Completion Order"
+#~ msgstr "Порядок автодополнения"
+
+#~ msgid "Recent Address"
+#~ msgstr "Последние адреса"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Исключённые адреса"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Изменение порядка автодополнения"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Сервер LDAP %1"
+
+#~ msgid "Move Up"
+#~ msgstr "Переместить выше"
+
+#~ msgid "Move Down"
+#~ msgstr "Переместить ниже"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Сегодня"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Завтра"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Следующая &неделя"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Следующий &месяц"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Нет даты"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "Основной адрес электронной почты визитки VCard уже есть в адресной книге. "
+#~ "Однако можно сохранить визитку в файле и импортировать её в адресную "
+#~ "книгу вручную."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "Визитка vCard добавлена в адресную книгу. Указать дополнительную "
+#~ "информацию для созданного контакта можно, открыв приложение адресной "
+#~ "книги."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "<qt>Контакт с адресом <b>%1</b> уже присутствует в адресной книге.</qt>"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Перед добавлением контакта необходимо создать адресную книгу. Сделать это "
+#~ "сейчас?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Нет адресных книг"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Добавление адресной книги"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Контакт для почты <email>%1</email> был удачно добавлен в адресную "
+#~ "книгу.</para><para>Хотите отредактировать его сейчас?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Не удалось сохранить запись контакта: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Сохранить контакт не удалось"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Запись контакта создана успешно"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Андрей Черепанов,Олеся Герасименко"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "skull@kde.ru,gammaray@basealt.ru"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Добавление сервера"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Настройка сервера LDAP"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "© Tobias Koenig, 2009-2010"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "Пароль LDAP сохраняется в открытом виде, хотите хранить его в безопасном "
+#~ "бумажнике KWallet?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Сохранение открытого пароля в KWallet"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Изменение параметров сервера"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Удалить конфигурацию для сервера «%1»?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Удаление сервера"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "Серверы LDAP"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Выберите все серверы, которые должны быть использованы:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Добавить сервер..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Изменить сервер..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Удалить сервер"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Название"
+
+#~ msgid "Full Name"
+#~ msgstr "Полное имя"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Адрес эл. почты"
+
+#~ msgid "Home Number"
+#~ msgstr "Домашний"
+
+#~ msgid "Work Number"
+#~ msgstr "Телефон"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Мобильный"
+
+#~ msgid "Fax Number"
+#~ msgstr "Факс"
+
+#~ msgid "Pager"
+#~ msgstr "Пейджер"
+
+#~ msgid "Street"
+#~ msgstr "Улица"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Штат/область"
+
+#~ msgid "Country"
+#~ msgstr "Страна"
+
+#~ msgid "City"
+#~ msgstr "Город"
+
+#~ msgid "Organization"
+#~ msgstr "Организация"
+
+#~ msgid "Company"
+#~ msgstr "Компания"
+
+#~ msgid "Department"
+#~ msgstr "Отдел"
+
+#~ msgid "Zip Code"
+#~ msgstr "Индекс"
+
+#~ msgid "Postal Address"
+#~ msgstr "Почтовый адрес"
+
+#~ msgid "Description"
+#~ msgstr "Описание"
+
+#~ msgid "User ID"
+#~ msgstr "ID пользователя"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Адрес эл. почты"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Штат/область"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Должность"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Импортировать контакты из LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Поиск адреса в каталоге"
+
+#~ msgid "Search for:"
+#~ msgstr "Искать:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "в"
+
+# BUGME: предложный падеж? --aspotashev
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+# BUGME: предложный падеж? --aspotashev
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Адрес эл. почты"
+
+# BUGME: предложный падеж? --aspotashev
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Домашний телефон"
+
+# BUGME: предложный падеж? --aspotashev
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Рабочий телефон"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Найти"
+
+#~ msgid "Recursive search"
+#~ msgstr "Рекурсивный поиск"
+
+#~ msgid "Contains"
+#~ msgstr "содержит"
+
+#~ msgid "Starts With"
+#~ msgstr "начинается с"
+
+#~ msgid "Search in result"
+#~ msgstr "Поиск в результатах"
+
+#~ msgid "Searching..."
+#~ msgstr "Идёт поиск..."
+
+#~ msgid "Select All"
+#~ msgstr "Выбрать все"
+
+#~ msgid "Unselect All"
+#~ msgstr "Отменить выбор"
+
+#~ msgid "Add Selected"
+#~ msgstr "Добавить выбранные адреса"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Настроить серверы LDAP..."
+
+#~ msgid "Copy"
+#~ msgstr "Копировать"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Для поиска необходимо выбрать сервер LDAP."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Импортировано из папки LDAP %1 в %2"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Настройка адресной книги LDAP"
+
+#~ msgid "&Remove"
+#~ msgstr "&Удалить"
+
+#~ msgid "Blacklist Email Completion"
+#~ msgstr "Исключённые из автодополнения адреса электронной почты"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Список последних адресов"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Выбор адресной книги"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Выберите адресную книгу, в которой следует сохранить новый контакт:"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Доступные вкладки"
+
+#~ msgid "Unknown"
+#~ msgstr "Неизвестный"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Участники"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Время начала"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Продолжительность"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Передача завершена. %1 новое письмо (%2 КБ). %3 КБ осталось на сервере."
+#~ msgstr[1] ""
+#~ "Передача завершена. %1 новых письма (%2 КБ). %3 КБ осталось на сервере."
+#~ msgstr[2] ""
+#~ "Передача завершена. %1 новых писем (%2 КБ). %3 КБ осталось на сервере."
+#~ msgstr[3] ""
+#~ "Передача завершена. %1 новое письмо (%2 КБ). %3 КБ осталось на сервере."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Передача завершена. %1 письмо (%2 КБ)."
+#~ msgstr[1] "Передача завершена. %1 письма (%2 КБ)."
+#~ msgstr[2] "Передача завершена. %1 писем (%2 КБ)."
+#~ msgstr[3] "Передача завершена. %1 письмо (%2 КБ)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Передача завершена. %1 новое письмо."
+#~ msgstr[1] "Передача завершена. %1 новых письма."
+#~ msgstr[2] "Передача завершена. %1 новых писем."
+#~ msgstr[3] "Передача завершена. %1 новое письмо."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Передача завершена. Нет новых писем."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Передача для %4 завершена. %1 новое письмо (%2 КБ). %3 КБ осталось на "
+#~ "сервере."
+#~ msgstr[1] ""
+#~ "Передача для %4 завершена. %1 новых письма (%2 КБ). %3 КБ осталось на "
+#~ "сервере."
+#~ msgstr[2] ""
+#~ "Передача для %4 завершена. %1 новых писем (%2 КБ). %3 КБ осталось на "
+#~ "сервере."
+#~ msgstr[3] ""
+#~ "Передача для %4 завершена. %1 новое письмо (%2 КБ). %3 КБ осталось на "
+#~ "сервере."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Передача для %3 завершена. %1 письмо (%2 КБ)."
+#~ msgstr[1] "Передача для %3 завершена. %1 письма (%2 КБ)."
+#~ msgstr[2] "Передача для %3 завершена. %1 писем (%2 КБ)."
+#~ msgstr[3] "Передача для %3 завершена. %1 письмо (%2 КБ)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Передача с %2 завершена. %1 новое письмо."
+#~ msgstr[1] "Передача с %2 завершена. %1 новых письма."
+#~ msgstr[2] "Передача с %2 завершена. %1 новых писем."
+#~ msgstr[3] "Передача с %2 завершена. %1 новое письмо."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Передача с %1 завершена. Нет новых писем."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Адрес эл. почты"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Получение и сохранение писем..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Всего писем"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Непрочитанные письма"
+
+#~ msgid "Quota"
+#~ msgstr "Ограничение по размеру"
+
+#~ msgid "Storage Size"
+#~ msgstr "Ёмкость"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Ёмкость вложенной папки"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Размер"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Всего"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Непрочитанных"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Язык проверки правописания"
+
+#~ msgid "Stop"
+#~ msgstr "Остановить"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Семантический рабочий стол не включён. Многие важные функции этого "
+#~ "программного обеспечения зависят от семантического рабочего стола и не "
+#~ "будут корректно работать без него."
+
+#~ msgid "&Configure"
+#~ msgstr "&Настроить"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Не найден модуль для настройки семантического рабочего стола (Nepomuk). "
+#~ "Убедитесь, что Nepomuk был установлен правильно."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Семантический рабочий стол не включён. Следующие функции будут работать "
+#~ "некорректно:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "Отправить SMS"
+
+#~ msgid "Message"
+#~ msgstr "Письмо"
+
+#~ msgid "Recipient:"
+#~ msgstr "Получатель:"
+
+#~ msgid "Send"
+#~ msgstr "Отправить"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Сохранение контакта"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Выберите адресную книгу, в которой следует сохранить новый контакт:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>Адрес электронной почты <b>%1</b> сохранён в вашей адресной книге. Вы "
+#~ "можете указать дополнительную информацию для созданного контакта, открыв "
+#~ "адресную книгу.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "завтра"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "сегодня"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "вчера"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "Дата не может быть раньше %1"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "сегодня"
+
+#~ msgid "To"
+#~ msgstr "Кому"
+
+#~ msgid "CC"
+#~ msgstr "Копия"
+
+#~ msgid "BCC"
+#~ msgstr "Скрытая копия"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Введите название шаблона:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Выбор адреса"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&Фильтр:"
+
+#, fuzzy
+#~| msgid "&Search Directory Service"
+#~ msgid "Search Directory Service"
+#~ msgstr "Поиск адреса в &каталоге"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Кому >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&Копия >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&Скрытая копия >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Удалить"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Сохранить как список &рассылки..."
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Вы должны указать сервер LDAP для поиска.\n"
+#~ "Вы можете сделать это в пункте меню Настройка/Настроить KAddressBook."
+
+#~ msgid "Address Selection"
+#~ msgstr "Выбор адреса"
+
+#~ msgid "&To >>"
+#~ msgstr "&Кому >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&Копия >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&Скрытая копия >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "&Выбранные адреса"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Фильтр:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Сохранить как список &рассылки..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "Поиск адреса в &каталоге"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Показать день рождения"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Почтовые адреса"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Адреса EMail"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Номера телефонов"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Адреса веб-страниц (URL)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Показать адреса Интернет-пейджинга"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Показать дополнительные поля"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Веб-сайт"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Запись блога"
+
+#~ msgid "Notes"
+#~ msgstr "Примечания"
+
+#~ msgid "Profession"
+#~ msgstr "Профессия"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Секретарь"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Руководитель"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Супруг"
+
+#~ msgid "Office"
+#~ msgstr "Место работы"
+
+#~ msgid "IM Address"
+#~ msgstr "Интернет-пейджер"
+
+#~ msgid "Anniversary"
+#~ msgstr "Годовщина"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Адресная книга</b>: %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Не настроено запускаемое приложение. Откройте диалог настроек и укажите "
+#~ "его."
+
+#~ msgid "Call number %1"
+#~ msgstr "Позвонить по номеру %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Отправить факс на номер %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Показывать адреса на карте"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Отправить SMS контакту %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Открыть ссылку %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Начать разговор с %1"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "&Адресная книга"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Полное имя"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Веб-сайт"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Домашний"
+
+#~ msgid "<group>"
+#~ msgstr "<группа>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Другие адреса"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr "В списке нет ни одного адреса. Добавьте адреса и повторите."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Создать список рассылки"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Введите имя:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Список рассылки с именем <b>%1</b> уже существует Выберете другое имя."
+#~ "</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Списки рассылки"
+
+#, fuzzy
+#~| msgid "&Insert"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Вставить файл"
+
+#, fuzzy
+#~| msgid "Insert File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Вставить файл"
+
+#, fuzzy
+#~| msgid "External Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Внешний редактор"
+
+#, fuzzy
+#~| msgid "Abort Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Прекратить работу"
+
+#, fuzzy
+#~| msgid "Leave Editor Open"
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Оставить"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Изменить категории"
+
+#~ msgid "New category"
+#~ msgstr "Новая категория"
+
+#, fuzzy
+#~| msgid "New category"
+#~ msgid "New subcategory"
+#~ msgstr "Новая категория"
+
+#~ msgid "Select Categories"
+#~ msgstr "Выбор категорий"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Открыть ссылку %1"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Число"
+
+#~ msgid "Boolean"
+#~ msgstr "Логическое значение"
+
+#~ msgid "Date & Time"
+#~ msgstr "Дата и время"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Диалог с полями Qt Designer"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Формы QT Designer (*.ui)"
+
+#~ msgid "Import Page"
+#~ msgstr "Импорт вкладки"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Предупреждение:</b> Не найдена программа Qt Designer. Возможно, "
+#~ "она не установлена. Вы можете импортировать существующие файлы макетов.</"
+#~ "qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Просмотр вкладки"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt> <p>На этой вкладке вы можете добавить собственные элементы "
+#~ "графического интерфейса (<i>виджеты</i>) для ввода пользовательских "
+#~ "значений в приложение %1. Процесс создания описан ниже:</p> <ol> "
+#~ "<li>Выберите <i>Изменить в дизайнере Qt</i></li> <li>Выберите в диалоге "
+#~ "<i>виджет</i> и нажмите <i>OK</i></li> <li>Добавьте нужные вам виджеты на "
+#~ "форму</li> <li>Сохраните файл в папку, предложенную Qt Designer</li> "
+#~ "<li>Закройте Qt Designer</li></ol> <p>В случае, если у вас уже есть "
+#~ "разработанные в дизайнере Qt макеты интерфейса (*.ui), расположенные на "
+#~ "жёстком диске, выберите пункт меню <i>Импорт вкладки</i></p> <p><b>Важно:"
+#~ "</b> Имя каждого поля ввода, которое вы поместили на форму, должно "
+#~ "начинаться с '<i>X_</i>'. Если вы хотите использовать этот виджет для "
+#~ "ввода значения собственного поля с именем <i>X-Foo</i>, то вам нужно "
+#~ "поменять <i>имя</i> виджета (свойство <i>name</i>) на '<i>X_Foo</i>'.</p> "
+#~ "<p><b>Важно:</b> созданные поля ввода будут изменять значения в "
+#~ "приложении %2. Для того, чтобы изменить имя приложения, для которого "
+#~ "изменяются виджеты, поменяйте имя виджета в дизайнере Qt.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Как это работает?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Удалить вкладку"
+
+#~ msgid "Import Page..."
+#~ msgstr "Импорт вкладки..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Изменить в дизайнере Qt..."
+
+#~ msgid "Key:"
+#~ msgstr "Ключ:"
+
+#~ msgid "Type:"
+#~ msgstr "Тип:"
+
+#~ msgid "Classname:"
+#~ msgstr "Имя класса:"
+
+#~ msgid "Description:"
+#~ msgstr "Описание:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Изменить параметр"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Мастер настройки"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Правила"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Настройка правил"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Источник"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Цель"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Условие"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Изменения"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Обработка изменений"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Действие"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Параметр"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Значение"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Убедитесь, что настраиваемая программа не запущена отдельно. В противном "
+#~ "случае изменения, внесённые в мастере, будут утеряны."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Предупреждение"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Запустить мастер"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Выбор из списка"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Продолжительность"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "сегодня"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Место проведения"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Показать день рождения"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Безымянный модуль"
+
+#~ msgid "New category entry"
+#~ msgstr "Новая категория"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr "Введите название категории"
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Добавить новую категорию в список"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr "Нажмите эту кнопку для добавления в список новой категории."
+
+#~ msgid "A&dd"
+#~ msgstr "&Добавить"
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr "Добавить подкатегорию в выбранную категорию"
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Нажмите эту кнопку для добавления подкатегории в выбранную категорию."
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Новая &подкатегория"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "Удалить выбранную категорию"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr "Нажмите эту кнопку для удаления выбранной категории из списка."
+
+#~ msgid "Category list"
+#~ msgstr "Категории"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Список доступных категорий. Вы можете создавать обычные и вложенные "
+#~ "категории."
+
+#, fuzzy
+#~| msgid "Default category"
+#~ msgid "Default Category"
+#~ msgstr "Категория по умолчанию"
+
+#~ msgid "Category"
+#~ msgstr "Категория"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "Снять в&ыделение"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&Изменить..."
+
+#, fuzzy
+#~| msgid "Yes"
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Да"
+
+#, fuzzy
+#~| msgid "No"
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Нет"
+
+#~ msgid "Organizer"
+#~ msgstr "Организатор"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Is all-day"
+#~ msgstr "На весь день"
+
+#~ msgid "Has duration"
+#~ msgstr "Фиксированное время"
+
+#~ msgid "Summary"
+#~ msgstr "Название"
+
+#~ msgid "Status"
+#~ msgstr "Состояние"
+
+#~ msgid "Secrecy"
+#~ msgstr "Секретность"
+
+#~ msgid "Priority"
+#~ msgstr "Приоритет"
+
+#~ msgid "Location"
+#~ msgstr "Место проведения"
+
+#~ msgid "Categories"
+#~ msgstr "Категории"
+
+#~ msgid "Alarms"
+#~ msgstr "Напоминания"
+
+#~ msgid "Resources"
+#~ msgstr "Источники"
+
+#~ msgid "Relations"
+#~ msgstr "Связи"
+
+#~ msgid "Attachments"
+#~ msgstr "Вложения"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Исключения (даты)"
+
+#~ msgid "Exception Times"
+#~ msgstr "Исключения (время)"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Создан"
+
+#~ msgid "Related Uid"
+#~ msgstr "Связанный UID"
+
+#~ msgid "Has End Date"
+#~ msgstr "Определена дата окончания"
+
+#~ msgid "End Date"
+#~ msgstr "Дата окончания"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Определена дата начала"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Определён срок"
+
+#~ msgid "Due Date"
+#~ msgstr "Срок"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Определена дата завершения"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Завершается"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Завершено"
+
+#~ msgid "Local"
+#~ msgstr "Локальные папки"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "Cached IMAP"
+#~ msgstr "Кешированный IMAP"
+
+#~ msgid "News"
+#~ msgstr "Телеконференции"
+
+#~ msgid "None"
+#~ msgstr "Нет"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Почтовый ящик в формате maildir"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Новости"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "Кешированный IMAP"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Локальный почтовый ящик"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Неизвестный"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "&Не показывать это сообщение в будущем"
+
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "Статья\n"
+#~ "<b>%1</b><br /><b>%2</b><br />вызвала появление заметки:<br />%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Установка рейтинга"
+
+#~ msgid "Display Message"
+#~ msgstr "Показать сообщение"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Подсвечивать заголовок"
+
+#, fuzzy
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "Отметить как прочитанное"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Список заметок</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Заметки"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Содержит подстроку"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Соответствует регулярному выражению"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Соответствует регулярному выражению (с учётом регистра)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Равно"
+
+#~ msgid "Less Than"
+#~ msgstr "Меньше чем"
+
+#~ msgid "Greater Than"
+#~ msgstr "Больше чем"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Изменить название правила"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Правило с таким названием уже есть. Укажите другое название:"
+
+#~ msgid "rule %1"
+#~ msgstr "правило: %1"
+
+#~ msgid "Not"
+#~ msgstr "Не соответствует"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Несоответствие условию"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Выбор заголовков, которые не соответствуют условиям"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Выбор типа соответствия"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Соответствуют условию"
+
+#~ msgid "Select an action."
+#~ msgstr "Действие."
+
+#~ msgid "Properties"
+#~ msgstr "Свойства"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Название:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Группы:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "&Добавить группу"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "&Автоматически помечать правило как устаревшее"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "Правило &действительно до:"
+
+#~ msgid "Conditions"
+#~ msgstr "Условия"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Соответствует &всем условиям"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Соответствует &любому условию"
+
+#~ msgid "Actions"
+#~ msgstr "Действия"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " день"
+#~ msgstr[1] " дня"
+#~ msgstr[2] " дней"
+#~ msgstr[3] " день"
+
+#~ msgid "New rule"
+#~ msgstr "Создать правило"
+
+#~ msgid "Edit rule"
+#~ msgstr "Изменить правило"
+
+#~ msgid "Remove rule"
+#~ msgstr "Удалить правило"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>все группы</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "Показать правила &только для группы:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Редактор правил"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Изменить правило"
+
+#~ msgid "Reload &List"
+#~ msgstr "&Обновить список"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr "Выбор почтовых папок для показа в списке папок"
+
+#~ msgid "S&earch:"
+#~ msgstr "П&оиск:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Отключить показ &дерева"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "Только &подписчики"
+
+#~ msgid "&New only"
+#~ msgstr "Только &новые"
+
+#~ msgid "Current changes:"
+#~ msgstr "Текущие изменения:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Название"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Описание"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Подписать на"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Отписать от"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Загрузка... (%1 соответствие)"
+#~ msgstr[1] "Загрузка... (%1 соответствия)"
+#~ msgstr[2] "Загрузка... (%1 соответствий)"
+#~ msgstr[3] "Загрузка... (%1 соответствие)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (%1 соответствие)"
+#~ msgstr[1] "%2: (%1 соответствия)"
+#~ msgstr[2] "%2: (%1 соответствий)"
+#~ msgstr[3] "%2: (%1 соответствие)"
+
+#~ msgid "View Columns"
+#~ msgstr "Показывать столбцы"
+
+#, fuzzy
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Обнаружен конфликт"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>A conflict was detected. This probably means someone edited the same "
+#~| "entry on the server while you changed it locally.<br/>NOTE: You have to "
+#~| "check mail again to apply your changes to the server.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "<qt>Обнаружен конфликт. Возможно, это было вызвано тем, что кто-то другой "
+#~ "изменяет ту же запись, что и вы на сервере.<br/>Примечание: проверьте "
+#~ "почту, чтобы сохранить ваши изменения на сервере.</qt>"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Получить свои изменения"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Получить новый вариант"
+
+#, fuzzy
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Получить оба варианта"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Локальная запись"
+
+#, fuzzy
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Сведения о локальной записи"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Последнее изменение:"
+
+#, fuzzy
+#~| msgid "Set Last modified"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Последнее изменение"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Показать сведения"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Показать различия"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Настройки синхронизации"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Настройки синхронизации"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Настройки синхронизации"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Сохранить локальные изменения"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Сохранить локальные изменения"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Сохранить новые изменения"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Сохранить новые изменения"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Сохранить более новые изменения"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Сохранить более новые изменения"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Запрашивать для каждой записи"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Запрашивать для каждой записи"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Получить оба варианта изменений"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Получить оба варианта изменений"
+
+#, fuzzy
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "Применить ко всем конфликтным записям синхронизации"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Локальное событие"
+
+#, fuzzy
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Локальная задача"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Локальная запись журнала"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Новое событие"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Новая задача"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Новая запись журнала"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Скрыть сведения"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Скрыть сведения"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Показать сведения..."
+
+#, fuzzy
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Различия между %1 и %2"
+
+#, fuzzy
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Различия в %1"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Локальная запись"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Локальная запись"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Показать сведения"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Скрыть сведения"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "Внешний редактор всё ещё запущен.\n"
+#~ "Прекратить его работу или оставить?"
+
+#~ msgid "Floating"
+#~ msgstr "Другой"
+
+#~ msgid "Local entry"
+#~ msgstr "Локальная запись"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Обновлённая запись"
+
+#~ msgid "<qt>Failed to execute signature script<br><b>%1</b>:<br>%2</qt>"
+#~ msgstr "<qt>Ошибка выполнения сценария подписи<br><b>%1</b>:<br>%2</qt>"
+
+#~ msgid "%1 (Default)"
+#~ msgstr "%1 (по умолчанию)"
+
+#~ msgid "Unnamed"
+#~ msgstr "Без названия"
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains more than "
+#~ "one @. You will not create valid messages if you do not change your "
+#~ "address."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он содержит несколько "
+#~ "символов @. Вы не сможете создавать правильные сообщения с таким адресом."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "@.You will not create valid messages if you do not change your address."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он не содержит символа "
+#~ "@. Вы не сможете создавать правильные сообщения с таким адресом."
+
+#~ msgid "You have to enter something in the email address field."
+#~ msgstr "Вы должны указать адрес электронной почты."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "local part."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он не содержит имени "
+#~ "пользователя."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "domain part."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он не содержит "
+#~ "названия домена."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains unclosed "
+#~ "comments/brackets."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он не содержит "
+#~ "незакрытые комментарии/скобки."
+
+#~ msgid "The email address you entered is valid."
+#~ msgstr "Указанный адрес электронной почты верен."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an "
+#~ "unclosed anglebracket."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он содержит незакрытую "
+#~ "угловую скобку."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an "
+#~ "unopened anglebracket."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он содержит начальную "
+#~ "угловую скобку."
+
+#~ msgid ""
+#~ "The email address you have entered is not valid because it contains an "
+#~ "unexpected comma."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он содержит запятую."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it ended unexpectedly, "
+#~ "this probably means you have used an escaping type character like an \\  "
+#~ "as the last character in your email address."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он не закончен. "
+#~ "Возможно, вы указали экранирующий символ \\ в конце адреса."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains quoted "
+#~ "text which does not end."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он не содержит "
+#~ "закрывающую кавычку для текста."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not seem to "
+#~ "contain an actual email address, i.e. something of the form joe@kde.org."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он не похож на "
+#~ "реальный адрес, например, joe@kde.org."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an illegal "
+#~ "character."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он содержит "
+#~ "недопустимый символ."
+
+#~ msgid ""
+#~ "The email address you have entered is not valid because it contains an "
+#~ "invalid displayname."
+#~ msgstr ""
+#~ "Указанный адрес электронной почты неверен, так как он содержит "
+#~ "неправильное имя."
+
+#~ msgid "Unknown problem with email address"
+#~ msgstr "Неизвестная проблема с адресом электронной почты"
+
+#~ msgid ""
+#~ "_: NAME OF TRANSLATORS\n"
+#~ "Your names"
+#~ msgstr "Андрей Черепанов"
+
+#~ msgid ""
+#~ "_: EMAIL OF TRANSLATORS\n"
+#~ "Your emails"
+#~ msgstr "sibskull@mail.ru"
+
+#~ msgid "Cc"
+#~ msgstr "Копия"
+
+#~ msgid "Bcc"
+#~ msgstr "Скрытая копия"
+
+#~ msgid "All"
+#~ msgstr "Все"
+
+#~ msgid "Address book:"
+#~ msgstr "Адресная книга:"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Скрыть день рождения"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Скрыть почтовые адреса"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Скрыть адреса эл. почты"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Скрыть номера телефонов"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Скрыть адреса веб-страниц (URL)"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Скрыть адреса Интернет-пейджинга"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Скрыть дополнительные поля"
+
+#~ msgid "Presence"
+#~ msgstr "Наличие"
+
+#~ msgid ""
+#~ "_: %1 is a time, %2 is a status message\n"
+#~ "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "_n: Transmission complete. %n message in %1 KB.\n"
+#~ "Transmission complete. %n messages in %1 KB."
+#~ msgstr ""
+#~ "Передача завершена. %n новое сообщение, %1 кб.\n"
+#~ "Передача завершена. %n новых сообщения, %1 кб.\n"
+#~ "Передача завершена. %n новых сообщений, %1 кб."
+
+#~ msgid ""
+#~ "_n: Transmission complete. %n new message.\n"
+#~ "Transmission complete. %n new messages."
+#~ msgstr ""
+#~ "Передача завершена. %n новое сообщение.\n"
+#~ "Передача завершена. %n новых сообщения.\n"
+#~ "Передача завершена. %n новых сообщений."
+
+#~ msgid ""
+#~ "_n: Transmission for account %3 complete. %n new message in %1 KB (%2 KB "
+#~ "remaining on the server).\n"
+#~ "Transmission for account %3 complete. %n new messages in %1 KB (%2 KB "
+#~ "remaining on the server)."
+#~ msgstr ""
+#~ "Передача с %3 завершена. %n новое сообщение, %1 кб (%2 кб осталось на "
+#~ "сервере).\n"
+#~ "Передача с %3 завершена. %n новых сообщения, %1 кб (%2 кб осталось на "
+#~ "сервере).\n"
+#~ "Передача с %3 завершена. %n новых сообщений, %1 кб (%2 кб осталось на "
+#~ "сервере)."
+
+#~ msgid ""
+#~ "_n: Transmission for account %2 complete. %n message in %1 KB.\n"
+#~ "Transmission for account %2 complete. %n messages in %1 KB."
+#~ msgstr ""
+#~ "Передача с %2 завершена. %n новое сообщение, %1 кб.\n"
+#~ "Передача с %2 завершена. %n новых сообщения, %1 кб.\n"
+#~ "Передача с %2 завершена. %n новых сообщений, %1 кб."
+
+#~ msgid ""
+#~ "_n: Transmission for account %1 complete. %n new message.\n"
+#~ "Transmission for account %1 complete. %n new messages."
+#~ msgstr ""
+#~ "Передача с %1 завершена. %n новое сообщение.\n"
+#~ "Передача с %1 завершена. %n новых сообщения.\n"
+#~ "Передача с %1 завершена. %n новых сообщений."
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> cannot be found in your addressbook.</qt>"
+#~ msgstr ""
+#~ "<qt>Адрес электронной почты <b>%1</b> не найден в вашей адресной книге.</"
+#~ "qt>"
+
+#~ msgid "is not in address book"
+#~ msgstr "не найден адресной книге"
+
+#~ msgid "File I/O Error"
+#~ msgstr "Ошибка чтения/записи файла"
+
+#~ msgid ""
+#~ "The specified file does not exist:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Указанный файл не существует:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "This is a folder and not a file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Указанный адрес не является ни папкой ни файлом:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "You do not have read permissions to the file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "У вас нет прав на чтение файла:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not read file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Невозможно прочитать файл:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не удаётся открыть файл:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while reading file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ошибка чтения файла:\n"
+#~ "%1"
+
+#~ msgid "Could only read %1 bytes of %2."
+#~ msgstr "Возможно прочесть только %1 байт из %2."
+
+#~ msgid ""
+#~ "File %1 exists.\n"
+#~ "Do you want to replace it?"
+#~ msgstr ""
+#~ "Файл %1 существует.\n"
+#~ "Вы хотите переписать его?"
+
+#~ msgid "&Replace"
+#~ msgstr "&Заменить"
+
+#~ msgid ""
+#~ "Failed to make a backup copy of %1.\n"
+#~ "Continue anyway?"
+#~ msgstr ""
+#~ "Невозможно создать резервную копию %1.\n"
+#~ "Продолжить?"
+
+#~ msgid ""
+#~ "Could not write to file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не удаётся записать в файл:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file for writing:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Невозможно открыть файл для записи:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while writing file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ошибка записи в файл:\n"
+#~ "%1"
+
+#~ msgid "Could only write %1 bytes of %2."
+#~ msgstr "Возможно записать только %1 байт из %2."
+
+#~ msgid "%1 does not exist"
+#~ msgstr "%1 не существует"
+
+#~ msgid "%1 is not accessible and that is unchangeable."
+#~ msgstr "%1 недоступен."
+
+#~ msgid "%1 is not readable and that is unchangeable."
+#~ msgstr "%1 не доступен для чтения."
+
+#~ msgid "%1 is not writable and that is unchangeable."
+#~ msgstr "%1 не доступен для записи."
+
+#~ msgid "Folder %1 is inaccessible."
+#~ msgstr "Папка %1 недоступна."
+
+#~ msgid ""
+#~ "Some files or folders do not have the right permissions, please correct "
+#~ "them manually."
+#~ msgstr ""
+#~ "У вас нет прав доступа к некоторым файлам или папкам. Измените "
+#~ "необходимые права доступа вручную."
+
+#~ msgid "Permissions Check"
+#~ msgstr "Проверка прав доступа"
+
+#~ msgid "Plain"
+#~ msgstr "Обычный текст"
+
+#~ msgid "Unquoted"
+#~ msgstr "Не цитировано"
+
+#~ msgid "Bracketed"
+#~ msgstr "В скобках"
+
+#~ msgid "Undefined"
+#~ msgstr "Не определено"
+
+#~ msgid "File to import:"
+#~ msgstr "Импорт файла:"
+
+#~ msgid "Separator:"
+#~ msgstr "Разделитель:"
+
+#~ msgid "Tab"
+#~ msgstr "Табуляция"
+
+#~ msgid "Space"
+#~ msgstr "Пробел"
+
+#~ msgid "Header"
+#~ msgstr "Заголовок"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Привязать столбец"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Убрать привязку столбца"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Привязка из шаблона..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Сохранить шаблон"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Загружено"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Подождите, пока файл загружается."
+
+#~ msgid "Template Selection"
+#~ msgstr "Выбор шаблона"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Выберите шаблон для соответствующего файла CSV:"
+
+#~ msgid "Importing Progress"
+#~ msgstr "Импортировано"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Подождите, пока осуществляется импорт."
+
+#~ msgid "Template Name"
+#~ msgstr "Название шаблона"
+
+#~ msgid "Select Region of Image"
+#~ msgstr "Область рисунка"
+
+#~ msgid "Please click and drag on the image to select the region of interest:"
+#~ msgstr "Укажите область рисунка, щёлкнув и растянув её границы мышью:"
+
+#~ msgid "Image Operations"
+#~ msgstr "Операции с рисунком"
+
+#~ msgid "&Rotate Clockwise"
+#~ msgstr "&Повернуть по часовой стрелке"
+
+#~ msgid "Rotate &Counterclockwise"
+#~ msgstr "Повернуть п&ротив часовой стрелки"
+
+#~ msgid ""
+#~ "_n:  day\n"
+#~ " days"
+#~ msgstr ""
+#~ " день\n"
+#~ " дня\n"
+#~ " дней"
+
+#~ msgid "<all groups>"
+#~ msgstr "<все группы>"
+
+#~ msgid ""
+#~ "_n: %1: (1 matching)\n"
+#~ "%1: (%n matching)"
+#~ msgstr ""
+#~ "%1: (%n соответствие)\n"
+#~ "%1: (%n соответствия)\n"
+#~ "%1: (%n соответствий)"
+
+#~ msgid ""
+#~ "_: more widgets\n"
+#~ "More"
+#~ msgstr "Добавить условие"
+
+#~ msgid ""
+#~ "_: fewer widgets\n"
+#~ "Fewer"
+#~ msgstr "Удалить условие"
+
+#~ msgid ""
+#~ "_: clear widgets\n"
+#~ "Clear"
+#~ msgstr "Очистить"
+
+#~ msgid "Emoticon theme"
+#~ msgstr "Тема смайликов"
+
+#~ msgid "This allows you to change the emoticon theme that should be used."
+#~ msgstr "Здесь вы можете выбрать тему графических изображений смайликов."

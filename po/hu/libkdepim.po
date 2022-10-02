@@ -1,0 +1,1836 @@
+#
+# Tamas Szanto <taszanto@gmail.com>, 2002.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2011.
+# Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE 4.3\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2014-07-09 00:28+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Nem tudunk hozzáadni több címzettet. Elértük a címzettek maximális számát."
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "A művelet félbeszakítása"
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Félbeszakítás..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "A kapcsolat titkosított"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "A kapcsolat nem titkosított"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Részletes állapotjelző ablak megnyitása"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Részletes állapotjelző ablak megjelenítése"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "A részletes állapotjelző ablak elrejtése"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Még egy"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Eggyel kevesebb"
+
+#~ msgid "Choose..."
+#~ msgstr "Válasszon..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Beállítások"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Az alapértelmezések lesznek beállítva az összes paraméternél. Az összes "
+#~ "módosítás el fog veszni!"
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Az alapértelmezések beállítása"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Visszaállás az alapértelmezésekre"
+
+#, fuzzy
+#~| msgid "&Add"
+#~ msgid "Add"
+#~ msgstr "&Hozzáadás"
+
+#~ msgid "Remove"
+#~ msgstr "Eltávolítás"
+
+#, fuzzy
+#~| msgid "Do you want to remove this email?"
+#~| msgid_plural "Do you want to remove %1 emails?"
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Szeretné eltávolítani ezt a levelet?"
+#~ msgstr[1] "Szeretne eltávolítani %1 levelet?"
+
+#, fuzzy
+#~| msgid "Import Page"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Lap importálása"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Biztosan törölni szeretné ezt: '<b>%1</b>'?</qt>"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Szervezeti egység megjelenítése az LDAP találatokhoz"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "A kiegészítési sorrend beállítása…"
+
+#~ msgid "Recent Addresses"
+#~ msgstr "A legutóbbi címek"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Partner található az adatában"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP kiszolgáló: %1"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "Keresés:"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Keresés"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "E-mail cím"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Kijelölés"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "A kijelölés megszüntetése"
+
+#, fuzzy
+#~| msgid "Search in result"
+#~ msgid "Search in result..."
+#~ msgstr "Keresés a találatokban"
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Levél küldése erre a címre: '%1'"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "A kiegészítési sorrend beállítása…"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "A befejezési sorrend szerkesztése"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "A legutóbbi címek"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "E-mail cím"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "A befejezési sorrend szerkesztése"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "%1 LDAP-kiszolgáló"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "Fel"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "Le"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "M&a"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Holnap"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "&Következő hét"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Következő hóna&p"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Nincs dátum"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "A vCard elsődleges e-mail címe már szerepel a címjegyzékben. Ha "
+#~ "szükséges, mentse el a vCard fájlt egy fájlba és importálja onnan."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "A vCard bekerült a címjegyzékbe. A bejegyzés egyéb jellemzői a "
+#~ "címjegyzékben módosíthatók."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Egy névjegy már van a címjegyzékben ezzel az e-mail címmel: <email>%1</"
+#~ "email>"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Létre kell hoznia egy címjegyzéket, mielőtt új névjegyet adna hozzá. "
+#~ "Szeretne címjegyzéket létrehozni?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Nincs elérhető címjegyzék"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Címjegyzék hozzáadása"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>A névjegy a(z) <email>%1</email> e-mail címhez sikeresen hozzáadva "
+#~ "a címjegyzékbe.</para><para>Szeretné most szerkeszteni ezt az új "
+#~ "névjegyet?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "A névjegy nem tárolható: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Nem sikerült eltárolni a névjegyet"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "A névjegy sikeresen létrehozva"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Kiszel Kristóf,Szántó Tamás"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "ulysses@kubuntu.org,taszanto@gmail.com"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Gép hozzáadása"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP-kiszolgáló beállításai"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) Tobias Koenig, 2009-2010."
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "Az LDAP jelszó egyszerű szövegként van tárolva, szeretné a KWalletben "
+#~ "tárolni?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Egyszerű szöveges jelszó tárolása a KWalletben"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Gép szerkesztése"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Szeretné eltávolítani a(z) „%1” gép beállításait?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Gép eltávolítása"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-kiszolgálók"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Az összes kiszolgáló ellenőrzése:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Gép hozzáadása…"
+
+#~ msgid "&Edit Host..."
+#~ msgstr "Gép sz&erkesztése…"
+
+#~ msgid "&Remove Host"
+#~ msgstr "Gé&p eltávolítása"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Cím"
+
+#~ msgid "Full Name"
+#~ msgstr "Teljes név"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Home Number"
+#~ msgstr "Otthoni szám"
+
+#~ msgid "Work Number"
+#~ msgstr "Munkahelyi szám"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Mobil"
+
+#~ msgid "Fax Number"
+#~ msgstr "Fax"
+
+#~ msgid "Pager"
+#~ msgstr "Csipogó"
+
+#~ msgid "Street"
+#~ msgstr "Utca"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Állam"
+
+#~ msgid "Country"
+#~ msgstr "Ország"
+
+#~ msgid "City"
+#~ msgstr "Helység"
+
+#~ msgid "Organization"
+#~ msgstr "Szervezet"
+
+#~ msgid "Company"
+#~ msgstr "Cég"
+
+#~ msgid "Department"
+#~ msgstr "Osztály"
+
+#~ msgid "Zip Code"
+#~ msgstr "Irányítószám"
+
+#~ msgid "Postal Address"
+#~ msgstr "Postai cím"
+
+#~ msgid "Description"
+#~ msgstr "Leírás"
+
+#~ msgid "User ID"
+#~ msgstr "Felhasználóazonosító"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-mail cím"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Állam"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Cím"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Névjegyek importálása LDAP-ból"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Cím keresése a címtárban"
+
+#~ msgid "Search for:"
+#~ msgstr "Keresés:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "ebben"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Név"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail cím"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Otthoni telefonszám"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Munkahelyi telefonszám"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Keresés"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekurzív keresés"
+
+#~ msgid "Contains"
+#~ msgstr "Tartalmazza"
+
+#~ msgid "Starts With"
+#~ msgstr "Kezdődik"
+
+#~ msgid "Search in result"
+#~ msgstr "Keresés a találatokban"
+
+#~ msgid "Searching..."
+#~ msgstr "Keresés…"
+
+#~ msgid "Select All"
+#~ msgstr "Összes kijelölése"
+
+#~ msgid "Unselect All"
+#~ msgstr "A kijelölés megszüntetése"
+
+#~ msgid "Add Selected"
+#~ msgstr "A kijelölt hozzáadása"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "LDAP-kiszolgálók beállítása…"
+
+#~ msgid "Copy"
+#~ msgstr "Másolás"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Keresés előtt ki kell választania egy LDAP-kiszolgálót."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "LDAP-import innen: %1, %2"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "A címjegyzék LDAP-beállításainak megváltoztatása"
+
+#~ msgid "&Remove"
+#~ msgstr "&Eltávolítás"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "A legutóbbi címek szerkesztése"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Címjegyzék kiválasztása"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Válassza ki a címjegyzéket, amelybe menteni szeretné névjegyet:"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Rendelkezésre álló lapok"
+
+#~ msgid "Unknown"
+#~ msgstr "Ismeretlen"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Résztvevők"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Kezdési idő"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Időtartam"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Az átvitel befejeződött. %1 új üzenet (%2 KB). %3 KB maradt a kiszolgálón."
+#~ msgstr[1] ""
+#~ "Az átvitel befejeződött. %1 új üzenet (%2 KB). %3 KB maradt a kiszolgálón."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Az átvitel befejeződött. %1 üzenet (%2 KB)."
+#~ msgstr[1] "Az átvitel befejeződött. %1 üzenet (%2 KB)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Az átvitel befejeződött. %1 új üzenet."
+#~ msgstr[1] "Az átvitel befejeződött. %1 új üzenet."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Az átvitel befejeződött. Nincs új üzenet."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Az átvitel befejeződött - azonosító: %4. %1 új üzenet (%2 KB). %3 KB "
+#~ "maradt a kiszolgálón."
+#~ msgstr[1] ""
+#~ "Az átvitel befejeződött - azonosító: %4. %1 új üzenet (%2 KB). %3 KB "
+#~ "maradt a kiszolgálón."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Az átvitel befejeződött - azonosító: %3. %1 üzenet (%2 KB)."
+#~ msgstr[1] "Az átvitel befejeződött - azonosító: %3. %1 üzenet (%2 KB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Az átvitel befejeződött - azonosító: %2. %1 új üzenet."
+#~ msgstr[1] "Az átvitel befejeződött - azonosító: %2. %1 új üzenet."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Az átvitel befejeződött - azonosító: %1. Nincs új üzenet."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Név"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Helyesírás-ellenőrzés nyelve"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Üzenetek letöltése és eltárolása…"
+
+#~ msgid "Total Messages"
+#~ msgstr "Összes üzenet"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Olvasatlan üzenetek"
+
+#~ msgid "Quota"
+#~ msgstr "Kvóta"
+
+#~ msgid "Storage Size"
+#~ msgstr "Tárolóméret"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Almappa tárolóméret"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Méret"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Összesen"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Olvasatlan"
+
+#~ msgid "Stop"
+#~ msgstr "Állj"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Nincs engedélyezve a szemantikus asztali rendszer. Ennek a szoftvernek "
+#~ "sok fontos szolgáltatása függ a szemantikus asztali rendszertől és nem "
+#~ "működik teljesen nélküle."
+
+#~ msgid "&Configure"
+#~ msgstr "&Beállítás"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "A szemantikus asztali rendszert (Nepomuk) beállító modul nem található a "
+#~ "rendszeren. Győződjön meg róla, hogy a Nepomuk megfelelően telepítve van."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Nincs engedélyezve a szemantikus asztali rendszer. A következő nem "
+#~ "szolgáltatás fog megfelelően működni:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "SMS küldése"
+
+#~ msgid "Message"
+#~ msgstr "Üzenet"
+
+#~ msgid "Recipient:"
+#~ msgstr "Címzett:"
+
+#~ msgid "Send"
+#~ msgstr "Küldés"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Címjegyzék kiválasztása"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Válassza ki, melyik címjegyzékbe kerüljön az új névjegy:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>Az e-mail cím (<b>%1</b>) bekerült a címjegyzékbe. A bejegyzés egyéb "
+#~ "jellemzői a címjegyzékben módosíthatók.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "holnap"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "ma"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "tegnap"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "ma"
+
+#~ msgid "To"
+#~ msgstr "Címzett"
+
+#~ msgid "CC"
+#~ msgstr "Másolat (CC)"
+
+#~ msgid "BCC"
+#~ msgstr "Rejtett másolat (BCC)"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Címválasztás"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "Szű&rés erre:"
+
+#, fuzzy
+#~| msgid "&Search Directory Service"
+#~ msgid "Search Directory Service"
+#~ msgstr "&Címtárszolgáltatások keresése"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Címzett >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&Másolat >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&Rejtett másolat >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Eltávolítás"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Mentés cím&listaként..."
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Kereséshez ki kell válaszani egy LDAP-címjegyzéket.\n"
+#~ "A beállítás a Beállítások/A KDE címjegyzék beállítása menüpontban "
+#~ "található."
+
+#~ msgid "Address Selection"
+#~ msgstr "Címválasztás"
+
+#~ msgid "&To >>"
+#~ msgstr "&Címzett >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&Másolat >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&Rejtett másolat >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "A k&iválasztott címek"
+
+#~ msgid "&Filter on:"
+#~ msgstr "Szű&rés erre:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Mentés cím&listaként..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "&Címtárszolgáltatások keresése"
+
+#~ msgid "Show Birthday"
+#~ msgstr "A születésnap megjelenítése"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "A postai címek megjelenítése"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Az e-mail címek megjelenítése"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "A telefonszámok megjelenítése"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Az internetes címek (URL-ek) megjelenítése"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Az IM-címek megjelenítése"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Az egyéni mezők megjelenítése"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Honlap"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Blog-csatorna"
+
+#~ msgid "Notes"
+#~ msgstr "Megjegyzések"
+
+#~ msgid "Profession"
+#~ msgstr "Foglalkozás"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Titkár neve"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Felettes neve"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Élettárs neve"
+
+#~ msgid "Office"
+#~ msgstr "Iroda"
+
+#~ msgid "IM Address"
+#~ msgstr "IM-cím"
+
+#~ msgid "Anniversary"
+#~ msgstr "Évforduló"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Címjegyzék</b>: %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Nincs beállítva a végrehajtandó alkalmazás. A beállítási "
+#~ "párbeszédablakban lehet megadni a szükséges adatokat."
+
+#~ msgid "Call number %1"
+#~ msgstr "A(z) %1 szám felhívása"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Fax küldése erre a számra: %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "A cím megjelenítése térképen"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "SMS küldése: %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "URL megnyitása: %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Csevegés ezzel a partnerrel: %1"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "&Címjegyzék"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Név"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Teljes név"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Honlap"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Otthoni szám"
+
+#~ msgid "<group>"
+#~ msgstr "<csoport>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Egyéb címek"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Egy cím sincs a listában. Adjon hozzá néhány címet a címjegyzékből, majd "
+#~ "próbálkozzon újra."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Új címlista"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Kérem írja be a nevet:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr "<qt><b>%1</b> nevű címlista már létezik. Válasszon más nevet.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Címlisták"
+
+#, fuzzy
+#~| msgid "&Insert"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "Be&szúrás"
+
+#, fuzzy
+#~| msgid "Insert File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Fájl beszúrása"
+
+#, fuzzy
+#~| msgid "External Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Külső szerkesztő"
+
+#, fuzzy
+#~| msgid "Abort Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Bezárás"
+
+#, fuzzy
+#~| msgid "Leave Editor Open"
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Maradjon nyitva"
+
+#~ msgid "Edit Categories"
+#~ msgstr "A kategóriák szerkesztése"
+
+#~ msgid "New category"
+#~ msgstr "Új kategória"
+
+#, fuzzy
+#~| msgid "New category"
+#~ msgid "New subcategory"
+#~ msgstr "Új kategória"
+
+#~ msgid "Select Categories"
+#~ msgstr "Kategóriaválasztás"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "URL megjelenítése: %1"
+
+#~ msgid "Text"
+#~ msgstr "Szöveg"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Numerikus érték"
+
+#~ msgid "Boolean"
+#~ msgstr "Logikai"
+
+#~ msgid "Date & Time"
+#~ msgstr "Dátum és idő"
+
+#~ msgid "Date"
+#~ msgstr "Dátum"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Qt Designer mezőablak"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer-fájlok"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Figyelem:</b> a Qt Designer nem található, valószínűleg nincs "
+#~ "telepítve. Csak már létező Designer-fájlokat lehet importálni.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "A kijelölt lap előnézete"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Ebben a részben saját grafikai elemeket (\"<i>widgeteket</i>\") "
+#~ "lehet felvenni a(z) %1 érték beviteléhez. A hozzáadási lépések:</"
+#~ "p><ol><li>Kattintson a \"<i>Szerkesztés a Qt Designerrel</i>\" gombra</"
+#~ "li><li>A megjelenő ablakban válassza a \"<i>Widget</i>\" bejegyzést, majd "
+#~ "kattintson az <i>OK</i> gombra</li><li>Adja hozzá a kívánt grafikai "
+#~ "elemeket az űrlaphoz</li><li>Mentse el a fájlt a Qt Designer által "
+#~ "felajánlott mappába</li><li>Zárja be a Qt Designert</li></ol><p>Ha a "
+#~ "Designer-fájl (*.ui) már valahol le van téve a fájlrendszerben, válassza "
+#~ "a \"<i>Lap importálása</i>\" menüpontot</p><p><b>Fontos:</b> Az űrlapra "
+#~ "helyezett grafikai elemek neveinek \"<i>X_</i>\"-szel kell kezdődniük. "
+#~ "Tehát ha az adat neve \"<i>X-Foo</i>\", akkor a grafikai elem <i>name</i> "
+#~ "tulajdonságát \"<i>X_Foo</i>\"-ra kell állítani.</p><p><b>Fontos:</b> az "
+#~ "egyéni mezők szerkesztése %2 alkalmazásnévvel fog történni. Ha más nevet "
+#~ "szeretne használni, állítsa be azt a Qt Designerben.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Hogyan működik ez?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Lap törlése"
+
+#~ msgid "Import Page..."
+#~ msgstr "Lap importálása..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Szerkesztés a Qt Designerrel..."
+
+#~ msgid "Key:"
+#~ msgstr "Kulcs:"
+
+#~ msgid "Type:"
+#~ msgstr "Típus:"
+
+#~ msgid "Classname:"
+#~ msgstr "Osztály:"
+
+#~ msgid "Description:"
+#~ msgstr "Leírás:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "A konfigurációs érték megváltoztatása"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Beállítóvarázsló"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Szabályok"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Szabálybeállítás"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Forrás"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Cél"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Feltétel"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Változások"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Módosítások beállítása"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Művelet"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Opció"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Érték"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Biztosítani kell, hogy a varázsló által beállított programok ne fussanak "
+#~ "a varázslóval egyidőben, mert abban az esetben a beállítások esetleg "
+#~ "elvesznek."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Figyelmeztetés"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "A varázsló futtatása most"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Kijelölés"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Időtartam"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "ma"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Hely"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "A születésnap megjelenítése"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Névtelen bővítőmodul"
+
+#~ msgid "New category entry"
+#~ msgstr "Új kategóriabejegyzés"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr "Írja be az új kategória vagy alkategória nevét."
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Hozzáadás a kategóriákhoz"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr ""
+#~ "Kattintson erre a gombra, ha a bejegyzést hozzá szeretné adni a "
+#~ "kategóriákhoz."
+
+#~ msgid "A&dd"
+#~ msgstr "&Hozzáadás"
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr "Hozzáadás alkategóriaként a kijelölt kategória alá."
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Ha rákattint a gombra, a bejegyzés alkategóriaként jön létre a jelenleg "
+#~ "kijelölt kategória alatt."
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Új &alkategória"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "A kijelölt kategória törlése"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr ""
+#~ "Ha rákattint a gombra, a kijelölt kategória törlődik a kategórialistából."
+
+#~ msgid "Category list"
+#~ msgstr "Kategóriák"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Itt látható a kategóriák listája. Tetszés szerinti számú alkategória "
+#~ "hozható létre."
+
+#~ msgid "Default Category"
+#~ msgstr "Alapértelmezett kategória"
+
+#~ msgid "Category"
+#~ msgstr "Kategória"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "A kijelölés megszünt&etése"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "A kategóriák sz&erkesztése..."
+
+#, fuzzy
+#~| msgid "Yes"
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Igen"
+
+#, fuzzy
+#~| msgid "No"
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Nem"
+
+#~ msgid "Organizer"
+#~ msgstr "Szervező"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Is all-day"
+#~ msgstr "Egész napos"
+
+#~ msgid "Has duration"
+#~ msgstr "Van időtartam"
+
+#~ msgid "Summary"
+#~ msgstr "Összegzés"
+
+#~ msgid "Status"
+#~ msgstr "Állapot"
+
+#~ msgid "Secrecy"
+#~ msgstr "Titkosság"
+
+#~ msgid "Priority"
+#~ msgstr "Prioritás"
+
+#~ msgid "Location"
+#~ msgstr "Hely"
+
+#~ msgid "Categories"
+#~ msgstr "Kategóriák"
+
+#~ msgid "Alarms"
+#~ msgstr "Emlékeztetők"
+
+#~ msgid "Resources"
+#~ msgstr "Erőforrások"
+
+#~ msgid "Relations"
+#~ msgstr "Kapcsolatok"
+
+#~ msgid "Attachments"
+#~ msgstr "Csatolt fájlok"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Kivételes dátumok"
+
+#~ msgid "Exception Times"
+#~ msgstr "Kivételes időpontok"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Létrehozva"
+
+#~ msgid "Related Uid"
+#~ msgstr "Kapcsolt UID"
+
+#~ msgid "Has End Date"
+#~ msgstr "Van befejezési időpont"
+
+#~ msgid "End Date"
+#~ msgstr "Befejezési dátum"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Van kezdési dátum"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Van határidő"
+
+#~ msgid "Due Date"
+#~ msgstr "Határidő"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Van befejezési dátum"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Befejezett"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Befejezve"
+
+#~ msgid "Local"
+#~ msgstr "Helyi"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "Cached IMAP"
+#~ msgstr "Gyorsítótáras IMAP"
+
+#~ msgid "News"
+#~ msgstr "Hírek"
+
+#~ msgid "None"
+#~ msgstr "Nincs"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Maildir formátumú postaláda"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Hírek"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "Kapcsolat nélküli IMAP"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Helyi postaláda"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Ismeretlen"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "Ne jelenjen meg többé ez az üzenet"
+
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "Ez a cikk:\n"
+#~ "<b>%1</b><br /><b>%2</b><br />a következő üzenetet váltotta ki:<br />%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "A pontszám igazítása"
+
+#~ msgid "Display Message"
+#~ msgstr "Üzenet megjelenítése"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Színes fejléc"
+
+#~ msgid "Mark as Read"
+#~ msgstr "Megjelölés olvasottnak"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Az összegyűjtött pontok listája</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Összegyűjtött pontok"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Részsztringként tartalmazza"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Illeszkedik a reg. kif.-hez"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Illeszkedik a reg. kif.-hez (nagybetűérzékeny)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Pontosan ugyanaz"
+
+#~ msgid "Less Than"
+#~ msgstr "Kisebb, mint"
+
+#~ msgid "Greater Than"
+#~ msgstr "Nagyobb, mint"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Válasszon más nevet a szabálynak"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Ez a szabálynév már foglalt, válasszon egy másikat:"
+
+#~ msgid "rule %1"
+#~ msgstr "Szabály %1"
+
+#~ msgid "Not"
+#~ msgstr "Nem"
+
+#~ msgid "Negate this condition"
+#~ msgstr "A feltétel tagadása"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Válassza ki, melyik fejlécre vonatkozzon a feltétel"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Válassza ki az illesztés típusát"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Illeszkedési feltétel"
+
+#~ msgid "Select an action."
+#~ msgstr "Válasszon ki egy műveletet."
+
+#~ msgid "Properties"
+#~ msgstr "Tulajdonságok"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "Né&v:"
+
+#~ msgid "&Groups:"
+#~ msgstr "Cs&oportok:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "Csoport &hozzáadása"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "A szabály a&utomatikusan járjon le"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "A szabály ér&vényessége:"
+
+#~ msgid "Conditions"
+#~ msgstr "Feltételek"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Min&den feltétel teljesüljön"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Bárme&lyik feltétel teljesülése elég"
+
+#~ msgid "Actions"
+#~ msgstr "Műveletek"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " nap"
+#~ msgstr[1] " nap"
+
+#~ msgid "New rule"
+#~ msgstr "Új szabály"
+
+#~ msgid "Edit rule"
+#~ msgstr "Szabály szerkesztése"
+
+#~ msgid "Remove rule"
+#~ msgstr "Szabály eltávolítása"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>minden csoport</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "Csak e csoport sz&abályai:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Szabályszerkesztő"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Szabály szerkesztése"
+
+#~ msgid "Reload &List"
+#~ msgstr "A lista ű&jratöltése"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr "Itt lehet beállítani, mely mappák jelenjenek meg mappanézetben"
+
+#~ msgid "S&earch:"
+#~ msgstr "&Keresés:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "A fa-nézet &kikapcsolása"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "Csak az &előfizetettek"
+
+#~ msgid "&New only"
+#~ msgstr "Csak az &újak"
+
+#~ msgid "Current changes:"
+#~ msgstr "Jelenlegi változások:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Név"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Leírás"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Előfizetés"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Az előfizetés megszüntetése"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Betöltés... (%1 találat)"
+#~ msgstr[1] "Betöltés... (%1 találat)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (%1 találat)"
+#~ msgstr[1] "%2: (%1 találat)"
+
+#~ msgid "View Columns"
+#~ msgstr "Oszlopok megjelenítése"
+
+#, fuzzy
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Ütközés"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>A conflict was detected. This probably means someone edited the same "
+#~| "entry on the server while you changed it locally.<br/>NOTE: You have to "
+#~| "check mail again to apply your changes to the server.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "<qt>Ütközés történt. Ez általában akkor fordul elő, ha a helyileg "
+#~ "módosított címet valaki a kiszolgálón megváltoztatta.<br/>MEGJEGYZÉS: a "
+#~ "módosítások érvényesítéséhez le kell kérdezni az új leveleket a "
+#~ "kiszolgálóról.</qt>"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Helyi"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Új"
+
+#, fuzzy
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Mindkettő"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Helyi bejegyzés"
+
+#, fuzzy
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "A helyi bejegyzés leírása"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Utolsó módosítás:"
+
+#, fuzzy
+#~| msgid "Set Last modified"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Utolsó módosítás"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "A részletek megjelenítése"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Az eltérések megjelenítése"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Szinkronizálási beállítások"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Szinkronizálási beállítások"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Szinkronizálási beállítások"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Ütközés esetén a helyi példány maradjon"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Ütközés esetén a helyi példány maradjon"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Ütközés esetén a távoli új példány maradjon"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Ütközés esetén a távoli új példány maradjon"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Ütközés esetén a legújabb bejegyzés maradjon"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Ütközés esetén a legújabb bejegyzés maradjon"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Ütközés esetén mindig rá kell kérdezni, melyik maradjon"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Ütközés esetén mindig rá kell kérdezni, melyik maradjon"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Ütközés esetén mindkét bejegyzés maradjon meg"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Ütközés esetén mindkét bejegyzés maradjon meg"
+
+#, fuzzy
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr ""
+#~ "Ez a beállítás érvényes legyen minden ütközésre ebben a szinkronizálásban"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Helyi esemény"
+
+#, fuzzy
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Helyi feladat"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Helyi napló"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Új esemény"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Új feladat"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Új napló"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "A részletek elrejtése"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "A részletek elrejtése"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "A részletek megjelenítése..."
+
+#, fuzzy
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "%1 és %2 eltérései"
+
+#, fuzzy
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "%1 eltérései"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Helyi bejegyzés"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Helyi bejegyzés"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "A részletek megjelenítése"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "A részletek elrejtése"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Név"
+
+#~ msgid "Local entry"
+#~ msgstr "Helyi bejegyzés"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Új távoli bejegyzés"
+
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "A külső szerkesztő még fut.\n"
+#~ "Be szeretné zárni vagy maradjon nyitva?"

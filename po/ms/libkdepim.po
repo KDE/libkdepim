@@ -1,0 +1,2093 @@
+# Malay translation.
+# FIRST AUTHOR MIMOS <opensource@mimos.my>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Mimos\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2005-10-10 23:40+0800\n"
+"Last-Translator: MIMOS <opensource@mimos.my>\n"
+"Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
+"Language: ms\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Batalkan operasi ini"
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Menghenti paksa..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Sambungan sulit"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Sambungan nyahsulit"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Buka dialog perkembangan terperinci"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Paparkan tetingkap perkembangan perincian"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Sembunyikan tetingkap perkembangan terperinci"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Lebih"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Kurang"
+
+#~ msgid "Choose..."
+#~ msgstr "Pilih..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Keutamaan"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Anda akan mengeset semua keutamaan kepada nilai piawai. Semua ubahsuai "
+#~ "kebiasaan akan hilang."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Mengeset Keutamaan Piawai"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Set Semula kepada Pawai"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "&Tambah"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< &Buang"
+
+#, fuzzy
+#~| msgid "Unknown problem with email address"
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Masalah tidak diketahui pada alamat e-mel"
+#~ msgstr[1] "Masalah tidak diketahui pada alamat e-mel"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Impot Fail Teks"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Anda pasti ingin menghapuskan '<b>%1</b>'?</qt>"
+
+#, fuzzy
+#~ msgid "Configure Completion..."
+#~ msgstr "Edit tertib siapan..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Alamat terbaru"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "Pelayan LDAP %1"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search email:"
+#~ msgstr "Cari:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search"
+#~ msgstr "Cari:"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Alamat e-mel"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Pilihan"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Unselect"
+#~ msgstr "Pilihan"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "Memuatkan..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Hantar mel ke '%1'"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Edit tertib siapan..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Edit Tertib Siapan"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Alamat terbaru"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Alamat e-mel"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Edit Tertib Siapan"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Pelayan LDAP %1"
+
+#, fuzzy
+#~ msgid "Move Up"
+#~ msgstr "Buang peraturan"
+
+#, fuzzy
+#~ msgid "Move Down"
+#~ msgstr "Buang peraturan"
+
+#, fuzzy
+#~| msgid "&Today"
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Hari ini"
+
+#, fuzzy
+#~| msgid "To&morrow"
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Esok"
+
+#, fuzzy
+#~| msgid "Next &Week"
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "&Minggu hadapan"
+
+#, fuzzy
+#~| msgid "Next M&onth"
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "&Bulan hadapan"
+
+#, fuzzy
+#~| msgid "No Date"
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Tiada Tarikh"
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard's primary email address is already in your addressbook; "
+#~| "however, you may save the VCard into a file and import it into the "
+#~| "addressbook manually."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "Alamat e-mel primer VCard  telah ada dalam buku alamat anda; "
+#~ "bagaimanapun, anda boleh simpan  VCard ke dalam fail dan mengimportnya ke "
+#~ "dalam buku alamat secara manual."
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard was added to your addressbook; you can add more information to "
+#~| "this entry by opening the addressbook."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "VCard telah ditambah ke buku alamat anda; anda boleh menambah lebih "
+#~ "maklumat ke entri ini dengan membuka buku alamat."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr "<qt>Alamat e-mel <b>%1</b> telah ada dalam buku alamat anda.</qt>"
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Tiada huraian"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Buku &Alamat"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr "<qt>Alamat e-mel <b>%1</b> telah ada dalam buku alamat anda.</qt>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "MIMOS"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "opensource@mimos.my"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Pelayan LDAP %1"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Edit..."
+
+#, fuzzy
+#~ msgid "Remove Host"
+#~ msgstr "<< &Buang"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Servers"
+#~ msgstr "Pelayan LDAP %1"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "Edit..."
+
+#, fuzzy
+#~ msgid "&Remove Host"
+#~ msgstr "<< &Buang"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Full Name"
+#~ msgstr "Nama"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-mel"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Home Number"
+#~ msgstr "Sembunyikan Nombor Telefon"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Work Number"
+#~ msgstr "Sembunyikan Nombor Telefon"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Mobile Number"
+#~ msgstr "Sembunyikan Nombor Telefon"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Fax Number"
+#~ msgstr "Sembunyikan Nombor Telefon"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Status"
+
+#, fuzzy
+#~| msgid "Organizer"
+#~ msgid "Organization"
+#~ msgstr "Penyusun"
+
+#, fuzzy
+#~| msgid "Show Postal Addresses"
+#~ msgid "Postal Address"
+#~ msgstr "Paparkan Alamat Pos"
+
+#~ msgid "Description"
+#~ msgstr "Huraian"
+
+#, fuzzy
+#~| msgid "UID"
+#~ msgid "User ID"
+#~ msgstr "UID"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-mel"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Status"
+
+#, fuzzy
+#~| msgid "Import starts at row:"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Import bermula dari baris:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search for:"
+#~ msgstr "Cari:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Nama"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mel"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Sembunyikan Nombor Telefon"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Sembunyikan Nombor Telefon"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Cari:"
+
+#, fuzzy
+#~| msgid "Conditions"
+#~ msgid "Contains"
+#~ msgstr "Syarat-syarat"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgid "Starts With"
+#~ msgstr "Waktu mula"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "Memuatkan..."
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Select All"
+#~ msgstr "Pilihan"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Unselect All"
+#~ msgstr "Pilihan"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "Add Selected"
+#~ msgstr "Pilihan Alamat"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Edit tertib siapan..."
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "Salin peraturan"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< &Buang"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Edit Alamat  Terbaru"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Buku &Alamat"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Halaman Yang Boleh Didapatkan"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Penghadir"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Waktu mula"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Tempoh"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#, fuzzy
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "_n: Penghantaran selesai. %1 mesej baru dalam %2 KB (Masih ada %3 KB pada "
+#~ "pelayan)."
+#~ msgstr[1] ""
+#~ "Penghantaran  selesai. %1 mesej baru dalam %2 KB (Masih ada %3 KB pada "
+#~ "pelayan)."
+
+#, fuzzy
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "_n: Penghantaran selesai. %1 mesej dalam %2 KB."
+#~ msgstr[1] "Penghantaran selesai. %1 mesej dalam %2 KB."
+
+#, fuzzy
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "_n: Penghantaran selesai. %1 mesej baru."
+#~ msgstr[1] "Penghantaran selesai. %1 mesej baru."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Penghantaran selesai. Tiada mesej baru."
+
+#, fuzzy
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "_n: Penghantaran untuk akaun  %4 selesai. %1 mesej baru dalam %2 KB "
+#~ "(Masih ada %3 KB pada pelayan)."
+#~ msgstr[1] ""
+#~ "Penghantaran untuk akaun %4 selesai. %1 mesej baru dalam %2 KB (Masih ada "
+#~ "%3 KB pada pelayan)."
+
+#, fuzzy
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "_n: Penghantaran untuk akaun  %3 selesai. %1 mesej dalam %2 KB."
+#~ msgstr[1] "Penghantaran untuk akaun %3 selesai. %1 mesej di dalam %2 KB."
+
+#, fuzzy
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "_n: Penghantaran untuk akaun %2 selesai. %1 mesej baru."
+#~ msgstr[1] "Penghantaran untuk akaun  %2 selesai. %1 mesej baru."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Penghantaran untuk akaun %1 selesai. Tiada mesej baru."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Nama"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mel"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Memperoleh semula dan menstor mesej..."
+
+#, fuzzy
+#~ msgid "Total Messages"
+#~ msgstr "Paparkan mesej"
+
+#, fuzzy
+#~ msgid "Unread Messages"
+#~ msgstr "Paparkan mesej"
+
+#, fuzzy
+#~ msgid "Message"
+#~ msgstr "Paparkan mesej"
+
+#, fuzzy
+#~ msgid "Recipient:"
+#~ msgstr "Huraian:"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgid "Select Address Book"
+#~ msgstr "Buku &Alamat"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> was added to your addressbook; you can "
+#~| "add more information to this entry by opening the addressbook.</qt>"
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>Alamat e-mel <b>%1</b> telah ditambah ke buku alamat anda; anda boleh "
+#~ "menambah lebih maklumat ke entri ini dengan membuka buku alamat.</qt>"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "esok"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "hari ini"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "semalam"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "hari ini"
+
+#~ msgid "To"
+#~ msgstr "Kepada"
+
+#~ msgid "CC"
+#~ msgstr "Sk"
+
+#~ msgid "BCC"
+#~ msgstr "SRk"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Masukkan nama untuk templat:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Pilihan Alamat"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&Penapis pada:"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Kepada >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&Sk >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&SRk >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Buang"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Simpan sebagai Senarai &Agihan..."
+
+#~ msgid "Address Selection"
+#~ msgstr "Pilihan Alamat"
+
+#~ msgid "&To >>"
+#~ msgstr "&Kepada >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&Sk >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&SRk >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "Alamat &Dipilih"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Penapis pada:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Simpan sebagai Senarai &Agihan..."
+
+#~ msgid "Show Birthday"
+#~ msgstr "Paparkan Hari Lahir"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Paparkan Alamat Pos"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Paparkan Aamat E-mel"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Paparkan Nombor Telefon"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Paparkankan Laman Web (URL)"
+
+#, fuzzy
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Paparkan Alamat Pos"
+
+#, fuzzy
+#~ msgid "Show Custom Fields"
+#~ msgstr "Paparkan perincian"
+
+#~ msgid "Homepage"
+#~ msgstr "Halaman Utama"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Suapan Blog"
+
+#~ msgid "Notes"
+#~ msgstr "Nota"
+
+#, fuzzy
+#~ msgid "IM Address"
+#~ msgstr "Alamat e-mel"
+
+#, fuzzy
+#~| msgid "Address book:"
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "Buku alamat:"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Tiada set aplikasi yang boleh dilaksanakan. Pergi ke dialog seting dan "
+#~ "konfigurkan satu set aplikasi."
+
+#~ msgid "Call number %1"
+#~ msgstr "Panggil nombor %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Hantar faks ke %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Paparkan alamat atas peta"
+
+#, fuzzy
+#~ msgid "Send SMS to %1"
+#~ msgstr "Hantar faks ke %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Buka URL %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Chat dengan %1"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Buku &Alamat"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Nama"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Nama"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Halaman Utama"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Sembunyikan Nombor Telefon"
+
+#~ msgid "<group>"
+#~ msgstr "<kumpulan>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Lain-lain Alamat "
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Tiada alamat di dalam senarai anda. Tambah beberapa alamat  dari buku "
+#~ "alamat terlebih dahulu dan cuba lagi. "
+
+#~ msgid "New Distribution List"
+#~ msgstr "Senarai Agihan Baru"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Masukkan nama:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Senarai agihan dengan nama  <b>%1</b> yang diberi sudah wujud. Pilih "
+#~ "nama lain.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Senarai Agihan"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "Save ke fail"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Save ke fail"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Pengedit Peraturan"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Pengedit Peraturan"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Edit Kategori"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Kategori"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Kategori"
+
+#~ msgid "Select Categories"
+#~ msgstr "Pilih kategori"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Memaparkan URL %1"
+
+#~ msgid "Text"
+#~ msgstr "Teks"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Nilai Berangka"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolean"
+
+#~ msgid "Date & Time"
+#~ msgstr "Tarikh & Waktu"
+
+#~ msgid "Date"
+#~ msgstr "Tarikh"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "Medan KCMDesigner"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Dialog Medan Qt Designer "
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "Fail *.ui|Designer"
+
+#~ msgid "Import Page"
+#~ msgstr "Impot Halaman"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Amaran:</b> Qt Designer tidak dapat ditemui. Mungkin ia tidak "
+#~ "dipasang. Anda hanya dapat mengimport fail pereka bentuk sedia ada.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Prapaparan Halaman yang Dipilih"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><p>This section allows you to add your own GUI  Elements "
+#~| "('<i>Widgets</i>') to store your own values into %1. Proceed as "
+#~| "described below:</p><ol><li>Click on '<i>Edit with Qt Designer</"
+#~| "i>'<li>In the dialog, select '<i>Widget</i>', then click <i>OK</"
+#~| "i><li>Add your widgets to the form<li>Save the file in the directory "
+#~| "proposed by Qt Designer<li>Close Qt Designer</ol><p>In case you already "
+#~| "have a designer file (*.ui) located somewhere on your hard disk, simply "
+#~| "choose '<i>Import Page</i>'</p><p><b>Important:</b> The name of each "
+#~| "input widget you place within the form must start with '<i>X_</i>'; so "
+#~| "if you want the widget to correspond to your custom entry '<i>X-Foo</"
+#~| "i>', set the widget's <i>name</i> property to '<i>X_Foo</i>'.</"
+#~| "p><p><b>Important:</b> The widget will edit custom fields with an "
+#~| "application name of %2.  To change the application name to be edited, "
+#~| "set the widget name in Qt Designer.</p></qt>"
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Bahagian ini membenarkan anda menambah ('<i>Widgets</i>')  Elemen "
+#~ "GUI anda sendiri untuk simpan nilai anda ke dalam %1. Teruskan seperti  "
+#~ "keterangan di bawah:</p><ol><li>Klik pada '<i>Edit dengan   Qt Designer</"
+#~ "i>'<li>Dalam dialog, pilih '<i>Widget</i>', kemudian klik<i>OK</"
+#~ "i><li>Tambahkan  widget anda ke borang <li>Simpan fail dalam direktori "
+#~ "yang dicadangkan oleh Qt Designer<li>Tutup Qt Designer</ol><p>Jika anda "
+#~ "ada fail pereka bentuk (*.ui) dalam cakera keras, pilih  '<i>Impot "
+#~ "Halaman</i>'</p><p><b>Penting:</b> Nama setiap  widget input yang anda "
+#~ "tempatkan dalam borang mesti dimulakan dengan '<i>X_</i>'; jadi, jika "
+#~ "anda ingin widget sejajar dengan entri  '<i>X-Foo</i>' kebiasaan, setkan "
+#~ "ciri <i>nama</i> widget ke '<i>X_Foo</i>'.</p><p><b>Penting:</b> Widget "
+#~ "akan mengedit medan langganan dengan nama aplikasi   %2.  Untuk mengubah "
+#~ "nama aplikasi bagi tujuan pengeditan, setkan nama widget dalam Qt "
+#~ "Designer.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"apa ini:%1\">Bagaimana ia berfungsi?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Hapuskan Halaman"
+
+#~ msgid "Import Page..."
+#~ msgstr "Import halaman..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Edit menggunakan  Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Kekunci:"
+
+#~ msgid "Type:"
+#~ msgstr "Jenis:"
+
+#~ msgid "Classname:"
+#~ msgstr "Nama kelas:"
+
+#~ msgid "Description:"
+#~ msgstr "Huraian:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Ubah Nilai Konfigurasi"
+
+#, fuzzy
+#~| msgid "Configuration Wizard"
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Wizard Konfigurasi"
+
+#, fuzzy
+#~| msgid "Rules"
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Peraturan"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Peraturan"
+
+#, fuzzy
+#~| msgid "Source"
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Sumber"
+
+#, fuzzy
+#~| msgid "Target"
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Sasaran"
+
+#, fuzzy
+#~| msgid "Condition"
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Syarat"
+
+#, fuzzy
+#~| msgid "Changes"
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Perubahan"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Perubahan"
+
+#, fuzzy
+#~| msgid "Action"
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Tindakan"
+
+#, fuzzy
+#~| msgid "Option"
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Opsyen"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Nilai"
+
+#, fuzzy
+#~| msgid ""
+#~| "Please make sure that the programs which are configured by the wizard do "
+#~| "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~| "could be lost."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Pastikan program yang telah dikonfigur oleh wizard tidak berjalan selari "
+#~ "dengan wizard; jika tidak, perubahan yang dibuat  oleh wizard boleh "
+#~ "hilang. "
+
+#, fuzzy
+#~| msgid "Run Wizard Now"
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Jalankan Wizard Sekarang"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Pilihan"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Tempoh"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "hari ini"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Lokasi"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Paparkan Hari Lahir"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Plugin tak dinamakan"
+
+#, fuzzy
+#~| msgid "New (remote) entry"
+#~ msgid "New category entry"
+#~ msgstr "Entri Baru (jauh)"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "Kategori"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "Kategori"
+
+#, fuzzy
+#~ msgid "Default Category"
+#~ msgstr "%1 (Piawai)"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&Kosongkan Pilihan"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&Edit Kategori..."
+
+#, fuzzy
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Tidak"
+
+#~ msgid "Organizer"
+#~ msgstr "Penyusun"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Has duration"
+#~ msgstr "Ada tempoh"
+
+#~ msgid "Summary"
+#~ msgstr "Ringkasan"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Secrecy"
+#~ msgstr "Kerahsiaan"
+
+#~ msgid "Priority"
+#~ msgstr "Keutamaan"
+
+#~ msgid "Location"
+#~ msgstr "Lokasi"
+
+#~ msgid "Categories"
+#~ msgstr "Kategori"
+
+#~ msgid "Alarms"
+#~ msgstr "Penggera"
+
+#~ msgid "Resources"
+#~ msgstr "Sumber"
+
+#~ msgid "Relations"
+#~ msgstr "Hubungan"
+
+#~ msgid "Attachments"
+#~ msgstr "Lampiran"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Tarikh Pengecualian"
+
+#~ msgid "Exception Times"
+#~ msgstr "Waktu Pengecualian"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Dicipta"
+
+#~ msgid "Related Uid"
+#~ msgstr "Uid berkaitan"
+
+#~ msgid "Has End Date"
+#~ msgstr "Ada Tarikh Akhir"
+
+#~ msgid "End Date"
+#~ msgstr "Tarikh Akhir"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Ada Tarikh Mula"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Ada Tarikh Cukup Tempoh"
+
+#~ msgid "Due Date"
+#~ msgstr "Tarikh Cukup Tempoh"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Ada Tarikh Selesai"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Selesaikan"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "selesai"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgid "Local"
+#~ msgstr "Ambil setempat"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "News"
+#~ msgstr "Nota"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "Nota"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Jurnal Setempat"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Nota"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Jurnal Setempat"
+
+#, fuzzy
+#~| msgid ""
+#~| "Article\n"
+#~| "<b>%1</b><br><b>%2</b><br>caused the following note to appear:<br>%3"
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "Artikel\n"
+#~ "<b>%1</b><br><b>%2</b><br>menyebabkan nota berikut muncul:<br>%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Selaraskan Skor"
+
+#~ msgid "Display Message"
+#~ msgstr "Paparkan mesej"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Warnakan Pengepala"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Senarai nota dikumpul</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Nota Dikumpul"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Mengandungi Subrentetan"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Memadankan Ungkapan Tetap"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Memadankan Ungkapan Tetap (sensitif huruf besar kecil)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Betul-betul sama dengan"
+
+#~ msgid "Less Than"
+#~ msgstr "Kurang dari"
+
+#~ msgid "Greater Than"
+#~ msgstr "Lebih Besar Dari"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Pilih Nama Peraturan Lain"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Nama peraturan telah ditugaskan, pilih nama lain:"
+
+#~ msgid "rule %1"
+#~ msgstr "peraturan %1"
+
+#~ msgid "Not"
+#~ msgstr "Tidak"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Sangkal syarat ini"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Pilih pengepala untuk padanan bertentangan dengan syarat "
+
+#~ msgid "Select the type of match"
+#~ msgstr "Pilih jenis padanan"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Syarat padanan"
+
+#~ msgid "Select an action."
+#~ msgstr "Pilih satu tindakan."
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Nama:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Kumpulan:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "&Tambah Kumpulan"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "&Luputkan peraturan secara automatik"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "&Peraturan sah untuk:"
+
+#~ msgid "Conditions"
+#~ msgstr "Syarat-syarat"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Padan dengan  &semua syarat"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "&Padan dengan  sebarang syarat"
+
+#~ msgid "Actions"
+#~ msgstr "Tindakan"
+
+#~ msgid "New rule"
+#~ msgstr "Peraturan baru"
+
+#~ msgid "Edit rule"
+#~ msgstr "Edit peraturan"
+
+#~ msgid "Remove rule"
+#~ msgstr "Buang peraturan"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "&Paparkan peraturan kumpulan sahaja:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Pengedit Peraturan"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Edit Peraturan"
+
+#~ msgid "Reload &List"
+#~ msgstr "Muatkan Semula &Senarai"
+
+#~ msgid "S&earch:"
+#~ msgstr "&Cari:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Nyahaktifkan paparan &pepohon"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "&Langgan sahaja"
+
+#~ msgid "&New only"
+#~ msgstr "&Baru sahaja"
+
+#~ msgid "Current changes:"
+#~ msgstr "Perubahan semasa:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Nama"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Huraian"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Langgan Ke"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Nyahlanggan Daripada"
+
+#, fuzzy
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "_n: Memuatkan... (1 padan)"
+#~ msgstr[1] "Memuatkan... (%1 padan)"
+
+#, fuzzy
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "_n: %2: (1 padan)"
+#~ msgstr[1] "%2: (%1 padan)"
+
+#, fuzzy
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Konflik dikesan"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>A conflict was detected. This probably means someone edited the same "
+#~| "entry on the server while you changed it locally.<br/>NOTE: You have to "
+#~| "check mail again to apply your changes to the server.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "<qt>Konflik dikesan. Ini mungkin bermakna seseorang telah mengedit entri "
+#~ "yang sama pada pelayan semasa anda mengubahnya setempat.<br/>PERHATIAN: "
+#~ "Anda perlu menyemak mel lagi untuk menggunakan perubahan tersebut pada "
+#~ "pelayan.</qt>"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Ambil setempat"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Ambil baru"
+
+#, fuzzy
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Ambil kedua-duanya"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Kejadian setempat"
+
+#, fuzzy
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Ringkasan kejadian setempat"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Ubahsuaian terakhir:"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Ubahsuaian terakhir:"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Paparkan perincian"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Paparkan Perbezaan"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Segerakkan Keutamaan"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Segerakkan Keutamaan"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Segerakkan Keutamaan"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Ambil entri setempat yang berkonflik"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Ambil entri setempat yang berkonflik"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Ambil entri baru (jauh) yang berkonflik"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Ambil entri baru (jauh) yang berkonflik"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Ambil entri terbaru yang berkonflik"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Ambil entri terbaru yang berkonflik"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Tanya setiap entri tentang konflik"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Tanya setiap entri tentang konflik"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Ambil kedua-duanya pada konflik"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Ambil kedua-duanya pada konflik"
+
+#, fuzzy
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "Gunakan ini kepada Semua Konflik Segerakan"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Peristiwa Setempat"
+
+#, fuzzy
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Tugasan Setempat"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Jurnal Setempat"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Peristiwa Baru"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Tugasan Baru"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "JurnalBaru"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Sembunyikan Perincian"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Sembunyikan Perincian"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Paparkan perincian"
+
+#, fuzzy
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Perbezaan %1 dan %2"
+
+#, fuzzy
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Perbezaan %1"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Kejadian setempat"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Kejadian setempat"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Paparkan perincian"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Sembunyikan Perincian"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Nama"
+
+#, fuzzy
+#~| msgid "Is floating"
+#~ msgid "Floating"
+#~ msgstr "Terapung"
+
+#~ msgid "Local entry"
+#~ msgstr "Entri Setempat"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Entri Baru (jauh)"
+
+#~ msgid "Plain"
+#~ msgstr "Ringkas"
+
+#~ msgid "Unquoted"
+#~ msgstr "Tak dipetik"
+
+#~ msgid "Bracketed"
+#~ msgstr "Dalam kurungan"
+
+#~ msgid "Undefined"
+#~ msgstr "Tak ditakrif"
+
+#~ msgid "File to import:"
+#~ msgstr "Fail yang hendak diimpot:"
+
+#~ msgid "Separator:"
+#~ msgstr "Pemisah:"
+
+#~ msgid "Tab"
+#~ msgstr "Tab"
+
+#~ msgid "Space"
+#~ msgstr "Ruang"
+
+#~ msgid "Header"
+#~ msgstr "Pengepala:"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Tugaskan kepada Lajur yang Dipilih"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Buang Tugasan Dari Lajur Dipilih"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Tugaskan denganTemplat..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Simpan Templat Semasa"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Memuatkan Perkembangan"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Tunggu sementara fail dimuatkan."
+
+#~ msgid "Template Selection"
+#~ msgstr "Pilihan Templat"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Pilih satu templat yang padan dengan fail CSV:"
+
+#~ msgid "Importing Progress"
+#~ msgstr "Mengimport Perkembangan"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Tunggu sementara data diimport"
+
+#~ msgid "Template Name"
+#~ msgstr "Nama templat"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Sembunyikan Hari Lahir"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Sembunyikan Alamat Pos"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Sembunyikan Aamat E-mel"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Sembunyikan Nombor Telefon"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Sembunyikan Laman Leb (URL)"
+
+#, fuzzy
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Sembunyikan Alamat Pos"
+
+#, fuzzy
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Sembunyikan Perincian"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "Teks"
+
+#, fuzzy
+#~| msgid "Relations"
+#~ msgid "Suggestions"
+#~ msgstr "Hubungan"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "Teks"
+
+#~ msgid "Cc"
+#~ msgstr "Sk"
+
+#~ msgid "Bcc"
+#~ msgstr "SRk"
+
+#~ msgid "All"
+#~ msgstr "Semua"
+
+#, fuzzy
+#~ msgid "Open"
+#~ msgstr "Opsyen"
+
+#~ msgid "<all groups>"
+#~ msgstr "<semua kumpulan>"
+
+#~ msgid "Is floating"
+#~ msgstr "Terapung"
+
+#~ msgid "<qt>Failed to execute signature script<br><b>%1</b>:<br>%2</qt>"
+#~ msgstr "<qt>Gagal melaksanakan skrip tandatangan<br><b>%1</b>:<br>%2</qt>"
+
+#~ msgid "%1 (Default)"
+#~ msgstr "%1 (Piawai)"
+
+#~ msgid "Unnamed"
+#~ msgstr "Tidak dinamakan"
+
+#~ msgid "File I/O Error"
+#~ msgstr "Ralat Fail I/O"
+
+#~ msgid ""
+#~ "The specified file does not exist:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Fail yang dinyatakan tidak wujud:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "This is a folder and not a file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ini adalah folder dan bukan fail:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "You do not have read permissions to the file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Anda tidak mempunyai keizinan membaca fail ini:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not read file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tidak dapat membaca fail:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tidak dapat membuka fail:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while reading file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ralat semasa membaca fail:\n"
+#~ "%1"
+
+#~ msgid "Could only read %1 bytes of %2."
+#~ msgstr "Hanya dapat membaca  %1 byte dari %2."
+
+#~ msgid ""
+#~ "File %1 exists.\n"
+#~ "Do you want to replace it?"
+#~ msgstr ""
+#~ "Fail %1 wujud.\n"
+#~ "Anda ingin menggantikannya?"
+
+#~ msgid "Save to File"
+#~ msgstr "Save ke fail"
+
+#~ msgid "&Replace"
+#~ msgstr "&Gantikan"
+
+#~ msgid ""
+#~ "Failed to make a backup copy of %1.\n"
+#~ "Continue anyway?"
+#~ msgstr ""
+#~ "Gagal membuat salinan sandaran %1.\n"
+#~ "Teruskan juga?"
+
+#~ msgid ""
+#~ "Could not write to file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tidak dapat menulis ke fail:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file for writing:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tidak dapat membuka fail untuk menulis:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while writing file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ralat semasa menulis fail:\n"
+#~ "%1"
+
+#~ msgid "Could only write %1 bytes of %2."
+#~ msgstr "Hanya boleh menulis %1 bytes dari %2."
+
+#~ msgid "%1 does not exist"
+#~ msgstr "%1 tidak wujud"
+
+#~ msgid "%1 is not accessible and that is unchangeable."
+#~ msgstr "%1 tidak dapat diakses dan keadaan ini tidak boleh diubah."
+
+#~ msgid "%1 is not readable and that is unchangeable."
+#~ msgstr "%1 tidak boleh dibaca dan keadaan ini tidak boeh diubah"
+
+#~ msgid "%1 is not writable and that is unchangeable."
+#~ msgstr "%1 tidak boleh ditulis dan keadaan ini tidak boleh diubah."
+
+#~ msgid "Folder %1 is inaccessible."
+#~ msgstr "Folder %1 tidak dapat diakses."
+
+#~ msgid ""
+#~ "Some files or folders do not have the right permissions, please correct "
+#~ "them manually."
+#~ msgstr ""
+#~ "Beberapa fail atau folder tidak mempunyai kebenaran yang betul, "
+#~ "betulkannya secara manual"
+
+#~ msgid "Permissions Check"
+#~ msgstr "Semakan keizinan"
+
+#~ msgid "Emoticon theme"
+#~ msgstr "Tema Ikon Emosi"
+
+#~ msgid "This allows you to change the emoticon theme that should be used."
+#~ msgstr ""
+#~ "Ini membenarkan anda mengubah tema ikon emosi yang sepatutnya digunakan."
+
+#~ msgid "Cannot save to addressbook."
+#~ msgstr "Tidak boleh simpan ke buku alamat"
+
+#~ msgid "Presence"
+#~ msgstr "Kehadiran"
+
+#~ msgctxt "clear widgets"
+#~ msgid "Clear"
+#~ msgstr "Kosongkan"
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains more than "
+#~ "one @. You will not create valid messages if you do not change your "
+#~ "address."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana ia mengandungi lebih "
+#~ "dari satu @. Anda tidak akan mencipta mesej sah jika alamat ini tidak "
+#~ "diubah."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "@.You will not create valid messages if you do not change your address."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana tidak mengandungi @.Anda "
+#~ "tidak akan mencipta mesej sah jika  alamat ini tidak diubah."
+
+#~ msgid "You have to enter something in the email address field."
+#~ msgstr "Anda mesti masukkan sesuatu ke dalam medan alamat e-mel."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "local part."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana ia tidak mengandungi "
+#~ "bahagian setempat."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "domain part."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana ia tidak mengandungi "
+#~ "bahagian domain."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains unclosed "
+#~ "comments/brackets."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana ia mengandungi komen/"
+#~ "tanda kurungan terbuka."
+
+#~ msgid "The email address you entered is valid."
+#~ msgstr "Alamat e-mel yang anda masukkan adalah sah."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an "
+#~ "unclosed anglebracket."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana ia mengandungi tanda "
+#~ "kurungan sudut terbuka."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an "
+#~ "unopened anglebracket."
+#~ msgstr ""
+#~ "Alamt e-mel yang anda masukkan tidak sah kerana ia mengandungi tanda "
+#~ "kurungan sudut tertutup."
+
+#~ msgid ""
+#~ "The email address you have entered is not valid because it contains an "
+#~ "unexpected comma."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana ia mengandungi koma yang "
+#~ "tak dijangka."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it ended unexpectedly, "
+#~ "this probably means you have used an escaping type character like an \\  "
+#~ "as the last character in your email address."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana ia berakhir tanpa "
+#~ "dijangka, ini bermakna anda telah menggunakan jenis aksara pelepasan "
+#~ "seperti \\ sebagai aksara akhir dalam alamat e-mel."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains quoted "
+#~ "text which does not end."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana ia mengandungi teks "
+#~ "petikan  yang  tidak berkahir. "
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not seem to "
+#~ "contain an actual email address, i.e. something of the form joe@kde.org."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah  kerana ia tidak mengandungi "
+#~ "alamat e-mel sebenar, iaitu  dalam bentuk joe@kde.org."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an illegal "
+#~ "character."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana ia mengandungi aksara "
+#~ "yang tidak sah."
+
+#, fuzzy
+#~ msgid ""
+#~ "The email address you have entered is not valid because it contains an "
+#~ "invalid displayname."
+#~ msgstr ""
+#~ "Alamat e-mel yang anda masukkan tidak sah kerana ia mengandungi koma yang "
+#~ "tak dijangka."
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> cannot be found in your addressbook.</qt>"
+#~ msgstr "<qt>Alamat e-mel <b>%1</b> telah ada dalam buku alamat anda.</qt>"
+
+#, fuzzy
+#~ msgid "is not in address book"
+#~ msgstr "Tidak boleh simpan ke buku alamat"
+
+#~ msgid "Select Region of Image"
+#~ msgstr "Pilih rantau imej"
+
+#~ msgid "Please click and drag on the image to select the region of interest:"
+#~ msgstr "Klik dan seret pada imej untuk memilih rantau yang diminati:"
+
+#~ msgid "Image Operations"
+#~ msgstr "Operasi Imej"
+
+#~ msgid "&Rotate Clockwise"
+#~ msgstr "&Putar ikut jam"
+
+#~ msgid "Rotate &Counterclockwise"
+#~ msgstr "Putar &lawan jam"

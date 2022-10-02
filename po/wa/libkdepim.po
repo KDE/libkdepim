@@ -1,0 +1,1289 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Jean Cayron <jean.cayron@gmail.com>, 2008, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2013-03-19 16:36+0100\n"
+"Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
+"Language-Team: Walloon <linux-wa@walon.org>\n"
+"Language: wa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Rinoncî a ciste operåcion chal."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Dj' abandene..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Li raloyaedje est ecripté"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Li raloyaedje n' est nén ecripté"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Drovi spepieus purnea d' divize d' avançmint"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Mostrer spepieuse finiesse d' avançmint"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Catchî spepieuse finiesse d' avançmint"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Dipus"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Moens"
+
+#~ msgid "Choose..."
+#~ msgstr "Tchoezi..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Preferinces"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Vos alez bén rade defini totes les preferinces sorlon les premetowès "
+#~ "valixhances. Tos les candjmints fwaits a vosse môde seront pierdous."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Defini prémetowès preferinces"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Rimete come prémetou"
+
+#, fuzzy
+#~| msgid "&Add"
+#~ msgid "Add"
+#~ msgstr "&Radjouter"
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove"
+#~ msgstr "&Oister"
+
+#, fuzzy
+#~| msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Voloz vs oister l' apontiaedje pol lodjoe « %1 » ?"
+#~ msgstr[1] "Voloz vs oister l' apontiaedje pol lodjoe « %1 » ?"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Abaguer fitchî tecse"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Voloz vs disfacer « <b>%1</b> » podbon?</qt>"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "Apontyî ôre di completaedje..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Dierinnès adresses"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Contaks trové dins vos dnêyes"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "Sierveu LDAP %1"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "Cweri après :"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Trover"
+
+#, fuzzy
+#~| msgid "Hide Email Addresses"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Catchî adresses emile"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Tchoes"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "Distchoezi ttafwait"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search in result..."
+#~ msgstr "&Trover"
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Evoyî en emile a « %1 »"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Apontyî ôre di completaedje..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Candjî ôre di completaedje"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Dierinnès adresses"
+
+#, fuzzy
+#~| msgid "Hide Email Addresses"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Catchî adresses emile"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Candjî ôre di completaedje"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Sierveu LDAP %1"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Ouy"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "Di&mwin"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Li sam&winne ki vént"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Li m&oes ki vént"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Nole date"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "Li prumioûle adresse emile dal vCard est ddja dins vosse calpin d' "
+#~ "adresses ; mins nerén, vos savoz schaper l' vCard dins on fitchî eyet "
+#~ "l' abaguer al mwin e calpin d' adresses."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "Li vCard a stî radjoutêye a vossecalpin d' adresses ; vos savoz radjouter "
+#~ "dpus d' informåcions a ciste intrêye la tot drovant l' calpin d' adresses."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "On contak avou l' adresse emile <email>%1</email> est ddja dins vosse "
+#~ "calpin d' adresses."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Vos dvoz ahiver on calpin d' adresses aprume divant d' radjouter on "
+#~ "contak. Voloz vs ahiver on calpin d' adresses ?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Nou calpin d' adresses di disponibe"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Radjouter on calpin d' adresses"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>On contak po <email>%1</email> a stî radjouté a vosse calpin d' "
+#~ "adresses comifåt.</para><para>Voloz vs candjî ç' novea contak do côp ?</"
+#~ "para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Dji n' sait schaper l' contak : %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Dji n' a savou schaper l' contak"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Contak ahivé comifåt"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Djan Cayron"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "jean.cayron@gmail.com"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Radjouter lodjoe"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Apontiaedjes do sierveu LDAP"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "© 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "Li scret LDAP est stoké e clair tecse, voloz vs el sitoker dins "
+#~ "KPoiteManoye ?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Stoker l' sicret clair tecse e KPoiteManoye"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Candjî lodjoe"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Voloz vs oister l' apontiaedje pol lodjoe « %1 » ?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Oister lodjoe"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "Sierveus LDAP"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Verifyî tos les sierveus ki dvrît esse eployîs :"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Radjouter lodjoe..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Candjî lodjoe..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Oister lodjoe"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Tite"
+
+#~ msgid "Full Name"
+#~ msgstr "No etir"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Emile"
+
+#~ msgid "Home Number"
+#~ msgstr "Limero del måjhon"
+
+#~ msgid "Work Number"
+#~ msgstr "Limero do buro"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Limero axhlåve"
+
+#~ msgid "Fax Number"
+#~ msgstr "Limero d' facse"
+
+#~ msgid "Street"
+#~ msgstr "Rowe"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Estat"
+
+#~ msgid "Country"
+#~ msgstr "Payis"
+
+#~ msgid "City"
+#~ msgstr "Veye"
+
+#~ msgid "Organization"
+#~ msgstr "Organizåcion"
+
+#~ msgid "Company"
+#~ msgstr "Eterprijhe"
+
+#~ msgid "Department"
+#~ msgstr "Dipårtumint"
+
+#~ msgid "Zip Code"
+#~ msgstr "Limero del posse"
+
+#~ msgid "Postal Address"
+#~ msgstr "Adresse del posse"
+
+#~ msgid "Description"
+#~ msgstr "Discrijhaedje"
+
+#~ msgid "User ID"
+#~ msgstr "ID di l' uzeu"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Emile"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Estat"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Tite"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Abaguer soçons di LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Trover des adresses e botin"
+
+#~ msgid "Search for:"
+#~ msgstr "Cweri après :"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "dins"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "No"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Emile"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Limero del måjhon"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Limero do buro"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Trover"
+
+#~ msgid "Recursive search"
+#~ msgstr "Cweraedje recursif"
+
+#~ msgid "Contains"
+#~ msgstr "I gn a dvins"
+
+#~ msgid "Starts With"
+#~ msgstr "Atake avou"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Searching..."
+#~ msgstr "&Trover"
+
+#~ msgid "Select All"
+#~ msgstr "Tchoezi totafwait"
+
+#~ msgid "Unselect All"
+#~ msgstr "Distchoezi ttafwait"
+
+#~ msgid "Add Selected"
+#~ msgstr "Radjouter tchoes"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Apontyî les sierveus LDAP..."
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Vos dvoz tchoezi on sierveu LDAP divant d' cweri."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Abagué do ridant LDAP %1 so %2"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Apontyî les tchuzes LDAP do calpin d' adresses"
+
+#~ msgid "&Remove"
+#~ msgstr "&Oister"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Candjî dierinnès adresses"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Tchoezi calpin d' adresses"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr ""
+#~ "Tchoezixhoz l' calpin d' adresses wice k' el contak serè schapé dvins :"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Pådjes k' i gn a"
+
+#, fuzzy
+#~| msgctxt "@item unknown mail account"
+#~| msgid "Unknown"
+#~ msgid "Unknown"
+#~ msgstr "Nén cnoxhou"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Priyîs"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Eure di cominçmint"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Tins k' ça dure"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Berwetaedje tot fwait. %1 novea messaedje (%2 Ko). I gn a co %3 Ko sol "
+#~ "sierveu."
+#~ msgstr[1] ""
+#~ "Berwetaedje tot fwait. %1 noveas messaedjes (%2 Ko). I gn a co %3 Ko sol "
+#~ "sierveu."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Berwetaedje tot fwait. %1 novea messaedje (%2 Ko)."
+#~ msgstr[1] "Berwetaedje tot fwait. %1 noveas messaedjes (%2 Ko)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Berwetaedje tot fwait. %1 novea messaedje."
+#~ msgstr[1] "Berwetaedje tot fwait. %1 noveas messaedjes."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Berwetaedje tot fwait. Pont d' novea messaedje."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Berwetaedje tot fwait pol conte %4. %1 novea messaedje (%2 Ko). I gn a co "
+#~ "%3 Ko sol sierveu."
+#~ msgstr[1] ""
+#~ "Berwetaedje tot fwait pol conte %4. %1 noveas messaedjes (%2 Ko). I gn a "
+#~ "co %3 Ko sol sierveu."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Berwetaedje tot fwait pol conte %3. %1 messaedje (%2 Ko)."
+#~ msgstr[1] "Berwetaedje tot fwait pol conte %3. %1 messaedjes (%2 Ko)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Berwetaedje tot fwait pol conte %2. %1 novea messaedje."
+#~ msgstr[1] "Berwetaedje tot fwait pol conte %2. %1 noveas messaedjes."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Berwetaedje tot fwait pol conte %1. Pont d' novea messaedje."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "No"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Emile"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Lingaedje do coridjaedje ortografike"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Dji tchedje eyet dji stoke les messaedjes..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Messaedjes e totå "
+
+#~ msgid "Unread Messages"
+#~ msgstr "Messaedjes nén léjhous"
+
+#~ msgid "Quota"
+#~ msgstr "Cwota"
+
+#~ msgid "Storage Size"
+#~ msgstr "Grandeu do stocaedje"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Grandeu do stocaedje do ridant efant"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Grandeu"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Totå"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Nén léjhou"
+
+#~ msgid "Stop"
+#~ msgstr "Arester"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Li sistinme di sutî scribanne n' est nén e-n alaedje. Bråmint des "
+#~ "importantès fonccionålités di ç' programe ci ont mezåjhe do sistinme di "
+#~ "sutî scribanne eyet n' overront nén comifåt sins lu."
+
+#~ msgid "&Configure"
+#~ msgstr "&Apontyî"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Dji n' a savou trové l' module d' apontiaedje do sistinme di sutî "
+#~ "scribanne (Nepomuk). Verifyîz s' i vs plait ki Nepomuk a stî astalé "
+#~ "comifåt."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Li sistinme di sutî scribanne n' est nén e-n alaedje. Les fonccionålités "
+#~ "shuvantes n' overront nén comifåt :<ul><li>%1</li></ul>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "dimwin"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "ouy"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "ayir"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "ouy"
+
+#~ msgid "To"
+#~ msgstr "A"
+
+#~ msgid "CC"
+#~ msgstr "Cc"
+
+#~ msgid "BCC"
+#~ msgstr "Bcc"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Tchoes di l' adresse"
+
+#, fuzzy
+#~| msgid "BCC"
+#~ msgid "BCC >>"
+#~ msgstr "Bcc"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Novele djivêye di distribucion"
+
+#~ msgid "Address Selection"
+#~ msgstr "Tchoes di l' adresse"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Mostrer date di skepiaedje"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Mostrer adresses del posse"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Mostrer adresses emile"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Mostrer limeros d' telefone"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Mostrer waibes (URL)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Mostrer adresses di messaedjreye sol moumint"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Mostrer tchamps a vosse môde"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Pådje måjhon"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Floû blog"
+
+#~ msgid "Notes"
+#~ msgstr "Notes"
+
+#~ msgid "Profession"
+#~ msgstr "Mestî"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "No di si aidant"
+
+#~ msgid "Manager's Name"
+#~ msgstr "No di s' manaedjeu"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "No di s' soçon"
+
+#~ msgid "Office"
+#~ msgstr "Buro"
+
+#~ msgid "IM Address"
+#~ msgstr "Adresse IM"
+
+#~ msgid "Anniversary"
+#~ msgstr "Aniviersaire"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Calpin d' adresses</b>: %1</p>"
+
+#~ msgid "Call number %1"
+#~ msgstr "Houkî %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Evoyî on facs a %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Mostrer l' adresse sol mape"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Evoyî on SMS a %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Drovi l' URL %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Berdeler sol moumint avou %1"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "No"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "No"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Pådje måjhon"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Catchî limeros d' telefone"
+
+#~ msgid "<group>"
+#~ msgstr "<groupe>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Ôtès adresses"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Novele djivêye di distribucion"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Intrez on no, s' i vs plait:"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Djivêyes di distribucion"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Candjî categoreyes"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Categoreye"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Categoreye"
+
+#~ msgid "Select Categories"
+#~ msgstr "Tchoezi categoreyes"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Dji mostere l' URL %1"
+
+#~ msgid "Text"
+#~ msgstr "Tecse"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Valixhance limerike"
+
+#~ msgid "Boolean"
+#~ msgstr "Bouleyin"
+
+#~ msgid "Date & Time"
+#~ msgstr "Date eyet eure"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Fitchîs d' atuzlaedje"
+
+#~ msgid "Import Page"
+#~ msgstr "Abaguer pådje"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Prévoeyaedje del pådje tchoezeye"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Comint ç' ki ça rote?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Disfacer pådje"
+
+#~ msgid "Import Page..."
+#~ msgstr "Abaguer pådje..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Aspougnî avou Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Clé:"
+
+#~ msgid "Type:"
+#~ msgstr "Sôre:"
+
+#~ msgid "Classname:"
+#~ msgstr "No d' classe:"
+
+#~ msgid "Description:"
+#~ msgstr "Discrijhaedje"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Candjî valixhance d' apontiaedje"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Macrea d' apontiaedje"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Rîles"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Setup Rules"
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Apontyî rîles"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Sourdant"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Såme"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Condicion"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Candjmints"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Setup Changes"
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Apontyî les candjmints"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Faitindje"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Tchuze"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Valixhance"
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Asteme"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Enonder l' macrea sol côp"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Tchoes"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Tins k' ça dure"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "ouy"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Plaece"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Mostrer date di skepiaedje"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "Categoreyes"
+
+#, fuzzy
+#~| msgid "Select Categories"
+#~ msgid "Default Category"
+#~ msgstr "Tchoezi categoreyes"
+
+#~ msgid "Category"
+#~ msgstr "Categoreye"
+
+#, fuzzy
+#~| msgid "Yes"
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Oyi"
+
+#, fuzzy
+#~| msgid "No"
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Neni"
+
+#~ msgid "Organizer"
+#~ msgstr "Organizeu"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Is all-day"
+#~ msgstr "Est tote li djournêye"
+
+#~ msgid "Has duration"
+#~ msgstr "Dure on tins dné"
+
+#~ msgid "Summary"
+#~ msgstr "Racourti"
+
+#~ msgid "Status"
+#~ msgstr "Estat"
+
+#~ msgid "Secrecy"
+#~ msgstr "Sicret?"
+
+#~ msgid "Priority"
+#~ msgstr "Prumiristé"
+
+#~ msgid "Location"
+#~ msgstr "Plaece"
+
+#~ msgid "Categories"
+#~ msgstr "Categoreyes"
+
+#~ msgid "Alarms"
+#~ msgstr "Xhîletes"
+
+#~ msgid "Resources"
+#~ msgstr "Rissources"
+
+#~ msgid "Relations"
+#~ msgstr "Aloyaedjes"
+
+#~ msgid "Attachments"
+#~ msgstr "Ataetchmints"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Dates foû rîles"
+
+#~ msgid "Exception Times"
+#~ msgstr "Eures foû rîles"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Ahivé"
+
+#~ msgid "Related Uid"
+#~ msgstr "Uid k' ont -st a vey"
+
+#~ msgid "Has End Date"
+#~ msgstr "A ene date di fén"
+
+#~ msgid "End Date"
+#~ msgstr "Date di fén"
+
+#~ msgid "Has Start Date"
+#~ msgstr "A ene date di cominçmint"
+
+#~ msgid "Has Due Date"
+#~ msgstr "A on termene"
+
+#~ msgid "Due Date"
+#~ msgstr "Termene"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "A ene date ki ç' a stî fini"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Fini"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Fini"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "Local"
+#~ msgstr "Plaece"
+
+#, fuzzy
+#~| msgctxt "@item IMAP account"
+#~| msgid "IMAP"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#, fuzzy
+#~| msgctxt "@item usenet account"
+#~| msgid "News"
+#~ msgid "News"
+#~ msgstr "Noveles"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "Notes"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Boesse ås lete Maildir"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Noveles"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "IMAP disraloyî"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Locåle boesse ås lete"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Nén cnoxhou"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Plaece"
+
+#, fuzzy
+#~| msgctxt "EMAIL OF TRANSLATORS"
+#~| msgid "Your emails"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "jean.cayron@gmail.com"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Plaece"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Plaece"
+
+#, fuzzy
+#~| msgctxt "@item local mailbox account"
+#~| msgid "Local mailbox"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Locåle boesse ås lete"
+
+#, fuzzy
+#~| msgid "Hide Custom Fields"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Catchî tchamps a vosse môde"
+
+#, fuzzy
+#~| msgctxt "EMAIL OF TRANSLATORS"
+#~| msgid "Your emails"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "jean.cayron@gmail.com"
+
+#, fuzzy
+#~| msgid "Hide Custom Fields"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Catchî tchamps a vosse môde"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "No"
+
+#~ msgid "Plain"
+#~ msgstr "Plin"
+
+#~ msgid "Unquoted"
+#~ msgstr "Nén come direye"
+
+#~ msgid "Bracketed"
+#~ msgstr "Inte åtchetes"
+
+#~ msgid "Undefined"
+#~ msgstr "Nén defini"
+
+#~ msgid "File to import:"
+#~ msgstr "Fitchî a abaguer:"
+
+#~ msgid "Separator:"
+#~ msgstr "Separateu:"
+
+#~ msgid "Tab"
+#~ msgstr "Tab"
+
+#~ msgid "Space"
+#~ msgstr "Espåce"
+
+#~ msgid "Header"
+#~ msgstr "Tiestire"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Aroyî al colone tchoezeye"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Oister aroyaedje del colone tchoezeye"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Aroyî avou on modele..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Schaper l' modele do moumint"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Progrès do tcherdjaedje"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Tårdjîz s' i vs plait tins kel fitchî s' tchedje."
+
+#~ msgid "Template Selection"
+#~ msgstr "Tchoes do modele"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Catchî date di skepiaedje"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Catchî adresses del posse"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Catchî limeros d' telefone"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Catchî waibes (URL)"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Catchî adresses di messaedjreye sol moumint"
+
+#~ msgid "Test"
+#~ msgstr "Sayaedje"

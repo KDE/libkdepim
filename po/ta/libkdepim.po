@@ -1,0 +1,1610 @@
+# translation of libkdepim.po to 
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# Ambalam <tamilpc@ambalam.com>, 2004.
+# root <root@localhost.localdomain>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2005-02-28 03:28-0800\n"
+"Last-Translator: Tamil PC <tamilpc@ambalam.com>\n"
+"Language-Team:  <ta@li.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "இந்த செயல்பாட்டை நீக்கு"
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "முறித்திடுக..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "இணைப்பு மறைக்கப்பட்டது"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "இணைப்பு மறைக்கப்படவில்லை"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "விவரமான பணி இயக்க சாளரத்தை திறக்கவும்"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "விவரமான பணி இயக்க சாளரத்தை காண்பிக்கவும்"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "விவரமான பணி இயக்க சாளரத்தை மறைத்திடுக"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, fuzzy, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr ""
+"_: more widgets\n"
+"அதிகம்"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, fuzzy, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr ""
+"_: fewer widgets\n"
+"சில"
+
+#~ msgid "Choose..."
+#~ msgstr "தேர்வுச் செய்"
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "முன்னுரிமைகள்"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "உங்களுக்கு அனைத்து முன்னுரிமைகளும் முன்னிருப்பு மதிப்புகளாகும். அனைத்து தனிபயன் "
+#~ "மாற்றங்களும் இழக்கப்படும்."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "முன்னிருப்பு முன்னுரிமைகளை அமைக்கிறது"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "முன்னிருப்பை மாற்றியமை"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "கூட்டு"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< &Remove"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "இறக்குமதி உரை கோப்பு"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>நீங்கள் '<b>%1ஐ நீக்கவேண்டுமா</b>'?</qt>"
+
+#, fuzzy
+#~ msgid "Configure Completion..."
+#~ msgstr "முடிவு வரிசையை தொகு..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "தற்போதைய முகவரிகள்"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP சேவையகம் %1"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search email:"
+#~ msgstr "தேடு:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search"
+#~ msgstr "தேடு:"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "மின்னஞ்சல் முகவரி:"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "தேர்வு"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Unselect"
+#~ msgstr "தேர்வு"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "ஏற்றுகிறது..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "மின்னஞ்சலை அனுப்பு '%1'"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "முடிவு வரிசையை தொகு..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "முடிவு வரிசையைத் தொகு"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "தற்போதைய முகவரிகள்"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "மின்னஞ்சல் முகவரி:"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "முடிவு வரிசையைத் தொகு"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP சேவையகம் %1"
+
+#, fuzzy
+#~ msgid "Move Up"
+#~ msgstr "விதியை நீக்கு"
+
+#, fuzzy
+#~ msgid "Move Down"
+#~ msgstr "விதியை நீக்கு"
+
+#, fuzzy
+#~| msgid "&Today"
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&இன்று"
+
+#, fuzzy
+#~| msgid "To&morrow"
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "நாளை"
+
+#, fuzzy
+#~| msgid "Next &Week"
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "அடுத்த &வாரம்"
+
+#, fuzzy
+#~| msgid "Next M&onth"
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "அடுத்த &மாதம்"
+
+#, fuzzy
+#~| msgid "No Date"
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "தேதி இல்லை"
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "விவரம் எதுவும் இல்லை"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "முகவரி புத்தகம்"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "tamilpc team"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "jayalakshmibalaji@hotmail.com"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP சேவையகம் %1"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c), 2004 டோபைஸ் கோனிக்"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "Tobias Koenig"
+#~ msgstr "(c), 2004 டோபைஸ் கோனிக்"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "திருத்து..."
+
+#, fuzzy
+#~ msgid "Remove Host"
+#~ msgstr "<< &Remove"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP சேவையகம் %1"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "திருத்து..."
+
+#, fuzzy
+#~ msgid "&Remove Host"
+#~ msgstr "<< &Remove"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Full Name"
+#~ msgstr "பெயர்"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "மின்னஞ்சல்"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Home Number"
+#~ msgstr "தொலைபேசி எண்ணை மறை"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Work Number"
+#~ msgstr "தொலைபேசி எண்ணை மறை"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Mobile Number"
+#~ msgstr "தொலைபேசி எண்ணை மறை"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Fax Number"
+#~ msgstr "தொலைபேசி எண்ணை மறை"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "நிலை"
+
+#, fuzzy
+#~| msgid "Organizer"
+#~ msgid "Organization"
+#~ msgstr "நிறுவனர்"
+
+#, fuzzy
+#~| msgid "Show Postal Addresses"
+#~ msgid "Postal Address"
+#~ msgstr "அஞ்சல் முகவரிகளைக் காட்டு"
+
+#~ msgid "Description"
+#~ msgstr "விவரம்"
+
+#, fuzzy
+#~| msgid "UID"
+#~ msgid "User ID"
+#~ msgstr "UID"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "மின்னஞ்சல்"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "நிலை"
+
+#, fuzzy
+#~| msgid "Import starts at row:"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "நிரையில் இறக்குமதி தொடங்கியது"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search for:"
+#~ msgstr "தேடு:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "பெயர்"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "மின்னஞ்சல்"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "தொலைபேசி எண்ணை மறை"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "தொலைபேசி எண்ணை மறை"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "தேடு:"
+
+#, fuzzy
+#~| msgid "Conditions"
+#~ msgid "Contains"
+#~ msgstr "நிபந்தனைகள்"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgid "Starts With"
+#~ msgstr "துவக்க நேரம்"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "ஏற்றுகிறது..."
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Select All"
+#~ msgstr "தேர்வு"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Unselect All"
+#~ msgstr "தேர்வு"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "Add Selected"
+#~ msgstr "முகவரியை தேர்வு செய்"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "முடிவு வரிசையை தொகு..."
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "விதியை நகல் எடு"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< &Remove"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "தற்போதைய முகவரிகளை திருத்து"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "முகவரி புத்தகம்"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "இருக்கும் பக்கங்கள்"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "துவக்க நேரம்"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "கால அளவு"
+
+#, fuzzy
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr ""
+#~ "_: %1 is a time, %2 is a status message\n"
+#~ "[%1] %2"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "பெயர்"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "மின்னஞ்சல்"
+
+#, fuzzy
+#~ msgid "Total Messages"
+#~ msgstr "செய்தியைக் காட்டு"
+
+#, fuzzy
+#~ msgid "Unread Messages"
+#~ msgstr "செய்தியைக் காட்டு"
+
+#, fuzzy
+#~ msgid "Message"
+#~ msgstr "செய்தியைக் காட்டு"
+
+#, fuzzy
+#~ msgid "Recipient:"
+#~ msgstr "விவரம்:"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgid "Select Address Book"
+#~ msgstr "முகவரி புத்தகம்"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "நாளை"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "இன்று"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "நேற்று"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "இன்று"
+
+#~ msgid "To"
+#~ msgstr "அனுப்புநர்"
+
+#~ msgid "CC"
+#~ msgstr "பிரதி பெருநர்"
+
+#~ msgid "BCC"
+#~ msgstr "மறை பெருநர்"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "மாதிரிவுருவின் பெயரை உள்ளிடு:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "முகவரியை தேர்வு செய்"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&வடிகட்டு:"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&To >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&CC >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&BCC >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Remove"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "வழங்கல் பட்டியலாக சேமி..."
+
+#~ msgid "Address Selection"
+#~ msgstr "முகவரியை தேர்வு செய்"
+
+#~ msgid "&To >>"
+#~ msgstr "&To >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&CC >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "&தேர்வு செய்யப்பட்ட முகவரிகள்"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&வடிகட்டு:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "வழங்கல் பட்டியலாக சேமி..."
+
+#~ msgid "Show Birthday"
+#~ msgstr "பிறந்த நாளை காட்டு"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "அஞ்சல் முகவரிகளைக் காட்டு"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "மின்னஞ்சல் முகவரியைக் காட்டு"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "தொலைபேசி எண்ணைக் காட்டு"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "இணைய பக்கத்தைக் காட்டு"
+
+#, fuzzy
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "அஞ்சல் முகவரிகளைக் காட்டு"
+
+#, fuzzy
+#~ msgid "Show Custom Fields"
+#~ msgstr "விவரங்களை காட்டு"
+
+#~ msgid "Homepage"
+#~ msgstr "தொடக்கப்பக்கம்"
+
+#~ msgid "Blog Feed"
+#~ msgstr "பேச்சு ஃபீட்"
+
+#~ msgid "Notes"
+#~ msgstr "குறிப்புகள்"
+
+#, fuzzy
+#~ msgid "IM Address"
+#~ msgstr "மின்னஞ்சல் முகவரி:"
+
+#, fuzzy
+#~| msgid "Address book:"
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "முகவரி புத்தகம்:"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "பயன்பாடு இல்லை அதனால் இயக்க இயலாது. அமைவுகள் உரையாடலுக்கு சென்று ஒன்றை கட்டமைக்கவும்"
+
+#~ msgid "Call number %1"
+#~ msgstr "அழைக்கும் எண் %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "தொலைநகலை அனுப்பு %1 "
+
+#~ msgid "Show address on map"
+#~ msgstr "பொருந்தப்பட்ட முகவரியைக் காட்டு"
+
+#, fuzzy
+#~ msgid "Send SMS to %1"
+#~ msgstr "தொலைநகலை அனுப்பு %1 "
+
+#~ msgid "Open URL %1"
+#~ msgstr "URL லை திற %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "%1 ஓடு அரட்டை"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "முகவரி புத்தகம்"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "பெயர்"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "பெயர்"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "தொடக்கப்பக்கம்"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "தொலைபேசி எண்ணை மறை"
+
+#~ msgid "<group>"
+#~ msgstr "<குழு>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "மற்ற முகவரிகள்"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr "உங்கள் பட்டியலில் முகவரி இல்லை, உங்கள் முகவரி புத்தகத்தில் முகவரியை சேர் "
+
+#~ msgid "New Distribution List"
+#~ msgstr "புதிய வழங்கு பட்டியலைச் பட்டியல்"
+
+#~ msgid "Please enter name:"
+#~ msgstr "பெயரை உள்ளிடவும்:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>வழங்கு பட்டியலில் கொடுக்கப்பட்ட பெயர்கள் ஏற்கனவே உள்ளது.<b>%1</b>தயவு செய்து "
+#~ "வேறோருப் பெயரை தேர்வு செய்யவும்"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "வழங்கு பட்டியல்"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "கோப்பிலில் சேமி"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "கோப்பிலில் சேமி"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "விதி திருத்தி"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "விதி திருத்தி"
+
+#~ msgid "Edit Categories"
+#~ msgstr "வகைகளைத் தொகு"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "வகை"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "வகை"
+
+#~ msgid "Select Categories"
+#~ msgstr "வகைகளை தேர்வு செய்"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "வலைமனை %1ஐ காட்டுகிறது"
+
+#~ msgid "Text"
+#~ msgstr "உரை"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolean"
+
+#~ msgid "Date & Time"
+#~ msgstr "தேதி & நேரம்"
+
+#~ msgid "Date"
+#~ msgstr "தேதி"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer கோப்புகள்"
+
+#~ msgid "Import Page"
+#~ msgstr "பக்கத்தை இறக்குமதி செய்"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "தேர்ந்தெடுக்கப்பட்ட பக்கத்தின் முன்காட்சி"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">இது எப்படி வேலை செய்கிறது?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "பக்கத்தை நீக்கு"
+
+#~ msgid "Import Page..."
+#~ msgstr "பக்கத்தை இறக்குமதி செய்..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Qt Designerல் தொகு..."
+
+#~ msgid "Key:"
+#~ msgstr "விசை:"
+
+#~ msgid "Type:"
+#~ msgstr "வகை:"
+
+#~ msgid "Classname:"
+#~ msgstr "வகுப்பு பெயர்:"
+
+#~ msgid "Description:"
+#~ msgstr "விவரம்:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "கட்டமைப்பு மதிப்பை மாற்று"
+
+#, fuzzy
+#~| msgid "Configuration Wizard"
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "கட்டமைக்கும் வழிகாட்டி"
+
+#, fuzzy
+#~| msgid "Rules"
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "விதிமுறைகள்"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "விதிமுறைகள்"
+
+#, fuzzy
+#~| msgid "Source"
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "மூலம்"
+
+#, fuzzy
+#~| msgid "Target"
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "குறிக்கோள்"
+
+#, fuzzy
+#~| msgid "Condition"
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "கட்டுப்பாடுகள்"
+
+#, fuzzy
+#~| msgid "Changes"
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "மாற்றங்கள்"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "மாற்றங்கள்"
+
+#, fuzzy
+#~| msgid "Action"
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "செயல்"
+
+#, fuzzy
+#~| msgid "Option"
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "விருப்பம்"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "மதிப்பு"
+
+#, fuzzy
+#~| msgid "Run Wizard Now"
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "பகுதியை இப்போது இயக்கு"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "தேர்வு"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "கால அளவு"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "இன்று"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "இடம்"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "பிறந்த நாளை காட்டு"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "பெயரில்லாத சொருகு"
+
+#, fuzzy
+#~| msgid "New (remote) entry"
+#~ msgid "New category entry"
+#~ msgstr "புதிய (தொலைதூர) உள்ளீடு"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "வகை"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "வகைகள்"
+
+#, fuzzy
+#~ msgid "Default Category"
+#~ msgstr "%1 (முன்னிருப்பு)"
+
+#~ msgid "Category"
+#~ msgstr "வகை"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "தேர்வு செய்ததை நீக்கு"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&வகைகளை தொகு.."
+
+#, fuzzy
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "இல்லை"
+
+#~ msgid "Organizer"
+#~ msgstr "நிறுவனர்"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Summary"
+#~ msgstr "சுருக்கம்"
+
+#~ msgid "Status"
+#~ msgstr "நிலை"
+
+#~ msgid "Secrecy"
+#~ msgstr "ரகசியம்"
+
+#~ msgid "Priority"
+#~ msgstr "முன்னுரிமை"
+
+#~ msgid "Location"
+#~ msgstr "இடம்"
+
+#~ msgid "Categories"
+#~ msgstr "வகைகள்"
+
+#~ msgid "Alarms"
+#~ msgstr "அலாரங்கள்"
+
+#~ msgid "Resources"
+#~ msgstr "மூலங்கள்"
+
+#~ msgid "Relations"
+#~ msgstr "உறவுகள்"
+
+#~ msgid "Attachments"
+#~ msgstr "இணைப்புகள்"
+
+#~ msgid "Exception Dates"
+#~ msgstr "தவிர்க்கப்பட்ட தேதிகள்"
+
+#~ msgid "Exception Times"
+#~ msgstr "தவிர்க்கப்பட்ட நேரங்கள்"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "உருவாக்கப்பட்டது"
+
+#~ msgid "Related Uid"
+#~ msgstr "சம்பந்தப்பட்ட Uid"
+
+#~ msgid "Has End Date"
+#~ msgstr "முடிவு தேதி உள்ளது"
+
+#~ msgid "End Date"
+#~ msgstr "முடிவு தேதி"
+
+#~ msgid "Has Start Date"
+#~ msgstr "துவக்க தேதி உள்ளது"
+
+#~ msgid "Has Due Date"
+#~ msgstr "முடிவு தேதி உள்ளது"
+
+#~ msgid "Due Date"
+#~ msgstr "முடிவு தேதி"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "முழு தேதி உள்ளது"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "முடி"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "முடிந்தது"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgid "Local"
+#~ msgstr "உள்ளிடத்தை எடு"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "News"
+#~ msgstr "குறிப்புகள்"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "குறிப்புகள்"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "உள்ளார்ந்த குறிப்பு"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "குறிப்புகள்"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "உள்ளார்ந்த குறிப்பு"
+
+#~ msgid "Adjust Score"
+#~ msgstr "மதிப்பெண்ணை சரிசெய்"
+
+#~ msgid "Display Message"
+#~ msgstr "செய்தியைக் காட்டு"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>சேகரிக்கப்பட்ட குறிப்புகளின் பட்டியல்</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "சேகரிக்கப்பட்ட குறிப்புகள்"
+
+#~ msgid "Less Than"
+#~ msgstr "விட குறைந்த"
+
+#~ msgid "Greater Than"
+#~ msgstr "விட அதிகமான"
+
+#~ msgid "rule %1"
+#~ msgstr "விதி %1"
+
+#~ msgid "Not"
+#~ msgstr "இல்லை"
+
+#~ msgid "Negate this condition"
+#~ msgstr "இந்த நிலையை மறு"
+
+#~ msgid "Select the type of match"
+#~ msgstr "பொருத்தத்தின் வகையை தேர்ந்தெடு"
+
+#~ msgid "The condition for the match"
+#~ msgstr "பொருத்தத்திற்கான நிலை"
+
+#~ msgid "Select an action."
+#~ msgstr "ஒரு செயலைத் தேர்ந்தெடு..."
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&பெயர்:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&குழுக்கள்:ஃ"
+
+#~ msgid "A&dd Group"
+#~ msgstr "குழுவைச் சேர்"
+
+#~ msgid "Conditions"
+#~ msgstr "நிபந்தனைகள்"
+
+#~ msgid "Actions"
+#~ msgstr "செயல்கள்"
+
+#~ msgid "New rule"
+#~ msgstr "புதிய விதி"
+
+#~ msgid "Edit rule"
+#~ msgstr "விதியை தொகு"
+
+#~ msgid "Remove rule"
+#~ msgstr "விதியை நீக்கு"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "குழுவுக்கான விதிகளை மட்டும் காட்டு:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "விதி திருத்தி"
+
+#~ msgid "Edit Rule"
+#~ msgstr "விதியை திருத்து"
+
+#~ msgid "Reload &List"
+#~ msgstr "பட்டியலை திரும்ப ஏற்று"
+
+#~ msgid "S&earch:"
+#~ msgstr "தேடு:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "தொடர்காட்சியை செயல் நீக்கு"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "&சந்தா செலுத்தப்பட்டவை மட்டும்"
+
+#~ msgid "&New only"
+#~ msgstr "&புதியது மட்டும்"
+
+#~ msgid "Current changes:"
+#~ msgstr "நடப்பு மாற்றங்கள்:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "பெயர்"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "விவரம்"
+
+#~ msgid "Subscribe To"
+#~ msgstr "க்கு சந்தா செலுத்தவும்"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "சந்தா செலுத்தாத படிவம்"
+
+#, fuzzy
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "_n: Loading... (1 matching)"
+#~ msgstr[1] "ஏற்றுதல்... (%1 பொருந்துதல்)"
+
+#, fuzzy
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "_n: %2: (1 matching)"
+#~ msgstr[1] "%2: (%1 பொருந்துதல்)"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "உள்ளிடத்தை எடு"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "புதியதை எடு"
+
+#, fuzzy
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "இரண்டையும் எடு"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "உள்ளமைப்பு உள்ளீடு"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "கடைசியாக மாற்றப்பட்டது:"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "கடைசியாக மாற்றப்பட்டது:"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "விவரங்களை காட்டு"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "மாறுபாடுகளை காட்டு"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "முன்னுரிமைகளைக் காட்டு"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "முன்னுரிமைகளைக் காட்டு"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "முன்னுரிமைகளைக் காட்டு"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "உள்ளமைப்பு உள்ளீடு"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "உள்ளிடத்தை எடு"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "உள்ளார்ந்த குறிப்பு"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "புதிய நிகழ்வு"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "புதிதாக செய்யவேண்டியது"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "புதிய குறிப்பு"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "விவரங்களை மறை"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "விவரங்களை மறை"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "விவரங்களை காட்டு"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "மாறுபாடுகளை காட்டு"
+
+#, fuzzy
+#~| msgid "Local entry"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "உள்ளமைப்பு உள்ளீடு"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "விவரங்களை காட்டு"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "விவரங்களை மறை"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "பெயர்"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "Floating"
+#~ msgstr "இடம்"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "புதிய (தொலைதூர) உள்ளீடு"
+
+#~ msgid "Plain"
+#~ msgstr "எளிய"
+
+#~ msgid "Unquoted"
+#~ msgstr "குறிக்கப்படாத"
+
+#~ msgid "Bracketed"
+#~ msgstr "அடைப்புக்குறியிடப்பட்ட"
+
+#~ msgid "Undefined"
+#~ msgstr "வரையறுக்கப்படாத"
+
+#~ msgid "File to import:"
+#~ msgstr "இறக்குமதி செய்ய வேண்டிய கோப்பு:"
+
+#~ msgid "Separator:"
+#~ msgstr "பிரிப்பான்:"
+
+#~ msgid "Tab"
+#~ msgstr "தத்தல்"
+
+#~ msgid "Space"
+#~ msgstr "இடைவெளி"
+
+#~ msgid "Header"
+#~ msgstr "தலைப்பு"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "தேர்ந்தெடுக்கப்பட்ட நிரலுக்கு ஒதுக்கீடு"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "தேர்ந்தெடுக்கப்பட்ட நிரலுக்கான ஒதுக்கீட்டை நீக்கு"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "மாதிரிவுருவுடன்..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "நடப்பு மாதிரிவுருவை சேமி"
+
+#~ msgid "Loading Progress"
+#~ msgstr "ஏற்றல் நடக்கிறது"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "கோப்பு ஏற்றப்படுகிறது சிறிது காத்திருக்கவும் "
+
+#~ msgid "Template Selection"
+#~ msgstr "மாதிரிவுருவை தேர்வு"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "மாதிரிவுருவை தேர்வு செய், அதை CSV கோப்புடன் பொருத்து"
+
+#~ msgid "Importing Progress"
+#~ msgstr "இறக்குமதி நடைபெறுகிறது"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "தரவு இறக்குமதியாகிறது சிறிது காத்திருக்கவும் "
+
+#~ msgid "Template Name"
+#~ msgstr "மாதிரிவுருவின் பெயர்"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "பிறந்த நாளை மறை"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "அஞ்சல் முகவரிகளை மறை"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "மின்னஞ்சலை முகவரியை மறை"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "தொலைபேசி எண்ணை மறை"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "இணைய பக்கத்தை மறை(URLs)"
+
+#, fuzzy
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "அஞ்சல் முகவரிகளை மறை"
+
+#, fuzzy
+#~ msgid "Hide Custom Fields"
+#~ msgstr "விவரங்களை மறை"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "உரை"
+
+#, fuzzy
+#~| msgid "Relations"
+#~ msgid "Suggestions"
+#~ msgstr "உறவுகள்"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "உரை"
+
+#~ msgid "Cc"
+#~ msgstr "Cc"
+
+#~ msgid "Bcc"
+#~ msgstr "Bcc"
+
+#~ msgid "All"
+#~ msgstr "அனைத்தும்"
+
+#, fuzzy
+#~ msgid "Open"
+#~ msgstr "விருப்பம்"
+
+#~ msgid "<all groups>"
+#~ msgstr "<all groups>"
+
+#~ msgid "<qt>Failed to execute signature script<br><b>%1</b>:<br>%2</qt>"
+#~ msgstr "<qt>எழுத்து கையெழுத்து செயல்படுத்தலில் பிழை <br><b>%1</b>:<br>%2</qt>"
+
+#~ msgid "%1 (Default)"
+#~ msgstr "%1 (முன்னிருப்பு)"
+
+#~ msgid "Unnamed"
+#~ msgstr "பெயர் இல்லை"
+
+#~ msgid "File I/O Error"
+#~ msgstr "கோப்பு I/O பிழை"
+
+#~ msgid ""
+#~ "The specified file does not exist:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "குறிப்பிட்டக் கோப்பு வெளியேற முடியவில்லை:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "This is a folder and not a file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "இது அடைவு ஆகும் மற்றும் இது கோப்பல்ல:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "You do not have read permissions to the file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "இந்தக் கோப்பிலிருந்து படிக்கும் அனுமதியை நீங்கள் பெறவில்லை:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not read file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "கோப்பினைப் படிக்க முடியவில்லை:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "கோப்பினைத் திறக்க முடியவில்லை:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while reading file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "படிக்கும் கோப்பில் பிழை:\n"
+#~ "%1"
+
+#~ msgid "Could only read %1 bytes of %2."
+#~ msgstr "%1 பைட்டிலிருந்து %2  வரைப் படிக்கவும்"
+
+#~ msgid ""
+#~ "File %1 exists.\n"
+#~ "Do you want to replace it?"
+#~ msgstr ""
+#~ "%1 கோப்பு உள்ளது.\n"
+#~ "இதனை மாற்ற வேண்டுமா?"
+
+#~ msgid "Save to File"
+#~ msgstr "கோப்பிலில் சேமி"
+
+#~ msgid "&Replace"
+#~ msgstr "&மாற்று"
+
+#~ msgid ""
+#~ "Failed to make a backup copy of %1.\n"
+#~ "Continue anyway?"
+#~ msgstr ""
+#~ "%1யின் காப்புநகல் செய்ய இயலவில்லை.\n"
+#~ "தொடர வேண்டுமா?"
+
+#~ msgid ""
+#~ "Could not write to file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "கோப்பில் எழுத முடியவில்லை:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file for writing:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "எழுதுவதற்குக் கோப்பினைத் திறக்க இயலவில்லை:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while writing file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "எழுதும் கோப்பில் பிழை:\n"
+#~ "%1"
+
+#~ msgid "Could only write %1 bytes of %2."
+#~ msgstr "%1 பைட்டிலிருந்து %2 வரைப் எழுத இயலவில்லை"
+
+#~ msgid "%1 does not exist"
+#~ msgstr "%1 இல்லை"
+
+#~ msgid "%1 is not accessible and that is unchangeable."
+#~ msgstr "%1ஐ அணுக இயலாது மாற்றமுடியாது"
+
+#~ msgid "%1 is not readable and that is unchangeable."
+#~ msgstr "%1ஐ படிக்க இயலாது மாற்றமுடியாது"
+
+#~ msgid "%1 is not writable and that is unchangeable."
+#~ msgstr "%1ஐ எழுத இயலாது மாற்றமுடியாது"
+
+#~ msgid "Folder %1 is inaccessible."
+#~ msgstr "அடைவு %1ஐ அணுக முடியாது."
+
+#~ msgid "Permissions Check"
+#~ msgstr "அனுமதியை சரிபார்"
+
+#~ msgid "Cannot save to addressbook."
+#~ msgstr "முகவரிப்புத்தகத்தை சேமிக்க முடியவில்லை"
+
+#~ msgid "Presence"
+#~ msgstr "நடப்பு"
+
+#, fuzzy
+#~ msgctxt "clear widgets"
+#~ msgid "Clear"
+#~ msgstr ""
+#~ "_: clear widgets\n"
+#~ "நீக்கு"
+
+#, fuzzy
+#~ msgid "is not in address book"
+#~ msgstr "முகவரிப்புத்தகத்தை சேமிக்க முடியவில்லை"
+
+#~ msgid "Select Region of Image"
+#~ msgstr "பிம்பத்தின் இடத்தை தேர்ந்தெடு"
+
+#~ msgid "Image Operations"
+#~ msgstr "பிம்ப செயல்பாடுகள்"
+
+#~ msgid "&Rotate Clockwise"
+#~ msgstr "&கடிகார சுழற்சியாக சுழற்று"

@@ -1,0 +1,651 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Shinjo Park <kde@peremen.name>, 2013, 2014, 2015, 2017, 2019, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2020-04-21 00:38+0200\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 19.04.3\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr "최대 받는 사람 수에 도달하여 받는 사람을 추가할 수 없습니다"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "이 작업을 취소합니다."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "중단 중..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "연결이 암호화됨"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "연결이 암호화되지 않음"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "자세한 진행 정보 대화 상자 열기"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "자세한 진행 정보 창 열기"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "자세한 진행 정보 창 닫기"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "더 보기"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "덜 보기"
+
+#~ msgid "Choose..."
+#~ msgstr "선택..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "설정"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr "모든 설정을 기본값으로 초기화합니다. 모든 변경 사항이 초기화됩니다."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "기본 설정"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "기본값 복원"
+
+#~ msgid "Add"
+#~ msgstr "추가"
+
+#~ msgid "Remove"
+#~ msgstr "삭제"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "이메일 주소 %1개를 삭제하시겠습니까?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "vCard 가져오기 실패"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt><b>%1</b>에 접근할 수 없습니다.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "대화 상대에서 이메일 선택"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "LDAP 결과에 조직 단위(OU) 표시"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "자동 완성 설정..."
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "자동으로 그룹 펼치기"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "그룹 펼치기..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "최근 주소"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "내 데이터에서 찾은 연락처"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP 서버: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "이메일에서 찾기:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "최소 3글자를 입력해야 합니다"
+
+#~ msgid "Search"
+#~ msgstr "찾기"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "차단된 이메일 주소 표시"
+
+#~ msgid "&Select"
+#~ msgstr "선택(&S)"
+
+#~ msgid "&Unselect"
+#~ msgstr "선택 해제(&U)"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">결과 더 보기...</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "결과에서 검색..."
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "도메인 이름 제외:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "'%1'(으)로 도메인을 구분하십시오"
+
+#~ msgid "No email found."
+#~ msgstr "이메일을 찾을 수 없습니다."
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "이메일 %1개 찾음"
+
+#~ msgid "No result found"
+#~ msgstr "결과 없음"
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr "목록이 변경되었습니다. 새로 검색하기 전에 저장하시겠습니까?"
+
+#~ msgid "Save"
+#~ msgstr "저장"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "완성 설정"
+
+#~ msgid "Completion Order"
+#~ msgstr "완성 순서"
+
+#~ msgid "Recent Address"
+#~ msgstr "최근 주소"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "차단 목록 이메일 주소"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "완성 순서 설정"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP 서버 %1"
+
+#~ msgid "Move Up"
+#~ msgstr "위로 이동"
+
+#~ msgid "Move Down"
+#~ msgstr "아래로 이동"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "오늘(&T)"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "내일(&M)"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "다음 주(&W)"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "다음 달(&O)"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "날짜 없음"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "vCard의 주 이메일 주소가 주소록에 등록되어 있습니다. vCard를 파일로 저장"
+#~ "한 다음 직접 주소록으로 가져올 수 있습니다."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "vCard가 주소록에 추가되었으며 주소록을 열어서 추가 정보를 저장할 수 있습니"
+#~ "다."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr "이메일 주소가 <email>%1</email>인 연락처가 이미 주소록에 있습니다."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "연락처를 추가하려면 주소록을 만들어야 합니다. 주소록을 만드시겠습니까?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "주소록을 사용할 수 없음"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "주소록 추가"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>\"%1\"에 대한 연락처 항목이 주소록에 추가되었습니다.</para> <para>"
+#~ "새 연락처를 편집하시겠습니까?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "연락처를 저장할 수 없음: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "연락처를 저장할 수 없음"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "연락처 생성 완료됨"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "박신조"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kde@peremen.name"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "호스트 추가"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP 서버 설정"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr "LDAP 암호가 평문으로 저장되어 있습니다. KWallet에 저장하시겠습니까?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "KWallet에 암호 저장"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "호스트 편집"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "호스트 \"%1\"의 설정을 삭제하시겠습니까?"
+
+#~ msgid "Remove Host"
+#~ msgstr "호스트 삭제"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP 서버"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "사용될 모든 서버 확인:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "호스트 추가(&A)..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "호스트 편집(&E)..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "호스트 삭제(&R)"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "제목"
+
+#~ msgid "Full Name"
+#~ msgstr "전체 이름"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "이메일"
+
+#~ msgid "Home Number"
+#~ msgstr "집 전화번호"
+
+#~ msgid "Work Number"
+#~ msgstr "직장 전화번호"
+
+#~ msgid "Mobile Number"
+#~ msgstr "휴대폰 번호"
+
+#~ msgid "Fax Number"
+#~ msgstr "팩스 번호"
+
+#~ msgid "Pager"
+#~ msgstr "호출기"
+
+#~ msgid "Street"
+#~ msgstr "도로명"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "도/광역시"
+
+#~ msgid "Country"
+#~ msgstr "국가"
+
+#~ msgid "City"
+#~ msgstr "도시"
+
+#~ msgid "Organization"
+#~ msgstr "조직"
+
+#~ msgid "Company"
+#~ msgstr "회사"
+
+#~ msgid "Department"
+#~ msgstr "부서"
+
+#~ msgid "Zip Code"
+#~ msgstr "우편 번호"
+
+#~ msgid "Postal Address"
+#~ msgstr "우편 주소"
+
+#~ msgid "Description"
+#~ msgstr "설명"
+
+#~ msgid "User ID"
+#~ msgstr "사용자 ID"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "이메일"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "도/광역시"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "직위"
+
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "LDAP에서 연락처 가져오기"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "디렉터리에서 주소 찾기"
+
+#~ msgid "Search for:"
+#~ msgstr "찾기:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "속성"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "이름"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "이메일"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "집 전화번호"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "직장 전화번호"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "찾기(&S)"
+
+#~ msgid "Recursive search"
+#~ msgstr "재귀적으로 찾기"
+
+#~ msgid "Contains"
+#~ msgstr "포함함"
+
+#~ msgid "Starts With"
+#~ msgstr "다음으로 시작함"
+
+#~ msgid "Search in result"
+#~ msgstr "결과에서 검색:"
+
+#~ msgid "Searching..."
+#~ msgstr "검색 중..."
+
+#~ msgid "Select All"
+#~ msgstr "모두 선택"
+
+#~ msgid "Unselect All"
+#~ msgstr "모두 선택 해제"
+
+#~ msgid "Add Selected"
+#~ msgstr "선택한 항목 추가"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "LDAP 서버 설정..."
+
+#~ msgid "Copy"
+#~ msgstr "복사"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "검색하기 전 LDAP 서버를 선택해야 합니다."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "%2에 LDAP 디렉터리 %1에서 가져옴"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "주소록 LDAP 설정"
+
+#~ msgid "&Remove"
+#~ msgstr "삭제(&R)"
+
+#~ msgid "Blacklist Email Completion"
+#~ msgstr "차단 목록 이메일 자동 완성"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "최근 주소 편집"
+
+#~ msgid "Configure Email Blacklist..."
+#~ msgstr "이메일 차단 목록 설정..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "주소록 선택"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "연락처를 저장할 주소록을 선택하십시오:"
+
+#~ msgid "Free"
+#~ msgstr "한가함"
+
+#~ msgid "Busy"
+#~ msgstr "바쁨"
+
+#~ msgid "Unavailable"
+#~ msgstr "불가능"
+
+#~ msgid "Tentative"
+#~ msgstr "예정"
+
+#~ msgid "Unknown"
+#~ msgstr "알 수 없음"
+
+#~ msgid "Attendee"
+#~ msgstr "참석자"
+
+#~ msgctxt "@label Day of the week name, example: Monday,"
+#~ msgid "%1,"
+#~ msgstr "%1"
+
+#~ msgctxt ""
+#~ "@label A time period duration. It is preceded/followed (based on the "
+#~ "orientation) by the name of the week, see the message above. example: 12 "
+#~ "June, 8:00am to 9:30am"
+#~ msgid "%1 %2, %3 to %4"
+#~ msgstr "%2 %1, %3부터 %4까지"
+
+#~ msgctxt ""
+#~ "@label A time period duration. KLocale is used to format the components. "
+#~ "example: Monday, 12 June, 8:00am to 9:30am"
+#~ msgid "%1, %2 %3, %4 to %5"
+#~ msgstr "%3 %2 %1, %4부터 %5까지"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Free Period"
+#~ msgstr "한가한 시간"
+
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "시작:"
+
+#~ msgctxt "@info:tooltip period end time"
+#~ msgid "End:"
+#~ msgstr "끝:"
+
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "기간:"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] "전송 완료. 새 메시지 %1개(%2KB). 서버에 %3KB 남음."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "전송 완료. 메시지 %1개(%2KB)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "전송 완료. 새 메시지 %1개."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "전송 완료. 새 메시지 없음."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] "계정 %4의 전송 완료. 새 메시지 %1개(%2KB). 서버에 %3KB 남음."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "계정 %3의 전송 완료. 메시지 %1개(%2KB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "계정 %2의 전송 완료. 새 메시지 %1개."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "계정 %1의 전송 완료. 새 메시지 없음."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "이름"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "이메일"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "맞춤법 검사 언어"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "메시지를 가져오고 저장하는 중..."
+
+#~ msgid "Total Messages"
+#~ msgstr "총 메시지"
+
+#~ msgid "Unread Messages"
+#~ msgstr "읽지 않은 메시지"
+
+#~ msgid "Quota"
+#~ msgstr "할당량"
+
+#~ msgid "Storage Size"
+#~ msgstr "저장소 크기"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "하위 폴더 저장소 크기"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "크기"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "합계"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "읽지 않음"
+
+#~ msgid "Stop"
+#~ msgstr "정지"
+
+#, fuzzy
+#~ msgid "&Configure"
+#~ msgstr "설정"
+
+#~ msgid "Message"
+#~ msgstr "메시지"
+
+#~ msgid "Recipient:"
+#~ msgstr "받는 사람:"
+
+#~ msgid "Send"
+#~ msgstr "보내기"

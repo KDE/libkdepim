@@ -1,0 +1,1754 @@
+# translation of libkdepim.po to Hindi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ravishankar Shrivastava <raviratlami@yahoo.com>, 2008.
+# G Karunakar <karunakar@indlinux.org>, 2020.
+# Raghavendra Kamath <raghu@raghukamath.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2021-06-29 15:25+0530\n"
+"Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
+"Language-Team: kde-hindi\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 21.04.2\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"हम ओर प्राप्तकर्ताएँ नहीं जोड सकते। हम अधिकतम प्राप्तकर्ता संख्या सीमा तक पहुँच चुके हैं"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "इस इकार्रवाई को रद्द करें।"
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "छोड़ा जा रहा है..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "कनेक्शन एनक्रिप्टेड है"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "संपर्क गूढलेखित नहीं है"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "विस्तृत प्रगति संवाद खोलें"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "विस्तृत प्रगति विंडो दिखाएँ"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "विस्तृत प्रगति विंडो को छुपाएँ"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "अधिक"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "कम"
+
+#~ msgid "Choose..."
+#~ msgstr "चुनें..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "प्राथमिकताएँ"
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "डिफ़ॉल्ट प्राथमिकताओं को सेट किया जा रहा है"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "पूर्वन्यस्त में रीसेट करें"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "जोड़ें (&d)"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< मिटाएँ (&R)"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "पाठ अभिलेख आयात करें"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>क्या आप सचमुच में '<b>%1</b>' को मिटाना चाहते हैं ?</qt>"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "पूर्णता अनुक्रम कॉन्फ़िगर करें..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "नूतन पते"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "एलडीएपी सर्वर %1"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search email:"
+#~ msgstr "ढूंढें:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search"
+#~ msgstr "ढूंढें:"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "ई-मेल पता"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "चयन"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Unselect"
+#~ msgstr "चयन"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "लोड किया जा रहा है..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "को मेल भेजें '%1'"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "पूर्णता अनुक्रम कॉन्फ़िगर करें..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "संपादन पूर्णता अनुक्रम"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "नूतन पते"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "ई-मेल पता"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "संपादन पूर्णता अनुक्रम"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "एलडीएपी सर्वर %1"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "नियम ऊपर खिसकाएँ"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "नियम नीचे खिसकाएँ"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "आज (&T)"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "कल (&m)"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "अगले सप्ताह (&W)"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "अगले माह (&o)"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "कोई तारीख़ नहीं"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr "<qt>ईमेल पता <b>%1</b> पहले ही आपकी पता पुस्तिका में है.</qt>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr "<qt>ईमेल पता <b>%1</b> पहले ही आपकी पता पुस्तिका में है.</qt>"
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "कोई वर्णन उपलब्ध नहीं"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "पता पुस्तिका (&A)"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr "<qt>ईमेल पता <b>%1</b> पहले ही आपकी पता पुस्तिका में है.</qt>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "रविशंकर श्रीवास्तव, जी. करूणाकर"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "raviratlami@aol.in,"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Server Settings"
+#~ msgstr "एलडीएपी सर्वर %1"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c), 2004 टॉबियस कोएनिग"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "टॉबियस कोएनिग"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "संपादन..."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove Host"
+#~ msgstr "मिटाएँ (&R)"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Servers"
+#~ msgstr "एलडीएपी सर्वर %1"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "संपादन..."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "&Remove Host"
+#~ msgstr "मिटाएँ (&R)"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Full Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "ईमेल"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Home Number"
+#~ msgstr "दूरभाष क्रमांक छुपाएँ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Work Number"
+#~ msgstr "दूरभाष क्रमांक छुपाएँ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Mobile Number"
+#~ msgstr "दूरभाष क्रमांक छुपाएँ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Fax Number"
+#~ msgstr "दूरभाष क्रमांक छुपाएँ"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "स्थिति"
+
+#, fuzzy
+#~| msgid "Organizer"
+#~ msgid "Organization"
+#~ msgstr "आर्गेनाइज़र"
+
+#~ msgid "Department"
+#~ msgstr "विभाग"
+
+#, fuzzy
+#~| msgid "Show Postal Addresses"
+#~ msgid "Postal Address"
+#~ msgstr "डाक का पता दिखाएँ"
+
+#~ msgid "Description"
+#~ msgstr "वर्णन"
+
+#, fuzzy
+#~| msgid "UID"
+#~ msgid "User ID"
+#~ msgstr "यूआईडी"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "ईमेल"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "स्थिति"
+
+#, fuzzy
+#~| msgid "Import starts at row:"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "आयात इस पंक्ति से प्रारंभ होती है:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search for:"
+#~ msgstr "ढूंढें:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "ईमेल"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "दूरभाष क्रमांक छुपाएँ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "दूरभाष क्रमांक छुपाएँ"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "ढूंढें:"
+
+#, fuzzy
+#~| msgid "Conditions"
+#~ msgid "Contains"
+#~ msgstr "शर्तें"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgid "Starts With"
+#~ msgstr "प्रारंभ समय"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "लोड किया जा रहा है..."
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Select All"
+#~ msgstr "चयन"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Unselect All"
+#~ msgstr "चयन"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "Add Selected"
+#~ msgstr "पता चयन"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "पूर्णता अनुक्रम कॉन्फ़िगर करें..."
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "नक़ल नियम"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< मिटाएँ (&R)"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "हाल ही के पतों का संपादन करें..."
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "पता पुस्तिका (&A)"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "उपलब्ध पृष्ठ"
+
+#, fuzzy
+#~| msgctxt "@item unknown mail account"
+#~| msgid "Unknown"
+#~ msgid "Unknown"
+#~ msgstr "अज्ञात"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "अटेंडीज़"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "प्रारंभ समय"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "अवधि"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#, fuzzy
+#~| msgid "Transmission complete. No new messages."
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] "हस्तांतरण सम्पन्न. कोई नए संदेश नहीं."
+#~ msgstr[1] "हस्तांतरण सम्पन्न. कोई नए संदेश नहीं."
+
+#, fuzzy
+#~| msgid "Transmission complete. No new messages."
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "हस्तांतरण सम्पन्न. कोई नए संदेश नहीं."
+#~ msgstr[1] "हस्तांतरण सम्पन्न. कोई नए संदेश नहीं."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "हस्तांतरण सम्पन्न. कोई नए संदेश नहीं."
+
+#, fuzzy
+#~| msgid "Transmission for account %1 complete. No new messages."
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] "खाता %1 के लिए हस्तांतरण सम्पन्न. कोई नए संदेश नहीं"
+#~ msgstr[1] "खाता %1 के लिए हस्तांतरण सम्पन्न. कोई नए संदेश नहीं"
+
+#, fuzzy
+#~| msgid "Transmission for account %1 complete. No new messages."
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "खाता %1 के लिए हस्तांतरण सम्पन्न. कोई नए संदेश नहीं"
+#~ msgstr[1] "खाता %1 के लिए हस्तांतरण सम्पन्न. कोई नए संदेश नहीं"
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "खाता %1 के लिए हस्तांतरण सम्पन्न. कोई नए संदेश नहीं"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "ईमेल"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "संदेश प्राप्त व भंडारित किया जा रहा है..."
+
+#, fuzzy
+#~| msgid "Notify Message"
+#~ msgid "Total Messages"
+#~ msgstr "संदेश की सूचना दें"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Unread Messages"
+#~ msgstr "संदेश"
+
+#~ msgid "Send SMS"
+#~ msgstr "एसएमएस भेजें"
+
+#~ msgid "Message"
+#~ msgstr "संदेश"
+
+#~ msgid "Recipient:"
+#~ msgstr "पानेवालाः"
+
+#~ msgid "Send"
+#~ msgstr "भेजें"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgid "Select Address Book"
+#~ msgstr "पता पुस्तिका (&A)"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "कल"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "आज"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "कल"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "आज"
+
+#~ msgid "To"
+#~ msgstr "को"
+
+#~ msgid "CC"
+#~ msgstr "नक़ल: "
+
+#~ msgid "BCC"
+#~ msgstr "गुमनाम पता.: "
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "टैम्प्लेट के लिए कृपया एक नाम भरें:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "पता चयन"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "इन पर फ़िल्टरः (&F)"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "को >> (&T)"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "नक़ल >> (&C)"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "गुमनाम पता.  >> (&B)"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< मिटाएँ (&R)"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "वितरण सूची के रुप में सहेजें... (&D)"
+
+#~ msgid "Address Selection"
+#~ msgstr "पता चयन"
+
+#~ msgid "&To >>"
+#~ msgstr "को >> (&T)"
+
+#~ msgid "&CC >>"
+#~ msgstr "नक़ल >> (&C)"
+
+#~ msgid "&BCC >>"
+#~ msgstr "गुमनाम पता.  >> (&B)"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "चुने हुए पते (&S)"
+
+#~ msgid "&Filter on:"
+#~ msgstr "इन पर फ़िल्टरः (&F)"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "वितरण सूची के रुप में सहेजें... (&D)"
+
+#~ msgid "Show Birthday"
+#~ msgstr "जन्मदिन दिखाएँ"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "डाक का पता दिखाएँ"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "ईमेल पता दिखाएँ"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "दूरभाष क्रमांक दिखाएँ"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "वेब पृष्ठ (यूआरएल) दिखाएँ"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "इंस्टैंट मैसेजिंग पता दिखाएँ"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "मनपसंद फील्ड्स दिखाएँ"
+
+#~ msgid "SMS"
+#~ msgstr "एसएमएस"
+
+#~ msgid "Homepage"
+#~ msgstr "मुख पृष्ठ"
+
+#~ msgid "Blog Feed"
+#~ msgstr "ब्लॉग फीड"
+
+#~ msgid "Notes"
+#~ msgstr "टीप"
+
+#~ msgid "Profession"
+#~ msgstr "व्यवसाय"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "सहायक का नाम"
+
+#~ msgid "Manager's Name"
+#~ msgstr "प्रबंधक का नाम"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "साथी का नाम"
+
+#~ msgid "Office"
+#~ msgstr "कार्यालय"
+
+#~ msgid "IM Address"
+#~ msgstr "आईएम पता"
+
+#~ msgid "Anniversary"
+#~ msgstr "वर्षगांठ"
+
+#, fuzzy
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "पता पुस्तिका:"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "क्रियान्वित करने के लिए वहाँ कोई अनुप्रयोग नियत नहीं है. कृपया विन्यास संवाद में जाएँ "
+#~ "तथा एक कॉन्फ़िगर करें."
+
+#~ msgid "Call number %1"
+#~ msgstr "काल संख्या %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "%1 को फ़ैक्स भेजें"
+
+#~ msgid "Show address on map"
+#~ msgstr "मैप में पता दिखाएँ"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "%1 को एसएमएस भेजें"
+
+#~ msgid "Open URL %1"
+#~ msgstr "यूआरएल  %1 खोलें"
+
+#~ msgid "Chat with %1"
+#~ msgstr "के साथ गपशप करें %1"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "पता पुस्तिका (&A)"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "मुख पृष्ठ"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "दूरभाष क्रमांक छुपाएँ"
+
+#~ msgid "<group>"
+#~ msgstr "<समूह>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "अन्य पता"
+
+#~ msgid "New Distribution List"
+#~ msgstr "नई वितरण सूची"
+
+#~ msgid "Please enter name:"
+#~ msgstr "कृपया नाम भरें:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>दिए गए नाम <b>%1</b> की वितरण सूची पहले से ही मौजूद है, कृपया एक भिन्न नाम "
+#~ "चुनें.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "वितरण सूची"
+
+#, fuzzy
+#~| msgid "&Insert"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "प्रविष्ट (&I)"
+
+#, fuzzy
+#~| msgid "Insert File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "फ़ाइल प्रविष्ट करें"
+
+#, fuzzy
+#~| msgid "External Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "बाहरी संपादक"
+
+#, fuzzy
+#~| msgid "Abort Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "संपादक छोड़ें"
+
+#, fuzzy
+#~| msgid "Leave Editor Open"
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "संपादक खुला रहने दें"
+
+#~ msgid "Edit Categories"
+#~ msgstr "वर्ग का संपादन करें"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "श्रेणी"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "श्रेणी"
+
+#~ msgid "Select Categories"
+#~ msgstr "वर्ग चुनें"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "यूआरएल %1 दिखाया जा रहा है"
+
+#~ msgid "Text"
+#~ msgstr "पाठ"
+
+#~ msgid "Numeric Value"
+#~ msgstr "न्यूमेरिक मूल्य"
+
+#~ msgid "Boolean"
+#~ msgstr "बूलिये"
+
+#~ msgid "Date & Time"
+#~ msgstr "तारीख़ व समय"
+
+#~ msgid "Date"
+#~ msgstr "तारीख़"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "केसीएम-डिज़ाइनरफ़ील्डस"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "क्यूटी डीजाइनर फ़ील्ड संवाद"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "कॉर्नेलियस शूमेकर"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|डिजाइनर फ़ाइलें"
+
+#~ msgid "Import Page"
+#~ msgstr "पृष्ठ आयात करें"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "चयनित पृष्ठ का पूर्वावलोकन"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">यह कैसे कार्य करता है?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "पृष्ठ मिटाएँ"
+
+#~ msgid "Import Page..."
+#~ msgstr "पृष्ठ आयात करें..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "क्यूटी डीजाइनर के साथ संपादित करें..."
+
+#~ msgid "Key:"
+#~ msgstr "कुंजीः"
+
+#~ msgid "Type:"
+#~ msgstr "क़िस्मः"
+
+#~ msgid "Classname:"
+#~ msgstr "क्लासनाम:"
+
+#~ msgid "Description:"
+#~ msgstr "वर्णनः"
+
+#~ msgid "Change Config Value"
+#~ msgstr "कॉन्फ़िग मूल्य बदलें"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "कॉन्फ़िगरेशन विजार्ड"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "नियम "
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Setup Rules"
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "सेटअप नियम"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "स्रोत"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "लक्ष्य"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "स्थिति"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "परिवर्तन"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Setup Changes"
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "सेटअप परिवर्तन"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "क्रिया"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "विकल्प"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "मान"
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "चेतावनी"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "विज़ार्ड अब चलाएँ"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "चयन"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "अवधि"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "आज"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "स्थान"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "जन्मदिन दिखाएँ"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "बेनाम प्लगइन"
+
+#, fuzzy
+#~| msgid "New (remote) entry"
+#~ msgid "New category entry"
+#~ msgstr "नई (रिमोट) प्रविष्टि"
+
+#, fuzzy
+#~| msgid "Add &subcategory"
+#~ msgid "Add &Subcategory"
+#~ msgstr "उपवर्ग जोड़ें (&s)"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "श्रेणियाँ"
+
+#, fuzzy
+#~| msgid "Select Categories"
+#~ msgid "Default Category"
+#~ msgstr "वर्ग चुनें"
+
+#~ msgid "Category"
+#~ msgstr "श्रेणी"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "चयन साफ करें (&C)"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "वर्गों का संपादन करें..."
+
+#, fuzzy
+#~| msgid "Yes"
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "हाँ"
+
+#, fuzzy
+#~| msgid "No"
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "नहीं"
+
+#~ msgid "Organizer"
+#~ msgstr "आर्गेनाइज़र"
+
+#~ msgid "UID"
+#~ msgstr "यूआईडी"
+
+#~ msgid "Is all-day"
+#~ msgstr "पूरा दिन है"
+
+#~ msgid "Has duration"
+#~ msgstr "अवधि है"
+
+#~ msgid "Summary"
+#~ msgstr "सारांश"
+
+#~ msgid "Status"
+#~ msgstr "स्थिति"
+
+#~ msgid "Secrecy"
+#~ msgstr "गोपनीयता"
+
+#~ msgid "Priority"
+#~ msgstr "प्राथमिकता"
+
+#~ msgid "Location"
+#~ msgstr "स्थान"
+
+#~ msgid "Categories"
+#~ msgstr "श्रेणियाँ"
+
+#~ msgid "Alarms"
+#~ msgstr "अलार्म्स"
+
+#~ msgid "Resources"
+#~ msgstr "संसाधन "
+
+#~ msgid "Relations"
+#~ msgstr "सम्बन्ध"
+
+#~ msgid "Attachments"
+#~ msgstr "संलग्नक"
+
+#~ msgid "Exception Dates"
+#~ msgstr "एक्सेप्शन तिथियाँ"
+
+#~ msgid "Exception Times"
+#~ msgstr "एक्सेप्शन समय"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "निर्मित"
+
+#~ msgid "Related Uid"
+#~ msgstr "सम्बन्धित यूआईडी"
+
+#~ msgid "Has End Date"
+#~ msgstr "में समाप्ति तारीख़ है"
+
+#~ msgid "End Date"
+#~ msgstr "समाप्ति तारीख़"
+
+#~ msgid "Has Start Date"
+#~ msgstr "में प्रारंभ तारीख है"
+
+#~ msgid "Has Due Date"
+#~ msgstr "में नियत तारीख़ है"
+
+#~ msgid "Due Date"
+#~ msgstr "नियत तारीख़"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "में पूर्ण तारीख़ है"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "पूर्ण"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "पूर्ण"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgid "Local"
+#~ msgstr "स्थानीय लें"
+
+#, fuzzy
+#~| msgctxt "@item IMAP account"
+#~| msgid "IMAP"
+#~ msgid "IMAP"
+#~ msgstr "आईमैप"
+
+#, fuzzy
+#~| msgctxt "@item usenet account"
+#~| msgid "News"
+#~ msgid "News"
+#~ msgstr "समाचार"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "टीप"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "आईमैप"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "एम-बॉक्स"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "मेल-डिर डाक-डब्बा"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "समाचार"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "डिस्कनेक्टेड आईमैप"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "स्थानीय डाक-डब्बा"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "पॉप3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "अज्ञात"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "यह संदेश फिर से  न दिखाएँ"
+
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "आलेख\n"
+#~ "<b>%1</b><br /><b>%2</b><br />ने निम्न नोट को प्रकट किया:<br />%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "अंक समंजित करें"
+
+#~ msgid "Display Message"
+#~ msgstr "संदेश दिखाएँ"
+
+#~ msgid "Colorize Header"
+#~ msgstr "हेडर रंगीन बनाएँ"
+
+#, fuzzy
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "पढ़ागया चिह्नित करें"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>संग्रहित नोट्स की सूची</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "संग्रहित नोट्स"
+
+#~ msgid "Contains Substring"
+#~ msgstr "सबस्ट्रिंग रखता है"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "मिलाए रेगुलर एक्सप्रेशन"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "रेगुलर एक्सप्रेशन से मिलता है (केस सेंसिटिव)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "ठीक वैसा ही है जैसा"
+
+#~ msgid "Less Than"
+#~ msgstr "से कम"
+
+#~ msgid "Greater Than"
+#~ msgstr "से बड़ा"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "कोई अन्य नियम नाम चुनें"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "यह नाम पहले ही आबंटित है, कृपया कोई भिन्न नाम चुनें:"
+
+#~ msgid "rule %1"
+#~ msgstr "नियम %1"
+
+#~ msgid "Not"
+#~ msgstr "नहीं"
+
+#~ msgid "Negate this condition"
+#~ msgstr "इस शर्त को नकारें"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "इस अवस्था के विरूद्ध मिलाने के लिए हेडर चुनें"
+
+#~ msgid "Select the type of match"
+#~ msgstr "मिलान की किस्म चुनें"
+
+#~ msgid "The condition for the match"
+#~ msgstr "मिलान के लिए शर्तें"
+
+#~ msgid "Select an action."
+#~ msgstr "एक क्रिया चुनें:"
+
+#~ msgid "Properties"
+#~ msgstr "गुण"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "नाम: (&N)"
+
+#~ msgid "&Groups:"
+#~ msgstr "समूहः (&G)"
+
+#~ msgid "A&dd Group"
+#~ msgstr "समूह जोड़ें (&d)"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "नियमों को स्वचलित कालातीत करें (&E)"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "नियम इस हेतु वैध है: (&R)"
+
+#~ msgid "Conditions"
+#~ msgstr "शर्तें"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "सभी शर्तों का मिलान करें (&l)"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "कोई भी शर्तों का मिलान करें (&h)"
+
+#~ msgid "Actions"
+#~ msgstr "क्रियाएं"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " दिन"
+#~ msgstr[1] " दिन"
+
+#~ msgid "New rule"
+#~ msgstr "नया नियम"
+
+#~ msgid "Edit rule"
+#~ msgstr "संपादन नियम"
+
+#~ msgid "Remove rule"
+#~ msgstr "नियम मिटाएँ"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>सभी समूह</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "सिर्फ इस समूह के लिए नियम दिखाएँ: (&w)"
+
+#~ msgid "Rule Editor"
+#~ msgstr "नियम संपादक"
+
+#~ msgid "Edit Rule"
+#~ msgstr "नियम संपादित करें"
+
+#~ msgid "Reload &List"
+#~ msgstr "सूची रीलोड करें (&L)"
+
+#~ msgid "S&earch:"
+#~ msgstr "ढूंढें: (&e)"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "ट्री दृश्य अक्षम करें (&t)"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "सिर्फ सब्सक्राइबर्स (&S)"
+
+#~ msgid "&New only"
+#~ msgstr "सिर्फ नया (&N)"
+
+#~ msgid "Current changes:"
+#~ msgstr "मौज़ूदा परिवर्तनः"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "वर्णन"
+
+#~ msgid "Subscribe To"
+#~ msgstr "को सब्सक्राइब करें"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "से अनस्ब्सक्राइब करें"
+
+#, fuzzy
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "विरोधाभार पता चला"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "स्थानीय लें"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "नया लें"
+
+#, fuzzy
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "दोनों लें"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "स्थानीय इंसीडेंस"
+
+#, fuzzy
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "स्थानीय इंसीडेंस सारांश"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "पिछली मर्तबा परिवर्धितः"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "पिछली मर्तबा परिवर्धितः"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "विवरण दिखाएँ"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "भिन्नताओं को दिखाएँ "
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "वरीयताएँ सिंक करें"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "वरीयताएँ सिंक करें"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "वरीयताएँ सिंक करें"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "विरोधाभास में स्थानीय प्रविष्टि लें"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "विरोधाभास में स्थानीय प्रविष्टि लें"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "विरोधाभास में नया (रिमोट) प्रविष्टि लें"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "विरोधाभास में नया (रिमोट) प्रविष्टि लें"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "विरोधाभास में ताज़ातरीन प्रविष्टि लें"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "विरोधाभास में ताज़ातरीन प्रविष्टि लें"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "विरोधाभास में प्रत्येक प्रविष्टि के लिए पूछें"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "विरोधाभास में प्रत्येक प्रविष्टि के लिए पूछें"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "विरोधाभास में दोनों लें"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "विरोधाभास में दोनों लें"
+
+#, fuzzy
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "इस सिंक के सभी विरोधाभास में लागू करें"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "स्थानीय घटना"
+
+#, fuzzy
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "स्थानीय कार्य-सूची"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "स्थानीय दैनिकी"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "नई घटना"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "नई कार्य-सूची"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "नई दैनिकी"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "विवरण छुपाएँ"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "विवरण छुपाएँ"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "विवरण दिखाएँ..."
+
+#, fuzzy
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr " %1 तथा %2 की भिन्नताएँ"
+
+#, fuzzy
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "%1 की भिन्नताएँ"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "स्थानीय इंसीडेंस"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "स्थानीय इंसीडेंस"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "विवरण दिखाएँ"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "विवरण छुपाएँ"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "बाहरी संपादक अभी भी चल रहा है.\n"
+#~ "बाहरी संपादक को छोड़ें या उसे चलने दें?"
+
+#~ msgid "Floating"
+#~ msgstr "फ्लोटिंग"
+
+#~ msgid "Local entry"
+#~ msgstr "स्थानीय प्रविष्टि"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "नई (रिमोट) प्रविष्टि"
+
+#~ msgid "Plain"
+#~ msgstr "सादा"
+
+#~ msgid "Unquoted"
+#~ msgstr "अनकोटेड"
+
+#~ msgid "Bracketed"
+#~ msgstr "ब्रेकेटेड"
+
+#~ msgid "Undefined"
+#~ msgstr "अपारिभाषित "
+
+#~ msgid "File to import:"
+#~ msgstr "आयात के लिए फ़ाइल:"
+
+#~ msgid "Separator:"
+#~ msgstr "विभाजकः"
+
+#~ msgid "Tab"
+#~ msgstr "टैब"
+
+#~ msgid "Space"
+#~ msgstr "खाली जगह"
+
+#~ msgid "Header"
+#~ msgstr "शीर्षक"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "चुने गए स्तम्भ को आबंटित करें"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "चुने गए स्तम्भ से आबंटन मिटाएँ"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "टैम्पलेट के साथ सम्बद्ध करें..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "मौज़ूदा सांचा सहेजें"
+
+#~ msgid "Loading Progress"
+#~ msgstr "लोडिंग प्रगति"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "कृपया इंतजार करें जबकि फ़ाइल लोड हो रहा है."
+
+#~ msgid "Template Selection"
+#~ msgstr "टैम्प्लेट चयन"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "कृपया एक प्रारूप चुनें जो सीएसवी फ़ाइल से मेल खाता होः"
+
+#~ msgid "Importing Progress"
+#~ msgstr "आयात प्रगति में"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "कृपया इंतजार करें जबकि डाटा आयात हो रहा है."
+
+#~ msgid "Template Name"
+#~ msgstr "टैम्प्लेट नाम"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "जन्मदिन छुपाएँ"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "डाक का पता छुपाएँ"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "ईमेल पता छुपाएँ"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "दूरभाष क्रमांक छुपाएँ"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "वेब पृष्ठ (यूआरएल) छुपाएँ"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "इंस्टैंट मैसेजिंग पता छुपाएँ"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "मनपसंदि फील्ड्स छुपाएँ"
+
+#~ msgid "Test"
+#~ msgstr "जांच"
+
+#~ msgid "Suggestions"
+#~ msgstr "सुझाव"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "पाठ"
+
+#~ msgid "Standard"
+#~ msgstr "मानक"
+
+#~ msgid "Bulleted List (Disc)"
+#~ msgstr "बुलेटेड सूची (चकरी)"
+
+#~ msgid "Bulleted List (Circle)"
+#~ msgstr "बुलेटेड सूची (वृत्त)"
+
+#~ msgid "Bulleted List (Square)"
+#~ msgstr "बुलेटेड सूची (वर्ग)"
+
+#~ msgid "Ordered List (Decimal)"
+#~ msgstr "क्रमिक सूची (दशमलव)"
+
+#~ msgid "Ordered List (Alpha lower)"
+#~ msgstr "क्रमिक सूची (अल्फ़ा लोअर)"
+
+#~ msgid "Ordered List (Alpha upper)"
+#~ msgstr "क्रमिक सूची (अल्फ़ा अपर)"
+
+#~ msgid "No Suggestions"
+#~ msgstr "कोई सुझाव नहीं"
+
+#~ msgid "Starting the ioslave for protocol %1 failed."
+#~ msgstr "प्रोटाकॉल %1 के लिए आइओस्लेव प्रारंभ करना असफल"
+
+#~ msgid "Unknown error %1."
+#~ msgstr "अज्ञात त्रुटि %1."
+
+#~ msgid "Error"
+#~ msgstr "त्रुटि"
+
+#~ msgid "Cc"
+#~ msgstr "इन्हें भी"
+
+#~ msgid "Bcc"
+#~ msgstr "बेनामी प्रतिलिपि: "
+
+#~ msgid "All"
+#~ msgstr "सभी"

@@ -1,0 +1,1562 @@
+# translation of libkdepim.po to Romanian
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Claudiu Costin <claudiuc@kde.org>, 2003.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2011, 2013, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2021-07-26 12:51+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Nu se pot adăuga mai mulți destinatari. S-a atins numărul maxim de "
+"destinatari"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Anulează această operație."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Abandonare..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Conexiunea este criptată"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Conexiunea nu este criptată"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Deschide dialogul de progres detaliat"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Arată fereastra de progres detaliat"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Ascunde fereastra de progres detaliat"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Mai multe"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Mai puține"
+
+#~ msgid "Choose..."
+#~ msgstr "Alege..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Preferințe"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Sunteți pe cale de a stabili toate preferințele la valorile implicite. "
+#~ "Toate modificările personale vor fi pierdute."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Stabilire preferințe implicite"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Restabilire implicite"
+
+#, fuzzy
+#~| msgid "&Add"
+#~ msgid "Add"
+#~ msgstr "&Adaugă"
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove"
+#~ msgstr "&Elimină"
+
+#, fuzzy
+#~| msgid "Import Page"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Pagină import"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Sigur ștergeți „<b>%1</b>”?</qt>"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "Configurează ordinea completării..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Adrese recente"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Contacte găsite în datele dumneavoastră"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "Server LDAP %1"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "Caută după:"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Caută"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Adresă de e-mail"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Selecție"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "Deselectează tot"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "Încărcare..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Trimite scrisoare către „%1”"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Configurează ordinea completării..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Modifică ordinea completării"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Adrese recente"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Adresă de e-mail"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Modifică ordinea completării"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Server LDAP %1"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "Mută regula mai sus"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "Mută regula mai jos"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Astăzi"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Mâine"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Săptămâna &viitoare"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Luna viit&oare"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Nicio dată"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "Adresa de poștă electronică primară din vCard se află deja în cartea de "
+#~ "adrese; totuși, puteți salva vCard-ul într-un fișier și să-l importați "
+#~ "manual în cartea de adrese."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "Fișierul vCard a fost adăugat la cartea de adrese; puteți adăuga "
+#~ "informații suplimentare la această înregistrare deschizând cartea de "
+#~ "adrese."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Un contact cu adresa de poștă electronică <email>%1</email> este deja în "
+#~ "cartea de adrese."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Trebuie să creați o carte de adrese înainte de a adăuga contacte. Doriți "
+#~ "să creați o carte de adrese?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Nu sunt cărți de adrese disponibile"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Adaugă carte de adrese"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Un contact pentru <email>%1</email> a fost adăugat cu succes la "
+#~ "cartea de adrese.</para><para>Doriți să redactați acest nou contact acum?"
+#~ "</para>"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid "Date cannot be later than %1"
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Data nu poate fi mai târziu de %1"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Sergiu Bivol"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "sergiu@ase.md"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Adaugă gazdă"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Configurări server LDAP"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Redactează gazda"
+
+#, fuzzy
+#~| msgid "&Remove Host"
+#~ msgid "Remove Host"
+#~ msgstr "&Elimină gazda"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "Servere LDAP"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Bifați toate serverele ce trebuiesc folosite:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Adaugă gazdă..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Redactează gazda..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Elimină gazda"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Titlu"
+
+#~ msgid "Full Name"
+#~ msgstr "Nume deplin"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Home Number"
+#~ msgstr "Telefon acasă"
+
+#~ msgid "Work Number"
+#~ msgstr "Telefon la serviciu"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Telefon mobil"
+
+#~ msgid "Fax Number"
+#~ msgstr "Număr de fax"
+
+#~ msgid "Pager"
+#~ msgstr "Pager"
+
+#~ msgid "Street"
+#~ msgstr "Stradă"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Stat"
+
+#~ msgid "Country"
+#~ msgstr "Țară"
+
+#~ msgid "City"
+#~ msgstr "Oraș"
+
+#~ msgid "Organization"
+#~ msgstr "Organizație"
+
+#~ msgid "Company"
+#~ msgstr "Firmă"
+
+#~ msgid "Department"
+#~ msgstr "Departament"
+
+#~ msgid "Zip Code"
+#~ msgstr "Cod ZIP"
+
+#~ msgid "Postal Address"
+#~ msgstr "Adresa poștală"
+
+#~ msgid "Description"
+#~ msgstr "Descriere"
+
+#~ msgid "User ID"
+#~ msgstr "ID utilizator"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Stat"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Titlu"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Importă contacte din LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Caută adrese în Directoriu"
+
+#~ msgid "Search for:"
+#~ msgstr "Caută după:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "în"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Nume"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Telefon acasă"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Telefon la serviciu"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Caută"
+
+#~ msgid "Recursive search"
+#~ msgstr "Căutare recursivă"
+
+#~ msgid "Contains"
+#~ msgstr "Conține"
+
+#~ msgid "Starts With"
+#~ msgstr "Începe cu"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "Încărcare..."
+
+#~ msgid "Select All"
+#~ msgstr "Selectează tot"
+
+#~ msgid "Unselect All"
+#~ msgstr "Deselectează tot"
+
+#~ msgid "Add Selected"
+#~ msgstr "Adaugă selecție"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Configurare servere LDAP..."
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "Copiază regula"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Trebuie să alegeți un server LDAP înainte de a căuta."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Importat din directoriul LDAP %1 pe %2"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Configurează parametrii LDAP pentru Cartea de adrese"
+
+#~ msgid "&Remove"
+#~ msgstr "&Elimină"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Editează adrese recente"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Alegeți cartea de adrese"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Alegeți cartea de adrese în care se va salva contactul:"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Pagini disponibile"
+
+#~ msgid "Unknown"
+#~ msgstr "Necunoscut"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Participanți"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Timp de început"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Durată"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Transmisiune completă. %1 mesaj nou (%2 KO). %3 KO rămași pe server."
+#~ msgstr[1] ""
+#~ "Transmisiune completă. %1 mesaje noi (%2 KO). %3 KO rămași pe server."
+#~ msgstr[2] ""
+#~ "Transmisiune completă. %1 de mesaje noi (%2 KO). %3 KO rămași pe server."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Transmisiune completă. %1 mesaj (%2 KO)."
+#~ msgstr[1] "Transmisiune completă. %1 mesaje (%2 KO)."
+#~ msgstr[2] "Transmisiune completă. %1 de mesaje (%2 KO)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Transmisiune completă. %1 mesaj nou."
+#~ msgstr[1] "Transmisiune completă. %1 mesaje noi."
+#~ msgstr[2] "Transmisiune completă. %1 de mesaje noi."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Transmisiune completă. Niciun mesaj nou."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Transmisiune completă pentru contul %4. %1 mesaj nou (%2 KO). %3 KO "
+#~ "rămași pe server."
+#~ msgstr[1] ""
+#~ "Transmisiune completă pentru contul %4. %1 mesaje noi (%2 KO). %3 KO "
+#~ "rămași pe server."
+#~ msgstr[2] ""
+#~ "Transmisiune completă pentru contul %4. %1 de mesaje noi (%2 KO). %3 KO "
+#~ "rămași pe server."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Transmisiune completă pentru contul %3. %1 mesaj (%2 KO)."
+#~ msgstr[1] "Transmisiune completă pentru contul %3. %1 mesaje (%2 KO)."
+#~ msgstr[2] "Transmisiune completă pentru contul %3. %1 de mesaje (%2 KO)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Transmisiune completă pentru contul %2. %1 mesaj nou."
+#~ msgstr[1] "Transmisiune completă pentru contul %2. %1 mesaje noi."
+#~ msgstr[2] "Transmisiune completă pentru contul %2. %1 de mesaje noi."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Transmisiune completă pentru contul %1. Niciun mesaj nou."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Nume"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Se preiau și se stochează mesaje..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Total mesaje"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Mesaje necitite"
+
+#~ msgid "Quota"
+#~ msgstr "Cotă"
+
+#~ msgid "Storage Size"
+#~ msgstr "Dimensiune stocare"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Dimensiune stocare subdosar"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Dimensiune"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Total"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Necitite"
+
+#~ msgid "Stop"
+#~ msgstr "Oprește"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Nu aveți activat sistemul de birou semantic. Multe funcții importante ale "
+#~ "acestei aplicații depind de sistemul de birou semantic și nu vor lucra "
+#~ "corect fără acesta."
+
+#~ msgid "&Configure"
+#~ msgstr "&Configurare"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Modulul de configurare a sistemului de birou semantic (Nepomuk) nu a fost "
+#~ "găsit în sistemul dumneavoastră. Asigurați-vă că Nepomuk a fost instalat "
+#~ "corect."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Nu aveți activat sistemul de birou semantic. Următoarele funcții nu vor "
+#~ "lucra corect:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "Expediază SMS"
+
+#~ msgid "Message"
+#~ msgstr "Mesaj"
+
+#~ msgid "Recipient:"
+#~ msgstr "Destinatar:"
+
+#~ msgid "Send"
+#~ msgstr "Trimite"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Alege Cartea de adrese"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Alege cartea de adrese în care se va salva contactul nou:"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "mâine"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "astăzi"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "ieri"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "Data nu poate fi mai devreme de %1"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "astăzi"
+
+#~ msgid "To"
+#~ msgstr "Către"
+
+#~ msgid "CC"
+#~ msgstr "Copie"
+
+#~ msgid "BCC"
+#~ msgstr "BCC"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Selecție adresă"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "Că&tre >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&Copie >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&BCC >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Elimină"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Salvare ca listă de &distribuție..."
+
+#~ msgid "Address Selection"
+#~ msgstr "Selecție adresă"
+
+#~ msgid "&To >>"
+#~ msgstr "Că&tre >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&Copie >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "Adre&sele alese"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Salvare ca listă de &distribuție..."
+
+#~ msgid "Show Birthday"
+#~ msgstr "Arată ziua de naștere"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Arată adresele poștale"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Arată adresele email"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Arată numerele de telefon"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Arată paginile web (URL-uri)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Arată adresele de Mesagerie Instantanee"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Arată câmpuri personalizate"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Pagină WEB"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Flux blog"
+
+#~ msgid "Notes"
+#~ msgstr "Note"
+
+#~ msgid "Profession"
+#~ msgstr "Profesie"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Nume secretară"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Nume manager"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Nume partener"
+
+#~ msgid "Office"
+#~ msgstr "Birou"
+
+#~ msgid "IM Address"
+#~ msgstr "Adresă MI"
+
+#~ msgid "Anniversary"
+#~ msgstr "Aniversare"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Carte de adrese</b>: %1</p>"
+
+#~ msgid "Call number %1"
+#~ msgstr "Apelează numărul %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Trimite fax către %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Arată adresa pe hartă"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Trimite SMS către %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Deschide URL %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Discută cu %1"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "&Cartea de adrese"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Nume"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Nume deplin"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Pagină WEB"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefon acasă"
+
+#~ msgid "<group>"
+#~ msgstr "<grup>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Alte adrese"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Listă de distribuție nouă"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Introduceți denumirea:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Lista de distribuție cu denumirea <b>%1</b> există deja. Alegeți o "
+#~ "denumire diferită.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Liste distribuție"
+
+#, fuzzy
+#~| msgid "&Insert"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Inserează"
+
+#, fuzzy
+#~| msgid "Insert File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Inserează fișier"
+
+#, fuzzy
+#~| msgid "External Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Editor extern"
+
+#, fuzzy
+#~| msgid "Abort Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Abandonează editorul"
+
+#, fuzzy
+#~| msgid "Leave Editor Open"
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Lasă editorul deschis"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Editează categorii"
+
+#~ msgid "New category"
+#~ msgstr "Categorie nouă"
+
+#, fuzzy
+#~| msgid "New category"
+#~ msgid "New subcategory"
+#~ msgstr "Categorie nouă"
+
+#~ msgid "Select Categories"
+#~ msgstr "Alege categorii"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Afișare URL %1"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Valoare numerică"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolean"
+
+#~ msgid "Date & Time"
+#~ msgstr "Dată și oră"
+
+#~ msgid "Date"
+#~ msgstr "Dată"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Fișiere Designer"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Previzualizarea paginii alese"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Cum funcționează?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Șterge pagina"
+
+#~ msgid "Import Page..."
+#~ msgstr "Import pagină..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Editare cu Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Cheie:"
+
+#~ msgid "Type:"
+#~ msgstr "Tip:"
+
+#~ msgid "Classname:"
+#~ msgstr "Denumire clasă:"
+
+#~ msgid "Description:"
+#~ msgstr "Descriere:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Schimbă valoarea configurării"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Expert de configurare"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Reguli"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Configurare reguli"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Sursă"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Țintă"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Condiție"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Modificări"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Configurare modificări"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Acțiune"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Opțiune"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Valoare"
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Avertisment"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Lansează expertul acum"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Selecție"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Durată"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "astăzi"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Locație"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Arată ziua de naștere"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Modul fără nume"
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Adaugă înregistrarea în lista de categorii"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr ""
+#~ "Apăsați acest buton pentru a introduce înregistrarea în lista de "
+#~ "categorii."
+
+#~ msgid "A&dd"
+#~ msgstr "A&daugă"
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Adaugă &subcategorie"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "Elimină categoria aleasă"
+
+#~ msgid "Category list"
+#~ msgstr "Lista de categorii"
+
+#, fuzzy
+#~| msgid "Default category"
+#~ msgid "Default Category"
+#~ msgstr "Categoria implicită"
+
+#~ msgid "Category"
+#~ msgstr "Categorie"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&Curăță selecția"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&Editare categorii..."
+
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Da"
+
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Nu"
+
+#~ msgid "Organizer"
+#~ msgstr "Organizator"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Is all-day"
+#~ msgstr "E pe toată ziua"
+
+#~ msgid "Has duration"
+#~ msgstr "Are durată"
+
+#~ msgid "Summary"
+#~ msgstr "Sumar"
+
+#~ msgid "Status"
+#~ msgstr "Stare"
+
+#~ msgid "Secrecy"
+#~ msgstr "Secretism"
+
+#~ msgid "Priority"
+#~ msgstr "Prioritate"
+
+#~ msgid "Location"
+#~ msgstr "Locație"
+
+#~ msgid "Categories"
+#~ msgstr "Categorii"
+
+#~ msgid "Alarms"
+#~ msgstr "Alarme"
+
+#~ msgid "Resources"
+#~ msgstr "Resurse"
+
+#~ msgid "Relations"
+#~ msgstr "Relații"
+
+#~ msgid "Attachments"
+#~ msgstr "Atașamente"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Date excepție"
+
+#~ msgid "Exception Times"
+#~ msgstr "Ore excepție"
+
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Creat"
+
+#~ msgid "Has End Date"
+#~ msgstr "Are dată de sfârșit"
+
+#~ msgid "End Date"
+#~ msgstr "Data de sfârșit"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Are dată de început"
+
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Complet"
+
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Încheiat"
+
+#~ msgid "Local"
+#~ msgstr "Local"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "News"
+#~ msgstr "Știri"
+
+#~ msgid "None"
+#~ msgstr "Nimic"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Cutie poștală Maildir"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Știri"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "IMAP deconectat"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Cutie poștală locală"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Necunoscut"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "Nu mai afișa acest mesaj"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Ajustează scorul"
+
+#~ msgid "Display Message"
+#~ msgstr "Afișează mesajul"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Colorează antetul"
+
+#, fuzzy
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "Marchează ca citit"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Lista observațiilor adunate</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Note colectate"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Conține subșirul"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Potrivit expresiei regulate"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Potrivit expresiei regulate (sensibil la registru)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Este exact ca"
+
+#~ msgid "Less Than"
+#~ msgstr "Mai puțin decât"
+
+#~ msgid "Greater Than"
+#~ msgstr "Mai mult decât"
+
+#~ msgid "rule %1"
+#~ msgstr "regula %1"
+
+#~ msgid "Not"
+#~ msgstr "Nu"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Neagă această condiție"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Alege tipul potrivirii"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Condiția potrivirii"
+
+#~ msgid "Select an action."
+#~ msgstr "Alegeți o acțiune."
+
+#~ msgid "Properties"
+#~ msgstr "Proprietăți"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "De&numire:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Grupuri:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "A&daugă grup"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "&Regula e validă pentru:"
+
+#~ msgid "Conditions"
+#~ msgstr "Condiții"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Potrivește toate condiții&le"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Potri&vește orice condiție"
+
+#~ msgid "Actions"
+#~ msgstr "Acțiuni"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " day"
+#~ msgstr[1] " days"
+#~ msgstr[2] " de zile"
+
+#~ msgid "New rule"
+#~ msgstr "Regulă nouă"
+
+#~ msgid "Edit rule"
+#~ msgstr "Editează regula"
+
+#~ msgid "Remove rule"
+#~ msgstr "Elimină regula"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>toate grupurile</placeholder>"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Editor de reguli"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Editează regula"
+
+#~ msgid "Reload &List"
+#~ msgstr "Reîncarcă &lista"
+
+#~ msgid "S&earch:"
+#~ msgstr "C&aută:"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "Numai a&bonate"
+
+#~ msgid "&New only"
+#~ msgstr "&Numai noi"
+
+#~ msgid "Current changes:"
+#~ msgstr "Modificări curente:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Denumire"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Descriere"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Abonează la"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Dezabonează de la"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Încărcare... (1 potrivire)"
+#~ msgstr[1] "Încărcare... (%1 potriviri)"
+#~ msgstr[2] "Încărcare... (%1 de potriviri)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (1 potrivire)"
+#~ msgstr[1] "%2: (%1 potriviri)"
+#~ msgstr[2] "%2: (%1 de potriviri)"
+
+#~ msgid "View Columns"
+#~ msgstr "Vizualizare coloane"
+
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Conflict detectat"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Ia locale"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Ia noi"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Ia ambele"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both copies of the incidence"
+#~ msgstr "Ia ambele copii ale incidenței"
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Incidență locală"
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Sumar incidență locală"
+
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Ultima modificare:"
+
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Stabilește ultima modificare"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Arată detalii"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Hide/Show incidence details"
+#~ msgstr "Arată/ascunde detaliile incidenței"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Arată diferențe"
+
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Preferințe sincronizare"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Preferințe sincronizare"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Preferințe sincronizare"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Eveniment local"
+
+#, fuzzy
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "De făcut local"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Jurnal local"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Eveniment nou"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "De făcut nou"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Jurnal nou"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Ascunde detalii"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Ascunde detalii"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Afișare detalii..."
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Arată diferențe"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Incidență locală"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Incidență locală"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Arată detalii"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Ascunde detalii"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Nume"
+
+#~ msgid "Floating"
+#~ msgstr "Flotant"
+
+#~ msgid "Local entry"
+#~ msgstr "Înregistrare locală"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Înregistrare nouă (distantă)"
+
+#, fuzzy
+#~ msgid "Hide Birthday"
+#~ msgstr "Afișează data de naștere"

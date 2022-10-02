@@ -1,0 +1,1816 @@
+# translation of libkdepim.po to Italian
+# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
+# Alessandro Pasotti <ale.pas@tiscalinet.it>, 2003, 2004.
+# Federico Zenith <federico.zenith@member.fsf.org>, 2004.
+# Nicola Ruggero <nixprog.adsl@tiscali.it>, 2004, 2005, 2006.
+# Nicola Ruggero <nicola@nxnt.org>, 2006, 2007, 2008, 2009.
+# Luigi Toscano <luigi.toscano@tiscali.it>, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2019, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2020-06-20 01:31+0200\n"
+"Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.04.1\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Non è possibile aggiungere ulteriori destinatari. È stato raggiunto il "
+"limite di destinatari"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Annulla questa operazione."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Interruzione..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "La connessione è cifrata"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "La connessione non è cifrata"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Apri la finestra di avanzamento dettagliata"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Mostra la finestra di avanzamento dettagliata"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Nascondi la finestra di avanzamento dettagliata"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Più"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Meno"
+
+#~ msgid "Choose..."
+#~ msgstr "Scegli..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Preferenze"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Stai per impostare tutte le preferenze ai valori predefiniti. Tutte le "
+#~ "personalizzazioni saranno perse."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Impostazione preferenze predefinite"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Ripristina ai valori predefiniti"
+
+#~ msgid "Add"
+#~ msgstr "Aggiungi"
+
+#~ msgid "Remove"
+#~ msgstr "Rimuovi"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Vuoi rimuovere questo indirizzo di posta elettronica?"
+#~ msgstr[1] "Vuoi rimuovere questi %1 indirizzi di posta elettronica?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "Importazione vCard non riuscita"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Impossibile accedere a <b>%1</b>.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "Seleziona indirizzo di posta dal contatto"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Mostra il campo «Organization Unit» nei risultati LDAP"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "Configura completamento..."
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "Espandi automaticamente i gruppi"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "Espandi gruppi..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Indirizzi recenti"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Contatti trovati nei tuoi dati"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "Server LDAP: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "Cerca messaggio di posta:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "La ricerca inizia con tre caratteri"
+
+#~ msgid "Search"
+#~ msgstr "Cerca"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Mostra indirizzi di posta in lista nera"
+
+#~ msgid "&Select"
+#~ msgstr "&Seleziona"
+
+#~ msgid "&Unselect"
+#~ msgstr "&Deseleziona"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">Ulteriori risultati...</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "Cerca nei risultati..."
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "Escludi nomi di dominio:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Separa i domini con «%1»"
+
+#~ msgid "No email found."
+#~ msgstr "Nessun messaggio di posta trovato."
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "Un messaggio di posta trovato"
+#~ msgstr[1] "%1 messaggi di posta trovati"
+
+#~ msgid "No result found"
+#~ msgstr "Nessun risultato trovato"
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr ""
+#~ "L'elenco è stato modificato. Vuoi salvarlo prima di effettuare una nuova "
+#~ "ricerca?"
+
+#~ msgid "Save"
+#~ msgstr "Salva"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Configura completamento"
+
+#~ msgid "Completion Order"
+#~ msgstr "Ordine di completamento"
+
+#~ msgid "Recent Address"
+#~ msgstr "Indirizzi recenti"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Lista nera indirizzi di posta"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Modifica ordine di completamento"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Server LDAP %1"
+
+#~ msgid "Move Up"
+#~ msgstr "Sposta in alto"
+
+#~ msgid "Move Down"
+#~ msgstr "Sposta in basso"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Oggi"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "Do&mani"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "La &settimana prossima"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Il mese pr&ossimo"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Nessuna data"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "L'indirizzo primario di posta elettronica della vCard è già presente "
+#~ "nella rubrica; ad ogni modo puoi sempre salvare la vCard in un file e poi "
+#~ "importare manualmente tale file nella rubrica indirizzi."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "La vCard è stata aggiunta alla rubrica; puoi aggiungere maggiori "
+#~ "informazioni per questa voce aprendo la rubrica indirizzi."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Un contatto con indirizzo di posta elettronica <email>%1</email> è già "
+#~ "presente nella rubrica indirizzi."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Devi creare una rubrica prima di aggiungere un contatto. Vuoi creare una "
+#~ "rubrica?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Nessuna rubrica disponibile"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Aggiungi rubrica indirizzi"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Un contatto avente indirizzo «%1» è stato aggiunto correttamente "
+#~ "alla tua rubrica.</para><para>Vuoi modificare adesso questo nuovo "
+#~ "contatto?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Il contatto non può essere memorizzato:  %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Impossibile memorizzare il contatto"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Contatto creato con successo"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Luigi Toscano,Nicola Ruggero,Alessandro Pasotti"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "luigi.toscano@tiscali.it,nicola@nxnt.org,"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Aggiungi host"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Impostazioni server LDAP"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr "La password LDAP è memorizzata in chiaro, vuoi salvarla in kwallet?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Memorizza la password in chiaro in KWallet"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Modifica host"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Vuoi rimuovere le impostazioni per l'host «%1»?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Rimuovi host"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "Server LDAP"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Controlla tutti i server che devono essere usati:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Aggiungi host..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Modifica host..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Rimuovi host"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Titolo"
+
+#~ msgid "Full Name"
+#~ msgstr "Nome completo"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Posta elettronica"
+
+#~ msgid "Home Number"
+#~ msgstr "Numero di casa"
+
+#~ msgid "Work Number"
+#~ msgstr "Numero di lavoro"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Numero di cellulare"
+
+#~ msgid "Fax Number"
+#~ msgstr "Numero di fax"
+
+#~ msgid "Pager"
+#~ msgstr "Cercapersone"
+
+#~ msgid "Street"
+#~ msgstr "Via"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Stato"
+
+#~ msgid "Country"
+#~ msgstr "Paese"
+
+#~ msgid "City"
+#~ msgstr "Città"
+
+#~ msgid "Organization"
+#~ msgstr "Organizzazione"
+
+#~ msgid "Company"
+#~ msgstr "Azienda"
+
+#~ msgid "Department"
+#~ msgstr "Dipartimento"
+
+#~ msgid "Zip Code"
+#~ msgstr "Codice postale"
+
+#~ msgid "Postal Address"
+#~ msgstr "Indirizzo postale"
+
+#~ msgid "Description"
+#~ msgstr "Descrizione"
+
+#~ msgid "User ID"
+#~ msgstr "ID utente"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Posta elettronica"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Stato"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Titolo"
+
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Importa contatti da LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Cerca indirizzi nella directory"
+
+#~ msgid "Search for:"
+#~ msgstr "Cerca:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "in"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Posta elettronica"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Numero di casa"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Numero di lavoro"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Cerca"
+
+#~ msgid "Recursive search"
+#~ msgstr "Ricerca ricorsiva"
+
+#~ msgid "Contains"
+#~ msgstr "Contiene"
+
+#~ msgid "Starts With"
+#~ msgstr "Inizia con"
+
+#~ msgid "Search in result"
+#~ msgstr "Cerca nei risultati"
+
+#~ msgid "Searching..."
+#~ msgstr "Ricerca..."
+
+#~ msgid "Select All"
+#~ msgstr "Seleziona tutti"
+
+#~ msgid "Unselect All"
+#~ msgstr "Deseleziona tutti"
+
+#~ msgid "Add Selected"
+#~ msgstr "Aggiungi selezionato"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Configura server LDAP..."
+
+#~ msgid "Copy"
+#~ msgstr "Copia"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Devi selezionare un server LDAP per poter cercare."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Importato dalla directory LDAP %1 in %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Configura le impostazioni della rubrica LDAP"
+
+#~ msgid "&Remove"
+#~ msgstr "&Rimuovi"
+
+#~ msgid "Blacklist Email Completion"
+#~ msgstr "Lista nera completamento posta elettronica"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Modifica indirizzi recenti"
+
+#~ msgid "Configure Email Blacklist..."
+#~ msgstr "Configura lista nera della posta..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Seleziona rubrica indirizzi"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Seleziona la rubrica dove salvare il contatto:"
+
+#~ msgid "Free"
+#~ msgstr "Libero"
+
+#~ msgid "Busy"
+#~ msgstr "Occupato"
+
+#~ msgid "Unavailable"
+#~ msgstr "Non disponibile"
+
+#~ msgid "Tentative"
+#~ msgstr "Incerto"
+
+#~ msgid "Unknown"
+#~ msgstr "Sconosciuto"
+
+#~ msgid "Attendee"
+#~ msgstr "Partecipante"
+
+#~ msgctxt "@label Day of the week name, example: Monday,"
+#~ msgid "%1,"
+#~ msgstr "%1,"
+
+#~ msgctxt ""
+#~ "@label A time period duration. It is preceded/followed (based on the "
+#~ "orientation) by the name of the week, see the message above. example: 12 "
+#~ "June, 8:00am to 9:30am"
+#~ msgid "%1 %2, %3 to %4"
+#~ msgstr "%1 %2, dalle %3 alle %4"
+
+#~ msgctxt ""
+#~ "@label A time period duration. KLocale is used to format the components. "
+#~ "example: Monday, 12 June, 8:00am to 9:30am"
+#~ msgid "%1, %2 %3, %4 to %5"
+#~ msgstr "%1 %2 %3, dalle %4 alle %5"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Free Period"
+#~ msgstr "Periodo libero"
+
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Inizio:"
+
+#~ msgctxt "@info:tooltip period end time"
+#~ msgid "End:"
+#~ msgstr "Fine:"
+
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Durata:"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Trasmissione completata. %1 nuovo messaggio (%2 KB). %3 KB rimanenti sul "
+#~ "server."
+#~ msgstr[1] ""
+#~ "Trasmissione completata. %1 nuovi messaggi (%2 KB). %3 KB rimanenti sul "
+#~ "server."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Trasmissione completata. %1 messaggio (%2 KB)."
+#~ msgstr[1] "Trasmissione completata. %1 messaggi (%2 KB)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Trasmissione completata. %1 nuovo messaggio."
+#~ msgstr[1] "Trasmissione completata. %1 nuovi messaggi."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Trasmissione completata. Nessun nuovo messaggio."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Trasmissione per l'account %4 completata. %1 nuovo messaggio (%2 KB). %3 "
+#~ "KB rimanenti sul server."
+#~ msgstr[1] ""
+#~ "Trasmissione per l'account %4 completata. %1 nuovi messaggi (%2 KB). %3 "
+#~ "KB rimanenti sul server."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Trasmissione per l'account %3 completata. %1 messaggio (%2 KB)."
+#~ msgstr[1] "Trasmissione per l'account %3 completata. %1 messaggi (%2 KB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Trasmissione per l'account %2 completata. %1 nuovo messaggio."
+#~ msgstr[1] "Trasmissione per l'account %2 completata. %1 nuovi messaggi."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Trasmissione per l'account %1 completata. Nessun nuovo messaggio."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Posta elettronica"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Lingua del correttore ortografico"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Ricezione e archiviazione messaggi..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Messaggi totali"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Messaggi non letti"
+
+#~ msgid "Quota"
+#~ msgstr "Quota"
+
+#~ msgid "Storage Size"
+#~ msgstr "Spazio impiegato"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Spazio impiegato dalla sottocartella"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Dimensione"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Totale"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Non letti"
+
+#~ msgid "Stop"
+#~ msgstr "Arresta"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Il sistema del desktop semantico non è abilitato. Molte funzionalità "
+#~ "importanti di questo software dipendono dal sistema del desktop semantico "
+#~ "e non funzioneranno correttamente senza di esso."
+
+#~ msgid "&Configure"
+#~ msgstr "&Configura"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Il modulo per configurare il sistema del desktop semantico (Nepomuk) non "
+#~ "è stato trovato nel tuo sistema. Verifica che Nepomuk sia correttamente "
+#~ "installato."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Il sistema del desktop semantico non è abilitato. Le seguenti "
+#~ "funzionalità non funzioneranno correttamente:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "Invia SMS"
+
+#~ msgid "Message"
+#~ msgstr "Messaggio"
+
+#~ msgid "Recipient:"
+#~ msgstr "Destinatario:"
+
+#~ msgid "Send"
+#~ msgstr "Invia"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>L'indirizzo di posta elettronica <b>%1</b> è stato inserito nella "
+#~ "rubrica; puoi aggiungere maggiori informazioni per questa voce aprendo la "
+#~ "rubrica indirizzi.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "domani"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "oggi"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "ieri"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "La data non può essere prima di %1"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "oggi"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Mostra compleanno"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Mostra indirizzi postali"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Mostra indirizzi di posta elettronica"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Mostra numeri di telefono"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Mostra pagine web (URL)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Mostra indirizzi di messaggistica istantanea"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Mostra campi personalizzati"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Homepage"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Fonte blog"
+
+#~ msgid "Notes"
+#~ msgstr "Note"
+
+#~ msgid "Profession"
+#~ msgstr "Professione"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Nome assistente"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Nome manager"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Nome partner"
+
+#~ msgid "Office"
+#~ msgstr "Ufficio"
+
+#~ msgid "IM Address"
+#~ msgstr "Indirizzo MI"
+
+#~ msgid "Anniversary"
+#~ msgstr "Anniversario"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Rubrica indirizzi: </b>%1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Non c'è nessuna applicazione che possa essere eseguita. Per favore, vai "
+#~ "nella finestra di dialogo delle impostazioni e configurane una."
+
+#~ msgid "Send mail to '%1'"
+#~ msgstr "Spedisci la posta a '%1'"
+
+#~ msgid "Call number %1"
+#~ msgstr "Chiama il numero %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Manda un fax a %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Mostra indirizzi sulla mappa"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Manda un SMS a %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Apri URL %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Chiacchiera con %1"
+
+#~ msgid "<group>"
+#~ msgstr "<gruppo>"
+
+#~ msgid "Address Selection"
+#~ msgstr "Selezione indirizzo"
+
+#~ msgid "To"
+#~ msgstr "A"
+
+#~ msgid "CC"
+#~ msgstr "CC"
+
+#~ msgid "BCC"
+#~ msgstr "CCN"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Altri indirizzi"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Non ci sono indirizzi nella tua lista. Prima di riprovare, aggiungi "
+#~ "alcuni indirizzi dalla tua rubrica."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Nuova lista di distribuzione"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Per favore inserisci il nome:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Esiste già una lista di distribuzione chiamata <b>%1</b> Per favore, "
+#~ "seleziona un nome diverso.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Lista di distribuzione"
+
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Sì"
+
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "Organizer"
+#~ msgstr "Organizzatore"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Is all-day"
+#~ msgstr "Tutto il giorno"
+
+#~ msgid "Has duration"
+#~ msgstr "Ha una durata"
+
+#~ msgid "Summary"
+#~ msgstr "Sommario"
+
+#~ msgid "Status"
+#~ msgstr "Stato"
+
+#~ msgid "Secrecy"
+#~ msgstr "Segretezza"
+
+#~ msgid "Priority"
+#~ msgstr "Priorità"
+
+#~ msgid "Location"
+#~ msgstr "Luogo"
+
+#~ msgid "Categories"
+#~ msgstr "Categorie"
+
+#~ msgid "Alarms"
+#~ msgstr "Avvisi"
+
+#~ msgid "Resources"
+#~ msgstr "Risorse"
+
+#~ msgid "Relations"
+#~ msgstr "Relazioni"
+
+#~ msgid "Attachments"
+#~ msgstr "Allegati"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Eccezioni (date)"
+
+#~ msgid "Exception Times"
+#~ msgstr "Eccezioni (orari)"
+
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Creato"
+
+#~ msgid "Related Uid"
+#~ msgstr "UID relativo"
+
+#~ msgid "Has End Date"
+#~ msgstr "Ha data di fine"
+
+#~ msgid "End Date"
+#~ msgstr "Data di fine"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Ha data di inizio"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Ha data di scadenza"
+
+#~ msgid "Due Date"
+#~ msgstr "Data di scadenza"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Ha data di completamento"
+
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Completamento"
+
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Completato"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Modifica categorie"
+
+#~ msgid "New category"
+#~ msgstr "Nuova categoria"
+
+#~ msgid "Select Categories"
+#~ msgstr "Seleziona categorie"
+
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Rubriche indirizzi"
+
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgctxt "@title:column, home address of a person"
+#~ msgid "Home"
+#~ msgstr "Casa"
+
+#~ msgctxt "@title:column, home address of a person"
+#~ msgid "Work"
+#~ msgstr "Lavoro"
+
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Numeri di telefono"
+
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Posta elettronica preferita"
+
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Tutti gli indirizzi di posta elettronica"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Visualizzazione URL %1"
+
+#~ msgid "Local"
+#~ msgstr "Locale"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "Cached IMAP"
+#~ msgstr "IMAP disconnesso"
+
+#~ msgid "News"
+#~ msgstr "News"
+
+#~ msgid "None"
+#~ msgstr "Nessuno"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Casella Maildir"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "News"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "IMAP disconnesso"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Casella locale"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Sconosciuto"
+
+#~ msgid "Text"
+#~ msgstr "Testo"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Valore numerico"
+
+#~ msgid "Boolean"
+#~ msgstr "Booleano"
+
+#~ msgid "Date & Time"
+#~ msgstr "Data e ora"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Finestra di dialogo Qt Designer Fields"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|File Designer"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Attenzione:</b> Impossibile trovare Qt Designer. Probabilmente non "
+#~ "è installato. Sarai solo in grado di importare file designer esistenti.</"
+#~ "qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Anteprima della pagina selezionata"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Questa sezione ti permette di aggiungere elementi GUI (&quot;"
+#~ "<i>(widget)</i>&quot;) fatti da te, per salvare i tuoi dati all'interno "
+#~ "di %1. Procedi così:</p><ol><li>Fai clic su &quot;<i>Modifica con Qt "
+#~ "Designer</i>&quot;</li> <li>Nella finestra, seleziona &quot;<i>Elemento</"
+#~ "i>&quot;, poi fai clic su <i>OK</i></li><li>Aggiungi i tuoi elementi nel "
+#~ "modulo (form)</li><li>Salva il file nella directory indicata da Qt "
+#~ "Designer</li><li>Chiudi Qt Designer</li></ol><p>Nel caso tu possieda già "
+#~ "un file designer (*.ui) posizionato da qualche parte nel tuo disco fisso, "
+#~ "semplicemente scegli &quot;<i>Importa pagina</i>&quot;</"
+#~ "p><p><b>Importante:</b>Il nome di ogni elemento di inserimento che "
+#~ "disponi nel modulo (form) deve iniziare con &quot;<i>X_</i>&quot;; quindi "
+#~ "se vuoi che l'elemento corrisponda a una tua voce personalizzata &quot;"
+#~ "<i>X-Foo</i>&quot;, imposta la proprietà <i>name</i> dell'elemento &quot;"
+#~ "<i>X_Foo</i>&quot;.</p><p><b>Importante:</b> L'elemento modificherà i "
+#~ "campi personalizzati con un nome applicazione pari a %2. Per cambiare il "
+#~ "nome dell'applicazione da modificare, imposta il nome dell'elemento in Qt "
+#~ "Designer.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Come funziona?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Elimina pagina"
+
+#~ msgid "Import Page..."
+#~ msgstr "Importa pagina..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Modifica con Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Chiave:"
+
+#~ msgid "Type:"
+#~ msgstr "Tipo:"
+
+#~ msgid "Classname:"
+#~ msgstr "Classe:"
+
+#~ msgid "Description:"
+#~ msgstr "Descrizione:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Modifica valore di configurazione"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Procedura guidata configurazione"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Regole"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Impostazione regole"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Sorgente"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Destinazione"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Condizione"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Modifiche"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Impostazione modifiche"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Azione"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Opzione"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Valore"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Assicurati che i programmi che stai configurando tramite la procedura "
+#~ "guidata non siano in esecuzione in parallelo alla procedura stessa, "
+#~ "altrimenti i cambiamenti fatti dalla procedura guidata potrebbero essere "
+#~ "sovrascritti (e quindi persi)."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Attenzione"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Avvia subito la procedura guidata"
+
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Conflitto rilevato"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "È stato rilevato un conflitto. Questo probabilmente è dovuto al fatto che "
+#~ "qualcuno ha modificato la stessa occorrenza nel server mentre modificavi "
+#~ "la stessa voce localmente.<nl/><note>Devi controllare la posta un'altra "
+#~ "volta per applicare le tue modifiche nel server.</note>"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Mantieni voce locale"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take your local copy of the incidence"
+#~ msgstr "Mantieni la copia locale dell'occorrenza"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Local\" button to make "
+#~ "sure your local copy is used."
+#~ msgstr ""
+#~ "È stato rilevato un conflitto tra la copia locale dell'occorrenza e "
+#~ "quella remota sul server. Premi il pulsante «Mantieni voce locale» per "
+#~ "assicurarti che sia usata la copia locale."
+
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Mantieni voce nuova"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take the server copy of the incidence"
+#~ msgstr "Mantiene la copia sul server dell'occorrenza"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take New\" button to use the "
+#~ "server copy, thereby overwriting your local copy"
+#~ msgstr ""
+#~ "È stato rilevato un conflitto tra la copia locale dell'occorrenza e "
+#~ "quella remota sul server. Premi il pulsante «Mantieni voce nuova» per "
+#~ "usare la copia sul server, sovrascrivendo così la copia locale"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Mantieni entrambe"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both copies of the incidence"
+#~ msgstr "Mantieni entrambe le copie dell'occorrenza"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Both\" button to keep "
+#~ "both the local and the server copies."
+#~ msgstr ""
+#~ "È stato rilevato un conflitto tra la copia locale dell'occorrenza e "
+#~ "quella remota sul server. Premi il pulsante «Mantieni entrambe» per "
+#~ "mantenere entrambe le copie, quella locale e quella sul server."
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Occorrenza locale"
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Riassunto occorrenza locale"
+
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Ultima modifica:"
+
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Imposta ultima modifica"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Mostra dettagli"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Hide/Show incidence details"
+#~ msgstr "Mostra/nasconde i dettagli dell'occorrenza"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Press this button to toggle the incidence details display."
+#~ msgstr ""
+#~ "Premi questo pulsante per attivare o disattivare la visualizzazione dei "
+#~ "dettagli delle occorrenze."
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Mostra le differenze"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show the differences between the two incidences"
+#~ msgstr "Mostra le differenze tra le due occorrenze"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press the \"Show Differences\" button to see the specific differences "
+#~ "between the incidences which are in conflict."
+#~ msgstr ""
+#~ "Premi il pulsante «Mostra le differenze» per vedere le differenze in "
+#~ "dettaglio."
+
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Sincronizza preferenze"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Sincronizza le preferenze"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Sincronizza le preferenze"
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Mantieni la copia locale nel risolvere il conflitto"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Mantiene la copia locale dell'occorrenza nel risolvere il conflitto"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the local copy."
+#~ msgstr ""
+#~ "Quando viene rilevato un conflitto tra la copia locale di un'occorrenza e "
+#~ "quella remota sul server, questa opzione forza l'uso della copia locale."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Mantieni la copia remota nel risolvere il conflitto"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Mantiene la copia remota dell'occorrenza nel risolvere il conflitto"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the remote "
+#~ "copy."
+#~ msgstr ""
+#~ "Quando viene rilevato un conflitto tra la copia locale di un'occorrenza e "
+#~ "quella remota sul server, questa opzione forza l'uso della copia remota."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Mantieni la voce più recente nel risolvere il conflitto"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr ""
+#~ "Mantiene la voce più recente dell'occorrenza nel risolvere il conflitto"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the newest "
+#~ "version available."
+#~ msgstr ""
+#~ "Quando viene rilevato un conflitto tra la copia locale di un'occorrenza e "
+#~ "quella remota sul server, questa opzione forza l'uso della versione più "
+#~ "recente."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Chiedi conferma per ogni conflitto"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Chiede conferma per risolvere ogni conflitto tra occorrenze"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to ask the user which "
+#~ "version they want to keep."
+#~ msgstr ""
+#~ "Quando viene rilevato un conflitto tra la copia locale di un'occorrenza e "
+#~ "quella remota sul server, questa opzione fa sì che all'utente venga "
+#~ "chiesto quale versione mantenere."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Mantieni entrambe nel risolvere il conflitto"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Mantiene entrambe le occorrenze nel risolvere il conflitto"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to keep both versions of "
+#~ "the incidence."
+#~ msgstr ""
+#~ "Quando viene rilevato un conflitto tra la copia locale di un'occorrenza e "
+#~ "quella remota sul server, questa opzione fa sì che vengano mantenute "
+#~ "entrambe le versioni dell'occorrenza."
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr ""
+#~ "Applica questa scelta a tutti i conflitti di questa sincronizzazione"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Apply the preference to all conflicts that may occur during the sync"
+#~ msgstr ""
+#~ "Applica questa scelta a tutti i conflitti che possono avvenire durante la "
+#~ "sincronizzazione"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press this button to apply the selected preference to all future "
+#~ "conflicts that might occur during this sync."
+#~ msgstr ""
+#~ "Premi questo pulsante per applicare la preferenza selezionata a tutti i "
+#~ "futuri conflitti che potranno verificarsi durante questa sincronizzazione."
+
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Evento locale"
+
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Cosa da fare locale"
+
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Diario locale"
+
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Nuovo evento"
+
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Nuova cosa da fare"
+
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Nuovo diario"
+
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Nascondi dettagli"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Dettagli occorrenza"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "This area shows the incidence details"
+#~ msgstr "Quest'area mostra i dettagli dell'occorrenza"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Mostra dettagli..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Differenze tra %1 e %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Differenze di %1"
+
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Occorrenza locale"
+
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Occorrenza remota"
+
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Mostra dettagli"
+
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Nascondi dettagli"
+
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Inserisci"
+
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Inserisci file"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The external editor is still running.<nl/>Do you want to stop the editor "
+#~ "or keep it running?<nl/><warning>Stopping the editor will cause all your "
+#~ "unsaved changes to be lost.</warning>"
+#~ msgstr ""
+#~ "L'editor esterno è ancora in esecuzione.<nl/>Vuoi fermare l'editor o "
+#~ "mantenerlo in esecuzione?<nl/><warning>Interrompendo l'esecuzione "
+#~ "dell'editor, tutte le modifiche non salvate saranno perse.</warning>"
+
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Editor esterno in esecuzione"
+
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Ferma l'editor"
+
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Lascia l'editor in esecuzione"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "Non mostrare più questo messaggio"
+
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "L'articolo\n"
+#~ "<b>%1</b><br /><b>%2</b><br />ha fatto comparire questa nota:<br />%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Regola punteggio"
+
+#~ msgid "Display Message"
+#~ msgstr "Visualizza messaggio"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Colora intestazione"
+
+#~ msgid "Mark as Read"
+#~ msgstr "Segna come letto"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Lista delle note raccolte</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Note raccolte"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Contiene sottostringhe"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Corrisponde a un'espressione regolare"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Corrisponde a un'espressione regolare (distingue maiuscole)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "È esattamente uguale a"
+
+#~ msgid "Less Than"
+#~ msgstr "Minore di"
+
+#~ msgid "Greater Than"
+#~ msgstr "Maggiore di"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Scegli un altro nome per la regola"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Il nome per la regola è già assegnato, scegli un altro nome:"
+
+#~ msgid "rule %1"
+#~ msgstr "regola %1"
+
+#~ msgid "Not"
+#~ msgstr "Non"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Nega questa condizione"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Seleziona l'intestazione che corrisponda alla condizione"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Scegli il tipo di corrispondenza"
+
+#~ msgid "The condition for the match"
+#~ msgstr "La condizione per la corrispondenza"
+
+#~ msgid "Select an action."
+#~ msgstr "Scegli un'azione."
+
+#~ msgid "Properties"
+#~ msgstr "Proprietà"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Nome:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Gruppi:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "A&ggiungi gruppo"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "&Fai scadere la regola automaticamente"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "&Regola valida per:"
+
+#~ msgid "Conditions"
+#~ msgstr "Condizioni"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Corrisponde a &tutte le condizioni"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Corrisponde ad &una delle condizioni"
+
+#~ msgid "Actions"
+#~ msgstr "Azioni"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " giorno"
+#~ msgstr[1] " giorni"
+
+#~ msgid "New rule"
+#~ msgstr "Nuova regola"
+
+#~ msgid "Edit rule"
+#~ msgstr "Modifica regola"
+
+#~ msgid "Remove rule"
+#~ msgstr "Elimina regola"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>tutti i gruppi</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "&Mostra solo le regole per il gruppo:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Editor regola"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Modifica regola"
+
+#~ msgid "Reload &List"
+#~ msgstr "Ricarica &lista"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr ""
+#~ "Gestisce quali cartelle di posta vuoi vedere nella tua vista cartella"
+
+#~ msgid "S&earch:"
+#~ msgstr "C&erca:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Disabilita vis&ta ad albero"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "Solo &iscritti"
+
+#~ msgid "&New only"
+#~ msgstr "Solo &nuovi"
+
+#~ msgid "Current changes:"
+#~ msgstr "Modifiche correnti:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Descrizione"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Effettua iscrizione a"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Cancella iscrizione da"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Caricamento... (1 corrispondenza)"
+#~ msgstr[1] "Caricamento... (%1 corrispondenze)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (1 corrispondenza)"
+#~ msgstr[1] "%2: (%1 corrispondenze)"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Devi selezionare un server LDAP prima di effettuare ricerche.\n"
+#~ "Puoi farlo dal menu Impostazioni/Configura KAddressBook."
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Plugin senza nome"
+
+#~ msgid "&To >>"
+#~ msgstr "&A >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&CC >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "CC&N >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "Indirizzi &selezionati"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Filtro su:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Salva come lista di &distribuzione..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "&Servizio ricerca Directory"
+
+#~ msgid "New category entry"
+#~ msgstr "Nuova voce categoria"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr ""
+#~ "Digita un testo qualsiasi da usare come nuova categoria o sottocategoria."
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Aggiungi la voce alla lista categoria"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr ""
+#~ "Fai clic su questo pulsante per inserire la voce nella lista categorie."
+
+#~ msgid "A&dd"
+#~ msgstr "A&ggiungi"
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr "Aggiungi la voce come sottocategoria della categoria selezionata"
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Fai clic sul pulsante per inserire la voce come sottocategoria della "
+#~ "categoria correntemente selezionata."
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Aggiungi &sottocategoria"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "Rimuovi la categoria selezionata"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr ""
+#~ "Fai clic sul pulsante per rimuovere la categoria selezionata dall'elenco "
+#~ "categorie."
+
+#~ msgid "Category list"
+#~ msgstr "Lista categorie"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Questa è una lista di tutte le categorie disponibili. Puoi creare qui "
+#~ "tutte le sottocategorie che preferisci."
+
+#~ msgid "Default Category"
+#~ msgstr "Categoria predefinita"
+
+#~ msgid "Category"
+#~ msgstr "Categoria"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "Pulisci &selezione"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&Modifica categorie..."
+
+#~ msgid "View Columns"
+#~ msgstr "Mostra colonne"
+
+#~ msgid "Local entry"
+#~ msgstr "Voce locale"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Voce nuova (remota)"
+
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "L'editor esterno è ancora in esecuzione.\n"
+#~ "Forzo la chiusura dell'editor esterno oppure lo lascio aperto?"
+
+#~ msgid "Floating"
+#~ msgstr "È mobile"

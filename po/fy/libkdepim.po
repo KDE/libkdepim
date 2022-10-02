@@ -1,0 +1,2164 @@
+# translation of libkdepim.po to Frysk
+# translation of libkdepim.po to
+# translation of libkdepim.po to
+# Copyright (C) 2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+#
+# Rinse de Vries <rinsedevries@kde.nl>, 2003, 2004, 2005, 2007.
+# Wilbert Berendsen <wbsoft@xs4all.nl>, 2003.
+# Bram Schoenmakers <bramschoenmakers@kde.nl>, 2004, 2005, 2006, 2007.
+# Tom Albers <tomalbers@kde.nl>, 2004, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2007-04-17 00:48+0200\n"
+"Last-Translator: Rinse de Vries <rinsedevries@kde.nl>\n"
+"Language-Team: Frysk <kde-i18n-fry@kde.org>\n"
+"Language: fy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Dizze operaasje annulearje."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Dwaande mei ôfbrekken..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Ferbining is kodearre"
+
+# fersleutele... bestiet noch net yn it Frysk
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Ferbining is net kodearre"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Detaillearre fuortgongsdialooch iepenje"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Detaillearre fuortgongsfinster toane"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Detaillearre fuortgongsfinster ferbergje"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Mear"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Minder"
+
+#~ msgid "Choose..."
+#~ msgstr "Kies..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Foarkarren"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Jo steane op it punt alle foarkarren werom te setten nei harren "
+#~ "standertwearden. Al jo oanpassings sille ferlern gean."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Standert foarkarren wurde ynsteld"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Nei standertynstellingen"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "&Taheakje"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< Wi&skje"
+
+#, fuzzy
+#~| msgid "Unknown problem with email address"
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Ûnbekend probleem mei e-mailadres"
+#~ msgstr[1] "Ûnbekend probleem mei e-mailadres"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Teksttriem ymportearje"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Wolle jo '<b>%1</b>' werklik wiskje?</qt>"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "Oanfollingsfolchoarder ynstelle..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Koartlyn brûkte adressen"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP-server %1"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search email:"
+#~ msgstr "Sykje:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search"
+#~ msgstr "Sykje:"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "E-postadres"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Seleksje"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Unselect"
+#~ msgstr "Seleksje"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "Dwaande mei laden..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "E-mail ferstjoere nei '%1'"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Oanfollingsfolchoarder ynstelle..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Oanfollingsfolchoarder bewurkje"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Koartlyn brûkte adressen"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "E-postadres"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Oanfollingsfolchoarder bewurkje"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP-server %1"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "Regel omheech fersette"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "Regel omleech fersette"
+
+#, fuzzy
+#~| msgid "&Today"
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Hjoed"
+
+#, fuzzy
+#~| msgid "To&morrow"
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Moarn"
+
+#, fuzzy
+#~| msgid "Next &Week"
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Nije &wike"
+
+#, fuzzy
+#~| msgid "Next M&onth"
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Folgjende m&oanne"
+
+#, fuzzy
+#~| msgid "No Date"
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Gjin &datum"
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard's primary email address is already in your addressbook; "
+#~| "however, you may save the VCard into a file and import it into the "
+#~| "addressbook manually."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "It haadadres fan de VCard stiet al yn jo adresboek. Jo kinne it taheaksel "
+#~ "noch opslaan yn in triem en dit mei de hân ymportearje yn it adresboek."
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard was added to your addressbook; you can add more information to "
+#~| "this entry by opening the addressbook."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "De VCard is taheakke oan jo adresboek, jo der kinne mear ynformatie by "
+#~ "sette troch it item te iepenjen yn it adresboek."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr "<qt>It e-mailadres <b>%1</b> stiet al yn jo adresboek.</qt>"
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Gjin beskriuwing beskikber"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "&Adresboek"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr "<qt>It e-mailadres <b>%1</b> stiet al yn jo adresboek.</qt>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Douwe"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr " "
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP-server %1"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Bewurkje..."
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove Host"
+#~ msgstr "<< Wi&skje"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-server %1"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "Bewurkje..."
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove Host"
+#~ msgstr "<< Wi&skje"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Full Name"
+#~ msgstr "Namme"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Home Number"
+#~ msgstr "Telefoannûmers ferbergje"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Work Number"
+#~ msgstr "Telefoannûmers ferbergje"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Mobile Number"
+#~ msgstr "Telefoannûmers ferbergje"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Fax Number"
+#~ msgstr "Telefoannûmers ferbergje"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Tastân"
+
+#, fuzzy
+#~| msgid "Organizer"
+#~ msgid "Organization"
+#~ msgstr "Organizer"
+
+#~ msgid "Department"
+#~ msgstr "Ôfdieling"
+
+#, fuzzy
+#~| msgid "Show Postal Addresses"
+#~ msgid "Postal Address"
+#~ msgstr "Postadres toane"
+
+#~ msgid "Description"
+#~ msgstr "Beskriuwing"
+
+#, fuzzy
+#~| msgid "UID"
+#~ msgid "User ID"
+#~ msgstr "UID"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Tastân"
+
+#, fuzzy
+#~| msgid "Import starts at row:"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Ymportearjen start by rige:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search for:"
+#~ msgstr "Sykje:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Namme"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Telefoannûmers ferbergje"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Telefoannûmers ferbergje"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Sykje:"
+
+#, fuzzy
+#~| msgid "Conditions"
+#~ msgid "Contains"
+#~ msgstr "Betingsten"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgid "Starts With"
+#~ msgstr "Starttiid"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "Dwaande mei laden..."
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Select All"
+#~ msgstr "Seleksje"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Unselect All"
+#~ msgstr "Seleksje"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "Add Selected"
+#~ msgstr "Adresseleksje"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Oanfollingsfolchoarder ynstelle..."
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "Regel kopiearje"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< Wi&skje"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Koartlyn brûkte adressen bewurkje"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "&Adresboek"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Beskikbere siden"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Dielnimmers"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Starttiid"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Duer"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission complete. %1 new message in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~| msgid_plural ""
+#~| "Transmission complete. %1 new messages in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Oerdracht klear. %1 nij berjocht yn %2 KB (%3 KB bliuwt efter op de "
+#~ "server)."
+#~ msgstr[1] ""
+#~ "Oerdracht klear. %1 nije berjochten yn %2 KB (%3 KB bliuwt efter op de "
+#~ "server)."
+
+#, fuzzy
+#~| msgid "Transmission complete. %1 message in %2 KB."
+#~| msgid_plural "Transmission complete. %1 messages in %2 KB."
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Oerdracht klear. %1 berjocht yn %2 KB."
+#~ msgstr[1] "Oerdracht klear. %1 berjochten yn %2 KB."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Oerdracht klear. %1 nij berjocht."
+#~ msgstr[1] "Oerdracht klear. %1 nije berjochten."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Oerdracht klear. Gjin nije berjochten."
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission for account %4 complete. %1 new message in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~| msgid_plural ""
+#~| "Transmission for account %4 complete. %1 new messages in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Oerdracht foar akkount %4 klear. %1 nij berjocht yn %2 KB (%3 KB bliuwt "
+#~ "efter op de server)."
+#~ msgstr[1] ""
+#~ "Oerdracht foar akkount %4 klear. %1 nije berjochten yn %2 KB (%3 KB "
+#~ "bliuwt efter op de server)."
+
+#, fuzzy
+#~| msgid "Transmission for account %3 complete. %1 message in %2 KB."
+#~| msgid_plural "Transmission for account %3 complete. %1 messages in %2 KB."
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Oerdracht foar akkount%3 klear. %1 berjocht yn %2 KB."
+#~ msgstr[1] "Oerdracht foar akkount %3 klear. %1 berjochten yn %2 KB."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Oerdracht foar akkount %2 klear. %1 nij berjocht."
+#~ msgstr[1] "Oerdracht foar akkount %2 klear. %1 nije berjochten."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Oerdracht foar akkount %1 klear. Gjin nije berjochten."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Namme"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Berjochten wurde ophelle en opslein..."
+
+#, fuzzy
+#~| msgid "Display Message"
+#~ msgid "Total Messages"
+#~ msgstr "Berjocht werjaan"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Unread Messages"
+#~ msgstr "Berjocht"
+
+#~ msgid "Send SMS"
+#~ msgstr "SMS ferstjoere"
+
+#~ msgid "Message"
+#~ msgstr "Berjocht"
+
+#~ msgid "Recipient:"
+#~ msgstr "Ûntfanger:"
+
+#~ msgid "Send"
+#~ msgstr "Ferstjoere"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgid "Select Address Book"
+#~ msgstr "&Adresboek"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> was added to your addressbook; you can "
+#~| "add more information to this entry by opening the addressbook.</qt>"
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>It e-mailadres <b>%1</b> is yn jo adresboek setten, jo kinne mear "
+#~ "ynformaasje taheakje troch dit item dêryn te iepenjen.</qt>"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "moarn"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "hjoed"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "juster"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "hjoed"
+
+#~ msgid "To"
+#~ msgstr "Oan"
+
+#~ msgid "CC"
+#~ msgstr "CC"
+
+#~ msgid "BCC"
+#~ msgstr "BCC"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Fier in namme yn foar it sjabloan:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Adresseleksje"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&Filterje op:"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Oan >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&CC >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&BCC >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< Wi&skje"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Opslaan as &distribúsjelist..."
+
+#~ msgid "Address Selection"
+#~ msgstr "Adresseleksje"
+
+#~ msgid "&To >>"
+#~ msgstr "&Oan >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&CC >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "Se&lektearre adressen"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Filterje op:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Opslaan as &distribúsjelist..."
+
+#~ msgid "Show Birthday"
+#~ msgstr "Jierdei toane"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Postadres toane"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "E-mailadres toane"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Telefoannûmers toane"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Websiden toane"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "IM-adres toane"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Oanpaste fjilden toane"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Thússide"
+
+# net oersetten
+#~ msgid "Blog Feed"
+#~ msgstr "Blogfeed"
+
+#~ msgid "Notes"
+#~ msgstr "Notysjes"
+
+#~ msgid "Profession"
+#~ msgstr "Berop"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Namme fan de assistint"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Namme fa de manager"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Namme fan de partner"
+
+#~ msgid "Office"
+#~ msgstr "Kantoar"
+
+#~ msgid "IM Address"
+#~ msgstr "IM-adres"
+
+#~ msgid "Anniversary"
+#~ msgstr "Jubileum"
+
+#, fuzzy
+#~| msgid "Address book:"
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "Adresboek:"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Jo hawwe hjir gjin tapassing foar opjûn. Gean nei it ynstellingsfinster "
+#~ "en jou dêr ien op."
+
+#~ msgid "Call number %1"
+#~ msgstr "Telefoannûmer %1 belje"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Faks ferstjoere nei %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Adres op kaart toane"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "SMS ferstjoere nei %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "URL-adres %1 iepenje"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Chatte mei %1"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "&Adresboek"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Namme"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Namme"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Thússide"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefoannûmers ferbergje"
+
+#~ msgid "<group>"
+#~ msgstr "<groep>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Oare adressen"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Der stean gjin adressen yn jo list. Set earst in pear adressen yn jo "
+#~ "adresboek en besykje it fannijs."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Nije ferstjoerlist"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Graach in namme ynfiere:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Distribúsjelist mei de ynfierde namme <b>%1</b> bestiet al. Jou in "
+#~ "oare namme op.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Distribúsjelisten"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "Yn triem bewarje"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Yn triem bewarje"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Regeleditor"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Regeleditor"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Kategoryen bewurkje"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Kategory"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Kategory"
+
+#~ msgid "Select Categories"
+#~ msgstr "Kategoryen selektearje"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "URL-adres %1 wurdt toand"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Nûmerike wearde"
+
+#~ msgid "Boolean"
+#~ msgstr "Booleaansk"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datum & tiid"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Qt Designer Fjildendialooch"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer-triemmen"
+
+#~ msgid "Import Page"
+#~ msgstr "Side ymportearje"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Warskôging:</b> Qt Designer koe net fûn wurde, wierskynlik is it "
+#~ "net ynstallearre. Jo kinne dan allinnich besteande siden ymportearje.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Foarbyld fan selektearre side"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><p>This section allows you to add your own GUI  Elements "
+#~| "('<i>Widgets</i>') to store your own values into %1. Proceed as "
+#~| "described below:</p><ol><li>Click on '<i>Edit with Qt Designer</"
+#~| "i>'<li>In the dialog, select '<i>Widget</i>', then click <i>OK</"
+#~| "i><li>Add your widgets to the form<li>Save the file in the directory "
+#~| "proposed by Qt Designer<li>Close Qt Designer</ol><p>In case you already "
+#~| "have a designer file (*.ui) located somewhere on your hard disk, simply "
+#~| "choose '<i>Import Page</i>'</p><p><b>Important:</b> The name of each "
+#~| "input widget you place within the form must start with '<i>X_</i>'; so "
+#~| "if you want the widget to correspond to your custom entry '<i>X-Foo</"
+#~| "i>', set the widget's <i>name</i> property to '<i>X_Foo</i>'.</"
+#~| "p><p><b>Important:</b> The widget will edit custom fields with an "
+#~| "application name of %2.  To change the application name to be edited, "
+#~| "set the widget name in Qt Designer.</p></qt>"
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt> <p>Yn dizze seksje kinne jo jo eigen GUI-eleminten ('<i>Widgets</"
+#~ "i>') oanbringe om jo eigen wearden yn %1 op te slaan. Doch it sa:</p> "
+#~ "<ol> <li>Klik op <i>Bewurkje mei Qt Designer</i>' <li>Yn it "
+#~ "dialoochfinster kieze jo foar '<i>Widget</i>', klik dêrnei op <i>OK</i> "
+#~ "<li>Heakje jo eigen GUI-eleminten oan it formulier ta <li>Sla de triem op "
+#~ "yn de map dy't troch Qt Designer foarsteld wurdt <li>Slút Qt Designer ôf</"
+#~ "ol> <p> At jo al in designer-triem hawwe (*.ui), dan kinne jo kieze foar "
+#~ "'<i>Side ymportearje</i>'</p> <p><b>Wichtich:</b> De namme fan elk "
+#~ "ynfierfjild moat begjinne mei '<i>X_</i>. Dus at jo in GUI-elemint "
+#~ "meitsje foar in fjild mei de namme <i>X-Eat</i>, dan moatte jo de "
+#~ "<i>namme</i> fan it GUI-elemint op '<i>X_Eat</i>' sette.</p> "
+#~ "<p><b>Wichtich:</b> It GUI-element sil eigen fjilden taheakje mei de "
+#~ "tapassing %2. Om de tapassingsnamme te feroarjen moatte jo de namme fan "
+#~ "it GUI-elemint feroarje yn Qt Designer.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Hoe wurket dit?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Side wiskje"
+
+#~ msgid "Import Page..."
+#~ msgstr "Side ymportearje..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Bewurkje mei Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Toets:"
+
+#~ msgid "Type:"
+#~ msgstr "Type:"
+
+#~ msgid "Classname:"
+#~ msgstr "Class-namme:"
+
+#~ msgid "Description:"
+#~ msgstr "Beskriuwing:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Feroarje ynstellingswearde"
+
+#, fuzzy
+#~| msgid "Configuration Wizard"
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Konfiguraasje-assistint"
+
+#, fuzzy
+#~| msgid "Rules"
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Regels"
+
+#, fuzzy
+#~| msgid "Rules"
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Regels"
+
+#, fuzzy
+#~| msgid "Source"
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Boarne"
+
+#, fuzzy
+#~| msgid "Target"
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Doel"
+
+#, fuzzy
+#~| msgid "Condition"
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Betingst"
+
+#, fuzzy
+#~| msgid "Changes"
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Feroarings"
+
+#, fuzzy
+#~| msgid "Changes"
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Feroarings"
+
+#, fuzzy
+#~| msgid "Action"
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Aksje"
+
+#, fuzzy
+#~| msgid "Option"
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Opsje"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Wearde"
+
+#, fuzzy
+#~| msgid ""
+#~| "Please make sure that the programs which are configured by the wizard do "
+#~| "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~| "could be lost."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Kontrolearje oft de programma's dy't troch de assistint ynsteld wurde net "
+#~ "tagelyk aktyf binne mei de assistint. De feroarings dy't troch de "
+#~ "assistint makke wurde kinne dêrtroch ferlern gean."
+
+#, fuzzy
+#~| msgid "Run Wizard Now"
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Assistint no oan it wurk sette"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Seleksje"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Duer"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "hjoed"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Lokaasje"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Jierdei toane"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Nammeleaze plugin"
+
+#, fuzzy
+#~| msgid "New (remote) entry"
+#~ msgid "New category entry"
+#~ msgstr "Nije yngong (op ôfstân)"
+
+#, fuzzy
+#~| msgid "New category"
+#~ msgid "Add &Subcategory"
+#~ msgstr "Nije kategory"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "Kategoryen"
+
+#, fuzzy
+#~| msgid "Select Categories"
+#~ msgid "Default Category"
+#~ msgstr "Kategoryen selektearje"
+
+#~ msgid "Category"
+#~ msgstr "Kategory"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "Sele&ksje wiskje"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "Kat&egoryen bewurkje..."
+
+#, fuzzy
+#~| msgid "Not"
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Net"
+
+#~ msgid "Organizer"
+#~ msgstr "Organizer"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+# bytsje kryptysk
+# tiid/perioade?
+#~ msgid "Has duration"
+#~ msgstr "Hat duer"
+
+#~ msgid "Summary"
+#~ msgstr "Gearfetting"
+
+#~ msgid "Status"
+#~ msgstr "Tastân"
+
+#~ msgid "Secrecy"
+#~ msgstr "Privee"
+
+#~ msgid "Priority"
+#~ msgstr "Prioriteit"
+
+#~ msgid "Location"
+#~ msgstr "Lokaasje"
+
+#~ msgid "Categories"
+#~ msgstr "Kategoryen"
+
+#~ msgid "Alarms"
+#~ msgstr "Alaarms"
+
+#~ msgid "Resources"
+#~ msgstr "Helpboarnen"
+
+#~ msgid "Relations"
+#~ msgstr "Relaasjes"
+
+#~ msgid "Attachments"
+#~ msgstr "Taheaksels"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Útsûnderingsdata"
+
+#~ msgid "Exception Times"
+#~ msgstr "Útsûnderingstiden"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Makke"
+
+#~ msgid "Related Uid"
+#~ msgstr "Ferbûne UID"
+
+#~ msgid "Has End Date"
+#~ msgstr "Hat eindatum"
+
+#~ msgid "End Date"
+#~ msgstr "Eindatum"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Hat startdatum"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Hat eindatum"
+
+#~ msgid "Due Date"
+#~ msgstr "Eindatum"
+
+# wer wat kryptysk
+#~ msgid "Has Complete Date"
+#~ msgstr "Hat tiidstip klear"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Klear"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Klear"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgid "Local"
+#~ msgstr "Lokale nimme"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "News"
+#~ msgstr "Notysjes"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "Notysjes"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Lokaal sjoernaal"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Notysjes"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Lokaal sjoernaal"
+
+#, fuzzy
+#~| msgid ""
+#~| "Article\n"
+#~| "<b>%1</b><br><b>%2</b><br>caused the following note to appear:<br>%3"
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "Artikel\n"
+#~ "<b>%1</b><br><b>%2</b><br>soarge derfoar dat de folgjende notysje "
+#~ "ferskynde:<br>%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Wurdearring oanpasse"
+
+#~ msgid "Display Message"
+#~ msgstr "Berjocht werjaan"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Berjochtkop kleurje"
+
+#, fuzzy
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "Oanmerke as Lêzen"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>List mei sammele notysjes</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Sammele notysjes"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Befettet rige dieltekens"
+
+# lyk as yn it Ingelsk
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Komt oerien mei Regular Expression"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Komt oerien mei reguliere ekspresje (haadlettergefoelich)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Is krekt-en-gelyk oan"
+
+#~ msgid "Less Than"
+#~ msgstr "Lytser as"
+
+#~ msgid "Greater Than"
+#~ msgstr "Grutter as"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Oare regelnamme kieze"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "De regelnamme is al tawiisd. Graach in oare namme kieze:"
+
+#~ msgid "rule %1"
+#~ msgstr "regel %1"
+
+#~ msgid "Not"
+#~ msgstr "Net"
+
+# inverteren NL=?
+# ynverteare?, mar wa begrypt soks
+#~ msgid "Negate this condition"
+#~ msgstr "Dizze operaasje ynverteare"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Selektearje de kop dêr't dizze betingst oan foldwaan moat"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Selektearje it type oerienkomst"
+
+#~ msgid "The condition for the match"
+#~ msgstr "De betingst fan de oerienkomst"
+
+#~ msgid "Select an action."
+#~ msgstr "Selektearje in aksje."
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Namme:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Groepen:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "Groep ta&heakje"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "Regel automatysk  fe&rrinne litte"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "&Regel is jildich foar:"
+
+#~ msgid "Conditions"
+#~ msgstr "Betingsten"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Oerienkommend mei a&lle betingsten"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Oerienkommend mei ien &betingst"
+
+#~ msgid "Actions"
+#~ msgstr "Aksjes"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " dei"
+#~ msgstr[1] "dagen"
+
+#~ msgid "New rule"
+#~ msgstr "Nije regel"
+
+#~ msgid "Edit rule"
+#~ msgstr "Regel bewurkje"
+
+#~ msgid "Remove rule"
+#~ msgstr "Regel wiskje"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "Allinnich regels &toane foar groep:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Regeleditor"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Regel bewurkje"
+
+#~ msgid "Reload &List"
+#~ msgstr "List wer&lade"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr "Kies hokker mappen jo sjen wolle yn de mappenwerjefte"
+
+#~ msgid "S&earch:"
+#~ msgstr "Sykj&e:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Beams&truktuer-werjefte útskeakelje"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "Allinnich ynsk&reaun"
+
+#~ msgid "&New only"
+#~ msgstr "Allinnich &nije"
+
+#~ msgid "Current changes:"
+#~ msgstr "Feroarings fan no:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Namme"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Beskriuwing"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Ynskriuwe by"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Útskriuwe fan"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Dwaande mei laden... (%1 komt oerien)"
+#~ msgstr[1] "Dwaande mei laden... (%1 komme oerien)"
+
+#, fuzzy
+#~| msgid "%2: (1 matching)"
+#~| msgid_plural "%2: (%1 matching)"
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (1 komt oerien)"
+#~ msgstr[1] "%2: (%1 komme oerien)"
+
+#, fuzzy
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Konflikt fûn"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>A conflict was detected. This probably means someone edited the same "
+#~| "entry on the server while you changed it locally.<br/>NOTE: You have to "
+#~| "check mail again to apply your changes to the server.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "<qt>Der is in konflikt fûn. Dit hâldt wierskynlik yn dat immen oars "
+#~ "deselde yngong bewurke hat op de server wylst jo it lokaal bewurken. <br/"
+#~ ">OPMERKING: Jo moatte jo e-mail kontroleardje eardat jo de feroarings "
+#~ "tapasse.</qt>"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Lokale nimme"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Nije nimme"
+
+#, fuzzy
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Beide nimme"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Lokaal item"
+
+#, fuzzy
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Lokale gearfetting item"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Lêst wizige:"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Lêst wizige:"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Details sjen litte"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Ferskillen toane"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Foarkarren syngronisearje"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Foarkarren syngronisearje"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Foarkarren syngronisearje"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Lokale yngong nimme by konflikten"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Lokale yngong nimme by konflikten"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Nijste (net lokale) yngong nimme by konflikten"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Nijste (net lokale) yngong nimme by konflikten"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Nijste yngong nimme by konflikten"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Nijste yngong nimme by konflikten"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "By elk item om hanneling freegje by konflikten"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "By elk item om hanneling freegje by konflikten"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Beide nimme by konflikten"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Beide nimme by konflikten"
+
+#, fuzzy
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "Pas dit ta op alle konflikten by dizze syngronisaasje"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Lokaal evenemint"
+
+#, fuzzy
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Lokale taak"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Lokaal sjoernaal"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Nij evenemint"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Nije taak"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Nij sjoernaal"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Details ferbergje"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Details ferbergje"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Details toane..."
+
+#, fuzzy
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Ferskillen tusken %1 en %2"
+
+#, fuzzy
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Ferskillen fan %1"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Lokaal item"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Lokaal item"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Details sjen litte"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Details ferbergje"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Namme"
+
+#~ msgid "Local entry"
+#~ msgstr "Lokale yngong"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Nije yngong (op ôfstân)"
+
+#, fuzzy
+#~| msgid "Is floating"
+#~ msgid "Floating"
+#~ msgstr "Hat gjin tiid"
+
+#~ msgid "Plain"
+#~ msgstr "Ienfâldich"
+
+#~ msgid "Unquoted"
+#~ msgstr "Sûnder oanhellings"
+
+#~ msgid "Bracketed"
+#~ msgstr "Tusken heakjes"
+
+#~ msgid "Undefined"
+#~ msgstr "Net definiearre"
+
+#~ msgid "File to import:"
+#~ msgstr "Triem om te ymportearjen:"
+
+#~ msgid "Separator:"
+#~ msgstr "Skiedingsteken:"
+
+#~ msgid "Tab"
+#~ msgstr "Tab"
+
+#~ msgid "Space"
+#~ msgstr "Spaasje"
+
+#~ msgid "Header"
+#~ msgstr "Kopskrift"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Tawize oan selektearre kolom"
+
+# tawizing fan of tawizing oan??
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Tawizing fan selektearre kolom wiskje"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Mei sjabloan tawize..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Besteande sjabloan opslaan"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Fuortgong fan it laden"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Wacht efkes oant de triem laden is."
+
+#~ msgid "Template Selection"
+#~ msgstr "Sjabloanseleksje"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Selektearje in sjabloan dat oerienkomt mei de CSV-triem:"
+
+#~ msgid "Importing Progress"
+#~ msgstr "Ymportproses"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Wacht efkes oant de gegevens ymportearre binne."
+
+#~ msgid "Template Name"
+#~ msgstr "Sjabloannamme"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Jierdei ferbergje"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Postadres ferbergje"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "E-mailadressen ferbergje"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Telefoannûmers ferbergje"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Websiden ferbergje"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "IM-adres ferbergje"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Oanpaste fjilden ferbergje"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~| msgid "Relations"
+#~ msgid "Suggestions"
+#~ msgstr "Relaasjes"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Cc"
+#~ msgstr "CC"
+
+#~ msgid "Bcc"
+#~ msgstr "BCC"
+
+#~ msgid "All"
+#~ msgstr "Alles"
+
+#, fuzzy
+#~| msgid "Option"
+#~ msgid "Open"
+#~ msgstr "Opsje"
+
+#~ msgid "<all groups>"
+#~ msgstr "<alle groepen>"
+
+#~ msgid "Is floating"
+#~ msgstr "Hat gjin tiid"
+
+#~ msgid "<qt>Failed to execute signature script<br><b>%1</b>:<br>%2</qt>"
+#~ msgstr ""
+#~ "<qt>Der gie wat mis by it útfieren fan it hântekening-skript<br><b>%1</b>:"
+#~ "<br>%2</qt>"
+
+#~ msgid "%1 (Default)"
+#~ msgstr "%1 (Standert)"
+
+#~ msgid "Unnamed"
+#~ msgstr "Nammeleas"
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains more than "
+#~ "one @. You will not create valid messages if you do not change your "
+#~ "address."
+#~ msgstr ""
+#~ "It ynfierde e-mailadres is ûnjildich omdat der mear as ien @ yn stiet. Jo "
+#~ "kinne gjin jildige berjochten oanmeitsje as jo dit adres net wizigje."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "@.You will not create valid messages if you do not change your address."
+#~ msgstr ""
+#~ "It ynfierde e-mailadres is ûnjildich omdat der gjin @ yn stiet. Jo kinne "
+#~ "gjin jildige berjochten oanmeitsje as jo dit adres net wijzigje."
+
+#~ msgid "You have to enter something in the email address field."
+#~ msgstr "Jo moatte eat yn it e-mailadresfjild ynfolje."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "local part."
+#~ msgstr ""
+#~ "It e-mailadres dat  jo ynfierd hawwe is ûnjildich omdat it lokale "
+#~ "gedielte mist."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "domain part."
+#~ msgstr ""
+#~ "It e-mailadres dat  jo ynfierd hawwe is ûnjildich omdat it domeingedielte "
+#~ "mist."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains unclosed "
+#~ "comments/brackets."
+#~ msgstr ""
+#~ "It e-mailadres dat  jo ynfold hawwe is ûnjildich omdat inkele heakjes of "
+#~ "opmerkings net sluten binne."
+
+#~ msgid "The email address you entered is valid."
+#~ msgstr "It e-mailadres dat  jo ynfold hawwe is jildich."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an "
+#~ "unclosed anglebracket."
+#~ msgstr "It e-mailadres is ûnjildich omdat de heakjes net sluten binne."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an "
+#~ "unopened anglebracket."
+#~ msgstr "It e-mailadres is ûnjildich omdat de heakjes net iepene binne."
+
+#~ msgid ""
+#~ "The email address you have entered is not valid because it contains an "
+#~ "unexpected comma."
+#~ msgstr ""
+#~ "It ynfierde e-mailadres is ûnjildich omdat der in ûnferwachte komma yn "
+#~ "stiet."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it ended unexpectedly, "
+#~ "this probably means you have used an escaping type character like an \\  "
+#~ "as the last character in your email address."
+#~ msgstr ""
+#~ "It e-mailadres dat jo ynfierd hawwe is net jildich omdat eartiids "
+#~ "ôfbrutsen waard. Dit hâldt fermoedlik yn dat jo it teken \\ as lêste yn "
+#~ "it adres setten hawwe."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains quoted "
+#~ "text which does not end."
+#~ msgstr ""
+#~ "It e-mailadres dat jo ynfierd hawwe is ûnjildich omdat der oanhelle tekst "
+#~ "yn stiet dy't net ôfsluten wurdt."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not seem to "
+#~ "contain an actual email address, i.e. something of the form joe@kde.org."
+#~ msgstr ""
+#~ "It e-mailadres dat jo ynfierd hawwe is ûnjildich omdat it gjin jildich e-"
+#~ "mailadres liket. It e-mailadres heart fan de foarm sjouke@kde.org te "
+#~ "wêzen."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an illegal "
+#~ "character."
+#~ msgstr ""
+#~ "Yn it e-mailadres dat jo ynfierd hawwe, steane lettertekens dy't net "
+#~ "tastien binne."
+
+#~ msgid ""
+#~ "The email address you have entered is not valid because it contains an "
+#~ "invalid displayname."
+#~ msgstr ""
+#~ "It ynfierde e-mailadres is ûnjildich omdat der in ûnjildige werjeftenamme "
+#~ "yn stiet."
+
+#~ msgid "Presence"
+#~ msgstr "Oanwêzigens"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> cannot be found in your addressbook.</qt>"
+#~ msgstr ""
+#~ "<qt>It e-mailadres <b>%1</b> koe net fûn wurde yn jo adresboek.</qt>"
+
+#~ msgid "is not in address book"
+#~ msgstr "sit net yn adresboek"
+
+#~ msgid "File I/O Error"
+#~ msgstr "Triem I/O-fout"
+
+#~ msgid ""
+#~ "The specified file does not exist:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "De opjûne triem bestiet net:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "This is a folder and not a file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Dit is in map en gjin triem:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "You do not have read permissions to the file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Jo hawwe net de fereaske tagongsrjochten foar de triem\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not read file:\n"
+#~ "%1"
+#~ msgstr "Koe de triem net lêze: %1"
+
+#~ msgid ""
+#~ "Could not open file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Koe de triem net iepenje:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while reading file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Der gie wat mis by it lêzen fan de triem:\n"
+#~ "%1"
+
+#~ msgid "Could only read %1 bytes of %2."
+#~ msgstr "Koe mar %1 bytes lêze fan de %2."
+
+#~ msgid ""
+#~ "File %1 exists.\n"
+#~ "Do you want to replace it?"
+#~ msgstr ""
+#~ "Triem %1 bestiet al.\n"
+#~ "Wolle jo it ferfange?"
+
+#~ msgid "&Replace"
+#~ msgstr "Fe&rfange"
+
+#~ msgid ""
+#~ "Failed to make a backup copy of %1.\n"
+#~ "Continue anyway?"
+#~ msgstr "Koe gjin backup meitsje fan %1. Dochs trochgean?"
+
+#~ msgid ""
+#~ "Could not write to file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Koe net skriuwe nei de triem:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file for writing:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Koe net skriuwe nei de triem:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while writing file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Fout by it skriuwen fan de triem:\n"
+#~ "%1"
+
+#~ msgid "Could only write %1 bytes of %2."
+#~ msgstr "Koe mar %1 bytes skriuwe fan de %2."
+
+#~ msgid "%1 does not exist"
+#~ msgstr "%1 bestiet niet"
+
+#~ msgid "%1 is not accessible and that is unchangeable."
+#~ msgstr "%1 is ûntagonklik en dat kin net korrizjearre wurde."
+
+#~ msgid "%1 is not readable and that is unchangeable."
+#~ msgstr "%1 is net lêsber en dat kin net korrizjearre wurde."
+
+#~ msgid "%1 is not writable and that is unchangeable."
+#~ msgstr "%1 is net skriuwber en dat kin net korrizjearre wurde."
+
+#~ msgid "Folder %1 is inaccessible."
+#~ msgstr "Map %1 is ûntagonklik."
+
+#~ msgid ""
+#~ "Some files or folders do not have the right permissions, please correct "
+#~ "them manually."
+#~ msgstr ""
+#~ "Inkele triemmen of mappen hawwe net de fereaske tagongsrjochten, feroarje "
+#~ "dizze mei de hân."
+
+#~ msgid "Permissions Check"
+#~ msgstr "Tagongsrjochtenkontrole"
+
+#~ msgid "Select Region of Image"
+#~ msgstr "Selektearje gebiet fan ôfbylding"
+
+#~ msgid "Please click and drag on the image to select the region of interest:"
+#~ msgstr ""
+#~ "Ofbylding klikke en slepe om it belangstellings gebiet te selektearjen:"
+
+#~ msgid "Image Operations"
+#~ msgstr "Aksje ôfbylding"
+
+#~ msgid "&Rotate Clockwise"
+#~ msgstr "Mei de klok mei &Rotearje"
+
+#~ msgid "Rotate &Counterclockwise"
+#~ msgstr "&Tsjin de klok yn Rotearje"
+
+#~ msgctxt "clear widgets"
+#~ msgid "Clear"
+#~ msgstr "Begjinwearde"
+
+#~ msgid "Emoticon theme"
+#~ msgstr "Emoticon-tema"
+
+#~ msgid "This allows you to change the emoticon theme that should be used."
+#~ msgstr "Dit makket it mooglik om it brûkte emoticon-tema te wizigjen."

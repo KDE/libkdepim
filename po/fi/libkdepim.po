@@ -1,0 +1,2047 @@
+# translation of libkdepim.po to
+# Copyright (C) 2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+# Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2003.
+# Tapio Mattila <tapio.mattila@mbnet.fi>, 2003.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 2003, 2006.
+# Teemu Rytilahti <teemu.rytilahti@kde-fi.org>, 2003.
+# Tapio Kautto <eleknader@phnet.fi>, 2004.
+# Teemu Rytilahti <tpr@d5k.net>, 2005.
+# Ilpo Kantonen <ilpo@iki.fi>, 2006.
+# Mikko Piippo <piippo@cc.helsinki.fi>, 2007.
+# Tommi Nieminen <translator@legisign.org>, 2010, 2011, 2013, 2015, 2018, 2019, 2020.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2013, 2014, 2015.
+#
+# KDE Finnish translation sprint participants:
+# Author: Artnay
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2019-08-08 15:39+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-POT-Import-Date: 2013-01-13 20:43:22+0000\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Vastaanottajia ei voi lisätä enempää, koska niiden enimmäismäärä on "
+"saavutettu"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Keskeytä tämä toiminto."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Keskeytetään…"
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Yhteys on salattu"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Yhteys on salaamaton"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Avaa yksityiskohtainen edistymisen ikkuna"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Näytä edistymisen yksityiskohtainen ikkuna"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Piilota yksityiskohtainen edistymisen ikkuna"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Lisää"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Vähemmän"
+
+#~ msgid "Choose..."
+#~ msgstr "Valitse…"
+
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Asetukset"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Olet asettamassa asetuksia vakioarvoiksi. Kaikki muutokset menetetään."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Asetetaan vakioasetuksia"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Palauta oletusarvot"
+
+#~ msgid "Add"
+#~ msgstr "Lisää"
+
+#~ msgid "Remove"
+#~ msgstr "Poista"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Haluatko poistaa tämän sähköpostiosoitteen?"
+#~ msgstr[1] "Haluatko poistaa %1 sähköpostiosoitetta?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "vCard-tuonti epäonnistui"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Lataaminen epäonnistui osoitteesta <b>%1</b>.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "Valitse yhteystiedon sähköposti"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Näytä organisaatioyksikkö LDAP-tuloksille"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "Muokkaa täydennyksen asetuksia…"
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "Laajenna ryhmät automaattisesti"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "Laajenna ryhmät…"
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Viimeaikaiset osoitteet"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Tiedoistasi löytyneet yhteystiedot"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP-palvelin: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "Etsi sähköpostia:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "Haku tehdään 3 merkistä"
+
+#~ msgid "Search"
+#~ msgstr "Etsi"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Näytä mustan listan sähköpostit"
+
+#~ msgid "&Select"
+#~ msgstr "&Valitse"
+
+#~ msgid "&Unselect"
+#~ msgstr "&Poista valinta"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">Lisää tuloksia…</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "Etsi tuloksista…"
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "Jätä huomiotta verkkotunnukset:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Erota verkkotunnukset pilkuin (”%1”)"
+
+#~ msgid "No email found."
+#~ msgstr "Sähköposteja ei löytynyt."
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "Löytyi 1 sähköposti"
+#~ msgstr[1] "Löytyi %1 sähköpostia"
+
+#~ msgid "No result found"
+#~ msgstr "Tuloksia ei löytynyt"
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr "Luettelo on muuttunut. Haluatko tallentaa ennen seuraavaa hakua?"
+
+#~ msgid "Save"
+#~ msgstr "Tallenna"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Muokkaa täydennystä"
+
+#~ msgid "Completion Order"
+#~ msgstr "Täydennysjärjestys"
+
+#~ msgid "Recent Address"
+#~ msgstr "Viimeaikaiset osoitteet"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Sähköpostiosoitteiden musta lista"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Muokkaa täydennysjärjestystä"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP-palvelin %1"
+
+#~ msgid "Move Up"
+#~ msgstr "Siirrä ylemmäs"
+
+#~ msgid "Move Down"
+#~ msgstr "Siirrä alemmas"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Tänään"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Huomenna"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Ensi &viikolla"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Ensi &kuussa"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Ei päiväystä"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "vCardin ensisijainen sähköpostiosoite on jo osoitekirjassasi. Voit "
+#~ "kuitenkin tallentaa vCardin tiedostoon ja tuoda sen osoitekirjaan itse."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "vCard lisättiin osoitekirjaasi. Voit lisätä siihen tietoa avaamalla sen "
+#~ "osoitekirjastasi."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr "Henkilön <email>%1</email> yhteystieto on jo osoitekirjassasi."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Sinun on luotava osoitekirja ennen yhteystiedon lisäämistä. Haluatko "
+#~ "luoda osoitekirjan?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Osoitekirjoja ei ole saatavilla"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Lisää osoitekirja"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Henkilön <email>%1</email> yhteystiedot onnistuttiin lisäämään "
+#~ "osoitekirjaan.</para><para>Haluatko nyt muokata uutta yhteystietoa?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Yhteystietoa ei voi tallentaa: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Yhteystiedon tallennus epäonnistui"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Yhteystieto luotu onnistuneesti"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr ""
+#~ "Tommi Nieminen,Lasse Liehu,Teemu Rytilahti,Ilpo Kantonen,Mikko Piippo"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr ""
+#~ "translator@legisign.org,lasse.liehu@gmail.com,tpr@d5k.net,ilpo@iki.fi,"
+#~ "mikko.piippo@helsinki.fi"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Lisää palvelin"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP-palvelimen asetukset"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "© 2009–2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "LDAP-salasana tallennetaan salaamattomana: haluatko tallentaa sen "
+#~ "lompakkoon?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Tallenna salasana salaamattomana lompakkoon"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Muokkaa palvelinta"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Haluatko poistaa palvelimen ”%1” asetukset?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Poista palvelin"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-palvelimet"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Valitse kaikki käytettävät palvelimet:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Lisää palvelin…"
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Muokkaa palvelinta…"
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Poista palvelin"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Otsikko"
+
+#~ msgid "Full Name"
+#~ msgstr "Koko nimi"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Sähköposti"
+
+#~ msgid "Home Number"
+#~ msgstr "Kotipuhelin"
+
+#~ msgid "Work Number"
+#~ msgstr "Työpuhelin"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Matkapuhelin"
+
+#~ msgid "Fax Number"
+#~ msgstr "Faksinumero"
+
+#~ msgid "Pager"
+#~ msgstr "Hakulaite"
+
+#~ msgid "Street"
+#~ msgstr "Katuosoite"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Osavaltio"
+
+#~ msgid "Country"
+#~ msgstr "Maa"
+
+#~ msgid "City"
+#~ msgstr "Kaupunki"
+
+#~ msgid "Organization"
+#~ msgstr "Organisaatio"
+
+#~ msgid "Company"
+#~ msgstr "Yritys"
+
+#~ msgid "Department"
+#~ msgstr "Osasto"
+
+#~ msgid "Zip Code"
+#~ msgstr "Postinumero"
+
+#~ msgid "Postal Address"
+#~ msgstr "Postiosoite"
+
+#~ msgid "Description"
+#~ msgstr "Kuvaus"
+
+#~ msgid "User ID"
+#~ msgstr "Käyttäjätunnus"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Sähköposti"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Osavaltio"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Otsikko"
+
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Tuo yhteystietoja LDAPista"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Etsi osoitteita hakemistosta"
+
+#~ msgid "Search for:"
+#~ msgstr "Etsi:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "hakemistossa"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Sähköposti"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Kotipuhelin"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Työpuhelin"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Etsi"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekursiivinen haku"
+
+#~ msgid "Contains"
+#~ msgstr "Sisältää"
+
+#~ msgid "Starts With"
+#~ msgstr "Alkaa jonolla"
+
+#~ msgid "Search in result"
+#~ msgstr "Etsi tuloksesta"
+
+#~ msgid "Searching..."
+#~ msgstr "Etsitään…"
+
+#~ msgid "Select All"
+#~ msgstr "Valitse kaikki"
+
+#~ msgid "Unselect All"
+#~ msgstr "Poista valinnat"
+
+#~ msgid "Add Selected"
+#~ msgstr "Lisää valittu"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "L&DAP-palvelinten asetukset…"
+
+#~ msgid "Copy"
+#~ msgstr "Kopioi"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "LDAP-palvelin täytyy valita ennen hakua."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Tuotiin LDAP-hakemistosta %1 palvelimella %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Osoitekirjan LDAP-asetukset"
+
+#~ msgid "&Remove"
+#~ msgstr "&Poista"
+
+#~ msgid "Blacklist Email Completion"
+#~ msgstr "Sähköpostitäydennyksen musta lista"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Muokkaa viimeaikaisia osoitteita"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Valitse osoitekirja"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Valitse osoitekirja, johon uusi yhteystieto tallennetaan:"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Saatavilla olevat sivut"
+
+#, fuzzy
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Osallistujat"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Aloitusaika"
+
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Kesto:"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Siirto valmis. %1 uusi viesti (%2 kt). %3 kt jäljellä palvelimella."
+#~ msgstr[1] ""
+#~ "Siirto valmis. %1 uutta viestiä (%2 kt). %3 kt jäljellä palvelimella."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Siirto valmis. %1 viesti (%2 kt)."
+#~ msgstr[1] "Siirto valmis. %1 viestiä (%2 kt)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Siirto valmis. %1 uusi viesti."
+#~ msgstr[1] "Siirto valmis. %1 uutta viestiä."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Siirto valmis. Ei uusia viestejä."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Siirto valmis tililtä %4. %1 uusi viesti (%2 kt). %3 kt jäljellä "
+#~ "palvelimella."
+#~ msgstr[1] ""
+#~ "Siirto valmis tililtä %4. %1 uutta viestiä (%2 kt). %3 kt jäljellä "
+#~ "palvelimella."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Siirto valmis tililtä %3. %1 viesti (%2 kt)."
+#~ msgstr[1] "Siirto valmis tililtä %3. %1 viestiä (%2 kt)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Siirto valmis tililtä %2. %1 uusi viesti."
+#~ msgstr[1] "Siirto valmis tililtä %2. %1 uutta viestiä."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Siirto valmis tililtä %1. Ei uusia viestejä."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Sähköposti"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Oikeinkirjoituksen tarkistuksen kieli"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Hakee ja tallettaa viestejä…"
+
+#~ msgid "Total Messages"
+#~ msgstr "Viestejä kaikkiaan"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Lukemattomia viestejä"
+
+#~ msgid "Quota"
+#~ msgstr "Tilarajoitus"
+
+#~ msgid "Storage Size"
+#~ msgstr "Tallennuskoko"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Alikansioiden tallennuskoko"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Koko"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Kaikkiaan"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Lukematta"
+
+#~ msgid "Stop"
+#~ msgstr "Pysäytä"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Semanttinen työpöytäjärjestelmä ei ole käytössä. Monet tämän ohjelman "
+#~ "tärkeät piirteet riippuvat semanttisesta työpöydästä eivätkä toimi oikein "
+#~ "ilman sitä."
+
+#~ msgid "&Configure"
+#~ msgstr "&Muokkaa"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Semanttisen työpöytäjärjestelmän (Nepomuk) asetusmoduulia ei löytynyt "
+#~ "järjestelmästäsi. Varmista, että Nepomuk on asennettu oikein."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Semanttinen työpöytäjärjestelmä ei ole käytössä. Seuraavat piirteet eivät "
+#~ "toimi oikein:<ul> <li>%1</li> </ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "Lähetä tekstiviesti"
+
+#~ msgid "Message"
+#~ msgstr "Viesti"
+
+#~ msgid "Recipient:"
+#~ msgstr "Vastaanottaja:"
+
+#~ msgid "Send"
+#~ msgstr "Lähetä"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Valitse osoitekirja"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Valitse osoitekirja, johon uusi yhteystieto tallennetaan:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>Sähköpostiosoite <b>%1</b> lisättiin osoitekirjaasi. Tietueelle voi "
+#~ "lisätä tietoja avaamalla sen osoitekirjastasi.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "huomenna"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "tänään"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "eilen"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "Päiväys ei voi olla aiemmin kuin %1"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "tänään"
+
+#~ msgid "To"
+#~ msgstr "Vastaanottaja"
+
+#~ msgid "CC"
+#~ msgstr "Kopio"
+
+#~ msgid "BCC"
+#~ msgstr "Piilokopio"
+
+#, fuzzy
+#~| msgid "Select the address book the new contact shall be saved in:"
+#~ msgid "Select the address book the new contact group shall be saved in:"
+#~ msgstr "Valitse osoitekirja, johon uusi yhteystieto tallennetaan:"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Syötä nimi pohjalle:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Osoitteen valinta"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&Suodata:"
+
+#, fuzzy
+#~| msgid "&Search Directory Service"
+#~ msgid "Search Directory Service"
+#~ msgstr "&Etsi &hakemistopalvelusta"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "Vastaa&nottaja >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&Kopio >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&Piilokopio >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Poista"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Tallenna &jakelulistaksi..."
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "LDAP-palvelin on valittava ennen hakua.\n"
+#~ "Voit valita sen KAddressBookin asetuksissa."
+
+#~ msgid "Address Selection"
+#~ msgstr "Osoitteen valinta"
+
+#~ msgid "&To >>"
+#~ msgstr "Vastaa&nottaja >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&Kopio >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&Piilokopio >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "&Valitut osoitteet"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Suodata:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Tallenna &jakelulistaksi..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "&Etsi &hakemistopalvelusta"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Näytä syntymäpäivä"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Näytä postiosoite"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Näytä sähköpostiosoitteet"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Näytä puhelinnumerot"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Näytä verkkosivut (osoitteet)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Näytä pikaviestiosoitteet"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Näytä omat kentät"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Kotisivu"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Blog-syöte"
+
+#~ msgid "Notes"
+#~ msgstr "Merkinnät"
+
+#~ msgid "Profession"
+#~ msgstr "Ammatti"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Sihteerin nimi"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Johtajan nimi"
+
+#~| msgid "Partner's Name"
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Puolison nimi"
+
+#~ msgid "Office"
+#~ msgstr "Toimisto"
+
+#~ msgid "IM Address"
+#~ msgstr "Pikaviestinosoite"
+
+#~ msgid "Anniversary"
+#~ msgstr "Vuosipäivä"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Osoitekirja</b>: %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Et ole asettanut suoritettavaa ohjelmaa. Aseta ohjelma asetusikkunassa."
+
+#~ msgid "Call number %1"
+#~ msgstr "Soita numeroon %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Lähetä faksi numeroon %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Näytä osoite kartalta"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Lähetä tekstiviesti numeroon %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Avaa osoite %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Avaa chat-keskustelu henkilön %1 kanssa"
+
+#~ msgid "<group>"
+#~ msgstr "<ryhmä>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Muut osoitteet"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Luettelossa ei ole osoitteita. Lisää joitain osoitteita osoitekirjaan ja "
+#~ "yritä uudelleen."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Uusi jakelulista"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Syötä nimi:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr "<qt>Jakelulista <b>%1</b> on jo olemassa. Valitse toinen nimi.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Jakelulistat"
+
+#~| msgid "Yes"
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Kyllä"
+
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Ei"
+
+#~ msgid "Organizer"
+#~ msgstr "Järjestäjä"
+
+#~ msgid "UID"
+#~ msgstr "Käyttäjätunnus"
+
+#~ msgid "Is all-day"
+#~ msgstr "Koko päivän"
+
+#~ msgid "Has duration"
+#~ msgstr "Kesto"
+
+#~ msgid "Summary"
+#~ msgstr "Yhteenveto"
+
+#~ msgid "Status"
+#~ msgstr "Tila"
+
+#~ msgid "Secrecy"
+#~ msgstr "Salassapito"
+
+#~ msgid "Priority"
+#~ msgstr "Prioriteetti"
+
+#~ msgid "Location"
+#~ msgstr "Sijainti"
+
+#~ msgid "Categories"
+#~ msgstr "Luokat"
+
+#~ msgid "Alarms"
+#~ msgstr "Hälytykset"
+
+#~ msgid "Resources"
+#~ msgstr "Resurssit"
+
+#~ msgid "Relations"
+#~ msgstr "Suhteet"
+
+#~ msgid "Attachments"
+#~ msgstr "Liitteet"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Poikkeuspäivät"
+
+#~ msgid "Exception Times"
+#~ msgstr "Poikkeusajat"
+
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Luotu"
+
+#~ msgid "Related Uid"
+#~ msgstr "Asiaankuuluva käyttäjätunnus"
+
+#~ msgid "Has End Date"
+#~ msgstr "Päättymispäivä"
+
+#~ msgid "End Date"
+#~ msgstr "Päättymispäivä"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Alkamispäivä"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Määräpäivä"
+
+#~ msgid "Due Date"
+#~ msgstr "Eräpäivä"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Valmistumispäivä"
+
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Täydennä"
+
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Valmis"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Muokkaa luokkia"
+
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Uusi luokka"
+
+#~ msgid "Select Categories"
+#~ msgstr "Valitse luokat"
+
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Osoitekirjat"
+
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~| msgid "Homepage"
+#~ msgctxt "@title:column, home address of a person"
+#~ msgid "Home"
+#~ msgstr "Koti"
+
+#~ msgctxt "@title:column, home address of a person"
+#~ msgid "Work"
+#~ msgstr "Työ"
+
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Puhelinnumerot"
+
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Suosittu sähköposti"
+
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Kaikki sähköpostit"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Näyttää URL-osoitteen %1"
+
+#~| msgid "Take Local"
+#~ msgid "Local"
+#~ msgstr "Paikallinen"
+
+#~| msgctxt "@item IMAP account"
+#~| msgid "IMAP"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "Cached IMAP"
+#~ msgstr "Välimuistiin tallennettu IMAP"
+
+#~| msgctxt "@item usenet account"
+#~| msgid "News"
+#~ msgid "News"
+#~ msgstr "Uutiset"
+
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "Ei mitään"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Maildir-postilaatikko"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Uutiset"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "IMAP-yhteys katkaistu"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Paikallinen sähköpostilaatikko"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgid "Text"
+#~ msgstr "Teksti"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Numero"
+
+#~ msgid "Boolean"
+#~ msgstr "Totuusarvo"
+
+#~ msgid "Date & Time"
+#~ msgstr "Päiväys ja aika"
+
+#~ msgid "Date"
+#~ msgstr "Päiväys"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesigner-kentät"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Qt Designer -kenttien ikkuna"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer-tiedostot"
+
+#~ msgid "Import Page"
+#~ msgstr "Tuo sivu"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Varoitus:</b> Qt Designeriä ei löydy. Sitä ei ole todennäköisesti "
+#~ "asennettu. Voit vain tuoda olemassaolevia Qt Designer -tiedostoja.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Valitun sivun esikatselu"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><p>This section allows you to add your own GUI  Elements "
+#~| "('<i>Widgets</i>') to store your own values into %1. Proceed as "
+#~| "described below:</p><ol><li>Click on '<i>Edit with Qt Designer</"
+#~| "i>'<li>In the dialog, select '<i>Widget</i>', then click <i>OK</"
+#~| "i><li>Add your widgets to the form<li>Save the file in the directory "
+#~| "proposed by Qt Designer<li>Close Qt Designer</ol><p>In case you already "
+#~| "have a designer file (*.ui) located somewhere on your hard disk, simply "
+#~| "choose '<i>Import Page</i>'</p><p><b>Important:</b> The name of each "
+#~| "input widget you place within the form must start with '<i>X_</i>'; so "
+#~| "if you want the widget to correspond to your custom entry '<i>X-Foo</"
+#~| "i>', set the widget's <i>name</i> property to '<i>X_Foo</i>'.</"
+#~| "p><p><b>Important:</b> The widget will edit custom fields with an "
+#~| "application name of %2.  To change the application name to be edited, "
+#~| "set the widget name in Qt Designer.</p></qt>"
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Tässä osiossa voit lisätä omia GUI-elementtejä ('<i>Elementit</"
+#~ "i>') tallettaaksesi omia arvojasi kohteeseen %1. Menettele allakuvatulla "
+#~ "tavalla:</p><ol><li>Napsauta '<i>Muokkaa Qt Designerillä</i>'<li>Tässä "
+#~ "ikkunassa, valitse '<i>Elementti</i>', sitten napsauta <i>OK</i><li>Lisää "
+#~ "elementtisi lomakkeeseen<li>Talleta Qt Designerin ehdottamaan tiedostoon "
+#~ "kansiossa<li>Sulje Qt Designer</ol><p>Jos sinulla on valmiina Qt "
+#~ "Designerin tiedosto (*.ui) jossain levylläsi, valitse yksinkertaisesti "
+#~ "'<i>Tuo sivu</i>'</p><p><b>Tärkeää:</b> Jokaisen syöttöelementin nimi "
+#~ "lomakkeella on alettava  '<i>X_</i>'. Jos siis haluat elementin vastaavan "
+#~ "omaa '<i>X-Foo</i>', aseta elementin  <i>nimi</i> asetus '<i>X_Foo</i>'.</"
+#~ "p><p><b>Tärkeää:</b> Elementti muokkaa omia kentitä sovellusnimellä %2.  "
+#~ "Muuttaaksesi muokattavan sovelluksen nimeä, aseta elementin nimi Qt "
+#~ "Designerissä.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Kuinka tämä toimii?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Poista sivu"
+
+#~ msgid "Import Page..."
+#~ msgstr "Tuo sivu..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Muokkaa Qt Designerillä..."
+
+#~ msgid "Key:"
+#~ msgstr "Avain:"
+
+#~ msgid "Type:"
+#~ msgstr "Tyyppi:"
+
+#~ msgid "Classname:"
+#~ msgstr "Luokan nimi:"
+
+#~ msgid "Description:"
+#~ msgstr "Kuvaus:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Vaihda asetuksen arvoa"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Asetusvelho"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Säännöt"
+
+#~| msgctxt "@title:window"
+#~| msgid "Setup Rules"
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Sääntöjen asetus"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Lähde"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Kohde"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Tila"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Muutokset"
+
+#~| msgctxt "@title:window"
+#~| msgid "Setup Changes"
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Asetusmuutokset"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Toiminta "
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Valinta"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Arvo"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Varmista, että ohjelma, jonka asetuksia muokkaat, ei ole käynnissä. "
+#~ "Muussa tapauksessa velholla tekemäsi asetukset katoavat."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Varoitus"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Aja velho nyt"
+
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Ristiriita havaittu"
+
+#~| msgid ""
+#~| "<qt>A conflict was detected. This probably means someone edited the same "
+#~| "entry on the server while you changed it locally.<br/>NOTE: You have to "
+#~| "check mail again to apply your changes to the server.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "Havaittiin ristiriita. Joku todennäköisesti muokkaa samaa tietoa "
+#~ "palvelimella kuin sinä paikallisesti.<nl/><note>Tarkista sähköpostisi "
+#~ "uudelleen saattaaksesi muutokset palvelimella voimaan.</note>"
+
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Säilytä paikallinen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take your local copy of the incidence"
+#~ msgstr "Säilytä tiedon paikallinen kopio"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Local\" button to make "
+#~ "sure your local copy is used."
+#~ msgstr ""
+#~ "Havaittiin ristiriita tiedon paikallisen ja palvelimella olevan etäkopion "
+#~ "välillä. Napsauta ”Säilytä paikallinen” -painiketta varmistaaksesi, että "
+#~ "paikallista kopiota käytetään."
+
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Säilytä uusi"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take the server copy of the incidence"
+#~ msgstr "Säilytä tiedon palvelimella oleva kopio"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take New\" button to use the "
+#~ "server copy, thereby overwriting your local copy"
+#~ msgstr ""
+#~ "Havaittiin ristiriita tiedon paikallisen ja palvelimella olevan etäkopion "
+#~ "välillä. Paina ”Säilytä uusi” -painiketta käyttääksesi palvelimella "
+#~ "olevaa kopiota, jolloin paikallinen kopio korvataan."
+
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Säilytä kumpikin"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both copies of the incidence"
+#~ msgstr "Säilytä tiedon kumpikin kopio"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Both\" button to keep "
+#~ "both the local and the server copies."
+#~ msgstr ""
+#~ "Havaittiin ristiriita tiedon paikallisen ja palvelimella olevan etäkopion "
+#~ "välillä. Paina ”Säilytä kumpikin” -painiketta säilyttääksesi sekä "
+#~ "paikallisen että palvelinkopion."
+
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Paikallinen tieto"
+
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Paikallisen tiedon yhteenveto"
+
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Viimeksi muokattu:"
+
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Aseta viimeisin muutospäivä"
+
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Näytä yksityiskohdat"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Hide/Show incidence details"
+#~ msgstr "Näytä tai piilota tiedon yksityiskohdat"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Press this button to toggle the incidence details display."
+#~ msgstr ""
+#~ "Näytä tai piilota tiedon yksityiskohtainen näkymä tällä painikkeella."
+
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Näytä erot"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show the differences between the two incidences"
+#~ msgstr "Näytä tietojen väliset erot"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press the \"Show Differences\" button to see the specific differences "
+#~ "between the incidences which are in conflict."
+#~ msgstr ""
+#~ "Näytä ristiriitaisten tietojen yksityiskohdat painamalla ”Näytä erot” -"
+#~ "painiketta."
+
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Tahdistusasetukset"
+
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Tahdistusasetukset"
+
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Tahdistusasetukset"
+
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Säilytä paikallinen kopio ristiriitatilanteessa"
+
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Ristiriitatilanteessa säilytä tiedon paikallinen kopio"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the local copy."
+#~ msgstr ""
+#~ "Havaittaessa ristiriita tiedon paikallisen ja palvelimella olevan "
+#~ "etäkopion välillä tämä valinta pakottaa käyttämään paikallista kopiota."
+
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Säilytä etäkopio ristiriitatilanteessa"
+
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Ristiriitatilanteessa säilytä tiedon etäkopio"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the remote "
+#~ "copy."
+#~ msgstr ""
+#~ "Havaittaessa ristiriita tiedon paikallisen ja palvelimella olevan "
+#~ "etäkopion välillä tämä valinta pakottaa käyttämään etäkopiota."
+
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Ristiriitatilanteessa säilytä uusin tieto"
+
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Ristiriitatilanteessa säilytä tiedon uusin versio"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the newest "
+#~ "version available."
+#~ msgstr ""
+#~ "Havaittaessa ristiriita tiedon paikallisen ja palvelimella olevan "
+#~ "etäkopion välillä tämä valinta pakottaa käyttämään uusinta saatavilla "
+#~ "olevaa tietoa."
+
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Kysy kaikissa ristiriidoissa"
+
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Kysy kaikissa ristiriitatilanteissa"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to ask the user which "
+#~ "version they want to keep."
+#~ msgstr ""
+#~ "Havaittaessa ristiriita tiedon paikallisen ja palvelimella olevan "
+#~ "etäkopion välillä tämä valinta pakottaa kysymään käyttäjältä, mikä versio "
+#~ "tulisi säilyttää."
+
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Ristiriitatilanteessa säilytä kumpikin"
+
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Ristiriitatilanteessa säilytä kumpikin tieto"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to keep both versions of "
+#~ "the incidence."
+#~ msgstr ""
+#~ "Havaittaessa ristiriita tiedon paikallisen ja palvelimella olevan "
+#~ "etäkopion välillä tämä valinta pakottaa säilyttämään tiedon kummankin "
+#~ "version."
+
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "Käytä asetusta tahdistuksen kaikissa ristiriidoissa"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Apply the preference to all conflicts that may occur during the sync"
+#~ msgstr ""
+#~ "Käytä asetusta kaikissa tahdistuksen mahdollisesti kohtaamissa "
+#~ "ristiriidoissa"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press this button to apply the selected preference to all future "
+#~ "conflicts that might occur during this sync."
+#~ msgstr ""
+#~ "Tämän painikkeen painaminen ottaa asetuksen käyttöön kaikissa tässä "
+#~ "tahdistuksessa mahdollisesti vastaan tulevissa ristiriidoissa."
+
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Paikallinen tapahtuma"
+
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Paikallinen tehtävä"
+
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Paikallinen päiväkirjamerkintä"
+
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Uusi tapahtuma"
+
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Uusi tehtävä"
+
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Uusi päiväkirjamerkintä"
+
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Piilota yksityiskohdat"
+
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Tapahtuman yksityiskohdat"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "This area shows the incidence details"
+#~ msgstr "Tällä alueella näytetään tapahtuman yksityiskohdat"
+
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Näytä yksityiskohdat..."
+
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Erot kohteiden %1 ja %2 välillä"
+
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Kohteen %1 erot"
+
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Paikallinen tapahtuma"
+
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Etätapahtuma"
+
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Näytä yksityiskohdat"
+
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Piilota yksityiskohdat"
+
+#~| msgid "&Insert"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Lisää"
+
+#~| msgid "Insert File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Lisää tiedosto"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The external editor is still running.<nl/>Do you want to stop the editor "
+#~ "or keep it running?<nl/><warning>Stopping the editor will cause all your "
+#~ "unsaved changes to be lost.</warning>"
+#~ msgstr ""
+#~ "Ulkoinen muokkain on yhä käynnissä.<nl/>Haluatko sulkea sen vai pitää sen "
+#~ "auki?<nl/><warning>Menetät kaikki tallentamattomat muutokset, jos "
+#~ "muokkain suljetaan.</warning>"
+
+#~| msgid "External Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Ulkoinen muokkain käynnissä"
+
+#~| msgid "Abort Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Sulje muokkain"
+
+#~| msgid "Leave Editor Open"
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Jätä muokkain auki"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "Älä näytä tätä viestiä uudestaan"
+
+#~| msgid ""
+#~| "Article\n"
+#~| "<b>%1</b><br><b>%2</b><br>caused the following note to appear:<br>%3"
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "Artikkeli\n"
+#~ "<b>%1</b><br><b>%2</b><br>aiheutti seuraavan viestin ilmestymisen:<br>%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Säädä pisteitä"
+
+#~ msgid "Display Message"
+#~ msgstr "Näytä viesti"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Väritä otsikko"
+
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "Merkitse luetuksi"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Kerättyjen viestien luettelo</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Kerätyt viestit"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Sisältää alitekstin"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Täsmää säännölliseen lausekkeeseen"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Täsmää säännölliseen lausekkeeseen (huomioonottaen kirjasinkoko)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "On täsmälleen sama kuin"
+
+#~ msgid "Less Than"
+#~ msgstr "Pienempi kuin"
+
+#~ msgid "Greater Than"
+#~ msgstr "Suurempi kuin"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Valitse toinen säännön nimi"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Säännön nimi on jo käytössä, valitse toinen säännön nimi:"
+
+#~ msgid "rule %1"
+#~ msgstr "sääntö %1"
+
+#~ msgid "Not"
+#~ msgstr "Ei"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Käännä tämä ehto toisinpäin"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Valitse tähän sääntöön täsmäävä otsikko"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Valitse täsmäyksen tyyppi"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Ehto täsmäykselle"
+
+#~ msgid "Select an action."
+#~ msgstr "Valitse toiminto."
+
+#~ msgid "Properties"
+#~ msgstr "Ominaisuudet"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Nimi:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Ryhmät:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "&Lisää ryhmä"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "&Vanhenna sääntö automaattisesti"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "&Sääntö on kelvollinen kohteelle:"
+
+#~ msgid "Conditions"
+#~ msgstr "Ehdot"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "&Täsmää kaikkiin ehtoihin"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Täsmää mi&hin tahansa ehtoon"
+
+#~ msgid "Actions"
+#~ msgstr "Toiminnot"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " päivä"
+#~ msgstr[1] " päivää"
+
+#~ msgid "New rule"
+#~ msgstr "Uusi sääntö"
+
+#~ msgid "Edit rule"
+#~ msgstr "Muokkaa sääntöä"
+
+#~ msgid "Remove rule"
+#~ msgstr "Poista sääntö"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>kaikki ryhmät</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "&Näytä vain säännöt ryhmälle:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Sääntömuokkain"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Muokkaa sääntöä"
+
+#~ msgid "Reload &List"
+#~ msgstr "Lataa &luettelo uudelleen"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr "Määrittele, mitkä sähköpostikansiot haluat nähdä kansionäytössä"
+
+#~ msgid "S&earch:"
+#~ msgstr "&Etsi:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Estä puunäy&ttö"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "Vain &tilattu"
+
+#~ msgid "&New only"
+#~ msgstr "Vain &uusi"
+
+#~ msgid "Current changes:"
+#~ msgstr "Nykyiset muutokset:"
+
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Kuvaus"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Tilaa"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Lopeta tilaus"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Ladataan... (1 osuma)"
+#~ msgstr[1] "Ladataan... (%1 osumaa)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (1 osuma)"
+#~ msgstr[1] "%2: (%1 osumaa)"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Nimeämätön liitännäinen"
+
+#~| msgid "New (remote) entry"
+#~ msgid "New category entry"
+#~ msgstr "Uusi luokka"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr "Kirjoita teksti, jota haluat käyttää luokan tai aliluokan nimenä."
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Lisää merkintä luokkaluetteloon"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr "Lisää merkintä luokkaluetteloon napsauttamalla tätä painiketta."
+
+#~ msgid "A&dd"
+#~ msgstr "&Lisää"
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr "Lisää merkintä valitun luokan aliluokaksi"
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Lisää merkintä nyt valittuna olevan luokan aliluokaksi napsauttamalla "
+#~ "tätä painiketta."
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Lisää &aliluokka"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "Poista valittu luokka"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr "Poista valittu luokka luettelosta napsauttamalla tätä painiketta."
+
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "Luokkien luettelo"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Tässä luettelossa ovat kaikki saatavilla olevat luokat. Voit luoda "
+#~ "aliluokkia niin paljon kuin haluat."
+
+#~| msgid "Select Categories"
+#~ msgid "Default Category"
+#~ msgstr "Oletusluokka"
+
+#~ msgid "Category"
+#~ msgstr "Luokka"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&Tyhjennä valinta"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&Muokkaa luokkia..."
+
+#~ msgid "View Columns"
+#~ msgstr "Näytä sarakkeet"
+
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "Ulkoinen muokkain on edelleen käytössä.\n"
+#~ "Suljetaanko ulkoinen muokkain, vai jätetäänkö se auki?"
+
+#, fuzzy
+#~| msgid "Is floating"
+#~ msgid "Floating"
+#~ msgstr "Tulvii"
+
+#~ msgid "Local entry"
+#~ msgstr "Paikallinen kohde"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Uusi (etä-) kohde"
+
+#~ msgid "Plain"
+#~ msgstr "Normaali"
+
+#~ msgid "Unquoted"
+#~ msgstr "Ilman lainausmerkkejä"
+
+#~ msgid "Bracketed"
+#~ msgstr "Sulkumerkitty"
+
+#~ msgid "Undefined"
+#~ msgstr "Määrittelemätön"
+
+#~ msgid "File to import:"
+#~ msgstr "Tuotava tiedosto:"
+
+#~ msgid "Separator:"
+#~ msgstr "Erotin:"
+
+#~ msgid "Tab"
+#~ msgstr "Tab"
+
+#~ msgid "Space"
+#~ msgstr "Välilyönti"
+
+#~ msgid "Header"
+#~ msgstr "Otsikko"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Kytke valittuun sarakkeeseen"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Poista kytkös valitusta sarakkeesta"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Kytke mallilla..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Talleta nykyinen malli"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Latauksen edistyminen"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Tiedostoa ladataan. Odota hetki."
+
+#~ msgid "Template Selection"
+#~ msgstr "Mallin valinta"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Valitse CVS-tiedostoon täsmäävä pohja:"
+
+#~ msgid "Importing Progress"
+#~ msgstr "Tuonti käynnissä"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Odota kunnes datan tuonti on valmis."
+
+#~ msgid "Template Name"
+#~ msgstr "Pohjan nimi"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Piilota syntymäpäivä"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Piilota postiosoite"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Piilota sähköpostiosoitteet"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Piilota puhelinnumerot"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Piilota verkkosivut (osoitteet)"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Piilota pikaviestiosoitteet"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Piilota omat kentät"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "Teksti"
+
+#~ msgid "Suggestions"
+#~ msgstr "Ehdotukset"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "Teksti"
+
+#~ msgid "Standard"
+#~ msgstr "Vakio"
+
+#~ msgid "Bulleted List (Disc)"
+#~ msgstr "Luettelo (kiekot luettelomerkkeinä)"
+
+#~ msgid "Bulleted List (Circle)"
+#~ msgstr "Luettelo (ympyrät luettelomerkkeinä)"
+
+#~ msgid "Bulleted List (Square)"
+#~ msgstr "Luettelo (neliöt luettelomerkkeinä)"
+
+#~ msgid "Ordered List (Decimal)"
+#~ msgstr "Järjestetty luettelo (desimaalit)"
+
+#~ msgid "Ordered List (Alpha lower)"
+#~ msgstr "Järjestetty luettelo (pienet kirjaimet)"
+
+#~ msgid "Ordered List (Alpha upper)"
+#~ msgstr "Järjestetty luettelo (suuret kirjaimet)"
+
+#~ msgid "No Suggestions"
+#~ msgstr "Ei ehdotuksia"
+
+#~ msgid "Starting the ioslave for protocol %1 failed."
+#~ msgstr "Ioslaven käynnistäminen yhteyskäytännölle %1 epäonnistui."
+
+#~ msgid "Unknown error %1."
+#~ msgstr "Tuntematon virhe %1."
+
+#~ msgid "Error"
+#~ msgstr "Virhe"

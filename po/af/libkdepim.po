@@ -1,0 +1,525 @@
+# WEB-Translator generated file. UTF-8 test:äëïöü
+# Copyright (C) 2001 Free Software Foundation, Inc.
+# Frikkie Thirion <frix@expertron.co.za>, 2001,2002.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2002-11-07 11:38+0200\n"
+"Last-Translator: WEB-Translator <http://kde.af.org.za>\n"
+"Language-Team: AFRIKAANS <AF@lia.org.za>\n"
+"Language: af\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr ""
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr ""
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr ""
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr ""
+
+#~ msgid "Choose..."
+#~ msgstr "Kies..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Voorkeure"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Jy word aangaande na stel alle voorkeure na verstek waardes. alle pasmaak "
+#~ "veranderinge sal wees verloor."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Opset Verstek Voorkeure"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "Voeg by"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "In voer Teks Lêer"
+
+#, fuzzy
+#~ msgid "Configure Completion..."
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~ msgid "Recent Addresses"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search email:"
+#~ msgstr "Skeier:"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search"
+#~ msgstr "Skeier:"
+
+#, fuzzy
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "&Select"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "&Unselect"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search in result..."
+#~ msgstr "Skeier:"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~ msgid "Completion Order"
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~ msgid "Recent Address"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "vandag"
+
+#, fuzzy
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "môre"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~ msgid "&Edit Host..."
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Spasie"
+
+#, fuzzy
+#~ msgid "Postal Address"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Spasie"
+
+#, fuzzy
+#~| msgid "Import starts at row:"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "In voer beginne na ry:"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Search for:"
+#~ msgstr "Skeier:"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Skeier:"
+
+#, fuzzy
+#~| msgid "Separator:"
+#~ msgid "Searching..."
+#~ msgstr "Skeier:"
+
+#, fuzzy
+#~ msgid "Select All"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "Unselect All"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "Add Selected"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "môre"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "vandag"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "gister"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "vandag"
+
+#, fuzzy
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Asseblief invoer 'n naam vir die werkvoorbeeld"
+
+#, fuzzy
+#~ msgid "EMail Address Selection"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "Address Selection"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "IM Address"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "Please enter name:"
+#~ msgstr "Asseblief invoer 'n naam vir die werkvoorbeeld"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Kategorie"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Kategorie"
+
+#~ msgid "Select Categories"
+#~ msgstr "Kies Katagoriee"
+
+#, fuzzy
+#~ msgid "Import Page"
+#~ msgstr "Met die invoering van Vordering"
+
+#, fuzzy
+#~ msgid "Import Page..."
+#~ msgstr "Met die invoering van Vordering"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Kies Katagoriee"
+
+#, fuzzy
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Kies Katagoriee"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Kies Katagoriee"
+
+#, fuzzy
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "vandag"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "vandag"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "Kategorie"
+
+#, fuzzy
+#~ msgid "Category list"
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~| msgid "Select Categories"
+#~ msgid "Default Category"
+#~ msgstr "Kies Katagoriee"
+
+#~ msgid "Category"
+#~ msgstr "Kategorie"
+
+#, fuzzy
+#~ msgid "&Clear Selection"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "Categories"
+#~ msgstr "Redigeer Katagoriee"
+
+#, fuzzy
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "In hakkies"
+
+#, fuzzy
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "In hakkies"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Voorkeure"
+
+#, fuzzy
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Voorkeure"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Voorkeure"
+
+#, fuzzy
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Voorkeure"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Voorkeure"
+
+#, fuzzy
+#~| msgid "Plain"
+#~ msgid "Floating"
+#~ msgstr "Eenvoudig"
+
+#~ msgid "Plain"
+#~ msgstr "Eenvoudig"
+
+#~ msgid "Unquoted"
+#~ msgstr "Nie-aangehaal"
+
+#~ msgid "Bracketed"
+#~ msgstr "In hakkies"
+
+#~ msgid "Undefined"
+#~ msgstr "Ongedefinieerd"
+
+#~ msgid "File to import:"
+#~ msgstr "Lêer na in voer:"
+
+#~ msgid "Separator:"
+#~ msgstr "Skeier:"
+
+#~ msgid "Tab"
+#~ msgstr "Oortjie"
+
+#~ msgid "Space"
+#~ msgstr "Spasie"
+
+#~ msgid "Header"
+#~ msgstr "Opskrif"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Toeken na Gekose Kolom"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Verwyder Opdrag Van Gekose Kolom"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Toeken met Werkvoorbeeld..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Stoor Huidige Werkvoorbeeld"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Laaiïng van Vordering"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Asseblief wag terwyl die lêer is gelaai."
+
+#~ msgid "Template Selection"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr ""
+#~ "Asseblief kies 'n werkvoorbeeld, wat ooreenstemmende inskrywings die cvs "
+#~ "lêer."
+
+#~ msgid "Importing Progress"
+#~ msgstr "Met die invoering van Vordering"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Asseblief wag terwyl die data is ingevoer."
+
+#, fuzzy
+#~ msgid "Template Name"
+#~ msgstr "Werkvoorbeeld naam"
+
+#, fuzzy
+#~ msgid "Suggestions"
+#~ msgstr "Werkvoorbeeld Keuse"
+
+#, fuzzy
+#~ msgid "Unnamed"
+#~ msgstr "Ongedefinieerd"
+
+#, fuzzy
+#~ msgid "&Replace"
+#~ msgstr "Spasie"
+
+#, fuzzy
+#~ msgid "Presence"
+#~ msgstr "Voorkeure"
+
+#, fuzzy
+#~ msgid "is not in address book"
+#~ msgstr "Werkvoorbeeld Keuse"

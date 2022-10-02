@@ -1,0 +1,2029 @@
+# translation of libkdepim.po to Kazakh
+#
+# Sairan Kikkarin <sairan@computer.org>, 2007, 2011.
+# Sairan Kikkarin <sairan(at)computer.org>, 2010, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2013-10-04 02:27+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr "Қосымша қабылдаушы қоса алмайсыз. Шегіне жетті."
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Әрекеттен айну."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Доғару..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Қосылым шифрланған"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Қосылым шифрланбаған"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Егжей-тегжейлі барыс диалогын ашу"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Егжей-тегжейлі барыс терезесін көрсету"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Егжей-тегжейлі барыс терезесін жасыру"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Көбірек"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Шамалырақ"
+
+#~ msgid "Choose..."
+#~ msgstr "Таңдау..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Параметрлері"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Сіз бүкіл параметрледі әдетті мәніне ысырып тастауының алдындасыз. Бүкіл "
+#~ "өзгерістеріңіз жоғалып кетеді."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Параметрлерді әдетті қылу"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Әдеттегіге ысыру"
+
+#, fuzzy
+#~| msgid "&Add"
+#~ msgid "Add"
+#~ msgstr "Қ&осу"
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove"
+#~ msgstr "&Өшіру"
+
+#, fuzzy
+#~| msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "\"%1\" хосттың баптауын өшіргіңіз келгені рас па?"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Мәтін файлды импорттау"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Шынымен '<b>%1</b>' дегенді өшірмексіз бе?</qt>"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "Орындау ретін баптау..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Жуырдағы адрестер"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Деректеріңізде контакт табылды"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP сервері: %1"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "Іздейтіні:"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Іздеу"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Эл.пошта адресі"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Таңдау"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "Бүкілін таңдамау"
+
+#, fuzzy
+#~| msgid "Searching..."
+#~ msgid "Search in result..."
+#~ msgstr "Іздеп жатыр..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "'%1' дегенге хат жіберу"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Орындау ретін баптау..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Орындау ретін өзгерту"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Жуырдағы адрестер"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Эл.пошта адресі"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Орындау ретін өзгерту"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "%1 LDAP сервері"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "Ережені жоғарлату"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "Ережені төмендету"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Бүгін"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Ертең"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Келесі &апта"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Келесі &ай"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Күні анықталмаған"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "vCard-дағы негізгі эл.пошта адресі адрестік кітапшаңызда бар екен; сонда "
+#~ "да, vCard-ты бөлек файлға сақтап, оны адрестік кітапшаңызға импорттап "
+#~ "алуға болады."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "vCard адрестік кітапшаңызға қосылды; кітапшаны ашып жаңа жазуды басқа "
+#~ "мәліметтерімен толықтыруға болады."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Эл.поштасы <email>%1</email> деген контакт адрестік кітапшаңызда бар екен."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Контакты жазып алу үшін, алдымен жазатын адрестік кітапшаны құру керек. "
+#~ "Құрасыз ба?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Адрестік кітапшаңыз жоқ"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Адрестік кітапшаны қосу"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Эл.поштасы <email>%1</email> деген контакт адрестік кітапшаңызға "
+#~ "сәтті қосылды.</para><para>Оны енді өңдейсіз бе?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Контакт сақталмайды: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Контактты сақтау жаңылысы"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Контакт сәтті құрылды"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Сайран Киккарин"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "sairan@sci.kz"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Хостты қосу"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP серверінің баптауы"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr "LDAP паролі жәй жазумен сақталды, оны KWallet-те сақтамайсыз ба?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Жәй мәтінді паролін KWallet сақтасын"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Хостты өзгерту"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "\"%1\" хосттың баптауын өшіргіңіз келгені рас па?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Хостты ө&шіру"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP серверлері"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Қолданатын серверлерін барлығын белгілеңіз:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "Хостты қ&осу..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "Хосты &өзгерту..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "Хостты ө&шіру"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Атағы"
+
+#~ msgid "Full Name"
+#~ msgstr "Толық аты"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Эл.пошта"
+
+#~ msgid "Home Number"
+#~ msgstr "Үй тел. нөмірі"
+
+#~ msgid "Work Number"
+#~ msgstr "Жұмыс тел. нөмірі"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Қалта тел. нөмірі"
+
+#~ msgid "Fax Number"
+#~ msgstr "Факс нөмірі"
+
+#~ msgid "Pager"
+#~ msgstr "Пейджері"
+
+#~ msgid "Street"
+#~ msgstr "Көше"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Облыс/Штаты"
+
+#~ msgid "Country"
+#~ msgstr "Ел"
+
+#~ msgid "City"
+#~ msgstr "Қала"
+
+#~ msgid "Organization"
+#~ msgstr "Ұйым"
+
+#~ msgid "Company"
+#~ msgstr "Компания"
+
+#~ msgid "Department"
+#~ msgstr "Бөлімі"
+
+#~ msgid "Zip Code"
+#~ msgstr "Пошта индексі"
+
+#~ msgid "Postal Address"
+#~ msgstr "Пошта адресі"
+
+#~ msgid "Description"
+#~ msgstr "Сипаттамасы"
+
+#~ msgid "User ID"
+#~ msgstr "Пайдаланушы ID-і"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Эл.пошта"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Облыс/Штат"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Атағы"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Контакттар LDAP-тан импорталсын "
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "адрестерді каталогынан іздеу"
+
+#~ msgid "Search for:"
+#~ msgstr "Іздейтіні:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "келесіде"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Атауы"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Эл.поштасы"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Үй тел. нөмірі"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Жұмыс тел. нөмірі"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Іздеу"
+
+#~ msgid "Recursive search"
+#~ msgstr "Рекурсивті іздеу"
+
+#~ msgid "Contains"
+#~ msgstr "Құрамында келесі бар:"
+
+#~ msgid "Starts With"
+#~ msgstr "Бастау орны:"
+
+#~ msgid "Searching..."
+#~ msgstr "Іздеп жатыр..."
+
+#~ msgid "Select All"
+#~ msgstr "Бүкілін таңдау"
+
+#~ msgid "Unselect All"
+#~ msgstr "Бүкілін таңдамау"
+
+#~ msgid "Add Selected"
+#~ msgstr "Таңдағанды қосу"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "LDAP серверлерін баптау..."
+
+#~ msgid "Copy"
+#~ msgstr "Көшіріп алу"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Іздеу алдында LDAP серверін таңдап алу керек."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "%2 дегендегі %1 LDAP каталогынан импортталған"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Адрестік кітапшаның LDAP параметрлерін баптау"
+
+#~ msgid "&Remove"
+#~ msgstr "&Өшіру"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Жуырдағы адрестерді өңдеу"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Адрестік кітапшаны таңдау"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Контактты жазып алатын адрестік кітапшасы:"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Дайын парақтары"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Қатысушылары"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Бастау уақыты"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Ұзақтығы"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] "Тасымалдау аяқталды. %1 жаңа хат (%2 КБ). %3 КБ серверде қалды."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Тасымалдау аяқталды. %1 хат (%2 КБ)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Тасымалдау аяқталды. %1 жаңа хат."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Тасымалдау аяқталды. Жаңа хат жоқ."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "%4 тіркелгісі үшін тасымалдау аяқталды. %1 жаңа хат (%2 КБ). %3 КБ "
+#~ "серверде қалды."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "%3 тіркелгісі үшін тасымалдау аяқталды. %1 хат (%2 КБ)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "%2 тіркелгісі үшін тасымалдау аяқталды. %1 жаңа хат."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "%1 тіркелгісі үшін тасымалдау аяқталды. Жаңа хат жоқ."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Атауы"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Эл.поштасы"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Емлесін тексеретін тіл"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Хаттарды қабылдап сақтау..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Жалпы хат саны"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Оқылмаған хаттар"
+
+#~ msgid "Quota"
+#~ msgstr "Квота"
+
+#~ msgid "Storage Size"
+#~ msgstr "Жинақтауыш көлемі"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Ішкі қапшық жинақтауышының көлемі"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Өлшемі"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Барлығы"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Оқылмаған"
+
+#~ msgid "Stop"
+#~ msgstr "Тоқтату"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Семантикалық үстел жүйесі қосылмаған. Бұл бағдарламаның біраз маңызды "
+#~ "мүмкіндіктері семантикалық үстел жүйесіне тәуелді болып олсыз дұрыс "
+#~ "істемейді."
+
+#~ msgid "&Configure"
+#~ msgstr "&Баптау"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Семантикалық үстел (Nepomuk) жүйесін баптау модулі жүйеңізде табылмады. "
+#~ "Nepomuk дұрыс орнатылғанын тексеріңіз."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Семантикалық үстел жүйесі қосылмаған. Келесі мүмкіндіктері дұрыс "
+#~ "істемейді:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "SMS жіберу"
+
+#~ msgid "Message"
+#~ msgstr "Хат"
+
+#~ msgid "Recipient:"
+#~ msgstr "Қабылдаушы:"
+
+#~ msgid "Send"
+#~ msgstr "Жіберу"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Адрестік кітапшаны таңдау"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Жаңа контактты жазып алатын адрестік кітапшасы:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt><b>%1</b> деген эл.пошта адресі адрестік кітапшаңызға қосылды; "
+#~ "кітапшаны ашып жаңа жазуды басқа мәліметтерімен толықтыруға болады.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "ертең"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "бүгін"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "кеше"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "Күні %1 дегеннен ерте болмау керек"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "бүгін"
+
+#~ msgid "To"
+#~ msgstr "Кімге"
+
+#~ msgid "CC"
+#~ msgstr "Көшірмесін кімге"
+
+#~ msgid "BCC"
+#~ msgstr "Жасырын көшірмесі"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Үлгінің атауын келтіріңіз:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Адресті таңдау"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&Сүзгілеу:"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Кімге >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "Кө&шірмесі >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&Жасырын көшірмесі >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Өшіру"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "&Тарату тізімі деп сақтау..."
+
+#~ msgid "Address Selection"
+#~ msgstr "Адресті таңдау"
+
+#~ msgid "&To >>"
+#~ msgstr "&Кімге >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "Кө&шірмесі >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&Жасырын көшірмесі >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "Т&аңдалған адрестерді"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Сүзгілеу:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "&Тарату тізімі деп сақтау..."
+
+#~ msgid "Show Birthday"
+#~ msgstr "Туған күнін көрсету"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Пошта адрестерін көрсету"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "эл.пошта адрестерін көрсету"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Телефон нөмірлерін көрсету"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Веб парақ сілтемелерін көрсету"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Лезде хабарласу адрестерін көрсету"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Қосымша өрістерін көрсету"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Мекен парағы"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Блог жазуы"
+
+#~ msgid "Notes"
+#~ msgstr "Жазбалар"
+
+#~ msgid "Profession"
+#~ msgstr "Мамандығы"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Көмекшісінің аты"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Менеджерінің аты"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Жұбайының аты"
+
+#~ msgid "Office"
+#~ msgstr "Кеңсесі"
+
+#~ msgid "IM Address"
+#~ msgstr "IM адресі"
+
+#~ msgid "Anniversary"
+#~ msgstr "Жылдығы"
+
+#, fuzzy
+#~| msgid "Address book:"
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "Адрес кітапшасы:"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Орындайтын бағдарлама көрсетілмеген. Баптау диалогын ашып, керек "
+#~ "қолданбаны көрсетіңіз."
+
+#~ msgid "Call number %1"
+#~ msgstr "%1 нөмірін теру"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "%1 нөміріне факс жіберу"
+
+#~ msgid "Show address on map"
+#~ msgstr "Адресті картада көрсету"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "%1 дегенге SMS жіберу"
+
+#~ msgid "Open URL %1"
+#~ msgstr "%1 деген URL-ін ашу"
+
+#~ msgid "Chat with %1"
+#~ msgstr "%1 дегенмен әңгімелесу"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "&Адрестік кітапша"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Атауы"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Атауы"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Мекен парағы"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Телефон нөмірлерін жасыру"
+
+#~ msgid "<group>"
+#~ msgstr "<тобы>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Басқа адрестері"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Тізіміңізде адрестер жоқ. Адрестік кітапшаңыздан керектерін көшіріп "
+#~ "алыңыз да қайталап көріңіз."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Жаңа тарату тізімі"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Атауын келтіріңіз:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt><b>%1</b> деп аталған тарату тізім бар ғой. Басқаша атаңыз.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Тарату тізімдері"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "Файлға сақтау"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Файлға сақтау"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Ереже өңдегіші"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Ереже өңдегіші"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Санаттары"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Санаты"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Санаты"
+
+#~ msgid "Select Categories"
+#~ msgstr "Санаттарын таңдау"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "%1 URL сілтемесін корсету"
+
+#~ msgid "Text"
+#~ msgstr "Мәтін"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Сан"
+
+#~ msgid "Boolean"
+#~ msgstr "Логикалық мән"
+
+#~ msgid "Date & Time"
+#~ msgstr "Күн мен уақыт"
+
+#~ msgid "Date"
+#~ msgstr "Күні"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Qt Designer өрістер диалогы"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer файлдары"
+
+#~ msgid "Import Page"
+#~ msgstr "Парақты импорттау"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Ескерту:</b> Qt Designer табылмады. Ол орнатылмаған сияқты. Оның "
+#~ "бар файлдарын тек ғана импорт ете аласыз.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Таңдалған парақты қарау"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><p>This section allows you to add your own GUI  Elements "
+#~| "('<i>Widgets</i>') to store your own values into %1. Proceed as "
+#~| "described below:</p><ol><li>Click on '<i>Edit with Qt Designer</"
+#~| "i>'<li>In the dialog, select '<i>Widget</i>', then click <i>OK</"
+#~| "i><li>Add your widgets to the form<li>Save the file in the directory "
+#~| "proposed by Qt Designer<li>Close Qt Designer</ol><p>In case you already "
+#~| "have a designer file (*.ui) located somewhere on your hard disk, simply "
+#~| "choose '<i>Import Page</i>'</p><p><b>Important:</b> The name of each "
+#~| "input widget you place within the form must start with '<i>X_</i>'; so "
+#~| "if you want the widget to correspond to your custom entry '<i>X-Foo</"
+#~| "i>', set the widget's <i>name</i> property to '<i>X_Foo</i>'.</"
+#~| "p><p><b>Important:</b> The widget will edit custom fields with an "
+#~| "application name of %2.  To change the application name to be edited, "
+#~| "set the widget name in Qt Designer.</p></qt>"
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Бұл бөлім %1 қолданбаңызға өзіңіздің мәндеріңізді келтіру үшін "
+#~ "графикалық интерфейстің бөлшектерін ('<i>Widget</i>') қосу мүмкіндігін "
+#~ "береді. Қосу тәртібі төмендегідей:</p><ol><li>'<i>Qt Designer-де өңдеу</"
+#~ "i>' дегенді түртіңіз<li>Шыққан диалогында '<i>Widget</i>' дегенді таңдап, "
+#~ "<i>OK</i> батырмасын басыңыз<li>Өңдейтін пішінге керек бөлшектерді "
+#~ "қосыңыз<li>Файлы Qt Designer ұсынған қапшыққа сақтаңыз<li>Qt Designer-ді "
+#~ "жабыңыз</ol><p>Егер дискіңізде сақталған дайын Qt Designer (*.ui) "
+#~ "файлыңыз болса, жай ғана '<i>Парақты импорттау</i>' дегенді таңдаңыз</"
+#~ "p><p><b>Маңызды:</b> Пішінге орналастырған кіріс ететін widget бөлшегінің "
+#~ "атауы '<i>X_</i>' дегеннен басталу керек; сонымен '<i>X-Foo</i>' дегенге "
+#~ "арналған бөлшегінің <i>Атауы</i> деген қасиетін '<i>X_Foo</i>' деп "
+#~ "қойыңыз.</p><p><b>Маңызды:</b> Бұл widget %2 деген қолданбаға қосымша "
+#~ "өрістерді келтіру үшін арналған. Арналған қолданбаны ауыстыру үшін Qt "
+#~ "Designer-де widget бөлшегінің атауын өзгертіңіз.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\"><Бұл қалай істейді?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Парақты өшіру"
+
+#~ msgid "Import Page..."
+#~ msgstr "Парақты импорттау..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Qt Designer-де өңдеу..."
+
+#~ msgid "Key:"
+#~ msgstr "Кілт:"
+
+#~ msgid "Type:"
+#~ msgstr "Түрі:"
+
+#~ msgid "Classname:"
+#~ msgstr "Кластың атауы:"
+
+#~ msgid "Description:"
+#~ msgstr "Сипаттамасы:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Параметрін өзгерту"
+
+#, fuzzy
+#~| msgid "Configuration Wizard"
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Баптау шебері"
+
+#, fuzzy
+#~| msgid "Rules"
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Ережелері"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Ережелері"
+
+#, fuzzy
+#~| msgid "Source"
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Көзі"
+
+#, fuzzy
+#~| msgid "Target"
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Мақсаты"
+
+#, fuzzy
+#~| msgid "Condition"
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Шарты"
+
+#, fuzzy
+#~| msgid "Changes"
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Өзгерістері"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Өзгерістері"
+
+#, fuzzy
+#~| msgid "Action"
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Әрекеті"
+
+#, fuzzy
+#~| msgid "Option"
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Параметрі"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Мәні"
+
+#, fuzzy
+#~| msgid ""
+#~| "Please make sure that the programs which are configured by the wizard do "
+#~| "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~| "could be lost."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Шебер баптайтын бағдарламалар шебермен қатар жегілмегенін тексеріңіз; "
+#~ "әйтпесе шебер енгізген өзгерістер жоғалып кетеді."
+
+#, fuzzy
+#~| msgid "Run Wizard Now"
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Шеберді жегу"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Таңдау"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Ұзақтығы"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "бүгін"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Орыны"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Туған күнін көрсету"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Аталмаған плагин модулі"
+
+#, fuzzy
+#~| msgid "New (remote) entry"
+#~ msgid "New category entry"
+#~ msgstr "Жаңа (қашықтағы) жазу"
+
+#~ msgid "A&dd"
+#~ msgstr "Қ&осу"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "Жаңа санат"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "Санаттар"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgid "Default Category"
+#~ msgstr "Әдеттегі"
+
+#~ msgid "Category"
+#~ msgstr "Санаты"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "Таңдалғанды та&залау"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "Са&наттарды өңдеу..."
+
+#, fuzzy
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Келесіге келмейді"
+
+#~ msgid "Organizer"
+#~ msgstr "Ұйымдастырушысы"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Has duration"
+#~ msgstr "Ұзақтығы белгіленген"
+
+#~ msgid "Summary"
+#~ msgstr "Атауы"
+
+#~ msgid "Status"
+#~ msgstr "Күй-жайы"
+
+#~ msgid "Secrecy"
+#~ msgstr "Құпиялығы"
+
+#~ msgid "Priority"
+#~ msgstr "Маңыздылығы"
+
+#~ msgid "Location"
+#~ msgstr "Орыны"
+
+#~ msgid "Categories"
+#~ msgstr "Санаттар"
+
+#~ msgid "Alarms"
+#~ msgstr "Ескертулер"
+
+#~ msgid "Resources"
+#~ msgstr "Ресурстары"
+
+#~ msgid "Relations"
+#~ msgstr "Қатынастары"
+
+#~ msgid "Attachments"
+#~ msgstr "Тіркемелері"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Болмайтын күндері"
+
+#~ msgid "Exception Times"
+#~ msgstr "Болмайтын уақыттары"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Құрылған"
+
+#~ msgid "Related Uid"
+#~ msgstr "Байланысты UID"
+
+#~ msgid "Has End Date"
+#~ msgstr "Аяқталу күні белгіленген"
+
+#~ msgid "End Date"
+#~ msgstr "Аяқталу күні"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Басталу күні белгіленген"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Бітіру күні белгіленген"
+
+#~ msgid "Due Date"
+#~ msgstr "Бітіру күні"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Орындау күні белгіленген"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Орындалуы"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Орындалған"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgid "Local"
+#~ msgstr "Жергіліктіні алу"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "News"
+#~ msgstr "Жазбалар"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "Жазбалар"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Күнделіктің жергілікті жазуы"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Жазбалар"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Күнделіктің жергілікті жазуы"
+
+#, fuzzy
+#~| msgid ""
+#~| "Article\n"
+#~| "<b>%1</b><br><b>%2</b><br>caused the following note to appear:<br>%3"
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr "<b>%1</b><br><b>%2</b><br> мақаласы келесіні пайда қылды:<br>%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Ұпайын келтіру"
+
+#~ msgid "Display Message"
+#~ msgstr "Хабарламаны көрсету"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Айдарын бояулау"
+
+#, fuzzy
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "Оқылған деп белгілеу"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Жиналған жазбалар тізімі</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Жиналған жазбалар"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Құрамында келесі жолы бар"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Келесі үлгі өрнегіне сәйкесті"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Келесі үлгі өрнегіне сәйкесті (үлкен-кішісін ескеріп)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Келесіге тең"
+
+#~ msgid "Less Than"
+#~ msgstr "Келесіден кем"
+
+#~ msgid "Greater Than"
+#~ msgstr "Келесіден артық"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Ережені басқаша атау"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Ереже аталған, басқа атауын таңдап алыңыз:"
+
+#~ msgid "rule %1"
+#~ msgstr "%1 ережесі"
+
+#~ msgid "Not"
+#~ msgstr "Келесіге келмейді"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Келесі шартқа келмейді"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Осы шартқа сәйкесті айдарды таңдау"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Сәйкестік түрін таңдау"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Керек сәйкестік шарты"
+
+#~ msgid "Select an action."
+#~ msgstr "Әрекетті таңдау."
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Атауы:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Топтар:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "Топты қ&осу"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "&Ереже автоматты түрде ескірген деп белгіленсін"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "Е&реженің жарамдылық мерзімі:"
+
+#~ msgid "Conditions"
+#~ msgstr "Шарттары"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Бар&лық шарттарға сәйкесті"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Кез-келген шартқа сәй&кесті"
+
+#~ msgid "Actions"
+#~ msgstr "Әрекеттер"
+
+#, fuzzy
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] "бүгін"
+
+#~ msgid "New rule"
+#~ msgstr "Жаңа ереже"
+
+#~ msgid "Edit rule"
+#~ msgstr "Ережені өңдеу"
+
+#~ msgid "Remove rule"
+#~ msgstr "Ережені өшіру"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "Тек келесі топтың ережелері көр&сетілсін:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Ереже өңдегіші"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Ережені өңдеу"
+
+#~ msgid "Reload &List"
+#~ msgstr "&Тізімді қайта жүктеу"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr ""
+#~ "Қапшықтар тізімінде қай пошта қапшықтары көрсетілуге тиіс екенін таңдау"
+
+#~ msgid "S&earch:"
+#~ msgstr "Ізд&ейтіні:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "&Бұтақ түрінде көрсетілмесін"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "&Тек жазылғандар"
+
+#~ msgid "&New only"
+#~ msgstr "Тек &жаңалар"
+
+#~ msgid "Current changes:"
+#~ msgstr "Өзгерістер:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Атауы"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Сипаттамасы"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Мынаған жазылу"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Мынау жазылудан айну"
+
+#, fuzzy
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Жүктеу... (%n сәйестік)"
+
+#, fuzzy
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Қайшылық байқалды"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>A conflict was detected. This probably means someone edited the same "
+#~| "entry on the server while you changed it locally.<br/>NOTE: You have to "
+#~| "check mail again to apply your changes to the server.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "<qt>Бір қайшылық байқалды. Бәлкім, біреу Сіз жергілікті өзгерткен жазуды "
+#~ "біреу серверде де өзгертіп қойған.<br/>ЕСКЕРТУ: Өзгерістеріңізді серверге "
+#~ "тапсыру үшін поштаңызды қайта жүктеп алыңыз.</qt>"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Жергіліктіні алу"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Жаңасын алу"
+
+#, fuzzy
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Екеуін де алу"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Жергілікті жазу"
+
+#, fuzzy
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Жергілікті жазу қорытындысы"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Соңғы өзгертілгені:"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Соңғы өзгертілгені:"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Егжей-тегжейін көрсету"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Айырмашылығын көрсету"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Қадамдастыру ережесі"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Қадамдастыру ережесі"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Қадамдастыру ережесі"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Қайшылықта жергіліктісі басымды"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Қайшылықта жергіліктісі басымды"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Қайшылықта жаңасы (қашықтағысы) басымды"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Қайшылықта жаңасы (қашықтағысы) басымды"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Қайшылықта ең жаңасы басымды"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Қайшылықта ең жаңасы басымды"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Қайшылықта әр жазу туралы сұралсын"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Қайшылықта әр жазу туралы сұралсын"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Қайшылықта екеуі де қабылдансын"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Қайшылықта екеуі де қабылдансын"
+
+#, fuzzy
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "Барша қайшылықтарда осы қолданылсын"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Жергілікті оқиға"
+
+#, fuzzy
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Жергілікті жоспар"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Күнделіктің жергілікті жазуы"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Жаңа оқиға"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Жаңа жоспар"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Күнделіктің жаңа жазуы"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Егжей-тегжейін жасыру"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Егжей-тегжейін жасыру"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Егжей-тегжейін көрсету..."
+
+#, fuzzy
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "%1 деген мен %2 дегеннің айырмашылықтары"
+
+#, fuzzy
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "%1 дегеннің айырмашылықтары"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Жергілікті жазу"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Жергілікті жазу"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Егжей-тегжейін көрсету"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Егжей-тегжейін жасыру"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Атауы"
+
+#, fuzzy
+#~| msgid "Is floating"
+#~ msgid "Floating"
+#~ msgstr "Өзгермелі"
+
+#~ msgid "Local entry"
+#~ msgstr "Жергілікті жазу"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Жаңа (қашықтағы) жазу"
+
+#~ msgid "Plain"
+#~ msgstr "Кәдімгі"
+
+#~ msgid "Unquoted"
+#~ msgstr "Тырнақшаланбаған"
+
+#~ msgid "Bracketed"
+#~ msgstr "Жақшаланған"
+
+#~ msgid "Undefined"
+#~ msgstr "Анықталмаған"
+
+#~ msgid "File to import:"
+#~ msgstr "Импорттайтын файл:"
+
+#~ msgid "Separator:"
+#~ msgstr "Бөлгіші:"
+
+#~ msgid "Tab"
+#~ msgstr "Кестелеу"
+
+#~ msgid "Space"
+#~ msgstr "Бос орын"
+
+#~ msgid "Header"
+#~ msgstr "Айдары"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Таңдалған бағанға тағу"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Таңдалған бағанға тағылғанынан айыру"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Үлгі бойынша тағу..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Қолданыстағы үлгіні сақтау"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Жүктеу барысы"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Файл жүктелгенше күте тұрыңыз."
+
+#~ msgid "Template Selection"
+#~ msgstr "Үлгіні таңдау"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "CSV файлына сәйкес келетін үлгіні таңдаңыз:"
+
+#~ msgid "Importing Progress"
+#~ msgstr "Импорттау барысы"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Деректер импортталғанша күте тұрыңыз."
+
+#~ msgid "Template Name"
+#~ msgstr "Үлгінің атауы"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Туған күнін жасыру"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Пошта адрестерін жасыру"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Эл.пошта адрестерін көрсету"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Телефон нөмірлерін жасыру"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Веб парақ сілтемелерін жасыру"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Лезде хабарласу адрестерін жасыру"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Қосымша өрістерін жасыру"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "Мәтін"
+
+#, fuzzy
+#~| msgid "Relations"
+#~ msgid "Suggestions"
+#~ msgstr "Қатынастары"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "Мәтін"
+
+#~ msgid "Cc"
+#~ msgstr "Көшірмесін кімге"
+
+#~ msgid "Bcc"
+#~ msgstr "Жасырын көшірмесі"
+
+#~ msgid "All"
+#~ msgstr "Барлық"
+
+#, fuzzy
+#~ msgid "Open"
+#~ msgstr "Параметрі"
+
+#~ msgid "<all groups>"
+#~ msgstr "<барлық топтар>"
+
+#~ msgid "Is floating"
+#~ msgstr "Өзгермелі"
+
+#~ msgid "<qt>Failed to execute signature script<br><b>%1</b>:<br>%2</qt>"
+#~ msgstr ""
+#~ "<qt><b>%1</b><br>деген қолтаңбалау скриптін орындау жаңылысы:<br>%2</qt>"
+
+#~ msgid "%1 (Default)"
+#~ msgstr "%1 (Әдеттегі)"
+
+#~ msgid "Unnamed"
+#~ msgstr "Аталмаған"
+
+#~ msgid "File I/O Error"
+#~ msgstr "Файл кіріс/шығыс қатесі"
+
+#~ msgid ""
+#~ "The specified file does not exist:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Көрсетілген файл жоқ:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "This is a folder and not a file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Бұл файл емес - қапшық қой:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "You do not have read permissions to the file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Бұл файлды оқуға рұқсатыңыз жоқ қой: \n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not read file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Мынау файл оқылмады:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Мынау файл ашылмады:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while reading file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Мынау файлды оқу қатесі:\n"
+#~ "%1"
+
+#~ msgid "Could only read %1 bytes of %2."
+#~ msgstr "Жалпы %2 байттан %1 байты оқылды."
+
+#~ msgid ""
+#~ "File %1 exists.\n"
+#~ "Do you want to replace it?"
+#~ msgstr ""
+#~ "%1 деген файл бар ғой.\n"
+#~ "Ауыстыру керек пе?"
+
+#~ msgid "Save to File"
+#~ msgstr "Файлға сақтау"
+
+#~ msgid "&Replace"
+#~ msgstr "&Ауыстыру"
+
+#~ msgid ""
+#~ "Failed to make a backup copy of %1.\n"
+#~ "Continue anyway?"
+#~ msgstr ""
+#~ "%1 дегеннің сақтық көшірмесін жасау жаңылысы.\n"
+#~ "Сонда да жалғастыра берейік пе?"
+
+#~ msgid ""
+#~ "Could not write to file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Мынау файл жазылмады:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file for writing:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Мынау файл жазу үшін ашылмады:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while writing file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Мынау файлды жазу қатесі:\n"
+#~ "%1"
+
+#~ msgid "Could only write %1 bytes of %2."
+#~ msgstr "Жалпы %2 байттан %1 байты жазылды."
+
+#~ msgid "%1 does not exist"
+#~ msgstr "%1 деген жоқ"
+
+#~ msgid "%1 is not accessible and that is unchangeable."
+#~ msgstr "%1 дегенге қатынау жоқ."
+
+#~ msgid "%1 is not readable and that is unchangeable."
+#~ msgstr "%1 дегенді оқуға болмайды."
+
+#~ msgid "%1 is not writable and that is unchangeable."
+#~ msgstr "%1 дегенге жазуға болмайды."
+
+#~ msgid "Folder %1 is inaccessible."
+#~ msgstr "%1 қапшығына қатынау жоқ."
+
+#~ msgid ""
+#~ "Some files or folders do not have the right permissions, please correct "
+#~ "them manually."
+#~ msgstr ""
+#~ "Кейбір файл-қапшықтарға керек қатынау рұқсаттары жоқ, бұны қолмен түзеңіз."
+
+#~ msgid "Permissions Check"
+#~ msgstr "Рұқсаттарды тексеру"
+
+#~ msgid "Emoticon theme"
+#~ msgstr "Көңіл күйі белгілерінің нақышы"
+
+#~ msgid "This allows you to change the emoticon theme that should be used."
+#~ msgstr "Мұнда қолданатын көңіл күйі белгілерінің нақышын өзгертуге болады."

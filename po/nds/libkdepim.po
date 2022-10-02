@@ -1,0 +1,2079 @@
+# Translation of libkdepim.po to Low Saxon
+# Heiko Evermann <heiko@evermann.de>, 2004.
+# Heiko Evermann <heiko.evermann@gmx.de>, 2004.
+# Sönke Dibbern <s_dibbern@web.de>, 2004, 2006, 2007, 2008, 2009, 2014.
+# Manfred Wiese <m.j.wiese@web.de>, 2008, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2014-06-27 02:03+0200\n"
+"Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
+"Language-Team: Low Saxon <kde-i18n-doc@kde.org>\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Du kannst keen Adressaten mehr tofögen, Du büst bi de Hööchsttall ankamen."
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Disse Akschoon afbreken"
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Warrt afbraken..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Verbinnen is verslötelt"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Verbinenn is nich verslötelt"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Vörankamen detailleert wiesen"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Vörankamenfinster wiesen"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Vörankamenfinster versteken"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Mehr"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Weniger"
+
+#~ msgid "Choose..."
+#~ msgstr "Utsöken..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Instellen"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Du wullt allens op de Standardweerten instellen. All Dien egen Instellen "
+#~ "gaht dann verloren."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Standardweerten setten"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Op Standardweerten torüchsetten "
+
+#, fuzzy
+#~| msgid "&Add"
+#~ msgid "Add"
+#~ msgstr "&Tofögen"
+
+#~ msgid "Remove"
+#~ msgstr "Wegmaken"
+
+#, fuzzy
+#~| msgid "Do you want to remove this email?"
+#~| msgid_plural "Do you want to remove %1 emails?"
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Wullt Du dissen Nettbreef wegmaken?"
+#~ msgstr[1] "Wullt Du disse %1 Nettbreven wegmaken?"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Textdatei importeren"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Wullt Du <b>%1</b> redig wegdoon?</qt>"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Organisatschoon-Eenheit binnen LDAP-Resultaten wiesen"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "Kompletteerreeg instellen..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Tolest bruukte Adressen"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Kontakten ut Dien Daten"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP-Server: %1"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "Söken na:"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Söken"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Nettpostadress"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Köör"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "Köör torüchnehmen"
+
+#, fuzzy
+#~| msgid "Search in result"
+#~ msgid "Search in result..."
+#~ msgstr "Binnen Resultaat söken"
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Nettbreef an \"%1\" schicken"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Kompletteerreeg instellen..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Kompletteerreeg bewerken"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Tolest bruukte Adressen"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Nettpostadress"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Kompletteerreeg bewerken"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP-Server %1"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "Regel na baven"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "Regel na nerrn"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Vundaag"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Morgen"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Nakamen &Week"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Nakamen M&aand"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Keen Datum"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "De Hööft-Nettpostadress vun disse vCard is al binnen Dien Adressbook. Du "
+#~ "kannst de vCard as Datei sekern un vun Hand na Dien Adressbook importeren."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "De vCard wöör Dien Adressbook toföögt. Wenn Du dat opmaakst, kannst Du "
+#~ "den niegen Indrag mehr Informatschonen tofögen."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Dat gifft al en Kontakt mit de Nettpostadress <email>%1</email> binnen "
+#~ "Dien Adressbook."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Du muttst eerst en Adressbook opstellen, ehr Du Kontakten tofögen kannst. "
+#~ "Wullt Du dat nu doon?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Keen Adressbook verföögbor"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Adressbook &tofögen"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>En Kontakt för <email>%1</email> wöör Dien Adressbook mit Spood "
+#~ "toföögt.</para><para>Wullt Du dissen niegen Kontakt nu bewerken?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Kontakt lett sik nich sekern: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Kontakt lett sik nich sekern"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Kontakt mit Spood opstellt"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Sönke Dibbern, Manfred Wiese"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "s_dibbern@web.de, m.j.wiese@web.de"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Reekner tofögen"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP-Server instellen"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "© 2009 - 2010: Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "Dat LDAP-Passwoort is as Kloortext sekert. Wullt Du dat binnen Dien "
+#~ "KWallet-Knipp wohren?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Kloortextpasswoort binnen Knipp wohren"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Reekner bewerken"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Wullt Du de Instellen för den Reekner \"%1\" wegmaken?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Reekner wegmaken"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-Servers"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "All Servers ankrüüzen, de Du bruken wullt:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "Reekner &tofögen..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "Reekner &bewerken..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "Reekner &wegmaken"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgid "Full Name"
+#~ msgstr "Heel Naam"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Nettpost"
+
+#~ msgid "Home Number"
+#~ msgstr "Telefoon tohuus"
+
+#~ msgid "Work Number"
+#~ msgstr "Telefoon op Arbeit"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Mobiltelefoon"
+
+#~ msgid "Fax Number"
+#~ msgstr "Faxnummer"
+
+#~ msgid "Pager"
+#~ msgstr "Pager"
+
+#~ msgid "Street"
+#~ msgstr "Straat"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Bunnsland"
+
+#~ msgid "Country"
+#~ msgstr "Land"
+
+#~ msgid "City"
+#~ msgstr "Stadt"
+
+#~ msgid "Organization"
+#~ msgstr "Organisatschoon"
+
+#~ msgid "Company"
+#~ msgstr "Firma"
+
+#~ msgid "Department"
+#~ msgstr "Afdelen"
+
+#~ msgid "Zip Code"
+#~ msgstr "Postleddtall"
+
+#~ msgid "Postal Address"
+#~ msgstr "Postadressen"
+
+#~ msgid "Description"
+#~ msgstr "Beschrieven"
+
+#~ msgid "User ID"
+#~ msgstr "Bruker-ID"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Nettpost"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Bunnsland"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Kontakten ut LDAP importeren"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Na Adressen in Verteken söken"
+
+#~ msgid "Search for:"
+#~ msgstr "Söken na:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "in"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Nettpost"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Telefoon tohuus"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Telefoon op Arbeit"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Söken"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekursive Söök"
+
+#~ msgid "Contains"
+#~ msgstr "Bargt"
+
+#~ msgid "Starts With"
+#~ msgstr "Fangt an mit"
+
+#~ msgid "Search in result"
+#~ msgstr "Binnen Resultaat söken"
+
+#~ msgid "Searching..."
+#~ msgstr "Bi to söken..."
+
+#~ msgid "Select All"
+#~ msgstr "All utsöken"
+
+#~ msgid "Unselect All"
+#~ msgstr "Köör torüchnehmen"
+
+#~ msgid "Add Selected"
+#~ msgstr "Utsöchte tofögen"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "LDAP-Servers instellen..."
+
+#~ msgid "Copy"
+#~ msgstr "Koperen"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Du muttst en LDAP-Server utsöken, ehr Du söchst."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Ut LDAP-Verteken \"%1\" op \"%2\" importeert"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "LDAP-Instellen för't  Adressbook"
+
+#~ msgid "&Remove"
+#~ msgstr "&Wegmaken"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Tolest bruukte Adressen bewerken"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Adressbook utsöken"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Dat Adressbook utsöken, na dat de niege Kontakt opnahmen warrt:"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Verföögbor Sieden"
+
+#~ msgid "Unknown"
+#~ msgstr "Nich begäng"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Mitmakers"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Starttiet"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Duer"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Överdregen afslaten. %1 nieg Naricht (%2 kB). %3 kB liggt noch op den "
+#~ "Server."
+#~ msgstr[1] ""
+#~ "Överdregen afslaten. %1 niege Narichten (%2 kB). %3 kB liggt noch op den "
+#~ "Server."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Överdregen afslaten. %1 nieg Naricht (%2 kB)."
+#~ msgstr[1] "Överdregen afslaten. %1 niege Narichten (%2 kB)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Överdregen afslaten. %1 nieg Naricht."
+#~ msgstr[1] "Överdregen afslaten. %1 niege Narichten."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Överdregen afslaten. Keen nieg Narichten."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Överdregen för Konto \"%4\" afslaten. %1 nieg Naricht (%2 kB). %3 kB "
+#~ "liggt noch op den Server."
+#~ msgstr[1] ""
+#~ "Överdregen för Konto \"%4\" afslaten. %1 niege Narichten (%2 kB). %3 kB "
+#~ "liggt noch op den Server."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Överdregen för Konto \"%3\" afslaten. %1 nieg Naricht (%2 kB)."
+#~ msgstr[1] ""
+#~ "Överdregen för Konto \"%3\" afslaten. %1 niege Narichten (%2 kB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Överdregen för Konto %2 afslaten. %1 nieg Naricht."
+#~ msgstr[1] "Överdregen för Konto %2 afslaten. %1 niege Narichten."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Överdregen för Konto %1 afslaten. Keen nieg Narichten."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Nettpost"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Klookschriever-Spraak"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Narichten warrt haalt un sekert..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Narichten tosamen"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Nich leest Narichten"
+
+#~ msgid "Quota"
+#~ msgstr "Bruukgrenz"
+
+#~ msgid "Storage Size"
+#~ msgstr "Spiekergrött"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Ünnerorner-Spiekergrött"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Grött"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Tosamen"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Nich leest"
+
+#~ msgid "Stop"
+#~ msgstr "Anhollen"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Du hest dat Schriefdischbeslötel-Systeem nich anmaakt. Dat deit man för "
+#~ "en Reeg vun Funkschonen noot, de nu nich propper funkscheneert."
+
+#~ msgid "&Configure"
+#~ msgstr "&Instellen"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Dat Instellenmoduul för't Schriefdischbeslötel-Systeem (Nepomuk) lett sik "
+#~ "op Dien Systeem nich finnen. Bitte kiek na, wat Nepomuk propper "
+#~ "installeert is."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Du hest dat Schriefdischbeslötel-Systeem nich anmaakt. Disse Funkschonen "
+#~ "warrt nich propper arbeiden:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "SMS sennen"
+
+#~ msgid "Message"
+#~ msgstr "Naricht"
+
+#~ msgid "Recipient:"
+#~ msgstr "Adressaat:"
+
+#~ msgid "Send"
+#~ msgstr "Sennen"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Adressbook utsöken"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Dat Adressbook utsöken, na dat en nieg Kontakt sekert warrt:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>De Nettpostadress <b>%1</b> wöör Dien Adressbook toföögt. Wenn Du dat "
+#~ "opmaakst, kannst Du den niegen Indrag mehr Informatschonen tofögen.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "morgen"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "vundaag"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "güstern"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "Datum mutt nich fröher as %1 wesen"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "vundaag"
+
+#~ msgid "To"
+#~ msgstr "Na"
+
+#~ msgid "CC"
+#~ msgstr "Kopie"
+
+#~ msgid "BCC"
+#~ msgstr "Blindkopie"
+
+#~ msgid "Select the address book the new contact group shall be saved in:"
+#~ msgstr "Dat Adressbook utsöken, na dat en nieg Kontaktkoppel sekert warrt:"
+
+#~ msgid "New Contact Group"
+#~ msgstr "Nieg Kontaktkoppel"
+
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Bitte den Naam för den niegen Kontaktkoppel ingeven:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Adress utsöken"
+
+#~ msgid "Filter on:"
+#~ msgstr "Filtern na:"
+
+#~ msgid "Search Directory Service"
+#~ msgstr "Vertekendeenst dörkieken"
+
+#~ msgid "To >>"
+#~ msgstr "Na >>"
+
+#~ msgid "CC >>"
+#~ msgstr "Kopie >>"
+
+#~ msgid "BCC >>"
+#~ msgstr "Blindkopie >>"
+
+#~ msgid "<< Remove"
+#~ msgstr "<< Wegdoon"
+
+#~ msgid "Save as Distribution List..."
+#~ msgstr "As Verdeellist sekern..."
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Ehr Du söchst, muttst Du en LDAP-Server utsöken.\n"
+#~ "Du kannst dat över den Menüpunkt \"Instellen -> KAdressbook instellen..."
+#~ "\" doon."
+
+#~ msgid "Address Selection"
+#~ msgstr "Adress utsöken"
+
+#~ msgid "&To >>"
+#~ msgstr "&Na >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&Kopie >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&Blindkopie >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "&Utsöcht Adressen"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Filtern na:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "As &Verdeellist sekern..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "Vertekendeenst &dörkieken"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Geboortsdag wiesen"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Postadressen wiesen"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Nettpostadressen wiesen"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Telefoonnummern wiesen"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Nettsieden (URLs) wiesen"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Kortnarichten-Adressen wiesen"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Egen Feller wiesen"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Tohuussiet"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Blog-Stroom"
+
+#~ msgid "Notes"
+#~ msgstr "Notizen"
+
+#~ msgid "Profession"
+#~ msgstr "Profeschoon"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Naam vun den Topleger"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Naam vun den Manager"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Naam vun den Partner"
+
+#~ msgid "Office"
+#~ msgstr "Büro"
+
+#~ msgid "IM Address"
+#~ msgstr "KN-Adress"
+
+#~ msgid "Anniversary"
+#~ msgstr "Johrsdag"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Adressbook:</b> %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Dor is keen Programm utsöcht, dat utföhrt warrn kann. Bitte gah na den "
+#~ "Instellendialog un söök een ut."
+
+#~ msgid "Call number %1"
+#~ msgstr "Nummer %1 anropen"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Fax na \"%1\" schicken"
+
+#~ msgid "Show address on map"
+#~ msgstr "Adress op Landkoort wiesen"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "SMS na %1 schicken"
+
+#~ msgid "Open URL %1"
+#~ msgstr "URL \"%1\" opmaken"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Mit %1 klönen"
+
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Adressböker"
+
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Heel Naam"
+
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Tohuus"
+
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Work"
+#~ msgstr "Arbeit"
+
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefoonnummern"
+
+#~ msgctxt "@title:column the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Vörtrocken Nettpostadress"
+
+#~ msgctxt "@title:column all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "All Nettpostadressen"
+
+#~ msgid "<group>"
+#~ msgstr "<Koppel>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Anner Adressen"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Binnen Dien List gifft dat keen Adressen. Föög bitte eerst en poor "
+#~ "Adressen ut Dien Adressbook to, un versöök dat dann nochmaal."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Nieg Verdeellist"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Bitte giff den Naam in:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Dat gifft al en Verdeellist mit den Naam <b>%1</b>. Bitte söök en "
+#~ "anner Naam ut.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Verdeellisten"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Kategorien bewerken"
+
+#~ msgid "Apply changes and close"
+#~ msgstr "Ännern anwennen un tomaken"
+
+#~ msgid ""
+#~ "When clicking <b>Ok</b>, the settings will be handed over to the program "
+#~ "and the dialog will be closed."
+#~ msgstr ""
+#~ "Klickst Du op <bOK</b>, warrt de Instellen an dat Programm övergeven un "
+#~ "de Dialoog tomaakt."
+
+#~ msgid "Cancel changes and close"
+#~ msgstr "Ännern torüchtrecken un tomaken"
+
+#~ msgid ""
+#~ "When clicking <b>Cancel</b>, the settings will be discarded and the "
+#~ "dialog will be closed."
+#~ msgstr ""
+#~ "Klickst Du op <b>Afbreken</b>, warrt de Instellen torüchtrocken un de "
+#~ "Dialoog tomaakt."
+
+#~ msgid ""
+#~ "When clicking <b>Help</b>, a separate KHelpCenter window will open "
+#~ "providing more information about the settings."
+#~ msgstr ""
+#~ "Klickst Du op <b>Hülp</b>, warrt en KDE-Hülpzentrumfinster mit mehr "
+#~ "Informatschonen över de Instellen wiest."
+
+#~ msgid "New category"
+#~ msgstr "Nieg Kategorie"
+
+#~ msgid "New subcategory"
+#~ msgstr "Nieg Ünnerkategorie"
+
+#~ msgid "Select Categories"
+#~ msgstr "Kategorien utsöken"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "URL %1 wiesen"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Numeersch Weert"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolsch"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datum & Tiet"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfelder"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Fellerdialoog vun Qt-Designer"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer-Dateien"
+
+#~ msgid "Import Page"
+#~ msgstr "Siet importeren"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b> Wohrschoen:</b>Qt-Designer lett sik nich finnen, wohrschienlich "
+#~ "is dat nich installeert. Du kannst also bloots vörhannen Designer-Dateien "
+#~ "importeren.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Vöransicht för utsöchte Siet"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Mit dit Moduul kannst Du Dien egen graafsche Bedeenelementen "
+#~ "(<i>Widgets</i>) tofögen un Dien egen Weerten na %1 sekern. Maak dat so:</"
+#~ "p><ol><li>Klick op <i>Mit Qt-Designer bewerken</i></li><li>Binnen den "
+#~ "Dialoog klickst Du op <i>Widget</i>, un denn op <i> OK</i></li><li>Föög "
+#~ "Dien Bedeenelementen na't Kiekwark to</li><li>Seker de Datei binnen den "
+#~ "Orner, den Qt-Designer vörsleit</li><li>Maak Qt-Designer to</li></"
+#~ "ol><p>Wenn Du al en Designer-Datei (*.ui) jichtenswo op de Fastplaat "
+#~ "hest, klick op <i>Siet importeren</i></p><p><b>Wichtig:</b> De Naam vun "
+#~ "elk Ingaavelement, dat Du na't Kiekwark inbuust, mutt mit <i>X_</i> "
+#~ "anfangen. Wenn also Dien Element Dien egen Indrag <i>X-Bsp</i> tohören "
+#~ "schall, sett de <i>Naam</i>-Egenschapp vun't Element op <i>X_Bsp</i>.</"
+#~ "p><p><b>Wichtig:</b> Dat Element warrt egen Feller mit den Programmnaam "
+#~ "&quot;%2&quot; bewerken. Wenn Du den Programmnaam för't Bewerken ännern "
+#~ "wullt, legg den Elementnaam in Qt-Designer fast.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Wodennig funkscheneert dat?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Siet wegdoon"
+
+#~ msgid "Import Page..."
+#~ msgstr "Siet importeren..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Mit Qt-Designer bewerken..."
+
+#~ msgid "Key:"
+#~ msgstr "Slötel:"
+
+#~ msgid "Type:"
+#~ msgstr "Typ:"
+
+#~ msgid "Classname:"
+#~ msgstr "Klassnaam:"
+
+#~ msgid "Description:"
+#~ msgstr "Beschrieven:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Instellenweert ännern"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Inrichthölper"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Regeln"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Regeln inrichten"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Born"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Teel"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Beding"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Ännern"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Ännern inrichten"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Akschoon"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Optschoon"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Weert"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Beseker bitte, dat de Programmen nich loopt, bides se de Hölper instellen "
+#~ "will; sünst köönt Di de Ännern wegkamen."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Wohrschoen"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Hölper nu bruken"
+
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Infögen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Datei infögen"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The external editor is still running.<nl/>Do you want to stop the editor "
+#~ "or keep it running?<nl/><warning>Stopping the editor will cause all your "
+#~ "unsaved changes to be lost.</warning>"
+#~ msgstr ""
+#~ "De externe Editor löppt noch.<nl/>Wullt Du em wiederlopen laten oder "
+#~ "utmaken?<nl/><warning>Maakst Du em ut, kaamt Dien nich sekerte Ännern weg."
+#~ "</warning>"
+
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Extern Editor löppt"
+
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Editor utmaken"
+
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Wiederlopen laten"
+
+#~ msgctxt "incidence category: appointment"
+#~ msgid "Appointment"
+#~ msgstr "Termin"
+
+#~ msgctxt "incidence category"
+#~ msgid "Business"
+#~ msgstr "Warflich"
+
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Mööt"
+
+#~ msgctxt "incidence category: phone call"
+#~ msgid "Phone Call"
+#~ msgstr "Anroop"
+
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Wiederbillen"
+
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "Fierdag"
+
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Oorlööf"
+
+#~ msgctxt ""
+#~ "incidence category: examples: anniversary of historical or personal "
+#~ "event; big date; remembrance, etc"
+#~ msgid "Special Occasion"
+#~ msgstr "Besünner Begeefnis"
+
+#~ msgctxt "incidence category"
+#~ msgid "Personal"
+#~ msgstr "Persöönlich"
+
+#~ msgctxt ""
+#~ "incidence category: typically associated with leaving home for business, "
+#~ "and not pleasure"
+#~ msgid "Travel"
+#~ msgstr "Reis"
+
+#~ msgctxt "incidence category"
+#~ msgid "Miscellaneous"
+#~ msgstr "Anner Saken"
+
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Geboortsdag"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Moduul ahn Naam"
+
+#~ msgid "New category entry"
+#~ msgstr "Nieg Kategorie-Indrag"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr ""
+#~ "Giff bitte den Text in, den Du as nieg Kategorie oder Ünnerkategorie "
+#~ "bruken wullt"
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Den Indrag de Kategorienlist tofögen"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr ""
+#~ "Klick op dissen Knoop, wenn Du den Indrag na de Kategorienlist infögen "
+#~ "wullt"
+
+#~ msgid "A&dd"
+#~ msgstr "&Tofögen"
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr "Den Indrag as Ünnerkategorie vun de utsöchte Kategorie tofögen"
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Klick op dissen Knoop, wenn Du den Indrag as Ünnerkategorie na de "
+#~ "opstunns utsöchte Kategorie infögen wullt"
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Ü&nnerkategorie tofögen"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "De utsöchte Kategorie wegmaken"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr ""
+#~ "Klick op dissen Knoop, wenn Du de utsöchte Kategorie ut de Kategorienlist "
+#~ "wegmaken wullt"
+
+#~ msgid "Category list"
+#~ msgstr "Kategorienlist"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Disse List wiest all verföögbor Kategorien, Du kannst so vele "
+#~ "Ünnerkategorien tofögen, as Du wullt."
+
+#~ msgid "Default Category"
+#~ msgstr "Standardkategorie"
+
+#~ msgid "Category"
+#~ msgstr "Kategorie"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "Köör &torüchnehmen"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "Kategorien &bewerken..."
+
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Jo"
+
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Nee"
+
+#~ msgid "Organizer"
+#~ msgstr "Mötenkalenner"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Is all-day"
+#~ msgstr "is heeldags"
+
+#~ msgid "Has duration"
+#~ msgstr "duert"
+
+#~ msgid "Summary"
+#~ msgstr "Tosammenfaten"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Secrecy"
+#~ msgstr "Vertrolichkeit"
+
+#~ msgid "Priority"
+#~ msgstr "Prioriteet"
+
+#~ msgid "Location"
+#~ msgstr "Oort"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorien"
+
+#~ msgid "Alarms"
+#~ msgstr "Alarms"
+
+#~ msgid "Resources"
+#~ msgstr "Ressourcen"
+
+#~ msgid "Relations"
+#~ msgstr "Betöög"
+
+#~ msgid "Attachments"
+#~ msgstr "Bilagen"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Utnahmen Daten"
+
+#~ msgid "Exception Times"
+#~ msgstr "Utnahmen Tieden"
+
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Opstellt"
+
+#~ msgid "Related Uid"
+#~ msgstr "Tohören UID"
+
+#~ msgid "Has End Date"
+#~ msgstr "endt"
+
+#~ msgid "End Date"
+#~ msgstr "Enndatum"
+
+#~ msgid "Has Start Date"
+#~ msgstr "start"
+
+#~ msgid "Has Due Date"
+#~ msgstr "löppt af"
+
+#~ msgid "Due Date"
+#~ msgstr "Afloopdatum"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Afsluutdatum"
+
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Afslaten"
+
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Afslaten"
+
+#~ msgid "Local"
+#~ msgstr "Lokaal"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "Cached IMAP"
+#~ msgstr "Wohrt IMAP"
+
+#~ msgid "News"
+#~ msgstr "Narichtenkrink"
+
+#~ msgid "None"
+#~ msgstr "Keen"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBox"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Nettpostorner"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Narichtenkrink"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "Afkoppelt IMAP"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Lokaal Postfach"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Nich begäng"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "Disse Naricht nich nochmaal wiesen"
+
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "Naricht\n"
+#~ "<b>%1</b><br /><b>%2</b><br />hett disse Notiz to'n Opduken brocht:<br />"
+#~ "%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Pünkt topassen"
+
+#~ msgid "Display Message"
+#~ msgstr "Naricht wiesen"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Koppreeg infarven"
+
+#~ msgid "Mark as Read"
+#~ msgstr "As leest markeren"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1> List vun sammelte Notizen</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Sammelte Notizen"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Bargt Ünnertekenkeed"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Passt op reguleren Utdruck"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Passt op reguleren Utdruck (mit Groot-/Lüttschrievenverscheel)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Is nau dat sülve as"
+
+#~ msgid "Less Than"
+#~ msgstr "Lütter as"
+
+#~ msgid "Greater Than"
+#~ msgstr "Grötter as"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Anner Regelnaam utsöken"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Disse Regelnaam warrt al bruukt, bitte söök en annern ut:"
+
+#~ msgid "rule %1"
+#~ msgstr "Regel %1"
+
+#~ msgid "Not"
+#~ msgstr "Nich"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Dissen Beding ümdreihen"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "De Koppreeg utsöken, op de dissen Beding passen schall"
+
+#~ msgid "Select the type of match"
+#~ msgstr "De Oort vun dat Passen utsöken"
+
+#~ msgid "The condition for the match"
+#~ msgstr "De Beding för't Passen"
+
+#~ msgid "Select an action."
+#~ msgstr "Akschoon utsöken"
+
+#~ msgid "Properties"
+#~ msgstr "Egenschappen"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Naam:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Koppeln:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "Koppel &tofögen"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "Regel automaatsch a&flopen laten"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "&Regel gellt över:"
+
+#~ msgid "Conditions"
+#~ msgstr "Bedingen"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "A&ll Bedingen opfüllen"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "To&minnst een Beding opfüllen"
+
+#~ msgid "Actions"
+#~ msgstr "Akschonen"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " Dag"
+#~ msgstr[1] " Daag"
+
+#~ msgid "New rule"
+#~ msgstr "Nieg Regel"
+
+#~ msgid "Edit rule"
+#~ msgstr "Regel bewerken"
+
+#~ msgid "Remove rule"
+#~ msgstr "Regel wegdoon"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>all Koppeln</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "Bloots Regeln &wiesen för Koppel:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Regel-Editor"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Regel bewerken"
+
+#~ msgid "Reload &List"
+#~ msgstr "List nieg &laden"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr ""
+#~ "Legg fast, welk Nettpostornern Du binnen Dien Orneransicht hebben wullt"
+
+#~ msgid "S&earch:"
+#~ msgstr "Sök&en:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "&Boomansicht utmaken"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "Bloots &bestellte"
+
+#~ msgid "&New only"
+#~ msgstr "Bloots &niege"
+
+#~ msgid "Current changes:"
+#~ msgstr "Aktuelle Ännern:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Beschrieven"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Bestellen"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Afbestellen"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Bi to laden... (1 passt)"
+#~ msgstr[1] "Bi to laden... (%1 passt)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (1 passt)"
+#~ msgstr[1] "%2: (%1 passt)"
+
+#~ msgid "View Columns"
+#~ msgstr "Striepen wiesen"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Konflikt funnen"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "En Konflikt wöör opdeckt. Dat bedüüdt wull, Een hett den sülven Indrag op "
+#~ "den Server ännert, den Du lokaal bewarkt hest.<nl/><note>Du muttst Dien "
+#~ "Nettpost nochmaal afropen, wenn Du Dien Ännern na den Server överdregen "
+#~ "wullt.</note>"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Lokale bruken"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take your local copy of the incidence"
+#~ msgstr "Dien lokaal Kopie vun den Indrag bruken"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Local\" button to make "
+#~ "sure your local copy is used."
+#~ msgstr ""
+#~ "Dat gifft en Konflikt twischen Dien lokale Kopie vun den Indrag un den "
+#~ "Indrag op den Server. Klick op \"Lokale bruken\", wenn Du besekern wullt, "
+#~ "Dien lokale Kopie warrt bruukt."
+
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Niege bruken"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take the server copy of the incidence"
+#~ msgstr "De Server-Kopie vun den Indrag bruken"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take New\" button to use the "
+#~ "server copy, thereby overwriting your local copy"
+#~ msgstr ""
+#~ "Dat gifft en Konflikt twischen Dien lokale Kopie vun den Indrag un den "
+#~ "Indrag op den Server. Klick op \"Lokale bruken\", wenn Du besekern wullt, "
+#~ "Dien lokale Kopie warrt bruukt."
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Beed bruken"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both copies of the incidence"
+#~ msgstr "Beed Kopien vun den Indrag bruken"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Both\" button to keep "
+#~ "both the local and the server copies."
+#~ msgstr ""
+#~ "Dat gifft en Konflikt twischen Dien lokale Kopie vun den Indrag un den "
+#~ "Indrag op den Server. Klick op \"Beed bruken\", wenn Du besekern wullt, "
+#~ "beed Kopien warrt wohrt."
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Lokaal Indrag"
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Tosamenfaten för lokaal Indrag"
+
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Tolest ännert:"
+
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Verleden Ännern fastleggen"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Enkelheiten wiesen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Hide/Show incidence details"
+#~ msgstr "Indrag-Enkelheiten versteken/wiesen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Press this button to toggle the incidence details display."
+#~ msgstr ""
+#~ "Klick op dissen Knoop, wenn Du dat Wiesen vun de Indrag-Enkelheiten an- "
+#~ "oder utmaken wullt."
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Verscheel wiesen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show the differences between the two incidences"
+#~ msgstr "Den Verscheel twischen de twee Indrääg wiesen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press the \"Show Differences\" button to see the specific differences "
+#~ "between the incidences which are in conflict."
+#~ msgstr ""
+#~ "Klick op den Knoop \"Verscheel wiesen\", wenn Du de Verschelen twischen "
+#~ "de Indrääg mit den Konflikt bekieken wullt."
+
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Instellen synkroniseren"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Instellen synkroniseren"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Instellen synkroniseren"
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Bi Konflikt lokaal Indrag bruken"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Bi Konflikten den lokalen Indrag bruken"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the local copy."
+#~ msgstr ""
+#~ "Gifft dat en Konflikt twischen de lokale Kopie vun en Indrag un de Kopie "
+#~ "op den Server, verdwingt disse Optschoon dat Bruken vun de lokale Kopie."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Bi Konflikt feern Indrag bruken"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Bi Konflikten den feernen Indrag bruken"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the remote "
+#~ "copy."
+#~ msgstr ""
+#~ "Gifft dat en Konflikt twischen de lokale Kopie vun en Indrag un de Kopie "
+#~ "op den Server, verdwingt disse Optschoon dat Bruken vun de feerne Kopie."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Bi Konflikt nieger Indrag bruken"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Bi Konflikten den niegeren Indrag bruken"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the newest "
+#~ "version available."
+#~ msgstr ""
+#~ "Gifft dat en Konflikt twischen de lokale Kopie vun en Indrag un de Kopie "
+#~ "op den Server, verdwingt disse Optschoon dat Bruken vun de niegere Kopie."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Bi elkeen Konflikt nafragen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Bi elkeen Konflikt twischen Kopien nafragen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to ask the user which "
+#~ "version they want to keep."
+#~ msgstr ""
+#~ "Gifft dat en Konflikt twischen de lokale Kopie vun en Indrag un de Kopie "
+#~ "op den Server, warrt mit disse Optschoon de Bruker na de Kopie fraagt, de "
+#~ "he bruken will."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Bi Konflikt beed bruken"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Bi Konflikten beed Kopien bruken"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to keep both versions of "
+#~ "the incidence."
+#~ msgstr ""
+#~ "Gifft dat en Konflikt twischen de lokale Kopie vun en Indrag un de Kopie "
+#~ "op den Server, warrt mit disse Optschoon beed Verschonen vun den Indrag "
+#~ "wohrt."
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "Disse Instellen bi all Konflikten bi disse Synkroniseren bruken"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Apply the preference to all conflicts that may occur during the sync"
+#~ msgstr ""
+#~ "Disse Instellen bi all Konflikten bruken, de dat bi disse Synkroniseren "
+#~ "gifft"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press this button to apply the selected preference to all future "
+#~ "conflicts that might occur during this sync."
+#~ msgstr ""
+#~ "Klick op dissen Knoop, wenn Du disse Instellen bi all tokamen Konflikten "
+#~ "bruken wullt, de dat bi disse Synkroniseren noch gifft."
+
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Lokaal Begeefnis"
+
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Lokaal Opgaav"
+
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Lokaal Daagbook"
+
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Nieg Begeefnis"
+
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Nieg Opgaav"
+
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Nieg Daagbook"
+
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Enkelheiten versteken"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Indrag-Enkelheiten"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "This area shows the incidence details"
+#~ msgstr "Hier warrt de Indrag-Enkelheiten wiest"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Enkelheiten wiesen..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Verschelen twischen %1 un %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Verschelen vun %1"
+
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Lokaal Indrag"
+
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Feern Indrag"
+
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Enkelheiten wiesen"
+
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Enkelheiten versteken"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "This area shows the incidencedetails"
+#~ msgstr "Hier warrt de Indrag-Enkelheiten wiest"
+
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "De externe Editor löppt noch.\n"
+#~ "Wullt Du em utmaken oder schall he wiederlopen?"
+
+#~ msgid "Floating"
+#~ msgstr "Sweven"
+
+#~ msgid "Local entry"
+#~ msgstr "Lokaal Indrag"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Nieg (feern) Indrag"
+
+#~ msgid "Plain"
+#~ msgstr "Normaal"
+
+#~ msgid "Unquoted"
+#~ msgstr "Ahn Goosfööt"
+
+#~ msgid "Bracketed"
+#~ msgstr "In Klemmen"
+
+#~ msgid "Undefined"
+#~ msgstr "Nich defineert"
+
+#~ msgid "File to import:"
+#~ msgstr "Datei för't Importeren:"
+
+#~ msgid "Separator:"
+#~ msgstr "Trennteken:"
+
+#~ msgid "Tab"
+#~ msgstr "Tab"
+
+#~ msgid "Space"
+#~ msgstr "Leerteken"
+
+#~ msgid "Header"
+#~ msgstr "Koppindrag"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "An den utsöchten Striep towiesen"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Towiesen vun utsöchten Striep wegmaken"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "An Vörlaag towiesen..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Disse Vörlaag sekern"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Vörankamen vun't Laden"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Bitte tööv, wielt de Datei laadt warrt."
+
+#~ msgid "Template Selection"
+#~ msgstr "Vörlaag utsöken"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Bitte söök en Vörlaag ut, de op de CSV-Datei passt."
+
+#~ msgid "Importing Progress"
+#~ msgstr "Vörankamen vun't Importeren"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Bitte tööv, wielt de Daten importeert warrt."
+
+#~ msgid "Template Name"
+#~ msgstr "Naam vun de Vörlaag"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Geboortsdag versteken"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Postadressen versteken"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Nettpostadressen versteken"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Telefoonnummern versteken"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Nettsieden (URLs) versteken"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Kortnarichten-Adressen versteken"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Egen Feller versteken"
+
+#~ msgid "Test"
+#~ msgstr "Test"
+
+#~ msgid "Suggestions"
+#~ msgstr "Vörslääg"
+
+#~ msgid "Ignore"
+#~ msgstr "Övergahn"
+
+#~ msgid "Add to Dictionary"
+#~ msgstr "Na Wöörbook tofögen"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "Text"
+
+#~ msgid "Standard"
+#~ msgstr "Standard"
+
+#~ msgid "Bulleted List (Disc)"
+#~ msgstr "Pünkt-List (Schiev)"
+
+#~ msgid "Bulleted List (Circle)"
+#~ msgstr "Pünkt-List (Krink)"
+
+#~ msgid "Bulleted List (Square)"
+#~ msgstr "Pünkt-List (Veerkant)"
+
+#~ msgid "Ordered List (Decimal)"
+#~ msgstr "Tellt List (Dezimaal)"
+
+#~ msgid "Ordered List (Alpha lower)"
+#~ msgstr "Tellt List (Lüttbookstaven)"
+
+#~ msgid "Ordered List (Alpha upper)"
+#~ msgstr "Tellt List (Grootbookstaven)"
+
+#~ msgid "No Suggestions"
+#~ msgstr "Keen Vörslääg"
+
+#~ msgid "Starting the ioslave for protocol %1 failed."
+#~ msgstr "De In-/Utgaavdeenst för't Protokoll \"%1\" lett sik nich opropen."
+
+#~ msgid "Unknown error %1."
+#~ msgstr "Nich begäng Fehler: %1."
+
+#~ msgid "Error"
+#~ msgstr "Fehler"
+
+#~ msgid "Cc"
+#~ msgstr "Kopie"
+
+#~ msgid "Bcc"
+#~ msgstr "Blindkopie"
+
+#~ msgid "All"
+#~ msgstr "All"

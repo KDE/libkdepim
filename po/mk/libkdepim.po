@@ -1,0 +1,1696 @@
+# Copyright (C) 2006, 2007 Free Software Foundation, Inc.
+# Bozidar Proevski <bobibobi@freemail.com.mk>, 2005, 2007.
+# translation of libkdepim.po to Macedonian
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2007-02-28 14:09+0100\n"
+"Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
+"Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
+"2;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Ја откажува операцијата."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Прекинувам..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Поврзувањето е криптирано"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Поврзувањето е некриптирано"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Отвора дијалог за детален прогрес"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Го прикажува дијалогот за детален прогрес"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Го сокрива дијалогот за детален прогрес"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Повеќе"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Помалку"
+
+#~ msgid "Choose..."
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Прикажи разлики"
+
+#, fuzzy
+#~| msgid "A&dd"
+#~ msgid "Add"
+#~ msgstr "&Додај"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "Remove"
+#~ msgstr "<< &Отстрани"
+
+#, fuzzy
+#~| msgid "Unknown problem with email address"
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Непознат проблем со е-поштенската адреса"
+#~ msgstr[1] "Непознат проблем со е-поштенската адреса"
+#~ msgstr[2] "Непознат проблем со е-поштенската адреса"
+
+#, fuzzy
+#~| msgid "Import Text File"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Внес на текстуална датотека"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Дали навистина сакате да го избришете „<b>%1</b>“?</qt>"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "Конфигурирај редослес за довршување..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Скорешни адреси"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP-сервер %1"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search email:"
+#~ msgstr "Пребарајте:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search"
+#~ msgstr "Пребарајте:"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Е-пошт. адреса"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Select"
+#~ msgstr "Избор"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "&Unselect"
+#~ msgstr "Избор"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Search in result..."
+#~ msgstr "Вчитувам..."
+
+#, fuzzy
+#~| msgid "Send mail to '%1'"
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Испрати пошта на „%1“"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Конфигурирај редослес за довршување..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Уредување редослед на довршување"
+
+#, fuzzy
+#~| msgid "Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Скорешни адреси"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Е-пошт. адреса"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Уредување редослед на довршување"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP-сервер %1"
+
+#, fuzzy
+#~| msgid "Move rule up"
+#~ msgid "Move Up"
+#~ msgstr "Го преместува превилото нагоре"
+
+#, fuzzy
+#~| msgid "Move rule down"
+#~ msgid "Move Down"
+#~ msgstr "Го преместува превилото надолу"
+
+#, fuzzy
+#~| msgid "&Today"
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Денес"
+
+#, fuzzy
+#~| msgid "To&morrow"
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Утре"
+
+#, fuzzy
+#~| msgid "Next &Week"
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Следната &недела"
+
+#, fuzzy
+#~| msgid "Next M&onth"
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Следниот &месец"
+
+#, fuzzy
+#~| msgid "No Date"
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Нема датум"
+
+#, fuzzy
+#~| msgid ""
+#~| "The VCard was added to your addressbook; you can add more information to "
+#~| "this entry by opening the addressbook."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "VCard-картичката беше додадена во Вашиот адресар. Можете да додадете "
+#~ "повеќе информација на овој запис со отворање на адресарот."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr "<qt>Е-поштенската адреса <b>%1</b> е веќе во Вашиот адресар.</qt>"
+
+#, fuzzy
+#~| msgid "No description available"
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Нема достапен опис"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "&Адресар"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr "<qt>Е-поштенската адреса <b>%1</b> е веќе во Вашиот адресар.</qt>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Божидар Проевски"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "bobibobi@freemail.com.mk"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP-сервер %1"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "(c), 2004 Tobias Koenig"
+#~ msgid "Tobias Koenig"
+#~ msgstr "(c), 2004 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Уреди..."
+
+#, fuzzy
+#~ msgid "Remove Host"
+#~ msgstr "<< &Отстрани"
+
+#, fuzzy
+#~| msgid "LDAP server %1"
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-сервер %1"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "Уреди..."
+
+#, fuzzy
+#~ msgid "&Remove Host"
+#~ msgstr "<< &Отстрани"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Full Name"
+#~ msgstr "Име"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Е-пошта"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Home Number"
+#~ msgstr "Скриј тел. броеви"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Work Number"
+#~ msgstr "Скриј тел. броеви"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Mobile Number"
+#~ msgstr "Скриј тел. броеви"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgid "Fax Number"
+#~ msgstr "Скриј тел. броеви"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Статус"
+
+#, fuzzy
+#~| msgid "Organizer"
+#~ msgid "Organization"
+#~ msgstr "Организатор"
+
+#~ msgid "Department"
+#~ msgstr "Оддел"
+
+#, fuzzy
+#~| msgid "Show Postal Addresses"
+#~ msgid "Postal Address"
+#~ msgstr "Прикажи поштенска адреса"
+
+#~ msgid "Description"
+#~ msgstr "Опис"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Е-пошта"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Статус"
+
+#, fuzzy
+#~| msgid "Import starts at row:"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Внесот започнува од редица:"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgid "Search for:"
+#~ msgstr "Пребарајте:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Име"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Е-пошта"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Скриј тел. броеви"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Скриј тел. броеви"
+
+#, fuzzy
+#~| msgid "Search:"
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "Пребарајте:"
+
+#, fuzzy
+#~| msgid "Conditions"
+#~ msgid "Contains"
+#~ msgstr "Услови"
+
+#, fuzzy
+#~| msgid "Loading..."
+#~ msgid "Searching..."
+#~ msgstr "Вчитувам..."
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Select All"
+#~ msgstr "Избор"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Unselect All"
+#~ msgstr "Избор"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "Add Selected"
+#~ msgstr "Избор на адреса"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Конфигурирај редослес за довршување..."
+
+#, fuzzy
+#~| msgid "Copy rule"
+#~ msgid "Copy"
+#~ msgstr "Копира правило"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "&Remove"
+#~ msgstr "<< &Отстрани"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Уредување скорешни адреси"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "&Адресар"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Достапни страници"
+
+#, fuzzy
+#~| msgid "Description:"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Опис:"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission complete. %1 new message in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~| msgid_plural ""
+#~| "Transmission complete. %1 new messages in %2 KB (%3 KB remaining on the "
+#~| "server)."
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Преносот е завршен. %1 нова порака во %2 KB (%3 KB преостануваат на "
+#~ "серверот)."
+#~ msgstr[1] ""
+#~ "Преносот е завршен. %1 нови пораки во %2 KB (%3 KB преостануваат на "
+#~ "серверот)."
+#~ msgstr[2] ""
+#~ "Преносот е завршен. %1 нови пораки во %2 KB (%3 KB преостануваат на "
+#~ "серверот)."
+
+#, fuzzy
+#~| msgid "Transmission complete. %1 message in %2 KB."
+#~| msgid_plural "Transmission complete. %1 messages in %2 KB."
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Преносот е завршен. %1 порака во %2 KB."
+#~ msgstr[1] "Преносот е завршен. %1 пораки во %2 KB."
+#~ msgstr[2] "Преносот е завршен. %1 пораки во %2 KB."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Преносот е завршен. %1 нова порака."
+#~ msgstr[1] "Преносот е завршен. %1 нови пораки."
+#~ msgstr[2] "Преносот е завршен. %1 нови пораки."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Преносот е завршен. Нема нови пораки."
+
+#, fuzzy
+#~| msgid ""
+#~| "Transmission for account %4 complete. %1 new message in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~| msgid_plural ""
+#~| "Transmission for account %4 complete. %1 new messages in %2 KB (%3 KB "
+#~| "remaining on the server)."
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Преносот за сметката %4 е завршен. %1 нова порака во %2 KB (%3 KB "
+#~ "преостануваат на серверот)."
+#~ msgstr[1] ""
+#~ "Преносот за сметката %4 е завршен. %1 нови пораки во %2 KB (%3 KB "
+#~ "преостануваат на серверот)."
+#~ msgstr[2] ""
+#~ "Преносот за сметката %4 е завршен. %1 нови пораки во %2 KB (%3 KB "
+#~ "преостануваат на серверот)."
+
+#, fuzzy
+#~| msgid "Transmission for account %3 complete. %1 message in %2 KB."
+#~| msgid_plural "Transmission for account %3 complete. %1 messages in %2 KB."
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Преносот за сметката %3 е завршен. %1 порака во %2 KB."
+#~ msgstr[1] "Преносот за сметката %3 е завршен. %1 пораки во %2 KB."
+#~ msgstr[2] "Преносот за сметката %3 е завршен. %1 пораки во %2 KB."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Преносот за сметката %2 е завршен. %1 нова порака."
+#~ msgstr[1] "Преносот за сметката %2 е завршен. %1 нови пораки."
+#~ msgstr[2] "Преносот за сметката %2 е завршен. %1 нови пораки."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Преносот за сметката %1 е завршен. Нема нови пораки."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Име"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Е-пошта"
+
+#, fuzzy
+#~ msgid "Total Messages"
+#~ msgstr "Порака"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Unread Messages"
+#~ msgstr "Порака"
+
+#~ msgid "Send SMS"
+#~ msgstr "Испраќање СМС"
+
+#~ msgid "Message"
+#~ msgstr "Порака"
+
+#~ msgid "Recipient:"
+#~ msgstr "Примач:"
+
+#~ msgid "Send"
+#~ msgstr "Испрати"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgid "Select Address Book"
+#~ msgstr "&Адресар"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> was added to your addressbook; you can "
+#~| "add more information to this entry by opening the addressbook.</qt>"
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>Е-поштенската адреса <b>%1</b> беше додадена во Вашиот адресар. Може "
+#~ "да додадете повеќе информација на овој запис со отворање на адресарот.</"
+#~ "qt>"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "утре"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "денес"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "вчера"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "денес"
+
+#~ msgid "To"
+#~ msgstr "До"
+
+#~ msgid "CC"
+#~ msgstr "CC"
+
+#~ msgid "BCC"
+#~ msgstr "BCC"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Избор на адреса"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&Филтер за:"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&До >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&CC >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&BCC >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Отстрани"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Зачувај како листа за &дистрибуција..."
+
+#~ msgid "Address Selection"
+#~ msgstr "Избор на адреса"
+
+#~ msgid "&To >>"
+#~ msgstr "&До >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&CC >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "Избрани адре&си"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Филтер за:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Зачувај како листа за &дистрибуција..."
+
+#~ msgid "Show Birthday"
+#~ msgstr "Прикажи роденден"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Прикажи поштенска адреса"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Прикажи е-поштенска адреса"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Прикажи тел. броеви"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Прикажи веб-страници (URL)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Прикажи адреси за инстант-пораки"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Прикажи сопствени полиња"
+
+#~ msgid "SMS"
+#~ msgstr "СМС"
+
+#~ msgid "Homepage"
+#~ msgstr "Домашна страница"
+
+#~ msgid "Notes"
+#~ msgstr "Белешки"
+
+#~ msgid "Profession"
+#~ msgstr "Професија"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Име на асистент"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Име на менаџер"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Име на партнер"
+
+#~ msgid "Office"
+#~ msgstr "Канцеларија"
+
+#~ msgid "IM Address"
+#~ msgstr "Адреса за инстант-пораки"
+
+#~ msgid "Anniversary"
+#~ msgstr "Годишнина"
+
+#, fuzzy
+#~| msgid "Address book:"
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "Адресар:"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Нема множ. апликации што може да се изврши. Одете до дијалогот за "
+#~ "конфигурација и конфигурирајте ја."
+
+#~ msgid "Call number %1"
+#~ msgstr "Повикај го бројот %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Испрати факс на %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Прикажи ја адресата на мапата"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Испрати СМС на %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Отвори го URL %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Муабети со %1"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "&Адресар"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Име"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Име"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Домашна страница"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Скриј тел. броеви"
+
+#~ msgid "<group>"
+#~ msgstr "<група>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Други адреси"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Во вашата листа нема адреси. Прво додајте некои адреси од Вашиот адресар "
+#~ "и потоа обидете се повторно."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Нова листа за дистрибуција"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Внесете име:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Листата за дистрибуција со името <b>%1</b> веќе постои. Изберете "
+#~ "различно име.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Листи за дистрибуција"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "Зачувај во датотека"
+
+#, fuzzy
+#~| msgid "Save to File"
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Зачувај во датотека"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Уредувач на правила"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Уредувач на правила"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Уредување категории"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "Категорија"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "Категорија"
+
+#~ msgid "Select Categories"
+#~ msgstr "Избирање категории"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Прикажувам URL %1"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Нумеричка вредност"
+
+#~ msgid "Boolean"
+#~ msgstr "Логичка"
+
+#~ msgid "Date & Time"
+#~ msgstr "Датум и време"
+
+#~ msgid "Date"
+#~ msgstr "Датум"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer-датотеки"
+
+#~ msgid "Import Page"
+#~ msgstr "Внесување страница"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Преглед на избраната страница"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><p>This section allows you to add your own GUI  Elements "
+#~| "('<i>Widgets</i>') to store your own values into %1. Proceed as "
+#~| "described below:</p><ol><li>Click on '<i>Edit with Qt Designer</"
+#~| "i>'<li>In the dialog, select '<i>Widget</i>', then click <i>OK</"
+#~| "i><li>Add your widgets to the form<li>Save the file in the directory "
+#~| "proposed by Qt Designer<li>Close Qt Designer</ol><p>In case you already "
+#~| "have a designer file (*.ui) located somewhere on your hard disk, simply "
+#~| "choose '<i>Import Page</i>'</p><p><b>Important:</b> The name of each "
+#~| "input widget you place within the form must start with '<i>X_</i>'; so "
+#~| "if you want the widget to correspond to your custom entry '<i>X-Foo</"
+#~| "i>', set the widget's <i>name</i> property to '<i>X_Foo</i>'.</"
+#~| "p><p><b>Important:</b> The widget will edit custom fields with an "
+#~| "application name of %2.  To change the application name to be edited, "
+#~| "set the widget name in Qt Designer.</p></qt>"
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Овој оддел Ви овозможува да додадете Ваши графички елементи  "
+#~ "(„<i>графички контроли</i>“) за зачувување на Ваши сопствени вредности во "
+#~ "%1. Продолжете како што е објаснето подолу:</p><ol><li>Кликнете на "
+#~ "„<i>Уреди со Qt-Дизајнер</i>“<li>во дијалогот, изберете „<i>Widget</i>“, "
+#~ "потоа кликнете на <i>Во ред</i><li>Додајте ги Вашите графички контроли на "
+#~ "формата<li>Зачувајте ја датотеката во папката предложена од Qt-"
+#~ "Дизајнер<li>Затворете го Qt-Дизајнер</ol><p>Во случај веќе да располагате "
+#~ "со designer-датотека (*.ui) која се наоѓа некаде на дискот, изберете "
+#~ "„<i>Внеси страница</i>“</p><p><b>Важно:</b> Името на секоја контрола за "
+#~ "внес што ќе ја поставите на формата мора да започнува со „<i>X_</i>“. "
+#~ "Така; ако сакате контролата да одговара на Вашиот сопствен внес „<i>X-"
+#~ "Foo</i>“ поставете го својството <i>name</i> на контролата на „<i>X_Foo</"
+#~ "i>“.</p><p><b>Важно:</b> Контролата ќе уредува сопствени полиња со име на "
+#~ "апликација %2.  За да го смените името на апликацијата за уредување, "
+#~ "поставете го името на контролата во Qt-дизајнер.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Како функционира ова?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Избриши страница"
+
+#~ msgid "Import Page..."
+#~ msgstr "Внеси страница..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Уреди со Qt-Дизајнер..."
+
+#~ msgid "Key:"
+#~ msgstr "Клуч:"
+
+#~ msgid "Type:"
+#~ msgstr "Тип:"
+
+#~ msgid "Classname:"
+#~ msgstr "Име на класа:"
+
+#, fuzzy
+#~| msgid "Configuration Wizard"
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Волшебник за конфигурација"
+
+#, fuzzy
+#~| msgid "Rules"
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Правила"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Правила"
+
+#, fuzzy
+#~| msgid "Source"
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Извор"
+
+#, fuzzy
+#~| msgid "Target"
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Цел"
+
+#, fuzzy
+#~| msgid "Condition"
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Состојба"
+
+#, fuzzy
+#~| msgid "Changes"
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Измени"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Измени"
+
+#, fuzzy
+#~| msgid "Action"
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Дејство"
+
+#, fuzzy
+#~| msgid "Option"
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Опција"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Вредност"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Избор"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Локација"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "денес"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Локација"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Прикажи роденден"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Неименуван приклучок"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "Нова категорија"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "Категории"
+
+#, fuzzy
+#~ msgid "Default Category"
+#~ msgstr "%1 (стандарден)"
+
+#~ msgid "Category"
+#~ msgstr "Категорија"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "Ур&еди категории..."
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Белешки"
+
+#~ msgid "Organizer"
+#~ msgstr "Организатор"
+
+#~ msgid "Status"
+#~ msgstr "Статус"
+
+#~ msgid "Priority"
+#~ msgstr "Приоритет"
+
+#~ msgid "Location"
+#~ msgstr "Локација"
+
+#~ msgid "Categories"
+#~ msgstr "Категории"
+
+#~ msgid "Alarms"
+#~ msgstr "Аларми"
+
+#~ msgid "Resources"
+#~ msgstr "Ресурси"
+
+#~ msgid "Attachments"
+#~ msgstr "Прилози"
+
+#, fuzzy
+#~| msgid "Bracketed"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Со загради"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgid "Local"
+#~ msgstr "Локален настан"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "News"
+#~ msgstr "Белешки"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "Белешки"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Белешки"
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Име:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Групи:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "&Додај група"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "П&равилото е валидно за:"
+
+#~ msgid "Conditions"
+#~ msgstr "Услови"
+
+#~ msgid "Actions"
+#~ msgstr "Дејства"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " ден"
+#~ msgstr[1] " дена"
+#~ msgstr[2] " дена"
+
+#~ msgid "New rule"
+#~ msgstr "Ново правило"
+
+#~ msgid "Edit rule"
+#~ msgstr "Уредува правило"
+
+#~ msgid "Remove rule"
+#~ msgstr "Отстранува правило"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Уредувач на правила"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Уредување правило"
+
+#~ msgid "Reload &List"
+#~ msgstr "Превчитај &листа"
+
+#~ msgid "S&earch:"
+#~ msgstr "Барањ&е:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Оневозможи преглед со с&тебло"
+
+#~ msgid "&New only"
+#~ msgstr "Само &нови"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Име"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Опис"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Вчитувам... (%1 се совпаѓа)"
+#~ msgstr[1] "Вчитувам... (%1 се совпаѓаат)"
+#~ msgstr[2] "Вчитувам... (%1 се совпаѓаат)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (%1 се совпаѓа)"
+#~ msgstr[1] "%2: (%1 се совпаѓаат)"
+#~ msgstr[2] "%2: (%1 се совпаѓаат)"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Локален настан"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Локален настан"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Прикажи детали"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Прикажи разлики"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Прикажи разлики"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Прикажи разлики"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Локален настан"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Локален настан"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Нов настан"
+
+#, fuzzy
+#~| msgid "&New only"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Само &нови"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Прикажи детали"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Прикажи детали"
+
+#, fuzzy
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Разлики на %1 и %2"
+
+#, fuzzy
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Разлики на %1"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Локален настан"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Прикажи детали"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Прикажи детали"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Име"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "Floating"
+#~ msgstr "Локација"
+
+#~ msgid "Plain"
+#~ msgstr "Обичен"
+
+#~ msgid "Unquoted"
+#~ msgstr "Без наводници"
+
+#~ msgid "Undefined"
+#~ msgstr "Недефиниран"
+
+#~ msgid "File to import:"
+#~ msgstr "Датотека за внесување:"
+
+#~ msgid "Separator:"
+#~ msgstr "Раздвојувач:"
+
+#~ msgid "Tab"
+#~ msgstr "Табулатор"
+
+#~ msgid "Space"
+#~ msgstr "Празно место"
+
+#~ msgid "Header"
+#~ msgstr "Заглавие"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Додели на избраната колона"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Отстрани доделување од избраната колона"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Прогрес на вчитувањето"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Почекајте додека се вчита датотеката"
+
+#~ msgid "Importing Progress"
+#~ msgstr "Прогрес на внесувањето"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Почекајте додека се внесат податоците"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Скриј роденден"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Скриј поштенска адреса"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Скриј е-поштенска адреса"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Скриј тел. броеви"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Скриј веб-страници (URL)"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Скриј адреси за инстант-пораки"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Скриј сопствени полиња"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "Текст"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Suggestions"
+#~ msgstr "Избор"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "Текст"
+
+#~ msgid "Cc"
+#~ msgstr "Cc"
+
+#~ msgid "Bcc"
+#~ msgstr "Bcc"
+
+#~ msgid "All"
+#~ msgstr "Сите"
+
+#, fuzzy
+#~ msgid "Open"
+#~ msgstr "Опција"
+
+#~ msgid "<all groups>"
+#~ msgstr "<сите групи>"
+
+#~ msgid "%1 (Default)"
+#~ msgstr "%1 (стандарден)"
+
+#~ msgid "Unnamed"
+#~ msgstr "Неименувано"
+
+#~ msgid "File I/O Error"
+#~ msgstr "Грешка при В/И на датотеки"
+
+#~ msgid ""
+#~ "The specified file does not exist:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Наведената датотека не постои:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "This is a folder and not a file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ова е папка, а не датотека:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "You do not have read permissions to the file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Немате дозволи за читање за датотеката:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not read file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не можев да ја прочитам датотеката:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не можев да ја отворам датотеката:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while reading file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Грешка при читање на датотеката:\n"
+#~ "%1"
+
+#~ msgid "Could only read %1 bytes of %2."
+#~ msgstr "Можев да прочитам само %1 бајти од %2."
+
+#~ msgid ""
+#~ "File %1 exists.\n"
+#~ "Do you want to replace it?"
+#~ msgstr ""
+#~ "Датотеката %1 постои.\n"
+#~ "Дали сакате да ја замените?"
+
+#~ msgid "Save to File"
+#~ msgstr "Зачувај во датотека"
+
+#~ msgid "&Replace"
+#~ msgstr "&Замени"
+
+#~ msgid ""
+#~ "Failed to make a backup copy of %1.\n"
+#~ "Continue anyway?"
+#~ msgstr ""
+#~ "Не можев да направам резервна копија на %1.\n"
+#~ "Дали сепак продолжувате?"
+
+#~ msgid ""
+#~ "Could not write to file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не можев да запишам во датотеката:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open file for writing:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не можев да ја отворам датотеката за запишување:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Error while writing file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Грешка при запишување на датотеката:\n"
+#~ "%1"
+
+#~ msgid "Could only write %1 bytes of %2."
+#~ msgstr "Можев да запишам само %1 бајти од %2."
+
+#~ msgid "%1 does not exist"
+#~ msgstr "%1 не постои"
+
+#~ msgid "%1 is not accessible and that is unchangeable."
+#~ msgstr "%1 не е достапно и тоа е непроменливо."
+
+#~ msgid "%1 is not readable and that is unchangeable."
+#~ msgstr "%1 не е читливо и тоа е непроменливо."
+
+#~ msgid "%1 is not writable and that is unchangeable."
+#~ msgstr "%1 не е запишливо и тоа е непроменливо."
+
+#~ msgid "Folder %1 is inaccessible."
+#~ msgstr "Папката %1 е непристапна."
+
+#~ msgid ""
+#~ "Some files or folders do not have the right permissions, please correct "
+#~ "them manually."
+#~ msgstr ""
+#~ "Некои датотеки или папки ги немаат соодветните дозволи. Корегирајте ги "
+#~ "рачно."
+
+#~ msgid "Permissions Check"
+#~ msgstr "Проверка на дозволи"
+
+#~ msgid "Cannot save to addressbook."
+#~ msgstr "Не можам да зачувам во адресарот."
+
+#~ msgid "Presence"
+#~ msgstr "Присутност"
+
+#~ msgctxt "clear widgets"
+#~ msgid "Clear"
+#~ msgstr "Исчисти"
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains more than "
+#~ "one @. You will not create valid messages if you do not change your "
+#~ "address."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи содржи повеќе "
+#~ "од едно @. Нема да може да креирате валидни пораки ако не ја смените оваа "
+#~ "адреса."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "@.You will not create valid messages if you do not change your address."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи не содржи @. "
+#~ "Нема да може да креирате валидни пораки ако не ја смените оваа адреса."
+
+#~ msgid "You have to enter something in the email address field."
+#~ msgstr "Мора да внесете нешто во адресното поле подолу."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "local part."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи не содржи "
+#~ "локален дел."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not contain a "
+#~ "domain part."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи не содржи дел "
+#~ "за домен."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains unclosed "
+#~ "comments/brackets."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи содржи "
+#~ "незатворени коментари/загради."
+
+#~ msgid "The email address you entered is valid."
+#~ msgstr "Е-поштенската адреса што ја внесовте е валидна."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an "
+#~ "unclosed anglebracket."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи содржи "
+#~ "незатворена аглеста заграда."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an "
+#~ "unopened anglebracket."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи содржи "
+#~ "неотворена аглеста заграда."
+
+#~ msgid ""
+#~ "The email address you have entered is not valid because it contains an "
+#~ "unexpected comma."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи содржи "
+#~ "неочекувана запирка."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains quoted "
+#~ "text which does not end."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи содржи цитиран "
+#~ "текст што не завршува."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it does not seem to "
+#~ "contain an actual email address, i.e. something of the form joe@kde.org."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи не изгледа дека "
+#~ "содржи e-поштенска адреса, т.е. нешто од типот jove@kde.org."
+
+#~ msgid ""
+#~ "The email address you entered is not valid because it contains an illegal "
+#~ "character."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи содржи "
+#~ "нелегален знак."
+
+#~ msgid ""
+#~ "The email address you have entered is not valid because it contains an "
+#~ "invalid displayname."
+#~ msgstr ""
+#~ "Е-поштенската адреса што ја внесовте не е валидна бидејќи содржи "
+#~ "нелегално име за приказ."
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> cannot be found in your addressbook.</qt>"
+#~ msgstr ""
+#~ "<qt>Е-поштенската адреса <b>%1</b> не може да биде пронајдена во Вашиот "
+#~ "адресар.</qt>"
+
+#~ msgid "is not in address book"
+#~ msgstr "не е во адресарот."
+
+#~ msgid "Select Region of Image"
+#~ msgstr "Избирање регион од слика"
+
+#~ msgid "Please click and drag on the image to select the region of interest:"
+#~ msgstr ""
+#~ "Кликнете и повлечете по сликата за да го изберете регионот за кој сте "
+#~ "заинтересирани:"
+
+#~ msgid "Image Operations"
+#~ msgstr "Операции на слика"

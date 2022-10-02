@@ -1,0 +1,1946 @@
+# translation of libkdepim.po to
+# Copyright (C) 2003, 2004, 2006, 2007 Free Software Foundation, Inc.
+# Nuriddin Aminagha <nuriddin@haydarlinux.org>, 2003.
+# abd el rahman Ghareeb <king_abdo@yahoo.com>, 2004.
+# Hafid BENHADRIA <ghosn@php4arab.info>, 2004.
+# محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
+# Youssef Chahibi <chahibi@gmail.com>, 2007.
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2017.
+# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2021-07-22 10:38+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"لا يمكننا إضافة المزيد من المستلمين. لقد وصلنا إلى الحد الأقصى من المستفيدين"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "ألغِ العمليّة."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "يجهض..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "الاتّصال معمًّى"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "الاتّصال غير معمًّى"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "افتح حواريّ تقدّم مفصّل"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "أظهر نافذة تقدّم مفصّلة"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "أخفِ نافذة التّقدّم المفصّلة"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "أكثر"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "أقلّ"
+
+#~ msgid "Choose..."
+#~ msgstr "اختر..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "التّفضيلات"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "أنت على وشك ضبط التّفضيلات إلى قيمها الافتراضيّة. ستفقد كلّ التّعديلات "
+#~ "المخصّصة."
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "صفّر إلى الافتراضيّات"
+
+#~ msgid "Add"
+#~ msgstr "أضف"
+
+#~ msgid "Remove"
+#~ msgstr "أزل"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "أمتأكّد من إزالة عنوان البريد الإلكترونيّ هذا؟"
+#~ msgstr[1] "أمتأكّد من إزالة عنوان البريد الإلكترونيّ هذا؟"
+#~ msgstr[2] "أمتأكّد من إزالة عنواني البريد الإلكترونيّ هذين؟"
+#~ msgstr[3] "أمتأكّد من إزالة %1 عناوين بريد إلكترونيّ؟"
+#~ msgstr[4] "أمتأكّد من إزالة %1 عنوان بريد إلكترونيّ؟"
+#~ msgstr[5] "أمتأكّد من إزالة %1 عنوان بريد إلكترونيّ؟"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "فشل استيراد vCard"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>تعذّر النّفاذ إلى <b>%1</b>.</qt>"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "اضبط الإكمال..."
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "وسّع المجموعات آليًّا"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "وسّع المجموعات..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "أحدث العناوين"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "المتراسلون في بياناتك"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "خادوم LDAP: ‏%1"
+
+#~ msgid "&Select"
+#~ msgstr "ح&دّد"
+
+#~ msgid "&Unselect"
+#~ msgstr "أل&غِ التّحديد"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">نتائج أخرى...</a></qt>"
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "استثنِ أسماء النّطاقات:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "افصل النّطاقات بِ‍’%1‘"
+
+#~ msgid "No email found."
+#~ msgstr "لا رسائل."
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "لا رسائل"
+#~ msgstr[1] "عُثر على رسالة إلكترونيّة واحدة"
+#~ msgstr[2] "عُثر على رسالتين إلكترونيّتين"
+#~ msgstr[3] "عُثر على %1 رسائل إلكترونيّة"
+#~ msgstr[4] "عُثر على %1 رسالة إلكترونيّة"
+#~ msgstr[5] "عُثر على %1 رسالة إلكترونيّة"
+
+#~ msgid "No result found"
+#~ msgstr "لا نتائج"
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr "تغيّرت القائمة. أتريد الحفظ قبل إجراء بحث آخر؟"
+
+#~ msgid "Save"
+#~ msgstr "احفظ"
+
+#, fuzzy
+#~| msgid "Configure completion"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "اضبط الإكمال"
+
+#~ msgid "Completion Order"
+#~ msgstr "ترتيب الإكمال"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "حرّر ترتيب الإكمال"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "خادوم LDAP ‏%1"
+
+#~ msgid "Move Up"
+#~ msgstr "انقل لأعلى"
+
+#~ msgid "Move Down"
+#~ msgstr "انقل لأسفل"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "الي&وم"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "ال&غد"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "الأ&سبوع القادم"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "ال&شّهر القادم"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "بلا تاريخ"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "عنوان البريد الإلكترونيّ الأساسيّ في vCard مستخدم بالفعل في دفتر العناوين. "
+#~ "بأيّ حال، يمكن حفظ معلومات vCard في ملفّ واستيراده إلى دفتر العناوين يدويًّا."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "أُضيفت vCard إلى دفتر العناوين، يمكنك إضافة المزيد من المعلومات إلى هذه "
+#~ "المدخلة بفتح دفتر العناوين."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "هناك متراسل بالبريد الإلكترونيّ <email>%1</email> في دفتر العناوين بالفعل."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr "عليك إنشاء دفتر عناوين قبل إضافة متراسل. أتريد إنشاء دفتر عناوين؟"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "لا دفاتر عناوين متوفرة"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "دفتر عناوين جديد"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>أُضيف متراسل لِ‍ <email>%1</email> بنجاح إلى دفتر العناوين.</"
+#~ "para><para>أتريد تحرير هذا المتراسل الجديد الآن؟</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "تعذّر تخزين المتراسل: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "فشل تخزين المتراسل"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "أُنشئ المتراسل بنجاح"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "محمد سعد,صفا الفليج"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "metehyi@free.fr,safa1996alfulaij@gmail.com"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "أضف مضيفًا"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "إعدادات خادوم LDAP"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "‏© ٢٠٠٩-٢٠١٠ Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr "كلمة سرّ LDAP مخزّنة كنصّ خام واضح، أتريد تخزينها في «محفظتك»؟"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "خزّن كلمة السّرّ كنصّ خام واضح في «محفظتك»"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "حرّر المضيف"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "أمتأكّد من إزالة إعداد المضيف ”%1“؟"
+
+#~ msgid "Remove Host"
+#~ msgstr "أزل المضيف"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "خواديم LDAP"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "أشّر على كلّ الخواديم التي يجب استخدامها:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "أ&ضف مضيفًا..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&حرّر المضيف..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "أ&زل المضيف"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "العنوان"
+
+#~ msgid "Full Name"
+#~ msgstr "الاسم الكامل"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "البريد الإلكترونيّ"
+
+#~ msgid "Home Number"
+#~ msgstr "رقم المنزل"
+
+#~ msgid "Work Number"
+#~ msgstr "رقم العمل"
+
+#~ msgid "Mobile Number"
+#~ msgstr "رقم المحمول"
+
+#~ msgid "Fax Number"
+#~ msgstr "رقم الفاكس"
+
+#~ msgid "Street"
+#~ msgstr "الشّارع"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "الولاية"
+
+#~ msgid "Country"
+#~ msgstr "الدّولة"
+
+#~ msgid "City"
+#~ msgstr "المدينة"
+
+#~ msgid "Organization"
+#~ msgstr "المنظّمة"
+
+#~ msgid "Company"
+#~ msgstr "الشّركة"
+
+#~ msgid "Department"
+#~ msgstr "القسم"
+
+#~ msgid "Zip Code"
+#~ msgstr "الرّمز البريديّ"
+
+#~ msgid "Postal Address"
+#~ msgstr "العنوان البريديّ"
+
+#~ msgid "Description"
+#~ msgstr "الوصف"
+
+#~ msgid "User ID"
+#~ msgstr "معرّف المستخدم"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "البريد الإلكترونيّ"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "الولاية"
+
+#~ msgid "Search for:"
+#~ msgstr "ابحث عن:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "في"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "الاسم"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "البريد الإلكترونيّ"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "رقم المنزل"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "رقم العمل"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "اب&حث"
+
+#~ msgid "Recursive search"
+#~ msgstr "بحث تكراريّ"
+
+#~ msgid "Starts With"
+#~ msgstr "يبدأ بِ‍"
+
+#~ msgid "Searching..."
+#~ msgstr "يبحث..."
+
+#~ msgid "Select All"
+#~ msgstr "حدّد الكلّ"
+
+#~ msgid "Unselect All"
+#~ msgstr "أزل تحديد الكلّ"
+
+#~ msgid "Add Selected"
+#~ msgstr "أضف المحدّد"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "اضبط خواديم LDAP..."
+
+#~ msgid "Copy"
+#~ msgstr "انسخ"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "عليك اختيار خادوم LDAP قبل البحث."
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "اضبط إعدادات دفتر عناوين LDAP"
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "<< &أحذف"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "حرًر العناوين الحديثة"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "&دفتر العناوينن"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "الصفحات المتوفِرة"
+
+#, fuzzy
+#~ msgid "Unknown"
+#~ msgstr "مجهول"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "المساهمين"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "زمن الإبتداء"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "المدّة"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#, fuzzy
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] "الإرسال كامل جديد رسالة بوصة ك.ب. ك.ب. باقٍ يعمل خادم."
+#~ msgstr[1] "الإرسال كامل جديد رسالة بوصة ك.ب. ك.ب. باقٍ يعمل خادم."
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "الإرسال كامل رسالة بوصة ك.ب.."
+#~ msgstr[1] "الإرسال كامل رسالة بوصة ك.ب.."
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "الإرسال كامل جديد رسالة."
+#~ msgstr[1] "الإرسال كامل جديد رسالة."
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "إنتهت عملية النقل. لا يوجد رسائل جديدة."
+
+#, fuzzy
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] "الإرسال لـ الحساب كامل جديد رسالة بوصة ك.ب. ك.ب. باقٍ يعمل خادم."
+#~ msgstr[1] "الإرسال لـ الحساب كامل جديد رسالة بوصة ك.ب. ك.ب. باقٍ يعمل خادم."
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "الإرسال لـ الحساب كامل رسالة بوصة ك.ب.."
+#~ msgstr[1] "الإرسال لـ الحساب كامل رسالة بوصة ك.ب.."
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "الإرسال لـ الحساب كامل جديد رسالة."
+#~ msgstr[1] "الإرسال لـ الحساب كامل جديد رسالة."
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "إنتهت عملية النقل للحِساب: %1. لا يوجد رسائل جديدة."
+
+#, fuzzy
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "الإسم"
+
+#, fuzzy
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "البريد الإلكترونيّ"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "جاري سحب و تخزين الرسائل..."
+
+#, fuzzy
+#~ msgid "Total Messages"
+#~ msgstr "إنذار رسالة"
+
+#, fuzzy
+#~ msgid "Unread Messages"
+#~ msgstr "الرسالة"
+
+#~ msgid "Send SMS"
+#~ msgstr "أرسل SMS"
+
+#~ msgid "Message"
+#~ msgstr "الرسالة"
+
+#~ msgid "Recipient:"
+#~ msgstr "المراسل:"
+
+#~ msgid "Send"
+#~ msgstr "أرسل"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgid "Select Address Book"
+#~ msgstr "&دفتر العناوينن"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The email address <b>%1</b> was added to your addressbook; you can "
+#~| "add more information to this entry by opening the addressbook.</qt>"
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>تمّ إضافة العنوان الإلكتروني <b>%1</b> إلى دفتر عناوينك ، يمكنك إضافة "
+#~ "معلومات أخرى لهذه الخانة  حين تفتح دفتر العناوين.</qt>"
+
+#, fuzzy
+#~| msgid "tomorrow"
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "غداً"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "اليوم"
+
+#, fuzzy
+#~| msgid "yesterday"
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "البارحة"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "اليوم"
+
+#~ msgid "To"
+#~ msgstr "إلى"
+
+#~ msgid "CC"
+#~ msgstr "مرفق"
+
+#~ msgid "BCC"
+#~ msgstr "مرفق مخفي"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "الرجاءً إدخاِل اسم للقالب:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "إخيار العُنْوَان"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&رشّح على:"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&إلى >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&مرفق >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&مرفق مخفي >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &أحذف"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "إحفظ كـلائِحة &توزيع..."
+
+#~ msgid "Address Selection"
+#~ msgstr "إخيار العُنْوَان"
+
+#~ msgid "&To >>"
+#~ msgstr "&إلى >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&مرفق >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&مرفق مخفي >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "ال&عناوِين المختارة"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&رشّح على:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "إحفظ كـلائِحة &توزيع..."
+
+#~ msgid "Show Birthday"
+#~ msgstr "إظهار تاريخ الميلاد"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "إظهار العناوين البريديَّة"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "إظهار عناوين البريد الإلكترونيّ"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "إظهار أرقام الهاتف"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "إظهار صفحات الشبكة ( عناوين الموارد النظامية )"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "إظهار عناوين المراسلة الفورية"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "إظهار الحقول المعتادة"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "صَّفحة الإنترنت الرئيسية"
+
+#~ msgid "Blog Feed"
+#~ msgstr "تغذية المدونة على الشبكة"
+
+#~ msgid "Notes"
+#~ msgstr "الملاحظات"
+
+#~ msgid "Profession"
+#~ msgstr "المهنة"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "إسم المعاون"
+
+#~ msgid "Manager's Name"
+#~ msgstr "إسم المدير"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "اسم الشريك"
+
+#~ msgid "Office"
+#~ msgstr "المكتب"
+
+#~ msgid "IM Address"
+#~ msgstr "عنوان مراسلة فورية"
+
+#~ msgid "Anniversary"
+#~ msgstr "ذكرة سنوية"
+
+#, fuzzy
+#~| msgid "Address book:"
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "دَفْتر العَناوين:"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "ليس هناك من تطبيق مُعَيَّن يمكن تنفيذه. الرجاءً الذهاب إلى حوار الإعدادات "
+#~ "والقيام بتهيئة إحداها."
+
+#~ msgid "Call number %1"
+#~ msgstr "أطلب الرَّقم %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "أرسل فاكس إلى %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "أعرض العنوان على الخريطة"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "أرسل SMS إلى %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "إفتح عنوان المورد النظامي %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "تكلّم مع %1"
+
+#, fuzzy
+#~| msgid "&Address Book"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "&دفتر العناوينن"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "الإسم"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "الاسم"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "صَّفحة الإنترنت الرئيسية"
+
+#, fuzzy
+#~| msgid "Hide Telephone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "إخفاء أرقام الهاتف"
+
+#~ msgid "<group>"
+#~ msgstr "<المجموعة>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "العناوين الأُخرى"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "ليست هناك عناوين بلائحتك. أضِف أولاً بعض العناوينً من دفتر عناوينك ثم حاوِل "
+#~ "مُجدَداً."
+
+#~ msgid "New Distribution List"
+#~ msgstr "لائِحَةُ تَوْزِيعٍ جديدة"
+
+#~ msgid "Please enter name:"
+#~ msgstr "الرجاء إدخال الإسم:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>إنّ لائحة التوزيع المسماة <b>%1</b> موجودة مسبقاً. الرجاء إختيار إسم "
+#~ "مختلف.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "لوائِح التَّوزيع"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "أ&درج"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "إدراج ملف"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "محرر خارجي"
+
+#, fuzzy
+#~| msgid "Rule Editor"
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "إجهاض المحرر"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "اترك المحرر مفتوح"
+
+#~ msgid "Edit Categories"
+#~ msgstr "حرر الأصناف"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New category"
+#~ msgstr "الصنف"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "New subcategory"
+#~ msgstr "الصنف"
+
+#~ msgid "Select Categories"
+#~ msgstr "إختر الأصناف"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "يجري عرض عنوان المورد النظامي %1"
+
+#~ msgid "Text"
+#~ msgstr "نصّ"
+
+#~ msgid "Numeric Value"
+#~ msgstr "قيمة رقمية"
+
+#~ msgid "Boolean"
+#~ msgstr "بولياني"
+
+#~ msgid "Date & Time"
+#~ msgstr "التاريخ و الوقت"
+
+#~ msgid "Date"
+#~ msgstr "التاريخ"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "حوار حقول Qt Designer"
+
+#, fuzzy
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|ملفات المصمم"
+
+#~ msgid "Import Page"
+#~ msgstr "صفحة الإستيراد"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>تحذير:</b> لم يتمّ العثور على Qt Designer. من الإحتمال أن يكون غير "
+#~ "مثبت. سيكون بإمكانك إستيراد ملفات  المصمم الموجودة فقط.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "معاينة الصفحة المحددة"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p> هذا فصل إلى اضف الواجهة الرسومية العناصر<i> المتحكمات</i> إلى "
+#~ "تخزين أكمل أسفل</p><ol><li> نقر يعمل<i> تحرير مع Qt المصمم</i></li><li> "
+#~ "داخل حوار تحديد<i> كائن</i> انقر<i> موافق</i></li><li> إضافة إلى استمارة</"
+#~ "li><li> احفظ ملفّ بوصة دليل مقترح أداء Qt المصمم</li><li> إغلاق Qt المصمم</"
+#~ "li></ol><p> داخل حالة a ملفّ يعمل قرص اختيار<i> استيراد صفحة</i></p><p><b> "
+#~ "مهم</b> الـ الاسم من دَخْل استمارة تشغيل مع<i> س</i> IF إلى إلى مخصص "
+#~ "خانة<i> س</i> set s<i> الاسم</i> خاصية، ملكية إلى<i> س</i></p><p><b> مهم</"
+#~ "b> الـ حرّر مخصص مع تطبيق الاسم من إلى تغيير تطبيق الاسم إلى set الاسم "
+#~ "بوصة Qt المصمم</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">كيف يعمل هذا ؟</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "أمحي الصفحة"
+
+#~ msgid "Import Page..."
+#~ msgstr "إستورد الصفحة..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "حرِر بِواسطة Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "المفتاح:"
+
+#~ msgid "Type:"
+#~ msgstr "النوع:"
+
+#~ msgid "Classname:"
+#~ msgstr "إسم الفئة"
+
+#~ msgid "Description:"
+#~ msgstr "الوصف:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "غيير قيمة الإعداد"
+
+#, fuzzy
+#~| msgid "Configuration Wizard"
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "أداة التنسيق"
+
+#, fuzzy
+#~| msgid "Rules"
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "القواعد"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "التعيين القواعد"
+
+#, fuzzy
+#~| msgid "Source"
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "المصدر"
+
+#, fuzzy
+#~| msgid "Target"
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "الهدف"
+
+#, fuzzy
+#~| msgid "Condition"
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "الشرط"
+
+#, fuzzy
+#~| msgid "Changes"
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "التغييرات"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "التعيين التغييرات"
+
+#, fuzzy
+#~| msgid "Action"
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "إجراء"
+
+#, fuzzy
+#~| msgid "Option"
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "الخيار"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "القيمة"
+
+#, fuzzy
+#~| msgid ""
+#~| "Please make sure that the programs which are configured by the wizard do "
+#~| "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~| "could be lost."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "الرجاء التأكد من أن البرامج المهيئة من قبل المرشد ليست قيد التنفيذ في نفس "
+#~ "الوقت مع المرشد ، و إلا ستوجد إمكانية خسارة التغييرات المعدة من قبل "
+#~ "المرشد."
+
+#, fuzzy
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "تحذير"
+
+#, fuzzy
+#~| msgid "Run Wizard Now"
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "شغّل ّ المرشد الآن"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "الخيار"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "المدّة"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "اليوم"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "الموقعْ"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "إظهار تاريخ الميلاد"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "القابس غير مُسَّمَى"
+
+#, fuzzy
+#~| msgid "New (remote) entry"
+#~ msgid "New category entry"
+#~ msgstr "خانة جديدة ( بعيدة )"
+
+#, fuzzy
+#~ msgid "Add &Subcategory"
+#~ msgstr "إضافة"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category list"
+#~ msgstr "أصنافة"
+
+#, fuzzy
+#~| msgid "Select Categories"
+#~ msgid "Default Category"
+#~ msgstr "إختر الأصناف"
+
+#~ msgid "Category"
+#~ msgstr "الصنف"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&أمحي الخيار"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "&حرّيرالاأصناف...."
+
+#, fuzzy
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "نعم"
+
+#, fuzzy
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "لا"
+
+#~ msgid "Organizer"
+#~ msgstr "المنظم"
+
+#~ msgid "UID"
+#~ msgstr "رقم تعريف المستخدم"
+
+#, fuzzy
+#~ msgid "Is all-day"
+#~ msgstr "هو الكل اليوم"
+
+#~ msgid "Has duration"
+#~ msgstr "لديه مدّة معيينة"
+
+#~ msgid "Summary"
+#~ msgstr "الموجز"
+
+#~ msgid "Status"
+#~ msgstr "الحالة"
+
+#~ msgid "Secrecy"
+#~ msgstr "السريّة"
+
+#~ msgid "Priority"
+#~ msgstr "الأولية"
+
+#~ msgid "Location"
+#~ msgstr "الموقعْ"
+
+#~ msgid "Categories"
+#~ msgstr "أصنافة"
+
+#~ msgid "Alarms"
+#~ msgstr "نواقيس"
+
+#~ msgid "Resources"
+#~ msgstr "موارد"
+
+#~ msgid "Relations"
+#~ msgstr "علاقات"
+
+#~ msgid "Attachments"
+#~ msgstr "ملحقات"
+
+#~ msgid "Exception Dates"
+#~ msgstr "تواريخ إستثنائية"
+
+#~ msgid "Exception Times"
+#~ msgstr "أوقات إستثنائية"
+
+#, fuzzy
+#~| msgid "Created"
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "تمّ إنشائه"
+
+#~ msgid "Related Uid"
+#~ msgstr "رقم تعريف المستخدم ذات العلاقة"
+
+#~ msgid "Has End Date"
+#~ msgstr "لديه تاريخ إنتهاء"
+
+#~ msgid "End Date"
+#~ msgstr "تاريخ الإنتهاء"
+
+#~ msgid "Has Start Date"
+#~ msgstr "لديه تاريخ إبتداء"
+
+#~ msgid "Has Due Date"
+#~ msgstr "لديه تاريخ فرض"
+
+#~ msgid "Due Date"
+#~ msgstr "تاريخ الفرض"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "لديه تاريخ للإتمام"
+
+#, fuzzy
+#~| msgid "Complete"
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "تامّ"
+
+#, fuzzy
+#~| msgid "Completed"
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "تمّ"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgid "Local"
+#~ msgstr "خذ المحلًي"
+
+#, fuzzy
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "News"
+#~ msgstr "أخبار"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgid "None"
+#~ msgstr "الملاحظات"
+
+#, fuzzy
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "صندوق بريد Maildir"
+
+#, fuzzy
+#~| msgid "Notes"
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "أخبار"
+
+#, fuzzy
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "قطع إلاتصال IMAP."
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "صندوق بريد محلي"
+
+#, fuzzy
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#, fuzzy
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "مجهول"
+
+#, fuzzy
+#~ msgid "Do not show this message again"
+#~ msgstr "لا تظهر هذه الرسالة مرة أخرى"
+
+#, fuzzy
+#~| msgid ""
+#~| "Article\n"
+#~| "<b>%1</b><br><b>%2</b><br>caused the following note to appear:<br>%3"
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "مقالة\n"
+#~ "<b></b><br /><b></b><br /> متابعة ملاحظة إلى ظهور<br /> 3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "ضبط دليل المستوى"
+
+#~ msgid "Display Message"
+#~ msgstr "أعرض الرسالة"
+
+#~ msgid "Colorize Header"
+#~ msgstr "لوّن الترويسة"
+
+#, fuzzy
+#~| msgid "Mark As Read"
+#~ msgid "Mark as Read"
+#~ msgstr "علّم كمقروء"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>لائحة الملاحظات المحصلة</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "الملاحظات المحصلة"
+
+#~ msgid "Contains Substring"
+#~ msgstr "يحتوي على السلسلة الفرعية"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "يطابق العبارة المنتظمة regular expr."
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "يطابق العبارة المنتظمة (حساس لقياس الحرف)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "هو مساوى لِــ"
+
+#~ msgid "Less Than"
+#~ msgstr "أصغر من"
+
+#~ msgid "Greater Than"
+#~ msgstr "أكبر من"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "إختر إسم شرط آخر"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "إسم الشرط مستعمل سابقاً ، الرجاء إختيار إسم آخر:"
+
+#~ msgid "rule %1"
+#~ msgstr "الشرط %1"
+
+#~ msgid "Not"
+#~ msgstr "لا"
+
+#~ msgid "Negate this condition"
+#~ msgstr "أعكس هذا الشرط"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "إختر الترويسة المطابقة لهذا الشرط"
+
+#~ msgid "Select the type of match"
+#~ msgstr "حدد نوع التطابق"
+
+#~ msgid "The condition for the match"
+#~ msgstr "الشرط للتطابق"
+
+#~ msgid "Select an action."
+#~ msgstr "إختر الإجراء."
+
+#, fuzzy
+#~ msgid "Properties"
+#~ msgstr "خصائص"
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "الإ&سم:"
+
+#~ msgid "&Groups:"
+#~ msgstr "ال&مجموعات:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "أ&ضف المجموعة"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "&إنهاء مدة الصلاحية للشرط تلقائياً"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "ال&شرط صالح لِــ:"
+
+#~ msgid "Conditions"
+#~ msgstr "الشروط"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "التطابق مع &كلّ الشروط"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "الت&طابق مع أي شرط"
+
+#~ msgid "Actions"
+#~ msgstr "الإجراءات"
+
+#, fuzzy
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] "اليوم"
+#~ msgstr[1] "اليوم"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#~ msgid "New rule"
+#~ msgstr "شرط جديد"
+
+#~ msgid "Edit rule"
+#~ msgstr "حرر الشرط"
+
+#~ msgid "Remove rule"
+#~ msgstr "أحذف الشرط"
+
+#, fuzzy
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder> الكل</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "أ&ظهر فقط الشروط للمجموعة:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "محرر الشروط"
+
+#~ msgid "Edit Rule"
+#~ msgstr "حرًر الشرط"
+
+#~ msgid "Reload &List"
+#~ msgstr "إعادة تحميل الا&ئحة"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr "عيّن أي مجلدات بريدية تريد ان تراها في عرض مجلداتك"
+
+#~ msgid "S&earch:"
+#~ msgstr "إبح&ث:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "ألغي العرض الش&جري"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "فقط الم&شترك فيها"
+
+#~ msgid "&New only"
+#~ msgstr "ال&جديد فقط"
+
+#~ msgid "Current changes:"
+#~ msgstr "التغييرات الحالية:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "الاسم"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "الوصف"
+
+#~ msgid "Subscribe To"
+#~ msgstr "إشترك في"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "ألغي الإشتراك إلى"
+
+#, fuzzy
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "جاري التّحميل مواءمة"
+#~ msgstr[1] "جاري التّحميل مواءمة"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "مواءمة"
+#~ msgstr[1] "مواءمة"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~| msgid "Conflict Detected"
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "إكتشاف تضارب"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>A conflict was detected. This probably means someone edited the same "
+#~| "entry on the server while you changed it locally.<br/>NOTE: You have to "
+#~| "check mail again to apply your changes to the server.</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "<qt>تمّ إكتشاف تضارب. يمكن ذلك أن يعني أنّ أحد ما حرر البند نفسه على الخادم "
+#~ "بينما كنت أنت تقوم بتغييره محلياً.<br/>لاحظ: يجب عليك التحقق من وجود "
+#~ "البريد عن جديد كي تطبق تغييراتك على الخادم.</qt>"
+
+#, fuzzy
+#~| msgid "Take Local"
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "خذ المحلًي"
+
+#, fuzzy
+#~| msgid "Take New"
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "خذ الجديد"
+
+#, fuzzy
+#~| msgid "Take Both"
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "خذ الأثنين"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "الوُقْع المحلّي"
+
+#, fuzzy
+#~| msgid "Local incidence summary"
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "موجز الوُقْع المحلّي"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "المغيير مؤخراً:"
+
+#, fuzzy
+#~| msgid "Last modified:"
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "المغيير مؤخراً:"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "أعرض التفاصيل"
+
+#, fuzzy
+#~| msgid "Show Differences"
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "أعرض الإختلافات"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "تفضيلات المزامنة"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "تفضيلات المزامنة"
+
+#, fuzzy
+#~| msgid "Sync Preferences"
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "تفضيلات المزامنة"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "خُذ الخانة المحلية عند حصول إختلاف"
+
+#, fuzzy
+#~| msgid "Take local entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "خُذ الخانة المحلية عند حصول إختلاف"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "خُذ الخانة الجديدة ( البعيدة ) عند حصول إختلاف"
+
+#, fuzzy
+#~| msgid "Take new (remote) entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "خُذ الخانة الجديدة ( البعيدة ) عند حصول إختلاف"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "خذ الخانة الأجدد عند حصول إختلاف"
+
+#, fuzzy
+#~| msgid "Take newest entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "خذ الخانة الأجدد عند حصول إختلاف"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "إسئل لكل خانة عند وجود إختلاف"
+
+#, fuzzy
+#~| msgid "Ask for every entry on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "إسئل لكل خانة عند وجود إختلاف"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "خذ الإثنين عند حصول إختلاف"
+
+#, fuzzy
+#~| msgid "Take both on conflict"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "خذ الإثنين عند حصول إختلاف"
+
+#, fuzzy
+#~| msgid "Apply This to All Conflicts of This Sync"
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "طبِق هذا على كلّ إختلافات هذه المزامنة"
+
+#, fuzzy
+#~| msgid "Local Event"
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "حدث محلًي"
+
+#, fuzzy
+#~| msgid "Local Todo"
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "واجِب محلّي"
+
+#, fuzzy
+#~| msgid "Local Journal"
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "يومية محلًية"
+
+#, fuzzy
+#~| msgid "New Event"
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "حدث جديد"
+
+#, fuzzy
+#~| msgid "New Todo"
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "واجِب جديد"
+
+#, fuzzy
+#~| msgid "New Journal"
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "يومية جديدة"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "أخفي التفاصيل"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "أخفي التفاصيل"
+
+#, fuzzy
+#~| msgid "Show details..."
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "أعرض التفاصيل..."
+
+#, fuzzy
+#~| msgid "Differences of %1 and %2"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "الإختلاف بين  %1  و %2"
+
+#, fuzzy
+#~| msgid "Differences of %1"
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "الإختلاف مع %1"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "الوُقْع المحلّي"
+
+#, fuzzy
+#~| msgid "Local incidence"
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "الوُقْع المحلّي"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "أعرض التفاصيل"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "أخفي التفاصيل"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "الاسم"
+
+#, fuzzy
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "المحرر الخارجي لا يزال قيد التنفيذ.\n"
+#~ "إجهاض المحرر الخارجي أو تركه مفتوح ؟"
+
+#, fuzzy
+#~| msgid "Is floating"
+#~ msgid "Floating"
+#~ msgstr "طافية"
+
+#~ msgid "Local entry"
+#~ msgstr "خانة محلّية"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "خانة جديدة ( بعيدة )"
+
+#~ msgid "Plain"
+#~ msgstr "مجرد"
+
+#~ msgid "Unquoted"
+#~ msgstr "غير مُحاط بعلامات الإقتباس"
+
+#~ msgid "Bracketed"
+#~ msgstr "مُحاط بأقواس"
+
+#~ msgid "Undefined"
+#~ msgstr "غيرُ مُعرَّف"
+
+#~ msgid "File to import:"
+#~ msgstr "الملف لإستيراده:"
+
+#~ msgid "Separator:"
+#~ msgstr "الفاصِل:"
+
+#~ msgid "Tab"
+#~ msgstr "التَبويب"
+
+#~ msgid "Space"
+#~ msgstr "المسافة"
+
+#~ msgid "Header"
+#~ msgstr "الترويسة"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "َّعيين للعمود الحددقَى"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "إزالة التَّعيين من العمود المُختار"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "التَّعيين مع القالب..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "إحفظ القالب الحاليّ"
+
+#~ msgid "Loading Progress"
+#~ msgstr "تَقدُّم التحميل"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "الرجاء الإنتظار بينما يجري تحميل الالملف."
+
+#~ msgid "Template Selection"
+#~ msgstr "إختيار القالب"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "الرجاء إختيار قالب يُطَابِق الملف CSV:"
+
+#~ msgid "Importing Progress"
+#~ msgstr "تَقدُّم الإستيراد"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "الرجاء الإنتظار بينما يجري إستيراد البيانات."
+
+#~ msgid "Template Name"
+#~ msgstr "اسم القالِب"
+
+#, fuzzy
+#~ msgid "Suggestions"
+#~ msgstr "إقتراحات"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "اختبار"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "إخفاء تاريخ الميلاد"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "إخفاء العناوين البريديَّة"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "إخفاء عناوين البريد الإلكترونيّ"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "إخفاء صفحات الشبكة ( عناوين الموارد النظامية )"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "إخفاء عناوين المراسلة الفورية"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "إخفاء الحقول المعتادة"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Link Text"
+#~ msgstr "نصّ"
+
+#, fuzzy
+#~ msgid "Standard"
+#~ msgstr "قياسي"
+
+#, fuzzy
+#~ msgid "Bulleted List (Disc)"
+#~ msgstr "مرصّص قائمة قرص"
+
+#, fuzzy
+#~ msgid "Bulleted List (Circle)"
+#~ msgstr "مرصّص قائمة دائرة"
+
+#, fuzzy
+#~ msgid "Bulleted List (Square)"
+#~ msgstr "مرصّص قائمة مربع"
+
+#, fuzzy
+#~ msgid "Ordered List (Decimal)"
+#~ msgstr "لائحة مرتبة ( عشرية )"
+
+#, fuzzy
+#~ msgid "Ordered List (Alpha lower)"
+#~ msgstr "لائحة مرتبة ( Alpha lower )"
+
+#, fuzzy
+#~ msgid "Ordered List (Alpha upper)"
+#~ msgstr "لائحة مرتبة (Alpha upper)"
+
+#, fuzzy
+#~ msgid "No Suggestions"
+#~ msgstr "لا إقتراحات"
+
+#, fuzzy
+#~ msgid "Starting the ioslave for protocol %1 failed."
+#~ msgstr ""
+#~ "جاري التشغيل لـ مراسم\n"
+#~ "ميفاق failed."
+
+#, fuzzy
+#~ msgid "Unknown error %1."
+#~ msgstr "مجهول خطأ."
+
+#, fuzzy
+#~ msgid "Error"
+#~ msgstr "خطأ"
+
+#~ msgid "Cc"
+#~ msgstr "مُرفق"
+
+#~ msgid "Bcc"
+#~ msgstr "مُرفق مخفي"
+
+#~ msgid "All"
+#~ msgstr "الكلّ"

@@ -1,0 +1,2013 @@
+# translation of libkdepim.po to dansk
+# Danish translation of libkdepim
+# Copyright (C).
+#
+# Erik Kjær Pedersen <erik@binghamton.edu>, 2002, 2003, 2004, 2005, 2006, 2007.
+# Jan Madsen <jan.madsen.pt@gmail.com>, 2008.
+# Martin Schlander <mschlander@opensuse.org>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2018-01-10 19:58+0100\n"
+"Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
+"Language-Team: Danish <kde-i18n-doc@kde.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Vi kan ikke tilføje flere modtagere. Vi har nået det maksimale antal "
+"modtagere"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Annullér denne operation."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Afbryder..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Forbindelsen er krypteret"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Forbindelsen er ikke krypteret"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Åbn detaljeret fremgangsdialog"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Vis detaljeret fremgangsvindue"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Skjul detaljeret fremgangsvindue"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Flere"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Færre"
+
+#~ msgid "Choose..."
+#~ msgstr "Vælg..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Præferencer"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Du er ved at sætte alle præferencer til deres standardværdier. Alle "
+#~ "brugervalgte ændringer vil gå tabt."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Opsætning af standardpræferencer"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Nulstil til standard"
+
+#~ msgid "Add"
+#~ msgstr "Tilføj"
+
+#~ msgid "Remove"
+#~ msgstr "Fjern"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Vil du fjerne denne e-mailadresse?"
+#~ msgstr[1] "Vil du fjerne %1 e-mails-adresser?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "Import af vCard mislykkedes"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Kan ikke tilgå <b>%1</b>.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "Vælg e-mail fra kontakt"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Vis organisationsenhed for LDAP-resultater"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "Indstil fuldførelse..."
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "Fold automatisk grupper ud"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "Fold grupper ud..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Nylige adresser"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Kontakter fundet i dine data"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP-server: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "Søg i e-mail:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "Der søges fra 3 tegn"
+
+#~ msgid "Search"
+#~ msgstr "Søg"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Vis sortlistede e-mails"
+
+#~ msgid "&Select"
+#~ msgstr "&Vælg"
+
+#~ msgid "&Unselect"
+#~ msgstr "&Afmarkér"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">Flere fund...</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "Søg i resultat..."
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "Undtag domænenavne:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Adskil domæne med \"%1\""
+
+#~ msgid "No email found."
+#~ msgstr "Ingen e-mail fundet."
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "1 e-mail fundet"
+#~ msgstr[1] "%1 e-mails fundet"
+
+#~ msgid "No result found"
+#~ msgstr "Ingen resultater fundet"
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr "Listen blev ændret. Vil du gemme før du foretager en ny søgning?"
+
+#~ msgid "Save"
+#~ msgstr "Gem"
+
+#, fuzzy
+#~| msgid "Configure completion"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Indstil fuldførelse"
+
+#~ msgid "Completion Order"
+#~ msgstr "Redigér fuldførelsesrækkefølge"
+
+#~ msgid "Recent Address"
+#~ msgstr "Nylige adresser"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Sortlist e-mailadresse"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Redigér kompletteringsrækkefølge"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP-server %1"
+
+#~ msgid "Move Up"
+#~ msgstr "Flyt op"
+
+#~ msgid "Move Down"
+#~ msgstr "Flyt ned"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&I dag"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "I m&orgen"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Næste &uge"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Næste &måned"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Ingen dato"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "VCard'ets primære e-mailadresse er allerede i din adressebog. Du kan "
+#~ "imidlertid gemme dit vCard til en fil, og importere det til adressebogen "
+#~ "manuelt."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "vCard'et blev føjet til din adressebog. Du kan føje mere information til "
+#~ "denne indgang ved at åbne adressebogen."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Der findes allerede en kontakt med e-mailadressen <email>%1</email> i din "
+#~ "adressebog."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Du skal oprette en adressebog før du tilføjer en kontakt. Vil du oprette "
+#~ "en adressebog?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Ingen adressebog tilgængelig"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Tilføj adressebog"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Der blev føjet en kontakt for <email>%1</email> til din adressebog."
+#~ "</para><para>Vil du redigere den ny kontakt nu?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Kontakten kan ikke gemmes: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Kunne ikke gemme kontakt"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Kontakten blev oprettet"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Erik Kjær Pedersen,Jan Madsen"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "erik@binghamton.edu,jan.madsen.pt@gmail.com"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Tilføj vært"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Indstillinger for LDAP-server"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr "LDAP-adgangskoden gemmes som klartekst, vil du gemme det i KWallet?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Gem klartekst-adgangskode i KWallet"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Redigér vært"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Vil du fjerne indstillingen for værten \"%1\"?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Fjern vært"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-servere"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Markér alle servere der skal bruges:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Tilføj vært..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "R&edigér vært..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Fjern vært"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgid "Full Name"
+#~ msgstr "Fuldt navn"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Home Number"
+#~ msgstr "Hjemmetelefon"
+
+#~ msgid "Work Number"
+#~ msgstr "Arbejdstelefon"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Mobiltelefon"
+
+#~ msgid "Fax Number"
+#~ msgstr "Faxnummer"
+
+#~ msgid "Pager"
+#~ msgstr "Personsøger"
+
+#~ msgid "Street"
+#~ msgstr "Vejnavn"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Delstat"
+
+#~ msgid "Country"
+#~ msgstr "Land"
+
+#~ msgid "City"
+#~ msgstr "By"
+
+#~ msgid "Organization"
+#~ msgstr "Organisation"
+
+#~ msgid "Company"
+#~ msgstr "Virksomhed"
+
+#~ msgid "Department"
+#~ msgstr "Afdeling"
+
+#~ msgid "Zip Code"
+#~ msgstr "Postnummer"
+
+#~ msgid "Postal Address"
+#~ msgstr "Postadresse"
+
+#~ msgid "Description"
+#~ msgstr "Beskrivelse"
+
+#~ msgid "User ID"
+#~ msgstr "Bruger-ID"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Delstat"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Importér kontakter fra LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Søg efter adresser i directory"
+
+#~ msgid "Search for:"
+#~ msgstr "Søg efter:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "i"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Hjemmetelefon"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Arbejdstelefon"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Søg"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekursiv søgning"
+
+#~ msgid "Contains"
+#~ msgstr "Indeholder"
+
+#~ msgid "Starts With"
+#~ msgstr "Begynder med"
+
+#~ msgid "Search in result"
+#~ msgstr "Søg i resultat"
+
+#~ msgid "Searching..."
+#~ msgstr "Søger..."
+
+#~ msgid "Select All"
+#~ msgstr "Markér alle"
+
+#~ msgid "Unselect All"
+#~ msgstr "Afmarkér alle"
+
+#~ msgid "Add Selected"
+#~ msgstr "Tilføj markerede"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Indstil LDAP-servere..."
+
+#~ msgid "Copy"
+#~ msgstr "Kopiér"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Du skal vælge en LDAP-server før du søger."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Importeret fra LDAP-mappen %1 på %2"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "LDAP-indstillinger for adressebogen"
+
+#~ msgid "&Remove"
+#~ msgstr "&Fjern"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Redigér nylige adresser"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Vælg adressebog"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Vælg den adressebog som kontakten skal gemmes i:"
+
+#, fuzzy
+#~| msgid "Available Pages"
+#~ msgid "Unavailable"
+#~ msgstr "Tilgængelige sider"
+
+#~ msgid "Unknown"
+#~ msgstr "Ukendt"
+
+#, fuzzy
+#~| msgid "Attendees"
+#~ msgid "Attendee"
+#~ msgstr "Deltagere"
+
+#, fuzzy
+#~| msgid "Start time"
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Starttidspunkt"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Varighed"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Overførsel fuldført. %1 ny besked (%2 KB). %3 KB endnu på serveren."
+#~ msgstr[1] ""
+#~ "Overførsel fuldført. %1 nye beskeder (%2 KB). %3 KB endnu på serveren."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Overførsel fuldført, %1 besked (%2 KB)."
+#~ msgstr[1] "Overførsel fuldført, %1 beskeder (%2 KB)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Overførsel fuldført, %1 ny besked."
+#~ msgstr[1] "Overførsel fuldført, %1 nye beskeder."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Overførsel fuldført. Ingen nye beskeder."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Overførsel for kontoen %4 fuldført. %1 ny besked (%2 KB). %3 KB endnu på "
+#~ "serveren."
+#~ msgstr[1] ""
+#~ "Overførslen for kontoen %4 fuldført. %1 nye beskeder (%2 KB). %3 KB endnu "
+#~ "på serveren."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Overførsel for kontoen %3 fuldført. %1 besked (%2 KB)."
+#~ msgstr[1] "Overførslen for kontoen %3 er fuldført. %1 beskeder (%2 KB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Overførslen for konto %2 er fuldført, %1 ny besked."
+#~ msgstr[1] "Overførslen for konto %2 er fuldført, %1 nye beskeder."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Overførslen for konto %1 er fuldført. Ingen nye beskeder."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Sprog til stavekontrol"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Henter og lagrer beskeder..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Breve i alt"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Ulæste breve"
+
+#~ msgid "Quota"
+#~ msgstr "Kvote"
+
+#~ msgid "Storage Size"
+#~ msgstr "Lagerstørrelse"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Lagerstørrelse for undermappe"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Størrelse"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "I alt"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Ulæste"
+
+#~ msgid "Stop"
+#~ msgstr "Stop"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Du har ikke systemet til semantisk skrivebord aktiveret. Mange vigtige "
+#~ "funktioner i denne software afhænger af systemet til semantisk skrivebord "
+#~ "og vil ikke fungere korrekt uden det."
+
+#~ msgid "&Configure"
+#~ msgstr "&Indstil"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Modulet til at konfigurere systemet til semantisk skrivebord (Nepomuk) "
+#~ "blev ikke fundet på dit system. Tjek venligst at Nepomuk er korrekt "
+#~ "installeret."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Du har ikke systemet til semantisk skrivebord aktiveret. Følgende "
+#~ "funktioner vil ikke virke korrekt:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "Send SMS"
+
+#~ msgid "Message"
+#~ msgstr "Besked"
+
+#~ msgid "Recipient:"
+#~ msgstr "Modtager:"
+
+#~ msgid "Send"
+#~ msgstr "Send"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Vælg adressebog"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Vælg den adressebog den ny kontakt skal gemmes i:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>E-mailadressen <b>%1</b> blev tilføjet til din adressebog. Du kan "
+#~ "føje mere information til denne indgang ved at åbne adressebogen.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "i morgen"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "i dag"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "I går"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "Datoen kan ikke være før %1"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "i dag"
+
+#~ msgid "To"
+#~ msgstr "Til"
+
+#~ msgid "CC"
+#~ msgstr "CC"
+
+#~ msgid "BCC"
+#~ msgstr "BCC"
+
+#, fuzzy
+#~| msgid "Select the address book the new contact shall be saved in:"
+#~ msgid "Select the address book the new contact group shall be saved in:"
+#~ msgstr "Vælg den adressebog den ny kontakt skal gemmes i:"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgid "Please enter name of the new contact group:"
+#~ msgstr "Angiv et navn for skabelonen:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Adresseudvalg"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&Filtrér med:"
+
+#, fuzzy
+#~| msgid "&Search Directory Service"
+#~ msgid "Search Directory Service"
+#~ msgstr "&Søg i directory-tjeneste"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Til >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&CC >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&BCC >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< &Fjern"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Gem som &distributionsliste..."
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Du skal vælge en LDAP-server før du søger.\n"
+#~ "Du kan gøre dette fra menuen Indstillinger/Indstil KAddressBook."
+
+#~ msgid "Address Selection"
+#~ msgstr "Adresseudvalg"
+
+#~ msgid "&To >>"
+#~ msgstr "&Til >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&CC >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "&Udvalgte adresser"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Filtrér med:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Gem som &distributionsliste..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "&Søg i directory-tjeneste"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Vis fødselsdag"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Vis postadresser"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "Vis e-mailadresser"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Vis telefonnumre"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Vis netsider (URL'er)"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "Vis adresser for direkte meddelelser"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Vis egne felter"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Hjemmeside"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Blog-feed"
+
+#~ msgid "Notes"
+#~ msgstr "Noter"
+
+#~ msgid "Profession"
+#~ msgstr "Profession"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Assistents navn"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Managers navn"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Samlevers navn"
+
+#~ msgid "Office"
+#~ msgstr "Kontor"
+
+#~ msgid "IM Address"
+#~ msgstr "IM-adresse"
+
+#~ msgid "Anniversary"
+#~ msgstr "Bryllupsdag"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Adressebog</b>: %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "Der er ikke sat noget program, der kan køres. Gå til indstillingsdialogen "
+#~ "og indstil et."
+
+#~ msgid "Call number %1"
+#~ msgstr "Ring til nummer %1"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Send fax til %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Vis adresse på kort"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "Send SMS til %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "Åbn URL %1"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Chat med %1"
+
+#, fuzzy
+#~| msgctxt "@title:column, address books overview"
+#~| msgid "Address Books"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Adressebøger"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Fuldt navn"
+
+#, fuzzy
+#~| msgctxt "@title:column, home address of a person"
+#~| msgid "Home"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Hjemme"
+
+#, fuzzy
+#~| msgctxt "@title:column, home address of a person"
+#~| msgid "Work"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Work"
+#~ msgstr "Arbejde"
+
+#, fuzzy
+#~| msgctxt "@title:column, phone numbers of a person"
+#~| msgid "Phone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefonnumre"
+
+#, fuzzy
+#~| msgctxt "@title:column, the preferred email addresses of a person"
+#~| msgid "Preferred EMail"
+#~ msgctxt "@title:column the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Foretrukken e-mail"
+
+#, fuzzy
+#~| msgctxt "@title:column, all email addresses of a person"
+#~| msgid "All EMails"
+#~ msgctxt "@title:column all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Alle e-mails"
+
+#~ msgid "<group>"
+#~ msgstr "<gruppe>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Andre adresser"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Der er ingen adresser på din liste. Tilføj først nogle adresser fra din "
+#~ "adressebog, og prøv så igen."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Ny distributionsliste"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Indtast navn:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>Distributionsliste med det angivne navn <b>%1</b> findes allerede. "
+#~ "Vælg et andet navn.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Distributionslister"
+
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Indsæt"
+
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Indsæt fil"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "The external editor is still running.<nl>Do you want to stop the editor "
+#~| "or keep it running?</nl><warning>Stopping the editor will cause all your "
+#~| "unsaved changes to be lost.</warning>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The external editor is still running.<nl/>Do you want to stop the editor "
+#~ "or keep it running?<nl/><warning>Stopping the editor will cause all your "
+#~ "unsaved changes to be lost.</warning>"
+#~ msgstr ""
+#~ "Den eksterne editor kører stadig.<nl>Vil du lukke editoren eller holde "
+#~ "den kørende?</nl><warning>Lukning af  editoren vil medføre at alle ikke-"
+#~ "gemte ændringer vil gå tabt.</warning>"
+
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Ekstern editor kører"
+
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Luk editor"
+
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Hold editor kørende"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Redigér kategorier"
+
+#~ msgid "New category"
+#~ msgstr "Ny kategori"
+
+#, fuzzy
+#~| msgid "New category"
+#~ msgid "New subcategory"
+#~ msgstr "Ny kategori"
+
+#~ msgid "Select Categories"
+#~ msgstr "Vælg kategorier"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "Viser URL %1"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Numerisk værdi"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolesk variant"
+
+#~ msgid "Date & Time"
+#~ msgstr "Dato & tid"
+
+#~ msgid "Date"
+#~ msgstr "Dato"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Qt Designer-feltdialog"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer-filer"
+
+#~ msgid "Import Page"
+#~ msgstr "Importér side"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Advarsel:</b> Qt Designer kunne ikke findes. Den er formentlig "
+#~ "ikke installeret. Du kommer kun til at kunne importere eksisterende "
+#~ "Designer-filer.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Forhåndsvisning af valgt side"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Dette afsnit tillader dig at tilføje dine egne grafiske elementer "
+#~ "('<i>kontroller</i>') til at lagre dine egne værdier i %1. Fortsæt som "
+#~ "beskrevet nedenfor:</p><ol><li>Klik på <i>Redigér med Qt Designer</i>'. </"
+#~ "li><li>Vælg '<i>Kontrol</i>' i dialogen, og klik derefter på <i>O.k.</i></"
+#~ "li> <li>Tilføj dine kontroller i formularen.</li><li>Gem filen i mappen, "
+#~ "der foreslås af Qt Designer.</li><li>Luk Qt Designer</li></ol><p> Hvis du "
+#~ "allerede har en Designer-fil (*.ui) et sted på harddisken, så vælg blot  "
+#~ "'<i>Importér side</i>'</p> <p><b>Vigtigt:</b> Navnet på hver input-"
+#~ "kontrol, du tilføjer i formularen, skal begynde med '<i>X_</i>', så hvis "
+#~ "du ønsker,at den grafiske kontrol skal svare til din egen indgang '<i>X-"
+#~ "Foo</i>', skal egenskaben for den grafiske kontrols <i>navn</i> angives "
+#~ "som '<i>X_Foo</i>'. </p><p><b>Vigtigt:</b> Den grafiske kontrol redigerer "
+#~ "egne felter med programnavnet %2. For at ændre programnavnet, der skal "
+#~ "redigeres, angives den grafiske kontrols navn i Qt Designer.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Hvordan virker dette?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Slet side"
+
+#~ msgid "Import Page..."
+#~ msgstr "Importér side..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Redigér med Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Nøgle:"
+
+#~ msgid "Type:"
+#~ msgstr "Type:"
+
+#~ msgid "Classname:"
+#~ msgstr "Klassenavn:"
+
+#~ msgid "Description:"
+#~ msgstr "Beskrivelse:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Ændr config-værdi"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Konfigurationsguide"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Regler"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Opsætning af regler"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Kilde"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Mål"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Betingelse"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Ændringer"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Opsætning af ændringer"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Handling"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Valg"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Værdi"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Sørg venligst for at de programmer, der er indstillet af guiden, ikke "
+#~ "kører parallelt med guiden. Ellers kan ændringer udført af guiden gå tabt."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Advarsel"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Kør guide nu"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Udvalg"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Varighed"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "i dag"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Sted"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Vis fødselsdag"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Unavngivet plugin"
+
+#~ msgid "New category entry"
+#~ msgstr "Ny kategori-indgang"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr ""
+#~ "Indtast en tekst du vil bruge som en ny kategori eller underkategori."
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Tilføj indgangen til kategorilisten"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr "Tryk på denne knap for at indsætte indgangen i kategori-listen."
+
+#~ msgid "A&dd"
+#~ msgstr "&Tilføj"
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr "Tilføj indgangen som en underkategori til den valgte kategori"
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Tryk på denne knap for at indsætte indgangen som en underkategori til den "
+#~ "aktuelt markerede kategori."
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "Tilføj &underkategori"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "Fjern den valgte kategori"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr ""
+#~ "Tryk på denne knap for at fjerne den valgte kategori fra kategorilisten."
+
+#~ msgid "Category list"
+#~ msgstr "Kategoriliste"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Dette er en liste over alle de tilgængelige kategorier. Du kan oprette så "
+#~ "mange underkategorier du vil her."
+
+#~ msgid "Default Category"
+#~ msgstr "Standardkategori"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "&Ryd udvalg"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "R&edigér kategorier..."
+
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Nej"
+
+#~ msgid "Organizer"
+#~ msgstr "Organisator"
+
+#~ msgid "UID"
+#~ msgstr "Bruger-ID"
+
+#~ msgid "Is all-day"
+#~ msgstr "Er heldags"
+
+#~ msgid "Has duration"
+#~ msgstr "Har varighed"
+
+#~ msgid "Summary"
+#~ msgstr "Oversigt"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Secrecy"
+#~ msgstr "Hemmelighed"
+
+#~ msgid "Priority"
+#~ msgstr "Prioritet"
+
+#~ msgid "Location"
+#~ msgstr "Sted"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorier"
+
+#~ msgid "Alarms"
+#~ msgstr "Alarmer"
+
+#~ msgid "Resources"
+#~ msgstr "Ressourcer"
+
+#~ msgid "Relations"
+#~ msgstr "Relationer"
+
+#~ msgid "Attachments"
+#~ msgstr "Bilag"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Undtagelsesdatoer"
+
+#~ msgid "Exception Times"
+#~ msgstr "Undtagelsestidspunkter"
+
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Oprettet"
+
+#~ msgid "Related Uid"
+#~ msgstr "Relateret Uid"
+
+#~ msgid "Has End Date"
+#~ msgstr "Har slutdato"
+
+#~ msgid "End Date"
+#~ msgstr "Slutdato"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Har startdato"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Har datofrist"
+
+#~ msgid "Due Date"
+#~ msgstr "Datofrist"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Har færdig-dato"
+
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Fuldført"
+
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Fuldført"
+
+#~ msgid "Local"
+#~ msgstr "Lokal"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "Cached IMAP"
+#~ msgstr "Cachet IMAP"
+
+#~ msgid "News"
+#~ msgstr "Nyheder"
+
+#~ msgid "None"
+#~ msgstr "Ingen"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "E-mail-mappe/-postkasse"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Nyheder"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "Ikke-forbundet IMAP"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Lokal postkasse"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Ukendt"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "Vis ikke denne besked igen"
+
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "Artikel\n"
+#~ "<b>%1</b><br /><b>%2</b><br />fik følgende note frem:<br />%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Justér bedømmelse"
+
+#~ msgid "Display Message"
+#~ msgstr "Vis besked"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Farvelæg hoved"
+
+#~ msgid "Mark as Read"
+#~ msgstr "Markér som læst"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Liste over samlede noter</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Samlede noter"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Indeholder delstreng"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Matcher regulært udtryk"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Matcher regulært udtryk (versalfølsomt)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Er nøjagtigt det samme som"
+
+#~ msgid "Less Than"
+#~ msgstr "Mindre end"
+
+#~ msgid "Greater Than"
+#~ msgstr "Større end"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Vælg et andet navn på regel"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "Regelnavnet er allerede tilknyttet, vælg venligst et andet navn:"
+
+#~ msgid "rule %1"
+#~ msgstr "regel %1"
+
+#~ msgid "Not"
+#~ msgstr "Ikke"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Nægt denne operation."
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Vælg hoved at matche denne betingelse imod"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Vælg type af match"
+
+#~ msgid "The condition for the match"
+#~ msgstr "Betingelse for match"
+
+#~ msgid "Select an action."
+#~ msgstr "Vælg en handling."
+
+#~ msgid "Properties"
+#~ msgstr "Egenskaber"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Navn:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Grupper:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "&Tilføj gruppe"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "Regel &udløber automatisk"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "&Regel gyldig for:"
+
+#~ msgid "Conditions"
+#~ msgstr "Betingelser"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Match &alle betingelser"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Matc&h enhver betingelse"
+
+#~ msgid "Actions"
+#~ msgstr "Handlinger"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " dag"
+#~ msgstr[1] " dage"
+
+#~ msgid "New rule"
+#~ msgstr "Ny regel"
+
+#~ msgid "Edit rule"
+#~ msgstr "Redigér regel"
+
+#~ msgid "Remove rule"
+#~ msgstr "Fjern regel"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>alle grupper</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "&Vis kun regler for gruppe:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Regel-editor"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Redigér regel"
+
+#~ msgid "Reload &List"
+#~ msgstr "Genindlæs &liste"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr "Håndtér hvilke e-mail-mapper, du vil se i din mappevisning"
+
+#~ msgid "S&earch:"
+#~ msgstr "Sø&g:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Deaktivér &trævisning"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "&Kun tilmeldte"
+
+#~ msgid "&New only"
+#~ msgstr "&Kun Ny"
+
+#~ msgid "Current changes:"
+#~ msgstr "Nuværende ændringer:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Beskrivelse"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Abonnér på"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Afmeld fra"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Indlæser... (1 matcher)"
+#~ msgstr[1] "Indlæser... (%1 matcher)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (1 matcher)"
+#~ msgstr[1] "%2: (%1 matcher)"
+
+#~ msgid "View Columns"
+#~ msgstr "Vis kolonner"
+
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Konflikt fundet"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "En konflikt blev fundet. Det betyder formentlig, at nogen redigerede "
+#~ "samme indgang på serveren, mens du ændrede den lokalt.<nl/><note>Du skal "
+#~ "tjekke e-mail igen før dine ændringer anvendes på serveren.</note>"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Brug lokal"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take your local copy of the incidence"
+#~ msgstr "Brug din lokale kopi af indgangen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Local\" button to make "
+#~ "sure your local copy is used."
+#~ msgstr ""
+#~ "En konflikt blev fundet mellem din lokale kopi af indgangen og den "
+#~ "eksterne indgang på serveren. Tryk på knappen \"Brug lokal\" for at sikre "
+#~ "at din lokale kopi bruges."
+
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Brug ny"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take the server copy of the incidence"
+#~ msgstr "Brug serverens kopi af indgangen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take New\" button to use the "
+#~ "server copy, thereby overwriting your local copy"
+#~ msgstr ""
+#~ "En konflikt blev fundet mellem din lokale kopi af indgangen og den "
+#~ "eksterne indgang på serveren. Tryk på knappen \"Brug ny\" for at bruge "
+#~ "serverens kopi og derved overskrive din lokale kopi"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Brug begge"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both copies of the incidence"
+#~ msgstr "Brug begge kopier af indgangen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Both\" button to keep "
+#~ "both the local and the server copies."
+#~ msgstr ""
+#~ "En konflikt blev fundet mellem din lokale kopi af indgangen og den "
+#~ "eksterne indgang på serveren. Tryk på knappen \"Brug begge\" for at "
+#~ "beholde både den lokale og serverens kopi."
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Lokal indgang"
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Oversigt over lokal indgang"
+
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Senest ændret:"
+
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Angiv senest ændret"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Vis detaljer"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Hide/Show incidence details"
+#~ msgstr "Vis/skjul detaljer for indgangen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Press this button to toggle the incidence details display."
+#~ msgstr ""
+#~ "Tryk på denne knap for at slå visning af indgangens detaljer til/fra."
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Vis forskelle"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show the differences between the two incidences"
+#~ msgstr "Vis forskellene mellem de to indgange"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press the \"Show Differences\" button to see the specific differences "
+#~ "between the incidences which are in conflict."
+#~ msgstr ""
+#~ "Tryk på knappen \"Vis forskelle\" for at se de specifikke forskelle "
+#~ "mellem indgangene som er i konflikt."
+
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Synk.-indstillinger"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Synkroniseringsindstillinger"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Synkroniseringsindstillinger"
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Brug lokal kopi ved konflikter"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Brug lokal kopi af indgangen ved konflikter"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the local copy."
+#~ msgstr ""
+#~ "Når en konflikt findes mellem en lokal kopi af en indgang og en ekstern "
+#~ "indgang på serveren, sikrer denne indstilling at den lokale kopi bruges."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Brug ekstern indgang ved konflikter"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Brug ekstern kopi af indgangen ved konflikter"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the remote "
+#~ "copy."
+#~ msgstr ""
+#~ "Når en konflikt findes mellem en lokal kopi af en indgang og en ekstern "
+#~ "indgang på serveren, sikrer denne indstilling at den eksterne kopi bruges."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Brug nyeste indgang ved konflikter"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Brug nyeste version af indgangen ved konflikter"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the newest "
+#~ "version available."
+#~ msgstr ""
+#~ "Når en konflikt findes mellem en lokal kopi af en indgang og en ekstern "
+#~ "indgang på serveren, sikrer denne indstilling at den nyeste tilgængelige "
+#~ "version bruges."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Spørg ved hver konflikt"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Spørg for hver konflikt i indgange"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to ask the user which "
+#~ "version they want to keep."
+#~ msgstr ""
+#~ "Når en konflikt findes mellem en lokal kopi af en indgang og en ekstern "
+#~ "indgang på serveren, sørger denne indstilling for at brugeren spørges "
+#~ "hvilken version de vil beholde."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Brug begge ved konflikter"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Brug begge indgange ved konflikter"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to keep both versions of "
+#~ "the incidence."
+#~ msgstr ""
+#~ "Når en konflikt findes mellem en lokal kopi af en indgang og en ekstern "
+#~ "indgang på serveren, sørger denne indstilling for at begge versioner af "
+#~ "indgangen beholdes."
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "Anvend indstillingen på alle konflikter i denne synkronisering"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Apply the preference to all conflicts that may occur during the sync"
+#~ msgstr ""
+#~ "Anvend indstillingen på alle konflikter der måtte opstå under "
+#~ "synkroniseringen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press this button to apply the selected preference to all future "
+#~ "conflicts that might occur during this sync."
+#~ msgstr ""
+#~ "Tryk på denne knap for at anvende den valgte indstilling på alle "
+#~ "fremtidige konflikter i denne synkronisering."
+
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Lokal begivenhed"
+
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Lokalt gøremål"
+
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Lokal journal"
+
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Ny begivenhed"
+
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Nyt gøremål"
+
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Ny journal"
+
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Skjul detaljer"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Indgangsdetaljer"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "This area shows the incidence details"
+#~ msgstr "Dette område viser indgangsdetaljerne"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Vis detaljer..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Forskelle mellem %1 og %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Forskelle for %1"
+
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Lokal indgang"
+
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Ekstern indgang"
+
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Vis detaljer"
+
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Skjul detaljer"
+
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#~ msgid ""
+#~ "The external editor is still running.\n"
+#~ "Abort the external editor or leave it open?"
+#~ msgstr ""
+#~ "Den eksterne editor kører stadig.\n"
+#~ "Afbryd den eksterne editor, eller lad den køre?"
+
+#~ msgid "Floating"
+#~ msgstr "Flyder"
+
+#~ msgid "Local entry"
+#~ msgstr "Lokal indgang"
+
+#~ msgid "New (remote) entry"
+#~ msgstr "Ny (ekstern) indgang"
+
+#~ msgid "Plain"
+#~ msgstr "Almindelig"
+
+#~ msgid "Unquoted"
+#~ msgstr "Ikke citeret"
+
+#~ msgid "Bracketed"
+#~ msgstr "I parentes"
+
+#~ msgid "Undefined"
+#~ msgstr "Udefineret"
+
+#~ msgid "File to import:"
+#~ msgstr "Fil til import:"
+
+#~ msgid "Separator:"
+#~ msgstr "Adskiller:"
+
+#~ msgid "Tab"
+#~ msgstr "Faneblad"
+
+#~ msgid "Space"
+#~ msgstr "Mellemrum"
+
+#~ msgid "Header"
+#~ msgstr "Sidehoved"
+
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Knyt til valgte søjle"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Fjern tilknytning fra valgte søjle"
+
+#~ msgid "Assign with Template..."
+#~ msgstr "Tilknyt med skabelon..."
+
+#~ msgid "Save Current Template"
+#~ msgstr "Gem nuværende skabelon"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Indlæsningsfremgang"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Vent venligst, mens filen indlæses."
+
+#~ msgid "Template Selection"
+#~ msgstr "Skabelonvalg"
+
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Vælg en skabelon, der matcher CSV-filen:"
+
+#~ msgid "Importing Progress"
+#~ msgstr "Importfremgang"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Vent venligst, mens data importeres."
+
+#~ msgid "Template Name"
+#~ msgstr "Skabelonnavn"
+
+#~ msgid "Hide Birthday"
+#~ msgstr "Skjul fødselsdag"
+
+#~ msgid "Hide Postal Addresses"
+#~ msgstr "Skjul postadresser"
+
+#~ msgid "Hide Email Addresses"
+#~ msgstr "Skjul e-mailadresser"
+
+#~ msgid "Hide Telephone Numbers"
+#~ msgstr "Skjul telefonnumre"
+
+#~ msgid "Hide Web Pages (URLs)"
+#~ msgstr "Skjul netsider (URL'er)"
+
+#~ msgid "Hide Instant Messaging Addresses"
+#~ msgstr "Skjul adresser for direkte meddelelser"
+
+#~ msgid "Hide Custom Fields"
+#~ msgstr "Skjul egne felter"
+
+#~ msgid "Test"
+#~ msgstr "Test"
+
+#~ msgid "Suggestions"
+#~ msgstr "Forslag"
+
+#~ msgid "Ignore"
+#~ msgstr "Ignorér"
+
+#~ msgid "Add to Dictionary"
+#~ msgstr "Føj til ordbog"

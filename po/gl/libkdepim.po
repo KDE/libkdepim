@@ -1,0 +1,723 @@
+# translation of libkdepim.po to galician
+#
+# Xabi G. Feal <xabigf@gmx.net>, 2006, 2007.
+# Miguel Branco <mgl.branco@gmail.com>, 2008.
+# mvillarino <mvillarino@users.sourceforge.net>, 2008.
+# Xosé <xosecalvo@gmail.com>, 2009, 2010.
+# Marce Villarino <mvillarino@gmail.com>, 2009.
+# Xosé <xosecalvo@gmail.com>, 2009, 2012, 2013, 2014.
+# Marce Villarino <mvillarino@kde-espana.es>, 2012, 2014.
+# Adrian Chaves Fernandez <adriyetichaves@gmail.com>, 2013, 2015.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2019-08-11 17:06+0200\n"
+"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
+"Language-Team: Galician <proxecto@trasno.gal>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 19.04.1\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Non se poden engadir máis destinatarios. Chegouse ao número máximo de "
+"destinatarios"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Cancelar esta operación."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Estase a interromper…"
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "A conexión está cifrada"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "A conexión non está cifrada"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Abrir o diálogo de progreso detallado"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Mostrar a xanela de progreso detallado"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Agochar a xanela de progreso detallado"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Máis"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Menos"
+
+#~ msgid "Choose..."
+#~ msgstr "Escoller…"
+
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Configuración"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Está a piques de poñer todos os valores predeterminados nas preferencias. "
+#~ "Perderanse todas as modificacións personalizadas."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Poñendo as preferencias predeterminadas"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Reiniciar ás predeterminadas"
+
+#~ msgid "Add"
+#~ msgstr "Engadir"
+
+#~ msgid "Remove"
+#~ msgstr "Retirar"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Quere retirar este enderezo de correo?"
+#~ msgstr[1] "Quere retirar estes %1 enderezos de correo?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "Fallou a importación da vCard"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Non se pode acceder a <b>%1</b>.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "Seleccionar o correo electrónico do contacto"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Mostrar a unidade de organización nos resultados de LDAP"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "Configurar o completado…"
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "Expandir os grupos automaticamente"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "Expandir os grupos…"
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Enderezos recentes"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Contactos atopados entre os seus datos"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "Servidor de LDAP: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "Buscar no correo:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "A busca actualízase a partir dos 3 caracteres."
+
+#~ msgid "Search"
+#~ msgstr "Buscar"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Mostrar os correos electrónicos da lista negra"
+
+#~ msgid "&Select"
+#~ msgstr "&Seleccionar"
+
+#~ msgid "&Unselect"
+#~ msgstr "&Anular a selección"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">Máis resultados…</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "Buscar no resultado…"
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "Excluír os seguintes nomes de dominio:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Separe os dominios con «%1»."
+
+#~ msgid "No email found."
+#~ msgstr "Non se atoparon mensaxes."
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "Atopouse unha mensaxe."
+#~ msgstr[1] "Atopáronse %1 mensaxes."
+
+#~ msgid "No result found"
+#~ msgstr "Non se atoparon resultados."
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr ""
+#~ "Cambiouse a lista. Quere gardar os cambios antes de realizar unha nova "
+#~ "busca?"
+
+#~ msgid "Save"
+#~ msgstr "Gardar"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Configurar o completado…"
+
+#~ msgid "Completion Order"
+#~ msgstr "Orde de completado"
+
+#~ msgid "Recent Address"
+#~ msgstr "Enderezo recente"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Enderezo de correo da lista negra"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Editar a orde de completado"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "Servidor de LDAP %1"
+
+#~ msgid "Move Up"
+#~ msgstr "Subir"
+
+#~ msgid "Move Down"
+#~ msgstr "Baixar"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Hoxe"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Mañá"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Vindeira &semana"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Vindeiro &mes"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Sen data"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "O enderezo de correo electrónico principal da vCard xa está no caderno de "
+#~ "enderezos; porén, podería gardar o vCard nun ficheiro e importalo no "
+#~ "caderno de enderezos manualmente."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "Engadiuse a vCard ao caderno de enderezos; pode engadir máis información "
+#~ "á entrada desde o caderno."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Xa hai un contacto co enderezo de correo <email>%1</email> no caderno de "
+#~ "enderezos."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Debe crear un caderno de enderezos para poder engadir un contacto. Quere "
+#~ "crear un caderno de enderezos?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Non hai ningún caderno de enderezos dispoñíbel"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Engadir un caderno de enderezos"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>O contacto co enderezo de correo «%1» engadiuse correctamente ao "
+#~ "caderno de enderezos.</para><para>Quere editar agora este novo contacto?</"
+#~ "para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Non se pode almacenar o contacto: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Non se puido almacenar o contacto"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "O contacto creouse correctamente"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Xabi García, Xosé Calvo"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "xabigf@gmx.net, xosecalvo@gmail.com"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Engadir un servidor"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Configuración do servidor de LDAP"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "© 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "O contrasinal de LDAP está almacenado como texto simple; quere almacenalo "
+#~ "no kwallet?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Almacenar o contrasinal en texto simple en KWallet"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Editar o servidor"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Quere retirar a configuración do servidor «%1»?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Retirar o servidor"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "Servidores de LDAP"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Comprobar todos os servidores que se queiran empregar:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "Eng&adir unha máquina…"
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Editar un servidor…"
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Retirar o servidor"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Cargo"
+
+#~ msgid "Full Name"
+#~ msgstr "Nome completo"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "Correo electrónico"
+
+#~ msgid "Home Number"
+#~ msgstr "Número do fogar"
+
+#~ msgid "Work Number"
+#~ msgstr "Número do traballo"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Número do móbil"
+
+#~ msgid "Fax Number"
+#~ msgstr "Número do fax"
+
+#~ msgid "Pager"
+#~ msgstr "Busca"
+
+#~ msgid "Street"
+#~ msgstr "Rúa"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Estado"
+
+#~ msgid "Country"
+#~ msgstr "País"
+
+#~ msgid "City"
+#~ msgstr "Cidade"
+
+#~ msgid "Organization"
+#~ msgstr "Organización"
+
+#~ msgid "Company"
+#~ msgstr "Empresa"
+
+#~ msgid "Department"
+#~ msgstr "Departamento"
+
+#~ msgid "Zip Code"
+#~ msgstr "Código postal"
+
+#~ msgid "Postal Address"
+#~ msgstr "Enderezo postal"
+
+#~ msgid "Description"
+#~ msgstr "Descrición"
+
+#~ msgid "User ID"
+#~ msgstr "Identificador de usuario"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "Correo electrónico"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Estado"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Cargo"
+
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Importar contactos desde LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Buscar os enderezos no directorio"
+
+#~ msgid "Search for:"
+#~ msgstr "Buscar:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "en"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Correo electrónico"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Número do lar"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Número do traballo"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Buscar"
+
+#~ msgid "Recursive search"
+#~ msgstr "Busca continua"
+
+#~ msgid "Contains"
+#~ msgstr "Contén"
+
+#~ msgid "Starts With"
+#~ msgstr "Comeza por"
+
+#~ msgid "Search in result"
+#~ msgstr "Buscar no resultado"
+
+#~ msgid "Searching..."
+#~ msgstr "Buscando…"
+
+#~ msgid "Select All"
+#~ msgstr "Escoller todo"
+
+#~ msgid "Unselect All"
+#~ msgstr "Anular a selección"
+
+#~ msgid "Add Selected"
+#~ msgstr "Engadir o escollido"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Configurar os servidores de LDAP…"
+
+#~ msgid "Copy"
+#~ msgstr "Copiar"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Hai que seleccionar un servidor de LDAP antes de poder buscar."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Importado desde o directorio de LDAP %1 en %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Configurar as opcións do Caderno de Enderezos de LDAP"
+
+#~ msgid "&Remove"
+#~ msgstr "&Retirar"
+
+#~ msgid "Blacklist Email Completion"
+#~ msgstr "Completado da lista negra de correo"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Editar os enderezos recentes"
+
+#~ msgid "Configure Email Blacklist..."
+#~ msgstr "Configurar a lista negra de correo…"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Seleccionar un caderno de enderezos"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Seleccionar o caderno de enderezos no que gardar o novo contacto:"
+
+#~ msgid "Free"
+#~ msgstr "Libre"
+
+#~ msgid "Busy"
+#~ msgstr "Ocupado"
+
+#~ msgid "Unavailable"
+#~ msgstr "Non dispoñíbel"
+
+#~ msgid "Tentative"
+#~ msgstr "Provisorio"
+
+#~ msgid "Unknown"
+#~ msgstr "Descoñecido"
+
+#~ msgid "Attendee"
+#~ msgstr "Asistente"
+
+#~ msgctxt "@label Day of the week name, example: Monday,"
+#~ msgid "%1,"
+#~ msgstr "%1,"
+
+#~ msgctxt ""
+#~ "@label A time period duration. It is preceded/followed (based on the "
+#~ "orientation) by the name of the week, see the message above. example: 12 "
+#~ "June, 8:00am to 9:30am"
+#~ msgid "%1 %2, %3 to %4"
+#~ msgstr "%1 %2, de %3 a %4"
+
+#~ msgctxt ""
+#~ "@label A time period duration. KLocale is used to format the components. "
+#~ "example: Monday, 12 June, 8:00am to 9:30am"
+#~ msgid "%1, %2 %3, %4 to %5"
+#~ msgstr "%1, %2 %3, de %4 a %5"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Free Period"
+#~ msgstr "Período libre"
+
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Inicio:"
+
+#~ msgctxt "@info:tooltip period end time"
+#~ msgid "End:"
+#~ msgstr "Fin:"
+
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Duración:"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Transmisión completa. %1 mensaxe nova (%2 KB). Fican %3 KB no servidor."
+#~ msgstr[1] ""
+#~ "Transmisión completa: %1 mensaxes novas (%2 KB). Fican %3 KB no servidor."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Transmisión completa. %1 mensaxe (%2 KB)."
+#~ msgstr[1] "Transmisión completa. %1 mensaxes (%2 KB)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Transmisión completa. %1 mensaxe nova."
+#~ msgstr[1] "Transmisión completa. %1 mensaxes novas."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Transmisión completa. Non hai mensaxes novas."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Completouse a transmisión da conta %4. %1 mensaxe nova (%2 KB). Fican %3 "
+#~ "KB no servidor."
+#~ msgstr[1] ""
+#~ "Completouse a transmisión da conta %4. %1 mensaxes novas (%2 KB). Fican "
+#~ "%3 KB no servidor."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] ""
+#~ "Completouse a transmisión da conta %3 completa. %1 mensaxe (%2 KB)."
+#~ msgstr[1] ""
+#~ "Completouse a transmisión da conta %3 completa. %1 mensaxes (%2 KB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Completouse a transmisión da conta %2. %1 mensaxe nova."
+#~ msgstr[1] "Completouse a transmisión da conta %2. %1 mensaxe nova."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Completouse a transmisión da conta %1. Non hai mensaxes novas."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Correo electrónico"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Idioma da corrección ortográfica"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Estanse a obter e gardar as mensaxes..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Mensaxes totais"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Mensaxes sen ler"
+
+#~ msgid "Quota"
+#~ msgstr "Cota"
+
+#~ msgid "Storage Size"
+#~ msgstr "Tamaño do almacenamento"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Tamaño de almacenamento do subcartafol"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Tamaño"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Total"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Sen ler"
+
+#~ msgid "Stop"
+#~ msgstr "Parar"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Non ten activado o sistema de escritorio semántico. Moitas das "
+#~ "funcionalidades importantes deste software dependen do sistema do "
+#~ "escritorio semántico e non funcionan correctamente sen el."
+
+#~ msgid "&Configure"
+#~ msgstr "&Configurar"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Non se atopou no sistema o módulo para configurar o sistema de escritorio "
+#~ "semántico (Nepomuk). Comprobe que o Nepomuk está adecuadamente instalado."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Non ten activado o sistema de escritorio semántico. As funcionalidades "
+#~ "seguintes non funcionarán correctamente:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "Enviar unha SMS"
+
+#~ msgid "Message"
+#~ msgstr "Mensaxe"
+
+#~ msgid "Recipient:"
+#~ msgstr "Destinatario:"
+
+#~ msgid "Send"
+#~ msgstr "Enviar"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr "Seleccione o caderno de enderezos no que gardar o novo contacto:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>Engadiuse o enderezo de correo electrónico <b>%1</b> ao caderno de "
+#~ "enderezos; pode engadir máis información a esta entrada abrindo o caderno "
+#~ "de enderezos.</qt>"

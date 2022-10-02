@@ -1,0 +1,661 @@
+# translation of libkdepim.po to Bosanski
+# translation of libkdepim.po to Bosnian
+# Bosnian translation of libkdepim
+# Copyright (C) 2002, 2004 Free Software Foundation, Inc.
+# Vedran Ljubovic <vljubovic@smartnet.ba>, 2002, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2013-12-30 16:57+0000\n"
+"Last-Translator: Samir Ribić <Unknown>\n"
+"Language-Team: Bosanski <lokal@lugbih.org>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Launchpad (build 16877)\n"
+"X-Launchpad-Export-Date: 2013-12-31 05:23+0000\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr "Ne možete dodati više primatelja. Dosegli smo maksimum primatelja"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Prekini ovu operaciju."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Prekidam..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Konekcija je šifrovana"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Konekcija nije šifrovana"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Otvori detaljni prozor napretka"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Prikaži detaljni prozor napretka"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Sakrij detaljni prozor napretka"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Više"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Manje"
+
+#~ msgid "Choose..."
+#~ msgstr "Izaberite..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Postavke"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Upravo ćete postaviti sve postavke na njihove polazne vrijednosti. Sve "
+#~ "vaše izmjene će biti izgubljene."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Postavljam polazne vrijednosti"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Poništi na polazne"
+
+#, fuzzy
+#~| msgid "&Add"
+#~ msgid "Add"
+#~ msgstr "&Dodaj"
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "Remove"
+#~ msgstr "&Ukloni"
+
+#, fuzzy
+#~| msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Želite li ukloniti postavke za host \"%1\"?"
+#~ msgstr[1] "Želite li ukloniti postavke za host \"%1\"?"
+#~ msgstr[2] "Želite li ukloniti postavke za host \"%1\"?"
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgid "Configure Completion..."
+#~ msgstr "Uredi redoslijed dovršavanja..."
+
+#, fuzzy
+#~| msgid "Edit Recent Addresses"
+#~ msgid "Recent Addresses"
+#~ msgstr "Uredi skorašnje adrese"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Kontakti nađeni u vašim podacima"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP server: %1"
+
+#, fuzzy
+#~| msgid "Search for:"
+#~ msgid "Search email:"
+#~ msgstr "Traži:"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Traži"
+
+#, fuzzy
+#~| msgid "Postal Address"
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "Kućna adresa"
+
+#, fuzzy
+#~| msgid "Select All"
+#~ msgid "&Select"
+#~ msgstr "Izaberi sve"
+
+#, fuzzy
+#~| msgid "Unselect All"
+#~ msgid "&Unselect"
+#~ msgstr "Poništi sav izbor"
+
+#, fuzzy
+#~| msgid "Searching..."
+#~ msgid "Search in result..."
+#~ msgstr "Pretražujem..."
+
+#, fuzzy
+#~| msgid "Configure Completion Order..."
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Uredi redoslijed dovršavanja..."
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgid "Completion Order"
+#~ msgstr "Izmijeni redoslijed dovršavanja"
+
+#, fuzzy
+#~| msgid "Edit Recent Addresses"
+#~ msgid "Recent Address"
+#~ msgstr "Uredi skorašnje adrese"
+
+#, fuzzy
+#~| msgid "Postal Address"
+#~ msgid "Blacklist Email Address"
+#~ msgstr "Kućna adresa"
+
+#, fuzzy
+#~| msgid "Edit Completion Order"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Izmijeni redoslijed dovršavanja"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP server %1"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Danas"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Sutra"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Sljedeće &sedmice"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Sljedeći &mjesec"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Nema Datuma"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "VCard je primarna e-mail adresa nalazi se vec u vasoj biljeznici; mozete "
+#~ "spasiti vKArticu u datoteku i unijeti je u biljeznicu rucno"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "vKartica je dodata vasoj biljeznici; mozete dodati jos informacija ovome "
+#~ "ulazeci tako sto otvorite svoju biljeznicu"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Kontaktna osoba s E-mail adresom <email>%1</email> je već u vašem "
+#~ "adresaru."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Morate kreirati adresar prije dodavanja kontakta. Želite li kreirati "
+#~ "adresar"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Nema dostupnog adresara"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Dodaj adresar"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "<para>A contact for <email>%1</email> was successfully added to your "
+#~| "address book.</para><para>Do you want to edit this new contact now?</"
+#~| "para>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Kontaktna osoba za <email>%1</email> je uspješno dodana u vaš "
+#~ "adresar.</para><para>Želite li sada urediti taj novi kontakt?</para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Kontakt ne moze biti dodan: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Neuspješno čuvanje kontakt informacija."
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Kontakt uspješno kreiran."
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr ""
+#~ "Vedran Ljubović,Elmir HadzikadunicSamir Ribić,Vedran Ljubovic,memsud"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr ""
+#~ "vljubovic@smartnet.ba,ek@etf.ba,samir.ribic@etf.unsa.bavljubovic@smartnet."
+#~ "ba,dedovic.memsud94@hotmail.com"
+
+#, fuzzy
+#~| msgid "Add Host"
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Dodaj računar"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Postavke LDAP servera"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c) 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "LDAP lozinka je pohranjena kao jasan tekst, želite li ga pohraniti u "
+#~ "KWallet?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Spremite jasan tekst lozinke u KWallet"
+
+#, fuzzy
+#~| msgid "Edit Host"
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Izmijeni domaćina"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Želite li ukloniti postavke za host \"%1\"?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Izbisite domacina"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP serveri"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Označite sve servere koji bi trebali biti korišćeni:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Dodaj domaćina..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Izmijeni domaćina..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Ukloni domaćina"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Naslov"
+
+#~ msgid "Full Name"
+#~ msgstr "Puno Ime"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-pošta"
+
+#~ msgid "Home Number"
+#~ msgstr "Kućni broj"
+
+#~ msgid "Work Number"
+#~ msgstr "Broj na poslu"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Broj mobitela"
+
+#~ msgid "Fax Number"
+#~ msgstr "Broj faksa"
+
+#~ msgid "Pager"
+#~ msgstr "Pejdžer"
+
+#~ msgid "Street"
+#~ msgstr "Ulica"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Stanje"
+
+#~ msgid "Country"
+#~ msgstr "Država"
+
+#~ msgid "City"
+#~ msgstr "Grad"
+
+#~ msgid "Organization"
+#~ msgstr "Organizacija"
+
+#~ msgid "Company"
+#~ msgstr "Preduzeće"
+
+#~ msgid "Department"
+#~ msgstr "Odjeljenje"
+
+#~ msgid "Zip Code"
+#~ msgstr "Poštanski Broj"
+
+#~ msgid "Postal Address"
+#~ msgstr "Kućna adresa"
+
+#~ msgid "Description"
+#~ msgstr "Opis"
+
+#~ msgid "User ID"
+#~ msgstr "Korisnički ID"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-pošta"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Država/Entitet"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Naslov"
+
+#, fuzzy
+#~| msgid "Import Contacts from LDAP"
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Uvezi kontakte iz LDAP-a"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Traži adrese u direktoriju"
+
+#~ msgid "Search for:"
+#~ msgstr "Traži:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "u"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Naziv"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-pošta"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Kućni broj"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Broj na poslu"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Traži"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekurzivna pretraga"
+
+#~ msgid "Contains"
+#~ msgstr "Sadrži"
+
+#~ msgid "Starts With"
+#~ msgstr "Počinje sa"
+
+#~ msgid "Searching..."
+#~ msgstr "Pretražujem..."
+
+#~ msgid "Select All"
+#~ msgstr "Izaberi sve"
+
+#~ msgid "Unselect All"
+#~ msgstr "Poništi sav izbor"
+
+#~ msgid "Add Selected"
+#~ msgstr "Dodaj izabrano"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Konfigurišite LDAP servere..."
+
+#~ msgid "Copy"
+#~ msgstr "Kopiraj"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Morate izabrati LDAP server prije pretrage."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Uvezeno iz LDAP imenika %1 dana %2"
+
+#, fuzzy
+#~| msgid "Configure the Address Book LDAP Settings"
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Konfigurišite postavke LDAP adresara"
+
+#~ msgid "&Remove"
+#~ msgstr "&Ukloni"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Uredi skorašnje adrese"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Izaberi adresar"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr "Izaberi adresar u koji će se sačuvati novi kontakt:"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Opis"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Prijenos završen. %1 nova poruka (%2 KB). %3 KB ostalo na serveru."
+#~ msgstr[1] ""
+#~ "Prijenos završen. %1 nove poruke (%2 KB). %3 KB ostale na serveru."
+#~ msgstr[2] ""
+#~ "Prijenos završen. %1 novih poruka (%2 KB). %3 KB ostale na serveru."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Prijenos završen. %1 nova poruka (%2 KB)."
+#~ msgstr[1] "Prijenos završen. %1 nove poruke (%2 KB)."
+#~ msgstr[2] "Prijenos završen. %1 novih poruka (%2 KB)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Prijenos završen. %1 nova poruke"
+#~ msgstr[1] "Prijenos završen. %1 nove poruke"
+#~ msgstr[2] "Prijenos završen. %1 novih poruka"
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Prijenos završen. Nema novih poruka."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Prijenos za nalog %4 završen. %1 nova poruka (%2 KB). %3 KB ostalo na "
+#~ "serveru."
+#~ msgstr[1] ""
+#~ "Prijenos za nalog %4 završen. %1 nove poruke (%2 KB). %3 KB ostalo na "
+#~ "serveru."
+#~ msgstr[2] ""
+#~ "Prijenos za nalog %4 završen. %1 novih poruka (%2 KB). %3 KB ostalo na "
+#~ "serveru."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Prijenos za nalog %3 završen. %1 poruka (%2 KB)."
+#~ msgstr[1] "Prijenos za nalog %3 završen. %1 poruke (%2 KB)."
+#~ msgstr[2] "Prijenos za nalog %3 završen. %1 poruka (%2 KB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Prijenos za nalog %2 završen. %1 nova poruka."
+#~ msgstr[1] "Prijenos za nalog %2 završen. %1 nove poruke."
+#~ msgstr[2] "Prijenos za nalog %2 završen. %1 novih poruka."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Prijenos za račun %1 završen. Nema novih poruka."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Naziv"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-pošta"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Jezik za provjeru pravopisa"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Preuzimam i smještam poruke..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Ukupno poruka"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Nepročitane poruke"
+
+#~ msgid "Quota"
+#~ msgstr "Kvota"
+
+#~ msgid "Storage Size"
+#~ msgstr "Skladišna veličina"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Veličina spremnika poddirektorija"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Veličina"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Ukupno"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Nepročitano"
+
+#~ msgid "Stop"
+#~ msgstr "Zaustavi"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "Nemate omogućen semantički stoni sistem.  Mnoge važne mogućnostiovog "
+#~ "softvera ovise o semantičkom stonom sistemu i neće korektno raditi bez "
+#~ "njega."
+
+#~ msgid "&Configure"
+#~ msgstr "&Podesi"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "Modul za konfiguraciju semantičkog desktop sistema (Nepomuk) nije nađen "
+#~ "na ovom sistemu. Molim obezbijedite da je Nepomuk ispravno instaliran."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "Nemate omogućen semantički stoni sistem. Sljedeće opcije neće ispravno "
+#~ "raditi:<ul><li>%1</li></ul>"
+
+#~ msgctxt "o/o1 is a time, o/o2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid "Send SMS"
+#~ msgstr "Pošalji SMS"
+
+#~ msgid "Message"
+#~ msgstr "Poruka"
+
+#~ msgid "Recipient:"
+#~ msgstr "Primalac:"
+
+#~ msgid "Send"
+#~ msgstr "Pošalji"

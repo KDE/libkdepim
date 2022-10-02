@@ -1,0 +1,1932 @@
+# translation of libkdepim.po to Dutch
+# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
+#
+# Rinse de Vries <rinsedevries@kde.nl>, 2003, 2004, 2005, 2007, 2008, 2010.
+# Wilbert Berendsen <wbsoft@xs4all.nl>, 2003.
+# Bram Schoenmakers <bramschoenmakers@kde.nl>, 2004, 2005, 2006, 2007.
+# Tom Albers <tomalbers@kde.nl>, 2004, 2005.
+# Antoon Tolboom <atolboo@casema.nl>, 2008.
+# Antoon Tolboom <atolboo@gmail.com>, 2008.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2019.
+# Hannie Lafeber-Dumoleyn <hannie@kde.nl>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkdepim\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"PO-Revision-Date: 2019-07-31 10:11+0200\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.04.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#, kde-format
+msgid "We can not add more recipients. We have reached maximum recipients"
+msgstr ""
+"Meer ontvangers kunnen niet worden toegevoegd. Het maximum aantal ontvangers "
+"is bereikt"
+
+#: libkdepim/progresswidget/progressdialog.cpp:226
+#, kde-format
+msgid "Cancel this operation."
+msgstr "Deze operatie annuleren."
+
+#: libkdepim/progresswidget/progressmanager.cpp:111
+#, kde-format
+msgid "Aborting..."
+msgstr "Bezig met afbreken..."
+
+#: libkdepim/progresswidget/ssllabel.cpp:39
+#, kde-format
+msgid "Connection is encrypted"
+msgstr "Verbinding is versleuteld"
+
+#: libkdepim/progresswidget/ssllabel.cpp:44
+#, kde-format
+msgid "Connection is unencrypted"
+msgstr "Verbinding is niet versleuteld"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#, kde-format
+msgid "Open detailed progress dialog"
+msgstr "Gedetailleerd voortgangsdialoog openen"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#, kde-format
+msgid "Show detailed progress window"
+msgstr "Gedetailleerd voortgangsvenster tonen"
+
+#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#, kde-format
+msgid "Hide detailed progress window"
+msgstr "Gedetailleerd voortgangsvenster verbergen"
+
+#: libkdepim/widgets/kwidgetlister.cpp:91
+#, kde-format
+msgctxt "more widgets"
+msgid "More"
+msgstr "Meer"
+
+#: libkdepim/widgets/kwidgetlister.cpp:96
+#, kde-format
+msgctxt "fewer widgets"
+msgid "Fewer"
+msgstr "Minder"
+
+#~ msgid "Choose..."
+#~ msgstr "Kiezen..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Voorkeuren"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "U staat op het punt alle voorkeuren terug te zetten naar hun "
+#~ "standaardwaarden. Al uw aanpassingen zullen verloren gaan."
+
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Standaardvoorkeuren worden teruggezet"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Naar standaardinstellingen"
+
+#~ msgid "Add"
+#~ msgstr "Toevoegen"
+
+#~ msgid "Remove"
+#~ msgstr "Verwijderen"
+
+#~ msgid "Do you want to remove this email address?"
+#~ msgid_plural "Do you want to remove %1 email addresses?"
+#~ msgstr[0] "Wilt u dit e-mailadres verwijderen?"
+#~ msgstr[1] "Wilt u deze %1 e-mailadressen verwijderen?"
+
+#~ msgid "vCard Import Failed"
+#~ msgstr "Importeren vCard mislukt"
+
+#~ msgid "<qt>Unable to access <b>%1</b>.</qt>"
+#~ msgstr "<qt>Geen toegang tot <b>%1</b>.</qt>"
+
+#~ msgid "Select email from contact"
+#~ msgstr "E-mailadres uit contactpersoon selecteren"
+
+#~ msgid "Show Organization Unit for LDAP results"
+#~ msgstr "Organization Unit (OU) voor LDAP resultaten tonen"
+
+#~ msgid "Configure Completion..."
+#~ msgstr "Aanvullen instellen..."
+
+#~ msgid "Automatically expand groups"
+#~ msgstr "Groepen automatisch uitvouwen"
+
+#~ msgid "Expand Groups..."
+#~ msgstr "Groepen uitvouwen..."
+
+#~ msgid "Recent Addresses"
+#~ msgstr "Recente adressen"
+
+#~ msgctxt "@title:group"
+#~ msgid "Contacts found in your data"
+#~ msgstr "Contactpersonen in uw gegevens gevonden"
+
+#~ msgid "LDAP server: %1"
+#~ msgstr "LDAP-server: %1"
+
+#~ msgid "Search email:"
+#~ msgstr "E-mail zoeken:"
+
+#~ msgid "Research is done from 3 characters"
+#~ msgstr "Onderzoek wordt gedaan vanaf 3 tekens"
+
+#~ msgid "Search"
+#~ msgstr "Zoeken"
+
+#~ msgid "Show Blacklisted Emails"
+#~ msgstr "E-mailadressen op zwarte lijst tonen"
+
+#~ msgid "&Select"
+#~ msgstr "&Selecteren"
+
+#~ msgid "&Unselect"
+#~ msgstr "&Deselecteren"
+
+#~ msgid "<qt><a href=\"more_result\">More result...</a></qt>"
+#~ msgstr "<qt><a href=\"more_result\">Meer resultaten...</a></qt>"
+
+#~ msgid "Search in result..."
+#~ msgstr "In resultaat zoeken..."
+
+#~ msgid "Exclude domain names:"
+#~ msgstr "Domeinnamen uitsluiten:"
+
+#~ msgid "Separate domain with '%1'"
+#~ msgstr "Domein scheiden met '%1'"
+
+#~ msgid "No email found."
+#~ msgstr "Geen e-mail gevonden"
+
+#~ msgid "1 email found"
+#~ msgid_plural "%1 emails found"
+#~ msgstr[0] "1 e-mail gevonden"
+#~ msgstr[1] "%1 e-mails gevonden"
+
+#~ msgid "No result found"
+#~ msgstr "Geen resultaat gevonden"
+
+#~ msgid ""
+#~ "The list was changed. Do you want to save before to make another search ?"
+#~ msgstr "De lijst is gewijzigd. Wilt U het opslaan alvorens het te sluiten ?"
+
+#~ msgid "Save"
+#~ msgstr "Opslaan"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure Completion"
+#~ msgstr "Aanvullen configureren..."
+
+#~ msgid "Completion Order"
+#~ msgstr "Aanvullingsvolgorde"
+
+#~ msgid "Recent Address"
+#~ msgstr "Recent adres"
+
+#~ msgid "Blacklist Email Address"
+#~ msgstr "E-mailadres op zwarte lijst plaatsen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Completion Order"
+#~ msgstr "Aanvullingsvolgorde bewerken"
+
+#~ msgid "LDAP server %1"
+#~ msgstr "LDAP-server %1"
+
+#~ msgid "Move Up"
+#~ msgstr "Omhoog verplaatsen"
+
+#~ msgid "Move Down"
+#~ msgstr "Omlaag verplaatsen"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Vandaag"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Morgen"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Volgende &week"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Volgende m&aand"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Geen datum"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard's primary email address is already in your address book; "
+#~ "however, you may save the vCard into a file and import it into the "
+#~ "address book manually."
+#~ msgstr ""
+#~ "Het hoofdadres van de vCard staat reeds in uw adresboek. U kunt alsnog de "
+#~ "bijlage opslaan in een bestand en dit handmatig importeren in het "
+#~ "adresboek."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The vCard was added to your address book; you can add more information to "
+#~ "this entry by opening the address book."
+#~ msgstr ""
+#~ "De vCard was toegevoegd aan uw adresboek, u kunt meer informatie "
+#~ "toevoegen door het item te openen in het adresboek."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A contact with the email address <email>%1</email> is already in your "
+#~ "address book."
+#~ msgstr ""
+#~ "Een contactpersoon met het e-mailadres <email>>%1</email> is al in uw "
+#~ "adresboekaanwezig."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You must create an address book before adding a contact. Do you want to "
+#~ "create an address book?"
+#~ msgstr ""
+#~ "Eerst een adresboek aanmaken alvorens een contactpersoon toevoegen. Wilt "
+#~ "u een adresboek aanmaken?"
+
+#~ msgctxt "@title:window"
+#~ msgid "No Address Book Available"
+#~ msgstr "Geen adresboek beschikbaar"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Address Book"
+#~ msgstr "Adresboek toevoegen"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>A contact for \"%1\" was successfully added to your address book.</"
+#~ "para><para>Do you want to edit this new contact now?</para>"
+#~ msgstr ""
+#~ "<para>Een contactpersoon voor \"%1\" is met success aan uw adresboek "
+#~ "toegevoegd.</para><para>Wilt u deze nieuwe contactpersoon nu bewerken?</"
+#~ "para>"
+
+#~ msgid "Contact cannot be stored: %1"
+#~ msgstr "Contactpersoon kan niet opgeslagen worden: %1"
+
+#~ msgid "Failed to store contact"
+#~ msgstr "Contactpersoon opslaan is mislukt"
+
+#~ msgid "Contact created successfully"
+#~ msgstr "Contactpersoon met succes aangemaakt."
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr ""
+#~ "Rinse de Vries,Wilbert Berendsen,Bram Schoenmakers,Tom Albers,Hannie "
+#~ "Dumoleyn,Freek de Kruijf - t/m 2019"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr ""
+#~ "rinsedevries@kde.nl,wbsoft@xs4all.nl,bramschoenmakers@kde.nl,"
+#~ "tomalbers@kde.nl,hannie@kde.nl,freekdekruijf@kde.nl"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Host"
+#~ msgstr "Host toevoegen"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr " LDAP-serverinstellingen"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "(c), 2009 - 2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid ""
+#~ "LDAP password is stored as clear text, do you want to store it in kwallet?"
+#~ msgstr ""
+#~ "LDAP-wachtwoord is opgeslagen als leesbare tekst, wilt u het opslaan in "
+#~ "kwallet?"
+
+#~ msgid "Store clear text password in KWallet"
+#~ msgstr "Wachtwoord in leesbare tekst opslaan in KWallet"
+
+#~ msgctxt "@title:window"
+#~ msgid "Edit Host"
+#~ msgstr "Host bewerken"
+
+#~ msgid "Do you want to remove setting for host \"%1\"?"
+#~ msgstr "Wilt u de instellingen voor host \"%1\" verwijderen?"
+
+#~ msgid "Remove Host"
+#~ msgstr "Host verwijderen"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-servers"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Controleer alle servers die gebruikt moeten worden:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "Host &toevoegen..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "Host &bewerken..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "Host ve&rwijderen"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgid "Full Name"
+#~ msgstr "Volledige naam"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Home Number"
+#~ msgstr "Telefoon privé"
+
+#~ msgid "Work Number"
+#~ msgstr "Telefoon werk"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Mobiele telefoon"
+
+#~ msgid "Fax Number"
+#~ msgstr "Faxnummer"
+
+#~ msgid "Pager"
+#~ msgstr "Semafoon"
+
+#~ msgid "Street"
+#~ msgstr "Straat"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Provincie"
+
+#~ msgid "Country"
+#~ msgstr "Land"
+
+#~ msgid "City"
+#~ msgstr "Woonplaats"
+
+#~ msgid "Organization"
+#~ msgstr "Organisatie"
+
+#~ msgid "Company"
+#~ msgstr "Bedrijf"
+
+#~ msgid "Department"
+#~ msgstr "Afdeling"
+
+#~ msgid "Zip Code"
+#~ msgstr "Postcode"
+
+#~ msgid "Postal Address"
+#~ msgstr "Postadres"
+
+#~ msgid "Description"
+#~ msgstr "Beschrijving"
+
+#~ msgid "User ID"
+#~ msgstr "Gebruikers-id"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Provincie"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgctxt "@title:window"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Contactpersonen importeren van LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Zoeken naar adressen in map"
+
+#~ msgid "Search for:"
+#~ msgstr "Zoeken naar:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "in"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Telefoon privé"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Telefoon werk"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Zoeken"
+
+#~ msgid "Recursive search"
+#~ msgstr "Recursief zoeken"
+
+#~ msgid "Contains"
+#~ msgstr "Bevat"
+
+#~ msgid "Starts With"
+#~ msgstr "Begint met"
+
+#~ msgid "Search in result"
+#~ msgstr "In resultaat zoeken"
+
+#~ msgid "Searching..."
+#~ msgstr "Bezig met zoeken..."
+
+#~ msgid "Select All"
+#~ msgstr "Alles selecteren"
+
+#~ msgid "Unselect All"
+#~ msgstr "Alles deselecteren"
+
+#~ msgid "Add Selected"
+#~ msgstr "Selectie toevoegen"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "LDAP-servers instellen..."
+
+#~ msgid "Copy"
+#~ msgstr "Kopiëren"
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Voordat u gaat zoeken moet u een LDAP-server selecteren."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Geïmporteerd uit LDAP-map %1 op %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "LDAP-instellingen van adresboek configureren"
+
+#~ msgid "&Remove"
+#~ msgstr "&Verwijderen"
+
+#~ msgid "Blacklist Email Completion"
+#~ msgstr "E-mail aanvullen op de zwarte lijst plaatsen"
+
+#~ msgid "Edit Recent Addresses"
+#~ msgstr "Recente adressen bewerken"
+
+#~ msgid "Configure Email Blacklist..."
+#~ msgstr "Blacklist voor e-mail instellen..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Address Book"
+#~ msgstr "Adresboek selecteren"
+
+#~ msgctxt "@info"
+#~ msgid "Select the address book where the contact will be saved:"
+#~ msgstr ""
+#~ "Selecteer het adresboek waarin de contactpersoon moet worden opgeslagen:"
+
+#~ msgid "Free"
+#~ msgstr "Vrij"
+
+#~ msgid "Busy"
+#~ msgstr "Bezet"
+
+#~ msgid "Unavailable"
+#~ msgstr "Niet beschikbaar"
+
+#~ msgid "Tentative"
+#~ msgstr "Voorlopig"
+
+#~ msgid "Unknown"
+#~ msgstr "Onbekend"
+
+#~ msgid "Attendee"
+#~ msgstr "Deelnemer"
+
+#~ msgctxt "@label Day of the week name, example: Monday,"
+#~ msgid "%1,"
+#~ msgstr "%1,"
+
+#~ msgctxt ""
+#~ "@label A time period duration. It is preceded/followed (based on the "
+#~ "orientation) by the name of the week, see the message above. example: 12 "
+#~ "June, 8:00am to 9:30am"
+#~ msgid "%1 %2, %3 to %4"
+#~ msgstr "%1 %2, %3 tot %4"
+
+#~ msgctxt ""
+#~ "@label A time period duration. KLocale is used to format the components. "
+#~ "example: Monday, 12 June, 8:00am to 9:30am"
+#~ msgid "%1, %2 %3, %4 to %5"
+#~ msgstr "%1, %2 %3, %4 tot %5"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Free Period"
+#~ msgstr "Vrije periode"
+
+#~ msgctxt "@info:tooltip period start time"
+#~ msgid "Start:"
+#~ msgstr "Begin:"
+
+#~ msgctxt "@info:tooltip period end time"
+#~ msgid "End:"
+#~ msgstr "Einde:"
+
+#~ msgctxt "@info:tooltip period duration"
+#~ msgid "Duration:"
+#~ msgstr "Tijdsduur:"
+
+#~ msgctxt "%1 is a time, %2 is a status message"
+#~ msgid "[%1] %2"
+#~ msgstr "[%1] %2"
+
+#~ msgid ""
+#~ "Transmission complete. %1 new message (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgid_plural ""
+#~ "Transmission complete. %1 new messages (%2 KB). %3 KB remaining on the "
+#~ "server."
+#~ msgstr[0] ""
+#~ "Overdracht voltooid. %1 nieuw bericht (%2 KB). %3 KB blijft achter op de "
+#~ "server."
+#~ msgstr[1] ""
+#~ "Overdracht voltooid. %1 nieuwe berichten (%2 KB). %3 KB blijft achter op "
+#~ "de server."
+
+#~ msgid "Transmission complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Overdracht voltooid. %1 bericht (%2 KB)."
+#~ msgstr[1] "Overdracht voltooid. %1 berichten (%2 KB)."
+
+#~ msgid "Transmission complete. %1 new message."
+#~ msgid_plural "Transmission complete. %1 new messages."
+#~ msgstr[0] "Overdracht voltooid. %1 nieuw bericht."
+#~ msgstr[1] "Overdracht voltooid. %1 nieuwe berichten."
+
+#~ msgid "Transmission complete. No new messages."
+#~ msgstr "Overdracht voltooid. Geen nieuwe berichten."
+
+#~ msgid ""
+#~ "Transmission for account %4 complete. %1 new message (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgid_plural ""
+#~ "Transmission for account %4 complete. %1 new messages (%2 KB). %3 KB "
+#~ "remaining on the server."
+#~ msgstr[0] ""
+#~ "Overdracht voor account %4 voltooid. %1 nieuw bericht (%2 KB). %3 KB "
+#~ "blijft achter op de server."
+#~ msgstr[1] ""
+#~ "Overdracht voor account %4 voltooid. %1 nieuwe berichten (%2 KB). %3 KB "
+#~ "blijft achter op de server."
+
+#~ msgid "Transmission for account %3 complete. %1 message (%2 KB)."
+#~ msgid_plural "Transmission for account %3 complete. %1 messages (%2 KB)."
+#~ msgstr[0] "Overdracht voor account %3 voltooid. %1 bericht (%2 KB)."
+#~ msgstr[1] "Overdracht voor account %3 voltooid. %1 berichten (%2 KB)."
+
+#~ msgid "Transmission for account %2 complete. %1 new message."
+#~ msgid_plural "Transmission for account %2 complete. %1 new messages."
+#~ msgstr[0] "Overdracht voor account %2 voltooid. %1 nieuw bericht."
+#~ msgstr[1] "Overdracht voor account %2 voltooid. %1 nieuwe berichten."
+
+#~ msgid "Transmission for account %1 complete. No new messages."
+#~ msgstr "Overdracht voor account %1 voltooid. Geen nieuwe berichten."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Spell Checking Language"
+#~ msgstr "Taal van spellingcontrole"
+
+#~ msgid "Retrieving and storing messages..."
+#~ msgstr "Berichten worden opgehaald en opgeslagen..."
+
+#~ msgid "Total Messages"
+#~ msgstr "Totaal aantal berichten"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Ongelezen berichten"
+
+#~ msgid "Quota"
+#~ msgstr "Quota"
+
+#~ msgid "Storage Size"
+#~ msgstr "Grootte van de opslag"
+
+#~ msgid "Subfolder Storage Size"
+#~ msgstr "Grootte van de opslag in de submap"
+
+#~ msgctxt "collection size"
+#~ msgid "Size"
+#~ msgstr "Grootte"
+
+#~ msgctxt "number of entities in the collection"
+#~ msgid "Total"
+#~ msgstr "Totaal"
+
+#~ msgctxt "number of unread entities in the collection"
+#~ msgid "Unread"
+#~ msgstr "Ongelezen"
+
+#~ msgid "Stop"
+#~ msgstr "Stoppen"
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. Many important "
+#~ "features of this software depend on the semantic desktop system and will "
+#~ "not work correctly without it."
+#~ msgstr ""
+#~ "U hebt het semantische bureaubladsysteem niet ingeschakeld. Veel "
+#~ "belangrijke functies in deze software zijn afhankelijk van het "
+#~ "semantische bureaublad en zullen zonder dat niet juist werken."
+
+#~ msgid "&Configure"
+#~ msgstr "&Instellen"
+
+#~ msgid ""
+#~ "The module to configure the semantic desktop system (Nepomuk) was not "
+#~ "found on your system. Please make sure Nepomuk was properly installed."
+#~ msgstr ""
+#~ "De module om het semantische bureaublad (Nepomuk) in te stellen is niet "
+#~ "op uw systeem gevonden. Controleer dat Nepomuk juist is geïnstalleerd."
+
+#~ msgid ""
+#~ "You do not have the semantic desktop system enabled. The following "
+#~ "features will not work correctly:<ul><li>%1</li></ul>"
+#~ msgstr ""
+#~ "U hebt het semantische bureaubladsysteem niet ingeschakeld. De volgende "
+#~ "functies zullen niet juist werken:<ul><li>%1</li></ul>"
+
+#~ msgid "Send SMS"
+#~ msgstr "SMS verzenden"
+
+#~ msgid "Message"
+#~ msgstr "Bericht"
+
+#~ msgid "Recipient:"
+#~ msgstr "Ontvanger:"
+
+#~ msgid "Send"
+#~ msgstr "Verzenden"
+
+#~ msgid "Select Address Book"
+#~ msgstr "Adresboek selecteren"
+
+#~ msgid "Select the address book the new contact shall be saved in:"
+#~ msgstr ""
+#~ "Selecteer het adresboek waarin de nieuwe contactpersoon moet worden "
+#~ "opgeslagen:"
+
+#~ msgid ""
+#~ "<qt>The email address <b>%1</b> was added to your address book; you can "
+#~ "add more information to this entry by opening the address book.</qt>"
+#~ msgstr ""
+#~ "<qt>Het e-mailadres <b>%1</b> is toegevoegd aan uw adresboek, u kunt meer "
+#~ "informatie toevoegen door dit item daarin te openen.</qt>"
+
+#~ msgctxt "the day after today"
+#~ msgid "tomorrow"
+#~ msgstr "morgen"
+
+#~ msgctxt "this day"
+#~ msgid "today"
+#~ msgstr "vandaag"
+
+#~ msgctxt "the day before today"
+#~ msgid "yesterday"
+#~ msgstr "gisteren"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be earlier than %1"
+#~ msgstr "Datum kan niet eerder vallen dan %1"
+
+#~ msgctxt "@info"
+#~ msgid "Date cannot be later than %1"
+#~ msgstr "Datum kan niet later vallen dan %1"
+
+#~ msgctxt "@info/plain"
+#~ msgid "today"
+#~ msgstr "vandaag"
+
+#~ msgid "To"
+#~ msgstr "Aan"
+
+#~ msgid "CC"
+#~ msgstr "CC"
+
+#~ msgid "BCC"
+#~ msgstr "BCC"
+
+#, fuzzy
+#~| msgid "Select the address book the new contact shall be saved in:"
+#~ msgid "Select the address book the new contact group shall be saved in:"
+#~ msgstr ""
+#~ "Selecteer het adresboek waarin de nieuwe contactpersoon moet worden "
+#~ "opgeslagen:"
+
+#, fuzzy
+#~| msgid "Address Selection"
+#~ msgid "EMail Address Selection"
+#~ msgstr "Adresselectie"
+
+#, fuzzy
+#~| msgid "&Filter on:"
+#~ msgid "Filter on:"
+#~ msgstr "&Filteren op:"
+
+#, fuzzy
+#~| msgid "&Search Directory Service"
+#~ msgid "Search Directory Service"
+#~ msgstr "&Zoekcriteria"
+
+#, fuzzy
+#~| msgid "&To >>"
+#~ msgid "To >>"
+#~ msgstr "&Aan >>"
+
+#, fuzzy
+#~| msgid "&CC >>"
+#~ msgid "CC >>"
+#~ msgstr "&CC >>"
+
+#, fuzzy
+#~| msgid "&BCC >>"
+#~ msgid "BCC >>"
+#~ msgstr "&BCC >>"
+
+#, fuzzy
+#~| msgid "<< &Remove"
+#~ msgid "<< Remove"
+#~ msgstr "<< Ve&rwijderen"
+
+#, fuzzy
+#~| msgid "Save as &Distribution List..."
+#~ msgid "Save as Distribution List..."
+#~ msgstr "Opslaan als &distributielijst..."
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Selecteer voordat u begint met zoeken eerst een LDAP-server.\n"
+#~ "U kunt dit doen via de menuoptie \"Instellingen->KAddressBook instellen\"."
+
+#~ msgid "Address Selection"
+#~ msgstr "Adresselectie"
+
+#~ msgid "Email Address"
+#~ msgstr "E-mailadres"
+
+#~ msgid "&To >>"
+#~ msgstr "&Aan >>"
+
+#~ msgid "&CC >>"
+#~ msgstr "&CC >>"
+
+#~ msgid "&BCC >>"
+#~ msgstr "&BCC >>"
+
+#~ msgid "&Selected Addresses"
+#~ msgstr "Ge&selecteerde adressen"
+
+#~ msgid "&Filter on:"
+#~ msgstr "&Filteren op:"
+
+#~ msgid "Save as &Distribution List..."
+#~ msgstr "Opslaan als &distributielijst..."
+
+#~ msgid "&Search Directory Service"
+#~ msgstr "&Zoekcriteria"
+
+#~ msgid "Show Birthday"
+#~ msgstr "Verjaardag tonen"
+
+#~ msgid "Show Postal Addresses"
+#~ msgstr "Postadres tonen"
+
+#~ msgid "Show Email Addresses"
+#~ msgstr "E-mailadres tonen"
+
+#~ msgid "Show Telephone Numbers"
+#~ msgstr "Telefoonnummers tonen"
+
+#~ msgid "Show Web Pages (URLs)"
+#~ msgstr "Webpagina's tonen"
+
+#~ msgid "Show Instant Messaging Addresses"
+#~ msgstr "IM-adres tonen"
+
+#~ msgid "Show Custom Fields"
+#~ msgstr "Aangepaste velden tonen"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Homepage"
+#~ msgstr "Webpagina"
+
+#~ msgid "Blog Feed"
+#~ msgstr "Blogfeed"
+
+#~ msgid "Notes"
+#~ msgstr "Notities"
+
+#~ msgid "Profession"
+#~ msgstr "Beroep"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Naam assistent"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Naam manager"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Naam partner"
+
+#~ msgid "Office"
+#~ msgstr "Kantoor"
+
+#~ msgid "IM Address"
+#~ msgstr "IM-adres"
+
+#~ msgid "Anniversary"
+#~ msgstr "Jubileum"
+
+#~ msgid "<p><b>Address book</b>: %1</p>"
+#~ msgstr "<p><b>Adresboek</b>: %1</p>"
+
+#~ msgid ""
+#~ "There is no application set which could be executed. Please go to the "
+#~ "settings dialog and configure one."
+#~ msgstr ""
+#~ "U hebt hiervoor geen toepassing opgegeven. Ga naar het "
+#~ "instellingenvenster en geef er een op."
+
+#~ msgid "Send mail to '%1'"
+#~ msgstr "E-mail verzenden naar '%1'"
+
+#~ msgid "Call number %1"
+#~ msgstr "Telefoonnummer %1 bellen"
+
+#~ msgid "Send fax to %1"
+#~ msgstr "Fax verzenden naar %1"
+
+#~ msgid "Show address on map"
+#~ msgstr "Adres op kaart tonen"
+
+#~ msgid "Send SMS to %1"
+#~ msgstr "SMS verzenden naar %1"
+
+#~ msgid "Open URL %1"
+#~ msgstr "URL-adres %1 openen"
+
+#~ msgid "Chat with %1"
+#~ msgstr "Chatten met %1"
+
+#, fuzzy
+#~| msgctxt "@title:column, address books overview"
+#~| msgid "Address Books"
+#~ msgctxt "@title:column address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Adresboeken"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column name of a person"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@title:column family name of a person"
+#~ msgid "Family Name"
+#~ msgstr "Volledige naam"
+
+#, fuzzy
+#~| msgctxt "@title:column, home address of a person"
+#~| msgid "Home"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Home"
+#~ msgstr "Webpagina"
+
+#, fuzzy
+#~| msgctxt "@title:column, home address of a person"
+#~| msgid "Work"
+#~ msgctxt "@title:column home address of a person"
+#~ msgid "Work"
+#~ msgstr "Werk"
+
+#, fuzzy
+#~| msgctxt "@title:column, phone numbers of a person"
+#~| msgid "Phone Numbers"
+#~ msgctxt "@title:column phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefoonnummers"
+
+#, fuzzy
+#~| msgctxt "@title:column, the preferred email addresses of a person"
+#~| msgid "Preferred EMail"
+#~ msgctxt "@title:column the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Voorkeur e-mailadres"
+
+#, fuzzy
+#~| msgctxt "@title:column, all email addresses of a person"
+#~| msgid "All EMails"
+#~ msgctxt "@title:column all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Alle e-mailadressen"
+
+#~ msgid "<group>"
+#~ msgstr "<groep>"
+
+#~ msgid "Other Addresses"
+#~ msgstr "Overige adressen"
+
+#~ msgid ""
+#~ "There are no addresses in your list. First add some addresses from your "
+#~ "address book, then try again."
+#~ msgstr ""
+#~ "Er staan geen adressen in uw lijst. Voeg eerst enkele adressen toe aan uw "
+#~ "adresboek en probeer het opnieuw."
+
+#~ msgid "New Distribution List"
+#~ msgstr "Nieuwe distributielijst"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Voer een naam in:"
+
+#~ msgid ""
+#~ "<qt>Distribution list with the given name <b>%1</b> already exists. "
+#~ "Please select a different name.</qt>"
+#~ msgstr ""
+#~ "<qt>De distributielijst met de opgegeven naam <b>%1</b> bestaat al. "
+#~ "Selecteer a.u.b. een andere naam.</qt>"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Distributielijsten"
+
+#~ msgctxt "@action:button"
+#~ msgid "&Insert"
+#~ msgstr "&Invoegen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Insert File"
+#~ msgstr "Bestand invoegen"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid ""
+#~| "The external editor is still running.<nl>Do you want to stop the editor "
+#~| "or keep it running?</nl><warning>Stopping the editor will cause all your "
+#~| "unsaved changes to be lost.</warning>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The external editor is still running.<nl/>Do you want to stop the editor "
+#~ "or keep it running?<nl/><warning>Stopping the editor will cause all your "
+#~ "unsaved changes to be lost.</warning>"
+#~ msgstr ""
+#~ "De externe bewerker draait nog steeds.<nl>Wilt u de bewerker stoppen of "
+#~ "blijft deze draaien?</nl><warning>Stoppen van de bewerker zal als gevolg "
+#~ "hebben dat al uw niet opgeslagen wijzigingen verloren gaan.</warning>"
+
+#~ msgctxt "@title:window"
+#~ msgid "External Editor Running"
+#~ msgstr "Externe editor is bezig"
+
+#~ msgctxt "@action:button"
+#~ msgid "Stop Editor"
+#~ msgstr "Editor afsluiten"
+
+#~ msgctxt "@action:button"
+#~ msgid "Keep Editor Running"
+#~ msgstr "Editor laten draaien"
+
+#~ msgid "Edit Categories"
+#~ msgstr "Categorieën bewerken"
+
+#~ msgid "New category"
+#~ msgstr "Nieuwe categorie"
+
+#, fuzzy
+#~| msgid "New category"
+#~ msgid "New subcategory"
+#~ msgstr "Nieuwe categorie"
+
+#~ msgid "Select Categories"
+#~ msgstr "Categorieën selecteren"
+
+#~ msgid "Showing URL %1"
+#~ msgstr "URL-adres %1 wordt getoond"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Numerieke waarde"
+
+#~ msgid "Boolean"
+#~ msgstr "Booleaans"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datum & tijd"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "KCMDesignerfields"
+#~ msgstr "KCMDesignerfields"
+
+#~ msgid "Qt Designer Fields Dialog"
+#~ msgstr "Qt Designer Veldendialoog"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "*.ui|Designer Files"
+#~ msgstr "*.ui|Designer-bestanden"
+
+#~ msgid ""
+#~ "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+#~ "installed. You will only be able to import existing designer files.</qt>"
+#~ msgstr ""
+#~ "<qt><b>Waarschuwing:</b> Qt Designer kon niet gevonden worden, "
+#~ "waarschijnlijk is het niet geïnstalleerd. Het is dan alleen mogelijk om "
+#~ "bestaande pagina's te importeren.</qt>"
+
+#~ msgid "Preview of Selected Page"
+#~ msgstr "Voorbeeld van geselecteerde pagina"
+
+#~ msgid ""
+#~ "<qt><p>This section allows you to add your own GUI  Elements "
+#~ "('<i>Widgets</i>') to store your own values into %1. Proceed as described "
+#~ "below:</p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the "
+#~ "dialog, select '<i>Widget</i>', then click <i>OK</i></li><li>Add your "
+#~ "widgets to the form</li><li>Save the file in the directory proposed by Qt "
+#~ "Designer</li><li>Close Qt Designer</li></ol><p>In case you already have a "
+#~ "designer file (*.ui) located somewhere on your hard disk, simply choose "
+#~ "'<i>Import Page</i>'</p><p><b>Important:</b> The name of each input "
+#~ "widget you place within the form must start with '<i>X_</i>'; so if you "
+#~ "want the widget to correspond to your custom entry '<i>X-Foo</i>', set "
+#~ "the widget's <i>name</i> property to '<i>X_Foo</i>'.</p><p><b>Important:</"
+#~ "b> The widget will edit custom fields with an application name of %2.  To "
+#~ "change the application name to be edited, set the widget name in Qt "
+#~ "Designer.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>In deze sectie kunt u uw eigen GUI-elementen ('<i>Widgets</i>') "
+#~ "aanbrengen om uw eigen waarden in %1 op te slaan. Ga als volgt te werk:</"
+#~ "p><ol><li>Klik op '<i>Bewerken met Qt Designer</i>'</li><li>In het "
+#~ "dialoogvenster kiest u voor '<i>Widget</i>', klik daarna op <i>OK</i></"
+#~ "li><li>Voeg uw eigen GUI-elementen aan het formulier toe</li><li>Sla het "
+#~ "bestand op in de map dat wordt voorgesteld door Qt Designer</li><li>Sluit "
+#~ "Qt Designer af</li></ol><p> Wanneer u al een designer-bestand hebt (*."
+#~ "ui), dan kunt u kiezen voor '<i>Pagina importeren</i>'</"
+#~ "p><p><b>Belangrijk:</b> De naam van ieder invoerveld moet beginnen met "
+#~ "'<i>X_</i>. Dus wanneer u een GUI-element maakt voor een veld genaamd "
+#~ "'<i>X-Iets</i>', dan dient u de <i>naam</i> van het GUI-element op "
+#~ "'<i>X_Iets</i>' tezetten.</p><p><b>Belangrijk:</b> Het GUI-element zal "
+#~ "eigen velden met de toepassing %2. Om de toepassingsnaam te wijzigen "
+#~ "dient u de naam van het GUI-element te wijzigen in Qt Designer.</p></qt>"
+
+#~ msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+#~ msgstr "<a href=\"whatsthis:%1\">Hoe werkt dit?</a>"
+
+#~ msgid "Delete Page"
+#~ msgstr "Pagina verwijderen"
+
+#~ msgid "Import Page..."
+#~ msgstr "Pagina importeren..."
+
+#~ msgid "Edit with Qt Designer..."
+#~ msgstr "Bewerken met Qt Designer..."
+
+#~ msgid "Key:"
+#~ msgstr "Toets:"
+
+#~ msgid "Type:"
+#~ msgstr "Type:"
+
+#~ msgid "Classname:"
+#~ msgstr "Class-naam:"
+
+#~ msgid "Description:"
+#~ msgstr "Beschrijving:"
+
+#~ msgid "Change Config Value"
+#~ msgstr "Verander instellingswaarde"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configuration Wizard"
+#~ msgstr "Configuratie-assistent"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Rules"
+#~ msgstr "Regels"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Rules"
+#~ msgstr "Regels instellen"
+
+#~ msgctxt "@title:column source file,group,entry"
+#~ msgid "Source"
+#~ msgstr "Bron"
+
+#~ msgctxt "@title:column target file,group,entry"
+#~ msgid "Target"
+#~ msgstr "Doel"
+
+#~ msgctxt "@title:column file,group,key,value"
+#~ msgid "Condition"
+#~ msgstr "Voorwaarde"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Changes"
+#~ msgstr "Veranderingen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Up Changes"
+#~ msgstr "Veranderingen instellen"
+
+#~ msgctxt "@title:column change action"
+#~ msgid "Action"
+#~ msgstr "Actie"
+
+#~ msgctxt "@title:column option to change"
+#~ msgid "Option"
+#~ msgstr "Optie"
+
+#~ msgctxt "@title:column value for option"
+#~ msgid "Value"
+#~ msgstr "Waarde"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Please make sure that the programs which are configured by the wizard do "
+#~ "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#~ "could be lost."
+#~ msgstr ""
+#~ "Controleer of de programma's die door de assistent worden ingesteld niet "
+#~ "actief zijn tijdens het doorlopen van de assistent. De veranderingen die "
+#~ "door de assistent worden gemaakt kunnen daardoor verloren gaan."
+
+#~ msgctxt "@title:window warn about running instances"
+#~ msgid "Warning"
+#~ msgstr "Waarschuwing"
+
+#~ msgctxt "@action:button"
+#~ msgid "Run Wizard Now"
+#~ msgstr "Assistent nu uitvoeren"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Selectie"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Duur"
+
+#, fuzzy
+#~| msgctxt "this day"
+#~| msgid "today"
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "vandaag"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Locatie"
+
+#, fuzzy
+#~| msgid "Show Birthday"
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Verjaardag tonen"
+
+#~ msgid "Unnamed plugin"
+#~ msgstr "Naamloze plugin"
+
+#~ msgid "New category entry"
+#~ msgstr "Nieuwe categorie-item"
+
+#~ msgid "Type in any text you want to use as a new category or sub-category."
+#~ msgstr "Voer de naam van de nieuwe categorie of subcategorie in."
+
+#~ msgid "Add the entry to the category list"
+#~ msgstr "Voeg de invoer aan de categorielijst toe"
+
+#~ msgid "Click this button to insert the entry into the category list."
+#~ msgstr ""
+#~ "Selecteer deze knop om de invoer aan de categorielijst toe te voegen."
+
+#~ msgid "A&dd"
+#~ msgstr "&Toevoegen"
+
+#~ msgid "Add the entry as a subcategory of the selected category"
+#~ msgstr ""
+#~ "Voeg de invoer toe als een subcategorie van de geselecteerde categorie"
+
+#~ msgid ""
+#~ "Click this button to insert the entry as a subcategory of the currently "
+#~ "selected category."
+#~ msgstr ""
+#~ "Activeer deze knop voor het invoegen van de invoer als een subcategorie "
+#~ "van de huidige geselecteerde categorie."
+
+#~ msgid "Add &Subcategory"
+#~ msgstr "&Subcategorie toevoegen"
+
+#~ msgid "Remove the selected category"
+#~ msgstr "Verwijder de geselecteerde categorie"
+
+#~ msgid ""
+#~ "Click this button to remove the selected category from the category list."
+#~ msgstr ""
+#~ "Activeer deze knop voor het verwijderen van  de geselecteerde categorie "
+#~ "van de categorielijst."
+
+#~ msgid "Category list"
+#~ msgstr "Categorielijst"
+
+#~ msgid ""
+#~ "This is a list of all the categories available. You can create as many "
+#~ "sub-categories as you want here."
+#~ msgstr ""
+#~ "Dit is een lijst van alle beschikbare categorieën. Het is mogelijk om "
+#~ "hier zoveel subcategorieën aan te maken als u maar wilt."
+
+#~ msgid "Default Category"
+#~ msgstr "Standaard categorie"
+
+#~ msgid "Category"
+#~ msgstr "Categorie"
+
+#~ msgid "&Clear Selection"
+#~ msgstr "Sele&ctie wissen"
+
+#~ msgid "&Edit Categories..."
+#~ msgstr "Cat&egorieën bewerken..."
+
+#~ msgctxt "boolean yes"
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgctxt "boolean no"
+#~ msgid "No"
+#~ msgstr "Nee"
+
+#~ msgid "Organizer"
+#~ msgstr "Organizer"
+
+#~ msgid "UID"
+#~ msgstr "UID"
+
+#~ msgid "Is all-day"
+#~ msgstr "Is de hele dag"
+
+#~ msgid "Summary"
+#~ msgstr "Samenvatting"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Secrecy"
+#~ msgstr "Privé"
+
+#~ msgid "Priority"
+#~ msgstr "Prioriteit"
+
+#~ msgid "Categories"
+#~ msgstr "Categorieën"
+
+#~ msgid "Alarms"
+#~ msgstr "Herinneringen"
+
+#~ msgid "Resources"
+#~ msgstr "Gegevensbronnen"
+
+#~ msgid "Relations"
+#~ msgstr "Relaties"
+
+#~ msgid "Attachments"
+#~ msgstr "Bijlagen"
+
+#~ msgid "Exception Dates"
+#~ msgstr "Uitzonderingsdata"
+
+#~ msgid "Exception Times"
+#~ msgstr "Uitzonderingstijden"
+
+#~ msgctxt "todo creation time"
+#~ msgid "Created"
+#~ msgstr "Aangemaakt"
+
+#~ msgid "Related Uid"
+#~ msgstr "Gerelateerde UID"
+
+#~ msgid "Has End Date"
+#~ msgstr "Heeft einddatum"
+
+#~ msgid "End Date"
+#~ msgstr "Einddatum"
+
+#~ msgid "Has Start Date"
+#~ msgstr "Heeft startdatum"
+
+#~ msgid "Has Due Date"
+#~ msgstr "Heeft einddatum"
+
+#~ msgid "Due Date"
+#~ msgstr "Einddatum"
+
+#~ msgid "Has Complete Date"
+#~ msgstr "Heeft tijdstip voltooid"
+
+#~ msgctxt "to-do completion percentage"
+#~ msgid "Complete"
+#~ msgstr "Voltooid"
+
+#~ msgctxt "if to-do is completed"
+#~ msgid "Completed"
+#~ msgstr "Voltooid"
+
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgid "Local"
+#~ msgstr "Lokaal"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "Cached IMAP"
+#~ msgstr "Gebufferde IMAP"
+
+#~ msgid "News"
+#~ msgstr "Nieuws"
+
+#~ msgid "None"
+#~ msgstr "Niets"
+
+#~ msgctxt "@item IMAP account"
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgctxt "@item mbox account"
+#~ msgid "MBOX"
+#~ msgstr "MBOX"
+
+#~ msgctxt "@item maildir account"
+#~ msgid "Maildir mailbox"
+#~ msgstr "Maildir-postvak"
+
+#~ msgctxt "@item usenet account"
+#~ msgid "News"
+#~ msgstr "Nieuws"
+
+#~ msgctxt "@item DIMAP account"
+#~ msgid "Disconnected IMAP"
+#~ msgstr "Offline IMAP"
+
+#~ msgctxt "@item local mailbox account"
+#~ msgid "Local mailbox"
+#~ msgstr "Lokaal postvak"
+
+#~ msgctxt "@item pop3 account"
+#~ msgid "POP3"
+#~ msgstr "POP3"
+
+#~ msgctxt "@item unknown mail account"
+#~ msgid "Unknown"
+#~ msgstr "Onbekend"
+
+#~ msgctxt "@title:window"
+#~ msgid "Conflict Detected"
+#~ msgstr "Conflict gevonden"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "A conflict was detected. This probably means someone edited the same "
+#~ "incidence on the server while you changed it locally.<nl/><note>You have "
+#~ "to check mail again to apply your changes to the server.</note>"
+#~ msgstr ""
+#~ "Er is een conflict gevonden. Dit houdt waarschijnlijk in dat iemand "
+#~ "anders dezelfde gebeurtenis heeft bewerkt op de server terwijl u het "
+#~ "lokaal bewerkte. <nl/><note>U dient uw e-mail te controleren voordat u de "
+#~ "veranderingen toepast op de server.</note>"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Local"
+#~ msgstr "Lokale nemen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take your local copy of the incidence"
+#~ msgstr "Neem de lokale kopie van de gebeurtenis"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Local\" button to make "
+#~ "sure your local copy is used."
+#~ msgstr ""
+#~ "Er is een conflict gevonden tussen uw lokale kopie van de gebeurtenis en "
+#~ "de gebeurtenis op de server. Druk op de knop \"Lokale nemen\" om er zeker "
+#~ "van te zijn dat uw lokale kopie wordt gebruikt."
+
+#~ msgctxt "@action:button"
+#~ msgid "Take New"
+#~ msgstr "Nieuwe nemen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take the server copy of the incidence"
+#~ msgstr "Neem de kopie van de gebeurtenis op de server"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take New\" button to use the "
+#~ "server copy, thereby overwriting your local copy"
+#~ msgstr ""
+#~ "Er is een conflict gevonden tussen uw lokale kopie van de gebeurtenis en "
+#~ "de gebeurtenis op de server. Druk op de knop \"Nieuwe nemen\" om de kopie "
+#~ "van de server te nemen, waarbij uw lokale kopie wordt overschreven"
+
+#~ msgctxt "@action:button"
+#~ msgid "Take Both"
+#~ msgstr "Beide nemen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both copies of the incidence"
+#~ msgstr "Beide kopieën van de gebeurtenis nemen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "A conflict was detected between your local copy of the incidence and the "
+#~ "remote incidence on the server. Press the \"Take Both\" button to keep "
+#~ "both the local and the server copies."
+#~ msgstr ""
+#~ "Er is een conflict gevonden tussen uw lokale kopie van de gebeurtenis en "
+#~ "de gebeurtenis op de server. Druk op de knop \"Beide nemen\" om beide, de "
+#~ "lokale kopie en die op de server te behouden."
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence"
+#~ msgstr "Lokale gebeurtenis"
+
+#~ msgctxt "@label"
+#~ msgid "Local incidence summary"
+#~ msgstr "Lokale gebeurtenissamenvatting"
+
+#~ msgctxt "@label"
+#~ msgid "Last modified:"
+#~ msgstr "Laatst gewijzigd:"
+
+#~ msgctxt "@label"
+#~ msgid "Set Last modified"
+#~ msgstr "Tijdstip van laatste wijziging instellen"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Details"
+#~ msgstr "Details tonen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Hide/Show incidence details"
+#~ msgstr "Gebeurtenisdetails verbergen/tonen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Press this button to toggle the incidence details display."
+#~ msgstr "Druk op deze knop om de gebeurtenisdetails al dan niet te tonen."
+
+#~ msgctxt "@action:button"
+#~ msgid "Show Differences"
+#~ msgstr "Verschillen tonen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show the differences between the two incidences"
+#~ msgstr "Het verschil de tussen twee gebeurtenissen tonen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press the \"Show Differences\" button to see the specific differences "
+#~ "between the incidences which are in conflict."
+#~ msgstr ""
+#~ "Druk op de knop \"Verschillen tonen\" om de specifieke verschillen te "
+#~ "zien tussen de gebeurtenissen die in conflict zijn."
+
+#~ msgctxt "@title:group"
+#~ msgid "Sync Preferences"
+#~ msgstr "Voorkeuren synchroniseren"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Sync Preferences"
+#~ msgstr "Voorkeuren synchroniseren"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Sync Preferences"
+#~ msgstr "Voorkeuren synchroniseren"
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take local copy on conflict"
+#~ msgstr "Lokale kopie nemen bij conflicten"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take local copy of the incidence on conflicts"
+#~ msgstr "Lokale kopie nemen van de gebeurtenis bij conflicten"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the local copy."
+#~ msgstr ""
+#~ "Als er een conflict wordt gedetecteerd tussen een lokale kopie van een "
+#~ "gebeurtenis en een gebeurtenis op de server, dan forceert deze optie om "
+#~ "de lokale kopie te nemen."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take remote copy on conflict"
+#~ msgstr "Niet lokale kopie nemen bij conflicten"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take remote copy of the incidence on conflicts"
+#~ msgstr "Niet lokale kopie nemen van de gebeurtenis bij conflicten"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the remote "
+#~ "copy."
+#~ msgstr ""
+#~ "Als er een conflict wordt gedetecteerd tussen een lokale kopie van een "
+#~ "gebeurtenis en een gebeurtenis op de server, dan forceert deze optie om "
+#~ "de niet-lokale kopie te nemen."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take newest incidence on conflict"
+#~ msgstr "Nieuwste gebeurtenis nemen bij conflicten"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take newest version of the incidence on conflicts"
+#~ msgstr "Nieuwste versie nemen van gebeurtenis bij conflicten"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option enforces using the newest "
+#~ "version available."
+#~ msgstr ""
+#~ "Als er een conflict wordt gedetecteerd tussen een lokale kopie van een "
+#~ "gebeurtenis en een gebeurtenis op de server, dan forceert deze optie om "
+#~ "de nieuwste versie te nemen."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Ask for every conflict"
+#~ msgstr "Bij ieder conflict vragen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ask for every incidence conflict"
+#~ msgstr "Bij ieder conflict tussen gebeurtenissen vragen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to ask the user which "
+#~ "version they want to keep."
+#~ msgstr ""
+#~ "Als er een conflict wordt gedetecteerd tussen een lokale kopie van een "
+#~ "gebeurtenis en een gebeurtenis op de server, dan zegt deze optie dat ge "
+#~ "gebruiker gevraagd moet worden welke versie te bewaren."
+
+#~ msgctxt "@option:radio"
+#~ msgid "Take both on conflict"
+#~ msgstr "Beide nemen bij conflicten"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Take both incidences on conflict"
+#~ msgstr "Beide gebeurtenissen nemen bij een conflict"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When a conflict is detected between a local copy of an incidence and a "
+#~ "remote incidence on the server, this option says to keep both versions of "
+#~ "the incidence."
+#~ msgstr ""
+#~ "Als er een conflict wordt gedetecteerd tussen een lokale kopie van een "
+#~ "gebeurtenis en een gebeurtenis op de server, dan zegt deze optie beide "
+#~ "versies te behouden."
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply preference to all conflicts of this sync"
+#~ msgstr "Voorkeur toepassen bij alle conflicten van deze synchronisatie"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Apply the preference to all conflicts that may occur during the sync"
+#~ msgstr ""
+#~ "Pas de voorkeur toe op alle conflicten die bij het synchroniseren optreden"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Press this button to apply the selected preference to all future "
+#~ "conflicts that might occur during this sync."
+#~ msgstr ""
+#~ "Druk op deze knop om de voorkeur toe te passen op alle toekomstige "
+#~ "conflicten die bij deze synchronisatie kunnen optreden."
+
+#~ msgctxt "@label"
+#~ msgid "Local Event"
+#~ msgstr "Lokale gebeurtenis"
+
+#~ msgctxt "@label"
+#~ msgid "Local Todo"
+#~ msgstr "Lokale taak"
+
+#~ msgctxt "@label"
+#~ msgid "Local Journal"
+#~ msgstr "Lokaal journaal"
+
+#~ msgctxt "@label"
+#~ msgid "New Event"
+#~ msgstr "Nieuwe gebeurtenis"
+
+#~ msgctxt "@label"
+#~ msgid "New Todo"
+#~ msgstr "Nieuwe taak"
+
+#~ msgctxt "@label"
+#~ msgid "New Journal"
+#~ msgstr "Nieuw journaal"
+
+#~ msgctxt "@action:button"
+#~ msgid "Hide Details"
+#~ msgstr "Details verbergen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Incidence details"
+#~ msgstr "Voorkomendetails"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "This area shows the incidence details"
+#~ msgstr "Deze gebieden tonen de gebeurtenisdetails"
+
+#~ msgctxt "@action:button"
+#~ msgid "Show details..."
+#~ msgstr "Details tonen..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1 and %2"
+#~ msgstr "Verschillen tussen %1 en %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Differences of %1"
+#~ msgstr "Verschillen van %1"
+
+#~ msgctxt "@title:column"
+#~ msgid "Local incidence"
+#~ msgstr "Lokale gebeurtenis"
+
+#~ msgctxt "@title:column"
+#~ msgid "Remote incidence"
+#~ msgstr "Niet-lokale gebeurtenis"
+
+#~ msgctxt "@label"
+#~ msgid "Show Details"
+#~ msgstr "Details tonen"
+
+#~ msgctxt "@label"
+#~ msgid "Hide Details"
+#~ msgstr "Details verbergen"
+
+#~ msgid "Do not show this message again"
+#~ msgstr "Dit bericht niet opnieuw tonen"
+
+#~ msgid ""
+#~ "Article\n"
+#~ "<b>%1</b><br /><b>%2</b><br />caused the following note to appear:<br />%3"
+#~ msgstr ""
+#~ "Artikel\n"
+#~ "<b>%1</b><br /><b>%2</b><br />zorgde ervoor dat de volgende notitie "
+#~ "verscheen:<br />%3"
+
+#~ msgid "Adjust Score"
+#~ msgstr "Waardering aanpassen"
+
+#~ msgid "Display Message"
+#~ msgstr "Bericht weergeven"
+
+#~ msgid "Colorize Header"
+#~ msgstr "Berichtkop kleuren"
+
+#~ msgid "Mark as Read"
+#~ msgstr "Markeren als gelezen"
+
+#~ msgid "<h1>List of collected notes</h1>"
+#~ msgstr "<h1>Lijst met verzamelde notities</h1>"
+
+#~ msgid "Collected Notes"
+#~ msgstr "Verzamelde notities"
+
+#~ msgid "Contains Substring"
+#~ msgstr "Bevat deeltekenreeks"
+
+#~ msgid "Matches Regular Expression"
+#~ msgstr "Komt overeen met reguliere expressie"
+
+#~ msgid "Matches Regular Expression (Case Sensitive)"
+#~ msgstr "Komt overeen met reguliere expressie (hoofdlettergevoelig)"
+
+#~ msgid "Is Exactly the Same As"
+#~ msgstr "Is exact gelijk aan"
+
+#~ msgid "Less Than"
+#~ msgstr "Kleiner dan"
+
+#~ msgid "Greater Than"
+#~ msgstr "Groter dan"
+
+#~ msgid "Choose Another Rule Name"
+#~ msgstr "Andere regelnaam kiezen"
+
+#~ msgid "The rule name is already assigned, please choose another name:"
+#~ msgstr "De regelnaam is reeds toegewezen. kies a.u.b. een andere naam:"
+
+#~ msgid "rule %1"
+#~ msgstr "regel %1"
+
+#~ msgid "Not"
+#~ msgstr "Niet"
+
+#~ msgid "Negate this condition"
+#~ msgstr "Deze operatie inverteren"
+
+#~ msgid "Select the header to match this condition against"
+#~ msgstr "Selecteer de kop waaraan deze voorwaarde moet voldoen"
+
+#~ msgid "Select the type of match"
+#~ msgstr "Selecteer het type overeenkomst"
+
+#~ msgid "The condition for the match"
+#~ msgstr "De voorwaarde van de overeenkomst"
+
+#~ msgid "Select an action."
+#~ msgstr "Selecteer een actie."
+
+#~ msgid "Properties"
+#~ msgstr "Eigenschappen"
+
+#~ msgctxt "@label rule name"
+#~ msgid "&Name:"
+#~ msgstr "&Naam:"
+
+#~ msgid "&Groups:"
+#~ msgstr "&Groepen:"
+
+#~ msgid "A&dd Group"
+#~ msgstr "Groep toe&voegen"
+
+#~ msgid "&Expire rule automatically"
+#~ msgstr "Regel automatisch laten v&erlopen"
+
+#~ msgid "&Rule is valid for:"
+#~ msgstr "&Regel is geldig voor:"
+
+#~ msgid "Conditions"
+#~ msgstr "Voorwaarden"
+
+#~ msgid "Match a&ll conditions"
+#~ msgstr "Overeenkomstig met a&lle voorwaarden"
+
+#~ msgid "Matc&h any condition"
+#~ msgstr "Overeenkomstig met één &voorwaarde"
+
+#~ msgid "Actions"
+#~ msgstr "Acties"
+
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " dag"
+#~ msgstr[1] " dagen"
+
+#~ msgid "New rule"
+#~ msgstr "Nieuwe regel"
+
+#~ msgid "Edit rule"
+#~ msgstr "Regel bewerken"
+
+#~ msgid "Remove rule"
+#~ msgstr "Regel verwijderen"
+
+#~ msgid "<placeholder>all groups</placeholder>"
+#~ msgstr "<placeholder>Alle groepen</placeholder>"
+
+#~ msgid "Sho&w only rules for group:"
+#~ msgstr "Alleen regels &tonen voor groep:"
+
+#~ msgid "Rule Editor"
+#~ msgstr "Regeleditor"
+
+#~ msgid "Edit Rule"
+#~ msgstr "Regel bewerken"
+
+#~ msgid "Reload &List"
+#~ msgstr "Lijst her&laden"
+
+#~ msgid "Manage which mail folders you want to see in your folder view"
+#~ msgstr "Kies welke mappen u wilt zien in de mappenweergave"
+
+#~ msgid "S&earch:"
+#~ msgstr "Zo&eken:"
+
+#~ msgid "Disable &tree view"
+#~ msgstr "Booms&tructuurweergave uitschakelen"
+
+#~ msgid "&Subscribed only"
+#~ msgstr "Alleen inge&schreven"
+
+#~ msgid "&New only"
+#~ msgstr "Alleen &nieuwe"
+
+#~ msgid "Current changes:"
+#~ msgstr "Huidige veranderingen:"
+
+#~ msgctxt "subscription name"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "subscription description"
+#~ msgid "Description"
+#~ msgstr "Beschrijving"
+
+#~ msgid "Subscribe To"
+#~ msgstr "Inschrijven bij"
+
+#~ msgid "Unsubscribe From"
+#~ msgstr "Uitschrijven van"
+
+#~ msgid "Loading... (1 matching)"
+#~ msgid_plural "Loading... (%1 matching)"
+#~ msgstr[0] "Bezig met laden... (%1 komt overeen)"
+#~ msgstr[1] "Bezig met laden... (%1 komen overeen)"
+
+#~ msgid "%2: (1 matching)"
+#~ msgid_plural "%2: (%1 matching)"
+#~ msgstr[0] "%2: (1 komt overeen)"
+#~ msgstr[1] "%2: (%1 komen overeen)"
+
+#~ msgid "View Columns"
+#~ msgstr "Kolommen tonen"
