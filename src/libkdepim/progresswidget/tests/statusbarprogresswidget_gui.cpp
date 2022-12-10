@@ -5,7 +5,7 @@
 */
 
 #include "statusbarprogresswidget_gui.h"
-#include "../statusbarprogresswidget.h"
+#include "progresswidget/progressdialog.h"
 
 #include <QApplication>
 #include <QCommandLineParser>
@@ -13,6 +13,9 @@
 StatusbarProgressWidget_Gui::StatusbarProgressWidget_Gui(QWidget *parent)
     : QWidget(parent)
 {
+    KPIM::ProgressDialog *w = new KPIM::ProgressDialog(this, this);
+    w->show();
+    w->setVisible(true);
 }
 
 int main(int argc, char **argv)
