@@ -5,9 +5,9 @@ set(PIM_VERSION "5.22.40")
 
 project(libkdepim VERSION ${PIM_VERSION})
 
-set(KF5_MIN_VERSION "5.102.0")
+set(KF_MIN_VERSION "5.102.0")
 
-find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
+find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
@@ -42,14 +42,14 @@ endif()
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus Network)
 
-find_package(KF5Config ${KF5_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5Completion ${KF5_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5ConfigWidgets ${KF5_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5CoreAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5I18n ${KF5_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5ItemViews ${KF5_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5JobWidgets ${KF5_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5WidgetsAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5Config ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5Completion ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5ConfigWidgets ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5CoreAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5ItemViews ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5JobWidgets ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5WidgetsAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
