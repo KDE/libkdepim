@@ -15,7 +15,7 @@ ecm_add_qtdesignerplugin(kdepimwidgets
     KPIM::KCheckComboBox
     LINK_LIBRARIES
     KF5::Libkdepim
-    KF5::Completion
+    KF${KF_MAJOR_VERSION}::Completion
     INSTALL_DESTINATION "${KDE_INSTALL_QTPLUGINDIR}/designer"
     COMPONENT Devel
     )

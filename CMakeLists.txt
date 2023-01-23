@@ -37,24 +37,28 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 set(LIBKDEPIM_LIB_VERSION ${PIM_VERSION})
 set(QT_REQUIRED_VERSION "5.15.2")
 if (QT_MAJOR_VERSION STREQUAL "6")
-    set(QT_REQUIRED_VERSION "6.4.0")
+    set(QT_MIN_VERSION "6.4.0")
+    set(KF_MIN_VERSION "5.240.0")
+    set(KF_MAJOR_VERSION "6")
+else()
+    set(KF_MAJOR_VERSION "5")
 endif()
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus Network)
 
-find_package(KF5Config ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5Completion ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5ConfigWidgets ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5CoreAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5ItemViews ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5JobWidgets ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5WidgetsAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}Config ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}Completion ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}ConfigWidgets ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}CoreAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}ItemViews ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}JobWidgets ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}WidgetsAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
 
-ecm_set_disabled_deprecation_versions(QT 5.15.2  KF 5.102.0)
+ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.102.0)
 
 
 
