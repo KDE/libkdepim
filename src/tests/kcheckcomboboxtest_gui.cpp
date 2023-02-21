@@ -10,7 +10,7 @@
 #include <QCommandLineParser>
 #include <QStandardPaths>
 
-#include "../src/libkdepim/widgets/kcheckcombobox.h"
+#include "widgets/kcheckcombobox.h"
 
 int main(int argc, char *argv[])
 {
