@@ -5,5 +5,5 @@ target_link_libraries(statusbarprogresswidgetgui
   Qt::Widgets
   Qt::Core
   KF${KF_MAJOR_VERSION}::I18n
-  KF5::Libkdepim
+  KPim${KF_MAJOR_VERSION}::Libkdepim
 )

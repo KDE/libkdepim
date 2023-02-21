@@ -1,10 +1,11 @@
 # SPDX-FileCopyrightText: none
 # SPDX-License-Identifier: BSD-3-Clause
-add_library(KF5Libkdepim)
-add_library(KF5::Libkdepim ALIAS KF5Libkdepim)
+add_library(KPim${KF_MAJOR_VERSION}Libkdepim)
+add_library(KPim${KF_MAJOR_VERSION}::Libkdepim ALIAS KPim${KF_MAJOR_VERSION}Libkdepim)
+add_library(KF5::Libkdepim ALIAS KPim${KF_MAJOR_VERSION}Libkdepim)
 ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h"
-    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfigVersion.cmake"
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimConfigVersion.cmake"
     SOVERSION 5
     )
 
@@ -16,7 +17,7 @@ endif()
 
 
 ########### next target ###############
-target_sources(KF5Libkdepim PRIVATE
+target_sources(KPim${KF_MAJOR_VERSION}Libkdepim PRIVATE
     progresswidget/progressmanager.cpp
     progresswidget/progressdialog.cpp
     progresswidget/statusbarprogresswidget.cpp
@@ -43,7 +44,7 @@ target_sources(KF5Libkdepim PRIVATE
     widgets/kcheckcombobox.h
     widgets/progressindicatorlabel.h
     )
-ecm_qt_declare_logging_category(KF5Libkdepim HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
+ecm_qt_declare_logging_category(KPim${KF_MAJOR_VERSION}Libkdepim HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
         DESCRIPTION "libkdepim (libkdepim)"
         OLD_CATEGORY_NAMES log_libkdepim
         EXPORT LIBKDEPIM
@@ -51,13 +52,13 @@ ecm_qt_declare_logging_category(KF5Libkdepim HEADER libkdepim_debug.h IDENTIFIER
 
 
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KF5Libkdepim PROPERTIES UNITY_BUILD ON)
+    set_target_properties(KPim${KF_MAJOR_VERSION}Libkdepim PROPERTIES UNITY_BUILD ON)
 endif()
-generate_export_header(KF5Libkdepim BASE_NAME kdepim)
-target_include_directories(KF5Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/Libkdepim/>")
-target_include_directories(KF5Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
+generate_export_header(KPim${KF_MAJOR_VERSION}Libkdepim BASE_NAME kdepim)
+target_include_directories(KPim${KF_MAJOR_VERSION}Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/Libkdepim/>")
+target_include_directories(KPim${KF_MAJOR_VERSION}Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
 
-target_link_libraries(KF5Libkdepim
+target_link_libraries(KPim${KF_MAJOR_VERSION}Libkdepim
     PRIVATE
     KF${KF_MAJOR_VERSION}::Completion
     KF${KF_MAJOR_VERSION}::I18n
@@ -67,19 +68,19 @@ target_link_libraries(KF5Libkdepim
 
 
 if(MINGW)
-    target_link_libraries(KF5Libkdepim oleaut32)
+    target_link_libraries(KPim${KF_MAJOR_VERSION}Libkdepim oleaut32)
 endif()
 
 
-set_target_properties(KF5Libkdepim PROPERTIES
+set_target_properties(KPim${KF_MAJOR_VERSION}Libkdepim PROPERTIES
     VERSION ${LIBKDEPIM_VERSION}
     SOVERSION ${LIBKDEPIM_SOVERSION}
     EXPORT_NAME Libkdepim
     )
 
 install(TARGETS
-    KF5Libkdepim
-    EXPORT KF5LibkdepimTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
+    KPim${KF_MAJOR_VERSION}Libkdepim
+    EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
     )
 
 ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
@@ -122,7 +123,7 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
 
 ecm_generate_pri_file(BASE_NAME Libkdepim
     LIB_NAME KF5Libkdepim
-    DEPS "" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/Libkdepim
+    DEPS "" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/Libkdepim
     )
 
 install(FILES
@@ -131,7 +132,7 @@ install(FILES
     ${libkdepim_Camelcaseprogresswidget_HEADERS}
     ${libkdepim_Camelcasemisc_HEADERS}
     ${libkdepim_Camelcasemultiline_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/Libkdepim/Libkdepim
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/Libkdepim/Libkdepim
     COMPONENT Devel
     )
 
@@ -142,7 +143,7 @@ install(FILES
     ${libkdepim_misc_HEADERS}
     ${libkdepim_widgets_HEADERS}
     ${libkdepim_multiline_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/Libkdepim/libkdepim
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/Libkdepim/libkdepim
     COMPONENT Devel
     )
 
@@ -157,33 +158,33 @@ endif()
 
 install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mailtransport.service.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
 
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Libkdepim")
-
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}Libkdepim")
+set(LIBKDEPIM_KF5_COMPAT FALSE)
 configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/KF5LibkdepimConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfig.cmake"
+    "${CMAKE_CURRENT_SOURCE_DIR}/KPimLibkdepimConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimConfig.cmake"
     INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
     )
 
 install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfig.cmake"
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfigVersion.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimConfigVersion.cmake"
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     COMPONENT Devel
     )
 
-install(EXPORT KF5LibkdepimTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5LibkdepimTargets.cmake NAMESPACE KF5::)
+install(EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim${KF_MAJOR_VERSION}LibkdepimTargets.cmake NAMESPACE KPim${KF_MAJOR_VERSION}::)
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/Libkdepim COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/Libkdepim COMPONENT Devel
     )
 
 if (BUILD_QCH)
     ecm_add_qch(
-        KF5Libkdepim_QCH
-        NAME KF5Libkdepim
-        BASE_NAME KF5Libkdepim
+        KPim${KF_MAJOR_VERSION}Libkdepim_QCH
+        NAME KPim${KF_MAJOR_VERSION}Libkdepim
+        BASE_NAME KPim${KF_MAJOR_VERSION}Libkdepim
         VERSION ${PIM_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API

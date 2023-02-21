@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: none
 # SPDX-License-Identifier: BSD-3-Clause
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
-set(PIM_VERSION "5.22.40")
+set(PIM_VERSION "5.22.41")
 
 project(libkdepim VERSION ${PIM_VERSION})
 
@@ -63,7 +63,7 @@ ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.103.0)
 
 
 ########### CMake Config Files ###########
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Libkdepim")
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}Libkdepim")
 
 
 configure_package_config_file(MailTransportDBusServiceConfig.cmake.in
@@ -81,7 +81,37 @@ set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
 if (USE_UNITY_CMAKE_SUPPORT)
     set(COMPILE_WITH_UNITY_CMAKE_SUPPORT ON)
 endif()
+
 add_subdirectory(src)
+
+##
+# TODO: Backwards compatiblity. Remove in next major version
+##
+set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Libkdepim")
+set(LIBKDEPIM_KF5_COMPAT TRUE)
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/KPimLibkdepimConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfig.cmake"
+    INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF5}
+)
+
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfig.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    COMPONENT Devel
+)
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/src/KPim${KF_MAJOR_VERSION}LibkdepimConfigVersion.cmake"
+    RENAME "KF5LibkdepimConfigVersion.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    COMPONENT Devel
+)
+install(EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    FILE KPim${KF_MAJOR_VERSION}LibkdepimTargets.cmake
+    NAMESPACE KF5::
+)
+
 
 ecm_qt_install_logging_categories(
         EXPORT LIBKDEPIM
@@ -94,8 +124,8 @@ ki18n_install(po)
 
 if (BUILD_QCH)
     ecm_install_qch_export(
-        TARGETS KF5Libkdepim_QCH
-        FILE KF5LibkdepimQchTargets.cmake
+        TARGETS KPim${KF_MAJOR_VERSION}Libkdepim_QCH
+        FILE KPim${KF_MAJOR_VERSION}LibkdepimQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
