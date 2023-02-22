@@ -84,6 +84,7 @@ endif()
 
 add_subdirectory(src)
 
+if (QT_MAJOR_VERSION STREQUAL "5")
 ##
 # TODO: Backwards compatiblity. Remove in next major version
 ##
@@ -111,7 +112,7 @@ install(EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets
     FILE KPim${KF_MAJOR_VERSION}LibkdepimTargets.cmake
     NAMESPACE KF5::
 )
-
+endif()
 
 ecm_qt_install_logging_categories(
         EXPORT LIBKDEPIM
