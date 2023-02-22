@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"POT-Creation-Date: 2023-02-22 00:59+0000\n"
 "PO-Revision-Date: 2022-04-26 11:05+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -26,53 +26,53 @@ msgstr ""
 "X-Generator: Lokalize 21.12.3\n"
 "X-POOTLE-MTIME: 1413102212.000000\n"
 
-#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
 msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr "Biz daha fazla alıcı ekleyemiyoruz. En fazla alıcı sayısına ulaştık."
 
-#: libkdepim/progresswidget/progressdialog.cpp:226
+#: progresswidget/progressdialog.cpp:226
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Bu işlemi iptal et."
 
-#: libkdepim/progresswidget/progressmanager.cpp:111
+#: progresswidget/progressmanager.cpp:111
 #, kde-format
 msgid "Aborting..."
 msgstr "İptal ediliyor..."
 
-#: libkdepim/progresswidget/ssllabel.cpp:39
+#: progresswidget/ssllabel.cpp:39
 #, kde-format
 msgid "Connection is encrypted"
 msgstr "Bağlantı şifreli"
 
-#: libkdepim/progresswidget/ssllabel.cpp:44
+#: progresswidget/ssllabel.cpp:44
 #, kde-format
 msgid "Connection is unencrypted"
 msgstr "Bağlantı şifresiz"
 
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#: progresswidget/statusbarprogresswidget.cpp:65
 #, kde-format
 msgid "Open detailed progress dialog"
 msgstr "Detaylı işlem iletişim kutusunu aç"
 
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#: progresswidget/statusbarprogresswidget.cpp:267
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Detaylı işlem penceresini göster"
 
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Detaylı işlem penceresini sakla"
 
-#: libkdepim/widgets/kwidgetlister.cpp:91
+#: widgets/kwidgetlister.cpp:91
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "Daha fazla"
 
-#: libkdepim/widgets/kwidgetlister.cpp:96
+#: widgets/kwidgetlister.cpp:96
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"

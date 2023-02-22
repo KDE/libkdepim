@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"POT-Creation-Date: 2023-02-22 00:59+0000\n"
 "PO-Revision-Date: 2021-06-29 15:25+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -20,54 +20,54 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 21.04.2\n"
 
-#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
 msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
 "हम ओर प्राप्तकर्ताएँ नहीं जोड सकते। हम अधिकतम प्राप्तकर्ता संख्या सीमा तक पहुँच चुके हैं"
 
-#: libkdepim/progresswidget/progressdialog.cpp:226
+#: progresswidget/progressdialog.cpp:226
 #, kde-format
 msgid "Cancel this operation."
 msgstr "इस इकार्रवाई को रद्द करें।"
 
-#: libkdepim/progresswidget/progressmanager.cpp:111
+#: progresswidget/progressmanager.cpp:111
 #, kde-format
 msgid "Aborting..."
 msgstr "छोड़ा जा रहा है..."
 
-#: libkdepim/progresswidget/ssllabel.cpp:39
+#: progresswidget/ssllabel.cpp:39
 #, kde-format
 msgid "Connection is encrypted"
 msgstr "कनेक्शन एनक्रिप्टेड है"
 
-#: libkdepim/progresswidget/ssllabel.cpp:44
+#: progresswidget/ssllabel.cpp:44
 #, kde-format
 msgid "Connection is unencrypted"
 msgstr "संपर्क गूढलेखित नहीं है"
 
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#: progresswidget/statusbarprogresswidget.cpp:65
 #, kde-format
 msgid "Open detailed progress dialog"
 msgstr "विस्तृत प्रगति संवाद खोलें"
 
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#: progresswidget/statusbarprogresswidget.cpp:267
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "विस्तृत प्रगति विंडो दिखाएँ"
 
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "विस्तृत प्रगति विंडो को छुपाएँ"
 
-#: libkdepim/widgets/kwidgetlister.cpp:91
+#: widgets/kwidgetlister.cpp:91
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "अधिक"
 
-#: libkdepim/widgets/kwidgetlister.cpp:96
+#: widgets/kwidgetlister.cpp:96
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"

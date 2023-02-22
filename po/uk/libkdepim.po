@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-11 00:47+0000\n"
+"POT-Creation-Date: 2023-02-22 00:59+0000\n"
 "PO-Revision-Date: 2019-07-31 08:50+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -23,55 +23,55 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:63
+#: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
 msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
 "Подальше додавання отримувачів неможливе. Ми досягли максимальної кількості "
 "записів отримувачів."
 
-#: libkdepim/progresswidget/progressdialog.cpp:226
+#: progresswidget/progressdialog.cpp:226
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Скасовувати цю операцію."
 
-#: libkdepim/progresswidget/progressmanager.cpp:111
+#: progresswidget/progressmanager.cpp:111
 #, kde-format
 msgid "Aborting..."
 msgstr "Припиняється…"
 
-#: libkdepim/progresswidget/ssllabel.cpp:39
+#: progresswidget/ssllabel.cpp:39
 #, kde-format
 msgid "Connection is encrypted"
 msgstr "З'єднання шифрується"
 
-#: libkdepim/progresswidget/ssllabel.cpp:44
+#: progresswidget/ssllabel.cpp:44
 #, kde-format
 msgid "Connection is unencrypted"
 msgstr "З'єднання не шифрується"
 
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:65
+#: progresswidget/statusbarprogresswidget.cpp:65
 #, kde-format
 msgid "Open detailed progress dialog"
 msgstr "Відкрити вікно детального поступу"
 
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:267
+#: progresswidget/statusbarprogresswidget.cpp:267
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Показувати вікно детального поступу"
 
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Ховати вікно детального поступу"
 
-#: libkdepim/widgets/kwidgetlister.cpp:91
+#: widgets/kwidgetlister.cpp:91
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "Більше"
 
-#: libkdepim/widgets/kwidgetlister.cpp:96
+#: widgets/kwidgetlister.cpp:96
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"
