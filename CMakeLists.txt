@@ -64,16 +64,16 @@ ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.103.0)
 
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}Libkdepim")
+set(MAILTRANSPORTDBUS_KF5_COMPAT FALSE)
 
-
-configure_package_config_file(MailTransportDBusServiceConfig.cmake.in
-  ${CMAKE_CURRENT_BINARY_DIR}/MailTransportDBusServiceConfig.cmake
+configure_package_config_file(KPimMailTransportDBusServiceConfig.cmake.in
+  ${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailTransportDBusServiceConfig.cmake
   PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
-  INSTALL_DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/MailTransportDBusService")
+  INSTALL_DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}MailTransportDBusService")
 
 install(FILES
-  ${CMAKE_CURRENT_BINARY_DIR}/MailTransportDBusServiceConfig.cmake
-  DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/MailTransportDBusService")
+  ${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailTransportDBusServiceConfig.cmake
+  DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}MailTransportDBusService")
 
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
@@ -83,6 +83,23 @@ if (USE_UNITY_CMAKE_SUPPORT)
 endif()
 
 add_subdirectory(src)
+
+#if (QT_MAJOR_VERSION STREQUAL "5")
+##
+# TODO: Backwards compatiblity. Remove in next major version
+##
+set(MAILTRANSPORTDBUS_KF5_COMPAT TRUE)
+configure_package_config_file(KPimMailTransportDBusServiceConfig.cmake.in
+  ${CMAKE_CURRENT_BINARY_DIR}/MailTransportDBusServiceConfig.cmake
+  PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
+  INSTALL_DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/MailTransportDBusService")
+
+install(FILES
+  ${CMAKE_CURRENT_BINARY_DIR}/MailTransportDBusServiceConfig.cmake
+  DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/MailTransportDBusService")
+#endif()
+
+
 
 if (QT_MAJOR_VERSION STREQUAL "5")
 ##
