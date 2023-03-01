@@ -84,7 +84,7 @@ endif()
 
 add_subdirectory(src)
 
-#if (QT_MAJOR_VERSION STREQUAL "5")
+if (QT_MAJOR_VERSION STREQUAL "5")
 ##
 # TODO: Backwards compatiblity. Remove in next major version
 ##
@@ -97,7 +97,7 @@ configure_package_config_file(KPimMailTransportDBusServiceConfig.cmake.in
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/MailTransportDBusServiceConfig.cmake
   DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/MailTransportDBusService")
-#endif()
+endif()
 
 
 
