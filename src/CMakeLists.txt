@@ -2,7 +2,6 @@
 # SPDX-License-Identifier: BSD-3-Clause
 add_library(KPim${KF_MAJOR_VERSION}Libkdepim)
 add_library(KPim${KF_MAJOR_VERSION}::Libkdepim ALIAS KPim${KF_MAJOR_VERSION}Libkdepim)
-add_library(KF5::Libkdepim ALIAS KPim${KF_MAJOR_VERSION}Libkdepim)
 ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimConfigVersion.cmake"
