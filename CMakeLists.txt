@@ -65,6 +65,8 @@ ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.104.0)
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}Libkdepim")
 set(MAILTRANSPORTDBUS_KF5_COMPAT FALSE)
 
+
+
 configure_package_config_file(KPimMailTransportDBusServiceConfig.cmake.in
   ${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailTransportDBusServiceConfig.cmake
   PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
@@ -99,6 +101,34 @@ install(FILES
 endif()
 
 
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}Libkdepim")
+set(LIBKDEPIM_KF5_COMPAT FALSE)
+
+if (BUILD_QCH)
+    ecm_install_qch_export(
+        TARGETS KPim${KF_MAJOR_VERSION}Libkdepim_QCH
+        FILE KPim${KF_MAJOR_VERSION}LibkdepimQchTargets.cmake
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel
+    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimQchTargets.cmake\")")
+endif()
+
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/KPimLibkdepimConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimConfig.cmake"
+    INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
+    )
+
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/src/KPim${KF_MAJOR_VERSION}LibkdepimConfigVersion.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+    COMPONENT Devel
+    )
+
+install(EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim${KF_MAJOR_VERSION}LibkdepimTargets.cmake NAMESPACE KPim${KF_MAJOR_VERSION}::)
+
 
 if (QT_MAJOR_VERSION STREQUAL "5")
 ##
@@ -107,7 +137,7 @@ if (QT_MAJOR_VERSION STREQUAL "5")
 set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Libkdepim")
 set(LIBKDEPIM_KF5_COMPAT TRUE)
 configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/src/KPimLibkdepimConfig.cmake.in"
+    "${CMAKE_CURRENT_SOURCE_DIR}/KPimLibkdepimConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfig.cmake"
     INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF5}
 )
@@ -128,6 +158,13 @@ install(EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets
     FILE KPim${KF_MAJOR_VERSION}LibkdepimTargets.cmake
     NAMESPACE KF5::
 )
+if (BUILD_QCH)
+    install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimQchTargets.cmake"
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+        COMPONENT Devel
+    )
+endif()
 endif()
 
 ecm_qt_install_logging_categories(
@@ -139,14 +176,6 @@ ecm_qt_install_logging_categories(
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 ki18n_install(po)
 
-if (BUILD_QCH)
-    ecm_install_qch_export(
-        TARGETS KPim${KF_MAJOR_VERSION}Libkdepim_QCH
-        FILE KPim${KF_MAJOR_VERSION}LibkdepimQchTargets.cmake
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-        COMPONENT Devel
-    )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimQchTargets.cmake\")")
-endif()
+
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
