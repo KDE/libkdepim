@@ -152,7 +152,7 @@ protected:
     virtual void addWidgetAfterThisWidget(QWidget *currentWidget, QWidget *widget = nullptr);
 
 private:
-    void init(bool fewerMoreButton = true);
+    KDEPIM_NO_EXPORT void init(bool fewerMoreButton = true);
 
 Q_SIGNALS:
     /**

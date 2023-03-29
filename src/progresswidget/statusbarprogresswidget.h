@@ -58,10 +58,10 @@ protected:
 
 private:
     enum Mode { Progress, Clean };
-    void setMode(Mode mode);
-    void updateProgressButton(bool showingProgress);
-    void connectSingleItem();
-    void activateSingleItemMode();
+    KDEPIM_NO_EXPORT void setMode(Mode mode);
+    KDEPIM_NO_EXPORT void updateProgressButton(bool showingProgress);
+    KDEPIM_NO_EXPORT void connectSingleItem();
+    KDEPIM_NO_EXPORT void activateSingleItemMode();
 
     unsigned int mShowTypeProgressItem = 0;
     QProgressBar *mProgressBar = nullptr;

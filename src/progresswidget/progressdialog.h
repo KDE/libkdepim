@@ -50,7 +50,7 @@ protected:
     bool eventFilter(QObject *o, QEvent *e) override;
 
 private:
-    void reposition();
+    KDEPIM_NO_EXPORT void reposition();
 
 private:
     std::unique_ptr<OverlayWidgetPrivate> const d;

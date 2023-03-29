@@ -401,26 +401,26 @@ private Q_SLOTS:
     void slotTransactionCompleted(KPIM::ProgressItem *item);
 
 private:
-    ProgressManager();
+    KDEPIM_NO_EXPORT ProgressManager();
     // prevent unsolicited copies
-    ProgressManager(const ProgressManager &);
+    KDEPIM_NO_EXPORT ProgressManager(const ProgressManager &);
 
-    ProgressItem *createProgressItemImpl(ProgressItem *parent,
-                                         const QString &id,
-                                         const QString &label,
-                                         const QString &status,
-                                         bool cancellable,
-                                         ProgressItem::CryptoStatus cryptoStatus,
-                                         unsigned int progressType = 0);
+    KDEPIM_NO_EXPORT ProgressItem *createProgressItemImpl(ProgressItem *parent,
+                                                          const QString &id,
+                                                          const QString &label,
+                                                          const QString &status,
+                                                          bool cancellable,
+                                                          ProgressItem::CryptoStatus cryptoStatus,
+                                                          unsigned int progressType = 0);
 
-    ProgressItem *createProgressItemImpl(const QString &parent,
-                                         const QString &id,
-                                         const QString &label,
-                                         const QString &status,
-                                         bool cancellable,
-                                         ProgressItem::CryptoStatus cryptoStatus,
-                                         unsigned int progressType = 0);
-    void emitShowProgressDialogImpl();
+    KDEPIM_NO_EXPORT ProgressItem *createProgressItemImpl(const QString &parent,
+                                                          const QString &id,
+                                                          const QString &label,
+                                                          const QString &status,
+                                                          bool cancellable,
+                                                          ProgressItem::CryptoStatus cryptoStatus,
+                                                          unsigned int progressType = 0);
+    KDEPIM_NO_EXPORT void emitShowProgressDialogImpl();
 
     QHash<QString, ProgressItem *> mTransactions;
     static unsigned int uID;
