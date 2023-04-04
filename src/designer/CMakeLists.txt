@@ -10,7 +10,7 @@ ecm_qtdesignerplugin_widget(KPIM::KCheckComboBox
 
 ecm_add_qtdesignerplugin(kdepimwidgets
     NAME KDEPimWidgets
-    OUTPUT_NAME kdepim${QT_MAJOR_VERSION}widgets
+    OUTPUT_NAME kdepim6widgets
     WIDGETS
     KPIM::KCheckComboBox
     LINK_LIBRARIES
