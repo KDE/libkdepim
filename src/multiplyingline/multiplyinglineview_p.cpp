@@ -245,9 +245,9 @@ QSize MultiplyingLineView::minimumSizeHint() const
     }
 }
 
-QVector<MultiplyingLineData::Ptr> MultiplyingLineView::allData() const
+QList<MultiplyingLineData::Ptr> MultiplyingLineView::allData() const
 {
-    QVector<MultiplyingLineData::Ptr> data;
+    QList<MultiplyingLineData::Ptr> data;
 
     QListIterator<MultiplyingLine *> it(mLines);
     while (it.hasNext()) {

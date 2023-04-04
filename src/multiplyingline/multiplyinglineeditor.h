@@ -81,7 +81,7 @@ public:
     MultiplyingLineFactory *factory() const;
 
     /** Retrieve the data from the editor */
-    Q_REQUIRED_RESULT QVector<MultiplyingLineData::Ptr> allData() const;
+    Q_REQUIRED_RESULT QList<MultiplyingLineData::Ptr> allData() const;
 
     /** Retrieve the data of the active line */
     MultiplyingLineData::Ptr activeData() const;
