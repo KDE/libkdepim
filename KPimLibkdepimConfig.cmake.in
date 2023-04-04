@@ -4,15 +4,6 @@
 @PACKAGE_INIT@
 include(CMakeFindDependencyMacro)
 
-if (@LIBKDEPIM_KF5_COMPAT@)
-    message(WARNING "\n"
-                    "************* DEPRECATION WARNING *************\n"
-		    "Using find_package(KF5Libkdepim) and KF5::Libkdepim targets is deprecated. "
-		    "Please use find_package(KPim@KF_MAJOR_VERSION@Libkdepim) and KPim@KF_MAJOR_VERSION@::Libkdepim instead. This backwards "
-                    "compatibility will be removed in the next major version.\n"
-                    "***********************************************\n")
-endif()
-
-include("${CMAKE_CURRENT_LIST_DIR}/KPim@KF_MAJOR_VERSION@LibkdepimTargets.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/KPim6LibkdepimTargets.cmake")
 
 @PACKAGE_INCLUDE_QCHTARGETS@

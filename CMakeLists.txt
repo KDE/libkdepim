@@ -5,8 +5,8 @@ set(PIM_VERSION "5.23.40")
 
 project(libkdepim VERSION ${PIM_VERSION})
 
-set(KF_MIN_VERSION "5.105.0")
-
+set(KF_MIN_VERSION "5.240.0")
+set(QT_MIN_VERSION "6.4.0")
 find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
@@ -35,24 +35,15 @@ option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, 
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
 set(LIBKDEPIM_LIB_VERSION ${PIM_VERSION})
-set(QT_REQUIRED_VERSION "5.15.2")
-if (QT_MAJOR_VERSION STREQUAL "6")
-    set(QT_MIN_VERSION "6.4.0")
-    set(KF_MIN_VERSION "5.240.0")
-    set(KF_MAJOR_VERSION "6")
-else()
-    set(KF_MAJOR_VERSION "5")
-endif()
+find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus Network)
 
-find_package(Qt${QT_MAJOR_VERSION} ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus Network)
-
-find_package(KF${KF_MAJOR_VERSION}Config ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}Completion ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}CoreAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}ItemViews ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}JobWidgets ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}WidgetsAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6Config ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6Completion ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6CoreAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6ItemViews ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6JobWidgets ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6WidgetsAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
@@ -62,19 +53,19 @@ ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.105.0)
 
 
 ########### CMake Config Files ###########
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}Libkdepim")
-set(MAILTRANSPORTDBUS_KF5_COMPAT FALSE)
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6Libkdepim")
+set(MAILTRANSPORTDBUS_KF6_COMPAT FALSE)
 
 
 
 configure_package_config_file(KPimMailTransportDBusServiceConfig.cmake.in
-  ${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailTransportDBusServiceConfig.cmake
+  ${CMAKE_CURRENT_BINARY_DIR}/KPim6MailTransportDBusServiceConfig.cmake
   PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
-  INSTALL_DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}MailTransportDBusService")
+  INSTALL_DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailTransportDBusService")
 
 install(FILES
-  ${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailTransportDBusServiceConfig.cmake
-  DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}MailTransportDBusService")
+  ${CMAKE_CURRENT_BINARY_DIR}/KPim6MailTransportDBusServiceConfig.cmake
+  DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailTransportDBusService")
 
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
@@ -85,87 +76,33 @@ endif()
 
 add_subdirectory(src)
 
-if (QT_MAJOR_VERSION STREQUAL "5")
-##
-# TODO: Backwards compatiblity. Remove in next major version
-##
-set(MAILTRANSPORTDBUS_KF5_COMPAT TRUE)
-configure_package_config_file(KPimMailTransportDBusServiceConfig.cmake.in
-  ${CMAKE_CURRENT_BINARY_DIR}/MailTransportDBusServiceConfig.cmake
-  PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
-  INSTALL_DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/MailTransportDBusService")
-
-install(FILES
-  ${CMAKE_CURRENT_BINARY_DIR}/MailTransportDBusServiceConfig.cmake
-  DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/MailTransportDBusService")
-endif()
-
-
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}Libkdepim")
-set(LIBKDEPIM_KF5_COMPAT FALSE)
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6Libkdepim")
 
 if (BUILD_QCH)
     ecm_install_qch_export(
-        TARGETS KPim${KF_MAJOR_VERSION}Libkdepim_QCH
-        FILE KPim${KF_MAJOR_VERSION}LibkdepimQchTargets.cmake
+        TARGETS KPim6Libkdepim_QCH
+        FILE KPim6LibkdepimQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimQchTargets.cmake\")")
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6LibkdepimQchTargets.cmake\")")
 endif()
 
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimLibkdepimConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim6LibkdepimConfig.cmake"
     INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
     )
 
 install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimConfig.cmake"
-    "${CMAKE_CURRENT_BINARY_DIR}/src/KPim${KF_MAJOR_VERSION}LibkdepimConfigVersion.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim6LibkdepimConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/src/KPim6LibkdepimConfigVersion.cmake"
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     COMPONENT Devel
     )
 
-install(EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim${KF_MAJOR_VERSION}LibkdepimTargets.cmake NAMESPACE KPim${KF_MAJOR_VERSION}::)
+install(EXPORT KPim6LibkdepimTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim6LibkdepimTargets.cmake NAMESPACE KPim6::)
 
-
-if (QT_MAJOR_VERSION STREQUAL "5")
-##
-# TODO: Backwards compatiblity. Remove in next major version
-##
-set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Libkdepim")
-set(LIBKDEPIM_KF5_COMPAT TRUE)
-configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/KPimLibkdepimConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfig.cmake"
-    INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF5}
-)
-
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5LibkdepimConfig.cmake"
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-    COMPONENT Devel
-)
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/src/KPim${KF_MAJOR_VERSION}LibkdepimConfigVersion.cmake"
-    RENAME "KF5LibkdepimConfigVersion.cmake"
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-    COMPONENT Devel
-)
-install(EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-    FILE KPim${KF_MAJOR_VERSION}LibkdepimTargets.cmake
-    NAMESPACE KF5::
-)
-if (BUILD_QCH)
-    install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimQchTargets.cmake"
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-        COMPONENT Devel
-    )
-endif()
-endif()
 
 ecm_qt_install_logging_categories(
         EXPORT LIBKDEPIM

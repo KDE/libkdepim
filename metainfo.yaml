@@ -10,6 +10,6 @@ irc: akonadi
 
 libraries:
  - qmake: Libkdepim
-   cmake: "KF5::Libkdepim"
-cmakename: KF5Libkdepim
+   cmake: "KPim6::Libkdepim"
+cmakename: KPim6Libkdepim
 

@@ -1,11 +1,11 @@
 # SPDX-FileCopyrightText: none
 # SPDX-License-Identifier: BSD-3-Clause
-add_library(KPim${KF_MAJOR_VERSION}Libkdepim)
-add_library(KPim${KF_MAJOR_VERSION}::Libkdepim ALIAS KPim${KF_MAJOR_VERSION}Libkdepim)
+add_library(KPim6Libkdepim)
+add_library(KPim6::Libkdepim ALIAS KPim6Libkdepim)
 ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h"
-    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}LibkdepimConfigVersion.cmake"
-    SOVERSION 5
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6LibkdepimConfigVersion.cmake"
+    SOVERSION 6
     )
 
 if (BUILD_TESTING)
@@ -16,7 +16,7 @@ endif()
 
 
 ########### next target ###############
-target_sources(KPim${KF_MAJOR_VERSION}Libkdepim PRIVATE
+target_sources(KPim6Libkdepim PRIVATE
     progresswidget/progressmanager.cpp
     progresswidget/progressdialog.cpp
     progresswidget/statusbarprogresswidget.cpp
@@ -43,7 +43,7 @@ target_sources(KPim${KF_MAJOR_VERSION}Libkdepim PRIVATE
     widgets/kcheckcombobox.h
     widgets/progressindicatorlabel.h
     )
-ecm_qt_declare_logging_category(KPim${KF_MAJOR_VERSION}Libkdepim HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
+ecm_qt_declare_logging_category(KPim6Libkdepim HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
         DESCRIPTION "libkdepim (libkdepim)"
         OLD_CATEGORY_NAMES log_libkdepim
         EXPORT LIBKDEPIM
@@ -51,35 +51,35 @@ ecm_qt_declare_logging_category(KPim${KF_MAJOR_VERSION}Libkdepim HEADER libkdepi
 
 
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KPim${KF_MAJOR_VERSION}Libkdepim PROPERTIES UNITY_BUILD ON)
+    set_target_properties(KPim6Libkdepim PROPERTIES UNITY_BUILD ON)
 endif()
-generate_export_header(KPim${KF_MAJOR_VERSION}Libkdepim BASE_NAME kdepim)
-target_include_directories(KPim${KF_MAJOR_VERSION}Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/Libkdepim/>")
-target_include_directories(KPim${KF_MAJOR_VERSION}Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
+generate_export_header(KPim6Libkdepim BASE_NAME kdepim)
+target_include_directories(KPim6Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/>")
+target_include_directories(KPim6Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
 
-target_link_libraries(KPim${KF_MAJOR_VERSION}Libkdepim
+target_link_libraries(KPim6Libkdepim
     PRIVATE
-    KF${KF_MAJOR_VERSION}::Completion
-    KF${KF_MAJOR_VERSION}::I18n
-    KF${KF_MAJOR_VERSION}::ConfigGui
-    KF${KF_MAJOR_VERSION}::WidgetsAddons
+    KF6::Completion
+    KF6::I18n
+    KF6::ConfigGui
+    KF6::WidgetsAddons
     )
 
 
 if(MINGW)
-    target_link_libraries(KPim${KF_MAJOR_VERSION}Libkdepim oleaut32)
+    target_link_libraries(KPim6Libkdepim oleaut32)
 endif()
 
 
-set_target_properties(KPim${KF_MAJOR_VERSION}Libkdepim PROPERTIES
+set_target_properties(KPim6Libkdepim PROPERTIES
     VERSION ${LIBKDEPIM_VERSION}
     SOVERSION ${LIBKDEPIM_SOVERSION}
     EXPORT_NAME Libkdepim
     )
 
 install(TARGETS
-    KPim${KF_MAJOR_VERSION}Libkdepim
-    EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
+    KPim6Libkdepim
+    EXPORT KPim6LibkdepimTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
     )
 
 ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
@@ -121,8 +121,8 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
     )
 
 ecm_generate_pri_file(BASE_NAME Libkdepim
-    LIB_NAME KF${KF_MAJOR_VERSION}Libkdepim
-    DEPS "" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/Libkdepim
+    LIB_NAME KF6Libkdepim
+    DEPS "" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim
     )
 
 install(FILES
@@ -131,7 +131,7 @@ install(FILES
     ${libkdepim_Camelcaseprogresswidget_HEADERS}
     ${libkdepim_Camelcasemisc_HEADERS}
     ${libkdepim_Camelcasemultiline_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/Libkdepim/Libkdepim
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/Libkdepim
     COMPONENT Devel
     )
 
@@ -142,7 +142,7 @@ install(FILES
     ${libkdepim_misc_HEADERS}
     ${libkdepim_widgets_HEADERS}
     ${libkdepim_multiline_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/Libkdepim/libkdepim
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/libkdepim
     COMPONENT Devel
     )
 
@@ -159,14 +159,14 @@ install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mail
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/Libkdepim COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim COMPONENT Devel
     )
 
 if (BUILD_QCH)
     ecm_add_qch(
-        KPim${KF_MAJOR_VERSION}Libkdepim_QCH
-        NAME KPim${KF_MAJOR_VERSION}Libkdepim
-        BASE_NAME KPim${KF_MAJOR_VERSION}Libkdepim
+        KPim6Libkdepim_QCH
+        NAME KPim6Libkdepim
+        BASE_NAME KPim6Libkdepim
         VERSION ${PIM_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
@@ -178,9 +178,9 @@ if (BUILD_QCH)
         #MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
         #IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
         LINK_QCHS
-            Qt${QT_MAJOR_VERSION}Core_QCH
-            Qt${QT_MAJOR_VERSION}Gui_QCH
-            Qt${QT_MAJOR_VERSION}Widgets_QCH
+            Qt6Core_QCH
+            Qt6Gui_QCH
+            Qt6Widgets_QCH
         INCLUDE_DIRS
             ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS

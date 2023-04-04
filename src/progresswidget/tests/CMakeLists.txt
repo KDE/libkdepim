@@ -4,6 +4,6 @@ add_executable(statusbarprogresswidgetgui statusbarprogresswidget_gui.cpp)
 target_link_libraries(statusbarprogresswidgetgui
   Qt::Widgets
   Qt::Core
-  KF${KF_MAJOR_VERSION}::I18n
-  KPim${KF_MAJOR_VERSION}::Libkdepim
+  KF6::I18n
+  KPim6::Libkdepim
 )
