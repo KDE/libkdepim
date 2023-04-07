@@ -3,7 +3,7 @@
 add_library(KPim6Libkdepim)
 add_library(KPim6::Libkdepim ALIAS KPim6Libkdepim)
 ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
-    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h"
+    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/src/libkdepim_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6LibkdepimConfigVersion.cmake"
     SOVERSION 6
     )
@@ -53,7 +53,12 @@ ecm_qt_declare_logging_category(KPim6Libkdepim HEADER libkdepim_debug.h IDENTIFI
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6Libkdepim PROPERTIES UNITY_BUILD ON)
 endif()
-generate_export_header(KPim6Libkdepim BASE_NAME kdepim)
+ecm_generate_export_header(KPim6Libkdepim
+    BASE_NAME kdepim
+    VERSION ${LIBKDEPIM_VERSION}
+    DEPRECATED_BASE_VERSION 0
+    USE_VERSION_HEADER libkdepim_version.h
+)
 target_include_directories(KPim6Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/>")
 target_include_directories(KPim6Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
 
@@ -158,7 +163,7 @@ endif()
 install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mailtransport.service.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
 
 install(FILES
-    ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
+    ${CMAKE_CURRENT_BINARY_DIR}/src/libkdepim_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim COMPONENT Devel
     )
 
