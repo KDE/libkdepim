@@ -54,7 +54,6 @@ ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.105.0)
 
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6Libkdepim")
-set(MAILTRANSPORTDBUS_KF6_COMPAT FALSE)
 
 
 
