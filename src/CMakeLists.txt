@@ -57,7 +57,7 @@ ecm_generate_export_header(KPim6Libkdepim
     BASE_NAME kdepim
     VERSION ${LIBKDEPIM_VERSION}
     DEPRECATED_BASE_VERSION 0
-    USE_VERSION_HEADER libkdepim_version.h
+    USE_VERSION_HEADER src/libkdepim_version.h
 )
 target_include_directories(KPim6Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/>")
 target_include_directories(KPim6Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
