@@ -5,13 +5,8 @@ Dependencies:
 - 'on': ['Linux/Qt5', 'FreeBSD/Qt5', 'Windows/Qt5']
   'require':
     'frameworks/extra-cmake-modules': '@latest'
-    'frameworks/kcontacts' : '@latest'
-    'frameworks/kconfig': '@latest'
     'frameworks/kcompletion': '@latest'
-    'frameworks/kcoreaddons': '@latest'
     'frameworks/ki18n': '@latest'
-    'frameworks/kitemviews': '@latest'
-    'frameworks/kjobwidgets': '@latest'
     'frameworks/kwidgetsaddons': '@latest'
 
 Options:

@@ -61,7 +61,6 @@ target_link_libraries(KPim${KF_MAJOR_VERSION}Libkdepim
     PRIVATE
     KF${KF_MAJOR_VERSION}::Completion
     KF${KF_MAJOR_VERSION}::I18n
-    KF${KF_MAJOR_VERSION}::ConfigGui
     KF${KF_MAJOR_VERSION}::WidgetsAddons
     )
 
