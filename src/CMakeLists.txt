@@ -66,7 +66,6 @@ target_link_libraries(KPim6Libkdepim
     PRIVATE
     KF6::Completion
     KF6::I18n
-    KF6::ConfigGui
     KF6::WidgetsAddons
     )
 
