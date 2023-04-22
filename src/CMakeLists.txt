@@ -80,7 +80,7 @@ set_target_properties(KPim${KF_MAJOR_VERSION}Libkdepim PROPERTIES
 
 install(TARGETS
     KPim${KF_MAJOR_VERSION}Libkdepim
-    EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
+    EXPORT KPim${KF_MAJOR_VERSION}LibkdepimTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
     )
 
 ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
