@@ -25,11 +25,9 @@ target_sources(KPim6Libkdepim PRIVATE
     widgets/kcheckcombobox.cpp
     widgets/kwidgetlister.cpp
     widgets/progressindicatorlabel.cpp
-    misc/lineeditcatchreturnkey.cpp
     multiplyingline/multiplyingline.cpp
     multiplyingline/multiplyinglineeditor.cpp
     multiplyingline/multiplyinglineview_p.cpp
-    misc/lineeditcatchreturnkey.h
     progresswidget/statusbarprogresswidget.h
     progresswidget/ssllabel.h
     progresswidget/progressmanager.h
@@ -96,14 +94,6 @@ ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
     RELATIVE widgets
     )
 
-ecm_generate_headers(libkdepim_Camelcasemisc_HEADERS
-    HEADER_NAMES
-    LineEditCatchReturnKey
-    REQUIRED_HEADERS libkdepim_misc_HEADERS
-    PREFIX Libkdepim
-    RELATIVE misc
-    )
-
 ecm_generate_headers(libkdepim_Camelcaseprogresswidget_HEADERS
     HEADER_NAMES
     ProgressStatusBarWidget
@@ -133,7 +123,6 @@ install(FILES
     ${libkdepim_CamelcaseCamelCase_HEADERS}
     ${libkdepim_Camelcasewidgets_HEADERS}
     ${libkdepim_Camelcaseprogresswidget_HEADERS}
-    ${libkdepim_Camelcasemisc_HEADERS}
     ${libkdepim_Camelcasemultiline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/Libkdepim
     COMPONENT Devel
@@ -143,7 +132,6 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/kdepim_export.h
     ${libkdepim_CamelCase_HEADERS}
     ${libkdepim_progresswidget_HEADERS}
-    ${libkdepim_misc_HEADERS}
     ${libkdepim_widgets_HEADERS}
     ${libkdepim_multiline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/libkdepim
@@ -176,7 +164,6 @@ if (BUILD_QCH)
         SOURCES # using only public headers, to cover only public API
             ${libkdepim_CamelCase_HEADERS}
             ${libkdepim_progresswidget_HEADERS}
-            ${libkdepim_misc_HEADERS}
             ${libkdepim_widgets_HEADERS}
             ${libkdepim_multiline_HEADERS}
         #MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
