@@ -297,7 +297,7 @@ msgstr "أقلّ"
 #~ msgstr "إعدادات خادوم LDAP"
 
 #~ msgid "(c) 2009 - 2010 Tobias Koenig"
-#~ msgstr "‏© ٢٠٠٩-٢٠١٠ Tobias Koenig"
+#~ msgstr "‏© 2009-2010 Tobias Koenig"
 
 #~ msgid "Tobias Koenig"
 #~ msgstr "Tobias Koenig"
