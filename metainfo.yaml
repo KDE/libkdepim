@@ -5,7 +5,10 @@ public_lib: true
 type: functional
 group: kdepim
 platforms:
-    - name: All
+    - name: Linux
+    - name: FreeBSD
+    - name: macOS
+    - name: Windows
 irc: akonadi
 
 libraries:
