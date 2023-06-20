@@ -59,7 +59,7 @@ msgstr "Abrir o diálogo de progreso detallado"
 #: progresswidget/statusbarprogresswidget.cpp:267
 #, kde-format
 msgid "Show detailed progress window"
-msgstr "Mostrar a xanela de progreso detallado"
+msgstr "Amosar a xanela de progreso detallado"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
