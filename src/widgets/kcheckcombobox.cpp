@@ -103,8 +103,9 @@ void KCheckComboBox::KCheckComboBoxPrivate::updateCheckedItems(const QModelIndex
 
 void KCheckComboBox::KCheckComboBoxPrivate::toggleCheckState()
 {
-    if (q->view()->isVisible()) {
-        const QModelIndex index = q->view()->currentIndex();
+    int selected = q->currentIndex();
+    if (q->view()->isVisible() && q->itemEnabled(selected)) {
+        const QModelIndex index = q->view()->currentIndex().siblingAtRow(selected);
         const QVariant value = index.data(Qt::CheckStateRole);
         if (value.isValid()) {
             const auto state = static_cast<Qt::CheckState>(value.toInt());
