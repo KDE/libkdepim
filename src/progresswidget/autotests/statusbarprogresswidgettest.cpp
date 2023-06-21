@@ -66,3 +66,5 @@ void StatusbarProgressWidgetTest::shouldShowItems()
     QVERIFY(mProgressBar->isVisible());
     */
 }
+
+#include "moc_statusbarprogresswidgettest.cpp"

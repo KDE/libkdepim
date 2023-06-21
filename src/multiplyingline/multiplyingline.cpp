@@ -52,3 +52,5 @@ void MultiplyingLine::keyPressEvent(QKeyEvent *ev)
 void MultiplyingLine::aboutToBeDeleted()
 {
 }
+
+#include "moc_multiplyingline.cpp"

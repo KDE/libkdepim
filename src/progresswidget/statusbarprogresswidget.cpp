@@ -288,3 +288,5 @@ void StatusbarProgressWidget::slotProgressDialogVisible(bool b)
 
     updateProgressButton(b);
 }
+
+#include "moc_statusbarprogresswidget.cpp"

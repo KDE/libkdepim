@@ -476,3 +476,5 @@ void ProgressDialog::slotToggleVisibility()
         mWasLastShown = showNow;
     }
 }
+
+#include "moc_progressdialog.cpp"

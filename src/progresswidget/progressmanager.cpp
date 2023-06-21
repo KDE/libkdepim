@@ -391,3 +391,5 @@ unsigned int ProgressItem::completedItems() const
 {
     return mCompleted;
 }
+
+#include "moc_progressmanager.cpp"

@@ -38,3 +38,5 @@ KPIM::StatusbarProgressWidget *ProgressStatusBarWidget::littleProgress() const
 {
     return d->mLittleProgress;
 }
+
+#include "moc_progressstatusbarwidget.cpp"

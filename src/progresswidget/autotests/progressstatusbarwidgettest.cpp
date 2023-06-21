@@ -32,3 +32,5 @@ void ProgressStatusBarWidgetTest::shouldHaveDefaultValue()
 
     QCOMPARE(mLittleProgress, w.littleProgress());
 }
+
+#include "moc_progressstatusbarwidgettest.cpp"

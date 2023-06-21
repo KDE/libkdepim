@@ -83,3 +83,5 @@ void ProgressIndicatorLabel::setActiveLabel(const QString &label)
 {
     d->setActiveLabel(label);
 }
+
+#include "moc_progressindicatorlabel.cpp"
