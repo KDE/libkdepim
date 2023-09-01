@@ -115,7 +115,7 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
     )
 
 ecm_generate_pri_file(BASE_NAME Libkdepim
-    LIB_NAME KF6Libkdepim
+    LIB_NAME KPim6Libkdepim
     DEPS "" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim
     )
 
