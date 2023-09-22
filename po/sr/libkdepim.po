@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-06-17 11:36+0200\n"
+"POT-Creation-Date: 2023-02-22 00:59+0000\n"
 "PO-Revision-Date: 2017-07-16 22:56+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -23,88 +23,79 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
 
-#: libkdepim/multiplyingline/multiplyinglineview_p.cpp:76
+#: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
 msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr "Не може да се дода више прималаца, досегнут је највећи број."
 
-#: libkdepim/prefs/kprefsdialog.cpp:241
-#, kde-format
-msgid "Choose..."
-msgstr "Изабери..."
-
-#: libkdepim/prefs/kprefsdialog.cpp:780
-#, fuzzy, kde-format
-#| msgid "Preferences"
-msgctxt "@title:window"
-msgid "Preferences"
-msgstr "Поставке"
-
-#: libkdepim/prefs/kprefsdialog.cpp:885
-#, kde-format
-msgid ""
-"You are about to set all preferences to default values. All custom "
-"modifications will be lost."
-msgstr ""
-"Управо ћете поставити сва подешавања на подразумеване вредности. Све посебне "
-"измене ће бити изгубљене."
-
-# >> @title:window
-#: libkdepim/prefs/kprefsdialog.cpp:887
-#, kde-format
-msgid "Setting Default Preferences"
-msgstr "Враћање поставки на подразумевано"
-
-#: libkdepim/prefs/kprefsdialog.cpp:888
-#, kde-format
-msgid "Reset to Defaults"
-msgstr "Ресетуј на подразумевано"
-
-#: libkdepim/progresswidget/progressdialog.cpp:255
+#: progresswidget/progressdialog.cpp:226
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Обустави овај поступак."
 
-#: libkdepim/progresswidget/progressmanager.cpp:126
+#: progresswidget/progressmanager.cpp:111
 #, kde-format
 msgid "Aborting..."
 msgstr "Прекидам..."
 
-#: libkdepim/progresswidget/ssllabel.cpp:63
+#: progresswidget/ssllabel.cpp:39
 #, kde-format
 msgid "Connection is encrypted"
 msgstr "Веза је шифрована"
 
-#: libkdepim/progresswidget/ssllabel.cpp:68
+#: progresswidget/ssllabel.cpp:44
 #, kde-format
 msgid "Connection is unencrypted"
 msgstr "Веза није шифрована"
 
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:88
+#: progresswidget/statusbarprogresswidget.cpp:65
 #, kde-format
 msgid "Open detailed progress dialog"
 msgstr "Отвори детаљан дијалог напретка"
 
 # rewrite-msgid: /window/dialog/
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:300
+#: progresswidget/statusbarprogresswidget.cpp:267
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Прикажи детаљан дијалог напретка"
 
 # rewrite-msgid: /window/dialog/
-#: libkdepim/progresswidget/statusbarprogresswidget.cpp:303
+#: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Сакриј детаљан дијалог напретка"
 
-#: libkdepim/widgets/kwidgetlister.cpp:117
+#: widgets/kwidgetlister.cpp:91
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "Више"
 
-#: libkdepim/widgets/kwidgetlister.cpp:123
+#: widgets/kwidgetlister.cpp:96
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"
 msgstr "Мање"
+
+#~ msgid "Choose..."
+#~ msgstr "Изабери..."
+
+#, fuzzy
+#~| msgid "Preferences"
+#~ msgctxt "@title:window"
+#~ msgid "Preferences"
+#~ msgstr "Поставке"
+
+#~ msgid ""
+#~ "You are about to set all preferences to default values. All custom "
+#~ "modifications will be lost."
+#~ msgstr ""
+#~ "Управо ћете поставити сва подешавања на подразумеване вредности. Све "
+#~ "посебне измене ће бити изгубљене."
+
+# >> @title:window
+#~ msgid "Setting Default Preferences"
+#~ msgstr "Враћање поставки на подразумевано"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Ресетуј на подразумевано"
