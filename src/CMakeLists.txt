@@ -114,11 +114,6 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
     RELATIVE multiplyingline
     )
 
-ecm_generate_pri_file(BASE_NAME Libkdepim
-    LIB_NAME KPim6Libkdepim
-    DEPS "" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim
-    )
-
 install(FILES
     ${libkdepim_CamelcaseCamelCase_HEADERS}
     ${libkdepim_Camelcasewidgets_HEADERS}
@@ -137,10 +132,6 @@ install(FILES
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/libkdepim
     COMPONENT Devel
     )
-
-install(FILES
-    ${PRI_FILENAME}
-    DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
 if(BUILD_DESIGNERPLUGIN)
     add_subdirectory(designer)
