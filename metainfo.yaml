@@ -12,7 +12,6 @@ platforms:
 irc: akonadi
 
 libraries:
- - qmake: Libkdepim
-   cmake: "KPim6::Libkdepim"
+ - cmake: "KPim6::Libkdepim"
 cmakename: KPim6Libkdepim
 
