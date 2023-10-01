@@ -28,7 +28,7 @@ msgstr ""
 #, kde-format
 msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
-"Non se poden engadir máis destinatarios. Chegouse ao número máximo de "
+"Non é posíbel engadir máis destinatarios. Chegouse ao número máximo de "
 "destinatarios"
 
 #: progresswidget/progressdialog.cpp:226
@@ -39,7 +39,7 @@ msgstr "Cancelar esta operación."
 #: progresswidget/progressmanager.cpp:111
 #, kde-format
 msgid "Aborting..."
-msgstr "Estase a interromper…"
+msgstr "Interrompendo…"
 
 #: progresswidget/ssllabel.cpp:39
 #, kde-format
