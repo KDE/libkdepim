@@ -21,7 +21,7 @@ public:
 
     void setEncrypted(State enc = Encrypted);
     void setState(State state);
-    Q_REQUIRED_RESULT State lastState() const;
+    [[nodiscard]] State lastState() const;
 
 private:
     State m_lastEncryptionState;

@@ -29,11 +29,11 @@ public:
     QSize minimumSizeHint() const override;
     QSize sizeHint() const override;
 
-    Q_REQUIRED_RESULT MultiplyingLine *activeLine() const;
+    [[nodiscard]] MultiplyingLine *activeLine() const;
 
     MultiplyingLine *emptyLine() const;
 
-    Q_REQUIRED_RESULT QList<MultiplyingLineData::Ptr> allData() const;
+    [[nodiscard]] QList<MultiplyingLineData::Ptr> allData() const;
 
     /** Removes data provided it can be found. The Data class must support operator==
         @param data The data you want to remove.
@@ -44,7 +44,7 @@ public:
         recipients.
         @return whether the view is modified or not.
     */
-    Q_REQUIRED_RESULT bool isModified() const;
+    [[nodiscard]] bool isModified() const;
 
     /** Resets the modified flag to false.
      */
@@ -66,16 +66,16 @@ public:
      @param resize turn on or off this behavior of auto resizing
      */
     void setAutoResize(bool resize);
-    Q_REQUIRED_RESULT bool autoResize() const;
+    [[nodiscard]] bool autoResize() const;
 
     /**
      * Sets whether the size hint of the editor shall be calculated
      * dynamically by the number of lines. Default is @c true.
      */
     void setDynamicSizeHint(bool dynamic);
-    Q_REQUIRED_RESULT bool dynamicSizeHint() const;
+    [[nodiscard]] bool dynamicSizeHint() const;
 
-    Q_REQUIRED_RESULT QList<MultiplyingLine *> lines() const;
+    [[nodiscard]] QList<MultiplyingLine *> lines() const;
     MultiplyingLine *addLine(bool showDialogBox);
 
 public Q_SLOTS:

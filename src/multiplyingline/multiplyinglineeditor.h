@@ -81,7 +81,7 @@ public:
     MultiplyingLineFactory *factory() const;
 
     /** Retrieve the data from the editor */
-    Q_REQUIRED_RESULT QList<MultiplyingLineData::Ptr> allData() const;
+    [[nodiscard]] QList<MultiplyingLineData::Ptr> allData() const;
 
     /** Retrieve the data of the active line */
     MultiplyingLineData::Ptr activeData() const;
@@ -93,7 +93,7 @@ public:
     /** Returns true if the user has made any modifications to the list of
         recipients.
     */
-    Q_REQUIRED_RESULT bool isModified();
+    [[nodiscard]] bool isModified();
 
     /** Resets the modified flag to false.
      */
@@ -136,14 +136,14 @@ public:
      @param resize turn on or off this behavior of auto resizing
      */
     void setAutoResizeView(bool resize);
-    Q_REQUIRED_RESULT bool autoResizeView();
+    [[nodiscard]] bool autoResizeView();
 
     /**
      * Sets whether the size hint of the editor shall be calculated
      * dynamically by the number of lines. Default is @c true.
      */
     void setDynamicSizeHint(bool dynamic);
-    Q_REQUIRED_RESULT bool dynamicSizeHint() const;
+    [[nodiscard]] bool dynamicSizeHint() const;
 
     virtual QList<MultiplyingLine *> lines() const;
 

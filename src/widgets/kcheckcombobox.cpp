@@ -32,7 +32,7 @@ public:
     }
 
     void makeInsertedItemsCheckable(const QModelIndex &, int start, int end);
-    Q_REQUIRED_RESULT QString squeeze(const QString &text);
+    [[nodiscard]] QString squeeze(const QString &text);
     void updateCheckedItems(const QModelIndex &topLeft = QModelIndex(), const QModelIndex &bottomRight = QModelIndex(), int role = Qt::DisplayRole);
     void toggleCheckState();
 
