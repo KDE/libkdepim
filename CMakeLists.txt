@@ -44,6 +44,7 @@ find_package(KF6WidgetsAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
 option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
 
+add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
 ecm_set_disabled_deprecation_versions(QT 6.5  KF 5.240.0)
 
 
