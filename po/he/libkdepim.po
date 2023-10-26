@@ -11,73 +11,74 @@
 #
 # Diego Iastrubni <elcuco@kde.org>, 2005, 2007.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2023 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-22 00:59+0000\n"
-"PO-Revision-Date: 2017-05-16 06:42-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: <he@li.org>\n"
+"PO-Revision-Date: 2023-10-25 14:58+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 23.08.1\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
 #: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
 msgid "We can not add more recipients. We have reached maximum recipients"
-msgstr ""
+msgstr "אי אפשר להוסיף עוד נמענים. זאת הכמות המרבית"
 
 #: progresswidget/progressdialog.cpp:226
 #, kde-format
 msgid "Cancel this operation."
-msgstr ""
+msgstr "ביטול הפעולה הזאת."
 
 #: progresswidget/progressmanager.cpp:111
 #, kde-format
 msgid "Aborting..."
-msgstr ""
+msgstr "מבוטלת…"
 
 #: progresswidget/ssllabel.cpp:39
 #, kde-format
 msgid "Connection is encrypted"
-msgstr ""
+msgstr "החיבור מוצפן"
 
 #: progresswidget/ssllabel.cpp:44
 #, kde-format
 msgid "Connection is unencrypted"
-msgstr ""
+msgstr "החיבור לא מוצפן"
 
 #: progresswidget/statusbarprogresswidget.cpp:65
 #, kde-format
 msgid "Open detailed progress dialog"
-msgstr ""
+msgstr "פתיחת חלונית התקדמות מפורטת"
 
 #: progresswidget/statusbarprogresswidget.cpp:267
 #, kde-format
 msgid "Show detailed progress window"
-msgstr ""
+msgstr "הצגת חלון התקדמות מפורט"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Hide detailed progress window"
-msgstr ""
+msgstr "הסתרת חלון התקדמות מפורט"
 
 #: widgets/kwidgetlister.cpp:91
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
-msgstr ""
+msgstr "יותר"
 
 #: widgets/kwidgetlister.cpp:96
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"
-msgstr ""
+msgstr "פחות"
 
 #~ msgid "Choose..."
 #~ msgstr "בחירה..."
