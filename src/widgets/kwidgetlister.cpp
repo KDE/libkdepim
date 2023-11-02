@@ -77,12 +77,13 @@ void KWidgetLister::init(bool fewerMoreButton)
 {
     //--------- the button box
     d->mLayout = new QVBoxLayout(this);
-    d->mLayout->setContentsMargins(0, 0, 0, 0);
+    d->mLayout->setContentsMargins({});
     d->mLayout->setSpacing(4);
+    d->mLayout->setAlignment(Qt::AlignTop);
 
     d->mButtonBox = new QWidget(this);
     auto mButtonBoxHBoxLayout = new QHBoxLayout(d->mButtonBox);
-    mButtonBoxHBoxLayout->setContentsMargins(0, 0, 0, 0);
+    mButtonBoxHBoxLayout->setContentsMargins({});
     d->mLayout->addWidget(d->mButtonBox);
 
     if (fewerMoreButton) {
