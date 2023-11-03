@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-22 00:59+0000\n"
+"POT-Creation-Date: 2023-11-03 01:40+0000\n"
 "PO-Revision-Date: 2021-06-29 15:25+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -61,13 +61,13 @@ msgstr "विस्तृत प्रगति विंडो दिखाए
 msgid "Hide detailed progress window"
 msgstr "विस्तृत प्रगति विंडो को छुपाएँ"
 
-#: widgets/kwidgetlister.cpp:91
+#: widgets/kwidgetlister.cpp:92
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "अधिक"
 
-#: widgets/kwidgetlister.cpp:96
+#: widgets/kwidgetlister.cpp:97
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"

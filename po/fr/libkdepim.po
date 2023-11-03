@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-22 00:59+0000\n"
+"POT-Creation-Date: 2023-11-03 01:40+0000\n"
 "PO-Revision-Date: 2019-07-21 19:06+0800\n"
 "Last-Translator: Simon Depiets <sdepiets@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -75,13 +75,13 @@ msgstr "Afficher la boîte de dialogue de progression détaillée"
 msgid "Hide detailed progress window"
 msgstr "Cacher la boîte de dialogue de progression détaillée"
 
-#: widgets/kwidgetlister.cpp:91
+#: widgets/kwidgetlister.cpp:92
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "Plus"
 
-#: widgets/kwidgetlister.cpp:96
+#: widgets/kwidgetlister.cpp:97
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-22 00:59+0000\n"
+"POT-Creation-Date: 2023-11-03 01:40+0000\n"
 "PO-Revision-Date: 2004-04-16 18:00+0200\n"
 "Last-Translator: Prof. Dr. Eduard Werner <e.werner@rz.uni-leipzig.de>\n"
 "Language-Team: Upper Sorbian\n"
@@ -57,13 +57,13 @@ msgstr ""
 msgid "Hide detailed progress window"
 msgstr ""
 
-#: widgets/kwidgetlister.cpp:91
+#: widgets/kwidgetlister.cpp:92
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr ""
 
-#: widgets/kwidgetlister.cpp:96
+#: widgets/kwidgetlister.cpp:97
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"

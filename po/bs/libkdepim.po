@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-22 00:59+0000\n"
+"POT-Creation-Date: 2023-11-03 01:40+0000\n"
 "PO-Revision-Date: 2013-12-30 16:57+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosanski <lokal@lugbih.org>\n"
@@ -61,13 +61,13 @@ msgstr "Prikaži detaljni prozor napretka"
 msgid "Hide detailed progress window"
 msgstr "Sakrij detaljni prozor napretka"
 
-#: widgets/kwidgetlister.cpp:91
+#: widgets/kwidgetlister.cpp:92
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "Više"
 
-#: widgets/kwidgetlister.cpp:96
+#: widgets/kwidgetlister.cpp:97
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"
