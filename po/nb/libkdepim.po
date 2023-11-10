@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-22 00:59+0000\n"
+"POT-Creation-Date: 2023-11-03 02:28+0000\n"
 "PO-Revision-Date: 2014-09-13 18:14+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -63,13 +63,13 @@ msgstr "Vis detaljert framdriftsvindu"
 msgid "Hide detailed progress window"
 msgstr "Skjul detaljert framdriftsvindu"
 
-#: widgets/kwidgetlister.cpp:91
+#: widgets/kwidgetlister.cpp:92
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "Flere"
 
-#: widgets/kwidgetlister.cpp:96
+#: widgets/kwidgetlister.cpp:97
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"
