@@ -36,7 +36,6 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 set(LIBKDEPIM_LIB_VERSION ${PIM_VERSION})
 find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus Network)
 
-find_package(KF6Config ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6Completion ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6WidgetsAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
