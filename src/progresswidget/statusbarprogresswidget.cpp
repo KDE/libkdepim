@@ -44,34 +44,34 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
 {
     int w = fontMetrics().boundingRect(QStringLiteral(" 999.9 kB/s 00:00:01 ")).width() + 8;
     auto boxLayout = new QHBoxLayout(this);
-    boxLayout->setObjectName(QStringLiteral("boxLayout"));
+    boxLayout->setObjectName(QLatin1StringView("boxLayout"));
     boxLayout->setContentsMargins(0, 0, 0, 0);
     boxLayout->setSpacing(0);
 
-    mButton->setObjectName(QStringLiteral("button"));
+    mButton->setObjectName(QLatin1StringView("button"));
     mButton->setSizePolicy(QSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum));
     mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
     boxLayout->addWidget(mButton);
     mStackedWidget = new QStackedWidget(this);
-    mStackedWidget->setObjectName(QStringLiteral("stackedwidget"));
+    mStackedWidget->setObjectName(QLatin1StringView("stackedwidget"));
     int maximumHeight = qMax(mButton->iconSize().height(), fontMetrics().height());
     mStackedWidget->setMaximumHeight(maximumHeight);
     boxLayout->addWidget(mStackedWidget);
 
     mSslLabel = new SSLLabel(this);
-    mSslLabel->setObjectName(QStringLiteral("ssllabel"));
+    mSslLabel->setObjectName(QLatin1StringView("ssllabel"));
     boxLayout->addWidget(mSslLabel);
 
     mButton->setToolTip(i18n("Open detailed progress dialog"));
 
     mProgressBar = new QProgressBar(this);
-    mProgressBar->setObjectName(QStringLiteral("progressbar"));
+    mProgressBar->setObjectName(QLatin1StringView("progressbar"));
     mProgressBar->installEventFilter(this);
     mProgressBar->setMinimumWidth(w);
     mStackedWidget->insertWidget(1, mProgressBar);
 
     mLabel = new QLabel(QString(), this);
-    mLabel->setObjectName(QStringLiteral("emptylabel"));
+    mLabel->setObjectName(QLatin1StringView("emptylabel"));
     mLabel->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
     mLabel->installEventFilter(this);
     mLabel->setMinimumWidth(w);

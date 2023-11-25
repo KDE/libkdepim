@@ -22,12 +22,12 @@ ProgressStatusBarWidget::ProgressStatusBarWidget(QWidget *alignWidget, QWidget *
     , d(new KPIM::ProgressStatusBarWidgetPrivate)
 {
     auto progressDialog = new KPIM::ProgressDialog(alignWidget, parent);
-    progressDialog->setObjectName(QStringLiteral("progressDialog"));
+    progressDialog->setObjectName(QLatin1StringView("progressDialog"));
     progressDialog->setShowTypeProgressItem(showTypeProgressItem);
     progressDialog->hide();
 
     d->mLittleProgress = new KPIM::StatusbarProgressWidget(progressDialog, alignWidget);
-    d->mLittleProgress->setObjectName(QStringLiteral("littleprogress"));
+    d->mLittleProgress->setObjectName(QLatin1StringView("littleprogress"));
     d->mLittleProgress->setShowTypeProgressItem(showTypeProgressItem);
     d->mLittleProgress->show();
 }
