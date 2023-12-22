@@ -1,5 +1,6 @@
 # SPDX-FileCopyrightText: none
 # SPDX-License-Identifier: BSD-3-Clause
+add_definitions(-DTRANSLATION_DOMAIN=\"libkdepim\")
 add_library(KPim${KF_MAJOR_VERSION}Libkdepim)
 add_library(KPim${KF_MAJOR_VERSION}::Libkdepim ALIAS KPim${KF_MAJOR_VERSION}Libkdepim)
 ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
