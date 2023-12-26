@@ -1,6 +1,6 @@
 # translation of libkdepim.po to Polish
 # translation of libkdepim.po to
-# Version: $Revision: 1663933 $
+# Version: $Revision: 1668170 $
 # Copyright (C) 2002, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
 #
 # Krzysztof Lichota <lichota@mimuw.edu.pl>, 2002, 2005, 2006.
