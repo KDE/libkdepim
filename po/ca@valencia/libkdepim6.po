@@ -1,4 +1,4 @@
-# Translation of libkdepim.po to Catalan (Valencian)
+# Translation of libkdepim6.po to Catalan (Valencian)
 # Copyright (C) 2003-2020 This_file_is_part_of_KDE
 #
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2003, 2013, 2014, 2015, 2016, 2017, 2019, 2020.
