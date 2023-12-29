@@ -347,12 +347,14 @@ void MultiplyingLineView::setFocusTop()
 
 void MultiplyingLineView::setFocusBottom()
 {
-    MultiplyingLine *line = mLines.constLast();
-    if (line) {
-        ensureWidgetVisible(line);
-        line->activate();
-    } else {
-        qCWarning(LIBKDEPIM_LOG) << "No last";
+    if (!mLines.empty()) {
+        MultiplyingLine *line = mLines.constLast();
+        if (line) {
+            ensureWidgetVisible(line);
+            line->activate();
+        } else {
+            qCWarning(LIBKDEPIM_LOG) << "No last";
+        }
     }
 }
 
