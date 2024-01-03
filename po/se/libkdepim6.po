@@ -1,4 +1,4 @@
-# Translation of libkdepim to Northern Sami
+# Translation of libkdepim6 to Northern Sami
 #
 # Børre Gaup <boerre@skolelinux.no>, 2004, 2005, 2006, 2009.
 msgid ""
