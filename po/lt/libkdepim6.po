@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-03 01:40+0000\n"
-"PO-Revision-Date: 2014-11-10 19:32+0200\n"
+"PO-Revision-Date: 2024-01-25 12:20+0200\n"
 "Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -16,17 +16,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
 msgid "We can not add more recipients. We have reached maximum recipients"
-msgstr ""
+msgstr "Nebeįmanoma pridėti daugiau gavėjų. Pasiekta maksimalių gavėjų riba"
 
 #: progresswidget/progressdialog.cpp:226
 #, kde-format
 msgid "Cancel this operation."
-msgstr "Atšaukti šią operaciją."
+msgstr "Atsisakyti šios operacijos."
 
 #: progresswidget/progressmanager.cpp:111
 #, kde-format
@@ -36,27 +36,27 @@ msgstr "Nutraukiama..."
 #: progresswidget/ssllabel.cpp:39
 #, kde-format
 msgid "Connection is encrypted"
-msgstr "Prisijungimas užšifruotas"
+msgstr "Ryšys yra šifruotas"
 
 #: progresswidget/ssllabel.cpp:44
 #, kde-format
 msgid "Connection is unencrypted"
-msgstr "Prisijungimas nėra užšifruotas"
+msgstr "Ryšys nėra šifruotas"
 
 #: progresswidget/statusbarprogresswidget.cpp:65
 #, kde-format
 msgid "Open detailed progress dialog"
-msgstr "Atverti detalų progreso dialogą"
+msgstr "Atverti išsamų eigos dialogą"
 
 #: progresswidget/statusbarprogresswidget.cpp:267
 #, kde-format
 msgid "Show detailed progress window"
-msgstr "Rodyti detalų progreso langą"
+msgstr "Rodyti išsamų eigos langą"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Hide detailed progress window"
-msgstr "Slėpti detalų progreso dialogą"
+msgstr "Slėpti išsamų eigos langą"
 
 #: widgets/kwidgetlister.cpp:92
 #, kde-format
