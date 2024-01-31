@@ -8,13 +8,13 @@
 #include "../progressdialog.h"
 #include "../progressmanager.h"
 #include "../statusbarprogresswidget.h"
+#include "progresswidget/ssllabel.h"
 #include <QHBoxLayout>
 #include <QProgressBar>
 #include <QPushButton>
 #include <QStackedWidget>
 #include <QStandardPaths>
 #include <QTest>
-#include <progresswidget/ssllabel.h>
 QTEST_MAIN(StatusbarProgressWidgetTest)
 
 StatusbarProgressWidgetTest::StatusbarProgressWidgetTest(QObject *parent)
