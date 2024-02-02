@@ -120,6 +120,11 @@ TransactionItemView::TransactionItemView(QWidget *parent, const QString &name)
     setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
 }
 
+TransactionItemView::~TransactionItemView()
+{
+    mBigBox = nullptr;
+}
+
 TransactionItem *TransactionItemView::addTransactionItem(ProgressItem *item, bool first)
 {
     auto ti = new TransactionItem(mBigBox, item, first);
@@ -167,6 +172,8 @@ QSize TransactionItemView::minimumSizeHint() const
 
 void TransactionItemView::slotLayoutFirstItem()
 {
+    if (!mBigBox)
+        return;
     // This slot is called whenever a TransactionItem is deleted, so this is a
     // good place to call updateGeometry(), so our parent takes the new size
     // into account and resizes.
