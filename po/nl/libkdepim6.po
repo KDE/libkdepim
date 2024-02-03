@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-03 01:40+0000\n"
+"POT-Creation-Date: 2024-02-03 00:39+0000\n"
 "PO-Revision-Date: 2019-07-31 10:11+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Meer ontvangers kunnen niet worden toegevoegd. Het maximum aantal ontvangers "
 "is bereikt"
 
-#: progresswidget/progressdialog.cpp:226
+#: progresswidget/progressdialog.cpp:233
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Deze operatie annuleren."

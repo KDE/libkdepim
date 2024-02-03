@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-03 01:40+0000\n"
+"POT-Creation-Date: 2024-02-03 00:39+0000\n"
 "PO-Revision-Date: 2020-08-28 18:56+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr "Kan ikkje leggja til fleire mottakarar. Har nådd maksgrensa."
 
-#: progresswidget/progressdialog.cpp:226
+#: progresswidget/progressdialog.cpp:233
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Avbryt denne operasjonen."

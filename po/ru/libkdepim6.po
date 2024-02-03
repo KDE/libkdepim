@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-03 01:40+0000\n"
+"POT-Creation-Date: 2024-02-03 00:39+0000\n"
 "PO-Revision-Date: 2018-08-14 09:53+0300\n"
 "Last-Translator: Александр Яворский <yavorsky.a@t-rosta.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -35,7 +35,7 @@ msgstr ""
 "Невозможно добавить больше получателей: достигнуто максимальное число "
 "получателей."
 
-#: progresswidget/progressdialog.cpp:226
+#: progresswidget/progressdialog.cpp:233
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Прервать операцию."
