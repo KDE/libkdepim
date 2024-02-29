@@ -16,7 +16,13 @@ namespace KPIM
 class SSLLabel : public QLabel
 {
 public:
-    enum State { Encrypted, Unencrypted, Clean, Done, Unknown };
+    enum State {
+        Encrypted,
+        Unencrypted,
+        Clean,
+        Done,
+        Unknown,
+    };
     explicit SSLLabel(QWidget *parent);
 
     void setEncrypted(State enc = Encrypted);

@@ -280,7 +280,7 @@ public:
      * number as the id string for your progressItem to ensure it is unique.
      * @return
      */
-    static QString getUniqueID();
+    [[nodiscard]] static QString getUniqueID();
 
     /**
      * Creates a ProgressItem with a unique id and the given label.
@@ -340,7 +340,7 @@ public:
     /**
      * @return true when there are no more progress items.
      */
-    bool isEmpty() const;
+    [[nodiscard]] bool isEmpty() const;
 
     /**
      * @return the only top level progressitem when there's only one.

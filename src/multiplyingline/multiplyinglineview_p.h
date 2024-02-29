@@ -26,8 +26,8 @@ public:
     explicit MultiplyingLineView(MultiplyingLineFactory *factory, MultiplyingLineEditor *parent);
     ~MultiplyingLineView() override = default;
 
-    QSize minimumSizeHint() const override;
-    QSize sizeHint() const override;
+    [[nodiscard]] QSize minimumSizeHint() const override;
+    [[nodiscard]] QSize sizeHint() const override;
 
     [[nodiscard]] MultiplyingLine *activeLine() const;
 

@@ -47,7 +47,7 @@ public:
 
 protected:
     void resizeEvent(QResizeEvent *ev) override;
-    bool eventFilter(QObject *o, QEvent *e) override;
+    [[nodiscard]] bool eventFilter(QObject *o, QEvent *e) override;
 
 private:
     KDEPIM_NO_EXPORT void reposition();
@@ -66,8 +66,8 @@ public:
 
     TransactionItem *addTransactionItem(ProgressItem *item, bool first);
 
-    QSize sizeHint() const override;
-    QSize minimumSizeHint() const override;
+    [[nodiscard]] QSize sizeHint() const override;
+    [[nodiscard]] QSize minimumSizeHint() const override;
 
 public Q_SLOTS:
     void slotLayoutFirstItem();
@@ -99,7 +99,7 @@ public:
     void setCryptoStatus(KPIM::ProgressItem::CryptoStatus);
     void setTotalSteps(int totalSteps);
 
-    ProgressItem *item() const
+    [[nodiscard]] ProgressItem *item() const
     {
         return mItem;
     }
@@ -136,7 +136,7 @@ public:
 
     void setShowTypeProgressItem(unsigned int type);
 
-    bool wasLastShown() const;
+    [[nodiscard]] bool wasLastShown() const;
 
 public Q_SLOTS:
     void slotToggleVisibility();

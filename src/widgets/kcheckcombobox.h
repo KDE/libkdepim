@@ -66,7 +66,7 @@ public:
      * Returns whether the default text is always shown, even if there are
      * no checked items.
      */
-    bool alwaysShowDefaultText() const;
+    [[nodiscard]] bool alwaysShowDefaultText() const;
 
     /**
      * Sets if the default text should always be shown even if there are

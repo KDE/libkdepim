@@ -57,7 +57,10 @@ protected:
     bool eventFilter(QObject *, QEvent *) override;
 
 private:
-    enum Mode { Progress, Clean };
+    enum Mode {
+        Progress,
+        Clean,
+    };
     KDEPIM_NO_EXPORT void setMode(Mode mode);
     KDEPIM_NO_EXPORT void updateProgressButton(bool showingProgress);
     KDEPIM_NO_EXPORT void connectSingleItem();
