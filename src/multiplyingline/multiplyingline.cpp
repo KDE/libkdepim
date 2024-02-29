@@ -20,6 +20,8 @@ MultiplyingLine::MultiplyingLine(QWidget *parent)
 {
 }
 
+MultiplyingLine::~MultiplyingLine() = default;
+
 void MultiplyingLine::slotReturnPressed()
 {
     Q_EMIT returnPressed(this);

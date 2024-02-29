@@ -51,7 +51,7 @@ class KDEPIM_EXPORT MultiplyingLine : public QWidget
     Q_OBJECT
 public:
     explicit MultiplyingLine(QWidget *parent);
-    ~MultiplyingLine() override = default;
+    ~MultiplyingLine() override;
 
     /**
       This line is being activated. Focus should be set
