@@ -68,6 +68,7 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     mProgressBar->setObjectName(QLatin1StringView("progressbar"));
     mProgressBar->installEventFilter(this);
     mProgressBar->setMinimumWidth(w);
+    mProgressBar->setFormat(i18nc("Percent value; %p is the value, % is the percent sign", "%p%"));
     mStackedWidget->insertWidget(1, mProgressBar);
 
     mLabel = new QLabel(QString(), this);
