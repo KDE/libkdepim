@@ -223,6 +223,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
 
     mProgress = new QProgressBar(h);
     hHBoxLayout->addWidget(mProgress);
+    mProgress->setFormat(i18nc("Percent value; %p is the value, % is the percent sign", "%p%"));
     mProgress->setMaximum(100);
     mProgress->setValue(item->progress());
     h->layout()->addWidget(mProgress);
