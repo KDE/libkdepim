@@ -178,9 +178,7 @@ void MultiplyingLineView::slotDeleteLine()
     line->setParent(nullptr);
     line->deleteLater();
 
-    if (pos > 0) {
-        Q_EMIT lineDeleted(pos);
-    }
+    Q_EMIT lineDeleted(pos);
 
     resizeView();
 }
