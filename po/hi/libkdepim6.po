@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-03 02:28+0000\n"
+"POT-Creation-Date: 2024-03-13 02:23+0000\n"
 "PO-Revision-Date: 2021-06-29 15:25+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -26,7 +26,14 @@ msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
 "हम ओर प्राप्तकर्ताएँ नहीं जोड सकते। हम अधिकतम प्राप्तकर्ता संख्या सीमा तक पहुँच चुके हैं"
 
-#: progresswidget/progressdialog.cpp:233
+#: progresswidget/progressdialog.cpp:226
+#: progresswidget/statusbarprogresswidget.cpp:71
+#, kde-format
+msgctxt "Percent value; %p is the value, % is the percent sign"
+msgid "%p%"
+msgstr ""
+
+#: progresswidget/progressdialog.cpp:234
 #, kde-format
 msgid "Cancel this operation."
 msgstr "इस इकार्रवाई को रद्द करें।"
@@ -51,12 +58,12 @@ msgstr "संपर्क गूढलेखित नहीं है"
 msgid "Open detailed progress dialog"
 msgstr "विस्तृत प्रगति संवाद खोलें"
 
-#: progresswidget/statusbarprogresswidget.cpp:267
+#: progresswidget/statusbarprogresswidget.cpp:268
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "विस्तृत प्रगति विंडो दिखाएँ"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:271
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "विस्तृत प्रगति विंडो को छुपाएँ"

@@ -1,6 +1,6 @@
 # translation of libkdepim.po to Polish
 # translation of libkdepim.po to
-# Version: $Revision: 1672197 $
+# Version: $Revision: 1675558 $
 # Copyright (C) 2002, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
 #
 # Krzysztof Lichota <lichota@mimuw.edu.pl>, 2002, 2005, 2006.
@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-03 02:28+0000\n"
+"POT-Creation-Date: 2024-03-13 02:23+0000\n"
 "PO-Revision-Date: 2020-05-16 08:53+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -32,7 +32,14 @@ msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
 "Nie można dodać więcej adresatów. Osiągnięto maksymalną liczbę adresatów."
 
-#: progresswidget/progressdialog.cpp:233
+#: progresswidget/progressdialog.cpp:226
+#: progresswidget/statusbarprogresswidget.cpp:71
+#, kde-format
+msgctxt "Percent value; %p is the value, % is the percent sign"
+msgid "%p%"
+msgstr ""
+
+#: progresswidget/progressdialog.cpp:234
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Zaniechaj działania."
@@ -57,12 +64,12 @@ msgstr "Połączenie nie jest zaszyfrowane"
 msgid "Open detailed progress dialog"
 msgstr "Otwórz szczegółowe okno postępu"
 
-#: progresswidget/statusbarprogresswidget.cpp:267
+#: progresswidget/statusbarprogresswidget.cpp:268
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Pokaż szczegółowe okno postępu"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:271
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Ukryj szczegółowe okno postępu"
