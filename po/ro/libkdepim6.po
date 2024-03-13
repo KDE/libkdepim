@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-03 00:39+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2024-02-24 16:03+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -25,7 +25,14 @@ msgstr ""
 "Nu se pot adăuga mai mulți destinatari. S-a atins numărul maxim de "
 "destinatari"
 
-#: progresswidget/progressdialog.cpp:233
+#: progresswidget/progressdialog.cpp:226
+#: progresswidget/statusbarprogresswidget.cpp:71
+#, kde-format
+msgctxt "Percent value; %p is the value, % is the percent sign"
+msgid "%p%"
+msgstr ""
+
+#: progresswidget/progressdialog.cpp:234
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Anulează această operație."
@@ -50,12 +57,12 @@ msgstr "Conexiunea nu este criptată"
 msgid "Open detailed progress dialog"
 msgstr "Deschide dialogul de progres detaliat"
 
-#: progresswidget/statusbarprogresswidget.cpp:267
+#: progresswidget/statusbarprogresswidget.cpp:268
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Arată fereastra de progres detaliat"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:271
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Ascunde fereastra de progres detaliat"

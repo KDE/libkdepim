@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-03 00:39+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2022-09-09 13:44\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@licei2.com>\n"
 "Language-Team: Belarusian\n"
@@ -32,7 +32,14 @@ msgstr ""
 "Нельга дадаць больш атрымальнікаў. Дасягнута максімальная колькасць "
 "атрымальнікаў"
 
-#: progresswidget/progressdialog.cpp:233
+#: progresswidget/progressdialog.cpp:226
+#: progresswidget/statusbarprogresswidget.cpp:71
+#, kde-format
+msgctxt "Percent value; %p is the value, % is the percent sign"
+msgid "%p%"
+msgstr ""
+
+#: progresswidget/progressdialog.cpp:234
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Скасаваць гэтую аперацыю."
@@ -57,12 +64,12 @@ msgstr "Злучэнне не зашыфравана"
 msgid "Open detailed progress dialog"
 msgstr "Адкрыць падрабязнае дыялогавае акно ходу выканання"
 
-#: progresswidget/statusbarprogresswidget.cpp:267
+#: progresswidget/statusbarprogresswidget.cpp:268
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Паказаць падрабязнае дыялогавае акно ходу выканання"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:271
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Схаваць падрабязнае дыялогавае акно ходу выканання"

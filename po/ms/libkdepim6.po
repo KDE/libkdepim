@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-03 00:39+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2005-10-10 23:40+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -20,7 +20,14 @@ msgstr ""
 msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
 
-#: progresswidget/progressdialog.cpp:233
+#: progresswidget/progressdialog.cpp:226
+#: progresswidget/statusbarprogresswidget.cpp:71
+#, kde-format
+msgctxt "Percent value; %p is the value, % is the percent sign"
+msgid "%p%"
+msgstr ""
+
+#: progresswidget/progressdialog.cpp:234
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Batalkan operasi ini"
@@ -45,12 +52,12 @@ msgstr "Sambungan nyahsulit"
 msgid "Open detailed progress dialog"
 msgstr "Buka dialog perkembangan terperinci"
 
-#: progresswidget/statusbarprogresswidget.cpp:267
+#: progresswidget/statusbarprogresswidget.cpp:268
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Paparkan tetingkap perkembangan perincian"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:271
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Sembunyikan tetingkap perkembangan terperinci"

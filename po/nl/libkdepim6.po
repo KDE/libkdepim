@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-03 00:39+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2019-07-31 10:11+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -31,7 +31,14 @@ msgstr ""
 "Meer ontvangers kunnen niet worden toegevoegd. Het maximum aantal ontvangers "
 "is bereikt"
 
-#: progresswidget/progressdialog.cpp:233
+#: progresswidget/progressdialog.cpp:226
+#: progresswidget/statusbarprogresswidget.cpp:71
+#, kde-format
+msgctxt "Percent value; %p is the value, % is the percent sign"
+msgid "%p%"
+msgstr ""
+
+#: progresswidget/progressdialog.cpp:234
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Deze operatie annuleren."
@@ -56,12 +63,12 @@ msgstr "Verbinding is niet versleuteld"
 msgid "Open detailed progress dialog"
 msgstr "Gedetailleerd voortgangsdialoog openen"
 
-#: progresswidget/statusbarprogresswidget.cpp:267
+#: progresswidget/statusbarprogresswidget.cpp:268
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Gedetailleerd voortgangsvenster tonen"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:271
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Gedetailleerd voortgangsvenster verbergen"

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-03 00:39+0000\n"
+"POT-Creation-Date: 2024-03-13 00:38+0000\n"
 "PO-Revision-Date: 2021-08-06 12:45+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -32,7 +32,14 @@ msgstr ""
 "Ezin dituzu hartzaile gehiago gehitu. Gehienezko hartzaile kopurura iritsi "
 "gara"
 
-#: progresswidget/progressdialog.cpp:233
+#: progresswidget/progressdialog.cpp:226
+#: progresswidget/statusbarprogresswidget.cpp:71
+#, kde-format
+msgctxt "Percent value; %p is the value, % is the percent sign"
+msgid "%p%"
+msgstr ""
+
+#: progresswidget/progressdialog.cpp:234
 #, kde-format
 msgid "Cancel this operation."
 msgstr "Bertan behera utzi eragiketa hau."
@@ -57,12 +64,12 @@ msgstr "Konexioa ez dago enkriptatuta"
 msgid "Open detailed progress dialog"
 msgstr "Ireki aurrerapen elkarrizketa-koadroa xehea"
 
-#: progresswidget/statusbarprogresswidget.cpp:267
+#: progresswidget/statusbarprogresswidget.cpp:268
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Erakutsi aurrerapen elkarrizketa-koadroa xehea"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:271
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Ezkutatu aurrerapen elkarrizketa-koadroa xehea"
