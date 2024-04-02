@@ -4,6 +4,7 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 #include "progressstatusbarwidget.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "progressdialog.h"
 #include "statusbarprogresswidget.h"
@@ -22,12 +23,12 @@ ProgressStatusBarWidget::ProgressStatusBarWidget(QWidget *alignWidget, QWidget *
     , d(new KPIM::ProgressStatusBarWidgetPrivate)
 {
     auto progressDialog = new KPIM::ProgressDialog(alignWidget, parent);
-    progressDialog->setObjectName(QLatin1StringView("progressDialog"));
+    progressDialog->setObjectName("progressDialog"_L1);
     progressDialog->setShowTypeProgressItem(showTypeProgressItem);
     progressDialog->hide();
 
     d->mLittleProgress = new KPIM::StatusbarProgressWidget(progressDialog, alignWidget);
-    d->mLittleProgress->setObjectName(QLatin1StringView("littleprogress"));
+    d->mLittleProgress->setObjectName("littleprogress"_L1);
     d->mLittleProgress->setShowTypeProgressItem(showTypeProgressItem);
     d->mLittleProgress->show();
 }

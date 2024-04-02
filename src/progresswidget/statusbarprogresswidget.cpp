@@ -12,6 +12,8 @@
 */
 
 #include "statusbarprogresswidget.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "progressdialog.h"
 #include "ssllabel.h"
 using KPIM::SSLLabel;
@@ -44,35 +46,35 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
 {
     int w = fontMetrics().boundingRect(QStringLiteral(" 999.9 kB/s 00:00:01 ")).width() + 8;
     auto boxLayout = new QHBoxLayout(this);
-    boxLayout->setObjectName(QLatin1StringView("boxLayout"));
+    boxLayout->setObjectName("boxLayout"_L1);
     boxLayout->setContentsMargins(0, 0, 0, 0);
     boxLayout->setSpacing(0);
 
-    mButton->setObjectName(QLatin1StringView("button"));
+    mButton->setObjectName("button"_L1);
     mButton->setSizePolicy(QSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum));
     mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
     boxLayout->addWidget(mButton);
     mStackedWidget = new QStackedWidget(this);
-    mStackedWidget->setObjectName(QLatin1StringView("stackedwidget"));
+    mStackedWidget->setObjectName("stackedwidget"_L1);
     int maximumHeight = qMax(mButton->iconSize().height(), fontMetrics().height());
     mStackedWidget->setMaximumHeight(maximumHeight);
     boxLayout->addWidget(mStackedWidget);
 
     mSslLabel = new SSLLabel(this);
-    mSslLabel->setObjectName(QLatin1StringView("ssllabel"));
+    mSslLabel->setObjectName("ssllabel"_L1);
     boxLayout->addWidget(mSslLabel);
 
     mButton->setToolTip(i18n("Open detailed progress dialog"));
 
     mProgressBar = new QProgressBar(this);
-    mProgressBar->setObjectName(QLatin1StringView("progressbar"));
+    mProgressBar->setObjectName("progressbar"_L1);
     mProgressBar->installEventFilter(this);
     mProgressBar->setMinimumWidth(w);
     mProgressBar->setFormat(i18nc("Percent value; %p is the value, % is the percent sign", "%p%"));
     mStackedWidget->insertWidget(1, mProgressBar);
 
     mLabel = new QLabel(QString(), this);
-    mLabel->setObjectName(QLatin1StringView("emptylabel"));
+    mLabel->setObjectName("emptylabel"_L1);
     mLabel->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
     mLabel->installEventFilter(this);
     mLabel->setMinimumWidth(w);
