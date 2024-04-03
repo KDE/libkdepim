@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-13 00:38+0000\n"
+"POT-Creation-Date: 2024-04-03 00:38+0000\n"
 "PO-Revision-Date: 2024-03-31 12:01+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -30,7 +30,7 @@ msgstr ""
 "لا يمكننا إضافة المزيد من المستلمين. لقد وصلنا إلى الحد الأقصى من المستفيدين"
 
 #: progresswidget/progressdialog.cpp:226
-#: progresswidget/statusbarprogresswidget.cpp:71
+#: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
@@ -56,17 +56,17 @@ msgstr "الاتّصال معمًّى"
 msgid "Connection is unencrypted"
 msgstr "الاتّصال غير معمًّى"
 
-#: progresswidget/statusbarprogresswidget.cpp:65
+#: progresswidget/statusbarprogresswidget.cpp:67
 #, kde-format
 msgid "Open detailed progress dialog"
 msgstr "افتح حواريّ تقدّم مفصّل"
 
-#: progresswidget/statusbarprogresswidget.cpp:268
+#: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "أظهر نافذة تقدّم مفصّلة"
 
-#: progresswidget/statusbarprogresswidget.cpp:271
+#: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "أخفِ نافذة التّقدّم المفصّلة"

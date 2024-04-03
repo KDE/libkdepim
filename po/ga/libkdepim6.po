@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepim/libkdepim.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-13 00:38+0000\n"
+"POT-Creation-Date: 2024-04-03 00:38+0000\n"
 "PO-Revision-Date: 2004-12-03 14:52-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -23,7 +23,7 @@ msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
 
 #: progresswidget/progressdialog.cpp:226
-#: progresswidget/statusbarprogresswidget.cpp:71
+#: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
@@ -49,17 +49,17 @@ msgstr "Tá an nasc criptithe"
 msgid "Connection is unencrypted"
 msgstr "Níl an nasc criptithe"
 
-#: progresswidget/statusbarprogresswidget.cpp:65
+#: progresswidget/statusbarprogresswidget.cpp:67
 #, kde-format
 msgid "Open detailed progress dialog"
 msgstr "Oscail an dialóg mhionsonraithe dul chun cinn"
 
-#: progresswidget/statusbarprogresswidget.cpp:268
+#: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Taispeáin an fhuinneog mhionsonraithe dul chun cinn"
 
-#: progresswidget/statusbarprogresswidget.cpp:271
+#: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Folaigh an fhuinneog mhionsonraithe dul chun cinn"

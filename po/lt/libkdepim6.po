@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-13 00:38+0000\n"
+"POT-Creation-Date: 2024-04-03 00:38+0000\n"
 "PO-Revision-Date: 2024-01-25 12:21+0200\n"
 "Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -24,7 +24,7 @@ msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr "Nebeįmanoma pridėti daugiau gavėjų. Pasiekta maksimalių gavėjų riba"
 
 #: progresswidget/progressdialog.cpp:226
-#: progresswidget/statusbarprogresswidget.cpp:71
+#: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
@@ -50,17 +50,17 @@ msgstr "Ryšys yra šifruotas"
 msgid "Connection is unencrypted"
 msgstr "Ryšys nėra šifruotas"
 
-#: progresswidget/statusbarprogresswidget.cpp:65
+#: progresswidget/statusbarprogresswidget.cpp:67
 #, kde-format
 msgid "Open detailed progress dialog"
 msgstr "Atverti išsamų eigos dialogą"
 
-#: progresswidget/statusbarprogresswidget.cpp:268
+#: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Rodyti išsamų eigos langą"
 
-#: progresswidget/statusbarprogresswidget.cpp:271
+#: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Slėpti išsamų eigos langą"

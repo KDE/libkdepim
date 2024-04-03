@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-13 00:38+0000\n"
+"POT-Creation-Date: 2024-04-03 00:38+0000\n"
 "PO-Revision-Date: 2024-03-13 08:33+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -34,7 +34,7 @@ msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr "אי אפשר להוסיף עוד נמענים. זאת הכמות המרבית"
 
 #: progresswidget/progressdialog.cpp:226
-#: progresswidget/statusbarprogresswidget.cpp:71
+#: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
@@ -60,17 +60,17 @@ msgstr "החיבור מוצפן"
 msgid "Connection is unencrypted"
 msgstr "החיבור לא מוצפן"
 
-#: progresswidget/statusbarprogresswidget.cpp:65
+#: progresswidget/statusbarprogresswidget.cpp:67
 #, kde-format
 msgid "Open detailed progress dialog"
 msgstr "פתיחת חלונית התקדמות מפורטת"
 
-#: progresswidget/statusbarprogresswidget.cpp:268
+#: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "הצגת חלון התקדמות מפורט"
 
-#: progresswidget/statusbarprogresswidget.cpp:271
+#: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "הסתרת חלון התקדמות מפורט"

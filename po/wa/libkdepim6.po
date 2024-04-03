@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-13 00:38+0000\n"
+"POT-Creation-Date: 2024-04-03 00:38+0000\n"
 "PO-Revision-Date: 2013-03-19 16:36+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -23,7 +23,7 @@ msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
 
 #: progresswidget/progressdialog.cpp:226
-#: progresswidget/statusbarprogresswidget.cpp:71
+#: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
@@ -49,17 +49,17 @@ msgstr "Li raloyaedje est ecripté"
 msgid "Connection is unencrypted"
 msgstr "Li raloyaedje n' est nén ecripté"
 
-#: progresswidget/statusbarprogresswidget.cpp:65
+#: progresswidget/statusbarprogresswidget.cpp:67
 #, kde-format
 msgid "Open detailed progress dialog"
 msgstr "Drovi spepieus purnea d' divize d' avançmint"
 
-#: progresswidget/statusbarprogresswidget.cpp:268
+#: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Show detailed progress window"
 msgstr "Mostrer spepieuse finiesse d' avançmint"
 
-#: progresswidget/statusbarprogresswidget.cpp:271
+#: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
 msgid "Hide detailed progress window"
 msgstr "Catchî spepieuse finiesse d' avançmint"
