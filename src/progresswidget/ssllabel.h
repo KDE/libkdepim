@@ -9,12 +9,15 @@
 
 #pragma once
 
+#include "libkdepim_private_export.h"
 #include <QLabel>
 
 namespace KPIM
 {
-class SSLLabel : public QLabel
+class LIBKDEPIM_TESTS_EXPORT SSLLabel : public QLabel
 {
+    Q_OBJECT
+
 public:
     enum State {
         Encrypted,

@@ -59,3 +59,5 @@ void SSLLabel::setState(State state)
     }
     m_lastEncryptionState = state;
 }
+
+#include "moc_ssllabel.cpp"
