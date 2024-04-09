@@ -11,10 +11,13 @@
 
 #include <QLabel>
 
+#include "kdepim_export.h"
+
 namespace KPIM
 {
-class SSLLabel : public QLabel
+class KDEPIM_EXPORT SSLLabel : public QLabel
 {
+    Q_OBJECT
 public:
     enum State {
         Encrypted,
