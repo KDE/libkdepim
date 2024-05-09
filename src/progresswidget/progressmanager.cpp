@@ -108,7 +108,7 @@ void ProgressItem::cancel()
             kid->cancel();
         }
     }
-    setStatus(i18n("Aborting..."));
+    setStatus(i18n("Aborting…"));
     Q_EMIT progressItemCanceled(this);
 }
 
