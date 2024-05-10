@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2024-03-23 08:34+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -44,8 +44,9 @@ msgid "Cancel this operation."
 msgstr "Bertan behera utzi eragiketa hau."
 
 #: progresswidget/progressmanager.cpp:111
-#, kde-format
-msgid "Aborting..."
+#, fuzzy, kde-format
+#| msgid "Aborting..."
+msgid "Aborting…"
 msgstr "Abortzen..."
 
 #: progresswidget/ssllabel.cpp:39

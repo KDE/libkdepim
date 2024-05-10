@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2024-03-13 08:33+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -46,8 +46,9 @@ msgid "Cancel this operation."
 msgstr "ביטול הפעולה הזאת."
 
 #: progresswidget/progressmanager.cpp:111
-#, kde-format
-msgid "Aborting..."
+#, fuzzy, kde-format
+#| msgid "Aborting..."
+msgid "Aborting…"
 msgstr "מבוטלת…"
 
 #: progresswidget/ssllabel.cpp:39

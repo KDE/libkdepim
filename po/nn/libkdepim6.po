@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2020-08-28 18:56+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -40,8 +40,9 @@ msgid "Cancel this operation."
 msgstr "Avbryt denne operasjonen."
 
 #: progresswidget/progressmanager.cpp:111
-#, kde-format
-msgid "Aborting..."
+#, fuzzy, kde-format
+#| msgid "Aborting..."
+msgid "Aborting…"
 msgstr "Avbryt …"
 
 #: progresswidget/ssllabel.cpp:39

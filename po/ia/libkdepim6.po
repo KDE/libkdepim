@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2024-03-15 18:41+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -37,8 +37,9 @@ msgid "Cancel this operation."
 msgstr "Cancella iste operation."
 
 #: progresswidget/progressmanager.cpp:111
-#, kde-format
-msgid "Aborting..."
+#, fuzzy, kde-format
+#| msgid "Aborting..."
+msgid "Aborting…"
 msgstr "Abortar..."
 
 #: progresswidget/ssllabel.cpp:39

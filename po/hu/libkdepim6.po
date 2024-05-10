@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.3\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2024-03-13 10:32+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -37,8 +37,9 @@ msgid "Cancel this operation."
 msgstr "A művelet félbeszakítása"
 
 #: progresswidget/progressmanager.cpp:111
-#, kde-format
-msgid "Aborting..."
+#, fuzzy, kde-format
+#| msgid "Aborting..."
+msgid "Aborting…"
 msgstr "Félbeszakítás..."
 
 #: progresswidget/ssllabel.cpp:39

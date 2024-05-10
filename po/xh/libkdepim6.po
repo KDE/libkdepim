@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2002-10-12 16:04+0200\n"
 "Last-Translator: Thelma Lungcuzo <thelma@translate.org.za>\n"
 "Language-Team: Xhosa <xhosa@translate.org.za>\n"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: progresswidget/progressmanager.cpp:111
 #, kde-format
-msgid "Aborting..."
+msgid "Aborting…"
 msgstr ""
 
 #: progresswidget/ssllabel.cpp:39

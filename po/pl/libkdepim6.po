@@ -1,6 +1,6 @@
 # translation of libkdepim.po to Polish
 # translation of libkdepim.po to
-# Version: $Revision: 1677014 $
+# Version: $Revision: 1679662 $
 # Copyright (C) 2002, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
 #
 # Krzysztof Lichota <lichota@mimuw.edu.pl>, 2002, 2005, 2006.
@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-10 00:39+0000\n"
 "PO-Revision-Date: 2024-03-17 10:47+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -45,8 +45,9 @@ msgid "Cancel this operation."
 msgstr "Zaniechaj działania."
 
 #: progresswidget/progressmanager.cpp:111
-#, kde-format
-msgid "Aborting..."
+#, fuzzy, kde-format
+#| msgid "Aborting..."
+msgid "Aborting…"
 msgstr "Porzucam..."
 
 #: progresswidget/ssllabel.cpp:39
