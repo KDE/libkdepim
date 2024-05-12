@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-03 00:38+0000\n"
-"PO-Revision-Date: 2024-03-13 14:20+0300\n"
+"PO-Revision-Date: 2024-05-10 13:50+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -23,13 +23,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.02.0\n"
+"X-Generator: Lokalize 24.07.70\n"
 "X-POOTLE-MTIME: 1413102212.000000\n"
 
 #: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
 msgid "We can not add more recipients. We have reached maximum recipients"
-msgstr "Biz daha fazla alıcı ekleyemiyoruz. En fazla alıcı sayısına ulaştık."
+msgstr "Biz daha fazla alıcı ekleyemiyoruz. En çok alıcı sayısına ulaştık."
 
 #: progresswidget/progressdialog.cpp:226
 #: progresswidget/statusbarprogresswidget.cpp:73
@@ -61,17 +61,17 @@ msgstr "Bağlantı şifresiz"
 #: progresswidget/statusbarprogresswidget.cpp:67
 #, kde-format
 msgid "Open detailed progress dialog"
-msgstr "Detaylı işlem iletişim kutusunu aç"
+msgstr "Ayrıntılı işlem iletişim kutusunu aç"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Show detailed progress window"
-msgstr "Detaylı işlem penceresini göster"
+msgstr "Ayrıntılı işlem penceresini göster"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
 msgid "Hide detailed progress window"
-msgstr "Detaylı işlem penceresini sakla"
+msgstr "Ayrıntılı işlem penceresini sakla"
 
 #: widgets/kwidgetlister.cpp:92
 #, kde-format

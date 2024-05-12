@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-03 00:38+0000\n"
-"PO-Revision-Date: 2024-05-09 07:15+0900\n"
+"PO-Revision-Date: 2024-05-10 16:50+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -36,7 +36,7 @@ msgstr "%p%"
 #: progresswidget/progressdialog.cpp:234
 #, kde-format
 msgid "Cancel this operation."
-msgstr "取消這個動作"
+msgstr "取消這個動作。"
 
 #: progresswidget/progressmanager.cpp:111
 #, kde-format
@@ -56,17 +56,17 @@ msgstr "連線未加密"
 #: progresswidget/statusbarprogresswidget.cpp:67
 #, kde-format
 msgid "Open detailed progress dialog"
-msgstr "開啟詳情進度視窗"
+msgstr "開啟詳細進度對話框"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgid "Show detailed progress window"
-msgstr "顯示詳情進度對視窗"
+msgstr "顯示詳細進度視窗"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
 msgid "Hide detailed progress window"
-msgstr "開啟詳情進度視窗"
+msgstr "隱藏詳細進度視窗"
 
 #: widgets/kwidgetlister.cpp:92
 #, kde-format

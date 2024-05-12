@@ -42,7 +42,7 @@ msgstr "Cancel·la esta operació."
 #: progresswidget/progressmanager.cpp:111
 #, kde-format
 msgid "Aborting..."
-msgstr "S'està interrompent..."
+msgstr "S'està interrompent…"
 
 #: progresswidget/ssllabel.cpp:39
 #, kde-format
