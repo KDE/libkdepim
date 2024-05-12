@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-10 00:39+0000\n"
-"PO-Revision-Date: 2024-03-14 03:57+0100\n"
+"PO-Revision-Date: 2024-05-10 07:31+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -36,10 +36,9 @@ msgid "Cancel this operation."
 msgstr "მიმდინარე ოპერაციის გაუქმება."
 
 #: progresswidget/progressmanager.cpp:111
-#, fuzzy, kde-format
-#| msgid "Aborting..."
+#, kde-format
 msgid "Aborting…"
-msgstr "გაუქმება..."
+msgstr "გაუქმება…"
 
 #: progresswidget/ssllabel.cpp:39
 #, kde-format
