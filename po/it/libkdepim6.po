@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-10 00:39+0000\n"
-"PO-Revision-Date: 2024-03-14 21:59+0100\n"
+"PO-Revision-Date: 2024-05-10 16:32+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -41,10 +41,9 @@ msgid "Cancel this operation."
 msgstr "Annulla questa operazione."
 
 #: progresswidget/progressmanager.cpp:111
-#, fuzzy, kde-format
-#| msgid "Aborting..."
+#, kde-format
 msgid "Aborting…"
-msgstr "Interruzione..."
+msgstr "Interruzione…"
 
 #: progresswidget/ssllabel.cpp:39
 #, kde-format
