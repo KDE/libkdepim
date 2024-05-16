@@ -38,10 +38,9 @@ msgid "Cancel this operation."
 msgstr "Zrušit tuto operaci."
 
 #: progresswidget/progressmanager.cpp:111
-#, fuzzy, kde-format
-#| msgid "Aborting..."
+#, kde-format
 msgid "Aborting…"
-msgstr "Přerušuji..."
+msgstr ""
 
 #: progresswidget/ssllabel.cpp:39
 #, kde-format
