@@ -36,12 +36,12 @@ void SSLLabel::setState(State state)
 {
     switch (state) {
     case Encrypted:
-        setToolTip(i18n("Connection is encrypted"));
+        setToolTip(i18nc("@info:tooltip", "Connection is encrypted"));
         setPixmap(QIcon::fromTheme(QStringLiteral("security-high")).pixmap(style()->pixelMetric(QStyle::PM_SmallIconSize)));
         show();
         break;
     case Unencrypted:
-        setToolTip(i18n("Connection is unencrypted"));
+        setToolTip(i18nc("@info:tooltip", "Connection is unencrypted"));
         setPixmap(QIcon::fromTheme(QStringLiteral("security-low")).pixmap(style()->pixelMetric(QStyle::PM_SmallIconSize)));
         show();
         break;

@@ -64,7 +64,7 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     mSslLabel->setObjectName("ssllabel"_L1);
     boxLayout->addWidget(mSslLabel);
 
-    mButton->setToolTip(i18n("Open detailed progress dialog"));
+    mButton->setToolTip(i18nc("@info:tooltip", "Open detailed progress dialog"));
 
     mProgressBar = new QProgressBar(this);
     mProgressBar->setObjectName("progressbar"_L1);
@@ -267,10 +267,10 @@ void StatusbarProgressWidget::updateProgressButton(bool showingProgress)
 {
     if (!showingProgress) {
         mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
-        mButton->setToolTip(i18n("Show detailed progress window"));
+        mButton->setToolTip(i18nc("@info:tooltip", "Show detailed progress window"));
     } else {
         mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-down")));
-        mButton->setToolTip(i18n("Hide detailed progress window"));
+        mButton->setToolTip(i18nc("@info:tooltip", "Hide detailed progress window"));
     }
 }
 
