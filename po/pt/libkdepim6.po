@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2019-08-01 11:49+0100\n"
 "Last-Translator: José Nuno Pires <zepires@gmail.com>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
@@ -32,7 +32,9 @@ msgid "%p%"
 msgstr ""
 
 #: progresswidget/progressdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cancel this operation."
+msgctxt "@info:tooltip"
 msgid "Cancel this operation."
 msgstr "Cancelar esta operação."
 
@@ -43,27 +45,37 @@ msgid "Aborting…"
 msgstr "A cancelar..."
 
 #: progresswidget/ssllabel.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Connection is encrypted"
+msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "Ligação está cifrada"
 
 #: progresswidget/ssllabel.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Connection is unencrypted"
+msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "Ligação não está cifrada"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Open detailed progress dialog"
+msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "Abrir a janela de evolução detalhada"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Show detailed progress window"
+msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "Mostrar a janela de evolução detalhada"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide detailed progress window"
+msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr "Esconder janela detalhada de evolução"
 

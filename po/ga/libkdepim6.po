@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepim/libkdepim.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2004-12-03 14:52-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -30,7 +30,9 @@ msgid "%p%"
 msgstr ""
 
 #: progresswidget/progressdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cancel this operation."
+msgctxt "@info:tooltip"
 msgid "Cancel this operation."
 msgstr "Cealaigh an oibríocht seo."
 
@@ -41,27 +43,37 @@ msgid "Aborting…"
 msgstr "Á Thobscor..."
 
 #: progresswidget/ssllabel.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Connection is encrypted"
+msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "Tá an nasc criptithe"
 
 #: progresswidget/ssllabel.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Connection is unencrypted"
+msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "Níl an nasc criptithe"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Open detailed progress dialog"
+msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "Oscail an dialóg mhionsonraithe dul chun cinn"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Show detailed progress window"
+msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "Taispeáin an fhuinneog mhionsonraithe dul chun cinn"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide detailed progress window"
+msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr "Folaigh an fhuinneog mhionsonraithe dul chun cinn"
 

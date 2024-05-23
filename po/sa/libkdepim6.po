@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2023-09-26 23:53+0530\n"
 "Last-Translator: \n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -31,7 +31,9 @@ msgid "%p%"
 msgstr ""
 
 #: progresswidget/progressdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cancel this operation."
+msgctxt "@info:tooltip"
 msgid "Cancel this operation."
 msgstr "एतत् कार्यं रद्दं कुर्वन्तु।."
 
@@ -42,27 +44,37 @@ msgid "Aborting…"
 msgstr "रद्दं कुर्वन्..."
 
 #: progresswidget/ssllabel.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Connection is encrypted"
+msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "संयोजनं सङ्कूटित् भवति"
 
 #: progresswidget/ssllabel.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Connection is unencrypted"
+msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "संयोजनं असङ्कूटित् भवति"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Open detailed progress dialog"
+msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "विस्तृत प्रगतिसंवादं उद्घाटयन्तु"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Show detailed progress window"
+msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "विस्तृतं प्रगतिगवाक्ष दर्शयतु"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide detailed progress window"
+msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr "विस्तृतं प्रगतिगवाक्ष गोपयन्तु"
 

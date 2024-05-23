@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2004-01-09 14:01+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -33,9 +33,11 @@ msgid "%p%"
 msgstr ""
 
 #: progresswidget/progressdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Negate this condition"
+msgctxt "@info:tooltip"
 msgid "Cancel this operation."
-msgstr ""
+msgstr "Negyddu'r amod yma"
 
 #: progresswidget/progressmanager.cpp:111
 #, fuzzy, kde-format
@@ -45,26 +47,31 @@ msgstr "Atal ..."
 
 #: progresswidget/ssllabel.cpp:39
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr ""
 
 #: progresswidget/ssllabel.cpp:44
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr ""
 
 #: progresswidget/statusbarprogresswidget.cpp:67
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr ""
 
 #: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr ""
 
 #: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr ""
 
@@ -1122,9 +1129,6 @@ msgstr "Llai"
 
 #~ msgid "Not"
 #~ msgstr "Dim"
-
-#~ msgid "Negate this condition"
-#~ msgstr "Negyddu'r amod yma"
 
 #~ msgid "Select the type of match"
 #~ msgstr "Dewis math y cydweddiad"

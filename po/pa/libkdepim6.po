@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2010-01-16 09:15+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: ਪੰਜਾਬੀ <punjabi-users@lists.sf.net>\n"
@@ -30,7 +30,9 @@ msgid "%p%"
 msgstr ""
 
 #: progresswidget/progressdialog.cpp:234
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cancel this operation."
+msgctxt "@info:tooltip"
 msgid "Cancel this operation."
 msgstr "ਇਹ ਕਾਰਵਾਈ ਰੱਦ ਕਰੋ।"
 
@@ -42,26 +44,34 @@ msgstr "ਅਧੂਰਾ ਛੱਡਿਆ ਜਾ ਰਿਹਾ ਹੈ..."
 
 #: progresswidget/ssllabel.cpp:39
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr ""
 
 #: progresswidget/ssllabel.cpp:44
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr ""
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide detailed progress window"
+msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
-msgstr ""
+msgstr "ਵੇਰਵਾ ਤਰੱਕੀ ਝਰੋਖਾ ਓਹਲੇ"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide detailed progress window"
+msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
-msgstr ""
+msgstr "ਵੇਰਵਾ ਤਰੱਕੀ ਝਰੋਖਾ ਓਹਲੇ"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hide detailed progress window"
+msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr "ਵੇਰਵਾ ਤਰੱਕੀ ਝਰੋਖਾ ਓਹਲੇ"
 

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-10 00:39+0000\n"
+"POT-Creation-Date: 2024-05-23 00:39+0000\n"
 "PO-Revision-Date: 2005-03-04 00:29+0100\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandriva.com>\n"
 "Language-Team: Breton <LL@li.org>\n"
@@ -28,6 +28,7 @@ msgstr ""
 
 #: progresswidget/progressdialog.cpp:234
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Cancel this operation."
 msgstr ""
 
@@ -38,27 +39,34 @@ msgid "Aborting…"
 msgstr "Emaon o nullañ ..."
 
 #: progresswidget/ssllabel.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Connection is encrypted"
+msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "Enrineget eo ar gevreadenn"
 
 #: progresswidget/ssllabel.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Connection is unencrypted"
+msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "N'eo ket enrineget ar gevreadenn"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr ""
 
 #: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr ""
 
 #: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr ""
 
