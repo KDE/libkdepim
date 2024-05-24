@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2024-05-10 13:50+0300\n"
+"PO-Revision-Date: 2024-05-23 14:21+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -39,11 +39,10 @@ msgid "%p%"
 msgstr "%​%p"
 
 #: progresswidget/progressdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Cancel this operation."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
-msgstr "Bu işlemi iptal edin."
+msgstr "Bu işlemi iptal et"
 
 #: progresswidget/progressmanager.cpp:111
 #, kde-format
@@ -51,39 +50,34 @@ msgid "Aborting…"
 msgstr "İptal ediliyor…"
 
 #: progresswidget/ssllabel.cpp:39
-#, fuzzy, kde-format
-#| msgid "Connection is encrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "Bağlantı şifreli"
 
 #: progresswidget/ssllabel.cpp:44
-#, fuzzy, kde-format
-#| msgid "Connection is unencrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "Bağlantı şifresiz"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Open detailed progress dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
-msgstr "Ayrıntılı işlem iletişim kutusunu aç"
+msgstr "Ayrıntılı ilerleme iletişim kutusunu aç"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, fuzzy, kde-format
-#| msgid "Show detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
-msgstr "Ayrıntılı işlem penceresini göster"
+msgstr "Ayrıntılı ilerleme penceresini göster"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, fuzzy, kde-format
-#| msgid "Hide detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
-msgstr "Ayrıntılı işlem penceresini sakla"
+msgstr "Ayrıntılı ilerleme penceresini gizle"
 
 #: widgets/kwidgetlister.cpp:92
 #, kde-format
