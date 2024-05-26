@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2024-05-12 18:21+0200\n"
+"PO-Revision-Date: 2024-05-24 09:19+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -48,8 +48,7 @@ msgid "%p%"
 msgstr "%p %"
 
 #: progresswidget/progressdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Cancel this operation."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
 msgstr "Annuler cette opération."
@@ -60,39 +59,34 @@ msgid "Aborting…"
 msgstr "Annulation en cours..."
 
 #: progresswidget/ssllabel.cpp:39
-#, fuzzy, kde-format
-#| msgid "Connection is encrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
-msgstr "La connexion est chiffrée"
+msgstr "La connexion est chiffrée."
 
 #: progresswidget/ssllabel.cpp:44
-#, fuzzy, kde-format
-#| msgid "Connection is unencrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
-msgstr "La connexion est non chiffrée"
+msgstr "La connexion est non chiffrée."
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Open detailed progress dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
-msgstr "Ouvrir une boîte de dialogue de progression détaillée"
+msgstr "Ouvrir une boîte de dialogue pour les détails sur la progression"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, fuzzy, kde-format
-#| msgid "Show detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
-msgstr "Afficher la boîte de dialogue de progression détaillée"
+msgstr "Ouvrir une boîte de dialogue pour les détails sur la progression"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, fuzzy, kde-format
-#| msgid "Hide detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
-msgstr "Cacher la boîte de dialogue de progression détaillée"
+msgstr "Masquer la boîte de dialogue pour les détails sur la progression"
 
 #: widgets/kwidgetlister.cpp:92
 #, kde-format
