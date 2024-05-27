@@ -30,11 +30,10 @@ msgid "%p%"
 msgstr "%p%"
 
 #: progresswidget/progressdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Cancel this operation."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
-msgstr "取消此操作。"
+msgstr ""
 
 #: progresswidget/progressmanager.cpp:111
 #, kde-format
@@ -42,39 +41,34 @@ msgid "Aborting…"
 msgstr "正在中止…"
 
 #: progresswidget/ssllabel.cpp:39
-#, fuzzy, kde-format
-#| msgid "Connection is encrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
-msgstr "连接已加密"
+msgstr ""
 
 #: progresswidget/ssllabel.cpp:44
-#, fuzzy, kde-format
-#| msgid "Connection is unencrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
-msgstr "连接未加密"
+msgstr ""
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Open detailed progress dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
-msgstr "打开详细进度对话框"
+msgstr ""
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, fuzzy, kde-format
-#| msgid "Show detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
-msgstr "显示详细进度对话框"
+msgstr ""
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, fuzzy, kde-format
-#| msgid "Hide detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
-msgstr "隐藏详细的进度窗口"
+msgstr ""
 
 #: widgets/kwidgetlister.cpp:92
 #, kde-format
