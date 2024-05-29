@@ -1,8 +1,7 @@
 # translation of libkdepim.po to Polish
 # translation of libkdepim.po to
-# Version: $Revision: 1677014 $
+# Version: $Revision: 1681059 $
 # Copyright (C) 2002, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
-#
 # Krzysztof Lichota <lichota@mimuw.edu.pl>, 2002, 2005, 2006.
 # Mikolaj Machowski <mikmach@wp.pl>, 2004, 2005, 2008, 2009.
 # Michal Rudolf <mrudolf@kdewebdev.org>, 2005.
@@ -10,6 +9,7 @@
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2008.
 # Maciej Wikło <maciej.wiklo@wp.pl>, 2010.
 # SPDX-FileCopyrightText: 2011, 2012, 2013, 2014, 2015, 2017, 2019, 2020, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
@@ -22,7 +22,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
