@@ -139,7 +139,9 @@ if(BUILD_DESIGNERPLUGIN)
 endif()
 ########### install files ###############
 
-install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mailtransport.service.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
+if (Qt6::DBus)
+    install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mailtransport.service.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
+endif()
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
