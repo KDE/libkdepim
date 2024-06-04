@@ -70,7 +70,7 @@ target_link_libraries(KPim6Libkdepim
 
 
 if(MINGW)
-    target_link_libraries(KPim6Libkdepim oleaut32)
+    target_link_libraries(KPim6Libkdepim PRIVATE oleaut32)
 endif()
 
 
