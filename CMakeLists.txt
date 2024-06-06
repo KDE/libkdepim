@@ -29,39 +29,9 @@ include(ECMDeprecationSettings)
 include(ECMFeatureSummary)
 include(ECMAddTests)
 include(ECMAddQch)
+include(ECMOptionalPackageProperties)
 
 option(FORCE_NOT_REQUIRED_DEPENDENCIES "List (semicolon-separated) of dependencies that will be downgraded from REQUIRED to RECOMMENDED")
-
-function(set_libkdepim_optional_package_properties _name _props)
-    if(NOT "${_props}" STREQUAL "PROPERTIES")
-        message(FATAL_ERROR "PROPERTIES keyword is missing in set_libkdepim_optional_package_properties() call.")
-    endif()
-
-    set(options) # none
-    set(oneValueArgs DESCRIPTION URL PURPOSE)
-    set(multiValueArgs) # none
-
-    CMAKE_PARSE_ARGUMENTS(_SPP "${options}" "${oneValueArgs}" "${multiValueArgs}"  ${ARGN})
-
-    if(_SPP_UNPARSED_ARGUMENTS)
-        message(FATAL_ERROR "Unknown keywords given to set_libkdepim_optional_package_properties(): \"${_SPP_UNPARSED_ARGUMENTS}\"")
-    endif()
-
-    set(DEPENDENCY_TYPE "REQUIRED")
-    if (${_name} IN_LIST FORCE_NOT_REQUIRED_DEPENDENCIES)
-        set(DEPENDENCY_TYPE "RECOMMENDED")
-    endif()
-    set_package_properties(${_name} PROPERTIES
-        TYPE ${DEPENDENCY_TYPE}
-        DESCRIPTION ${_SPP_DESCRIPTION}
-        URL ${_SPP_URL}
-        PURPOSE "${_SPP_PURPOSE} You can make the dependency optional adding ${_name} to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option"
-    )
-endfunction()
-
-find_package(Qt6DBus ${REQUIRED_QT_VERSION})
-set_libkdepim_optional_package_properties(Qt6DBus PROPERTIES
-    PURPOSE "Required for the DBUS interfaces delegate.")
 
 option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
@@ -72,6 +42,10 @@ find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Network)
 if (BUILD_TESTING)
     find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Test)
 endif()
+
+find_package(Qt6DBus ${REQUIRED_QT_VERSION})
+ecm_set_optional_package_properties(Qt6DBus PROPERTIES
+    PURPOSE "Required for the DBUS interfaces delegate.")
 
 find_package(KF6Completion ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
