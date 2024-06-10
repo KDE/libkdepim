@@ -139,7 +139,7 @@ if(BUILD_DESIGNERPLUGIN)
 endif()
 ########### install files ###############
 
-if (Qt6::DBus)
+if (TARGET Qt6::DBus)
     install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mailtransport.service.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
 endif()
 

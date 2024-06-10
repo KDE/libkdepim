@@ -90,7 +90,7 @@ endif()
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6Libkdepim")
 
-if (Qt6::DBus)
+if (TARGET Qt6::DBus)
     configure_package_config_file(KPimMailTransportDBusServiceConfig.cmake.in
       ${CMAKE_CURRENT_BINARY_DIR}/KPim6MailTransportDBusServiceConfig.cmake
       PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
