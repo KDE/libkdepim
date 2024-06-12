@@ -5,10 +5,10 @@
 # Darafei Praliaskouski <komzpa@licei2.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
+"Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2022-09-09 13:44\n"
+"PO-Revision-Date: 2024-06-11 08:11\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@licei2.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -19,11 +19,12 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Crowdin-Project: 86ff119b1606fcaa910d6b44fc14b611\n"
-"X-Crowdin-Project-ID: 127\n"
+"X-Crowdin-Project: fc57ad16a28d02dea100ceb1c60de14e\n"
+"X-Crowdin-Project-ID: 136\n"
 "X-Crowdin-Language: be\n"
-"X-Crowdin-File: /main/be/libkdepim/libkdepim.po\n"
-"X-Crowdin-File-ID: 8393\n"
+"X-Crowdin-File: /[antikruk.KDE] main/KDE6/be/messages/libkdepim/libkdepim6."
+"po\n"
+"X-Crowdin-File-ID: 10464\n"
 
 #: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
@@ -37,52 +38,45 @@ msgstr ""
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
-msgstr ""
+msgstr "%p%"
 
 #: progresswidget/progressdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Cancel this operation."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
 msgstr "Скасаваць гэтую аперацыю."
 
 #: progresswidget/progressmanager.cpp:111
-#, fuzzy, kde-format
-#| msgid "Aborting..."
+#, kde-format
 msgid "Aborting…"
-msgstr "Перарыванне..."
+msgstr "Перарыванне…"
 
 #: progresswidget/ssllabel.cpp:39
-#, fuzzy, kde-format
-#| msgid "Connection is encrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "Злучэнне зашыфравана"
 
 #: progresswidget/ssllabel.cpp:44
-#, fuzzy, kde-format
-#| msgid "Connection is unencrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "Злучэнне не зашыфравана"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Open detailed progress dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "Адкрыць падрабязнае дыялогавае акно ходу выканання"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, fuzzy, kde-format
-#| msgid "Show detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "Паказаць падрабязнае дыялогавае акно ходу выканання"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, fuzzy, kde-format
-#| msgid "Hide detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr "Схаваць падрабязнае дыялогавае акно ходу выканання"
