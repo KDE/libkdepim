@@ -65,7 +65,7 @@ void MultiplyingLineEditor::clear()
     }
 }
 
-bool MultiplyingLineEditor::isModified()
+bool MultiplyingLineEditor::isModified() const
 {
     return mModified || mView->isModified();
 }

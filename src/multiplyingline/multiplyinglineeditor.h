@@ -93,7 +93,7 @@ public:
     /** Returns true if the user has made any modifications to the list of
         recipients.
     */
-    [[nodiscard]] bool isModified();
+    [[nodiscard]] bool isModified() const;
 
     /** Resets the modified flag to false.
      */
