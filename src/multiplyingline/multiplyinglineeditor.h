@@ -145,7 +145,7 @@ public:
     void setDynamicSizeHint(bool dynamic);
     [[nodiscard]] bool dynamicSizeHint() const;
 
-    virtual QList<MultiplyingLine *> lines() const;
+    [[nodiscard]] QList<MultiplyingLine *> lines() const;
 
 Q_SIGNALS:
     void focusUp();
