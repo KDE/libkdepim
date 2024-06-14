@@ -67,8 +67,6 @@ public:
 class KDEPIM_EXPORT MultiplyingLineEditor : public QWidget
 {
     Q_OBJECT
-    Q_PROPERTY(bool autoResizeView READ autoResizeView WRITE setAutoResizeView)
-    Q_PROPERTY(bool dynamicSizeHint READ dynamicSizeHint WRITE setDynamicSizeHint)
 
 public:
     // We take ownership of factory
@@ -124,26 +122,6 @@ public:
       @param mode the completion mode
       */
     void setCompletionMode(KCompletion::CompletionMode mode);
-
-    /**
-     Set the underlying view's frame shape, default is none.
-     @param shape of type QFrame::Shape
-     */
-    void setFrameStyle(int shape);
-
-    /**
-     Make the line view follow it's children's size
-     @param resize turn on or off this behavior of auto resizing
-     */
-    void setAutoResizeView(bool resize);
-    [[nodiscard]] bool autoResizeView();
-
-    /**
-     * Sets whether the size hint of the editor shall be calculated
-     * dynamically by the number of lines. Default is @c true.
-     */
-    void setDynamicSizeHint(bool dynamic);
-    [[nodiscard]] bool dynamicSizeHint() const;
 
     [[nodiscard]] QList<MultiplyingLine *> lines() const;
 

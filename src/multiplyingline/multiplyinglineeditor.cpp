@@ -126,29 +126,4 @@ MultiplyingLine *MultiplyingLineEditor::activeLine() const
     return mView->activeLine();
 }
 
-void MultiplyingLineEditor::setFrameStyle(int shape)
-{
-    mView->setFrameStyle(shape);
-}
-
-void MultiplyingLineEditor::setAutoResizeView(bool resize)
-{
-    mView->setAutoResize(resize);
-}
-
-bool MultiplyingLineEditor::autoResizeView()
-{
-    return mView->autoResize();
-}
-
-void MultiplyingLineEditor::setDynamicSizeHint(bool dynamic)
-{
-    mView->setDynamicSizeHint(dynamic);
-}
-
-bool MultiplyingLineEditor::dynamicSizeHint() const
-{
-    return mView->dynamicSizeHint();
-}
-
 #include "moc_multiplyinglineeditor.cpp"

@@ -187,17 +187,11 @@ void MultiplyingLineView::slotDeleteLine()
 
 void MultiplyingLineView::resizeView()
 {
-    if (mDynamicSizeHint) {
-        if (!mAutoResize) {
-            if (mLines.count() < 6) {
-                setMinimumHeight(mLineHeight * mLines.count());
-            } else {
-                setMinimumHeight(mLineHeight * 5);
-                setMaximumHeight(mLineHeight * mLines.count());
-            }
-        } else {
-            setMinimumHeight(mLineHeight * mLines.count());
-        }
+    if (mLines.count() < 6) {
+        setMinimumHeight(mLineHeight * mLines.count());
+    } else {
+        setMinimumHeight(mLineHeight * 5);
+        setMaximumHeight(mLineHeight * mLines.count());
     }
 
     parentWidget()->layout()->activate();
@@ -222,27 +216,19 @@ void MultiplyingLineView::resizeEvent(QResizeEvent *ev)
 
 QSize MultiplyingLineView::sizeHint() const
 {
-    if (mDynamicSizeHint) {
-        return {200, mLineHeight * static_cast<int>(mLines.count())};
-    } else {
-        return QScrollArea::sizeHint();
-    }
+    return {200, mLineHeight * static_cast<int>(mLines.count())};
 }
 
 QSize MultiplyingLineView::minimumSizeHint() const
 {
-    if (mDynamicSizeHint) {
-        int height;
-        int numLines = 5;
-        if (mLines.count() < numLines) {
-            height = mLineHeight * mLines.count();
-        } else {
-            height = mLineHeight * numLines;
-        }
-        return {200, height};
+    int height;
+    int numLines = 5;
+    if (mLines.count() < numLines) {
+        height = mLineHeight * mLines.count();
     } else {
-        return QScrollArea::minimumSizeHint();
+        height = mLineHeight * numLines;
     }
+    return {200, height};
 }
 
 QList<MultiplyingLineData::Ptr> MultiplyingLineView::allData() const
@@ -375,35 +361,6 @@ int MultiplyingLineView::setFirstColumnWidth(int w)
 QList<MultiplyingLine *> MultiplyingLineView::lines() const
 {
     return mLines;
-}
-
-void MultiplyingLineView::setAutoResize(bool resize)
-{
-    mAutoResize = resize;
-
-    if (mAutoResize) {
-        setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-        setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-        setMaximumHeight(QWIDGETSIZE_MAX);
-    } else {
-        setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
-        setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
-    }
-}
-
-bool MultiplyingLineView::autoResize() const
-{
-    return mAutoResize;
-}
-
-void MultiplyingLineView::setDynamicSizeHint(bool dynamic)
-{
-    mDynamicSizeHint = dynamic;
-}
-
-bool MultiplyingLineView::dynamicSizeHint() const
-{
-    return mDynamicSizeHint;
 }
 
 #include "moc_multiplyinglineview_p.cpp"

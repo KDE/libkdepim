@@ -61,20 +61,6 @@ public:
      */
     int setFirstColumnWidth(int);
 
-    /**
-     Make this widget follow it's children's size
-     @param resize turn on or off this behavior of auto resizing
-     */
-    void setAutoResize(bool resize);
-    [[nodiscard]] bool autoResize() const;
-
-    /**
-     * Sets whether the size hint of the editor shall be calculated
-     * dynamically by the number of lines. Default is @c true.
-     */
-    void setDynamicSizeHint(bool dynamic);
-    [[nodiscard]] bool dynamicSizeHint() const;
-
     [[nodiscard]] QList<MultiplyingLine *> lines() const;
     MultiplyingLine *addLine(bool showDialogBox);
 
@@ -115,8 +101,6 @@ private:
     int mLineHeight = 0;
     int mFirstColumnWidth = 0;
     KCompletion::CompletionMode mCompletionMode = KCompletion::CompletionNone;
-    bool mAutoResize = false;
-    bool mDynamicSizeHint = true;
     bool mModified = false;
 };
 }
