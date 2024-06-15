@@ -38,7 +38,7 @@ public:
 
     void enableControls();
 
-    KWidgetLister *q = nullptr;
+    KWidgetLister *const q;
     QPushButton *mBtnMore = nullptr;
     QPushButton *mBtnFewer = nullptr;
     QPushButton *mBtnClear = nullptr;
