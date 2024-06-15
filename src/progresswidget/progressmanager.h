@@ -143,7 +143,7 @@ public:
     void addChild(ProgressItem *kiddo);
     void removeChild(ProgressItem *kiddo);
 
-    bool canceled() const;
+    [[nodiscard]] bool canceled() const;
 
     unsigned int typeProgressItem() const;
     void setTypeProgressItem(unsigned int);

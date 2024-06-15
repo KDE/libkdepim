@@ -31,7 +31,7 @@ public:
 
     [[nodiscard]] MultiplyingLine *activeLine() const;
 
-    MultiplyingLine *emptyLine() const;
+    [[nodiscard]] MultiplyingLine *emptyLine() const;
 
     [[nodiscard]] QList<MultiplyingLineData::Ptr> allData() const;
 
