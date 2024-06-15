@@ -32,7 +32,11 @@ class KDEPIM_EXPORT ProgressItem : public QObject
     friend class ProgressManager;
 
 public:
-    enum CryptoStatus { Encrypted, Unencrypted, Unknown };
+    enum CryptoStatus {
+        Encrypted,
+        Unencrypted,
+        Unknown,
+    };
 
     /**
      * @return The id string which uniquely identifies the operation
