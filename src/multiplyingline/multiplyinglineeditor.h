@@ -139,7 +139,6 @@ public Q_SLOTS:
     void setFocusBottom();
 
 protected:
-    virtual MultiplyingLine *activeLine() const;
     bool mModified = false;
 
 private:

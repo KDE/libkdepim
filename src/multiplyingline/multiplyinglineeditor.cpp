@@ -121,9 +121,4 @@ QList<MultiplyingLine *> MultiplyingLineEditor::lines() const
     return mView->lines();
 }
 
-MultiplyingLine *MultiplyingLineEditor::activeLine() const
-{
-    return mView->activeLine();
-}
-
 #include "moc_multiplyinglineeditor.cpp"
