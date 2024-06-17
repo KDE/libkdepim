@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2024-05-12 14:56+0530\n"
+"PO-Revision-Date: 2024-06-16 19:08+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.1\n"
 
 #: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
@@ -36,11 +36,10 @@ msgid "%p%"
 msgstr "%p%"
 
 #: progresswidget/progressdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Cancel this operation."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
-msgstr "இந்த செயல்பாட்டை ரத்து செய்"
+msgstr "இந்த செயல்பாட்டை ரத்து செய்யும்"
 
 #: progresswidget/progressmanager.cpp:111
 #, kde-format
@@ -48,39 +47,34 @@ msgid "Aborting…"
 msgstr "ரத்து செய்கிறது…"
 
 #: progresswidget/ssllabel.cpp:39
-#, fuzzy, kde-format
-#| msgid "Connection is encrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "இணைப்பு மறையாக்கப்பட்டுள்ளது"
 
 #: progresswidget/ssllabel.cpp:44
-#, fuzzy, kde-format
-#| msgid "Connection is unencrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "இணைப்பு மறையாக்கப்படவில்லை"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Open detailed progress dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
-msgstr "விவரமான பணிநிலைகாட்டி சாளரத்தை திற"
+msgstr "விவரமான பணிநிலைகாட்டி சாளரத்தை திறக்கும்"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, fuzzy, kde-format
-#| msgid "Show detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
-msgstr "விவரமான பணிநிலைகாட்டி சாளரத்தை காட்டு"
+msgstr "விவரமான பணிநிலைகாட்டி சாளரத்தை காட்டும்"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, fuzzy, kde-format
-#| msgid "Hide detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
-msgstr "விவரமான பணிநிலைகாட்டி சாளரத்தை மறை"
+msgstr "விவரமான பணிநிலைகாட்டி சாளரத்தை மறைக்கும்"
 
 #: widgets/kwidgetlister.cpp:92
 #, kde-format
