@@ -48,7 +48,7 @@ function(set_libkdepim_optional_package_properties _name _props)
     endif()
 
     set(DEPENDENCY_TYPE "REQUIRED")
-    if (${_name} IN_LIST FORCE_NOT_REQUIRED_DEPENDENCIES)
+    if(${_name} IN_LIST FORCE_NOT_REQUIRED_DEPENDENCIES)
         set(DEPENDENCY_TYPE "RECOMMENDED")
     endif()
     set_package_properties(${_name} PROPERTIES
@@ -56,7 +56,7 @@ function(set_libkdepim_optional_package_properties _name _props)
         DESCRIPTION ${_SPP_DESCRIPTION}
         URL ${_SPP_URL}
         PURPOSE "${_SPP_PURPOSE} You can make the dependency optional adding ${_name} to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option"
-    )
+)
 endfunction()
 
 find_package(Qt6DBus ${REQUIRED_QT_VERSION})
@@ -69,7 +69,7 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 set(LIBKDEPIM_LIB_VERSION ${PIM_VERSION})
 find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Network)
 
-if (BUILD_TESTING)
+if(BUILD_TESTING)
     find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Test)
 endif()
 
@@ -90,7 +90,7 @@ endif()
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6Libkdepim")
 
-if (TARGET Qt6::DBus)
+if(TARGET Qt6::DBus)
     configure_package_config_file(KPimMailTransportDBusServiceConfig.cmake.in
       ${CMAKE_CURRENT_BINARY_DIR}/KPim6MailTransportDBusServiceConfig.cmake
       PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
@@ -104,7 +104,7 @@ endif()
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
-if (USE_UNITY_CMAKE_SUPPORT)
+if(USE_UNITY_CMAKE_SUPPORT)
     set(COMPILE_WITH_UNITY_CMAKE_SUPPORT ON)
 endif()
 
@@ -112,13 +112,13 @@ add_subdirectory(src)
 
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6Libkdepim")
 
-if (BUILD_QCH)
+if(BUILD_QCH)
     ecm_install_qch_export(
         TARGETS KPim6Libkdepim_QCH
         FILE KPim6LibkdepimQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
-    )
+)
     set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6LibkdepimQchTargets.cmake\")")
 endif()
 
@@ -126,14 +126,14 @@ configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimLibkdepimConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KPim6LibkdepimConfig.cmake"
     INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
-    )
+)
 
 install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/KPim6LibkdepimConfig.cmake"
     "${CMAKE_CURRENT_BINARY_DIR}/src/KPim6LibkdepimConfigVersion.cmake"
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     COMPONENT Devel
-    )
+)
 
 install(EXPORT KPim6LibkdepimTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim6LibkdepimTargets.cmake NAMESPACE KPim6::)
 
@@ -142,7 +142,7 @@ ecm_qt_install_logging_categories(
         EXPORT LIBKDEPIM
         FILE libkdepim.categories
         DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
-        )
+)
 
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 ki18n_install(po)

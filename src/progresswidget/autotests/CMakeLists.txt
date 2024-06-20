@@ -8,7 +8,7 @@ macro(add_libkdepim_progresswidget_unittest _source)
         LINK_LIBRARIES Qt::Test
         Qt::Widgets
         KPim6::Libkdepim
-    )
+)
 endmacro()
 add_libkdepim_progresswidget_unittest(statusbarprogresswidgettest.cpp)
 add_libkdepim_progresswidget_unittest(progressstatusbarwidgettest.cpp)

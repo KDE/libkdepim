@@ -7,9 +7,9 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX LIBKDEPIM
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6LibkdepimConfigVersion.cmake"
     SOVERSION 6
-    )
+)
 
-if (BUILD_TESTING)
+if(BUILD_TESTING)
     add_subdirectory(tests)
     add_subdirectory(progresswidget/autotests/)
     add_subdirectory(progresswidget/tests/)
@@ -41,15 +41,15 @@ target_sources(KPim6Libkdepim PRIVATE
     widgets/kwidgetlister.h
     widgets/kcheckcombobox.h
     widgets/progressindicatorlabel.h
-    )
+)
 ecm_qt_declare_logging_category(KPim6Libkdepim HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
         DESCRIPTION "libkdepim (libkdepim)"
         OLD_CATEGORY_NAMES log_libkdepim
         EXPORT LIBKDEPIM
-    )
+)
 
 
-if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6Libkdepim PROPERTIES UNITY_BUILD ON)
 endif()
 ecm_generate_export_header(KPim6Libkdepim
@@ -66,7 +66,7 @@ target_link_libraries(KPim6Libkdepim
     KF6::Completion
     KF6::I18n
     KF6::WidgetsAddons
-    )
+)
 
 
 if(MINGW)
@@ -78,12 +78,12 @@ set_target_properties(KPim6Libkdepim PROPERTIES
     VERSION ${LIBKDEPIM_VERSION}
     SOVERSION ${LIBKDEPIM_SOVERSION}
     EXPORT_NAME Libkdepim
-    )
+)
 
 install(TARGETS
     KPim6Libkdepim
     EXPORT KPim6LibkdepimTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
-    )
+)
 
 ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
     HEADER_NAMES
@@ -93,7 +93,7 @@ ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
     REQUIRED_HEADERS libkdepim_widgets_HEADERS
     PREFIX Libkdepim
     RELATIVE widgets
-    )
+)
 
 ecm_generate_headers(libkdepim_Camelcaseprogresswidget_HEADERS
     HEADER_NAMES
@@ -104,7 +104,7 @@ ecm_generate_headers(libkdepim_Camelcaseprogresswidget_HEADERS
     REQUIRED_HEADERS libkdepim_progresswidget_HEADERS
     PREFIX Libkdepim
     RELATIVE progresswidget
-    )
+)
 
 ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
     HEADER_NAMES
@@ -113,7 +113,7 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
     REQUIRED_HEADERS libkdepim_multiline_HEADERS
     PREFIX Libkdepim
     RELATIVE multiplyingline
-    )
+)
 
 install(FILES
     ${libkdepim_CamelcaseCamelCase_HEADERS}
@@ -122,7 +122,7 @@ install(FILES
     ${libkdepim_Camelcasemultiline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/Libkdepim
     COMPONENT Devel
-    )
+)
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/kdepim_export.h
@@ -132,23 +132,23 @@ install(FILES
     ${libkdepim_multiline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/libkdepim
     COMPONENT Devel
-    )
+)
 
 if(BUILD_DESIGNERPLUGIN)
     add_subdirectory(designer)
 endif()
 ########### install files ###############
 
-if (TARGET Qt6::DBus)
+if(TARGET Qt6::DBus)
     install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mailtransport.service.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
 endif()
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim COMPONENT Devel
-    )
+)
 
-if (BUILD_QCH)
+if(BUILD_QCH)
     ecm_add_qch(
         KPim6Libkdepim_QCH
         NAME KPim6Libkdepim
@@ -173,5 +173,5 @@ if (BUILD_QCH)
         TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         COMPONENT Devel
-    )
+)
 endif()
