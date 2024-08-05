@@ -2,11 +2,6 @@ Intro: Plans for cleaning up libkdepim.
 
 Goal: libkdepim should no longer be a dumping ground of misc stuff for pim apps.
 
-# Rewrite and move to kdepimlibs/akonadi/contacts
-addresseelineedit
-completionordereditor
-kmailcompletion
-
 # Move to kdepimlibs/kontactinterfaces?
 agentprogressmonitor
 overlaywidget
@@ -16,12 +11,5 @@ ssllabel
 statusbarprogresswidget
 
 # Move to kdeui/widgets after api review
-kdatepickerpopup
 kwidgetlister
 uistatesaver
-
-# Get rid of
-recentaddresses      # replace with live searches?
-
-# Still needed? or replaced by a new parameterized AkonadiDrag object?
-maillistdrag
