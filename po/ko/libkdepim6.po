@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Shinjo Park <kde@peremen.name>, 2013, 2014, 2015, 2017, 2019, 2020.
+# SPDX-FileCopyrightText: 2013, 2014, 2015, 2017, 2019, 2020, 2024 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2020-04-21 00:38+0200\n"
+"PO-Revision-Date: 2024-08-20 00:28+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 19.04.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
@@ -27,52 +27,45 @@ msgstr "최대 받는 사람 수에 도달하여 받는 사람을 추가할 수 
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
-msgstr ""
+msgstr "%p%"
 
 #: progresswidget/progressdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Cancel this operation."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
 msgstr "이 작업을 취소합니다."
 
 #: progresswidget/progressmanager.cpp:111
-#, fuzzy, kde-format
-#| msgid "Aborting..."
+#, kde-format
 msgid "Aborting…"
-msgstr "중단 중..."
+msgstr "중단 중…"
 
 #: progresswidget/ssllabel.cpp:39
-#, fuzzy, kde-format
-#| msgid "Connection is encrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "연결이 암호화됨"
 
 #: progresswidget/ssllabel.cpp:44
-#, fuzzy, kde-format
-#| msgid "Connection is unencrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "연결이 암호화되지 않음"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Open detailed progress dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "자세한 진행 정보 대화 상자 열기"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, fuzzy, kde-format
-#| msgid "Show detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "자세한 진행 정보 창 열기"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, fuzzy, kde-format
-#| msgid "Hide detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr "자세한 진행 정보 창 닫기"
