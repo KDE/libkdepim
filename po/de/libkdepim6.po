@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2024-03-27 19:52+0100\n"
+"PO-Revision-Date: 2024-08-19 23:12+0200\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.02.1\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: multiplyingline/multiplyinglineview_p.cpp:63
 #, kde-format
@@ -40,52 +40,45 @@ msgid "%p%"
 msgstr "%p %"
 
 #: progresswidget/progressdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Cancel this operation."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
-msgstr "Operation abbrechen."
+msgstr "Diese Operation abbrechen."
 
 #: progresswidget/progressmanager.cpp:111
-#, fuzzy, kde-format
-#| msgid "Aborting..."
+#, kde-format
 msgid "Aborting…"
-msgstr "Abbruch läuft ..."
+msgstr "Abbruch läuft …"
 
 #: progresswidget/ssllabel.cpp:39
-#, fuzzy, kde-format
-#| msgid "Connection is encrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "Verbindung ist verschlüsselt"
 
 #: progresswidget/ssllabel.cpp:44
-#, fuzzy, kde-format
-#| msgid "Connection is unencrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "Verbindung ist nicht verschlüsselt"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Open detailed progress dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
-msgstr "Detailliertes Fortschrittsfenster öffnen"
+msgstr "Ausführlichen Fortschrittsdialog öffnen"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, fuzzy, kde-format
-#| msgid "Show detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
-msgstr "Detailliertes Fortschrittsfenster anzeigen"
+msgstr "Ausführlichen Fortschrittsdialog anzeigen"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, fuzzy, kde-format
-#| msgid "Hide detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
-msgstr "Detailliertes Fortschrittsfenster ausblenden"
+msgstr "Ausführlichen Fortschrittsdialog ausblenden"
 
 #: widgets/kwidgetlister.cpp:92
 #, kde-format

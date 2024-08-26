@@ -37,48 +37,41 @@ msgstr ""
 
 #: progresswidget/progressdialog.cpp:234
 #, fuzzy, kde-format
-#| msgid "Cancel this operation."
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
 msgstr "Avbryt denne handlinga."
 
 #: progresswidget/progressmanager.cpp:111
 #, fuzzy, kde-format
-#| msgid "Aborting..."
 msgid "Aborting…"
 msgstr "Avbryter …"
 
 #: progresswidget/ssllabel.cpp:39
 #, fuzzy, kde-format
-#| msgid "Connection is encrypted"
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "Tilkoblingen er kryptert"
 
 #: progresswidget/ssllabel.cpp:44
 #, fuzzy, kde-format
-#| msgid "Connection is unencrypted"
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "Tilkoblingen er ikke kryptert"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
 #, fuzzy, kde-format
-#| msgid "Open detailed progress dialog"
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "Åpne detaljert framdriftsdialog"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
 #, fuzzy, kde-format
-#| msgid "Show detailed progress window"
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "Vis detaljert framdriftsvindu"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
 #, fuzzy, kde-format
-#| msgid "Hide detailed progress window"
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr "Skjul detaljert framdriftsvindu"
