@@ -81,7 +81,7 @@ option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
 
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
-ecm_set_disabled_deprecation_versions(QT 6.7.2 KF 6.5.0)
+ecm_set_disabled_deprecation_versions(QT 6.7.2 KF 6.6.0)
 
 if(BUILD_TESTING)
     add_definitions(-DBUILD_TESTING)
