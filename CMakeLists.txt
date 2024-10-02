@@ -29,6 +29,13 @@ include(ECMDeprecationSettings)
 include(ECMFeatureSummary)
 include(ECMAddTests)
 include(ECMAddQch)
+include(ECMCheckOutboundLicense)
+file(GLOB_RECURSE ALL_SOURCE_FILES
+src/*.cpp
+src/*.h
+)
+ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_SOURCE_FILES})
+
 
 option(FORCE_NOT_REQUIRED_DEPENDENCIES "List (semicolon-separated) of dependencies that will be downgraded from REQUIRED to RECOMMENDED")
 
