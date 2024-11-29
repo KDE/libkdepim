@@ -9,19 +9,20 @@
 # Julia Dronova <juliette.tux@gmail.com>, 2012.
 # Alexander Lakhin <exclusion@gmail.com>, 2013.
 # Александр Яворский <yavorsky.a@t-rosta.com>, 2018.
+# SPDX-FileCopyrightText: 2024 Olesya Gerasimenko <translation-team@basealt.ru>
 msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-23 00:39+0000\n"
-"PO-Revision-Date: 2018-08-14 09:53+0300\n"
-"Last-Translator: Александр Яворский <yavorsky.a@t-rosta.com>\n"
-"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"PO-Revision-Date: 2024-11-28 15:47+0300\n"
+"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Environment: kde\n"
@@ -40,55 +41,48 @@ msgstr ""
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
-msgstr ""
+msgstr "%p%"
 
 #: progresswidget/progressdialog.cpp:234
-#, fuzzy, kde-format
-#| msgid "Cancel this operation."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
-msgstr "Прервать операцию."
+msgstr "Прервать операцию"
 
 #: progresswidget/progressmanager.cpp:111
-#, fuzzy, kde-format
-#| msgid "Aborting..."
+#, kde-format
 msgid "Aborting…"
-msgstr "Прерывание..."
+msgstr "Прерывание…"
 
 #: progresswidget/ssllabel.cpp:39
-#, fuzzy, kde-format
-#| msgid "Connection is encrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "Соединение шифруется"
 
 #: progresswidget/ssllabel.cpp:44
-#, fuzzy, kde-format
-#| msgid "Connection is unencrypted"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
 msgstr "Соединение не шифруется"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Open detailed progress dialog"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
-msgstr "Открыть окно прогресса выполнения"
+msgstr "Открыть окно хода выполнения"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
-#, fuzzy, kde-format
-#| msgid "Show detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
-msgstr "Показать окно прогресса выполнения"
+msgstr "Показать окно хода выполнения"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
-#, fuzzy, kde-format
-#| msgid "Hide detailed progress window"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
-msgstr "Скрыть окно прогресса выполнения"
+msgstr "Скрыть окно хода выполнения"
 
 #: widgets/kwidgetlister.cpp:92
 #, kde-format
