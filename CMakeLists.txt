@@ -65,7 +65,7 @@ function(set_libkdepim_optional_package_properties _name _props)
 )
 endfunction()
 
-find_package(Qt6DBus ${REQUIRED_QT_VERSION})
+find_package(Qt6DBus ${QT_REQUIRED_VERSION})
 set_libkdepim_optional_package_properties(Qt6DBus PROPERTIES
     PURPOSE "Required for the DBUS interfaces delegate.")
 
