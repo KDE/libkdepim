@@ -28,7 +28,7 @@ msgstr "वयं अधिकान् प्राप्तकर्तान�
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
-msgstr ""
+msgstr "%प% ९."
 
 #: progresswidget/progressdialog.cpp:234
 #, fuzzy, kde-format
