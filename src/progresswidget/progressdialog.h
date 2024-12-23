@@ -162,6 +162,7 @@ protected:
     void closeEvent(QCloseEvent *) override;
 
     TransactionItemView *mScrollView = nullptr;
+    QList<QMetaObject::Connection> mConnections;
     QMap<const ProgressItem *, TransactionItem *> mTransactionsToListviewItems;
     unsigned int mShowTypeProgressItem = 0;
     bool mWasLastShown = false;

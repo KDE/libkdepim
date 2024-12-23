@@ -360,7 +360,8 @@ bool ProgressDialog::wasLastShown() const
  */
 ProgressDialog::~ProgressDialog()
 {
-    // no need to delete child widgets.
+    for (auto &conn : std::as_const(mConnections))
+        QObject::disconnect(conn);
 }
 
 void ProgressDialog::setShowTypeProgressItem(unsigned int type)
@@ -395,7 +396,7 @@ void ProgressDialog::slotTransactionCompleted(ProgressItem *item)
         ti->setItemComplete();
         QTimer::singleShot(3s, ti, &QObject::deleteLater);
         // see the slot for comments as to why that works
-        connect(ti, &QObject::destroyed, mScrollView, &TransactionItemView::slotLayoutFirstItem);
+        mConnections << connect(ti, &QObject::destroyed, mScrollView, &TransactionItemView::slotLayoutFirstItem);
     }
     // This was the last item, hide.
     if (mTransactionsToListviewItems.empty()) {
@@ -456,6 +457,15 @@ void ProgressDialog::slotHide()
     // check if a new item showed up since we started the timer. If not, hide
     if (mTransactionsToListviewItems.isEmpty()) {
         setVisible(false);
+    }
+
+    // while we're here, clean up the mConnections list
+    for (auto it = mConnections.begin(); it != mConnections.end();) {
+        if (!*it) { // operator bool tell us if it's still valid
+            it = mConnections.erase(it);
+        } else {
+            ++it;
+        }
     }
 }
 
