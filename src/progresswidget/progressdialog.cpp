@@ -114,7 +114,7 @@ TransactionItemView::TransactionItemView(QWidget *parent, const QString &name)
     setObjectName(name);
     setFrameStyle(NoFrame);
     auto mBigBoxVBoxLayout = new QVBoxLayout(mBigBox);
-    mBigBoxVBoxLayout->setContentsMargins(0, 0, 0, 0);
+    mBigBoxVBoxLayout->setContentsMargins({});
     setWidget(mBigBox);
     setWidgetResizable(true);
     setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
@@ -213,7 +213,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
 
     auto h = new QWidget(this);
     auto hHBoxLayout = new QHBoxLayout(h);
-    hHBoxLayout->setContentsMargins(0, 0, 0, 0);
+    hHBoxLayout->setContentsMargins({});
     hHBoxLayout->setSpacing(5);
     layout()->addWidget(h);
 
@@ -238,7 +238,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
 
     h = new QWidget(this);
     hHBoxLayout = new QHBoxLayout(h);
-    hHBoxLayout->setContentsMargins(0, 0, 0, 0);
+    hHBoxLayout->setContentsMargins({});
     hHBoxLayout->setSpacing(5);
     h->setSizePolicy(QSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed));
     layout()->addWidget(h);

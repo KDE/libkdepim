@@ -19,7 +19,7 @@ public:
         , q(qq)
     {
         auto lay = new QHBoxLayout(q);
-        lay->setContentsMargins(0, 0, 0, 0);
+        lay->setContentsMargins({});
         indicator = new KBusyIndicatorWidget(q);
         lay->addWidget(indicator);
         label = new QLabel(q);

@@ -47,7 +47,7 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     int w = fontMetrics().boundingRect(QStringLiteral(" 999.9 kB/s 00:00:01 ")).width() + 8;
     auto boxLayout = new QHBoxLayout(this);
     boxLayout->setObjectName("boxLayout"_L1);
-    boxLayout->setContentsMargins(0, 0, 0, 0);
+    boxLayout->setContentsMargins({});
     boxLayout->setSpacing(0);
 
     mButton->setObjectName("button"_L1);
