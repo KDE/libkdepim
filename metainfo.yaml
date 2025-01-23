@@ -1,5 +1,5 @@
 name: libkdepim
-description: KDEpim Library 
+description: KDEpim Library
 maintainer: mlaurent
 public_lib: true
 type: functional
@@ -12,6 +12,5 @@ platforms:
 irc: akonadi
 
 libraries:
- - cmake: "KPim6::Libkdepim"
+    - cmake: "KPim6::Libkdepim"
 cmakename: KPim6Libkdepim
-
