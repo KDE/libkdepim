@@ -33,7 +33,7 @@ msgstr "%p%"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
-msgstr ""
+msgstr "取消此操作."
 
 #: progresswidget/progressmanager.cpp:111
 #, kde-format
@@ -44,31 +44,31 @@ msgstr "正在中止…"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
-msgstr ""
+msgstr "连接已加密"
 
 #: progresswidget/ssllabel.cpp:44
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
-msgstr ""
+msgstr "连接未加密"
 
 #: progresswidget/statusbarprogresswidget.cpp:67
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
-msgstr ""
+msgstr "打开处理进度详情对话框"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
-msgstr ""
+msgstr "显示详细处理进度窗口"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
-msgstr ""
+msgstr "隐藏详细处理进度窗口"
 
 #: widgets/kwidgetlister.cpp:92
 #, kde-format
