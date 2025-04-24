@@ -11,3 +11,4 @@ Dependencies:
 
 Options:
  require-passing-tests-on: ['Linux', 'FreeBSD', 'Windows']
+ tests-run-in-parallel: True
