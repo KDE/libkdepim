@@ -15,39 +15,39 @@ if(BUILD_TESTING)
     add_subdirectory(progresswidget/tests/)
 endif()
 
-
 ########### next target ###############
-target_sources(KPim6Libkdepim PRIVATE
-    progresswidget/progressmanager.cpp
-    progresswidget/progressdialog.cpp
-    progresswidget/statusbarprogresswidget.cpp
-    progresswidget/ssllabel.cpp
-    progresswidget/progressstatusbarwidget.cpp
-    widgets/kcheckcombobox.cpp
-    widgets/kwidgetlister.cpp
-    widgets/progressindicatorlabel.cpp
-    multiplyingline/multiplyingline.cpp
-    multiplyingline/multiplyinglineeditor.cpp
-    multiplyingline/multiplyinglineview_p.cpp
-    progresswidget/statusbarprogresswidget.h
-    progresswidget/ssllabel.h
-    progresswidget/progressmanager.h
-    progresswidget/progressdialog.h
-    progresswidget/progressstatusbarwidget.h
-    multiplyingline/multiplyinglineeditor.h
-    multiplyingline/multiplyingline.h
-    multiplyingline/multiplyinglineview_p.h
-    libkdepim_private_export.h
-    widgets/kwidgetlister.h
-    widgets/kcheckcombobox.h
-    widgets/progressindicatorlabel.h
+target_sources(
+    KPim6Libkdepim
+    PRIVATE
+        progresswidget/progressmanager.cpp
+        progresswidget/progressdialog.cpp
+        progresswidget/statusbarprogresswidget.cpp
+        progresswidget/ssllabel.cpp
+        progresswidget/progressstatusbarwidget.cpp
+        widgets/kcheckcombobox.cpp
+        widgets/kwidgetlister.cpp
+        widgets/progressindicatorlabel.cpp
+        multiplyingline/multiplyingline.cpp
+        multiplyingline/multiplyinglineeditor.cpp
+        multiplyingline/multiplyinglineview_p.cpp
+        progresswidget/statusbarprogresswidget.h
+        progresswidget/ssllabel.h
+        progresswidget/progressmanager.h
+        progresswidget/progressdialog.h
+        progresswidget/progressstatusbarwidget.h
+        multiplyingline/multiplyinglineeditor.h
+        multiplyingline/multiplyingline.h
+        multiplyingline/multiplyinglineview_p.h
+        libkdepim_private_export.h
+        widgets/kwidgetlister.h
+        widgets/kcheckcombobox.h
+        widgets/progressindicatorlabel.h
 )
 ecm_qt_declare_logging_category(KPim6Libkdepim HEADER libkdepim_debug.h IDENTIFIER LIBKDEPIM_LOG CATEGORY_NAME org.kde.pim.libkdepim
         DESCRIPTION "libkdepim (libkdepim)"
         OLD_CATEGORY_NAMES log_libkdepim
         EXPORT LIBKDEPIM
 )
-
 
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6Libkdepim PROPERTIES UNITY_BUILD ON)
@@ -58,31 +58,37 @@ ecm_generate_export_header(KPim6Libkdepim
     DEPRECATED_BASE_VERSION 0
     USE_VERSION_HEADER \"libkdepim_version.h\"
 )
-target_include_directories(KPim6Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/>")
-target_include_directories(KPim6Libkdepim PUBLIC "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>")
-
-target_link_libraries(KPim6Libkdepim
-    PRIVATE
-    KF6::Completion
-    KF6::I18n
-    KF6::WidgetsAddons
+target_include_directories(
+    KPim6Libkdepim
+    INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/>"
+)
+target_include_directories(
+    KPim6Libkdepim
+    PUBLIC
+        "$<BUILD_INTERFACE:${libkdepim_SOURCE_DIR}/src;${libkdepim_BINARY_DIR}/src;>"
 )
 
+target_link_libraries(
+    KPim6Libkdepim
+    PRIVATE KF6::Completion KF6::I18n KF6::WidgetsAddons
+)
 
 if(MINGW)
     target_link_libraries(KPim6Libkdepim PRIVATE oleaut32)
 endif()
 
-
-set_target_properties(KPim6Libkdepim PROPERTIES
-    VERSION ${LIBKDEPIM_VERSION}
-    SOVERSION ${LIBKDEPIM_SOVERSION}
-    EXPORT_NAME Libkdepim
+set_target_properties(
+    KPim6Libkdepim
+    PROPERTIES
+        VERSION ${LIBKDEPIM_VERSION}
+        SOVERSION ${LIBKDEPIM_SOVERSION}
+        EXPORT_NAME Libkdepim
 )
 
-install(TARGETS
-    KPim6Libkdepim
-    EXPORT KPim6LibkdepimTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
+install(
+    TARGETS KPim6Libkdepim
+    EXPORT KPim6LibkdepimTargets
+    ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
 )
 
 ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
@@ -115,21 +121,23 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
     RELATIVE multiplyingline
 )
 
-install(FILES
-    ${libkdepim_CamelcaseCamelCase_HEADERS}
-    ${libkdepim_Camelcasewidgets_HEADERS}
-    ${libkdepim_Camelcaseprogresswidget_HEADERS}
-    ${libkdepim_Camelcasemultiline_HEADERS}
+install(
+    FILES
+        ${libkdepim_CamelcaseCamelCase_HEADERS}
+        ${libkdepim_Camelcasewidgets_HEADERS}
+        ${libkdepim_Camelcaseprogresswidget_HEADERS}
+        ${libkdepim_Camelcasemultiline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/Libkdepim
     COMPONENT Devel
 )
 
-install(FILES
-    ${CMAKE_CURRENT_BINARY_DIR}/kdepim_export.h
-    ${libkdepim_CamelCase_HEADERS}
-    ${libkdepim_progresswidget_HEADERS}
-    ${libkdepim_widgets_HEADERS}
-    ${libkdepim_multiline_HEADERS}
+install(
+    FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/kdepim_export.h
+        ${libkdepim_CamelCase_HEADERS}
+        ${libkdepim_progresswidget_HEADERS}
+        ${libkdepim_widgets_HEADERS}
+        ${libkdepim_multiline_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/libkdepim
     COMPONENT Devel
 )
@@ -140,12 +148,18 @@ endif()
 ########### install files ###############
 
 if(TARGET Qt6::DBus)
-    install(FILES interfaces/org.kde.addressbook.service.xml interfaces/org.kde.mailtransport.service.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
+    install(
+        FILES
+            interfaces/org.kde.addressbook.service.xml
+            interfaces/org.kde.mailtransport.service.xml
+        DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR}
+    )
 endif()
 
-install(FILES
-    ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim COMPONENT Devel
+install(
+    FILES ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim
+    COMPONENT Devel
 )
 
 if(BUILD_QCH)
@@ -173,5 +187,5 @@ if(BUILD_QCH)
         TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         COMPONENT Devel
-)
+    )
 endif()

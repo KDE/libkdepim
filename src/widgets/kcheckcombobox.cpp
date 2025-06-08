@@ -186,11 +186,11 @@ QStringList KCheckComboBox::checkedItems(int role) const
 void KCheckComboBox::setCheckedItems(const QStringList &items, int role)
 {
     for (int r = 0; r < model()->rowCount(rootModelIndex()); ++r) {
-        const QModelIndex indx = model()->index(r, modelColumn(), rootModelIndex());
+        const QModelIndex index = model()->index(r, modelColumn(), rootModelIndex());
 
-        const QString text = indx.data(role).toString();
+        const QString text = index.data(role).toString();
         const bool found = items.contains(text);
-        model()->setData(indx, found ? Qt::Checked : Qt::Unchecked, Qt::CheckStateRole);
+        model()->setData(index, found ? Qt::Checked : Qt::Unchecked, Qt::CheckStateRole);
     }
     d->updateCheckedItems(QModelIndex(), QModelIndex(), role);
 }
