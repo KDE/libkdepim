@@ -24,8 +24,7 @@ int main(int argc, char *argv[])
     parser.process(app);
 
     auto combo = new KPIM::KCheckComboBox(nullptr);
-    combo->addItems(QStringList() << u"KDE"_s << u"Mac OSX"_s << QStringLiteral("Windows") << QStringLiteral("XFCE")
-                                  << u"FVWM"_s << u"TWM"_s);
+    combo->addItems(QStringList() << u"KDE"_s << u"Mac OSX"_s << QStringLiteral("Windows") << QStringLiteral("XFCE") << u"FVWM"_s << u"TWM"_s);
     combo->setCheckedItems(QStringList() << u"KDE"_s << u"Mac OSX"_s << QStringLiteral("Windows"));
     combo->resize(400, 20);
     combo->setSqueezeText(true);

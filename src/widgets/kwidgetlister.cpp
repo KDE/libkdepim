@@ -11,7 +11,6 @@
 #include "kwidgetlister.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include <KGuiItem>
 #include <KLocalizedString>
 #include <QHBoxLayout>

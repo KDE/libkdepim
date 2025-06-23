@@ -10,7 +10,6 @@
 #include "kcheckcombobox.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include "libkdepim_debug.h"
 
 #include <QAbstractItemView>
