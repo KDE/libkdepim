@@ -8,6 +8,8 @@
  */
 
 #include "progressdialog.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "ssllabel.h"
 
 #include <KLocalizedString>
@@ -188,7 +190,7 @@ void TransactionItemView::slotLayoutFirstItem()
      be the first item very shortly. That's the one we want to remove the
      hline for.
     */
-    auto ti = mBigBox->findChild<KPIM::TransactionItem *>(QStringLiteral("TransactionItem"));
+    auto ti = mBigBox->findChild<KPIM::TransactionItem *>(u"TransactionItem"_s);
     if (ti) {
         ti->hideHLine();
     }
@@ -229,7 +231,7 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     h->layout()->addWidget(mProgress);
 
     if (item->canBeCanceled()) {
-        mCancelButton = new QPushButton(QIcon::fromTheme(QStringLiteral("dialog-cancel")), QString(), h);
+        mCancelButton = new QPushButton(QIcon::fromTheme(u"dialog-cancel"_s), QString(), h);
         hHBoxLayout->addWidget(mCancelButton);
         mCancelButton->setToolTip(i18nc("@info:tooltip", "Cancel this operation."));
         connect(mCancelButton, &QAbstractButton::clicked, this, &TransactionItem::slotItemCanceled);
@@ -327,7 +329,7 @@ ProgressDialog::ProgressDialog(QWidget *alignWidget, QWidget *parent)
 
     setAutoFillBackground(true);
 
-    mScrollView = new TransactionItemView(this, QStringLiteral("ProgressScrollView"));
+    mScrollView = new TransactionItemView(this, u"ProgressScrollView"_s);
     layout()->addWidget(mScrollView);
     /*
      * Get the singleton ProgressManager item which will inform us of

@@ -8,6 +8,8 @@
 */
 
 #include "kcheckcombobox.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include "libkdepim_debug.h"
 
@@ -26,7 +28,7 @@ class Q_DECL_HIDDEN KCheckComboBox::KCheckComboBoxPrivate
 {
 public:
     KCheckComboBoxPrivate(KCheckComboBox *qq)
-        : mSeparator(QLatin1Char(','))
+        : mSeparator(u',')
         , q(qq)
     {
     }

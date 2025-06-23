@@ -44,7 +44,7 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
     , mShowButton(button)
     , mProgressDialog(progressDialog)
 {
-    int w = fontMetrics().boundingRect(QStringLiteral(" 999.9 kB/s 00:00:01 ")).width() + 8;
+    int w = fontMetrics().boundingRect(u" 999.9 kB/s 00:00:01 "_s).width() + 8;
     auto boxLayout = new QHBoxLayout(this);
     boxLayout->setObjectName("boxLayout"_L1);
     boxLayout->setContentsMargins({});
@@ -52,7 +52,7 @@ StatusbarProgressWidget::StatusbarProgressWidget(ProgressDialog *progressDialog,
 
     mButton->setObjectName("button"_L1);
     mButton->setSizePolicy(QSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum));
-    mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
+    mButton->setIcon(QIcon::fromTheme(u"go-up"_s));
     boxLayout->addWidget(mButton);
     mStackedWidget = new QStackedWidget(this);
     mStackedWidget->setObjectName("stackedwidget"_L1);
@@ -266,10 +266,10 @@ bool StatusbarProgressWidget::eventFilter(QObject *obj, QEvent *ev)
 void StatusbarProgressWidget::updateProgressButton(bool showingProgress)
 {
     if (!showingProgress) {
-        mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
+        mButton->setIcon(QIcon::fromTheme(u"go-up"_s));
         mButton->setToolTip(i18nc("@info:tooltip", "Show detailed progress window"));
     } else {
-        mButton->setIcon(QIcon::fromTheme(QStringLiteral("go-down")));
+        mButton->setIcon(QIcon::fromTheme(u"go-down"_s));
         mButton->setToolTip(i18nc("@info:tooltip", "Hide detailed progress window"));
     }
 }

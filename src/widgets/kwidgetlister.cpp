@@ -9,6 +9,8 @@
 */
 
 #include "kwidgetlister.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include <KGuiItem>
 #include <KLocalizedString>
@@ -89,12 +91,12 @@ void KWidgetLister::init(bool fewerMoreButton)
     if (fewerMoreButton) {
         d->mBtnMore = new QPushButton(d->mButtonBox);
         mButtonBoxHBoxLayout->addWidget(d->mBtnMore);
-        KGuiItem::assign(d->mBtnMore, KGuiItem(i18nc("more widgets", "More"), QStringLiteral("list-add")));
+        KGuiItem::assign(d->mBtnMore, KGuiItem(i18nc("more widgets", "More"), u"list-add"_s));
         mButtonBoxHBoxLayout->setStretchFactor(d->mBtnMore, 0);
 
         d->mBtnFewer = new QPushButton(d->mButtonBox);
         mButtonBoxHBoxLayout->addWidget(d->mBtnFewer);
-        KGuiItem::assign(d->mBtnFewer, KGuiItem(i18nc("fewer widgets", "Fewer"), QStringLiteral("list-remove")));
+        KGuiItem::assign(d->mBtnFewer, KGuiItem(i18nc("fewer widgets", "Fewer"), u"list-remove"_s));
         mButtonBoxHBoxLayout->setStretchFactor(d->mBtnFewer, 0);
     }
     auto spacer = new QWidget(d->mButtonBox);

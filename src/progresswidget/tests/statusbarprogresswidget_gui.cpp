@@ -5,6 +5,8 @@
 */
 
 #include "statusbarprogresswidget_gui.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "progresswidget/progressdialog.h"
 
 #include <QApplication>

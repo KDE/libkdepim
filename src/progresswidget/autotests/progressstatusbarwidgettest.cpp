@@ -5,6 +5,8 @@
 */
 
 #include "progressstatusbarwidgettest.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "../progressdialog.h"
 #include "../progressstatusbarwidget.h"
 #include "../statusbarprogresswidget.h"
@@ -22,11 +24,11 @@ void ProgressStatusBarWidgetTest::shouldHaveDefaultValue()
     KPIM::ProgressStatusBarWidget w(widget, widget);
     widget->show();
 
-    auto progressDialog = widget->findChild<KPIM::ProgressDialog *>(QStringLiteral("progressDialog"));
+    auto progressDialog = widget->findChild<KPIM::ProgressDialog *>(u"progressDialog"_s);
     QVERIFY(progressDialog);
     QVERIFY(progressDialog->isHidden());
 
-    auto mLittleProgress = widget->findChild<KPIM::StatusbarProgressWidget *>(QStringLiteral("littleprogress"));
+    auto mLittleProgress = widget->findChild<KPIM::StatusbarProgressWidget *>(u"littleprogress"_s);
     QVERIFY(mLittleProgress);
     QVERIFY(mLittleProgress->isVisible());
 
