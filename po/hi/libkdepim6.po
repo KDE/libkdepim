@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2025-06-24 00:43+0000\n"
 "PO-Revision-Date: 2024-12-15 19:31+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -27,14 +27,14 @@ msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
 "हम ओर प्राप्तकर्ताएँ नहीं जोड सकते। हम अधिकतम प्राप्तकर्ता संख्या सीमा तक पहुँच चुके हैं"
 
-#: progresswidget/progressdialog.cpp:226
+#: progresswidget/progressdialog.cpp:228
 #: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
 msgstr ""
 
-#: progresswidget/progressdialog.cpp:234
+#: progresswidget/progressdialog.cpp:236
 #, fuzzy, kde-format
 #| msgid "Cancel this operation."
 msgctxt "@info:tooltip"
@@ -47,14 +47,14 @@ msgstr "इस इकार्रवाई को रद्द करें।"
 msgid "Aborting…"
 msgstr "छोड़ा जा रहा है…"
 
-#: progresswidget/ssllabel.cpp:39
+#: progresswidget/ssllabel.cpp:40
 #, fuzzy, kde-format
 #| msgid "Connection is encrypted"
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "कनेक्शन एनक्रिप्टेड है"
 
-#: progresswidget/ssllabel.cpp:44
+#: progresswidget/ssllabel.cpp:45
 #, fuzzy, kde-format
 #| msgid "Connection is unencrypted"
 msgctxt "@info:tooltip"
@@ -82,13 +82,13 @@ msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr "विस्तृत प्रगति विंडो को छुपाएँ"
 
-#: widgets/kwidgetlister.cpp:92
+#: widgets/kwidgetlister.cpp:93
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "अधिक"
 
-#: widgets/kwidgetlister.cpp:97
+#: widgets/kwidgetlister.cpp:98
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"

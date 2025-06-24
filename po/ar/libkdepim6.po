@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2025-06-24 00:43+0000\n"
 "PO-Revision-Date: 2024-05-25 17:30+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: \n"
@@ -29,14 +29,14 @@ msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
 "لا يمكننا إضافة المزيد من المستلمين. لقد وصلنا إلى الحد الأقصى من المستفيدين"
 
-#: progresswidget/progressdialog.cpp:226
+#: progresswidget/progressdialog.cpp:228
 #: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
 msgstr "%p٪"
 
-#: progresswidget/progressdialog.cpp:234
+#: progresswidget/progressdialog.cpp:236
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
@@ -47,13 +47,13 @@ msgstr "ألغِ العمليّة."
 msgid "Aborting…"
 msgstr "يجهض…"
 
-#: progresswidget/ssllabel.cpp:39
+#: progresswidget/ssllabel.cpp:40
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "الاتّصال معمًّى"
 
-#: progresswidget/ssllabel.cpp:44
+#: progresswidget/ssllabel.cpp:45
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
@@ -77,13 +77,13 @@ msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr "أخفِ نافذة التّقدّم المفصّلة"
 
-#: widgets/kwidgetlister.cpp:92
+#: widgets/kwidgetlister.cpp:93
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "أكثر"
 
-#: widgets/kwidgetlister.cpp:97
+#: widgets/kwidgetlister.cpp:98
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"

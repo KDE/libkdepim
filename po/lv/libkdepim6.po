@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2025-06-24 00:43+0000\n"
 "PO-Revision-Date: 2024-05-26 21:04+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -29,14 +29,14 @@ msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr ""
 "Vairāk saņēmēju pievienot nevaram. Ir sasniegts maksimālais saņēmēju skaits"
 
-#: progresswidget/progressdialog.cpp:226
+#: progresswidget/progressdialog.cpp:228
 #: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
 msgstr "%p %"
 
-#: progresswidget/progressdialog.cpp:234
+#: progresswidget/progressdialog.cpp:236
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
@@ -47,13 +47,13 @@ msgstr "Atcelt šo darbību."
 msgid "Aborting…"
 msgstr "Pārtrauc..."
 
-#: progresswidget/ssllabel.cpp:39
+#: progresswidget/ssllabel.cpp:40
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is encrypted"
 msgstr "Savienojums ir šifrēts"
 
-#: progresswidget/ssllabel.cpp:44
+#: progresswidget/ssllabel.cpp:45
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Connection is unencrypted"
@@ -77,13 +77,13 @@ msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
 msgstr "Slēpt progresa logu ar papildinformāciju"
 
-#: widgets/kwidgetlister.cpp:92
+#: widgets/kwidgetlister.cpp:93
 #, kde-format
 msgctxt "more widgets"
 msgid "More"
 msgstr "Vairāk"
 
-#: widgets/kwidgetlister.cpp:97
+#: widgets/kwidgetlister.cpp:98
 #, kde-format
 msgctxt "fewer widgets"
 msgid "Fewer"
