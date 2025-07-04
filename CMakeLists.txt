@@ -126,7 +126,7 @@ add_feature_info(
 )
 
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
-ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.15.0)
+ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.16.0)
 
 if(BUILD_TESTING)
     add_definitions(-DBUILD_TESTING)
