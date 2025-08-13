@@ -237,7 +237,7 @@ QList<MultiplyingLineData::Ptr> MultiplyingLineView::allData() const
 
     QListIterator<MultiplyingLine *> it(mLines);
     while (it.hasNext()) {
-        MultiplyingLine *line = it.next();
+        const MultiplyingLine *line = it.next();
         if (!line->data()->isEmpty()) {
             data.append(line->data());
         }
@@ -286,7 +286,7 @@ bool MultiplyingLineView::isModified() const
     }
 
     QListIterator<MultiplyingLine *> it(mLines);
-    MultiplyingLine *line = nullptr;
+    const MultiplyingLine *line = nullptr;
     while (it.hasNext()) {
         line = it.next();
         if (line->isModified()) {
