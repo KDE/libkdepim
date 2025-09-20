@@ -13,7 +13,6 @@
 #include "kdepim_export.h"
 
 #include <QComboBox>
-#include <QModelIndex>
 
 namespace KPIM
 {
