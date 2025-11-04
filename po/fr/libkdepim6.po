@@ -74,19 +74,19 @@ msgstr "La connexion est non chiffrée."
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
-msgstr "Ouvrir une boîte de dialogue pour les détails sur la progression"
+msgstr "Ouvrir une boite de dialogue pour les détails sur la progression"
 
 #: progresswidget/statusbarprogresswidget.cpp:270
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
-msgstr "Ouvrir une boîte de dialogue pour les détails sur la progression"
+msgstr "Ouvrir une boite de dialogue pour les détails sur la progression"
 
 #: progresswidget/statusbarprogresswidget.cpp:273
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"
-msgstr "Masquer la boîte de dialogue pour les détails sur la progression"
+msgstr "Masquer la boite de dialogue pour les détails sur la progression"
 
 #: widgets/kwidgetlister.cpp:93
 #, kde-format
