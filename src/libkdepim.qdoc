@@ -1,0 +1,9 @@
+/*!
+    \module Libkdepim
+    \title Libkdepim C++ Classes
+    \ingroup modules
+    \cmakepackage KPim6
+    \cmakecomponent Libkdepim
+
+    \brief KDEpim Library.
+*/

@@ -27,7 +27,7 @@ namespace KPIM
 class TransactionItem;
 class SSLLabel;
 
-/**
+/*!
  * This is a widget that can align itself with another one, without using a layout,
  * so that it can actually be on top of other widgets.
  * Currently the only supported type of alignment is "right aligned, on top of the other widget".

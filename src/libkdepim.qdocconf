@@ -1,0 +1,33 @@
+include($KDE_DOCS/global/qt-module-defaults.qdocconf)
+
+project = Libkdepim
+description = KDEpim Library.
+
+
+documentationinheaders = true
+
+headerdirs += .
+sourcedirs += .
+
+outputformats = HTML
+
+depends += \
+    qtcore
+
+navigation.landingpage = "Libkdepim"
+
+qhp.projects            = libkdepim
+
+qhp.libkdepim.file                = libkdepim.qhp
+qhp.libkdepim.namespace           = org.kde.libkdepim.$QT_VERSION_TAG
+qhp.libkdepim.virtualFolder       = libkdepim
+qhp.libkdepim.indexTitle          = libkdepim
+qhp.libkdepim.indexRoot           =
+
+qhp.libkdepim.subprojects         = classes
+qhp.libkdepim.subprojects.classes.title = C++ Classes
+qhp.libkdepim.subprojects.classes.indexTitle = Libkdepim C++ Classes
+qhp.libkdepim.subprojects.classes.selectors = class fake:headerfile
+qhp.libkdepim.subprojects.classes.sortPages = true
+
+tagfile = libkdepim.tags

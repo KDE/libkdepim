@@ -23,8 +23,8 @@ namespace KPIM
 {
 class MultiplyingLineView;
 
-/**
-  @short An Abstract Base Class used to create MultiplyingLines
+/*!
+  \brief An Abstract Base Class used to create MultiplyingLines
   Subclass this class and MultiplyingLine, then implement newLine() such that it allocates
   and returns an instance of your MultiplyingLine.
  */
@@ -46,8 +46,8 @@ public:
     }
 };
 
-/**
-  @short An editor that adds rows (lines) of widgets and deletes them as the user edits
+/*!
+  \brief An editor that adds rows (lines) of widgets and deletes them as the user edits
 
   Line widgets in the MultiplyingLineEditor are usually composed of multiple
   basic widgets. An example is below:
@@ -74,52 +74,52 @@ public:
 
     ~MultiplyingLineEditor() override;
 
-    /** Get the current line factory for this instance of the widget.
+    /*! Get the current line factory for this instance of the widget.
      */
     MultiplyingLineFactory *factory() const;
 
-    /** Retrieve the data from the editor */
+    /*! Retrieve the data from the editor */
     [[nodiscard]] QList<MultiplyingLineData::Ptr> allData() const;
 
-    /** Retrieve the data of the active line */
+    /*! Retrieve the data of the active line */
     MultiplyingLineData::Ptr activeData() const;
 
-    /** Clear all lines from the widget.
+    /*! Clear all lines from the widget.
      */
     void clear();
 
-    /** Returns true if the user has made any modifications to the list of
+    /*! Returns true if the user has made any modifications to the list of
         recipients.
     */
     [[nodiscard]] bool isModified() const;
 
-    /** Resets the modified flag to false.
+    /*! Resets the modified flag to false.
      */
     void clearModified();
 
-    /** Adds data to one line of the editor.
-        @param data The data you want to add.
+    /*! Adds data to one line of the editor.
+        \a data The data you want to add.
         Can be used to add an empty/default  line.
     */
     bool addData(const MultiplyingLineData::Ptr &data = MultiplyingLineData::Ptr(), bool showDialogBox = true);
 
-    /** Removes data provided it can be found. The Data class must support operator==
-        @param data The data you want to add.
+    /*! Removes data provided it can be found. The Data class must support operator==
+        \a data The data you want to add.
     */
     void removeData(const MultiplyingLineData::Ptr &data);
 
-    /**
+    /*!
       Set the width of the left most column to be the argument width.
       This method allows other widgets to align their label/combobox column with ours
       by communicating how many pixels that first column is for them.
-      @param w what the left most column width should be
-      @return the width that is actually being used.
+      \a w what the left most column width should be
+      Returns the width that is actually being used.
       */
     int setFirstColumnWidth(int w);
 
-    /**
+    /*!
       Set completion mode for all lines
-      @param mode the completion mode
+      \a mode the completion mode
       */
     void setCompletionMode(KCompletion::CompletionMode mode);
 

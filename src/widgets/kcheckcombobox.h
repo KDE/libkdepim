@@ -16,7 +16,7 @@
 
 namespace KPIM
 {
-/**
+/*!
  * A combobox that shows its items in such a way that they can be checked in the
  * drop menu. It provides methods to set the default text when no items are selected
  * and the separator that is used to show the items that are selected in the line
@@ -32,42 +32,42 @@ class KDEPIM_EXPORT KCheckComboBox : public QComboBox
     Q_PROPERTY(QStringList checkedItems READ checkedItems WRITE setCheckedItems)
 
 public:
-    /**
+    /*!
      * Creates a new checkable combobox.
      *
-     * @param parent The parent widget.
+     * \a parent The parent widget.
      */
     explicit KCheckComboBox(QWidget *parent = nullptr);
 
-    /**
+    /*!
      * Destroys the time zone combobox.
      */
     ~KCheckComboBox() override;
 
-    /**
+    /*!
      * Hides the popup list if it is currently shown.
      */
     void hidePopup() override;
 
-    /**
+    /*!
      * Returns the default text that is shown when no items are selected.
      */
     [[nodiscard]] QString defaultText() const;
 
-    /**
+    /*!
      * Sets the default text that is shown when no items are selected.
      *
-     * @param text The new default text
+     * \a text The new default text
      */
     void setDefaultText(const QString &text);
 
-    /**
+    /*!
      * Returns whether the default text is always shown, even if there are
      * no checked items.
      */
     [[nodiscard]] bool alwaysShowDefaultText() const;
 
-    /**
+    /*!
      * Sets if the default text should always be shown even if there are
      * no checked items.
      *
@@ -75,82 +75,82 @@ public:
      */
     void setAlwaysShowDefaultText(bool always);
 
-    /**
+    /*!
      * Returns whether or not the text will be squeezed to fit in the combo's line
      * edit. This property is false by default.
      *
-     * @see KSqueezedTextLabel
+     * \sa KSqueezedTextLabel
      */
     [[nodiscard]] bool squeezeText() const;
 
-    /**
+    /*!
      * Sets whether or not the text must be squeezed.
      *
-     * @param squeeze The new squeeze status
+     * \a squeeze The new squeeze status
      */
     void setSqueezeText(bool squeeze);
 
-    /**
-     * Return whether or not the item at @param index is enabled, i.e. if the
+    /*!
+     * Return whether or not the item at \a index is enabled, i.e. if the
      * user can (un)check the item.
      */
     [[nodiscard]] bool itemEnabled(int index);
 
-    /**
-     * Set the item at @param index to @param enabled, i.e. if the
+    /*!
+     * Set the item at \a index to \a enabled, i.e. if the
      * user can (un)check the item.
      */
     void setItemEnabled(int index, bool enabled = true);
 
-    /**
+    /*!
      * Returns the check state of item at given index.
      *
-     * @param index The index for which to return the check state.
+     * \a index The index for which to return the check state.
      */
     [[nodiscard]] Qt::CheckState itemCheckState(int index) const;
 
-    /**
+    /*!
      * Changes the check state of the given index to the given state.
      *
-     * @param index The index of which the state needs to be changed
-     * @param state The new state
+     * \a index The index of which the state needs to be changed
+     * \a state The new state
      */
     void setItemCheckState(int index, Qt::CheckState state);
 
-    /**
+    /*!
      * Returns the current separator used to separate the selected items in the
      * line edit of the combo box.
      */
     [[nodiscard]] QString separator() const;
 
-    /**
+    /*!
      * Sets the separator used to separate items in the line edit.
      *
-     * @param separator The new separator
+     * \a separator The new separator
      */
     void setSeparator(const QString &separator);
 
-    /**
+    /*!
      * Returns The currently selected items.
-     * @param role The role the returned values belong to.
+     * \a role The role the returned values belong to.
      */
     [[nodiscard]] QStringList checkedItems(int role = Qt::DisplayRole) const;
 
 public Q_SLOTS:
-    /**
+    /*!
      * Sets the currently selected items. Items that are not found in the model
      * are silently ignored.
      *
-     * @param items The items that will be set to checked.
-     * @param role The role @p items belong to.
+     * \a items The items that will be set to checked.
+     * \a role The role \a items belong to.
      */
     void setCheckedItems(const QStringList &items, int role = Qt::DisplayRole);
 
 Q_SIGNALS:
-    /**
+    /*!
      * Signal to notify listeners that the current selections has changed.
      *
-     * @param items The new selection.
+     * \a items The new selection.
      */
     void checkedItemsChanged(const QStringList &items);
 
@@ -163,9 +163,7 @@ protected:
 #endif
 
 private:
-    //@cond PRIVATE
     class KCheckComboBoxPrivate;
     std::unique_ptr<KCheckComboBoxPrivate> const d;
-    //@endcond
 };
 }

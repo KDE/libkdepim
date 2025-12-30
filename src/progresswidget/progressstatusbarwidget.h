@@ -12,9 +12,9 @@ namespace KPIM
 {
 class StatusbarProgressWidget;
 class ProgressStatusBarWidgetPrivate;
-/**
- * @brief The ProgressStatusBarWidget class
- * @author Laurent Montel <montel@kde.org>
+/*!
+ * \brief The ProgressStatusBarWidget class
+ * \author Laurent Montel <montel@kde.org>
  */
 class KDEPIM_EXPORT ProgressStatusBarWidget : public QObject
 {

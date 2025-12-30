@@ -69,7 +69,7 @@ include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
 include(ECMFeatureSummary)
 include(ECMAddTests)
-include(ECMAddQch)
+include(ECMGenerateQDoc)
 include(ECMCheckOutboundLicense)
 ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_CLANG_FORMAT_SOURCE_FILES})
 
@@ -123,17 +123,6 @@ endfunction()
 find_package(Qt6DBus ${QT_REQUIRED_VERSION})
 set_libkdepim_optional_package_properties(Qt6DBus PROPERTIES
     PURPOSE "Required for the DBUS interfaces delegate."
-)
-
-option(
-    BUILD_QCH
-    "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)"
-    OFF
-)
-add_feature_info(
-    QCH
-    ${BUILD_QCH}
-    "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)"
 )
 
 set(LIBKDEPIM_LIB_VERSION ${PIM_VERSION})
@@ -200,18 +189,6 @@ endif()
 add_subdirectory(src)
 
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6Libkdepim")
-
-if(BUILD_QCH)
-    ecm_install_qch_export(
-        TARGETS KPim6Libkdepim_QCH
-        FILE KPim6LibkdepimQchTargets.cmake
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-        COMPONENT Devel
-    )
-    set(PACKAGE_INCLUDE_QCHTARGETS
-        "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6LibkdepimQchTargets.cmake\")"
-    )
-endif()
 
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimLibkdepimConfig.cmake.in"

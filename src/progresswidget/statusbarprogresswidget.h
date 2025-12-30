@@ -8,7 +8,7 @@
 
   SPDX-License-Identifier: GPL-2.0-or-later
 */
-/**
+/*!
  *  A specialized progress widget class, heavily based on
  *  kio_littleprogress_dlg (it looks similar)
  */

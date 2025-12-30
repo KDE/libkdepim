@@ -12,16 +12,16 @@
 namespace KPIM
 {
 class ProgressIndicatorLabelPrivate;
-/**
- * @brief The ProgressIndicatorLabel class
- * @author Laurent Montel <montel@kde.org>
+/*!
+ * \brief The ProgressIndicatorLabel class
+ * \author Laurent Montel <montel@kde.org>
  */
 class KDEPIM_EXPORT ProgressIndicatorLabel : public QWidget
 {
     Q_OBJECT
 public:
-    /**
-     * @since 4.12
+    /*!
+     * \since 4.12
      */
     explicit ProgressIndicatorLabel(const QString &labelStr, QWidget *parent = nullptr);
     explicit ProgressIndicatorLabel(QWidget *parent = nullptr);
