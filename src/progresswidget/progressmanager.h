@@ -24,6 +24,10 @@ class ProgressItem;
 class ProgressManager;
 using ProgressItemMap = QMap<ProgressItem *, bool>;
 /*!
+ * \class KPIM::ProgressItem
+ * \inmodule Libkdepim
+ * \inheaderfile KPIM/ProgressItem
+ *
  * \brief The ProgressItem class
  */
 class KDEPIM_EXPORT ProgressItem : public QObject
@@ -144,12 +148,22 @@ public:
      */
     void updateProgress();
 
+    /*!
+     */
     void addChild(ProgressItem *kiddo);
+    /*!
+     */
     void removeChild(ProgressItem *kiddo);
 
+    /*!
+     */
     [[nodiscard]] bool canceled() const;
 
+    /*!
+     */
     unsigned int typeProgressItem() const;
+    /*!
+     */
     void setTypeProgressItem(unsigned int);
 
 Q_SIGNALS:
@@ -245,6 +259,10 @@ private:
 struct ProgressManagerPrivate;
 
 /*!
+ * \class KPIM::ProgressManager
+ * \inmodule Libkdepim
+ * \inheaderfile KPIM/ProgressManager
+ *
  * The ProgressManager singleton keeps track of all ongoing transactions
  * and notifies observers (progress dialogs) when their progress percent value
  * changes, when they are completed (by their owner), and when they are canceled.

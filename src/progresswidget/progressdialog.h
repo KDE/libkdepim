@@ -28,6 +28,10 @@ class TransactionItem;
 class SSLLabel;
 
 /*!
+ * \class KPIM::OverlayWidget
+ * \inmodule Libkdepim
+ * \inheaderfile KPIM/OverlayWidget
+ *
  * This is a widget that can align itself with another one, without using a layout,
  * so that it can actually be on top of other widgets.
  * Currently the only supported type of alignment is "right aligned, on top of the other widget".
@@ -39,10 +43,18 @@ class KDEPIM_EXPORT OverlayWidget : public QFrame
     Q_OBJECT
 
 public:
+    /*!
+     */
     OverlayWidget(QWidget *alignWidget, QWidget *parent);
+    /*!
+     */
     ~OverlayWidget() override;
 
+    /*!
+     */
     [[nodiscard]] QWidget *alignWidget() const;
+    /*!
+     */
     void setAlignWidget(QWidget *alignWidget);
 
 protected:
@@ -130,32 +142,71 @@ class KDEPIM_EXPORT ProgressDialog : public OverlayWidget
 {
     Q_OBJECT
 public:
+    /*!
+     * \brief ProgressDialog
+     * \param alignWidget
+     * \param parent
+     */
     ProgressDialog(QWidget *alignWidget, QWidget *parent);
+    /*!
+     */
     ~ProgressDialog() override;
+    /*!
+     */
     void setVisible(bool b) override;
 
+    /*!
+     */
     void setShowTypeProgressItem(unsigned int type);
 
+    /*!
+     */
     [[nodiscard]] bool wasLastShown() const;
 
 public Q_SLOTS:
+    /*!
+     */
     void slotToggleVisibility();
 
 protected Q_SLOTS:
+    /*!
+     */
     void slotTransactionAdded(KPIM::ProgressItem *item);
+    /*!
+     */
     void slotTransactionCompleted(KPIM::ProgressItem *item);
+    /*!
+     */
     void slotTransactionCanceled(KPIM::ProgressItem *item);
+    /*!
+     */
     void slotTransactionProgress(KPIM::ProgressItem *item, unsigned int progress);
+    /*!
+     */
     void slotTransactionStatus(KPIM::ProgressItem *item, const QString &);
+    /*!
+     */
     void slotTransactionLabel(KPIM::ProgressItem *item, const QString &);
+    /*!
+     */
     void slotTransactionCryptoStatus(KPIM::ProgressItem *item, KPIM::ProgressItem::CryptoStatus);
+    /*!
+     */
     void slotTransactionUsesBusyIndicator(KPIM::ProgressItem *, bool);
 
+    /*!
+     */
     void slotClose();
+    /*!
+     */
     void slotShow();
+    /*!
+     */
     void slotHide();
 
 Q_SIGNALS:
+    /*!
+     */
     void visibilityChanged(bool);
 
 protected:

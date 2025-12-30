@@ -13,6 +13,10 @@ namespace KPIM
 class StatusbarProgressWidget;
 class ProgressStatusBarWidgetPrivate;
 /*!
+ * \class KPIM::ProgressStatusBarWidget
+ * \inmodule Libkdepim
+ * \inheaderfile KPIM/ProgressStatusBarWidget
+ *
  * \brief The ProgressStatusBarWidget class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -20,9 +24,15 @@ class KDEPIM_EXPORT ProgressStatusBarWidget : public QObject
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit ProgressStatusBarWidget(QWidget *alignWidget, QWidget *parent = nullptr, unsigned int showTypeProgressItem = 0);
+    /*!
+     */
     ~ProgressStatusBarWidget() override;
 
+    /*!
+     */
     [[nodiscard]] KPIM::StatusbarProgressWidget *littleProgress() const;
 
 private:

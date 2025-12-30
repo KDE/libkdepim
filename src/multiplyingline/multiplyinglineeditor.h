@@ -24,6 +24,10 @@ namespace KPIM
 class MultiplyingLineView;
 
 /*!
+  \class KPIM::MultiplyingLineFactory
+  \inmodule Libkdepim
+  \inheaderfile KPIM/MultiplyingLineFactory
+
   \brief An Abstract Base Class used to create MultiplyingLines
   Subclass this class and MultiplyingLine, then implement newLine() such that it allocates
   and returns an instance of your MultiplyingLine.
@@ -32,14 +36,22 @@ class KDEPIM_EXPORT MultiplyingLineFactory : public QObject
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit MultiplyingLineFactory(QObject *parent)
         : QObject(parent)
     {
     }
 
+    /*!
+     */
     ~MultiplyingLineFactory() override = default;
 
+    /*!
+     */
     virtual MultiplyingLine *newLine(QWidget *parent) = 0;
+    /*!
+     */
     virtual int maximumRecipients()
     {
         return -1;
@@ -47,6 +59,10 @@ public:
 };
 
 /*!
+  \class KPIM::MultiplyingLineEditor
+  \inmodule Libkdepim
+  \inheaderfile KPIM/MultiplyingLineEditor
+
   \brief An editor that adds rows (lines) of widgets and deletes them as the user edits
 
   Line widgets in the MultiplyingLineEditor are usually composed of multiple

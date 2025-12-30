@@ -29,28 +29,54 @@ namespace KPIM
 class SSLLabel;
 class ProgressItem;
 class ProgressDialog;
-
+/*!
+ * \class KPIM::StatusbarProgressWidget
+ * \inmodule Libkdepim
+ * \inheaderfile KPIM/StatusbarProgressWidget
+ */
 class KDEPIM_EXPORT StatusbarProgressWidget : public QFrame
 {
     Q_OBJECT
 
 public:
+    /*!
+     */
     explicit StatusbarProgressWidget(ProgressDialog *progressDialog, QWidget *parent, bool button = true);
 
+    /*!
+     */
     void setShowTypeProgressItem(unsigned int type);
 public Q_SLOTS:
 
+    /*!
+     */
     void slotClean();
 
+    /*!
+     */
     void slotProgressItemAdded(KPIM::ProgressItem *i);
+    /*!
+     */
     void slotProgressItemCompleted(KPIM::ProgressItem *i);
+    /*!
+     */
     void slotProgressItemProgress(KPIM::ProgressItem *i, unsigned int value);
+    /*!
+     */
     void slotProgressButtonClicked();
 
 protected Q_SLOTS:
+    /*!
+     */
     void slotProgressDialogVisible(bool);
+    /*!
+     */
     void slotShowItemDelayed();
+    /*!
+     */
     void slotBusyIndicator();
+    /*!
+     */
     void updateBusyMode(KPIM::ProgressItem *);
 
 protected:

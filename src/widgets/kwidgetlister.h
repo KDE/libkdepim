@@ -16,6 +16,10 @@
 namespace KPIM
 {
 /*!
+  \class KPIM::KWidgetLister
+  \inmodule Libkdepim
+  \inheaderfile KPIM/KWidgetLister
+
   \brief Widget that manages a list of other widgets (incl. 'more', 'fewer' and 'clear' buttons).
 
   Simple widget that nonetheless does a lot of the dirty work for

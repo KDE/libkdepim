@@ -17,6 +17,10 @@
 namespace KPIM
 {
 /*!
+ * \class KPIM::KCheckComboBox
+ * \inmodule Libkdepim
+ * \inheaderfile KPIM/KCheckComboBox
+ *
  * A combobox that shows its items in such a way that they can be checked in the
  * drop menu. It provides methods to set the default text when no items are selected
  * and the separator that is used to show the items that are selected in the line

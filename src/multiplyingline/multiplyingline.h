@@ -20,6 +20,10 @@
 namespace KPIM
 {
 /*!
+  \class KPIM::MultiplyingLineData
+  \inmodule Libkdepim
+  \inheaderfile KPIM/MultiplyingLineData
+
   \brief ABC representing line data
   \author Casey Link
 */
@@ -27,6 +31,8 @@ class KDEPIM_EXPORT MultiplyingLineData
 {
 public:
     using Ptr = QSharedPointer<MultiplyingLineData>;
+    /*!
+     */
     virtual ~MultiplyingLineData() = default;
 
     /*!
@@ -40,6 +46,10 @@ public:
 };
 
 /*!
+ \class KPIM::MultiplyingLineData
+ \inmodule Libkdepim
+ \inheaderfile KPIM/MultiplyingLineData
+
  \brief Abstract Base Class representing a line in the Multiplying line widget.
  This class (and its subclasses) represent the lines in the MultiplyingLineEditor. Users of the
  MultiplyingLineEditor widget should subclass this class, and add their own input widgets as members,
@@ -50,7 +60,13 @@ class KDEPIM_EXPORT MultiplyingLine : public QWidget
 {
     Q_OBJECT
 public:
+    /*!
+     * \brief MultiplyingLine
+     * \param parent
+     */
     explicit MultiplyingLine(QWidget *parent);
+    /*!
+     */
     ~MultiplyingLine() override;
 
     /*!

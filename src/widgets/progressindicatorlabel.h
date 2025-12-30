@@ -13,6 +13,10 @@ namespace KPIM
 {
 class ProgressIndicatorLabelPrivate;
 /*!
+ * \class KPIM::ProgressIndicatorLabel
+ * \inmodule Libkdepim
+ * \inheaderfile KPIM/ProgressIndicatorLabel
+ *
  * \brief The ProgressIndicatorLabel class
  * \author Laurent Montel <montel@kde.org>
  */
@@ -24,13 +28,23 @@ public:
      * \since 4.12
      */
     explicit ProgressIndicatorLabel(const QString &labelStr, QWidget *parent = nullptr);
+    /*!
+     */
     explicit ProgressIndicatorLabel(QWidget *parent = nullptr);
+    /*!
+     */
     ~ProgressIndicatorLabel() override;
 
+    /*!
+     */
     void setActiveLabel(const QString &label);
 
 public Q_SLOTS:
+    /*!
+     */
     void start();
+    /*!
+     */
     void stop();
 
 private:
