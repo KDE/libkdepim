@@ -49,9 +49,8 @@ private:
 };
 }
 
-void KCheckComboBox::KCheckComboBoxPrivate::makeInsertedItemsCheckable(const QModelIndex &parent, int start, int end)
+void KCheckComboBox::KCheckComboBoxPrivate::makeInsertedItemsCheckable([[maybe_unused]] const QModelIndex &parent, int start, int end)
 {
-    Q_UNUSED(parent)
     auto model = qobject_cast<QStandardItemModel *>(q->model());
     if (model) {
         for (int r = start; r <= end; ++r) {
@@ -80,11 +79,10 @@ QString KCheckComboBox::KCheckComboBoxPrivate::squeeze(const QString &text)
     return text;
 }
 
-void KCheckComboBox::KCheckComboBoxPrivate::updateCheckedItems(const QModelIndex &topLeft, const QModelIndex &bottomRight, int role)
+void KCheckComboBox::KCheckComboBoxPrivate::updateCheckedItems([[maybe_unused]] const QModelIndex &topLeft,
+                                                               [[maybe_unused]] const QModelIndex &bottomRight,
+                                                               int role)
 {
-    Q_UNUSED(topLeft)
-    Q_UNUSED(bottomRight)
-
     const QStringList items = q->checkedItems(role);
     QString text;
     if (items.isEmpty() || mAlwaysShowDefaultText) {

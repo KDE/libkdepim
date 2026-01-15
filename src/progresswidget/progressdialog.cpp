@@ -309,9 +309,8 @@ void TransactionItem::slotItemCanceled()
     }
 }
 
-void TransactionItem::addSubTransaction(ProgressItem *item)
+void TransactionItem::addSubTransaction([[maybe_unused]] ProgressItem *item)
 {
-    Q_UNUSED(item)
 }
 
 // ---------------------------------------------------------------------------

@@ -180,9 +180,8 @@ void KWidgetLister::removeLastWidget()
     Q_EMIT widgetRemoved();
 }
 
-void KWidgetLister::clearWidget(QWidget *widget)
+void KWidgetLister::clearWidget([[maybe_unused]] QWidget *widget)
 {
-    Q_UNUSED(widget)
 }
 
 QWidget *KWidgetLister::createWidget(QWidget *parent)

@@ -203,10 +203,9 @@ void StatusbarProgressWidget::slotBusyIndicator()
     mProgressBar->setValue(p + 10);
 }
 
-void StatusbarProgressWidget::slotProgressItemProgress(ProgressItem *item, unsigned int value)
+void StatusbarProgressWidget::slotProgressItemProgress([[maybe_unused]] ProgressItem *item, unsigned int value)
 {
     Q_ASSERT(item == mCurrentItem); // the only one we should be connected to
-    Q_UNUSED(item)
     mProgressBar->setValue(value);
 }
 
