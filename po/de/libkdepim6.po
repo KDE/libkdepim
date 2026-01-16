@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-01-16 00:44+0000\n"
 "PO-Revision-Date: 2024-08-19 23:12+0200\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -68,13 +68,13 @@ msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "Ausführlichen Fortschrittsdialog öffnen"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:269
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "Ausführlichen Fortschrittsdialog anzeigen"
 
-#: progresswidget/statusbarprogresswidget.cpp:273
+#: progresswidget/statusbarprogresswidget.cpp:272
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"

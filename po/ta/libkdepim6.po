@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-01-16 00:44+0000\n"
 "PO-Revision-Date: 2024-06-16 19:08+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -64,13 +64,13 @@ msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "விவரமான பணிநிலைகாட்டி சாளரத்தை திறக்கும்"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:269
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "விவரமான பணிநிலைகாட்டி சாளரத்தை காட்டும்"
 
-#: progresswidget/statusbarprogresswidget.cpp:273
+#: progresswidget/statusbarprogresswidget.cpp:272
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"

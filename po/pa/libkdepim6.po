@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-01-16 00:44+0000\n"
 "PO-Revision-Date: 2010-01-16 09:15+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: ਪੰਜਾਬੀ <punjabi-users@lists.sf.net>\n"
@@ -61,14 +61,14 @@ msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "ਵੇਰਵਾ ਤਰੱਕੀ ਝਰੋਖਾ ਓਹਲੇ"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:269
 #, fuzzy, kde-format
 #| msgid "Hide detailed progress window"
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "ਵੇਰਵਾ ਤਰੱਕੀ ਝਰੋਖਾ ਓਹਲੇ"
 
-#: progresswidget/statusbarprogresswidget.cpp:273
+#: progresswidget/statusbarprogresswidget.cpp:272
 #, fuzzy, kde-format
 #| msgid "Hide detailed progress window"
 msgctxt "@info:tooltip"

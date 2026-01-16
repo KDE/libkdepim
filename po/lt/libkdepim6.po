@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-01-16 00:44+0000\n"
 "PO-Revision-Date: 2024-05-24 01:52+0300\n"
 "Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -59,13 +59,13 @@ msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "Atverti išsamų eigos dialogą"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:269
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "Rodyti išsamų eigos langą"
 
-#: progresswidget/statusbarprogresswidget.cpp:273
+#: progresswidget/statusbarprogresswidget.cpp:272
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide detailed progress window"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-01-16 00:44+0000\n"
 "PO-Revision-Date: 2012-01-28 16:19-0800\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -70,14 +70,14 @@ msgctxt "@info:tooltip"
 msgid "Open detailed progress dialog"
 msgstr "詳細な進捗ダイアログを開きます"
 
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:269
 #, fuzzy, kde-format
 #| msgid "Show detailed progress window"
 msgctxt "@info:tooltip"
 msgid "Show detailed progress window"
 msgstr "詳細な進捗ウィンドウを表示します"
 
-#: progresswidget/statusbarprogresswidget.cpp:273
+#: progresswidget/statusbarprogresswidget.cpp:272
 #, fuzzy, kde-format
 #| msgid "Hide detailed progress window"
 msgctxt "@info:tooltip"

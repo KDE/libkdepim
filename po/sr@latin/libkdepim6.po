@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-01-16 00:44+0000\n"
 "PO-Revision-Date: 2017-07-16 22:56+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -70,7 +70,7 @@ msgid "Open detailed progress dialog"
 msgstr "Otvori detaljan dijalog napretka"
 
 # rewrite-msgid: /window/dialog/
-#: progresswidget/statusbarprogresswidget.cpp:270
+#: progresswidget/statusbarprogresswidget.cpp:269
 #, fuzzy, kde-format
 #| msgid "Show detailed progress window"
 msgctxt "@info:tooltip"
@@ -78,7 +78,7 @@ msgid "Show detailed progress window"
 msgstr "Prikaži detaljan dijalog napretka"
 
 # rewrite-msgid: /window/dialog/
-#: progresswidget/statusbarprogresswidget.cpp:273
+#: progresswidget/statusbarprogresswidget.cpp:272
 #, fuzzy, kde-format
 #| msgid "Hide detailed progress window"
 msgctxt "@info:tooltip"
