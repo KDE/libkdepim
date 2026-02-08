@@ -19,7 +19,11 @@ include(ECMGenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 
-file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES src/*.cpp src/*.h)
+file(
+    GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES
+    src/*.cpp
+    src/*.h
+)
 set(PRE_COMMIT_INSTALLED FALSE)
 if(${CMAKE_SOURCE_DIR} STREQUAL ${PROJECT_SOURCE_DIR})
     if(EXISTS "${PROJECT_SOURCE_DIR}/.git/hooks/pre-commit")
@@ -33,12 +37,10 @@ endif()
 if(NOT ${PRE_COMMIT_INSTALLED})
     find_program(PRE_COMMIT_EXECUTABLE pre-commit)
     if(PRE_COMMIT_EXECUTABLE)
-        message(
-            STATUS
-            "This module has pre-commit support. pre-commit binary was found. Installing pre-commit hook"
-        )
+        message(STATUS "This module has pre-commit support. pre-commit binary was found. Installing pre-commit hook")
         execute_process(
-            COMMAND "${PRE_COMMIT_EXECUTABLE}" install -f
+            COMMAND
+                "${PRE_COMMIT_EXECUTABLE}" install -f
             ERROR_QUIET
             RESULT_VARIABLE _precommitresult
             WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}"
@@ -55,10 +57,7 @@ if(NOT ${PRE_COMMIT_INSTALLED})
             kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
         endif()
     else()
-        message(
-            WARNING
-            "This module has pre-commit support. pre-commit binary was not found."
-        )
+        message(WARNING "This module has pre-commit support. pre-commit binary was not found.")
         include(KDEGitCommitHooks)
         include(KDEClangFormat)
         kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
@@ -80,23 +79,18 @@ option(
 
 function(set_libkdepim_optional_package_properties _name _props)
     if(NOT "${_props}" STREQUAL "PROPERTIES")
-        message(
-            FATAL_ERROR
-            "PROPERTIES keyword is missing in set_libkdepim_optional_package_properties() call."
-        )
+        message(FATAL_ERROR "PROPERTIES keyword is missing in set_libkdepim_optional_package_properties() call.")
     endif()
 
     set(options) # none
-    set(oneValueArgs DESCRIPTION URL PURPOSE)
+    set(oneValueArgs
+        DESCRIPTION
+        URL
+        PURPOSE
+    )
     set(multiValueArgs) # none
 
-    cmake_parse_arguments(
-        _SPP
-        "${options}"
-        "${oneValueArgs}"
-        "${multiValueArgs}"
-        ${ARGN}
-    )
+    cmake_parse_arguments(_SPP "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
     if(_SPP_UNPARSED_ARGUMENTS)
         message(
@@ -112,9 +106,12 @@ function(set_libkdepim_optional_package_properties _name _props)
     set_package_properties(
         ${_name}
         PROPERTIES
-            TYPE ${DEPENDENCY_TYPE}
-            DESCRIPTION ${_SPP_DESCRIPTION}
-            URL ${_SPP_URL}
+            TYPE
+                ${DEPENDENCY_TYPE}
+            DESCRIPTION
+                ${_SPP_DESCRIPTION}
+            URL
+                ${_SPP_URL}
             PURPOSE
                 "${_SPP_PURPOSE} You can make the dependency optional adding ${_name} to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option"
     )
@@ -126,7 +123,14 @@ set_libkdepim_optional_package_properties(Qt6DBus PROPERTIES
 )
 
 set(LIBKDEPIM_LIB_VERSION ${PIM_VERSION})
-find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Network)
+find_package(
+    Qt6
+    ${QT_REQUIRED_VERSION}
+    CONFIG
+    REQUIRED
+        Widgets
+        Network
+)
 
 if(BUILD_TESTING)
     find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Test)
@@ -162,24 +166,19 @@ if(TARGET Qt6::DBus)
     configure_package_config_file(
         KPimMailTransportDBusServiceConfig.cmake.in
         ${CMAKE_CURRENT_BINARY_DIR}/KPim6MailTransportDBusServiceConfig.cmake
-        PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
-        INSTALL_DESTINATION
-            "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailTransportDBusService"
+        PATH_VARS
+            KDE_INSTALL_DBUSINTERFACEDIR
+        INSTALL_DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailTransportDBusService"
     )
 
     install(
         FILES
             ${CMAKE_CURRENT_BINARY_DIR}/KPim6MailTransportDBusServiceConfig.cmake
-        DESTINATION
-            "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailTransportDBusService"
+        DESTINATION "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailTransportDBusService"
     )
 endif()
 
-option(
-    USE_UNITY_CMAKE_SUPPORT
-    "Use UNITY cmake support (speedup compile time)"
-    OFF
-)
+option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
 if(USE_UNITY_CMAKE_SUPPORT)

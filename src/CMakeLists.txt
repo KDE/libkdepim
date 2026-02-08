@@ -50,7 +50,12 @@ ecm_qt_declare_logging_category(KPim6Libkdepim HEADER libkdepim_debug.h IDENTIFI
 )
 
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KPim6Libkdepim PROPERTIES UNITY_BUILD ON)
+    set_target_properties(
+        KPim6Libkdepim
+        PROPERTIES
+            UNITY_BUILD
+                ON
+    )
 endif()
 ecm_generate_export_header(KPim6Libkdepim
     BASE_NAME kdepim
@@ -58,10 +63,7 @@ ecm_generate_export_header(KPim6Libkdepim
     DEPRECATED_BASE_VERSION 0
     USE_VERSION_HEADER \"libkdepim_version.h\"
 )
-target_include_directories(
-    KPim6Libkdepim
-    INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/>"
-)
+target_include_directories(KPim6Libkdepim INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/>")
 target_include_directories(
     KPim6Libkdepim
     PUBLIC
@@ -70,7 +72,10 @@ target_include_directories(
 
 target_link_libraries(
     KPim6Libkdepim
-    PRIVATE KF6::Completion KF6::I18n KF6::WidgetsAddons
+    PRIVATE
+        KF6::Completion
+        KF6::I18n
+        KF6::WidgetsAddons
 )
 
 if(MINGW)
@@ -80,16 +85,15 @@ endif()
 set_target_properties(
     KPim6Libkdepim
     PROPERTIES
-        VERSION ${LIBKDEPIM_VERSION}
-        SOVERSION ${LIBKDEPIM_SOVERSION}
-        EXPORT_NAME Libkdepim
+        VERSION
+            ${LIBKDEPIM_VERSION}
+        SOVERSION
+            ${LIBKDEPIM_SOVERSION}
+        EXPORT_NAME
+            Libkdepim
 )
 
-install(
-    TARGETS KPim6Libkdepim
-    EXPORT KPim6LibkdepimTargets
-    ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
-)
+install(TARGETS KPim6Libkdepim EXPORT KPim6LibkdepimTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ecm_generate_headers(libkdepim_Camelcasewidgets_HEADERS
     HEADER_NAMES
@@ -157,7 +161,8 @@ if(TARGET Qt6::DBus)
 endif()
 
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
+    FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/libkdepim_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim
     COMPONENT Devel
 )
