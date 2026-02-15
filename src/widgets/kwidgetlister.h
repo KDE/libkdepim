@@ -47,111 +47,105 @@ class KDEPIM_EXPORT KWidgetLister : public QWidget
 
 public:
     /*!
-     * Creates a new widget lister.
-     * \a fewerMoreButton Add or Not fewerMoreButton
-     * \a minWidgets The minimum number of widgets to stay on the screen.
-     * \a maxWidgets The maximum number of widgets to stay on the screen.
-     * \a parent The parent widget.
+     * \brief Constructor for KWidgetLister.
+     * \param fewerMoreButton if true, shows 'more' and 'fewer' buttons
+     * \param minWidgets the minimum number of widgets to keep visible
+     * \param maxWidgets the maximum number of widgets to show
+     * \param parent the parent widget
      */
     explicit KWidgetLister(bool fewerMoreButton, int minWidgets = 1, int maxWidgets = 8, QWidget *parent = nullptr);
 
     /*!
-     * Destroys the widget lister.
+     * \brief Destructor for KWidgetLister.
      */
     ~KWidgetLister() override;
 
 protected Q_SLOTS:
     /*!
-     * Called whenever the user clicks on the 'more' button.
-     * Reimplementations should call this method, because this
-     * implementation does all the dirty work with adding the widgets
-     * to the layout (through \ addWidgetAtEnd) and enabling/disabling
-     * the control buttons.
+     * \brief Slot called when the 'more' button is clicked.
+     * This adds a new widget to the lister. Subclasses should override this
+     * to perform initialization on the new widget.
      */
     virtual void slotMore();
 
     /*!
-     * Called whenever the user clicks on the 'fewer' button.
-     * Reimplementations should call this method, because this
-     * implementation does all the dirty work with removing the widgets
-     * from the layout (through \ removeLastWidget) and
-     * enabling/disabling the control buttons.
+     * \brief Slot called when the 'fewer' button is clicked.
+     * This removes the last widget from the lister. Subclasses should override
+     * this to save the state of the removed widget.
      */
     virtual void slotFewer();
 
     /*!
-     * Called whenever the user clicks on the 'clear' button.
-     * Reimplementations should call this method, because this
-     * implementation does all the dirty work with removing all but
-     * \ mMinWidgets widgets from the layout and enabling/disabling
-     * the control buttons.
+     * \brief Slot called when the 'clear' button is clicked.
+     * This removes all widgets except the minimum number. Subclasses should override
+     * to reset widgets to their default state.
      */
     virtual void slotClear();
 
 protected:
     /*!
-     * Adds a single widget. Doesn't care if there are already \
-     * mMaxWidgets on screen and whether it should enable/disable any
-     * controls. It simply does what it is asked to do.  You want to
-     * reimplement this method if you want to initialize the widget
-     * when showing it on screen. Make sure you call this
-     * implementation, though, since you cannot put the widget on screen
-     * from derived classes (\a mLayout is private).
-     * Make sure the parent of the QWidget to add is this KWidgetLister.
+     * \brief Adds a single widget to the lister.
+     * Override this method to initialize the new widget when it appears on screen.
+     * Make sure to call the parent implementation.
+     * \param widget the widget to add, or nullptr to create a default widget
      */
     virtual void addWidgetAtEnd(QWidget *widget = nullptr);
 
     /*!
-     * Removes a single (always the last) widget. Doesn't care if there
-     * are still only \ mMinWidgets left on screen and whether it
-     * should enable/disable any controls. It simply does what it is
-     * asked to do. You want to reimplement this method if you want to
-     * save the widget's state before removing it from screen. Make
-     * sure you call this implementation, though, since you should not
-     * remove the widget from screen from derived classes.
+     * \brief Removes the last widget from the lister.
+     * Override this method to save the state of the removed widget before removal.
+     * Make sure to call the parent implementation.
      */
     virtual void removeLastWidget();
 
     /*!
-     * Called to clear a given widget. The default implementation does
-     * nothing.
+     * \brief Clears the contents of a widget.
+     * Default implementation does nothing. Override to reset widget to default state.
+     * \param w the widget to clear
      */
     virtual void clearWidget(QWidget *w);
 
     /*!
-     * Returns a new widget that shall be added to the lister.
-     *
-     * \a parent The parent widget of the new widget.
+     * \brief Creates a new widget for the lister.
+     * Override this method to create and return your custom widget.
+     * \param parent the parent widget for the new widget
+     * \return the newly created widget
      */
     virtual QWidget *createWidget(QWidget *parent);
 
     /*!
-     * Sets the number of widgets on screen to exactly \a count. Doesn't
-     * check if \a count is inside the range \a [mMinWidgets,mMaxWidgets].
+     * \brief Sets the exact number of widgets visible on screen.
+     * \param count the desired number of widgets
      */
     virtual void setNumberOfShownWidgetsTo(int count);
 
     /*!
-     * Returns the list of widgets.
+     * \brief Returns the list of all widgets in the lister.
+     * \return list of QWidget pointers
      */
     QList<QWidget *> widgets() const;
 
     /*!
-     * The minimum number of widgets that are to stay on screen.
+     * \brief Returns the minimum number of widgets that must stay visible.
+     * \return the minimum widget count
      */
     int widgetsMinimum() const;
 
     /*!
-     * The maximum number of widgets that are to be shown on screen.
+     * \brief Returns the maximum number of widgets that can be shown.
+     * \return the maximum widget count
      */
     int widgetsMaximum() const;
 
     /*!
-     * Remove specific widget
+     * \brief Removes a specific widget from the lister.
+     * \param widget the widget to remove
      */
     virtual void removeWidget(QWidget *widget);
     /*!
-     * Add widget after specific widget
+     * \brief Adds a widget after a specific existing widget.
+     * \param currentWidget the widget after which to insert
+     * \param widget the widget to add, or nullptr to create a default widget
      */
     virtual void addWidgetAfterThisWidget(QWidget *currentWidget, QWidget *widget = nullptr);
 
@@ -160,29 +154,29 @@ private:
 
 Q_SIGNALS:
     /*!
-     * This signal is emitted whenever a widget was added.
+     * \brief Signal emitted when a widget is added.
      */
     void widgetAdded();
 
     /*!
-     * This signal is emitted whenever a widget was added.
-     *
-     * \a widget The added widget.
+     * \brief Signal emitted when a widget is added.
+     * \param widget the widget that was added
      */
     void widgetAdded(QWidget *widget);
 
     /*!
-     * This signal is emitted whenever a widget was removed.
+     * \brief Signal emitted when a widget is removed.
      */
     void widgetRemoved();
 
     /*!
-     * This signal is emitted whenever a widget was removed.
+     * \brief Signal emitted when a widget is removed.
+     * \param widget the widget that was removed
      */
     void widgetRemoved(QWidget *widget);
 
     /*!
-     * This signal is emitted whenever the clear button is clicked.
+     * \brief Signal emitted when the clear button is clicked.
      */
     void clearWidgets();
 

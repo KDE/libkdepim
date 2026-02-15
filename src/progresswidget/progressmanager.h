@@ -43,126 +43,160 @@ public:
     };
 
     /*!
-     * Returns The id string which uniquely identifies the operation
-     *         represented by this item.
+     * \brief Returns the unique ID for this progress item.
+     * \return the unique ID string
      */
     [[nodiscard]] const QString &id() const;
 
     /*!
-     * Returns The parent item of this one, if there is one.
+     * \brief Returns the parent progress item.
+     * \return the parent ProgressItem, or nullptr if this is a top-level item
      */
     [[nodiscard]] ProgressItem *parent() const;
 
     /*!
-     * Returns The user visible string to be used to represent this item.
+     * \brief Returns the user-visible label for this item.
+     * \return the label string
      */
     [[nodiscard]] const QString &label() const;
 
     /*!
-     * \a v Set the user visible string identifying this item.
+     * \brief Sets the user-visible label for this item.
+     * \param v the new label string
      */
     void setLabel(const QString &v);
 
     /*!
-     * Returns The string to be used for showing this item's current status.
+     * \brief Returns the current status message for this item.
+     * \return the status string
      */
     [[nodiscard]] const QString &status() const;
     /*!
-     * Set the string to be used for showing this item's current status.
-     * \a v The status string.
+     * \brief Sets the status message for this item.
+     * \param v the new status string
      */
     void setStatus(const QString &v);
 
     /*!
-     * Returns Whether this item can be canceled.
+     * \brief Returns whether this item can be canceled by the user.
+     * \return true if the item can be canceled, false otherwise
      */
     [[nodiscard]] bool canBeCanceled() const;
 
     /*!
-     * \a b Set if can be canceled
+     * \brief Sets whether this item can be canceled.
+     * \param b true to allow cancellation, false otherwise
      */
     void setCanBeCanceled(bool b);
 
     /*!
-     * Returns Whether this item uses secure communication
-     * (Account uses ssl, for example.).
+     * \brief Returns the encryption status for this operation.
+     * \return the CryptoStatus value
      */
     [[nodiscard]] CryptoStatus cryptoStatus() const;
 
     /*!
-     * Set whether this item uses encrypted communication, so listeners
-     * can display a nice crypto icon.
-     * \a v The value.
+     * \brief Sets the encryption status for this operation.
+     * \param v the new CryptoStatus value
      */
     void setCryptoStatus(ProgressItem::CryptoStatus v);
 
     /*!
-     * Returns whether this item uses a busy indicator instead of real progress display
+     * \brief Returns whether this item uses a busy indicator instead of precise progress.
+     * \return true if using a busy indicator, false otherwise
      */
     [[nodiscard]] bool usesBusyIndicator() const;
 
     /*!
-     * Sets whether this item uses a busy indicator instead of real progress for its progress bar.
-     * If it uses a busy indicator, you are still responsible for calling setProgress() from time to
-     * time to update the busy indicator.
+     * \brief Sets whether this item uses a busy indicator.
+     * \param useBusyIndicator true to use a busy indicator, false for precise progress
      */
     void setUsesBusyIndicator(bool useBusyIndicator);
 
     /*!
-     * Returns The current progress value of this item in percent.
+     * \brief Returns the current progress percentage.
+     * \return the progress value (0-100)
      */
     [[nodiscard]] unsigned int progress() const;
 
     /*!
-     * Set the progress (percentage of completion) value of this item.
-     * \a v The percentage value.
+     * \brief Sets the progress percentage.
+     * \param v the new progress value (0-100)
      */
     void setProgress(unsigned int v);
 
     /*!
-     * Tell the item it has finished. This will Q_EMIT progressItemCompleted()
-     * result in the destruction of the item after all slots connected to this
-     * signal have executed. This is the only way to get rid of an item and
-     * needs to be called even if the item is canceled. Don't use the item
-     * after this has been called on it.
+     * \brief Marks this item as complete.
+     * This will emit progressItemCompleted() and eventually delete the item.
      */
     void setComplete();
 
     /*!
-     * Reset the progress value of this item to 0 and the status string to
-     * the empty string.
+     * \brief Resets the progress to 0 and clears the status message.
      */
     void reset();
 
+    /*!
+     * \brief Cancels this progress item.
+     */
     void cancel();
 
-    // Often needed values for calculating progress.
+    /*!
+     * \brief Sets the total number of items for progress calculation.
+     * \param v the total item count
+     */
     void setTotalItems(unsigned int v);
+    /*!
+     * \brief Returns the total number of items.
+     * \return the total item count
+     */
     [[nodiscard]] unsigned int totalItems() const;
+    /*!
+     * \brief Sets the number of completed items.
+     * \param v the completed item count
+     */
     void setCompletedItems(unsigned int v);
+    /*!
+     * \brief Increments the completed items counter.
+     * \param v the amount to increment (default 1)
+     */
     void incCompletedItems(unsigned int v = 1);
+    /*!
+     * \brief Returns the number of completed items.
+     * \return the completed item count
+     */
     [[nodiscard]] unsigned int completedItems() const;
 
     /*!
-     * Recalculate progress according to total/completed items and update.
+     * \brief Recalculates and updates the progress based on item counts.
      */
     void updateProgress();
 
     /*!
+     * \brief Adds a child progress item.
+     * \param kiddo the child item to add
      */
     void addChild(ProgressItem *kiddo);
     /*!
+     * \brief Removes a child progress item.
+     * \param kiddo the child item to remove
      */
     void removeChild(ProgressItem *kiddo);
 
     /*!
+     * \brief Returns whether this item has been canceled.
+     * \return true if canceled, false otherwise
      */
     [[nodiscard]] bool canceled() const;
 
     /*!
+     * \brief Returns the progress item type.
+     * \return the progress item type
      */
     unsigned int typeProgressItem() const;
     /*!
+     * \brief Sets the progress item type.
+     * \param type the progress item type
      */
     void setTypeProgressItem(unsigned int);
 
@@ -289,48 +323,47 @@ class KDEPIM_EXPORT ProgressManager : public QObject
     friend struct ProgressManagerPrivate;
 
 public:
+    /*!
+      \brief Destructor for ProgressManager.
+    */
     ~ProgressManager() override;
 
     /*!
-     * Returns The singleton instance of this class.
+     * \brief Returns the singleton instance of ProgressManager.
+     * \return the ProgressManager instance
      */
     static ProgressManager *instance();
 
     /*!
-     * Use this to acquire a unique id number which can be used to discern
-     * an operation from all others going on at the same time. Use that
-     * number as the id string for your progressItem to ensure it is unique.
-     * Returns
+     * \brief Generates a unique ID string for a new progress item.
+     * \return a unique ID string
      */
     [[nodiscard]] static QString getUniqueID();
 
     /*!
-     * Creates a ProgressItem with a unique id and the given label.
-     * This is the simplest way to acquire a progress item. It will not
-     * have a parent and will be set to be cancellable and not using crypto.
+     * \brief Creates a simple progress item with a unique ID.
+     * \param progressType the type of progress item
+     * \param label the user-visible label for the item
+     * \return the created ProgressItem
      */
     static ProgressItem *createProgressItem(unsigned int progressType, const QString &label);
 
     /*!
-     * Creates a ProgressItem with a unique id and the given label.
-     * This is the simplest way to acquire a progress item. It will not
-     * have a parent and will be set to be cancellable and not using crypto.
+     * \brief Creates a simple progress item with a unique ID.
+     * \param label the user-visible label for the item
+     * \return the created ProgressItem
      */
     static ProgressItem *createProgressItem(const QString &label);
 
     /*!
-     * Creates a new progressItem with the given parent, id, label and initial
-     * status.
-     *
-     * \a parent Specify an already existing item as the parent of this one.
-     * \a id Used to identify this operation for cancel and progress info.
-     * \a label The text to be displayed by progress handlers
-     * \a status Additional text to be displayed for the item.
-     * \a canBeCanceled can the user cancel this operation?
-     * \a usesCrypto does the operation use secure transports (SSL)
-     * Cancelling the parent will cancel the children as well (if they can be
-     * canceled) and ongoing children prevent parents from finishing.
-     * Returns The ProgressItem representing the operation.
+     * \brief Creates a progress item with specified parent and properties.
+     * \param parent the parent ProgressItem (or nullptr for top-level)
+     * \param id the unique identifier for this operation
+     * \param label the user-visible label
+     * \param status optional status message
+     * \param canBeCanceled whether the user can cancel this operation
+     * \param cryptoStatus the encryption status of this operation
+     * \return the created ProgressItem
      */
     static ProgressItem *createProgressItem(ProgressItem *parent,
                                             const QString &id,
@@ -340,8 +373,14 @@ public:
                                             KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
 
     /*!
-     * Use this version if you have the id string of the parent and want to
-     * add a subjob to it.
+     * \brief Creates a progress item as a child of an item identified by parent ID.
+     * \param parent the ID of the parent ProgressItem
+     * \param id the unique identifier for this operation
+     * \param label the user-visible label
+     * \param status optional status message
+     * \param canBeCanceled whether the user can cancel this operation
+     * \param cryptoStatus the encryption status of this operation
+     * \return the created ProgressItem
      */
     static ProgressItem *createProgressItem(const QString &parent,
                                             const QString &id,
@@ -360,62 +399,98 @@ public:
                                             KPIM::ProgressItem::CryptoStatus cryptoStatus = KPIM::ProgressItem::Unencrypted);
 
     /*!
-     * Returns true when there are no more progress items.
+     * \brief Checks if there are any active progress items.
+     * \return true if no progress items are active, false otherwise
      */
     [[nodiscard]] bool isEmpty() const;
 
     /*!
-     * Returns the only top level progressitem when there's only one.
-     * Returns 0 if there is no item, or more than one top level item.
-     * Since this is used to calculate the overall progress, it will also return
-     * 0 if there is an item which uses a busy indicator, since that will invalidate
-     * the overall progress.
+     * \brief Returns the single top-level progress item if there is only one.
+     * \return the single ProgressItem, or nullptr if none or more than one top-level item exists
      */
     ProgressItem *singleItem() const;
 
     /*!
-     * Ask all listeners to show the progress dialog, because there is
-     * something that wants to be shown.
+     * \brief Requests all listeners to show the progress dialog.
      */
     static void emitShowProgressDialog();
 
+    /*!
+     * \brief Retrieves a progress item by its ID.
+     * \param id the unique identifier of the item
+     * \return the ProgressItem with the given ID, or nullptr if not found
+     */
     ProgressItem *progressItem(const QString &id) const;
 
 Q_SIGNALS:
-    /*! \sa ProgressItem::progressItemAdded() */
+    /*!
+     * \brief Signal emitted when a new progress item is added.
+     * \param item the ProgressItem that was added
+     */
     void progressItemAdded(KPIM::ProgressItem *);
-    /*! \sa ProgressItem::progressItemProgress() */
+
+    /*!
+     * \brief Signal emitted when the progress value of an item changes.
+     * \param item the ProgressItem with updated progress
+     * \param progress the new progress value
+     */
     void progressItemProgress(KPIM::ProgressItem *, unsigned int);
-    /*! \sa ProgressItem::progressItemCompleted() */
+
+    /*!
+     * \brief Signal emitted when a progress item is completed.
+     * \param item the completed ProgressItem (will be deleted after signal processing)
+     */
     void progressItemCompleted(KPIM::ProgressItem *);
-    /*! \sa ProgressItem::progressItemCanceled() */
+
+    /*!
+     * \brief Signal emitted when a progress item is canceled.
+     * \param item the canceled ProgressItem
+     */
     void progressItemCanceled(KPIM::ProgressItem *);
-    /*! \sa ProgressItem::progressItemStatus() */
+
+    /*!
+     * \brief Signal emitted when the status message of an item changes.
+     * \param item the ProgressItem with updated status
+     * \param status the new status message
+     */
     void progressItemStatus(KPIM::ProgressItem *, const QString &);
-    /*! \sa ProgressItem::progressItemLabel() */
+
+    /*!
+     * \brief Signal emitted when the label of an item changes.
+     * \param item the ProgressItem with updated label
+     * \param label the new label
+     */
     void progressItemLabel(KPIM::ProgressItem *, const QString &);
-    /*! \sa ProgressItem::progressItemCryptoStatus() */
+
+    /*!
+     * \brief Signal emitted when the crypto status of an item changes.
+     * \param item the ProgressItem with updated crypto status
+     * \param cryptoStatus the new crypto status
+     */
     void progressItemCryptoStatus(KPIM::ProgressItem *, KPIM::ProgressItem::CryptoStatus);
-    /*! \sa ProgressItem::progressItemUsesBusyIndicator */
+
+    /*!
+     * \brief Signal emitted when the busy indicator setting of an item changes.
+     * \param item the ProgressItem
+     * \param value true if using a busy indicator, false otherwise
+     */
     void progressItemUsesBusyIndicator(KPIM::ProgressItem *, bool);
 
     /*!
-     * Emitted when an operation requests the listeners to be shown.
-     * Use emitShowProgressDialog() to trigger it.
+     * \brief Signal emitted when an operation requests to be shown.
      */
     void showProgressDialog();
 
 public Q_SLOTS:
 
     /*!
-     * Calls setCompleted() on the item, to make sure it goes away.
-     * Provided for convenience.
-     * \a item the canceled item.
+     * \brief Convenience slot that cancels and completes a progress item.
+     * \param item the ProgressItem to cancel and complete
      */
     void slotStandardCancelHandler(KPIM::ProgressItem *item);
 
     /*!
-     * Aborts all running jobs. Bound to "Esc"
+     * \brief Aborts all running progress items.
      */
     void slotAbortAll();
 

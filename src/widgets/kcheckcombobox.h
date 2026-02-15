@@ -37,124 +37,116 @@ class KDEPIM_EXPORT KCheckComboBox : public QComboBox
 
 public:
     /*!
-     * Creates a new checkable combobox.
-     *
-     * \a parent The parent widget.
+     * \brief Constructor for KCheckComboBox.
+     * \param parent the parent widget
      */
     explicit KCheckComboBox(QWidget *parent = nullptr);
 
     /*!
-     * Destroys the time zone combobox.
+     * \brief Destructor for KCheckComboBox.
      */
     ~KCheckComboBox() override;
 
     /*!
-     * Hides the popup list if it is currently shown.
+     * \brief Hides the dropdown popup.
      */
     void hidePopup() override;
 
     /*!
-     * Returns the default text that is shown when no items are selected.
+     * \brief Returns the default text shown when no items are selected.
+     * \return the default text
      */
     [[nodiscard]] QString defaultText() const;
 
     /*!
-     * Sets the default text that is shown when no items are selected.
-     *
-     * \a text The new default text
+     * \brief Sets the default text to show when no items are selected.
+     * \param text the new default text
      */
     void setDefaultText(const QString &text);
 
     /*!
-     * Returns whether the default text is always shown, even if there are
-     * no checked items.
+     * \brief Returns whether the default text is always shown.
+     * \return true if default text is always shown
      */
     [[nodiscard]] bool alwaysShowDefaultText() const;
 
     /*!
-     * Sets if the default text should always be shown even if there are
-     * no checked items.
-     *
-     * Default is false.
+     * \brief Sets whether the default text should always be shown.
+     * \param always true to always show default text, false to hide when items are checked
      */
     void setAlwaysShowDefaultText(bool always);
 
     /*!
-     * Returns whether or not the text will be squeezed to fit in the combo's line
-     * edit. This property is false by default.
-     *
-     * \sa KSqueezedTextLabel
+     * \brief Returns whether the text is squeezed to fit.
+     * \return true if text is squeezed
      */
     [[nodiscard]] bool squeezeText() const;
 
     /*!
-     * Sets whether or not the text must be squeezed.
-     *
-     * \a squeeze The new squeeze status
+     * \brief Sets whether the display text should be squeezed to fit.
+     * \param squeeze true to squeeze text, false otherwise
      */
     void setSqueezeText(bool squeeze);
 
     /*!
-     * Return whether or not the item at \a index is enabled, i.e. if the
-     * user can (un)check the item.
+     * \brief Returns whether the item at the given index is enabled.
+     * \param index the item index
+     * \return true if the item is enabled (can be checked/unchecked)
      */
     [[nodiscard]] bool itemEnabled(int index);
 
     /*!
-     * Set the item at \a index to \a enabled, i.e. if the
-     * user can (un)check the item.
+     * \brief Sets whether the item at the given index is enabled.
+     * \param index the item index
+     * \param enabled true to enable the item, false to disable it
      */
     void setItemEnabled(int index, bool enabled = true);
 
     /*!
-     * Returns the check state of item at given index.
-     *
-     * \a index The index for which to return the check state.
+     * \brief Returns the check state of the item at the given index.
+     * \param index the item index
+     * \return the Qt::CheckState of the item
      */
     [[nodiscard]] Qt::CheckState itemCheckState(int index) const;
 
     /*!
-     * Changes the check state of the given index to the given state.
-     *
-     * \a index The index of which the state needs to be changed
-     * \a state The new state
+     * \brief Sets the check state of the item at the given index.
+     * \param index the item index
+     * \param state the new Qt::CheckState
      */
     void setItemCheckState(int index, Qt::CheckState state);
 
     /*!
-     * Returns the current separator used to separate the selected items in the
-     * line edit of the combo box.
+     * \brief Returns the separator string used between checked items.
+     * \return the separator string
      */
     [[nodiscard]] QString separator() const;
 
     /*!
-     * Sets the separator used to separate items in the line edit.
-     *
-     * \a separator The new separator
+     * \brief Sets the separator string used between checked items.
+     * \param separator the new separator string
      */
     void setSeparator(const QString &separator);
 
     /*!
-     * Returns The currently selected items.
-     * \a role The role the returned values belong to.
+     * \brief Returns the list of currently checked items.
+     * \param role the data role to retrieve (default is Qt::DisplayRole)
+     * \return list of checked item strings
      */
     [[nodiscard]] QStringList checkedItems(int role = Qt::DisplayRole) const;
 
 public Q_SLOTS:
     /*!
-     * Sets the currently selected items. Items that are not found in the model
-     * are silently ignored.
-     *
-     * \a items The items that will be set to checked.
-     * \a role The role \a items belong to.
+     * \brief Sets which items should be checked.
+     * \param items the list of items to check
+     * \param role the data role (default is Qt::DisplayRole)
      */
     void setCheckedItems(const QStringList &items, int role = Qt::DisplayRole);
 
 Q_SIGNALS:
     /*!
-     * Signal to notify listeners that the current selections has changed.
-     *
-     * \a items The new selection.
+     * \brief Signal emitted when the checked items have changed.
+     * \param items the new list of checked items
      */
     void checkedItemsChanged(const QStringList &items);
 

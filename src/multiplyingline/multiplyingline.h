@@ -32,7 +32,8 @@ class KDEPIM_EXPORT MultiplyingLineData
 public:
     using Ptr = QSharedPointer<MultiplyingLineData>;
     /*!
-     */
+      \brief Destructor for MultiplyingLineData.
+    */
     virtual ~MultiplyingLineData() = default;
 
     /*!
@@ -61,12 +62,13 @@ class KDEPIM_EXPORT MultiplyingLine : public QWidget
     Q_OBJECT
 public:
     /*!
-     * \brief MultiplyingLine
-     * \param parent
+     * \brief Constructor for MultiplyingLine.
+     * \param parent the parent widget
      */
     explicit MultiplyingLine(QWidget *parent);
     /*!
-     */
+      \brief Destructor for MultiplyingLine.
+    */
     ~MultiplyingLine() override;
 
     /*!
@@ -112,6 +114,10 @@ public:
     */
     virtual bool isEmpty() const = 0;
 
+    /*!
+      Determine if this line can be deleted.
+      \return true if this line can be deleted by the user, false otherwise
+    */
     virtual bool canDeleteLineEdit() const = 0;
 
     /*!
@@ -158,44 +164,61 @@ public:
     virtual void setCompletionMode(KCompletion::CompletionMode mode) = 0;
 
     /*!
-     * Re implement this method if you need to do something
-     * before a line is deleted.
+     * \brief Called just before this line is deleted.
      *
+     * Re implement this method if you need to do something before a line is deleted.
      * Default implementation does nothing.
      */
     virtual void aboutToBeDeleted();
 
 Q_SIGNALS:
     /*!
-      Emitted when the return/enter key is pressed
+      \brief Signal emitted when the return/enter key is pressed.
+      \param line the MultiplyingLine that emitted the signal
     */
     void returnPressed(KPIM::MultiplyingLine *);
     /*!
-      Emitted when the down key is pressed
+      \brief Signal emitted when the down key is pressed.
+      \param line the MultiplyingLine that emitted the signal
     */
     void downPressed(KPIM::MultiplyingLine *);
     /*!
-      Emitted when the up key is pressed
+      \brief Signal emitted when the up key is pressed.
+      \param line the MultiplyingLine that emitted the signal
     */
     void upPressed(KPIM::MultiplyingLine *);
     /*!
-      Emitted when the right key is pressed
+      \brief Signal emitted when the right key is pressed.
     */
     void rightPressed();
     /*!
-      Should be emitted when the line should be deleted
-      */
+      \brief Signal emitted when the line should be deleted.
+      \param line the MultiplyingLine to be deleted
+    */
     void deleteLine(KPIM::MultiplyingLine *);
     /*!
-      Emitted when the completion mode changes
+      \brief Signal emitted when the completion mode changes.
+      \param mode the new completion mode
     */
     void completionModeChanged(KCompletion::CompletionMode);
 public Q_SLOTS:
+    /*!
+      \brief Slot called to propagate deletion of this line.
+    */
     void slotPropagateDeletion();
 
 protected Q_SLOTS:
+    /*!
+      \brief Slot called when the return/enter key is pressed.
+    */
     void slotReturnPressed();
+    /*!
+      \brief Slot called when the focus should move up.
+    */
     void slotFocusUp();
+    /*!
+      \brief Slot called when the focus should move down.
+    */
     void slotFocusDown();
 
 protected:

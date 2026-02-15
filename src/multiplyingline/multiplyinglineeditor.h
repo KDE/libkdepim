@@ -37,6 +37,8 @@ class KDEPIM_EXPORT MultiplyingLineFactory : public QObject
     Q_OBJECT
 public:
     /*!
+     * \brief Constructor for MultiplyingLineFactory.
+     * \param parent the parent QObject
      */
     explicit MultiplyingLineFactory(QObject *parent)
         : QObject(parent)
@@ -44,13 +46,20 @@ public:
     }
 
     /*!
+     * \brief Destructor for MultiplyingLineFactory.
      */
     ~MultiplyingLineFactory() override = default;
 
     /*!
+     * \brief Creates a new MultiplyingLine instance.
+     * Subclasses must implement this to return their custom MultiplyingLine subclass.
+     * \param parent the parent widget for the new line
+     * \return a new MultiplyingLine instance
      */
     virtual MultiplyingLine *newLine(QWidget *parent) = 0;
     /*!
+     * \brief Returns the maximum number of recipients this factory can create.
+     * \return the maximum number of recipients, or -1 for unlimited
      */
     virtual int maximumRecipients()
     {
@@ -85,73 +94,127 @@ class KDEPIM_EXPORT MultiplyingLineEditor : public QWidget
     Q_OBJECT
 
 public:
-    // We take ownership of factory
+    /*!
+     * \brief Constructor for MultiplyingLineEditor.
+     * \param factory the line factory that creates MultiplyingLine instances (ownership is transferred)
+     * \param parent the parent widget
+     */
     explicit MultiplyingLineEditor(MultiplyingLineFactory *factory, QWidget *parent = nullptr);
 
+    /*!
+     * \brief Destructor for MultiplyingLineEditor.
+     */
     ~MultiplyingLineEditor() override;
 
-    /*! Get the current line factory for this instance of the widget.
+    /*!
+     * \brief Returns the line factory for this editor.
+     * \return the MultiplyingLineFactory instance
      */
     MultiplyingLineFactory *factory() const;
 
-    /*! Retrieve the data from the editor */
+    /*!
+     * \brief Retrieves all data from all lines.
+     * \return a list of MultiplyingLineData pointers
+     */
     [[nodiscard]] QList<MultiplyingLineData::Ptr> allData() const;
 
-    /*! Retrieve the data of the active line */
+    /*!
+     * \brief Retrieves the data from the currently active line.
+     * \return the active line's data
+     */
     MultiplyingLineData::Ptr activeData() const;
 
-    /*! Clear all lines from the widget.
+    /*!
+     * \brief Clears all lines from the editor.
      */
     void clear();
 
-    /*! Returns true if the user has made any modifications to the list of
-        recipients.
-    */
+    /*!
+     * \brief Returns whether any modifications have been made.
+     * \return true if the user has modified the editor, false otherwise
+     */
     [[nodiscard]] bool isModified() const;
 
-    /*! Resets the modified flag to false.
+    /*!
+     * \brief Resets the modified flag.
      */
     void clearModified();
 
-    /*! Adds data to one line of the editor.
-        \a data The data you want to add.
-        Can be used to add an empty/default  line.
-    */
+    /*!
+     * \brief Adds a line with the given data to the editor.
+     * \param data the data for the new line (nullptr creates an empty line)
+     * \param showDialogBox whether to show a confirmation dialog
+     * \return true if the line was added successfully
+     */
     bool addData(const MultiplyingLineData::Ptr &data = MultiplyingLineData::Ptr(), bool showDialogBox = true);
 
-    /*! Removes data provided it can be found. The Data class must support operator==
-        \a data The data you want to add.
-    */
+    /*!
+     * \brief Removes the line containing the given data.
+     * \param data the data to remove
+     */
     void removeData(const MultiplyingLineData::Ptr &data);
 
     /*!
-      Set the width of the left most column to be the argument width.
-      This method allows other widgets to align their label/combobox column with ours
-      by communicating how many pixels that first column is for them.
-      \a w what the left most column width should be
-      Returns the width that is actually being used.
-      */
+     * \brief Sets the width of the first column.
+     * This allows alignment with other widgets.
+     * \param w the desired width in pixels
+     * \return the actual width used
+     */
     int setFirstColumnWidth(int w);
 
     /*!
-      Set completion mode for all lines
-      \a mode the completion mode
-      */
+     * \brief Sets the completion mode for all lines.
+     * \param mode the KCompletion::CompletionMode to use
+     */
     void setCompletionMode(KCompletion::CompletionMode mode);
 
+    /*!
+     * \brief Returns the list of all lines in the editor.
+     * \return list of MultiplyingLine pointers
+     */
     [[nodiscard]] QList<MultiplyingLine *> lines() const;
 
 Q_SIGNALS:
+    /*!
+     * \brief Signal emitted when focus should move up.
+     */
     void focusUp();
+    /*!
+     * \brief Signal emitted when focus should move down.
+     */
     void focusDown();
+    /*!
+     * \brief Signal emitted when the completion mode changes.
+     * \param mode the new completion mode
+     */
     void completionModeChanged(KCompletion::CompletionMode);
+    /*!
+     * \brief Signal emitted when the size hint changes.
+     */
     void sizeHintChanged();
+    /*!
+     * \brief Signal emitted when a line is deleted.
+     * \param pos the position of the deleted line
+     */
     void lineDeleted(int pos);
+    /*!
+     * \brief Signal emitted when a line is added.
+     * \param line the newly added MultiplyingLine
+     */
     void lineAdded(KPIM::MultiplyingLine *);
 
 public Q_SLOTS:
+    /*!
+     * \brief Sets focus to the editor.
+     */
     void setFocus();
+    /*!
+     * \brief Sets focus to the top line.
+     */
     void setFocusTop();
+    /*!
+     * \brief Sets focus to the bottom line.
+     */
     void setFocusBottom();
 
 protected:
