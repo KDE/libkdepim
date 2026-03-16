@@ -127,7 +127,6 @@ ecm_generate_headers(libkdepim_Camelcasemultiline_HEADERS
 
 install(
     FILES
-        ${libkdepim_CamelcaseCamelCase_HEADERS}
         ${libkdepim_Camelcasewidgets_HEADERS}
         ${libkdepim_Camelcaseprogresswidget_HEADERS}
         ${libkdepim_Camelcasemultiline_HEADERS}
@@ -138,7 +137,6 @@ install(
 install(
     FILES
         ${CMAKE_CURRENT_BINARY_DIR}/kdepim_export.h
-        ${libkdepim_CamelCase_HEADERS}
         ${libkdepim_progresswidget_HEADERS}
         ${libkdepim_widgets_HEADERS}
         ${libkdepim_multiline_HEADERS}
