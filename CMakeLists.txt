@@ -144,7 +144,6 @@ set_libkdepim_optional_package_properties(Qt6DBus PROPERTIES
     PURPOSE "Required for the DBUS interfaces delegate."
 )
 
-set(LIBKDEPIM_LIB_VERSION ${PIM_VERSION})
 find_package(
     Qt6
     ${QT_REQUIRED_VERSION}
