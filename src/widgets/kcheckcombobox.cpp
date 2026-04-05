@@ -38,6 +38,7 @@ public:
     void toggleCheckState();
 
 public:
+    QString mNewText;
     QString mSeparator;
     QString mDefaultText;
     bool mSqueezeText = false;
@@ -95,7 +96,8 @@ void KCheckComboBox::KCheckComboBoxPrivate::updateCheckedItems([[maybe_unused]] 
         text = squeeze(text);
     }
 
-    q->lineEdit()->setText(text);
+    mNewText = text;
+    q->lineEdit()->setText(mNewText);
 
     Q_EMIT q->checkedItemsChanged(items);
 }
@@ -137,6 +139,9 @@ KCheckComboBox::KCheckComboBox(QWidget *parent)
         if (text.isEmpty()) {
             // Clear checked items
             setCheckedItems(QStringList());
+            d->mNewText.clear();
+        } else {
+            lineEdit()->setText(d->mNewText);
         }
     });
 
