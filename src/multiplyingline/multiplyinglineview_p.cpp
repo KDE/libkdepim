@@ -57,8 +57,8 @@ MultiplyingLine *MultiplyingLineView::addLine(bool showDialogBox)
 {
     const int maximumRecipients = mMultiplyingLineFactory->maximumRecipients();
     if (maximumRecipients != -1) {
-        int numberOfLine = mLines.count();
-        if (numberOfLine++ >= maximumRecipients) {
+        const int numberOfLine = mLines.count();
+        if (numberOfLine >= maximumRecipients) {
             if (showDialogBox) {
                 KMessageBox::error(this, i18n("We can not add more recipients. We have reached maximum recipients"));
             }
