@@ -40,7 +40,7 @@ MultiplyingLineView::MultiplyingLineView(MultiplyingLineFactory *factory, Multip
 
 MultiplyingLine *MultiplyingLineView::activeLine() const
 {
-    return mLines.last();
+    return mLines.isEmpty() ? nullptr : mLines.last();
 }
 
 MultiplyingLine *MultiplyingLineView::emptyLine() const
