@@ -269,8 +269,9 @@ void MultiplyingLineView::removeData(const MultiplyingLineData::Ptr &data)
     QListIterator<MultiplyingLine *> it(mLines);
     MultiplyingLine *line = nullptr;
     while (it.hasNext()) {
-        line = it.next();
-        if (line->data() == data) {
+        MultiplyingLine *candidate = it.next();
+        if (candidate->data() == data) {
+            line = candidate;
             break;
         }
     }
