@@ -8,7 +8,6 @@
  */
 
 #include "progressdialog.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "ssllabel.h"
 
@@ -27,6 +26,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QVBoxLayout>
 #include <chrono>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace std::chrono_literals;
 
 using namespace KPIM;

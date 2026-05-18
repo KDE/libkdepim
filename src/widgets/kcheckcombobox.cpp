@@ -8,7 +8,6 @@
 */
 
 #include "kcheckcombobox.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "libkdepim_debug.h"
 
@@ -17,6 +16,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QLineEdit>
 #include <QStandardItemModel>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KPIM;
 
 /// Class KCheckComboBox::KCheckComboBoxPrivate

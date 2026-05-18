@@ -9,7 +9,6 @@
 */
 
 #include "kwidgetlister.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KGuiItem>
 #include <KLocalizedString>
@@ -21,6 +20,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <KStandardGuiItem>
 #include <cassert>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KPIM;
 
 class Q_DECL_HIDDEN KWidgetLister::KWidgetListerPrivate

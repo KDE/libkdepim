@@ -4,11 +4,11 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 #include "progressstatusbarwidget.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "progressdialog.h"
 #include "statusbarprogresswidget.h"
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KPIM;
 class KPIM::ProgressStatusBarWidgetPrivate
 {

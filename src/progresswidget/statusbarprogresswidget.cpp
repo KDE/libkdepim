@@ -12,7 +12,6 @@
 */
 
 #include "statusbarprogresswidget.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "progressdialog.h"
 #include "ssllabel.h"
@@ -33,6 +32,7 @@ using KPIM::ProgressManager;
 #include <QTimer>
 #include <chrono>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace std::chrono_literals;
 
 using namespace KPIM;

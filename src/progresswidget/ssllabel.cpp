@@ -8,13 +8,13 @@
  */
 
 #include "ssllabel.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 
 #include <QIcon>
 #include <QStyle>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KPIM;
 
 SSLLabel::SSLLabel(QWidget *parent)
