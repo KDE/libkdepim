@@ -56,7 +56,9 @@ void KCheckComboBox::KCheckComboBoxPrivate::makeInsertedItemsCheckable([[maybe_u
     if (model) {
         for (int r = start; r <= end; ++r) {
             QStandardItem *item = model->item(r, 0);
-            item->setCheckable(true);
+            if (item) {
+                item->setCheckable(true);
+            }
         }
     } else {
         qCWarning(LIBKDEPIM_LOG) << "KCheckComboBox: model is not a QStandardItemModel but a" << q->model() << ". Cannot proceed.";
