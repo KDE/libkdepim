@@ -227,7 +227,7 @@ void KCheckComboBox::setSqueezeText(bool squeeze)
 
 bool KCheckComboBox::itemEnabled(int index)
 {
-    Q_ASSERT(index >= 0 && index <= count());
+    Q_ASSERT(index >= 0 && index < count());
 
     auto itemModel = qobject_cast<QStandardItemModel *>(model());
     Q_ASSERT(itemModel);
@@ -238,7 +238,7 @@ bool KCheckComboBox::itemEnabled(int index)
 
 void KCheckComboBox::setItemEnabled(int index, bool enabled)
 {
-    Q_ASSERT(index >= 0 && index <= count());
+    Q_ASSERT(index >= 0 && index < count());
 
     auto itemModel = qobject_cast<QStandardItemModel *>(model());
     Q_ASSERT(itemModel);
