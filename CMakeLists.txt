@@ -146,6 +146,7 @@ find_package(
     ${QT_REQUIRED_VERSION}
     CONFIG
     REQUIRED
+        Core
         Widgets
         Network
 )

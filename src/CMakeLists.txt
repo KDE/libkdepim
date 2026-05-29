@@ -72,8 +72,10 @@ target_include_directories(
 
 target_link_libraries(
     KPim6Libkdepim
-    PRIVATE
+    PUBLIC
+        Qt::Widgets
         KF6::Completion
+    PRIVATE
         KF6::I18n
         KF6::WidgetsAddons
 )
