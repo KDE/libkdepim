@@ -167,3 +167,25 @@ install(
     COMPONENT Devel
 )
 ecm_generate_qdoc(KPim6Libkdepim libkdepim.qdocconf)
+
+ecm_add_installed_library_check(KPim6Libkdepim
+    PACKAGE_NAME "KPim6Libkdepim"
+    PACKAGE_VERSION ${LIBKDEPIM_VERSION}
+    PACKAGE_TARGET_NAMESPACE "KPim6::"
+)
+
+ecm_installed_library_check_include_strings(KPim6Libkdepim
+    HEADERS
+    ${libkdepim_progresswidget_HEADERS}
+    ${libkdepim_widgets_HEADERS}
+    ${libkdepim_multiline_HEADERS}
+    PREFIX libkdepim
+)
+
+ecm_installed_library_check_include_strings(KPim6Libkdepim
+   HEADERS
+   ${libkdepim_Camelcasewidgets_HEADERS}
+   ${libkdepim_Camelcaseprogresswidget_HEADERS}
+   ${libkdepim_Camelcasemultiline_HEADERS}
+    PREFIX Libkdepim
+)
