@@ -16,6 +16,8 @@
 #include <QLineEdit>
 #include <QStandardItemModel>
 
+#include <utility>
+
 using namespace Qt::Literals::StringLiterals;
 using namespace KPIM;
 
@@ -33,7 +35,7 @@ public:
     }
 
     void makeInsertedItemsCheckable(const QModelIndex &, int start, int end);
-    [[nodiscard]] QString squeeze(const QString &text);
+    [[nodiscard]] QString squeeze(QString text);
     void updateCheckedItems(const QModelIndex &topLeft = QModelIndex(), const QModelIndex &bottomRight = QModelIndex(), int role = Qt::DisplayRole);
     void toggleCheckState();
 
@@ -65,7 +67,7 @@ void KCheckComboBox::KCheckComboBoxPrivate::makeInsertedItemsCheckable([[maybe_u
     }
 }
 
-QString KCheckComboBox::KCheckComboBoxPrivate::squeeze(const QString &text)
+QString KCheckComboBox::KCheckComboBoxPrivate::squeeze(QString text)
 {
     QFontMetrics fm(q->fontMetrics());
     // The 4 pixels is 2 * horizontalMargin from QLineEdit.
@@ -95,10 +97,10 @@ void KCheckComboBox::KCheckComboBoxPrivate::updateCheckedItems([[maybe_unused]] 
     }
 
     if (mSqueezeText) {
-        text = squeeze(text);
+        text = squeeze(std::move(text));
     }
 
-    mNewText = text;
+    mNewText = std::move(text);
     q->lineEdit()->setText(mNewText);
 
     Q_EMIT q->checkedItemsChanged(items);
