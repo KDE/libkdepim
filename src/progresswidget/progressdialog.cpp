@@ -228,14 +228,12 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     mProgress->setFormat(i18nc("Percent value; %p is the value, % is the percent sign", "%p%"));
     mProgress->setMaximum(100);
     mProgress->setValue(item->progress());
-    h->layout()->addWidget(mProgress);
 
     if (item->canBeCanceled()) {
         mCancelButton = new QPushButton(QIcon::fromTheme(u"dialog-cancel"_s), QString(), h);
         hHBoxLayout->addWidget(mCancelButton);
         mCancelButton->setToolTip(i18nc("@info:tooltip", "Cancel this operation."));
         connect(mCancelButton, &QAbstractButton::clicked, this, &TransactionItem::slotItemCanceled);
-        h->layout()->addWidget(mCancelButton);
     }
 
     h = new QWidget(this);
@@ -247,12 +245,10 @@ TransactionItem::TransactionItem(QWidget *parent, ProgressItem *item, bool first
     mSSLLabel = new SSLLabel(h);
     hHBoxLayout->addWidget(mSSLLabel);
     mSSLLabel->setSizePolicy(QSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed));
-    h->layout()->addWidget(mSSLLabel);
     mItemStatus = new QLabel(h);
     hHBoxLayout->addWidget(mItemStatus);
     mItemStatus->setTextFormat(Qt::RichText);
     mItemStatus->setText(fontMetrics().elidedText(item->status(), Qt::ElideRight, MAX_LABEL_WIDTH));
-    h->layout()->addWidget(mItemStatus);
     setCryptoStatus(item->cryptoStatus());
     if (first) {
         hideHLine();
