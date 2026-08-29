@@ -8,6 +8,9 @@
 #include "kdepim_export.h"
 #include <QObject>
 #include <memory>
+
+class QWidget;
+
 namespace KPIM
 {
 class StatusbarProgressWidget;

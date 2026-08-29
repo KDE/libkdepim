@@ -14,6 +14,11 @@
 
 #include <QComboBox>
 
+class QEvent;
+class QKeyEvent;
+class QResizeEvent;
+class QWheelEvent;
+
 namespace KPIM
 {
 /*!

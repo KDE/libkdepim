@@ -17,6 +17,8 @@
 #include <QSharedPointer>
 #include <QWidget>
 
+class QKeyEvent;
+
 namespace KPIM
 {
 /*!

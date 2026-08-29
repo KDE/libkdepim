@@ -14,13 +14,16 @@
 
 #include "progressmanager.h"
 
+#include <QFrame>
 #include <QMap>
 #include <QScrollArea>
 
-class QProgressBar;
-class QFrame;
+class QCloseEvent;
+class QEvent;
 class QLabel;
+class QProgressBar;
 class QPushButton;
+class QResizeEvent;
 
 namespace KPIM
 {

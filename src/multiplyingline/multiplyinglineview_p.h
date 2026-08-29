@@ -17,6 +17,9 @@
 #include <QPointer>
 #include <QScrollArea>
 
+class QLayout;
+class QResizeEvent;
+
 namespace KPIM
 {
 class MultiplyingLineView : public QScrollArea
