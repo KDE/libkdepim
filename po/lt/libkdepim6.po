@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-14 00:46+0000\n"
+"POT-Creation-Date: 2026-08-30 00:47+0000\n"
 "PO-Revision-Date: 2024-05-24 01:52+0300\n"
 "Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -30,7 +30,7 @@ msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
 msgstr "%p%"
 
-#: progresswidget/progressdialog.cpp:236
+#: progresswidget/progressdialog.cpp:235
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
