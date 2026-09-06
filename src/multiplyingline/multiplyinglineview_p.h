@@ -11,7 +11,6 @@
 
 #pragma once
 
-#include "multiplyingline.h"
 #include "multiplyinglineeditor.h"
 
 #include <QPointer>

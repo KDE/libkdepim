@@ -16,7 +16,6 @@
 #include "multiplyingline.h"
 
 #include <KCompletion>
-#include <QObject>
 #include <QWidget>
 
 namespace KPIM

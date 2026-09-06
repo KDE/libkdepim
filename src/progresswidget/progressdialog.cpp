@@ -18,7 +18,6 @@
 #include <QFrame>
 #include <QLabel>
 #include <QLayout>
-#include <QObject>
 #include <QProgressBar>
 #include <QPushButton>
 #include <QScrollBar>
