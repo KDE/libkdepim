@@ -222,7 +222,7 @@ QSize MultiplyingLineView::sizeHint() const
 QSize MultiplyingLineView::minimumSizeHint() const
 {
     int height;
-    int numLines = 5;
+    constexpr int numLines = 5;
     if (mLines.count() < numLines) {
         height = mLineHeight * mLines.count();
     } else {

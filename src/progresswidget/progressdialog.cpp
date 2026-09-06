@@ -29,7 +29,7 @@ using namespace Qt::Literals::StringLiterals;
 using namespace std::chrono_literals;
 
 using namespace KPIM;
-static const int MAX_LABEL_WIDTH = 650;
+constexpr int MAX_LABEL_WIDTH = 650;
 
 class KPIM::OverlayWidgetPrivate
 {
