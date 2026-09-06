@@ -98,7 +98,7 @@ public:
      * \param index the item index
      * \return true if the item is enabled (can be checked/unchecked)
      */
-    [[nodiscard]] bool itemEnabled(int index);
+    [[nodiscard]] bool itemEnabled(int index) const;
 
     /*!
      * \brief Sets whether the item at the given index is enabled.

@@ -229,7 +229,7 @@ void KCheckComboBox::setSqueezeText(bool squeeze)
     }
 }
 
-bool KCheckComboBox::itemEnabled(int index)
+bool KCheckComboBox::itemEnabled(int index) const
 {
     Q_ASSERT(index >= 0 && index < count());
 
