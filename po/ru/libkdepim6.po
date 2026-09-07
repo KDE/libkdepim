@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-30 00:47+0000\n"
+"POT-Creation-Date: 2026-09-07 00:46+0000\n"
 "PO-Revision-Date: 2024-11-28 15:47+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -36,14 +36,14 @@ msgstr ""
 "Невозможно добавить больше получателей: достигнуто максимальное число "
 "получателей."
 
-#: progresswidget/progressdialog.cpp:228
+#: progresswidget/progressdialog.cpp:227
 #: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
 msgstr "%p%"
 
-#: progresswidget/progressdialog.cpp:235
+#: progresswidget/progressdialog.cpp:234
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."

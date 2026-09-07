@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-30 00:47+0000\n"
+"POT-Creation-Date: 2026-09-07 00:46+0000\n"
 "PO-Revision-Date: 2013-12-30 16:57+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosanski <lokal@lugbih.org>\n"
@@ -26,14 +26,14 @@ msgstr ""
 msgid "We can not add more recipients. We have reached maximum recipients"
 msgstr "Ne možete dodati više primatelja. Dosegli smo maksimum primatelja"
 
-#: progresswidget/progressdialog.cpp:228
+#: progresswidget/progressdialog.cpp:227
 #: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
 msgstr ""
 
-#: progresswidget/progressdialog.cpp:235
+#: progresswidget/progressdialog.cpp:234
 #, fuzzy, kde-format
 #| msgid "Cancel this operation."
 msgctxt "@info:tooltip"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-30 00:47+0000\n"
+"POT-Creation-Date: 2026-09-07 00:46+0000\n"
 "PO-Revision-Date: 2014-04-19 15:10+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@free.fr>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -30,14 +30,14 @@ msgstr ""
 "Δεν είναι δυνατή η προσθήκη περισσότερων παραληπτών. Έχετε προσθέσει τον "
 "μέγιστο αριθμό παραληπτών."
 
-#: progresswidget/progressdialog.cpp:228
+#: progresswidget/progressdialog.cpp:227
 #: progresswidget/statusbarprogresswidget.cpp:73
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
 msgstr ""
 
-#: progresswidget/progressdialog.cpp:235
+#: progresswidget/progressdialog.cpp:234
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Cancel this operation."
