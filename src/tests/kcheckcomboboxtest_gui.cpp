@@ -7,12 +7,13 @@
 */
 
 #include <QApplication>
-using namespace Qt::Literals::StringLiterals;
 
 #include <QCommandLineParser>
 #include <QStandardPaths>
 
 #include "widgets/kcheckcombobox.h"
+
+using namespace Qt::Literals::StringLiterals;
 
 int main(int argc, char *argv[])
 {

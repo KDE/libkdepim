@@ -5,7 +5,6 @@
 */
 
 #include "statusbarprogresswidgettest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "../progressdialog.h"
 #include "../progressmanager.h"
@@ -17,6 +16,9 @@ using namespace Qt::Literals::StringLiterals;
 #include <QStackedWidget>
 #include <QStandardPaths>
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
+
 QTEST_MAIN(StatusbarProgressWidgetTest)
 
 StatusbarProgressWidgetTest::StatusbarProgressWidgetTest(QObject *parent)

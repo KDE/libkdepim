@@ -5,12 +5,14 @@
 */
 
 #include "progressstatusbarwidgettest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "../progressdialog.h"
 #include "../progressstatusbarwidget.h"
 #include "../statusbarprogresswidget.h"
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
+
 QTEST_MAIN(ProgressStatusBarWidgetTest)
 
 ProgressStatusBarWidgetTest::ProgressStatusBarWidgetTest(QObject *parent)

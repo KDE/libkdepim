@@ -5,12 +5,13 @@
 */
 
 #include "statusbarprogresswidget_gui.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "progresswidget/progressdialog.h"
 
 #include <QApplication>
 #include <QCommandLineParser>
+
+using namespace Qt::Literals::StringLiterals;
 
 StatusbarProgressWidget_Gui::StatusbarProgressWidget_Gui(QWidget *parent)
     : QWidget(parent)
