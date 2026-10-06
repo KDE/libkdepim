@@ -17,7 +17,6 @@
 #include <QCloseEvent>
 #include <QFrame>
 #include <QLabel>
-#include <QLayout>
 #include <QProgressBar>
 #include <QPushButton>
 #include <QScrollBar>

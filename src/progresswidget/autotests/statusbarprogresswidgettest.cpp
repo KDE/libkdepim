@@ -7,7 +7,6 @@
 #include "statusbarprogresswidgettest.h"
 
 #include "../progressdialog.h"
-#include "../progressmanager.h"
 #include "../statusbarprogresswidget.h"
 #include "progresswidget/ssllabel.h"
 #include <QHBoxLayout>
