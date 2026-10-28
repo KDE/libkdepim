@@ -21,7 +21,7 @@ qhp.projects            = libkdepim
 qhp.libkdepim.file                = libkdepim.qhp
 qhp.libkdepim.namespace           = org.kde.libkdepim.$QT_VERSION_TAG
 qhp.libkdepim.virtualFolder       = libkdepim
-qhp.libkdepim.indexTitle          = libkdepim
+qhp.libkdepim.indexTitle          = Libkdepim
 qhp.libkdepim.indexRoot           =
 
 qhp.libkdepim.subprojects         = classes
