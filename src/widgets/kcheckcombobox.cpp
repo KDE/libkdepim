@@ -15,6 +15,7 @@
 #include <QKeyEvent>
 #include <QLineEdit>
 #include <QStandardItemModel>
+#include <QWheelEvent>
 
 #include <utility>
 

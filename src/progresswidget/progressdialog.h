@@ -17,6 +17,7 @@
 #include <QFrame>
 #include <QMap>
 #include <QScrollArea>
+#include <memory>
 
 class QCloseEvent;
 class QEvent;

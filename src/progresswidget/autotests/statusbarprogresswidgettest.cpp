@@ -7,9 +7,10 @@
 #include "statusbarprogresswidgettest.h"
 
 #include "../progressdialog.h"
+#include "../ssllabel.h"
 #include "../statusbarprogresswidget.h"
-#include "progresswidget/ssllabel.h"
 #include <QHBoxLayout>
+#include <QLabel>
 #include <QProgressBar>
 #include <QPushButton>
 #include <QStackedWidget>

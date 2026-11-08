@@ -9,6 +9,7 @@
 #include "kdepim_export.h"
 
 #include <QWidget>
+#include <memory>
 namespace KPIM
 {
 class ProgressIndicatorLabelPrivate;

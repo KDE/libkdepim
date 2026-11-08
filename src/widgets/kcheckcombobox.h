@@ -13,6 +13,7 @@
 #include "kdepim_export.h"
 
 #include <QComboBox>
+#include <memory>
 
 class QEvent;
 class QKeyEvent;
