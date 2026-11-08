@@ -10,6 +10,7 @@
 #include "../progressstatusbarwidget.h"
 #include "../statusbarprogresswidget.h"
 #include <QTest>
+#include <memory>
 
 using namespace Qt::Literals::StringLiterals;
 
@@ -22,8 +23,8 @@ ProgressStatusBarWidgetTest::ProgressStatusBarWidgetTest(QObject *parent)
 
 void ProgressStatusBarWidgetTest::shouldHaveDefaultValue()
 {
-    auto widget = new QWidget;
-    KPIM::ProgressStatusBarWidget w(widget, widget);
+    auto widget = std::make_unique<QWidget>();
+    KPIM::ProgressStatusBarWidget w(widget.get(), widget.get());
     widget->show();
 
     auto progressDialog = widget->findChild<KPIM::ProgressDialog *>(u"progressDialog"_s);
