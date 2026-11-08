@@ -268,7 +268,8 @@ ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent,
                                                       unsigned int progressType)
 {
     ProgressItem *t = nullptr;
-    if (!mTransactions.value(id)) {
+    const auto it = mTransactions.constFind(id);
+    if (it == mTransactions.constEnd()) {
         t = new ProgressItem(parent, id, label, status, cancellable, cryptoStatus);
         t->setTypeProgressItem(progressType);
         mTransactions.insert(id, t);
@@ -291,7 +292,7 @@ ProgressItem *ProgressManager::createProgressItemImpl(ProgressItem *parent,
         Q_EMIT progressItemAdded(t);
     } else {
         // Hm, is this what makes the most sense?
-        t = mTransactions.value(id);
+        t = *it;
     }
     return t;
 }
