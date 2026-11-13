@@ -9,6 +9,11 @@ documentationinheaders = true
 headerdirs += .
 sourcedirs += .
 
+excludedirs += \
+    progresswidget/autotests \
+    progresswidget/tests \
+    tests
+
 outputformats = HTML
 
 depends += \
