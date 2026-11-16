@@ -136,12 +136,16 @@ install(
     COMPONENT Devel
 )
 
+set(LIBKDEPIM_FILES
+    ${libkdepim_progresswidget_HEADERS}
+    ${libkdepim_widgets_HEADERS}
+    ${libkdepim_multiline_HEADERS}
+)
+
 install(
     FILES
         ${CMAKE_CURRENT_BINARY_DIR}/kdepim_export.h
-        ${libkdepim_progresswidget_HEADERS}
-        ${libkdepim_widgets_HEADERS}
-        ${libkdepim_multiline_HEADERS}
+        ${LIBKDEPIM_FILES}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/Libkdepim/libkdepim
     COMPONENT Devel
 )
@@ -176,9 +180,7 @@ ecm_add_installed_library_check(KPim6Libkdepim
 
 ecm_installed_library_check_include_strings(KPim6Libkdepim
     HEADERS
-    ${libkdepim_progresswidget_HEADERS}
-    ${libkdepim_widgets_HEADERS}
-    ${libkdepim_multiline_HEADERS}
+    ${LIBKDEPIM_FILES}
     PREFIX libkdepim
 )
 
