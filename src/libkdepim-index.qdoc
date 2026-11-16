@@ -10,7 +10,7 @@
 
     \section2 Building with CMake
 
-    \include {module-use.qdocinc} {building with cmake} {KPim6} {Libkdepim} {KPim6::Libkdepim}
+    \include {module-use.qdocinc} {building with cmake nomodule} {KPim6Libkdepim} {KPim6::Libkdepim}
 
     \section1 API Reference
 

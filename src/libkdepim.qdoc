@@ -2,8 +2,8 @@
     \module Libkdepim
     \title Libkdepim C++ Classes
     \ingroup modules
-    \cmakepackage KPim6
-    \cmakecomponent Libkdepim
+    \cmakepackage KPim6Libkdepim
+    \cmaketargetitem KPim6::Libkdepim
 
     \brief KDEpim Library.
 */
