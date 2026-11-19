@@ -235,9 +235,7 @@ QList<MultiplyingLineData::Ptr> MultiplyingLineView::allData() const
 {
     QList<MultiplyingLineData::Ptr> data;
 
-    QListIterator<MultiplyingLine *> it(mLines);
-    while (it.hasNext()) {
-        const MultiplyingLine *line = it.next();
+    for (const MultiplyingLine *line : mLines) {
         if (!line->data()->isEmpty()) {
             data.append(line->data());
         }
@@ -253,9 +251,7 @@ void MultiplyingLineView::setCompletionMode(KCompletion::CompletionMode mode)
     }
     mCompletionMode = mode;
 
-    QListIterator<MultiplyingLine *> it(mLines);
-    while (it.hasNext()) {
-        MultiplyingLine *line = it.next();
+    for (MultiplyingLine *line : std::as_const(mLines)) {
         line->blockSignals(true);
         line->setCompletionMode(mode);
         line->blockSignals(false);
@@ -266,10 +262,8 @@ void MultiplyingLineView::setCompletionMode(KCompletion::CompletionMode mode)
 void MultiplyingLineView::removeData(const MultiplyingLineData::Ptr &data)
 {
     // search a line which matches recipient and type
-    QListIterator<MultiplyingLine *> it(mLines);
     MultiplyingLine *line = nullptr;
-    while (it.hasNext()) {
-        MultiplyingLine *candidate = it.next();
+    for (MultiplyingLine *candidate : std::as_const(mLines)) {
         if (candidate->data() == data) {
             line = candidate;
             break;
@@ -286,10 +280,7 @@ bool MultiplyingLineView::isModified() const
         return true;
     }
 
-    QListIterator<MultiplyingLine *> it(mLines);
-    const MultiplyingLine *line = nullptr;
-    while (it.hasNext()) {
-        line = it.next();
+    for (const MultiplyingLine *line : mLines) {
         if (line->isModified()) {
             return true;
         }
@@ -302,9 +293,7 @@ void MultiplyingLineView::clearModified()
 {
     mModified = false;
 
-    QListIterator<MultiplyingLine *> it(mLines);
-    while (it.hasNext()) {
-        MultiplyingLine *line = it.next();
+    for (MultiplyingLine *line : std::as_const(mLines)) {
         line->clearModified();
     }
 }
@@ -349,9 +338,7 @@ int MultiplyingLineView::setFirstColumnWidth(int w)
 {
     mFirstColumnWidth = w;
 
-    QListIterator<MultiplyingLine *> it(mLines);
-    while (it.hasNext()) {
-        MultiplyingLine *line = it.next();
+    for (MultiplyingLine *line : std::as_const(mLines)) {
         mFirstColumnWidth = line->setColumnWidth(mFirstColumnWidth);
     }
 

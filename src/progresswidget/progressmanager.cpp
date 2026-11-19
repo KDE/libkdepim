@@ -362,9 +362,10 @@ ProgressItem *ProgressManager::progressItem(const QString &id) const
 
 void ProgressManager::slotAbortAll()
 {
-    QHashIterator<QString, ProgressItem *> it(mTransactions);
-    while (it.hasNext()) {
-        it.next().value()->cancel();
+    // Iterate over a copy: canceling an item can remove it from mTransactions
+    const QHash<QString, ProgressItem *> transactions = mTransactions;
+    for (ProgressItem *item : transactions) {
+        item->cancel();
     }
 }
 
