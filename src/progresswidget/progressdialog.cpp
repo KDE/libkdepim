@@ -355,7 +355,7 @@ bool ProgressDialog::wasLastShown() const
  */
 ProgressDialog::~ProgressDialog()
 {
-    for (auto &conn : std::as_const(mConnections))
+    for (auto &conn : mConnections)
         QObject::disconnect(conn);
 }
 
