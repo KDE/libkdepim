@@ -42,6 +42,11 @@ class SSLLabel;
  *
  */
 class OverlayWidgetPrivate;
+/*!
+ * \class KPIM::OverlayWidget
+ * \inmodule Libkdepim
+ * \inheaderfile Libkdepim/ProgressDialog
+ */
 class KDEPIM_EXPORT OverlayWidget : public QFrame
 {
     Q_OBJECT
@@ -70,7 +75,11 @@ public:
     void setAlignWidget(QWidget *alignWidget);
 
 protected:
+    /*!
+     */
     void resizeEvent(QResizeEvent *ev) override;
+    /*!
+     */
     [[nodiscard]] bool eventFilter(QObject *o, QEvent *e) override;
 
 private:
@@ -80,76 +89,143 @@ private:
     std::unique_ptr<OverlayWidgetPrivate> const d;
 };
 
+/*!
+ * \class KPIM::TransactionItemView
+ * \inmodule Libkdepim
+ * \inheaderfile Libkdepim/ProgressDialog
+ */
 class TransactionItemView : public QScrollArea
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit TransactionItemView(QWidget *parent = nullptr, const QString &name = QString());
 
+    /*!
+     */
     ~TransactionItemView() override;
 
+    /*!
+     */
     TransactionItem *addTransactionItem(ProgressItem *item, bool first);
 
+    /*!
+     */
     [[nodiscard]] QSize sizeHint() const override;
+    /*!
+     */
     [[nodiscard]] QSize minimumSizeHint() const override;
 
 public Q_SLOTS:
+    /*!
+     */
     void slotLayoutFirstItem();
 
 protected:
+    /*!
+     */
     void resizeEvent(QResizeEvent *event) override;
 
 private:
     QWidget *mBigBox = nullptr;
 };
 
+/*!
+ * \class KPIM::TransactionItem
+ * \inmodule Libkdepim
+ * \inheaderfile Libkdepim/ProgressDialog
+ */
 class TransactionItem : public QWidget
 {
     Q_OBJECT
 public:
+    /*!
+     */
     TransactionItem(QWidget *parent, ProgressItem *item, bool first);
 
+    /*!
+     */
     ~TransactionItem() override;
 
+    /*!
+     */
     void hideHLine();
 
+    /*!
+     */
     void setProgress(int progress);
+    /*!
+     */
     void setLabel(const QString &);
 
     // the given text is interpreted as RichText, so you might need to
     // .toHtmlEscaped() it before passing
+    /*!
+     */
     void setStatus(const QString &);
 
+    /*!
+     */
     void setCryptoStatus(KPIM::ProgressItem::CryptoStatus);
+    /*!
+     */
     void setTotalSteps(int totalSteps);
 
+    /*!
+     */
     [[nodiscard]] ProgressItem *item() const
     {
         return mItem;
     }
 
+    /*!
+     */
     void addSubTransaction(ProgressItem *item);
 
     // The progressitem is deleted immediately, we take 5s to go out,
     // so better not use mItem during this time.
+    /*!
+     */
     void setItemComplete()
     {
         mItem = nullptr;
     }
 
 public Q_SLOTS:
+    /*!
+     */
     void slotItemCanceled();
 
 protected:
+    /*!
+     */
     QProgressBar *mProgress = nullptr;
+    /*!
+     */
     QPushButton *mCancelButton = nullptr;
+    /*!
+     */
     QLabel *mItemLabel = nullptr;
+    /*!
+     */
     QLabel *mItemStatus = nullptr;
+    /*!
+     */
     QFrame *mFrame = nullptr;
+    /*!
+     */
     SSLLabel *mSSLLabel = nullptr;
+    /*!
+     */
     ProgressItem *mItem = nullptr;
 };
 
+/*!
+ * \class KPIM::ProgressDialog
+ * \inmodule Libkdepim
+ * \inheaderfile Libkdepim/ProgressDialog
+ */
 class KDEPIM_EXPORT ProgressDialog : public OverlayWidget
 {
     Q_OBJECT
@@ -256,12 +332,24 @@ Q_SIGNALS:
     void visibilityChanged(bool);
 
 protected:
+    /*!
+     */
     void closeEvent(QCloseEvent *) override;
 
+    /*!
+     */
     TransactionItemView *mScrollView = nullptr;
+    /*!
+     */
     QList<QMetaObject::Connection> mConnections;
+    /*!
+     */
     QMap<const ProgressItem *, TransactionItem *> mTransactionsToListviewItems;
+    /*!
+     */
     unsigned int mShowTypeProgressItem = 0;
+    /*!
+     */
     bool mWasLastShown = false;
 };
 } // namespace KPIM

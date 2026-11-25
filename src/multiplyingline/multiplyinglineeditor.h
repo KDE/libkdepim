@@ -217,6 +217,8 @@ public Q_SLOTS:
     void setFocusBottom();
 
 protected:
+    /*!
+     */
     bool mModified = false;
 
 private:

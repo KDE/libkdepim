@@ -36,6 +36,8 @@ class KDEPIM_EXPORT ProgressItem : public QObject
     friend class ProgressManager;
 
 public:
+    /*!
+     */
     enum CryptoStatus {
         Encrypted,
         Unencrypted,
@@ -269,7 +271,11 @@ Q_SIGNALS:
 
 protected:
     /* Only to be used by our good friend the ProgressManager */
+    /*!
+     */
     ProgressItem(ProgressItem *parent, const QString &id, const QString &label, const QString &status, bool isCancellable, CryptoStatus cryptoStatus);
+    /*!
+     */
     ~ProgressItem() override;
 
 private:

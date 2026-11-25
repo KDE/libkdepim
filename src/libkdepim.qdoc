@@ -7,3 +7,9 @@
 
     \brief KDEpim Library.
 */
+
+/*!
+    \namespace KPIM
+    \inmodule Libkdepim
+    \brief The KPIM namespace contains the classes of the Libkdepim module.
+*/

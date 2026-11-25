@@ -157,10 +157,18 @@ Q_SIGNALS:
     void checkedItemsChanged(const QStringList &items);
 
 protected:
+    /*!
+     */
     bool eventFilter(QObject *receiver, QEvent *event) override;
+    /*!
+     */
     void keyPressEvent(QKeyEvent *event) override;
+    /*!
+     */
     void resizeEvent(QResizeEvent *event) override;
 #ifndef QT_NO_WHEELEVENT
+    /*!
+     */
     void wheelEvent(QWheelEvent *event) override;
 #endif
 

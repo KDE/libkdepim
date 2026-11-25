@@ -101,6 +101,8 @@ protected Q_SLOTS:
     void updateBusyMode(KPIM::ProgressItem *);
 
 protected:
+    /*!
+     */
     bool eventFilter(QObject *, QEvent *) override;
 
 private:
