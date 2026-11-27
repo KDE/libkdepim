@@ -177,6 +177,7 @@ add_definitions(-DQT_ENABLE_STRICT_MODE_UP_TO=0x060900)
 # Need fixing kf6 qpair for using 0x060C00
 if(ECM_VERSION VERSION_GREATER_EQUAL "6.33.0")
     add_definitions(-DQT_LEAN_HEADERS=2)
+    add_definitions(-DQT_NO_QPAIR)
 endif()
 add_definitions(
     -DQT_NO_DISCONNECT_CONST_CONNECTION
